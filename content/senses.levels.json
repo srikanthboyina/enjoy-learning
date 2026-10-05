@@ -1,0 +1,643 @@
+{
+  "topicId": "senses",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "senses-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "My five senses",
+      "intro": {
+        "say": "We use five senses to learn about the world: see, hear, smell, taste and touch!",
+        "icons": [
+          "👀",
+          "👂",
+          "👃",
+          "👅",
+          "✋"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "We see with our eyes and hear with our ears.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👀",
+              "🌈",
+              "👂",
+              "🎵"
+            ]
+          },
+          "caption": "See · Hear"
+        },
+        {
+          "mode": "show",
+          "say": "We smell with our nose, taste with our tongue, and touch with our hands and skin.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👃",
+              "🌸",
+              "👅",
+              "🍦",
+              "✋"
+            ]
+          },
+          "caption": "Smell · Taste · Touch"
+        },
+        {
+          "mode": "choice",
+          "ask": "What do you use to see?",
+          "options": [
+            {
+              "emoji": "👂",
+              "label": "Ears",
+              "why": "Ears are for hearing."
+            },
+            {
+              "emoji": "👀",
+              "label": "Eyes"
+            },
+            {
+              "emoji": "👃",
+              "label": "Nose",
+              "why": "Your nose is for smelling."
+            }
+          ],
+          "answer": 1,
+          "explain": "We see with our eyes."
+        },
+        {
+          "mode": "choice",
+          "ask": "What do you use to hear music?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎵",
+              "🎶"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "👂",
+              "label": "Ears"
+            },
+            {
+              "emoji": "✋",
+              "label": "Hands",
+              "why": "Hands are for touching."
+            },
+            {
+              "emoji": "👅",
+              "label": "Tongue",
+              "why": "Your tongue is for tasting."
+            }
+          ],
+          "answer": 0,
+          "explain": "We hear sounds with our ears."
+        },
+        {
+          "mode": "choice",
+          "ask": "What do you use to smell a flower?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌸"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👀",
+              "label": "Eyes",
+              "why": "Eyes see the flower, but can't smell it."
+            },
+            {
+              "emoji": "👅",
+              "label": "Tongue",
+              "why": "Let's not eat the flower!"
+            },
+            {
+              "emoji": "👃",
+              "label": "Nose"
+            }
+          ],
+          "answer": 2,
+          "explain": "We smell with our nose."
+        },
+        {
+          "mode": "choice",
+          "ask": "What do you use to taste ice cream?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍦"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👂",
+              "label": "Ears",
+              "why": "Ears can't taste anything."
+            },
+            {
+              "emoji": "👅",
+              "label": "Tongue"
+            },
+            {
+              "emoji": "✋",
+              "label": "Hands",
+              "why": "Hands feel it is cold, but can't taste it."
+            }
+          ],
+          "answer": 1,
+          "explain": "We taste food with our tongue."
+        },
+        {
+          "mode": "choice",
+          "ask": "How do you feel if a teddy is soft?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧸"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✋",
+              "label": "Touch it"
+            },
+            {
+              "emoji": "👃",
+              "label": "Smell it",
+              "why": "Smelling won't tell you if it's soft."
+            },
+            {
+              "emoji": "👂",
+              "label": "Listen to it",
+              "why": "A teddy is quiet!"
+            }
+          ],
+          "answer": 0,
+          "explain": "We feel soft and hard by touching."
+        }
+      ]
+    },
+    {
+      "id": "senses-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Which sense?",
+      "intro": {
+        "say": "Different things need different senses. Which sense would you use?",
+        "icons": [
+          "🤔",
+          "👀",
+          "👂"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "To know a lemon is sour, we taste it. To know a drum is loud, we hear it.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍋",
+              "👅",
+              "🥁",
+              "👂"
+            ]
+          },
+          "caption": "Sour → taste · Loud → hear"
+        },
+        {
+          "mode": "sort",
+          "ask": "Which sense would you use most?",
+          "bins": [
+            {
+              "label": "See",
+              "emoji": "👀"
+            },
+            {
+              "label": "Hear",
+              "emoji": "👂"
+            },
+            {
+              "label": "Smell",
+              "emoji": "👃"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🌈",
+              "bin": 0,
+              "name": "rainbow"
+            },
+            {
+              "emoji": "🔔",
+              "bin": 1,
+              "name": "bell"
+            },
+            {
+              "emoji": "🌸",
+              "bin": 2,
+              "name": "flower"
+            },
+            {
+              "emoji": "⭐",
+              "bin": 0,
+              "name": "star"
+            },
+            {
+              "emoji": "🥁",
+              "bin": 1,
+              "name": "drum"
+            },
+            {
+              "emoji": "🧀",
+              "bin": 2,
+              "name": "stinky cheese"
+            }
+          ],
+          "explain": "We see rainbows and stars, hear bells and drums, and smell flowers and cheese."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sense tells you a lemon is sour?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍋"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👂",
+              "label": "Hearing",
+              "why": "A lemon makes no sound."
+            },
+            {
+              "emoji": "👀",
+              "label": "Seeing",
+              "why": "You can see it's yellow, but not that it's sour."
+            },
+            {
+              "emoji": "👅",
+              "label": "Taste"
+            }
+          ],
+          "answer": 2,
+          "explain": "Your tongue tastes that a lemon is sour."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sense tells you a dog is barking?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐕"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👂",
+              "label": "Hearing"
+            },
+            {
+              "emoji": "✋",
+              "label": "Touch",
+              "why": "You hear barking, not feel it."
+            },
+            {
+              "emoji": "👅",
+              "label": "Taste",
+              "why": "Please don't taste the dog!"
+            }
+          ],
+          "answer": 0,
+          "explain": "Your ears hear the dog bark."
+        },
+        {
+          "mode": "sort",
+          "ask": "Taste or touch?",
+          "bins": [
+            {
+              "label": "Taste",
+              "emoji": "👅"
+            },
+            {
+              "label": "Touch",
+              "emoji": "✋"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍭",
+              "bin": 0,
+              "name": "lollipop"
+            },
+            {
+              "emoji": "🧸",
+              "bin": 1,
+              "name": "soft teddy"
+            },
+            {
+              "emoji": "🍋",
+              "bin": 0,
+              "name": "sour lemon"
+            },
+            {
+              "emoji": "🌵",
+              "bin": 1,
+              "name": "prickly cactus"
+            },
+            {
+              "emoji": "🍬",
+              "bin": 0,
+              "name": "sweet candy"
+            },
+            {
+              "emoji": "🧊",
+              "bin": 1,
+              "name": "cold ice"
+            }
+          ],
+          "explain": "We taste sweet and sour. We touch to feel soft, prickly and cold."
+        },
+        {
+          "mode": "choice",
+          "ask": "You can't see in the dark. Which sense helps you find your bed?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌙",
+              "🛏️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "✋",
+              "label": "Touch"
+            },
+            {
+              "emoji": "👅",
+              "label": "Taste",
+              "why": "Tasting won't help you find your bed."
+            },
+            {
+              "emoji": "👃",
+              "label": "Smell",
+              "why": "Beds don't smell much!"
+            }
+          ],
+          "answer": 0,
+          "explain": "In the dark, you can feel your way with your hands."
+        }
+      ]
+    },
+    {
+      "id": "senses-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Senses work together",
+      "intro": {
+        "say": "We often use two senses at once, and our senses help keep us safe!",
+        "icons": [
+          "👀",
+          "👂",
+          "⚠️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "When we eat popcorn, we smell it, taste it, and hear it crunch. Senses work together!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍿",
+              "👃",
+              "👅",
+              "👂"
+            ]
+          },
+          "caption": "Many senses at once"
+        },
+        {
+          "mode": "show",
+          "say": "Senses keep us safe. We see a hot stove is on and keep our hands away. We hear a fire alarm and go outside.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔥",
+              "👀",
+              "🚨",
+              "👂"
+            ]
+          },
+          "caption": "Senses keep us safe"
+        },
+        {
+          "mode": "choice",
+          "ask": "You smell smoke. What should you do?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💨",
+              "👃"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🙈",
+              "label": "Ignore it",
+              "why": "Smoke can mean fire, so we must act."
+            },
+            {
+              "emoji": "🧑",
+              "label": "Tell a grown-up"
+            },
+            {
+              "emoji": "👅",
+              "label": "Taste it",
+              "why": "Never taste smoke!"
+            }
+          ],
+          "answer": 1,
+          "explain": "Smelling smoke can warn us of fire, so tell a grown-up right away."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which TWO senses help you cross the road safely?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚗",
+              "🚦"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "👅",
+              "label": "Taste and smell",
+              "why": "Tasting won't help on the road."
+            },
+            {
+              "emoji": "✋",
+              "label": "Touch and taste",
+              "why": "You must not touch cars on the road."
+            },
+            {
+              "emoji": "👀",
+              "label": "Seeing and hearing"
+            }
+          ],
+          "answer": 2,
+          "explain": "We look for cars and listen for them too."
+        },
+        {
+          "mode": "choice",
+          "ask": "A stove might be hot. Which sense should you NOT use to check?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔥"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✋",
+              "label": "Touch"
+            },
+            {
+              "emoji": "👀",
+              "label": "Seeing",
+              "why": "Looking is safe. You can see if it's on."
+            },
+            {
+              "emoji": "👂",
+              "label": "Hearing",
+              "why": "Listening is safe."
+            }
+          ],
+          "answer": 0,
+          "explain": "Never touch a stove to check. You could get burned!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which senses help you enjoy an orange?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍊"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👂",
+              "label": "Only hearing",
+              "why": "An orange makes almost no sound."
+            },
+            {
+              "emoji": "👃",
+              "label": "Smell and taste"
+            },
+            {
+              "emoji": "👀",
+              "label": "Only seeing",
+              "why": "You can see it, but you'd miss the yummy taste!"
+            }
+          ],
+          "answer": 1,
+          "explain": "You smell its fresh scent and taste its sweet juice."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have a cold and a stuffy nose. Food tastes different. Why?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🤧"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👃",
+              "label": "Smell helps taste"
+            },
+            {
+              "emoji": "👂",
+              "label": "Your ears are blocked",
+              "why": "Ears aren't used for tasting."
+            },
+            {
+              "emoji": "🍲",
+              "label": "The food changed",
+              "why": "The food is the same. You changed!"
+            }
+          ],
+          "answer": 0,
+          "explain": "Smell and taste work together, so a blocked nose makes food taste plain."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it safe to touch, or should you just look?",
+          "bins": [
+            {
+              "label": "Safe to touch",
+              "emoji": "✋"
+            },
+            {
+              "label": "Just look",
+              "emoji": "👀"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🧸",
+              "bin": 0,
+              "name": "teddy"
+            },
+            {
+              "emoji": "🔥",
+              "bin": 1,
+              "name": "fire"
+            },
+            {
+              "emoji": "🐶",
+              "bin": 0,
+              "name": "your puppy"
+            },
+            {
+              "emoji": "🔪",
+              "bin": 1,
+              "name": "sharp knife"
+            },
+            {
+              "emoji": "🌵",
+              "bin": 1,
+              "name": "cactus"
+            },
+            {
+              "emoji": "⚽",
+              "bin": 0,
+              "name": "ball"
+            }
+          ],
+          "explain": "Teddies, puppies and balls are safe. Fire, knives and cacti can hurt, so just look."
+        }
+      ]
+    }
+  ]
+}

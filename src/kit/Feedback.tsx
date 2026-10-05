@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Animated, {
   useAnimatedStyle,
   useReducedMotion,
@@ -10,6 +10,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { colors, motion, radii, spacing } from '../theme';
+import { Text } from './Text';
 
 /** Soft side-to-side wiggle used for "let's try again". Call `wiggle()` to play. */
 export function useWiggle() {

@@ -1,0 +1,762 @@
+{
+  "topicId": "animal-homes",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "animal-homes-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Who lives here?",
+      "intro": {
+        "say": "Every animal needs a home. Let's find out where animals live!",
+        "icons": [
+          "🐦",
+          "🥚",
+          "🐝"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Birds build nests in trees. Bees live in a hive. Fish live in water.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦",
+              "🥚",
+              "🐝",
+              "🐟",
+              "🌊"
+            ]
+          },
+          "caption": "Nest · Hive · Water"
+        },
+        {
+          "mode": "show",
+          "say": "Cows, pigs and sheep often live on a farm.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐄",
+              "🐷",
+              "🐑",
+              "🚜"
+            ]
+          },
+          "caption": "Farm animals"
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does a bird lay its eggs?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🥚",
+              "label": "Nest"
+            },
+            {
+              "emoji": "🌊",
+              "label": "Sea",
+              "why": "Birds' eggs would sink in the sea!"
+            },
+            {
+              "emoji": "🕳️",
+              "label": "Cave",
+              "why": "Most birds build nests instead."
+            }
+          ],
+          "answer": 0,
+          "explain": "Birds build cozy nests for their eggs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does a fish live?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🌳",
+              "label": "Tree",
+              "why": "Fish can't climb trees!"
+            },
+            {
+              "emoji": "🏜️",
+              "label": "Desert",
+              "why": "A desert is too dry for fish."
+            },
+            {
+              "emoji": "🌊",
+              "label": "Water"
+            }
+          ],
+          "answer": 2,
+          "explain": "Fish live in water and breathe with gills."
+        },
+        {
+          "mode": "choice",
+          "ask": "Who lives in a hive?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍯"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐶",
+              "label": "Dog",
+              "why": "Dogs don't live in hives."
+            },
+            {
+              "emoji": "🐝",
+              "label": "Bee"
+            },
+            {
+              "emoji": "🐸",
+              "label": "Frog",
+              "why": "Frogs live near ponds."
+            }
+          ],
+          "answer": 1,
+          "explain": "Bees live in a hive and make honey there."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal lives on a farm?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚜"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🦈",
+              "label": "Shark",
+              "why": "Sharks live in the sea."
+            },
+            {
+              "emoji": "🐧",
+              "label": "Penguin",
+              "why": "Penguins live in cold, icy places."
+            },
+            {
+              "emoji": "🐄",
+              "label": "Cow"
+            }
+          ],
+          "answer": 2,
+          "explain": "Cows live on farms and give us milk."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does a frog like to live?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐸"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "Pond"
+            },
+            {
+              "emoji": "🏜️",
+              "label": "Desert",
+              "why": "A desert is too dry for a frog."
+            },
+            {
+              "emoji": "🐝",
+              "label": "Hive",
+              "why": "A hive is for bees."
+            }
+          ],
+          "answer": 0,
+          "explain": "Frogs live in and near ponds, where it is wet."
+        }
+      ]
+    },
+    {
+      "id": "animal-homes-02",
+      "order": 2,
+      "difficulty": "simple",
+      "name": "Land, water or air",
+      "intro": {
+        "say": "Some animals walk on land, some swim in water, and some fly in the air!",
+        "icons": [
+          "🐘",
+          "🐟",
+          "🦅"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Elephants and lions walk on land. Whales and fish swim in water. Eagles and butterflies fly in the air.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐘",
+              "🦁",
+              "🐋",
+              "🐟",
+              "🦅",
+              "🦋"
+            ]
+          },
+          "caption": "Land · Water · Air"
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it walk on land, swim in water, or fly in the air?",
+          "bins": [
+            {
+              "label": "Land",
+              "emoji": "🌳"
+            },
+            {
+              "label": "Water",
+              "emoji": "🌊"
+            },
+            {
+              "label": "Air",
+              "emoji": "☁️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐘",
+              "bin": 0,
+              "name": "elephant"
+            },
+            {
+              "emoji": "🐟",
+              "bin": 1,
+              "name": "fish"
+            },
+            {
+              "emoji": "🦅",
+              "bin": 2,
+              "name": "eagle"
+            },
+            {
+              "emoji": "🦁",
+              "bin": 0,
+              "name": "lion"
+            },
+            {
+              "emoji": "🐙",
+              "bin": 1,
+              "name": "octopus"
+            },
+            {
+              "emoji": "🦋",
+              "bin": 2,
+              "name": "butterfly"
+            }
+          ],
+          "explain": "Elephants and lions walk, fish and octopuses swim, eagles and butterflies fly."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal swims in the sea?",
+          "options": [
+            {
+              "emoji": "🐴",
+              "label": "Horse",
+              "why": "Horses run on land."
+            },
+            {
+              "emoji": "🐬",
+              "label": "Dolphin"
+            },
+            {
+              "emoji": "🦉",
+              "label": "Owl",
+              "why": "Owls fly in the air."
+            }
+          ],
+          "answer": 1,
+          "explain": "Dolphins swim in the sea."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal flies in the sky?",
+          "options": [
+            {
+              "emoji": "🦜",
+              "label": "Parrot"
+            },
+            {
+              "emoji": "🐌",
+              "label": "Snail",
+              "why": "Snails crawl slowly on land."
+            },
+            {
+              "emoji": "🦀",
+              "label": "Crab",
+              "why": "Crabs walk on the beach and the seabed."
+            }
+          ],
+          "answer": 0,
+          "explain": "Parrots have wings and fly."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort them again: land, water or air?",
+          "bins": [
+            {
+              "label": "Land",
+              "emoji": "🌳"
+            },
+            {
+              "label": "Water",
+              "emoji": "🌊"
+            },
+            {
+              "label": "Air",
+              "emoji": "☁️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐄",
+              "bin": 0,
+              "name": "cow"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 1,
+              "name": "shark"
+            },
+            {
+              "emoji": "🐦",
+              "bin": 2,
+              "name": "bird"
+            },
+            {
+              "emoji": "🐇",
+              "bin": 0,
+              "name": "rabbit"
+            },
+            {
+              "emoji": "🐠",
+              "bin": 1,
+              "name": "tropical fish"
+            },
+            {
+              "emoji": "🐝",
+              "bin": 2,
+              "name": "bee"
+            }
+          ],
+          "explain": "Cows and rabbits live on land, sharks and fish in water, and birds and bees fly."
+        }
+      ]
+    },
+    {
+      "id": "animal-homes-03",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Homes around the world",
+      "intro": {
+        "say": "Animals live in many places: jungles, deserts, caves, burrows and icy lands. Let's explore!",
+        "icons": [
+          "🐒",
+          "🐪",
+          "🐻‍❄️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Monkeys swing in the jungle. Camels walk across the hot, sandy desert.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐒",
+              "🌴",
+              "🐪",
+              "🏜️"
+            ]
+          },
+          "caption": "Jungle · Desert"
+        },
+        {
+          "mode": "show",
+          "say": "Rabbits dig burrows under the ground. Bears sleep in caves. Polar bears live in the icy Arctic.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐇",
+              "🕳️",
+              "🐻",
+              "🐻‍❄️",
+              "❄️"
+            ]
+          },
+          "caption": "Burrow · Cave · Arctic"
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does a camel live?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐪"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "❄️",
+              "label": "Arctic",
+              "why": "The Arctic is far too cold for a camel."
+            },
+            {
+              "emoji": "🏜️",
+              "label": "Desert"
+            },
+            {
+              "emoji": "🌊",
+              "label": "Sea",
+              "why": "Camels can't swim in the sea."
+            }
+          ],
+          "answer": 1,
+          "explain": "Camels live in the hot, dry desert."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does a monkey live?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐒"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🌴",
+              "label": "Jungle"
+            },
+            {
+              "emoji": "💧",
+              "label": "Pond",
+              "why": "Ponds are for frogs and ducks."
+            },
+            {
+              "emoji": "🐝",
+              "label": "Hive",
+              "why": "Hives are for bees."
+            }
+          ],
+          "answer": 0,
+          "explain": "Monkeys climb and swing in jungle trees."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal lives in the icy Arctic?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "❄️",
+              "🧊"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🦁",
+              "label": "Lion",
+              "why": "Lions live where it is warm."
+            },
+            {
+              "emoji": "🐒",
+              "label": "Monkey",
+              "why": "Monkeys like warm jungles."
+            },
+            {
+              "emoji": "🐻‍❄️",
+              "label": "Polar bear"
+            }
+          ],
+          "answer": 2,
+          "explain": "Polar bears live in the cold Arctic."
+        },
+        {
+          "mode": "choice",
+          "ask": "A rabbit digs a hole under the ground to live in. What is it called?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐇"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🥚",
+              "label": "Nest",
+              "why": "Nests are usually up in trees."
+            },
+            {
+              "emoji": "🕳️",
+              "label": "Burrow"
+            },
+            {
+              "emoji": "🐝",
+              "label": "Hive",
+              "why": "A hive is a bee home."
+            }
+          ],
+          "answer": 1,
+          "explain": "A rabbit's home under the ground is a burrow."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where might a bear sleep all winter?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐻"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "Pond",
+              "why": "A bear would get wet in a pond!"
+            },
+            {
+              "emoji": "🥚",
+              "label": "Nest",
+              "why": "A nest is too small for a bear."
+            },
+            {
+              "emoji": "🕳️",
+              "label": "Cave"
+            }
+          ],
+          "answer": 2,
+          "explain": "Bears often sleep through the winter in a cave or den."
+        }
+      ]
+    },
+    {
+      "id": "animal-homes-04",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Made for their home",
+      "intro": {
+        "say": "Animals have special body parts that help them live in their homes. Let's find out why!",
+        "icons": [
+          "🐪",
+          "🐻‍❄️",
+          "🐟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A camel stores fat in its hump. It can live off that fat when food is hard to find in the desert.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐪",
+              "🏜️"
+            ]
+          },
+          "caption": "Hump stores fat"
+        },
+        {
+          "mode": "show",
+          "say": "A polar bear has thick fur and a layer of fat. They keep it warm in the freezing Arctic.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐻‍❄️",
+              "❄️"
+            ]
+          },
+          "caption": "Thick fur keeps warm"
+        },
+        {
+          "mode": "show",
+          "say": "A fish has gills to breathe underwater and fins to swim.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟",
+              "🌊"
+            ]
+          },
+          "caption": "Gills and fins"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why does a polar bear have thick fur?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐻‍❄️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🧣",
+              "label": "To keep warm"
+            },
+            {
+              "emoji": "🏊",
+              "label": "To swim fast",
+              "why": "Thick fur doesn't make it faster."
+            },
+            {
+              "emoji": "✨",
+              "label": "To look pretty",
+              "why": "Fur helps it survive, not just look nice."
+            }
+          ],
+          "answer": 0,
+          "explain": "Thick fur keeps the polar bear warm in the icy cold."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a camel store in its hump?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐪"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "Water",
+              "why": "Many people think so, but the hump holds fat."
+            },
+            {
+              "emoji": "🍖",
+              "label": "Fat"
+            },
+            {
+              "emoji": "🏜️",
+              "label": "Sand",
+              "why": "There is no sand in a camel's hump!"
+            }
+          ],
+          "answer": 1,
+          "explain": "A camel's hump stores fat, which helps it go a long time without food."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why can a fish live underwater, but a cat can't?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟",
+              "🐱"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🐻",
+              "label": "Fish have fur",
+              "why": "Fish don't have fur."
+            },
+            {
+              "emoji": "🤏",
+              "label": "Fish are small",
+              "why": "Big fish live underwater too."
+            },
+            {
+              "emoji": "🐟",
+              "label": "Fish have gills"
+            }
+          ],
+          "answer": 2,
+          "explain": "Gills let fish take air out of the water to breathe."
+        },
+        {
+          "mode": "choice",
+          "ask": "A duck has webbed feet. How do they help it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦆"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🌊",
+              "label": "To swim"
+            },
+            {
+              "emoji": "🌳",
+              "label": "To climb trees",
+              "why": "Webbed feet aren't good for climbing."
+            },
+            {
+              "emoji": "🕳️",
+              "label": "To dig holes",
+              "why": "Ducks don't dig burrows."
+            }
+          ],
+          "answer": 0,
+          "explain": "Webbed feet push through water like paddles, so ducks swim well."
+        },
+        {
+          "mode": "choice",
+          "ask": "A monkey has a long tail and grabby hands. Which home suits it best?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐒"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🏜️",
+              "label": "Desert",
+              "why": "There are few trees to climb in a desert."
+            },
+            {
+              "emoji": "🌴",
+              "label": "Jungle"
+            },
+            {
+              "emoji": "❄️",
+              "label": "Arctic",
+              "why": "The Arctic has no trees to climb."
+            }
+          ],
+          "answer": 1,
+          "explain": "Grabby hands and a tail help monkeys climb jungle trees."
+        }
+      ]
+    }
+  ]
+}

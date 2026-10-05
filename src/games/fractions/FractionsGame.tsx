@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 import Animated, { FadeIn, ZoomIn } from 'react-native-reanimated';
 
 import type { GameProps } from '../../engine/types';
@@ -10,6 +10,7 @@ import { FractionLabel } from './parts/FractionLabel';
 import { CutBoard, Pie } from './parts/Pie';
 import type { FractionsRound } from './schema';
 import { fractionWords } from './words';
+import { Text } from '../../kit/Text';
 
 type SplitRound = Extract<FractionsRound, { mode: 'split' }>;
 type PickRound = Extract<FractionsRound, { mode: 'pick' }>;

@@ -1,0 +1,799 @@
+{
+  "topicId": "living",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "living-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Is it alive?",
+      "intro": {
+        "say": "Some things are alive and some are not. Let's find out how to tell!",
+        "icons": [
+          "🐶",
+          "🌱",
+          "🪨"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Living things grow, eat and drink, breathe, and have babies. A puppy does all of these!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶",
+              "🍖",
+              "💧",
+              "🐕"
+            ]
+          },
+          "caption": "Alive: grows, eats, breathes"
+        },
+        {
+          "mode": "show",
+          "say": "A rock does not grow, eat or breathe. It is not alive.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪨"
+            ],
+            "size": "lg"
+          },
+          "caption": "Not alive"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is alive?",
+          "options": [
+            {
+              "emoji": "🪨",
+              "label": "Rock",
+              "why": "A rock never grows or eats."
+            },
+            {
+              "emoji": "🐱",
+              "label": "Cat"
+            },
+            {
+              "emoji": "⚽",
+              "label": "Ball",
+              "why": "A ball cannot eat or breathe."
+            }
+          ],
+          "answer": 1,
+          "explain": "A cat eats, breathes and grows, so it is alive."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is NOT alive?",
+          "options": [
+            {
+              "emoji": "🐟",
+              "label": "Fish",
+              "why": "A fish eats and grows, so it is alive."
+            },
+            {
+              "emoji": "🐦",
+              "label": "Bird",
+              "why": "A bird eats and grows, so it is alive."
+            },
+            {
+              "emoji": "🧸",
+              "label": "Teddy"
+            }
+          ],
+          "answer": 2,
+          "explain": "A teddy bear cannot eat, breathe or grow. It is a toy."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort them. Is it living or not living?",
+          "bins": [
+            {
+              "label": "Living",
+              "emoji": "💚"
+            },
+            {
+              "label": "Not living",
+              "emoji": "🪨"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐶",
+              "bin": 0,
+              "name": "dog"
+            },
+            {
+              "emoji": "🪨",
+              "bin": 1,
+              "name": "rock"
+            },
+            {
+              "emoji": "🐟",
+              "bin": 0,
+              "name": "fish"
+            },
+            {
+              "emoji": "🚗",
+              "bin": 1,
+              "name": "car"
+            },
+            {
+              "emoji": "🐝",
+              "bin": 0,
+              "name": "bee"
+            },
+            {
+              "emoji": "🧸",
+              "bin": 1,
+              "name": "teddy bear"
+            }
+          ],
+          "explain": "Animals are living. Toys, cars and rocks are not living."
+        },
+        {
+          "mode": "choice",
+          "ask": "A kitten gets bigger every day. What is it doing?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐱",
+              "🐈"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "📏",
+              "label": "Growing"
+            },
+            {
+              "emoji": "😴",
+              "label": "Sleeping",
+              "why": "It may sleep too, but getting bigger is growing."
+            },
+            {
+              "emoji": "🧊",
+              "label": "Melting",
+              "why": "Kittens don't melt!"
+            }
+          ],
+          "answer": 0,
+          "explain": "Getting bigger is growing, and growing is a sign of life."
+        },
+        {
+          "mode": "choice",
+          "ask": "What do all living things need?",
+          "options": [
+            {
+              "emoji": "🧸",
+              "label": "Toys",
+              "why": "Toys are fun, but we can live without them."
+            },
+            {
+              "emoji": "📱",
+              "label": "Phones",
+              "why": "Animals and plants live without phones."
+            },
+            {
+              "emoji": "💧",
+              "label": "Water"
+            }
+          ],
+          "answer": 2,
+          "explain": "Every living thing needs water to stay alive."
+        }
+      ]
+    },
+    {
+      "id": "living-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Plants are alive too",
+      "intro": {
+        "say": "Plants don't walk or talk, but they are alive! Let's see why.",
+        "icons": [
+          "🌱",
+          "🌻",
+          "🌳"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A tiny seed grows into a big plant. Growing is a sign of life!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌰",
+              "🌱",
+              "🌿",
+              "🌻"
+            ]
+          },
+          "caption": "Seed → plant"
+        },
+        {
+          "mode": "show",
+          "say": "Plants drink water through their roots and make food using sunlight. They make new seeds too.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌻",
+              "💧",
+              "☀️"
+            ]
+          },
+          "caption": "Plants drink, make food, make seeds"
+        },
+        {
+          "mode": "choice",
+          "ask": "Is a tree alive?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌳"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Yes"
+            },
+            {
+              "emoji": "❌",
+              "label": "No",
+              "why": "A tree grows and drinks water, so it is alive."
+            }
+          ],
+          "answer": 0,
+          "explain": "A tree grows, drinks water and makes seeds. It is alive!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is alive?",
+          "options": [
+            {
+              "emoji": "🌷",
+              "label": "Flower"
+            },
+            {
+              "emoji": "🪑",
+              "label": "Chair",
+              "why": "A chair is made from wood, but it no longer grows."
+            },
+            {
+              "emoji": "🥤",
+              "label": "Cup",
+              "why": "A cup never grows."
+            }
+          ],
+          "answer": 0,
+          "explain": "A flower grows and needs water and sunlight, so it is alive."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort them into living and not living.",
+          "bins": [
+            {
+              "label": "Living",
+              "emoji": "💚"
+            },
+            {
+              "label": "Not living",
+              "emoji": "🪨"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🌵",
+              "bin": 0,
+              "name": "cactus"
+            },
+            {
+              "emoji": "🍄",
+              "bin": 0,
+              "name": "mushroom"
+            },
+            {
+              "emoji": "🌳",
+              "bin": 0,
+              "name": "tree"
+            },
+            {
+              "emoji": "⚽",
+              "bin": 1,
+              "name": "ball"
+            },
+            {
+              "emoji": "✏️",
+              "bin": 1,
+              "name": "pencil"
+            },
+            {
+              "emoji": "🪨",
+              "bin": 1,
+              "name": "rock"
+            },
+            {
+              "emoji": "🐛",
+              "bin": 0,
+              "name": "caterpillar"
+            }
+          ],
+          "explain": "Plants, mushrooms and animals are living. Balls, pencils and rocks are not."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a plant need to grow?",
+          "options": [
+            {
+              "emoji": "☀️",
+              "label": "Water and sun"
+            },
+            {
+              "emoji": "🍬",
+              "label": "Candy",
+              "why": "Plants don't eat candy."
+            },
+            {
+              "emoji": "🎵",
+              "label": "Music",
+              "why": "Plants grow without music."
+            }
+          ],
+          "answer": 0,
+          "explain": "Plants need water and sunlight to grow."
+        },
+        {
+          "mode": "choice",
+          "ask": "A plant gets no water for many days. What happens?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥀"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🌳",
+              "label": "It grows big",
+              "why": "Without water a plant cannot grow."
+            },
+            {
+              "emoji": "🥀",
+              "label": "It wilts"
+            },
+            {
+              "emoji": "🪨",
+              "label": "It turns to rock",
+              "why": "Plants can't turn into rocks."
+            }
+          ],
+          "answer": 1,
+          "explain": "Plants need water. Without it they droop and can die."
+        }
+      ]
+    },
+    {
+      "id": "living-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Animal groups",
+      "intro": {
+        "say": "Scientists put animals into groups. Let's learn about mammals, birds, fish and insects!",
+        "icons": [
+          "🐶",
+          "🐦",
+          "🐟",
+          "🐝"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Mammals have hair or fur and feed their babies milk. Dogs, cows and even people are mammals!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶",
+              "🐄",
+              "🐘",
+              "🧒"
+            ]
+          },
+          "caption": "Mammals: fur, milk"
+        },
+        {
+          "mode": "show",
+          "say": "Birds have feathers and lay eggs. Fish live in water and breathe with gills.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦",
+              "🥚",
+              "🐟",
+              "🐠"
+            ]
+          },
+          "caption": "Birds: feathers · Fish: gills"
+        },
+        {
+          "mode": "show",
+          "say": "Insects have six legs and three body parts. Bees, ants and beetles are insects.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐝",
+              "🐜",
+              "🐞"
+            ]
+          },
+          "caption": "Insects: 6 legs"
+        },
+        {
+          "mode": "sort",
+          "ask": "Put each animal in its group.",
+          "bins": [
+            {
+              "label": "Mammal",
+              "emoji": "🐄"
+            },
+            {
+              "label": "Bird",
+              "emoji": "🪶"
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐶",
+              "bin": 0,
+              "name": "dog"
+            },
+            {
+              "emoji": "🦉",
+              "bin": 1,
+              "name": "owl"
+            },
+            {
+              "emoji": "🐠",
+              "bin": 2,
+              "name": "tropical fish"
+            },
+            {
+              "emoji": "🐘",
+              "bin": 0,
+              "name": "elephant"
+            },
+            {
+              "emoji": "🐧",
+              "bin": 1,
+              "name": "penguin"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 2,
+              "name": "shark"
+            },
+            {
+              "emoji": "🐭",
+              "bin": 0,
+              "name": "mouse"
+            }
+          ],
+          "explain": "Mammals have fur, birds have feathers, and fish have gills."
+        },
+        {
+          "mode": "choice",
+          "ask": "A whale lives in the sea, but it breathes air and feeds its baby milk. What is it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐋"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐟",
+              "label": "Fish",
+              "why": "A whale breathes air with lungs, not gills."
+            },
+            {
+              "emoji": "🐄",
+              "label": "Mammal"
+            },
+            {
+              "emoji": "🐦",
+              "label": "Bird",
+              "why": "A whale has no feathers."
+            }
+          ],
+          "answer": 1,
+          "explain": "A whale breathes air and feeds its baby milk, so it is a mammal."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many legs does an insect have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐜",
+              "🐝",
+              "🐞"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🐶",
+              "label": "4",
+              "why": "Four legs is a dog. Insects have more."
+            },
+            {
+              "emoji": "🕷️",
+              "label": "8",
+              "why": "Eight legs is a spider, which is not an insect."
+            },
+            {
+              "emoji": "🐜",
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "All insects have six legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "A penguin cannot fly. Why is it still a bird?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐧"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🌊",
+              "label": "It swims",
+              "why": "Fish swim too, so that's not it."
+            },
+            {
+              "emoji": "🪶",
+              "label": "It has feathers"
+            },
+            {
+              "emoji": "🦓",
+              "label": "It is black and white",
+              "why": "Zebras are black and white too!"
+            }
+          ],
+          "answer": 1,
+          "explain": "Penguins have feathers and lay eggs, so they are birds."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is an insect?",
+          "options": [
+            {
+              "emoji": "🕷️",
+              "label": "Spider",
+              "why": "A spider has eight legs, so it is not an insect."
+            },
+            {
+              "emoji": "🐌",
+              "label": "Snail",
+              "why": "A snail has no legs at all."
+            },
+            {
+              "emoji": "🐜",
+              "label": "Ant"
+            }
+          ],
+          "answer": 2,
+          "explain": "An ant has six legs and three body parts, so it is an insect."
+        }
+      ]
+    },
+    {
+      "id": "living-04",
+      "order": 2,
+      "difficulty": "complex",
+      "name": "Babies grow up",
+      "intro": {
+        "say": "Living things have babies, and babies grow and change. Let's see how!",
+        "icons": [
+          "🥚",
+          "🐣",
+          "🐔"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A butterfly lays an egg. A caterpillar hatches, makes a chrysalis, then comes out as a butterfly!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥚",
+              "🐛",
+              "🦋"
+            ]
+          },
+          "caption": "Egg → caterpillar → butterfly"
+        },
+        {
+          "mode": "show",
+          "say": "A frog starts as an egg, becomes a tadpole that swims, then grows legs and becomes a frog.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥚",
+              "🐸"
+            ]
+          },
+          "caption": "Egg → tadpole → frog"
+        },
+        {
+          "mode": "order",
+          "ask": "Put the hen's life in order, from first to last.",
+          "items": [
+            {
+              "emoji": "🥚",
+              "label": "Egg"
+            },
+            {
+              "emoji": "🐣",
+              "label": "Hatching"
+            },
+            {
+              "emoji": "🐥",
+              "label": "Chick"
+            },
+            {
+              "emoji": "🐔",
+              "label": "Hen"
+            }
+          ],
+          "explain": "An egg hatches into a chick, and the chick grows into a hen."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the butterfly's life in order.",
+          "items": [
+            {
+              "emoji": "🥚",
+              "label": "Egg"
+            },
+            {
+              "emoji": "🐛",
+              "label": "Caterpillar"
+            },
+            {
+              "emoji": "🦋",
+              "label": "Butterfly"
+            }
+          ],
+          "explain": "Egg, then caterpillar, then butterfly!"
+        },
+        {
+          "mode": "choice",
+          "ask": "A puppy grows up. What does it become?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐈",
+              "label": "Cat",
+              "why": "A puppy can only grow into a dog."
+            },
+            {
+              "emoji": "🐕",
+              "label": "Dog"
+            },
+            {
+              "emoji": "🐴",
+              "label": "Horse",
+              "why": "A puppy can only grow into a dog."
+            }
+          ],
+          "answer": 1,
+          "explain": "Babies grow up to be like their parents. A puppy becomes a dog."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a caterpillar turn into?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐛"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐝",
+              "label": "Bee",
+              "why": "Bees start as larvae, not caterpillars."
+            },
+            {
+              "emoji": "🕷️",
+              "label": "Spider",
+              "why": "Spiders hatch as tiny spiders."
+            },
+            {
+              "emoji": "🦋",
+              "label": "Butterfly"
+            }
+          ],
+          "answer": 2,
+          "explain": "A caterpillar changes into a butterfly."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the plant's life in order.",
+          "items": [
+            {
+              "emoji": "🌰",
+              "label": "Seed"
+            },
+            {
+              "emoji": "🌱",
+              "label": "Sprout"
+            },
+            {
+              "emoji": "🌿",
+              "label": "Plant"
+            },
+            {
+              "emoji": "🌻",
+              "label": "Flower"
+            }
+          ],
+          "explain": "A seed sprouts, grows into a plant, then makes a flower."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is a baby frog called?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐸"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "Tadpole"
+            },
+            {
+              "emoji": "🐥",
+              "label": "Chick",
+              "why": "A chick is a baby bird."
+            },
+            {
+              "emoji": "🐱",
+              "label": "Kitten",
+              "why": "A kitten is a baby cat."
+            }
+          ],
+          "answer": 0,
+          "explain": "A baby frog is a tadpole. It lives in water and swims."
+        }
+      ]
+    }
+  ]
+}

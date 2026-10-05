@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 import Animated, { ZoomIn } from 'react-native-reanimated';
 
 import { glyphName, type GlyphId } from '../../assets-map';
@@ -12,6 +12,7 @@ import { playSound } from '../../services/sound';
 import { colors, fonts, radii, sizes, spacing } from '../../theme';
 import { TenFrame } from './parts/TenFrame';
 import type { CountingRound } from './schema';
+import { Text } from '../../kit/Text';
 
 type Props = GameProps<CountingRound>;
 type CollectRound = Extract<CountingRound, { mode: 'collect' }>;

@@ -1,0 +1,753 @@
+{
+  "topicId": "shapes",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "shapes-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Circle, square, triangle",
+      "intro": {
+        "say": "Shapes are everywhere! Let's meet the circle, the square and the triangle.",
+        "icons": [
+          "🔴",
+          "🟦",
+          "🔺"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This is a circle. It is round all the way around, like a ball.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "circle"
+              }
+            ]
+          },
+          "caption": "circle"
+        },
+        {
+          "mode": "show",
+          "say": "This is a square. It has four sides, all the same length.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "square"
+              }
+            ]
+          },
+          "caption": "square"
+        },
+        {
+          "mode": "show",
+          "say": "This is a triangle. It has three sides and three pointy corners.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle"
+              }
+            ]
+          },
+          "caption": "triangle"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the circle?",
+          "options": [
+            {
+              "shape": "square",
+              "why": "That is a square. A circle is round."
+            },
+            {
+              "shape": "triangle",
+              "why": "That is a triangle. A circle has no corners."
+            },
+            {
+              "shape": "circle"
+            }
+          ],
+          "answer": 2,
+          "explain": "A circle is round, with no corners at all."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the triangle?",
+          "options": [
+            {
+              "shape": "triangle"
+            },
+            {
+              "shape": "circle",
+              "why": "That is a circle. A triangle has three corners."
+            },
+            {
+              "shape": "square",
+              "why": "That is a square. It has four corners."
+            }
+          ],
+          "answer": 0,
+          "explain": "A triangle has three sides and three corners."
+        },
+        {
+          "mode": "choice",
+          "ask": "What shape is this?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "square"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "circle",
+              "why": "A circle is round. This one has corners."
+            },
+            {
+              "label": "square"
+            },
+            {
+              "label": "triangle",
+              "why": "Count the sides. There are four."
+            }
+          ],
+          "answer": 1,
+          "explain": "It has four sides the same length, so it is a square."
+        },
+        {
+          "mode": "choice",
+          "ask": "A pizza slice looks like which shape?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍕"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "shape": "circle",
+              "why": "The whole pizza is round, but one slice is pointy."
+            },
+            {
+              "shape": "square",
+              "why": "A square has four corners. The slice has three."
+            },
+            {
+              "shape": "triangle"
+            }
+          ],
+          "answer": 2,
+          "explain": "A pizza slice has three sides and three corners, like a triangle."
+        },
+        {
+          "mode": "choice",
+          "ask": "A ball is shaped like which one?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "shape": "circle"
+            },
+            {
+              "shape": "triangle",
+              "why": "A ball has no pointy corners."
+            },
+            {
+              "shape": "square",
+              "why": "A ball is round, with no corners."
+            }
+          ],
+          "answer": 0,
+          "explain": "A ball is round, just like a circle."
+        }
+      ]
+    },
+    {
+      "id": "shapes-02",
+      "order": 2,
+      "difficulty": "simple",
+      "name": "Shape hunt",
+      "intro": {
+        "say": "Let's find shapes hiding in things all around us!",
+        "icons": [
+          "🔍",
+          "🔴",
+          "🔺"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Look! A clock is round like a circle. A pizza slice is like a triangle.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🕒",
+              "🍕"
+            ]
+          },
+          "caption": "circle  triangle"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape is the same as this one?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle"
+              }
+            ]
+          },
+          "options": [
+            {
+              "shape": "circle",
+              "why": "This one is round. Look for three corners."
+            },
+            {
+              "shape": "square",
+              "why": "This has four corners. Look for three."
+            },
+            {
+              "shape": "triangle"
+            }
+          ],
+          "answer": 2,
+          "explain": "Both shapes have three sides and three corners."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape is round?",
+          "options": [
+            {
+              "shape": "square",
+              "why": "A square has straight sides and corners."
+            },
+            {
+              "shape": "circle"
+            },
+            {
+              "shape": "triangle",
+              "why": "A triangle has pointy corners."
+            }
+          ],
+          "answer": 1,
+          "explain": "A circle is round with no corners."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many circles can you see?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "circle"
+              },
+              {
+                "shape": "square"
+              },
+              {
+                "shape": "circle"
+              },
+              {
+                "shape": "triangle"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "Look again, there is more than one."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "3",
+              "why": "Count only the round ones."
+            }
+          ],
+          "answer": 1,
+          "explain": "There are two round circles."
+        },
+        {
+          "mode": "sort",
+          "ask": "Put circles in one home and squares in the other.",
+          "bins": [
+            {
+              "label": "circle",
+              "emoji": "🔴"
+            },
+            {
+              "label": "square",
+              "emoji": "🟦"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "⚽",
+              "bin": 0,
+              "name": "ball"
+            },
+            {
+              "emoji": "🍪",
+              "bin": 0,
+              "name": "cookie"
+            },
+            {
+              "emoji": "🟨",
+              "bin": 1,
+              "name": "yellow square"
+            },
+            {
+              "emoji": "🟩",
+              "bin": 1,
+              "name": "green square"
+            },
+            {
+              "emoji": "🔵",
+              "bin": 0,
+              "name": "blue circle"
+            }
+          ],
+          "explain": "Round things go with circles, and things with four equal sides go with squares."
+        }
+      ]
+    },
+    {
+      "id": "shapes-03",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Sides and corners",
+      "intro": {
+        "say": "Shapes have sides and corners. Let's count them and meet some new shapes!",
+        "icons": [
+          "🟧",
+          "⭐",
+          "❤️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A side is a straight edge. A corner is where two sides meet. A rectangle has four sides and four corners.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "rectangle"
+              }
+            ]
+          },
+          "caption": "rectangle: 4 sides, 4 corners"
+        },
+        {
+          "mode": "show",
+          "say": "A rectangle is like a long square. An oval is like a stretched circle, like an egg.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "rectangle"
+              },
+              {
+                "shape": "oval"
+              }
+            ]
+          },
+          "caption": "rectangle  oval"
+        },
+        {
+          "mode": "show",
+          "say": "Some shapes are fun! Here is a star and a heart.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "star"
+              },
+              {
+                "shape": "heart"
+              }
+            ]
+          },
+          "caption": "star  heart"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many sides does a triangle have?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Let's count each straight edge again."
+            },
+            {
+              "label": "4",
+              "why": "That is a square's number. Count again."
+            },
+            {
+              "label": "3"
+            }
+          ],
+          "answer": 2,
+          "explain": "A triangle has three sides.",
+          "hint": "Touch each straight edge and count."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the oval?",
+          "options": [
+            {
+              "shape": "circle",
+              "why": "A circle is perfectly round. An oval is stretched."
+            },
+            {
+              "shape": "oval"
+            },
+            {
+              "shape": "rectangle",
+              "why": "A rectangle has corners. An oval does not."
+            }
+          ],
+          "answer": 1,
+          "explain": "An oval is round but stretched, like an egg."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many corners does a rectangle have?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "rectangle"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "3",
+              "why": "Count all the corners, one in each spot."
+            },
+            {
+              "label": "0",
+              "why": "A rectangle has pointy corners."
+            }
+          ],
+          "answer": 0,
+          "explain": "A rectangle has four corners."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape has no corners?",
+          "options": [
+            {
+              "shape": "square",
+              "why": "A square has four corners."
+            },
+            {
+              "shape": "triangle",
+              "why": "A triangle has three corners."
+            },
+            {
+              "shape": "star",
+              "why": "A star has lots of pointy corners."
+            },
+            {
+              "shape": "circle"
+            }
+          ],
+          "answer": 3,
+          "explain": "A circle is round all the way, so it has no corners."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the heart?",
+          "options": [
+            {
+              "shape": "star",
+              "why": "That is a star with five points."
+            },
+            {
+              "shape": "heart"
+            },
+            {
+              "shape": "oval",
+              "why": "That is an oval, like an egg."
+            }
+          ],
+          "answer": 1,
+          "explain": "A heart shape is how we draw love."
+        },
+        {
+          "mode": "choice",
+          "ask": "A door is shaped like which shape?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚪"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "shape": "circle",
+              "why": "A door has straight sides."
+            },
+            {
+              "shape": "triangle",
+              "why": "A door has four corners."
+            },
+            {
+              "shape": "rectangle"
+            }
+          ],
+          "answer": 2,
+          "explain": "A door has four sides and four corners and is long, like a rectangle."
+        }
+      ]
+    },
+    {
+      "id": "shapes-04",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Shape detectives",
+      "intro": {
+        "say": "Let's meet the pentagon, hexagon and diamond, and count sides like detectives!",
+        "icons": [
+          "🕵️",
+          "🐝",
+          "🔷"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A pentagon has five sides and five corners. A hexagon has six sides, like a honeycomb cell.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "pentagon"
+              },
+              {
+                "shape": "hexagon"
+              }
+            ]
+          },
+          "caption": "pentagon: 5   hexagon: 6"
+        },
+        {
+          "mode": "show",
+          "say": "A diamond has four sides, like a square standing on its corner.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "diamond"
+              }
+            ]
+          },
+          "caption": "diamond: 4 sides"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many sides does a hexagon have?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "hexagon"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "That is a pentagon. Count the edges again."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "8",
+              "why": "Count slowly, one edge at a time."
+            }
+          ],
+          "answer": 1,
+          "explain": "A hexagon has six sides.",
+          "hint": "Hexagon and six both have an x in them!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the pentagon?",
+          "options": [
+            {
+              "shape": "hexagon",
+              "why": "That shape has six sides. Look for five."
+            },
+            {
+              "shape": "square",
+              "why": "A square has four sides."
+            },
+            {
+              "shape": "pentagon"
+            }
+          ],
+          "answer": 2,
+          "explain": "A pentagon has five sides and five corners."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape has more corners?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle"
+              },
+              {
+                "shape": "pentagon"
+              }
+            ]
+          },
+          "options": [
+            {
+              "shape": "triangle",
+              "why": "A triangle has three corners. The other has five."
+            },
+            {
+              "shape": "pentagon"
+            }
+          ],
+          "answer": 1,
+          "explain": "A pentagon has five corners, and five is more than three."
+        },
+        {
+          "mode": "choice",
+          "ask": "A diamond and a square both have how many sides?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "diamond"
+              },
+              {
+                "shape": "square"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Count again, there is one more."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5",
+              "why": "That is a pentagon's number."
+            }
+          ],
+          "answer": 1,
+          "explain": "A diamond and a square each have four sides."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort them: straight sides or curvy?",
+          "bins": [
+            {
+              "label": "straight",
+              "emoji": "📐"
+            },
+            {
+              "label": "curvy",
+              "emoji": "🌀"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔺",
+              "bin": 0,
+              "name": "triangle"
+            },
+            {
+              "emoji": "🟦",
+              "bin": 0,
+              "name": "square"
+            },
+            {
+              "emoji": "🔷",
+              "bin": 0,
+              "name": "diamond"
+            },
+            {
+              "emoji": "⚽",
+              "bin": 1,
+              "name": "ball"
+            },
+            {
+              "emoji": "🥚",
+              "bin": 1,
+              "name": "egg"
+            },
+            {
+              "emoji": "🍩",
+              "bin": 1,
+              "name": "donut"
+            }
+          ],
+          "explain": "Squares, triangles and diamonds have straight sides. Balls, eggs and donuts are curvy."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the shapes in order, from fewest sides to most sides.",
+          "items": [
+            {
+              "shape": "triangle",
+              "label": "3"
+            },
+            {
+              "shape": "square",
+              "label": "4"
+            },
+            {
+              "shape": "pentagon",
+              "label": "5"
+            },
+            {
+              "shape": "hexagon",
+              "label": "6"
+            }
+          ],
+          "explain": "Triangle has three, square four, pentagon five and hexagon six.",
+          "hint": "Count the sides on each shape first."
+        }
+      ]
+    }
+  ]
+}

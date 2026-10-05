@@ -1,0 +1,496 @@
+{
+  "topicId": "subtraction",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "subtraction-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Taking away",
+      "intro": {
+        "say": "Taking away means some go away. We count how many are left.",
+        "icons": [
+          "🍪",
+          "➖",
+          "😋"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Four cookies. We eat one. Count what is left: one, two, three. Four take away one leaves three.",
+          "visual": {
+            "kind": "take",
+            "count": 4,
+            "remove": 1,
+            "emoji": "🍪"
+          },
+          "caption": "4 - 1 = 3"
+        },
+        {
+          "mode": "show",
+          "say": "Three birds. Two fly away. Only one bird is left!",
+          "visual": {
+            "kind": "take",
+            "count": 3,
+            "remove": 2,
+            "emoji": "🐦"
+          },
+          "caption": "3 - 2 = 1"
+        },
+        {
+          "mode": "choice",
+          "ask": "Three apples. One is taken away. How many are left?",
+          "visual": {
+            "kind": "take",
+            "count": 3,
+            "remove": 1,
+            "emoji": "🍎"
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "Count the apples without an X."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "3",
+              "why": "One apple went away."
+            }
+          ],
+          "answer": 1,
+          "explain": "Three take away one leaves two."
+        },
+        {
+          "mode": "choice",
+          "ask": "Five balloons. Two pop! How many are left?",
+          "visual": {
+            "kind": "take",
+            "count": 5,
+            "remove": 2,
+            "emoji": "🎈"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count only the balloons still here."
+            },
+            {
+              "label": "4",
+              "why": "Two balloons popped, not one."
+            },
+            {
+              "label": "3"
+            }
+          ],
+          "answer": 2,
+          "explain": "Five take away two leaves three."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two fish. Two swim away. How many are left?",
+          "visual": {
+            "kind": "take",
+            "count": 2,
+            "remove": 2,
+            "emoji": "🐟"
+          },
+          "options": [
+            {
+              "label": "0"
+            },
+            {
+              "label": "1",
+              "why": "Both fish swam away."
+            },
+            {
+              "label": "2",
+              "why": "The fish swam off!"
+            }
+          ],
+          "answer": 0,
+          "explain": "Two take away two leaves zero."
+        },
+        {
+          "mode": "choice",
+          "ask": "Four ducks. One waddles away. How many are left?",
+          "visual": {
+            "kind": "take",
+            "count": 4,
+            "remove": 1,
+            "emoji": "🦆"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Taking away makes fewer."
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "2",
+              "why": "Only one duck left."
+            }
+          ],
+          "answer": 1,
+          "explain": "Four take away one leaves three."
+        },
+        {
+          "mode": "choice",
+          "ask": "Five cupcakes. We eat four. How many are left?",
+          "visual": {
+            "kind": "take",
+            "count": 5,
+            "remove": 4,
+            "emoji": "🧁"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count the cupcakes without an X."
+            },
+            {
+              "label": "3",
+              "why": "Four were eaten."
+            },
+            {
+              "label": "1"
+            }
+          ],
+          "answer": 2,
+          "explain": "Five take away four leaves one."
+        }
+      ]
+    },
+    {
+      "id": "subtraction-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Take away to 10",
+      "intro": {
+        "say": "Let's take away from bigger groups and write minus sentences.",
+        "icons": [
+          "🔟",
+          "➖",
+          "✏️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Eight cars. Three drive away. Count back: seven, six, five. Eight minus three equals five.",
+          "visual": {
+            "kind": "take",
+            "count": 8,
+            "remove": 3,
+            "emoji": "🚗"
+          },
+          "caption": "8 - 3 = 5"
+        },
+        {
+          "mode": "show",
+          "say": "Taking away nothing? Six minus zero is still six!",
+          "visual": {
+            "kind": "take",
+            "count": 6,
+            "remove": 0,
+            "emoji": "🐢"
+          },
+          "caption": "6 - 0 = 6"
+        },
+        {
+          "mode": "choice",
+          "ask": "Seven minus two equals what?",
+          "visual": {
+            "kind": "take",
+            "count": 7,
+            "remove": 2,
+            "emoji": "🍓"
+          },
+          "options": [
+            {
+              "label": "5"
+            },
+            {
+              "label": "6",
+              "why": "Two went away, so count back two."
+            },
+            {
+              "label": "9",
+              "why": "Minus makes fewer, not more."
+            }
+          ],
+          "answer": 0,
+          "explain": "Seven, count back six, five. Five are left."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ten minus four equals what?",
+          "visual": {
+            "kind": "take",
+            "count": 10,
+            "remove": 4,
+            "emoji": "⭐"
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "Count back four: nine, eight, seven, six."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "5",
+              "why": "Count back just four."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten minus four leaves six."
+        },
+        {
+          "mode": "choice",
+          "ask": "Nine minus five equals what?",
+          "visual": {
+            "kind": "text",
+            "text": "9 - 5 = ?"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Count back again slowly."
+            },
+            {
+              "label": "5",
+              "why": "Five went away."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "Nine minus five is four."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number sentence matches the picture?",
+          "visual": {
+            "kind": "take",
+            "count": 6,
+            "remove": 2,
+            "emoji": "🐸"
+          },
+          "options": [
+            {
+              "label": "6 - 2 = 4"
+            },
+            {
+              "label": "6 - 3 = 3",
+              "why": "Count the frogs with an X again."
+            },
+            {
+              "label": "6 + 2 = 8",
+              "why": "Frogs hopped away, so we take away."
+            }
+          ],
+          "answer": 0,
+          "explain": "Six frogs, two hop away, four are left."
+        },
+        {
+          "mode": "choice",
+          "ask": "Eight minus eight equals what?",
+          "visual": {
+            "kind": "text",
+            "text": "8 - 8 = ?"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "All of them were taken away."
+            },
+            {
+              "label": "0"
+            },
+            {
+              "label": "1",
+              "why": "Nothing is left."
+            }
+          ],
+          "answer": 1,
+          "explain": "If you take away all, zero are left."
+        }
+      ]
+    },
+    {
+      "id": "subtraction-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Stories and missing numbers",
+      "intro": {
+        "say": "Let's solve take away stories and find missing numbers up to twenty.",
+        "icons": [
+          "🧠",
+          "➖",
+          "❓"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Fourteen minus four is ten. Then minus two more is eight. So fourteen minus six is eight!",
+          "visual": {
+            "kind": "text",
+            "text": "14 - 6 = 8"
+          },
+          "caption": "14 - 4 - 2 = 8"
+        },
+        {
+          "mode": "show",
+          "say": "A puzzle! Nine minus what equals five? From nine, count back to five: four steps. So the missing number is four.",
+          "visual": {
+            "kind": "text",
+            "text": "9 - ? = 5"
+          },
+          "caption": "9 - 4 = 5"
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam has 12 grapes. He eats 5. How many grapes are left?",
+          "visual": {
+            "kind": "take",
+            "count": 12,
+            "remove": 5,
+            "emoji": "🍇"
+          },
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "8",
+              "why": "Count back five, not four."
+            },
+            {
+              "label": "17",
+              "why": "Eating makes fewer grapes."
+            }
+          ],
+          "answer": 0,
+          "explain": "Twelve minus five leaves seven."
+        },
+        {
+          "mode": "choice",
+          "ask": "Fifteen minus seven equals what?",
+          "visual": {
+            "kind": "text",
+            "text": "15 - 7 = ?"
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "Count back one more."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "7",
+              "why": "Try fifteen minus five, then minus two more."
+            }
+          ],
+          "answer": 1,
+          "explain": "Fifteen minus five is ten, minus two more is eight."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ten minus what equals three?",
+          "visual": {
+            "kind": "text",
+            "text": "10 - ? = 3"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Ten minus six is four."
+            },
+            {
+              "label": "8",
+              "why": "Ten minus eight is two."
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "answer": 2,
+          "explain": "Ten minus seven leaves three.",
+          "hint": "Count back from ten until you reach three."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 20 kids in the park. 10 go home. How many are still playing?",
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "12",
+              "why": "Take away ten from twenty."
+            },
+            {
+              "label": "30",
+              "why": "Going home makes fewer kids."
+            }
+          ],
+          "answer": 0,
+          "explain": "Twenty minus ten is ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "What minus four equals nine?",
+          "visual": {
+            "kind": "text",
+            "text": "? - 4 = 9"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Five minus four is only one."
+            },
+            {
+              "label": "12",
+              "why": "Twelve minus four is eight."
+            },
+            {
+              "label": "13"
+            }
+          ],
+          "answer": 2,
+          "explain": "Thirteen minus four is nine. Nine plus four is thirteen!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Lily had 16 balloons. 9 floated away. How many does she have now?",
+          "options": [
+            {
+              "label": "6",
+              "why": "Sixteen minus six is ten."
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "8",
+              "why": "Count back nine steps."
+            }
+          ],
+          "answer": 1,
+          "explain": "Sixteen minus nine leaves seven."
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { colors } from '../../../theme';
 import type { Fraction } from '../schema';
 import { fractionWords } from '../words';
+import { Text } from '../../../kit/Text';
 
 /** A written fraction, numerator over denominator. */
 export function FractionLabel({ fraction, size = 48 }: { fraction: Fraction; size?: number }) {

@@ -1,0 +1,522 @@
+{
+  "topicId": "plants",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "plants-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "What plants need",
+      "intro": {
+        "say": "Plants are alive, just like you! Let's find out what a plant needs to grow.",
+        "icons": [
+          "🌱",
+          "💧",
+          "☀️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A plant needs four things: water to drink, sunlight, air, and soil for its roots.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💧",
+              "☀️",
+              "💨",
+              "🟫"
+            ]
+          },
+          "caption": "water · sun · air · soil"
+        },
+        {
+          "mode": "show",
+          "say": "Plants drink water through their roots. Without water, a plant gets thirsty and droops.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌱",
+              "💧",
+              "💧"
+            ]
+          },
+          "caption": "Plants drink water"
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a plant drink?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌱"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🥛",
+              "label": "milk",
+              "why": "Milk is for people. Plants drink water."
+            },
+            {
+              "emoji": "💧",
+              "label": "water"
+            },
+            {
+              "emoji": "🧃",
+              "label": "juice",
+              "why": "Plants don't drink juice. They drink water."
+            }
+          ],
+          "answer": 1,
+          "explain": "Plants drink water through their roots."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where should we put a plant so it can grow?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪴",
+              "❓"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "📦",
+              "label": "dark box",
+              "why": "A box is too dark. Plants need light."
+            },
+            {
+              "emoji": "🧊",
+              "label": "cold freezer",
+              "why": "A freezer is too cold for a plant."
+            },
+            {
+              "emoji": "🪟",
+              "label": "sunny window"
+            }
+          ],
+          "answer": 2,
+          "explain": "Plants need sunlight to grow, so a sunny window is a great spot."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one helps a plant grow?",
+          "options": [
+            {
+              "emoji": "☀️",
+              "label": "sunshine"
+            },
+            {
+              "emoji": "🪨",
+              "label": "rock",
+              "why": "A rock can't help a plant grow."
+            },
+            {
+              "emoji": "🧸",
+              "label": "toy",
+              "why": "Toys are fun, but plants need sunshine."
+            }
+          ],
+          "answer": 0,
+          "explain": "Sunshine gives plants the light they need."
+        },
+        {
+          "mode": "grow",
+          "ask": "Let's grow a sunflower! Tap the water and the sun to help it grow.",
+          "needs": {
+            "water": 1,
+            "sun": 1
+          },
+          "explain": "Water and sunshine helped your seed grow into a big sunflower!",
+          "hint": "Give it one drop of water and one sunshine each time."
+        },
+        {
+          "mode": "choice",
+          "ask": "What do roots grow in?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌱",
+              "⬇️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "💨",
+              "label": "air",
+              "why": "Roots grow down, under the ground."
+            },
+            {
+              "emoji": "🟫",
+              "label": "soil"
+            }
+          ],
+          "answer": 1,
+          "explain": "Roots grow down into the soil to hold the plant and find water."
+        }
+      ]
+    },
+    {
+      "id": "plants-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "From seed to flower",
+      "intro": {
+        "say": "Every plant has a life cycle. Let's watch a tiny seed grow into a plant with flowers!",
+        "icons": [
+          "🌰",
+          "🌱",
+          "🌻"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "First comes a seed. With water and warmth, a tiny sprout pops out of the seed.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌰",
+              "➡️",
+              "🌱"
+            ]
+          },
+          "caption": "seed → sprout"
+        },
+        {
+          "mode": "show",
+          "say": "The sprout grows into a plant with leaves. Then the plant makes flowers.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌱",
+              "➡️",
+              "🌿",
+              "➡️",
+              "🌼"
+            ]
+          },
+          "caption": "sprout → plant → flower"
+        },
+        {
+          "mode": "show",
+          "say": "The flower makes fruit with new seeds inside. The new seeds can grow new plants!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌼",
+              "➡️",
+              "🍎",
+              "➡️",
+              "🌰"
+            ]
+          },
+          "caption": "flower → fruit → seeds"
+        },
+        {
+          "mode": "order",
+          "ask": "Put the plant's life in order, starting with the seed.",
+          "items": [
+            {
+              "emoji": "🌰",
+              "label": "seed"
+            },
+            {
+              "emoji": "🌱",
+              "label": "sprout"
+            },
+            {
+              "emoji": "🌿",
+              "label": "plant"
+            },
+            {
+              "emoji": "🌼",
+              "label": "flower"
+            }
+          ],
+          "explain": "A seed grows into a sprout, then a plant, then a flower."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes after the sprout?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌰",
+              "🌱",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌰",
+              "label": "seed",
+              "why": "The seed came first, before the sprout."
+            },
+            {
+              "emoji": "🌿",
+              "label": "plant"
+            },
+            {
+              "emoji": "🍎",
+              "label": "fruit",
+              "why": "Fruit comes much later, after the flower."
+            }
+          ],
+          "answer": 1,
+          "explain": "The little sprout grows bigger and becomes a plant with leaves."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where are the new seeds made?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🍉",
+              "🍅"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🟫",
+              "label": "in the roots",
+              "why": "Roots drink water. Seeds come from the flower."
+            },
+            {
+              "emoji": "🌼",
+              "label": "in the flower and fruit"
+            }
+          ],
+          "answer": 1,
+          "explain": "Flowers make fruit, and the fruit holds the new seeds."
+        },
+        {
+          "mode": "grow",
+          "ask": "Grow a plant! Each time it needs two drops of water and one sunshine. Don't give too much water!",
+          "needs": {
+            "water": 2,
+            "sun": 1
+          },
+          "tooMuch": true,
+          "explain": "Just the right water and sun helped it grow. Too much water can make roots sick.",
+          "hint": "Tap water two times, then the sun one time."
+        },
+        {
+          "mode": "order",
+          "ask": "Fruit holds seeds, and seeds grow again! Put these in order, starting with the fruit.",
+          "items": [
+            {
+              "emoji": "🍎",
+              "label": "fruit"
+            },
+            {
+              "emoji": "🌰",
+              "label": "seed"
+            },
+            {
+              "emoji": "🌱",
+              "label": "sprout"
+            }
+          ],
+          "explain": "The fruit holds seeds, and a seed grows into a new sprout. The circle starts again!",
+          "hint": "Start with the fruit. What is inside it?"
+        }
+      ]
+    },
+    {
+      "id": "plants-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Parts of a plant",
+      "intro": {
+        "say": "Each part of a plant has a special job. Let's find out what roots, stems, leaves and flowers do.",
+        "icons": [
+          "🌿",
+          "🍃",
+          "🌸"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Roots grow underground. They drink water from the soil and hold the plant still in the ground.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🟫",
+              "💧",
+              "🌱"
+            ]
+          },
+          "caption": "Roots drink water"
+        },
+        {
+          "mode": "show",
+          "say": "The stem holds the plant up. It carries water from the roots up to the leaves, like a straw.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌿",
+              "🥤"
+            ]
+          },
+          "caption": "Stem carries water"
+        },
+        {
+          "mode": "show",
+          "say": "Leaves use sunlight, air and water to make food for the plant. Flowers make the seeds.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍃",
+              "☀️",
+              "🌸",
+              "🌰"
+            ]
+          },
+          "caption": "Leaves make food · flowers make seeds"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part of the plant makes food from sunlight?",
+          "options": [
+            {
+              "emoji": "🟫",
+              "label": "roots",
+              "why": "Roots drink water, but leaves make the food."
+            },
+            {
+              "emoji": "🌸",
+              "label": "flower",
+              "why": "Flowers make seeds. Leaves make the food."
+            },
+            {
+              "emoji": "🍃",
+              "label": "leaves"
+            }
+          ],
+          "answer": 2,
+          "explain": "Leaves catch sunlight and use it to make food for the plant."
+        },
+        {
+          "mode": "choice",
+          "ask": "A stem is like a straw. What does it carry up to the leaves?",
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "water"
+            },
+            {
+              "emoji": "🌰",
+              "label": "seeds",
+              "why": "Seeds are made by the flower, not carried by the stem."
+            },
+            {
+              "emoji": "🟫",
+              "label": "soil",
+              "why": "Soil stays in the ground. The stem carries water."
+            }
+          ],
+          "answer": 0,
+          "explain": "The stem carries water from the roots up to the leaves."
+        },
+        {
+          "mode": "sort",
+          "ask": "We eat different parts of plants! Is it a root, a leaf, or a seed?",
+          "bins": [
+            {
+              "label": "root",
+              "emoji": "🥕"
+            },
+            {
+              "label": "leaf",
+              "emoji": "🥬"
+            },
+            {
+              "label": "seed",
+              "emoji": "🌰"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🥕",
+              "bin": 0,
+              "name": "carrot"
+            },
+            {
+              "emoji": "🍠",
+              "bin": 0,
+              "name": "sweet potato"
+            },
+            {
+              "emoji": "🥬",
+              "bin": 1,
+              "name": "lettuce"
+            },
+            {
+              "emoji": "🌿",
+              "bin": 1,
+              "name": "herbs"
+            },
+            {
+              "emoji": "🌽",
+              "bin": 2,
+              "name": "corn"
+            },
+            {
+              "emoji": "🥜",
+              "bin": 2,
+              "name": "peanut"
+            }
+          ],
+          "explain": "Carrots are roots, lettuce is leaves, and corn and peanuts are seeds.",
+          "hint": "Roots grow under the ground. Leaves are green and flat."
+        },
+        {
+          "mode": "choice",
+          "ask": "A plant has no flowers. What can't it make?",
+          "options": [
+            {
+              "emoji": "🍃",
+              "label": "leaves",
+              "why": "Leaves grow from the stem, not from flowers."
+            },
+            {
+              "emoji": "🌰",
+              "label": "seeds"
+            },
+            {
+              "emoji": "🟫",
+              "label": "roots",
+              "why": "Roots grow from the seed, not from flowers."
+            }
+          ],
+          "answer": 1,
+          "explain": "Flowers make the seeds, so without flowers the plant can't make seeds."
+        },
+        {
+          "mode": "grow",
+          "ask": "Grow a pumpkin! Each stage needs two drops of water and two sunshines. Careful, not too much water!",
+          "needs": {
+            "water": 2,
+            "sun": 2
+          },
+          "stages": [
+            "🌰",
+            "🌱",
+            "🌿",
+            "🌼",
+            "🎃"
+          ],
+          "tooMuch": true,
+          "explain": "Your pumpkin plant grew, made a flower, and the flower became a pumpkin full of seeds!",
+          "hint": "Two waters and two suns each time."
+        }
+      ]
+    }
+  ]
+}

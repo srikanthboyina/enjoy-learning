@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import type { GlyphId } from '../../../assets-map';
 import { Glyph } from '../../../kit/Glyph';
 import { colors, fonts } from '../../../theme';
+import { Text } from '../../../kit/Text';
 
 interface Props {
   count: number;

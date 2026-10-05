@@ -13,6 +13,7 @@ export function starsFor(level: Level, mistakes: number, hints: number): Stars {
   return 1;
 }
 
-export function levelKey(gameId: string, levelId: string): string {
-  return `${gameId}/${levelId}`;
+/** Progress key. The first topics used gameId here; their topic ids are identical. */
+export function levelKey(topicId: string, levelId: string): string {
+  return `${topicId}/${levelId}`;
 }

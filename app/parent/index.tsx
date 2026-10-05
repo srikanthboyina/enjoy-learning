@@ -1,7 +1,7 @@
 // Parent dashboard: progress per topic, badges, settings and reset. Adults only (gated).
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Switch, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { getLevels, getTopics } from '../../src/engine/loadContent';
@@ -11,7 +11,8 @@ import { Glyph } from '../../src/kit/Glyph';
 import { StarRow } from '../../src/kit/StarRow';
 import { badgeIds, useProgress } from '../../src/services/progressStore';
 import { useParentGate } from '../../src/services/parentGate';
-import { colors, radii, spacing, topicColor } from '../../src/theme';
+import { colors, radii, spacing } from '../../src/theme';
+import { Text } from '../../src/kit/Text';
 
 function formatDate(ms: number): string {
   return new Date(ms).toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
@@ -44,7 +45,7 @@ export default function ParentDashboard() {
           return (
             <View key={topic.id} style={styles.card}>
               <View style={styles.cardHeader}>
-                <Glyph id={topic.icon} size={32} />
+                <Glyph id={topic.emoji} size={32} />
                 <View style={{ flex: 1 }}>
                   <Text style={styles.topicTitle}>{topic.title}</Text>
                   <Text style={styles.meta}>
@@ -59,17 +60,17 @@ export default function ParentDashboard() {
                   <View
                     style={[
                       styles.barFill,
-                      { width: `${s.total ? (s.done / s.total) * 100 : 0}%`, backgroundColor: topicColor(topic.color) },
+                      { width: `${s.total ? (s.done / s.total) * 100 : 0}%`, backgroundColor: topic.colors[1] },
                     ]}
                   />
                 </View>
               )}
-              {getLevels(topic.gameId).map((level) => {
-                const p = levels[levelKey(topic.gameId, level.id)];
+              {getLevels(topic.id).map((level) => {
+                const p = levels[levelKey(topic.id, level.id)];
                 return (
                   <View key={level.id} style={styles.levelRow}>
                     <Text style={styles.levelName}>
-                      {level.order}. {level.name}
+                      {level.difficulty[0].toUpperCase() + level.difficulty.slice(1)} · {level.name}
                     </Text>
                     {p ? (
                       <>

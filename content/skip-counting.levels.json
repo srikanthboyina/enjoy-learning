@@ -1,0 +1,545 @@
+{
+  "topicId": "skip-counting",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "skip-counting-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Hop by 2s",
+      "intro": {
+        "say": "Frogs hop over numbers! Let's count by twos: two, four, six.",
+        "icons": [
+          "🐸",
+          "2️⃣",
+          "🦘"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Count by twos. Hop, hop, hop! Two, four, six, eight, ten.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 2,
+            "hops": 5
+          },
+          "caption": "2, 4, 6, 8, 10"
+        },
+        {
+          "mode": "show",
+          "say": "Pairs of shoes help us count by twos. Two, four, six!",
+          "visual": {
+            "kind": "pairs",
+            "count": 6,
+            "emoji": "👟"
+          },
+          "caption": "2, 4, 6"
+        },
+        {
+          "mode": "choice",
+          "ask": "Two, four, what comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "2",
+              "4",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "We skip one number each time."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "8",
+              "why": "That skips too far."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two, four, six. We add two each hop."
+        },
+        {
+          "mode": "choice",
+          "ask": "The frog made 3 hops by twos. Where did it land?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 2,
+            "hops": 3
+          },
+          "options": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "3",
+              "why": "Each hop is two, not one."
+            },
+            {
+              "label": "8",
+              "why": "Count the hops: two, four, six."
+            }
+          ],
+          "answer": 0,
+          "explain": "Three hops by twos: two, four, six."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the numbers in order, counting by twos.",
+          "items": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "explain": "Two, four, six, eight!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Count the eyes by twos! How many eyes on 4 owls?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦉",
+              "🦉",
+              "🦉",
+              "🦉"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Count by twos: two, four, six, eight."
+            },
+            {
+              "label": "4",
+              "why": "Each owl has two eyes."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "Two, four, six, eight. Eight eyes!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Six, eight, what comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "6",
+              "8",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "9",
+              "why": "Add two, not one."
+            },
+            {
+              "label": "12",
+              "why": "That is two hops."
+            }
+          ],
+          "answer": 0,
+          "explain": "Six, eight, ten!"
+        }
+      ]
+    },
+    {
+      "id": "skip-counting-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Hop by 5s and 10s",
+      "intro": {
+        "say": "Big hops! Let's count by fives and by tens.",
+        "icons": [
+          "🖐️",
+          "🔟",
+          "🐸"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Count fingers by fives. Each hand has five. Five, ten, fifteen, twenty!",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 50,
+            "step": 5,
+            "hops": 4
+          },
+          "caption": "5, 10, 15, 20"
+        },
+        {
+          "mode": "show",
+          "say": "Tens are giant hops! Ten, twenty, thirty, forty, fifty.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 100,
+            "step": 10,
+            "hops": 5
+          },
+          "caption": "10, 20, 30, 40, 50"
+        },
+        {
+          "mode": "choice",
+          "ask": "Five, ten, fifteen, what comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "5",
+              "10",
+              "15",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "16",
+              "why": "Hop by fives, not ones."
+            },
+            {
+              "label": "25",
+              "why": "That's one hop too many."
+            },
+            {
+              "label": "20"
+            }
+          ],
+          "answer": 2,
+          "explain": "Fifteen and five more is twenty."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many fingers on 3 hands? Count by fives!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖐️",
+              "🖐️",
+              "🖐️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "15"
+            },
+            {
+              "label": "3",
+              "why": "Each hand has five fingers."
+            },
+            {
+              "label": "10",
+              "why": "Count one more hand."
+            }
+          ],
+          "answer": 0,
+          "explain": "Five, ten, fifteen fingers!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Ten, twenty, thirty, what comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "10",
+              "20",
+              "30",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "31",
+              "why": "Hop by tens, not ones."
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "50",
+              "why": "That skips a ten."
+            }
+          ],
+          "answer": 1,
+          "explain": "Thirty and ten more is forty."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the numbers in order, counting by fives.",
+          "items": [
+            {
+              "label": "5"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "25"
+            }
+          ],
+          "explain": "Five, ten, fifteen, twenty, twenty five!"
+        },
+        {
+          "mode": "choice",
+          "ask": "The frog hopped 4 times by tens. Where did it land?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 100,
+            "step": 10,
+            "hops": 4
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Each hop is ten."
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "14",
+              "why": "Count by tens: ten, twenty, thirty, forty."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten, twenty, thirty, forty!"
+        }
+      ]
+    },
+    {
+      "id": "skip-counting-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Skip counting puzzles",
+      "intro": {
+        "say": "Let's find missing numbers and spot the hop size!",
+        "icons": [
+          "🧠",
+          "🐸",
+          "❓"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "What is the hop size? Twenty, twenty five, thirty. Each jump adds five!",
+          "visual": {
+            "kind": "numberline",
+            "from": 20,
+            "to": 50,
+            "step": 5,
+            "hops": 2
+          },
+          "caption": "20, 25, 30 → +5"
+        },
+        {
+          "mode": "show",
+          "say": "Find the gap! Twelve, fourteen, something, eighteen. Count by twos: the missing number is sixteen.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "12",
+              "14",
+              "?",
+              "18"
+            ]
+          },
+          "caption": "12, 14, 16, 18"
+        },
+        {
+          "mode": "choice",
+          "ask": "Fill the gap: 30, 35, ?, 45.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "30",
+              "35",
+              "?",
+              "45"
+            ]
+          },
+          "options": [
+            {
+              "label": "36",
+              "why": "We hop by fives here."
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "50",
+              "why": "That comes after forty five."
+            }
+          ],
+          "answer": 1,
+          "explain": "Thirty five and five more is forty."
+        },
+        {
+          "mode": "choice",
+          "ask": "What are we counting by? 10, 12, 14, 16.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "10",
+              "12",
+              "14",
+              "16"
+            ]
+          },
+          "options": [
+            {
+              "label": "2s"
+            },
+            {
+              "label": "5s",
+              "why": "Ten plus five is fifteen, not twelve."
+            },
+            {
+              "label": "10s",
+              "why": "Ten plus ten is twenty."
+            }
+          ],
+          "answer": 0,
+          "explain": "Each number is two more, so we count by twos."
+        },
+        {
+          "mode": "choice",
+          "ask": "Fill the gap: 60, 70, ?, 90.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "60",
+              "70",
+              "?",
+              "90"
+            ]
+          },
+          "options": [
+            {
+              "label": "75",
+              "why": "We hop by tens here."
+            },
+            {
+              "label": "71",
+              "why": "Add ten, not one."
+            },
+            {
+              "label": "80"
+            }
+          ],
+          "answer": 2,
+          "explain": "Seventy and ten more is eighty."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order, counting by tens.",
+          "items": [
+            {
+              "label": "40"
+            },
+            {
+              "label": "50"
+            },
+            {
+              "label": "60"
+            },
+            {
+              "label": "70"
+            },
+            {
+              "label": "80"
+            }
+          ],
+          "explain": "Forty, fifty, sixty, seventy, eighty!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Each bike has 2 wheels. How many wheels on 7 bikes?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚲",
+              "🚲",
+              "🚲",
+              "🚲",
+              "🚲",
+              "🚲",
+              "🚲"
+            ]
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "Count by twos once for each bike."
+            },
+            {
+              "label": "14"
+            },
+            {
+              "label": "16",
+              "why": "That would be eight bikes."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two, four, six, eight, ten, twelve, fourteen wheels!",
+          "hint": "Count by twos, one hop for each bike."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number does NOT belong when counting by fives?",
+          "options": [
+            {
+              "label": "25",
+              "why": "Twenty five is a five-count number."
+            },
+            {
+              "label": "40",
+              "why": "Forty is a five-count number."
+            },
+            {
+              "label": "33"
+            }
+          ],
+          "answer": 2,
+          "explain": "Counting by fives ends in five or zero. Thirty three does not.",
+          "hint": "Five-count numbers end in 5 or 0."
+        }
+      ]
+    }
+  ]
+}

@@ -1,53 +1,272 @@
 {
+  "topicId": "fractions",
   "gameId": "fractions",
   "version": 1,
   "levels": [
     {
       "id": "fractions-01",
       "order": 1,
+      "difficulty": "simple",
       "name": "Halves",
-      "intro": { "say": "Let's share food with friends! Everyone gets the same.", "icons": ["pizza", "friends"] },
+      "intro": {
+        "say": "Let's share food with friends! Everyone gets the same.",
+        "icons": [
+          "pizza",
+          "friends"
+        ]
+      },
       "rounds": [
-        { "mode": "split", "shape": "pizza", "parts": 2 },
-        { "mode": "split", "shape": "cake", "parts": 2 },
-        { "mode": "pick", "shape": "pizza", "target": { "num": 1, "den": 2 }, "choices": [{ "num": 1, "den": 2 }, { "num": 1, "den": 4 }] }
+        {
+          "mode": "split",
+          "shape": "pizza",
+          "parts": 2
+        },
+        {
+          "mode": "split",
+          "shape": "cake",
+          "parts": 2
+        },
+        {
+          "mode": "pick",
+          "shape": "pizza",
+          "target": {
+            "num": 1,
+            "den": 2
+          },
+          "choices": [
+            {
+              "num": 1,
+              "den": 2
+            },
+            {
+              "num": 1,
+              "den": 4
+            }
+          ]
+        }
       ]
     },
     {
       "id": "fractions-02",
-      "order": 2,
+      "order": 1,
+      "difficulty": "medium",
       "name": "Quarters",
-      "intro": { "say": "Now four friends want to share!", "icons": ["cut", "pizza", "friends"] },
+      "intro": {
+        "say": "Now four friends want to share!",
+        "icons": [
+          "cut",
+          "pizza",
+          "friends"
+        ]
+      },
       "rounds": [
-        { "mode": "split", "shape": "pizza", "parts": 4 },
-        { "mode": "pick", "shape": "pizza", "target": { "num": 1, "den": 4 }, "choices": [{ "num": 1, "den": 2 }, { "num": 1, "den": 4 }, { "num": 3, "den": 4 }] },
-        { "mode": "split", "shape": "cake", "parts": 4 },
-        { "mode": "pick", "shape": "cake", "target": { "num": 1, "den": 2 }, "choices": [{ "num": 1, "den": 4 }, { "num": 1, "den": 2 }] }
+        {
+          "mode": "split",
+          "shape": "pizza",
+          "parts": 4
+        },
+        {
+          "mode": "pick",
+          "shape": "pizza",
+          "target": {
+            "num": 1,
+            "den": 4
+          },
+          "choices": [
+            {
+              "num": 1,
+              "den": 2
+            },
+            {
+              "num": 1,
+              "den": 4
+            },
+            {
+              "num": 3,
+              "den": 4
+            }
+          ]
+        },
+        {
+          "mode": "split",
+          "shape": "cake",
+          "parts": 4
+        },
+        {
+          "mode": "pick",
+          "shape": "cake",
+          "target": {
+            "num": 1,
+            "den": 2
+          },
+          "choices": [
+            {
+              "num": 1,
+              "den": 4
+            },
+            {
+              "num": 1,
+              "den": 2
+            }
+          ]
+        }
       ]
     },
     {
       "id": "fractions-03",
-      "order": 3,
+      "order": 2,
+      "difficulty": "medium",
       "name": "Thirds",
-      "intro": { "say": "Three friends! Can you share fairly?", "icons": ["cut", "cake", "friends"] },
+      "intro": {
+        "say": "Three friends! Can you share fairly?",
+        "icons": [
+          "cut",
+          "cake",
+          "friends"
+        ]
+      },
       "rounds": [
-        { "mode": "split", "shape": "cake", "parts": 3 },
-        { "mode": "pick", "shape": "cake", "target": { "num": 1, "den": 3 }, "choices": [{ "num": 1, "den": 3 }, { "num": 1, "den": 2 }, { "num": 1, "den": 4 }] },
-        { "mode": "split", "shape": "pizza", "parts": 3 },
-        { "mode": "pick", "shape": "pizza", "target": { "num": 2, "den": 3 }, "choices": [{ "num": 1, "den": 3 }, { "num": 2, "den": 3 }] }
+        {
+          "mode": "split",
+          "shape": "cake",
+          "parts": 3
+        },
+        {
+          "mode": "pick",
+          "shape": "cake",
+          "target": {
+            "num": 1,
+            "den": 3
+          },
+          "choices": [
+            {
+              "num": 1,
+              "den": 3
+            },
+            {
+              "num": 1,
+              "den": 2
+            },
+            {
+              "num": 1,
+              "den": 4
+            }
+          ]
+        },
+        {
+          "mode": "split",
+          "shape": "pizza",
+          "parts": 3
+        },
+        {
+          "mode": "pick",
+          "shape": "pizza",
+          "target": {
+            "num": 2,
+            "den": 3
+          },
+          "choices": [
+            {
+              "num": 1,
+              "den": 3
+            },
+            {
+              "num": 2,
+              "den": 3
+            }
+          ]
+        }
       ]
     },
     {
       "id": "fractions-04",
-      "order": 4,
+      "order": 1,
+      "difficulty": "complex",
       "name": "Mixed parts",
-      "intro": { "say": "Pizza party! Let's find all the parts.", "icons": ["pizza", "cake", "eyes"] },
-      "stars": { "three": 0, "two": 2 },
+      "intro": {
+        "say": "Pizza party! Let's find all the parts.",
+        "icons": [
+          "pizza",
+          "cake",
+          "eyes"
+        ]
+      },
+      "stars": {
+        "three": 0,
+        "two": 2
+      },
       "rounds": [
-        { "mode": "pick", "shape": "pizza", "target": { "num": 3, "den": 4 }, "choices": [{ "num": 1, "den": 4 }, { "num": 3, "den": 4 }, { "num": 2, "den": 3 }] },
-        { "mode": "split", "shape": "pizza", "parts": 6 },
-        { "mode": "pick", "shape": "cake", "target": { "num": 2, "den": 4 }, "choices": [{ "num": 2, "den": 3 }, { "num": 2, "den": 4 }, { "num": 3, "den": 4 }] },
-        { "mode": "pick", "shape": "pizza", "target": { "num": 5, "den": 6 }, "choices": [{ "num": 5, "den": 6 }, { "num": 4, "den": 6 }, { "num": 3, "den": 4 }] }
+        {
+          "mode": "pick",
+          "shape": "pizza",
+          "target": {
+            "num": 3,
+            "den": 4
+          },
+          "choices": [
+            {
+              "num": 1,
+              "den": 4
+            },
+            {
+              "num": 3,
+              "den": 4
+            },
+            {
+              "num": 2,
+              "den": 3
+            }
+          ]
+        },
+        {
+          "mode": "split",
+          "shape": "pizza",
+          "parts": 6
+        },
+        {
+          "mode": "pick",
+          "shape": "cake",
+          "target": {
+            "num": 2,
+            "den": 4
+          },
+          "choices": [
+            {
+              "num": 2,
+              "den": 3
+            },
+            {
+              "num": 2,
+              "den": 4
+            },
+            {
+              "num": 3,
+              "den": 4
+            }
+          ]
+        },
+        {
+          "mode": "pick",
+          "shape": "pizza",
+          "target": {
+            "num": 5,
+            "den": 6
+          },
+          "choices": [
+            {
+              "num": 5,
+              "den": 6
+            },
+            {
+              "num": 4,
+              "den": 6
+            },
+            {
+              "num": 3,
+              "den": 4
+            }
+          ]
+        }
       ]
     }
   ]

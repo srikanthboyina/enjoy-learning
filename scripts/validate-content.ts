@@ -16,20 +16,26 @@ const levelFiles = readdirSync(dir).filter((f) => f.endsWith('.levels.json'));
 const gamesWithLevels = new Set<string>();
 
 for (const file of levelFiles) {
-  const { gameId, levels } = parseLevelFile(file, read(file), issues);
-  if (!gameId) continue;
-  if (file !== `${gameId}.levels.json`) {
-    issues.push({ where: file, message: `file name should be ${gameId}.levels.json` });
+  const { topicId, gameId, levels } = parseLevelFile(file, read(file), issues);
+  if (!topicId || !gameId) continue;
+  if (file !== `${topicId}.levels.json`) {
+    issues.push({ where: file, message: `file name should be ${topicId}.levels.json` });
   }
-  gamesWithLevels.add(gameId);
-  console.log(`✓ ${file}: ${levels.length} level(s)`);
+  const topic = topics.find((t) => t.id === topicId);
+  if (!topic) issues.push({ where: file, message: `topicId "${topicId}" is not in topics.json` });
+  else if (topic.gameId !== gameId) {
+    issues.push({ where: file, message: `gameId "${gameId}" does not match topics.json ("${topic.gameId}")` });
+  }
+  const counts = ['simple', 'medium', 'complex'].map((d) => levels.filter((l) => l.difficulty === d).length);
+  gamesWithLevels.add(topicId);
+  console.log(`✓ ${file}: ${levels.length} level(s)  simple ${counts[0]} · medium ${counts[1]} · complex ${counts[2]}`);
 }
 
 for (const t of topics) {
   if (t.unlockAfter && !topics.some((o) => o.id === t.unlockAfter)) {
     issues.push({ where: 'topics.json', message: `${t.id}.unlockAfter "${t.unlockAfter}" is not a topic` });
   }
-  if (!gamesWithLevels.has(t.gameId) || !ROUND_SCHEMAS[t.gameId]) {
+  if (!gamesWithLevels.has(t.id) || !ROUND_SCHEMAS[t.gameId]) {
     console.log(`… ${t.id}: no levels yet (shows as "coming soon")`);
   }
 }

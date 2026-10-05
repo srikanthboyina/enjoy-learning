@@ -1,0 +1,623 @@
+{
+  "topicId": "space",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "space-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Day and night",
+      "intro": {
+        "say": "Some of the time it is day, and some of the time it is night. Let's see what is different!",
+        "icons": [
+          "🌞",
+          "🌙",
+          "⭐"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "In the day, the Sun shines in the sky. It is light, and we can play outside.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌞",
+              "🏙️",
+              "⚽"
+            ]
+          },
+          "caption": "day"
+        },
+        {
+          "mode": "show",
+          "say": "At night, it is dark. We may see the Moon and stars. It is time to sleep.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌙",
+              "⭐",
+              "🛏️"
+            ]
+          },
+          "caption": "night"
+        },
+        {
+          "mode": "choice",
+          "ask": "The sky is dark and you see stars. Is it day or night?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌃",
+              "⭐",
+              "⭐"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌞",
+              "label": "day",
+              "why": "In the day, the sky is bright from the Sun."
+            },
+            {
+              "emoji": "🌙",
+              "label": "night"
+            }
+          ],
+          "answer": 1,
+          "explain": "At night the sky is dark, so we can see stars."
+        },
+        {
+          "mode": "sort",
+          "ask": "Do we do this in the day or at night?",
+          "bins": [
+            {
+              "label": "day",
+              "emoji": "🌞"
+            },
+            {
+              "label": "night",
+              "emoji": "🌙"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏫",
+              "bin": 0,
+              "name": "going to school"
+            },
+            {
+              "emoji": "⚽",
+              "bin": 0,
+              "name": "playing football"
+            },
+            {
+              "emoji": "🍳",
+              "bin": 0,
+              "name": "breakfast"
+            },
+            {
+              "emoji": "🛏️",
+              "bin": 1,
+              "name": "sleeping"
+            },
+            {
+              "emoji": "😴",
+              "bin": 1,
+              "name": "sleepy time"
+            },
+            {
+              "emoji": "🦉",
+              "bin": 1,
+              "name": "owl awake"
+            }
+          ],
+          "explain": "We play in the bright day and sleep at night. Owls like me wake up at night!"
+        },
+        {
+          "mode": "choice",
+          "ask": "What gives us light in the day?",
+          "options": [
+            {
+              "emoji": "🌙",
+              "label": "the Moon",
+              "why": "The Moon shines at night. The Sun lights up the day."
+            },
+            {
+              "emoji": "💡",
+              "label": "a lamp",
+              "why": "Lamps help at night. In the day, the Sun gives light."
+            },
+            {
+              "emoji": "🌞",
+              "label": "the Sun"
+            }
+          ],
+          "answer": 2,
+          "explain": "The Sun is very bright and lights up the day."
+        },
+        {
+          "mode": "choice",
+          "ask": "What do you see in the sky at night?",
+          "options": [
+            {
+              "emoji": "🌈",
+              "label": "rainbow",
+              "why": "Rainbows need sunshine. At night we see the Moon."
+            },
+            {
+              "emoji": "🌙",
+              "label": "Moon"
+            }
+          ],
+          "answer": 1,
+          "explain": "We often see the Moon and stars at night."
+        }
+      ]
+    },
+    {
+      "id": "space-02",
+      "order": 2,
+      "difficulty": "simple",
+      "name": "Sun and Moon",
+      "intro": {
+        "say": "The Sun and the Moon are both in our sky. Let's find out how they are different.",
+        "icons": [
+          "☀️",
+          "🌕"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The Sun is a star! It is a giant ball of hot glowing gas. It gives us light and keeps us warm.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "🔥",
+              "💡"
+            ]
+          },
+          "caption": "The Sun is a star"
+        },
+        {
+          "mode": "show",
+          "say": "The Moon does not make its own light. It shines because sunlight bounces off it, like a mirror.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "➡️",
+              "🌕"
+            ]
+          },
+          "caption": "The Moon reflects sunlight"
+        },
+        {
+          "mode": "choice",
+          "ask": "The Sun is a kind of what?",
+          "options": [
+            {
+              "emoji": "🌍",
+              "label": "planet",
+              "why": "Earth is a planet. The Sun is a star."
+            },
+            {
+              "emoji": "⭐",
+              "label": "star"
+            },
+            {
+              "emoji": "☁️",
+              "label": "cloud",
+              "why": "Clouds are in our sky. The Sun is a huge star."
+            }
+          ],
+          "answer": 1,
+          "explain": "The Sun is a star, the closest star to us."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does the Sun give us?",
+          "options": [
+            {
+              "emoji": "🌧️",
+              "label": "rain and snow",
+              "why": "Rain comes from clouds. The Sun gives light and heat."
+            },
+            {
+              "emoji": "☀️",
+              "label": "light and heat"
+            }
+          ],
+          "answer": 1,
+          "explain": "The Sun gives us light to see and heat to keep us warm."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why does the Moon shine?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌕"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🔥",
+              "label": "it is on fire",
+              "why": "The Moon is not burning. Sunlight bounces off it."
+            },
+            {
+              "emoji": "💡",
+              "label": "it has lights",
+              "why": "There are no lamps on the Moon. It reflects sunlight."
+            },
+            {
+              "emoji": "☀️",
+              "label": "sunlight bounces off it"
+            }
+          ],
+          "answer": 2,
+          "explain": "The Moon reflects light from the Sun."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is it safe to look straight at the Sun?",
+          "options": [
+            {
+              "emoji": "🙈",
+              "label": "no, never"
+            },
+            {
+              "emoji": "👀",
+              "label": "yes, for a long time",
+              "why": "The Sun is so bright it can hurt your eyes. Never look at it."
+            }
+          ],
+          "answer": 0,
+          "explain": "The Sun is so bright it can hurt your eyes, so never look straight at it."
+        }
+      ]
+    },
+    {
+      "id": "space-03",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Earth spins and moves",
+      "intro": {
+        "say": "Our Earth is always moving! It spins around and around, and it travels around the Sun.",
+        "icons": [
+          "🌍",
+          "🔄",
+          "☀️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Earth spins like a top. When our side faces the Sun, it is day. When it faces away, it is night.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌍",
+              "🔄",
+              "☀️"
+            ]
+          },
+          "caption": "Earth spins: day and night"
+        },
+        {
+          "mode": "show",
+          "say": "One spin takes one whole day. Earth also travels all the way around the Sun. That trip takes one year.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌍",
+              "➡️",
+              "☀️",
+              "📅"
+            ]
+          },
+          "caption": "1 spin = 1 day · 1 trip = 1 year"
+        },
+        {
+          "mode": "show",
+          "say": "The Moon changes shape in our sky. We see different amounts of its sunny side as it goes around Earth.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌑",
+              "🌒",
+              "🌓",
+              "🌔",
+              "🌕"
+            ]
+          },
+          "caption": "Moon shapes"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do we have day and night?",
+          "options": [
+            {
+              "emoji": "🔄",
+              "label": "Earth spins"
+            },
+            {
+              "emoji": "💡",
+              "label": "the Sun turns off",
+              "why": "The Sun always shines. Our side of Earth turns away from it."
+            },
+            {
+              "emoji": "☁️",
+              "label": "clouds cover the Sun",
+              "why": "Clouds can't make night. Earth spinning does."
+            }
+          ],
+          "answer": 0,
+          "explain": "Earth spins, so our side faces the Sun for day and turns away for night."
+        },
+        {
+          "mode": "choice",
+          "ask": "How long does Earth take to go all the way around the Sun?",
+          "options": [
+            {
+              "emoji": "🌞",
+              "label": "one day",
+              "why": "One day is one spin. Going around the Sun takes a year."
+            },
+            {
+              "emoji": "7️⃣",
+              "label": "one week",
+              "why": "It takes much longer, one whole year."
+            },
+            {
+              "emoji": "📅",
+              "label": "one year"
+            }
+          ],
+          "answer": 2,
+          "explain": "Earth takes one whole year to travel around the Sun."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the Moon shapes in order, from new Moon to full Moon.",
+          "items": [
+            {
+              "emoji": "🌑",
+              "label": "new"
+            },
+            {
+              "emoji": "🌒",
+              "label": "thin"
+            },
+            {
+              "emoji": "🌓",
+              "label": "half"
+            },
+            {
+              "emoji": "🌔",
+              "label": "bigger"
+            },
+            {
+              "emoji": "🌕",
+              "label": "full"
+            }
+          ],
+          "explain": "The sunny side we see grows bigger each night until it is a full Moon.",
+          "hint": "Start with the dark Moon."
+        },
+        {
+          "mode": "choice",
+          "ask": "Your side of Earth faces away from the Sun. Is it day or night?",
+          "options": [
+            {
+              "emoji": "🌞",
+              "label": "day",
+              "why": "Day is when your side faces the Sun."
+            },
+            {
+              "emoji": "🌙",
+              "label": "night"
+            }
+          ],
+          "answer": 1,
+          "explain": "When our side turns away from the Sun, it is dark, so it is night."
+        },
+        {
+          "mode": "choice",
+          "ask": "Does the Moon really change shape?",
+          "options": [
+            {
+              "emoji": "🌒",
+              "label": "yes, it shrinks",
+              "why": "The Moon stays round. We just see less of its sunny side."
+            },
+            {
+              "emoji": "🌕",
+              "label": "no, it stays round"
+            }
+          ],
+          "answer": 1,
+          "explain": "The Moon is always a round ball. We just see different parts of it lit by the Sun."
+        }
+      ]
+    },
+    {
+      "id": "space-04",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "The planets",
+      "intro": {
+        "say": "Eight planets travel around the Sun. Let's learn their names and their order, starting closest to the Sun.",
+        "icons": [
+          "☀️",
+          "🪐",
+          "🌍"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The four planets closest to the Sun are small and rocky: Mercury, Venus, Earth, and Mars.",
+          "visual": {
+            "kind": "text",
+            "text": "☀️ Mercury · Venus · Earth 🌍 · Mars"
+          },
+          "caption": "rocky planets"
+        },
+        {
+          "mode": "show",
+          "say": "The next four are giant planets: Jupiter, Saturn, Uranus, and Neptune. Jupiter is the biggest planet of all!",
+          "visual": {
+            "kind": "text",
+            "text": "Jupiter · Saturn 🪐 · Uranus · Neptune"
+          },
+          "caption": "giant planets"
+        },
+        {
+          "mode": "order",
+          "ask": "Put the rocky planets in order, starting next to the Sun.",
+          "items": [
+            {
+              "emoji": "⚪",
+              "label": "Mercury"
+            },
+            {
+              "emoji": "🟡",
+              "label": "Venus"
+            },
+            {
+              "emoji": "🌍",
+              "label": "Earth"
+            },
+            {
+              "emoji": "🔴",
+              "label": "Mars"
+            }
+          ],
+          "explain": "Mercury, Venus, Earth, Mars. Earth is the third planet from the Sun.",
+          "hint": "Mercury is the closest to the Sun."
+        },
+        {
+          "mode": "order",
+          "ask": "Now put the giant planets in order, going away from the Sun.",
+          "items": [
+            {
+              "emoji": "🟠",
+              "label": "Jupiter"
+            },
+            {
+              "emoji": "🪐",
+              "label": "Saturn"
+            },
+            {
+              "emoji": "🧊",
+              "label": "Uranus"
+            },
+            {
+              "emoji": "🔵",
+              "label": "Neptune"
+            }
+          ],
+          "explain": "Jupiter, Saturn, Uranus, Neptune. Neptune is the farthest planet from the Sun.",
+          "hint": "Jupiter comes right after Mars."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which planet is closest to the Sun?",
+          "options": [
+            {
+              "emoji": "🌍",
+              "label": "Earth",
+              "why": "Earth is third. Mercury is first."
+            },
+            {
+              "label": "Mercury"
+            },
+            {
+              "label": "Neptune",
+              "why": "Neptune is the farthest away, not the closest."
+            }
+          ],
+          "answer": 1,
+          "explain": "Mercury is the closest planet to the Sun."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which planet do we live on?",
+          "options": [
+            {
+              "emoji": "🔴",
+              "label": "Mars",
+              "why": "Mars is our neighbor, but no people live there."
+            },
+            {
+              "emoji": "🪐",
+              "label": "Saturn",
+              "why": "Saturn is a giant planet made of gas."
+            },
+            {
+              "emoji": "🌍",
+              "label": "Earth"
+            }
+          ],
+          "answer": 2,
+          "explain": "We live on Earth, the third planet from the Sun."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the biggest planet?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🌍",
+                "scale": 0.4
+              },
+              {
+                "emoji": "🟠",
+                "scale": 2.0
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Jupiter"
+            },
+            {
+              "label": "Mercury",
+              "why": "Mercury is the smallest planet."
+            },
+            {
+              "emoji": "🌍",
+              "label": "Earth",
+              "why": "Earth is small next to the giant planets."
+            }
+          ],
+          "answer": 0,
+          "explain": "Jupiter is the biggest planet. More than a thousand Earths could fit inside it!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which planet has big, bright rings?",
+          "options": [
+            {
+              "emoji": "🔴",
+              "label": "Mars",
+              "why": "Mars is a red, rocky planet with no big rings."
+            },
+            {
+              "emoji": "🪐",
+              "label": "Saturn"
+            }
+          ],
+          "answer": 1,
+          "explain": "Saturn is famous for its big, bright rings made of ice and rock."
+        }
+      ]
+    }
+  ]
+}

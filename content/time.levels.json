@@ -1,0 +1,650 @@
+{
+  "topicId": "time",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "time-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "O'clock",
+      "intro": {
+        "say": "Clocks tell us the time. Let's learn to read o'clock times!",
+        "icons": [
+          "🕒",
+          "⏰"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A clock has two hands. The short red hand shows the hour. The long blue hand shows the minutes.",
+          "visual": {
+            "kind": "clock",
+            "hour": 3,
+            "minute": 0
+          },
+          "caption": "short red = hour, long blue = minutes"
+        },
+        {
+          "mode": "show",
+          "say": "When the long blue hand points straight up to 12, it is o'clock. The short red hand points to 3, so it is 3 o'clock.",
+          "visual": {
+            "kind": "clock",
+            "hour": 3,
+            "minute": 0
+          },
+          "caption": "3 o'clock"
+        },
+        {
+          "mode": "choice",
+          "ask": "What time is it?",
+          "visual": {
+            "kind": "clock",
+            "hour": 2,
+            "minute": 0
+          },
+          "options": [
+            {
+              "label": "2 o'clock"
+            },
+            {
+              "label": "12 o'clock",
+              "why": "The long hand is on 12. Look where the short red hand points."
+            },
+            {
+              "label": "5 o'clock",
+              "why": "Look at the short red hand. Which number does it point to?"
+            }
+          ],
+          "answer": 0,
+          "explain": "The long hand is on 12 and the short red hand points to 2, so it is 2 o'clock."
+        },
+        {
+          "mode": "choice",
+          "ask": "What time is it?",
+          "visual": {
+            "kind": "clock",
+            "hour": 6,
+            "minute": 0
+          },
+          "options": [
+            {
+              "label": "12 o'clock",
+              "why": "The short red hand tells the hour. Where does it point?"
+            },
+            {
+              "label": "9 o'clock",
+              "why": "Look again at the short red hand."
+            },
+            {
+              "label": "6 o'clock"
+            }
+          ],
+          "answer": 2,
+          "explain": "The short red hand points to 6, so it is 6 o'clock."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which clock shows 4 o'clock?",
+          "options": [
+            {
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              },
+              "why": "That short hand points to 8."
+            },
+            {
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              },
+              "why": "That short hand points to 1."
+            }
+          ],
+          "answer": 1,
+          "explain": "The short red hand points to 4 and the long hand points to 12."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which clock shows 9 o'clock?",
+          "options": [
+            {
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              },
+              "why": "That one shows 12 o'clock."
+            },
+            {
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              },
+              "why": "That one shows 3 o'clock."
+            },
+            {
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "answer": 2,
+          "explain": "The short red hand points to 9 and the long blue hand is on 12."
+        }
+      ]
+    },
+    {
+      "id": "time-02",
+      "order": 2,
+      "difficulty": "simple",
+      "name": "My day",
+      "intro": {
+        "say": "Some things happen in the morning and some at night. Let's put our day in order!",
+        "icons": [
+          "🌅",
+          "🍳",
+          "🏫",
+          "🌙"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "In the morning the sun comes up and we wake up. At night it gets dark and we go to sleep.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌅",
+              "➡️",
+              "🌙"
+            ]
+          },
+          "caption": "morning → night"
+        },
+        {
+          "mode": "choice",
+          "ask": "When do we eat breakfast?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍳"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🌙",
+              "label": "night",
+              "why": "Breakfast is the first meal of the day."
+            },
+            {
+              "emoji": "🌅",
+              "label": "morning"
+            }
+          ],
+          "answer": 1,
+          "explain": "Breakfast is the first meal, in the morning."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it morning or night?",
+          "bins": [
+            {
+              "label": "morning",
+              "emoji": "🌅"
+            },
+            {
+              "label": "night",
+              "emoji": "🌙"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍳",
+              "bin": 0,
+              "name": "breakfast"
+            },
+            {
+              "emoji": "🏫",
+              "bin": 0,
+              "name": "going to school"
+            },
+            {
+              "emoji": "🛌",
+              "bin": 1,
+              "name": "going to bed"
+            },
+            {
+              "emoji": "⭐",
+              "bin": 1,
+              "name": "stars"
+            },
+            {
+              "emoji": "🐓",
+              "bin": 0,
+              "name": "rooster crowing"
+            },
+            {
+              "emoji": "🦉",
+              "bin": 1,
+              "name": "owl hooting"
+            }
+          ],
+          "explain": "We eat breakfast and go to school in the morning, and we sleep when the stars come out."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the morning in order.",
+          "items": [
+            {
+              "emoji": "⏰",
+              "label": "wake up"
+            },
+            {
+              "emoji": "🍳",
+              "label": "breakfast"
+            },
+            {
+              "emoji": "🏫",
+              "label": "school"
+            }
+          ],
+          "explain": "First we wake up, then eat breakfast, then go to school."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the evening in order.",
+          "items": [
+            {
+              "emoji": "🍝",
+              "label": "dinner"
+            },
+            {
+              "emoji": "🛁",
+              "label": "bath"
+            },
+            {
+              "emoji": "📖",
+              "label": "story"
+            },
+            {
+              "emoji": "😴",
+              "label": "sleep"
+            }
+          ],
+          "explain": "Dinner, then a bath, then a story, and last we fall asleep."
+        }
+      ]
+    },
+    {
+      "id": "time-03",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Half past",
+      "intro": {
+        "say": "When the long blue hand points down to 6, it is half past. Let's learn it!",
+        "icons": [
+          "🕧",
+          "🕜"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Here the long blue hand points down to 6. That means half past. The short hand is just past 3, so it is half past 3.",
+          "visual": {
+            "kind": "clock",
+            "hour": 3,
+            "minute": 30
+          },
+          "caption": "half past 3"
+        },
+        {
+          "mode": "show",
+          "say": "At half past, the short red hand sits halfway between two numbers. Half past 7 sits between 7 and 8.",
+          "visual": {
+            "kind": "clock",
+            "hour": 7,
+            "minute": 30
+          },
+          "caption": "half past 7"
+        },
+        {
+          "mode": "choice",
+          "ask": "What time is it?",
+          "visual": {
+            "kind": "clock",
+            "hour": 5,
+            "minute": 30
+          },
+          "options": [
+            {
+              "label": "5 o'clock",
+              "why": "The long hand is on 6, not 12."
+            },
+            {
+              "label": "half past 5"
+            },
+            {
+              "label": "half past 6",
+              "why": "The short hand has just gone past 5, not 6."
+            }
+          ],
+          "answer": 1,
+          "explain": "The long blue hand is on 6, and the short hand is just past 5, so it is half past 5.",
+          "hint": "Where does the long blue hand point?"
+        },
+        {
+          "mode": "choice",
+          "ask": "What time is it?",
+          "visual": {
+            "kind": "clock",
+            "hour": 10,
+            "minute": 0
+          },
+          "options": [
+            {
+              "label": "10 o'clock"
+            },
+            {
+              "label": "half past 10",
+              "why": "For half past, the long hand points to 6."
+            },
+            {
+              "label": "half past 12",
+              "why": "The long hand on 12 means o'clock."
+            }
+          ],
+          "answer": 0,
+          "explain": "The long hand is on 12, so it is o'clock. The short hand is on 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which clock shows half past 2?",
+          "options": [
+            {
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              },
+              "why": "That shows 2 o'clock. Half past has the long hand on 6."
+            },
+            {
+              "clock": {
+                "hour": 6,
+                "minute": 10
+              },
+              "why": "Look for the long hand on 6 and the short hand after 2."
+            },
+            {
+              "clock": {
+                "hour": 2,
+                "minute": 30
+              }
+            }
+          ],
+          "answer": 2,
+          "explain": "The long blue hand is on 6 and the short hand is just past 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which clock shows half past 8?",
+          "options": [
+            {
+              "clock": {
+                "hour": 8,
+                "minute": 30
+              }
+            },
+            {
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              },
+              "why": "That is 8 o'clock."
+            },
+            {
+              "clock": {
+                "hour": 4,
+                "minute": 30
+              },
+              "why": "That is half past 4."
+            }
+          ],
+          "answer": 0,
+          "explain": "The long hand points to 6 and the short hand is between 8 and 9."
+        },
+        {
+          "mode": "choice",
+          "ask": "Lunch is at half past 12. What time is it now?",
+          "visual": {
+            "kind": "clock",
+            "hour": 12,
+            "minute": 30
+          },
+          "options": [
+            {
+              "label": "lunch time!"
+            },
+            {
+              "label": "bedtime",
+              "why": "The clock shows half past 12, which is lunch time."
+            }
+          ],
+          "answer": 0,
+          "explain": "The clock shows half past 12, so it is time for lunch."
+        }
+      ]
+    },
+    {
+      "id": "time-04",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Quarter past and quarter to",
+      "intro": {
+        "say": "Let's learn quarter past and quarter to, and work out what time it will be later!",
+        "icons": [
+          "🕒",
+          "🕞",
+          "⏳"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "When the long blue hand points to 3, it is quarter past. It has gone a quarter of the way round. This is quarter past 4.",
+          "visual": {
+            "kind": "clock",
+            "hour": 4,
+            "minute": 15
+          },
+          "caption": "quarter past 4"
+        },
+        {
+          "mode": "show",
+          "say": "When the long blue hand points to 9, it is quarter to. Only a quarter is left until the next hour. This is quarter to 5.",
+          "visual": {
+            "kind": "clock",
+            "hour": 4,
+            "minute": 45
+          },
+          "caption": "quarter to 5"
+        },
+        {
+          "mode": "choice",
+          "ask": "What time is it?",
+          "visual": {
+            "kind": "clock",
+            "hour": 2,
+            "minute": 15
+          },
+          "options": [
+            {
+              "label": "quarter to 2",
+              "why": "Quarter to has the long hand on 9. This one is on 3."
+            },
+            {
+              "label": "half past 2",
+              "why": "Half past has the long hand on 6."
+            },
+            {
+              "label": "quarter past 2"
+            }
+          ],
+          "answer": 2,
+          "explain": "The long hand is on 3 and the short hand is just past 2, so it is quarter past 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "What time is it?",
+          "visual": {
+            "kind": "clock",
+            "hour": 6,
+            "minute": 45
+          },
+          "options": [
+            {
+              "label": "quarter to 7"
+            },
+            {
+              "label": "quarter past 6",
+              "why": "Quarter past has the long hand on 3. This one is on 9."
+            },
+            {
+              "label": "quarter to 6",
+              "why": "The short hand is almost at 7, so the next hour is 7."
+            }
+          ],
+          "answer": 0,
+          "explain": "The long hand is on 9 and the short hand is nearly at 7, so it is quarter to 7.",
+          "hint": "Quarter to means almost the next hour."
+        },
+        {
+          "mode": "choice",
+          "ask": "It is 3 o'clock. What time will it be one hour later?",
+          "visual": {
+            "kind": "clock",
+            "hour": 3,
+            "minute": 0
+          },
+          "options": [
+            {
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              },
+              "why": "That is one hour earlier."
+            },
+            {
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "clock": {
+                "hour": 3,
+                "minute": 30
+              },
+              "why": "That is only half an hour later."
+            }
+          ],
+          "answer": 1,
+          "explain": "One hour after 3 o'clock is 4 o'clock."
+        },
+        {
+          "mode": "choice",
+          "ask": "It is half past 7. What time will it be one hour later?",
+          "visual": {
+            "kind": "clock",
+            "hour": 7,
+            "minute": 30
+          },
+          "options": [
+            {
+              "label": "half past 6",
+              "why": "That is one hour before, not after."
+            },
+            {
+              "label": "8 o'clock",
+              "why": "That is only half an hour later."
+            },
+            {
+              "label": "half past 8"
+            }
+          ],
+          "answer": 2,
+          "explain": "One hour later the long hand is back on 6, and the hour goes from 7 to 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which clock shows quarter past 11?",
+          "options": [
+            {
+              "clock": {
+                "hour": 11,
+                "minute": 45
+              },
+              "why": "The long hand is on 9. That is quarter to."
+            },
+            {
+              "clock": {
+                "hour": 11,
+                "minute": 15
+              }
+            },
+            {
+              "clock": {
+                "hour": 3,
+                "minute": 55
+              },
+              "why": "Look for the long hand on 3 and the short hand after 11."
+            }
+          ],
+          "answer": 1,
+          "explain": "The long hand points to 3 and the short hand is just past 11."
+        },
+        {
+          "mode": "order",
+          "ask": "Put these times in order, earliest first.",
+          "items": [
+            {
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            },
+            {
+              "clock": {
+                "hour": 1,
+                "minute": 15
+              }
+            },
+            {
+              "clock": {
+                "hour": 1,
+                "minute": 30
+              }
+            },
+            {
+              "clock": {
+                "hour": 1,
+                "minute": 45
+              }
+            }
+          ],
+          "explain": "1 o'clock, quarter past 1, half past 1, then quarter to 2."
+        }
+      ]
+    }
+  ]
+}

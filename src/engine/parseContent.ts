@@ -2,7 +2,7 @@
 import type { z } from 'zod';
 
 import { ROUND_SCHEMAS } from '../games/schemas';
-import { LevelFileSchema, TopicsFileSchema, levelSchema } from './contentSchema';
+import { DIFFICULTIES, LevelFileSchema, TopicsFileSchema, levelSchema } from './contentSchema';
 import type { GameId, Level, Topic } from './types';
 
 export interface ParseIssue {
@@ -28,20 +28,27 @@ export function parseTopics(raw: unknown, issues: ParseIssue[]): Topic[] {
   return result.data;
 }
 
-export function parseLevelFile(file: string, raw: unknown, issues: ParseIssue[]): {
-  gameId?: GameId;
-  levels: Level[];
-} {
+/** Simple first, then medium, then complex; `order` within each. */
+export function sortLevels<T extends { difficulty: string; order: number }>(levels: T[]): T[] {
+  const rank = (d: string) => (DIFFICULTIES as readonly string[]).indexOf(d);
+  return [...levels].sort((a, b) => rank(a.difficulty) - rank(b.difficulty) || a.order - b.order);
+}
+
+export function parseLevelFile(
+  file: string,
+  raw: unknown,
+  issues: ParseIssue[],
+): { topicId?: string; gameId?: GameId; levels: Level[] } {
   const header = LevelFileSchema.safeParse(raw);
   if (!header.success) {
     issues.push({ where: file, message: formatZod(header.error) });
     return { levels: [] };
   }
-  const { gameId } = header.data;
+  const { gameId, topicId } = header.data;
   const roundSchema = ROUND_SCHEMAS[gameId];
   if (!roundSchema) {
     issues.push({ where: file, message: `no round schema registered for "${gameId}"` });
-    return { gameId, levels: [] };
+    return { topicId, gameId, levels: [] };
   }
   const schema = levelSchema(roundSchema);
   const levels: Level[] = [];
@@ -60,6 +67,5 @@ export function parseLevelFile(file: string, raw: unknown, issues: ParseIssue[])
     ids.add(parsed.data.id);
     levels.push(parsed.data as Level);
   });
-  levels.sort((a, b) => a.order - b.order);
-  return { gameId, levels };
+  return { topicId, gameId, levels: sortLevels(levels) };
 }

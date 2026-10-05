@@ -1,0 +1,634 @@
+{
+  "topicId": "odd-even",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "odd-even-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Buddy pairs",
+      "intro": {
+        "say": "Let's put things in buddy pairs. If everyone has a buddy, it's even. One left over? It's odd!",
+        "icons": [
+          "🧦",
+          "👫",
+          "❓"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Four socks make two pairs. Every sock has a buddy, so four is even!",
+          "visual": {
+            "kind": "pairs",
+            "count": 4,
+            "emoji": "🧦"
+          },
+          "caption": "4 is even"
+        },
+        {
+          "mode": "show",
+          "say": "Three socks: one pair and one lonely sock. A buddy left over means three is odd.",
+          "visual": {
+            "kind": "pairs",
+            "count": 3,
+            "emoji": "🧦"
+          },
+          "caption": "3 is odd"
+        },
+        {
+          "mode": "choice",
+          "ask": "Two shoes. Does every shoe have a buddy? Is two odd or even?",
+          "visual": {
+            "kind": "pairs",
+            "count": 2,
+            "emoji": "👟"
+          },
+          "options": [
+            {
+              "label": "Odd",
+              "why": "Look: both shoes are a pair."
+            },
+            {
+              "label": "Even"
+            }
+          ],
+          "answer": 1,
+          "explain": "Two shoes make one pair, so two is even."
+        },
+        {
+          "mode": "choice",
+          "ask": "Five mittens. Is five odd or even?",
+          "visual": {
+            "kind": "pairs",
+            "count": 5,
+            "emoji": "🧤"
+          },
+          "options": [
+            {
+              "label": "Odd"
+            },
+            {
+              "label": "Even",
+              "why": "Look for the mitten without a buddy."
+            }
+          ],
+          "answer": 0,
+          "explain": "One mitten is left over, so five is odd."
+        },
+        {
+          "mode": "choice",
+          "ask": "Six bunnies. Is six odd or even?",
+          "visual": {
+            "kind": "pairs",
+            "count": 6,
+            "emoji": "🐰"
+          },
+          "options": [
+            {
+              "label": "Odd",
+              "why": "Every bunny has a buddy here."
+            },
+            {
+              "label": "Even"
+            }
+          ],
+          "answer": 1,
+          "explain": "Six bunnies make three pairs, so six is even."
+        },
+        {
+          "mode": "choice",
+          "ask": "One lonely penguin. Is one odd or even?",
+          "visual": {
+            "kind": "pairs",
+            "count": 1,
+            "emoji": "🐧"
+          },
+          "options": [
+            {
+              "label": "Even",
+              "why": "The penguin has no buddy."
+            },
+            {
+              "label": "Odd"
+            }
+          ],
+          "answer": 1,
+          "explain": "One has no buddy, so one is odd."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which picture shows an even number?",
+          "options": [
+            {
+              "label": "🐥🐥🐥",
+              "why": "One chick has no buddy."
+            },
+            {
+              "label": "🐥🐥🐥🐥"
+            },
+            {
+              "label": "🐥",
+              "why": "One chick is alone."
+            }
+          ],
+          "answer": 1,
+          "explain": "Four chicks make two pairs, so four is even."
+        }
+      ]
+    },
+    {
+      "id": "odd-even-02",
+      "order": 2,
+      "difficulty": "simple",
+      "name": "Odd or even bins",
+      "intro": {
+        "say": "Let's sort numbers into odd and even boxes!",
+        "icons": [
+          "🧦",
+          "📦",
+          "👫"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Even numbers go two, four, six, eight, ten. Every one can make pairs!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "2",
+              "4",
+              "6",
+              "8",
+              "10"
+            ]
+          },
+          "caption": "Even: 2, 4, 6, 8, 10"
+        },
+        {
+          "mode": "show",
+          "say": "Odd numbers go one, three, five, seven, nine. One is always left over.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "1",
+              "3",
+              "5",
+              "7",
+              "9"
+            ]
+          },
+          "caption": "Odd: 1, 3, 5, 7, 9"
+        },
+        {
+          "mode": "choice",
+          "ask": "Seven stars. Is seven odd or even?",
+          "visual": {
+            "kind": "pairs",
+            "count": 7,
+            "emoji": "⭐"
+          },
+          "options": [
+            {
+              "label": "Even",
+              "why": "One star has no buddy."
+            },
+            {
+              "label": "Odd"
+            }
+          ],
+          "answer": 1,
+          "explain": "Seven has one left over, so it is odd."
+        },
+        {
+          "mode": "sort",
+          "ask": "Put each number in the odd box or the even box.",
+          "bins": [
+            {
+              "label": "Odd",
+              "emoji": "🧦"
+            },
+            {
+              "label": "Even",
+              "emoji": "👫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "1️⃣",
+              "bin": 0,
+              "name": "one"
+            },
+            {
+              "emoji": "2️⃣",
+              "bin": 1,
+              "name": "two"
+            },
+            {
+              "emoji": "3️⃣",
+              "bin": 0,
+              "name": "three"
+            },
+            {
+              "emoji": "4️⃣",
+              "bin": 1,
+              "name": "four"
+            },
+            {
+              "emoji": "5️⃣",
+              "bin": 0,
+              "name": "five"
+            },
+            {
+              "emoji": "6️⃣",
+              "bin": 1,
+              "name": "six"
+            }
+          ],
+          "explain": "Two, four and six are even. One, three and five are odd.",
+          "hint": "Even numbers can make buddy pairs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Eight cookies. Is eight odd or even?",
+          "visual": {
+            "kind": "pairs",
+            "count": 8,
+            "emoji": "🍪"
+          },
+          "options": [
+            {
+              "label": "Even"
+            },
+            {
+              "label": "Odd",
+              "why": "Count the pairs: every cookie has a buddy."
+            }
+          ],
+          "answer": 0,
+          "explain": "Eight makes four pairs, so it is even."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is odd?",
+          "options": [
+            {
+              "label": "2",
+              "why": "Two makes one pair."
+            },
+            {
+              "label": "6",
+              "why": "Six makes three pairs."
+            },
+            {
+              "label": "9"
+            }
+          ],
+          "answer": 2,
+          "explain": "Nine has one left over, so it is odd."
+        }
+      ]
+    },
+    {
+      "id": "odd-even-03",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Bigger odd and even",
+      "intro": {
+        "say": "Let's find odd and even numbers up to fourteen. Look at the last digit!",
+        "icons": [
+          "🔢",
+          "🧦",
+          "👫"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Ten balls make five pairs. Ten is even!",
+          "visual": {
+            "kind": "pairs",
+            "count": 10,
+            "emoji": "⚽"
+          },
+          "caption": "10 is even"
+        },
+        {
+          "mode": "show",
+          "say": "Eleven balls: five pairs and one left over. Eleven is odd. Numbers ending in 1, 3, 5, 7 or 9 are odd.",
+          "visual": {
+            "kind": "pairs",
+            "count": 11,
+            "emoji": "⚽"
+          },
+          "caption": "11 is odd"
+        },
+        {
+          "mode": "choice",
+          "ask": "Twelve flowers. Is twelve odd or even?",
+          "visual": {
+            "kind": "pairs",
+            "count": 12,
+            "emoji": "🌸"
+          },
+          "options": [
+            {
+              "label": "Odd",
+              "why": "Check: does any flower stand alone?"
+            },
+            {
+              "label": "Even"
+            }
+          ],
+          "answer": 1,
+          "explain": "Twelve makes six pairs, so it is even."
+        },
+        {
+          "mode": "choice",
+          "ask": "Thirteen bees. Is thirteen odd or even?",
+          "visual": {
+            "kind": "pairs",
+            "count": 13,
+            "emoji": "🐝"
+          },
+          "options": [
+            {
+              "label": "Odd"
+            },
+            {
+              "label": "Even",
+              "why": "One bee is left without a buddy."
+            }
+          ],
+          "answer": 0,
+          "explain": "Thirteen has one left over, so it is odd."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort the numbers: odd or even?",
+          "bins": [
+            {
+              "label": "Odd",
+              "emoji": "🧦"
+            },
+            {
+              "label": "Even",
+              "emoji": "👫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "7️⃣",
+              "bin": 0,
+              "name": "seven"
+            },
+            {
+              "emoji": "8️⃣",
+              "bin": 1,
+              "name": "eight"
+            },
+            {
+              "emoji": "9️⃣",
+              "bin": 0,
+              "name": "nine"
+            },
+            {
+              "emoji": "🔟",
+              "bin": 1,
+              "name": "ten"
+            },
+            {
+              "emoji": "3️⃣",
+              "bin": 0,
+              "name": "three"
+            },
+            {
+              "emoji": "4️⃣",
+              "bin": 1,
+              "name": "four"
+            }
+          ],
+          "explain": "Eight, ten and four are even. Seven, nine and three are odd."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is even?",
+          "options": [
+            {
+              "label": "11",
+              "why": "Eleven ends in one, so it's odd."
+            },
+            {
+              "label": "14"
+            },
+            {
+              "label": "15",
+              "why": "Fifteen ends in five, so it's odd."
+            }
+          ],
+          "answer": 1,
+          "explain": "Fourteen ends in four, so it is even."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is odd?",
+          "options": [
+            {
+              "label": "10",
+              "why": "Ten makes five pairs."
+            },
+            {
+              "label": "12",
+              "why": "Twelve makes six pairs."
+            },
+            {
+              "label": "13"
+            }
+          ],
+          "answer": 2,
+          "explain": "Thirteen ends in three, so it is odd."
+        }
+      ]
+    },
+    {
+      "id": "odd-even-04",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Odd and even puzzles",
+      "intro": {
+        "say": "What happens when we add odd and even numbers? Let's find the secret rules!",
+        "icons": [
+          "🧠",
+          "🧦",
+          "➕"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Three plus three is six. The two lonely socks become buddies! Odd plus odd makes even.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🧦"
+              },
+              {
+                "count": 3,
+                "emoji": "🧦"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "odd + odd = even"
+        },
+        {
+          "mode": "show",
+          "say": "Four plus three is seven. One sock is still lonely. Even plus odd makes odd.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🧦"
+              },
+              {
+                "count": 3,
+                "emoji": "🧦"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "even + odd = odd"
+        },
+        {
+          "mode": "choice",
+          "ask": "Five plus five is ten. Is ten odd or even?",
+          "visual": {
+            "kind": "text",
+            "text": "5 + 5 = 10"
+          },
+          "options": [
+            {
+              "label": "Even"
+            },
+            {
+              "label": "Odd",
+              "why": "Ten makes five pairs."
+            }
+          ],
+          "answer": 0,
+          "explain": "Odd plus odd makes even, and ten is even."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two plus four is six. Even plus even makes what?",
+          "visual": {
+            "kind": "text",
+            "text": "2 + 4 = 6"
+          },
+          "options": [
+            {
+              "label": "Odd",
+              "why": "Six can make three pairs."
+            },
+            {
+              "label": "Even"
+            }
+          ],
+          "answer": 1,
+          "explain": "Even plus even always makes even."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is three plus four odd or even?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍎"
+              },
+              {
+                "count": 4,
+                "emoji": "🍎"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "Even",
+              "why": "Three plus four is seven. One is left over."
+            },
+            {
+              "label": "Odd"
+            }
+          ],
+          "answer": 1,
+          "explain": "Three plus four is seven, and seven is odd."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ben has 9 socks. Can every sock have a buddy?",
+          "visual": {
+            "kind": "pairs",
+            "count": 9,
+            "emoji": "🧦"
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "why": "Nine is odd, so one is left over."
+            },
+            {
+              "label": "No"
+            }
+          ],
+          "answer": 1,
+          "explain": "Nine is odd, so one sock is left without a buddy."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sum is odd?",
+          "options": [
+            {
+              "label": "1 + 1",
+              "why": "That makes two, which is even."
+            },
+            {
+              "label": "6 + 1"
+            },
+            {
+              "label": "3 + 5",
+              "why": "That makes eight, which is even."
+            }
+          ],
+          "answer": 1,
+          "explain": "Six plus one is seven, and seven is odd."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes after an even number?",
+          "options": [
+            {
+              "label": "Odd"
+            },
+            {
+              "label": "Even",
+              "why": "Look: after two comes three."
+            }
+          ],
+          "answer": 0,
+          "explain": "Odd and even take turns: two, three, four, five.",
+          "hint": "Think: after two comes three."
+        }
+      ]
+    }
+  ]
+}

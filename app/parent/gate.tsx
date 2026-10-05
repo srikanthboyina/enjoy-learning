@@ -2,11 +2,12 @@
 // Young children can't easily read "seven, two, nine", so this keeps them out.
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { newChallenge, useParentGate } from '../../src/services/parentGate';
 import { colors, radii, spacing } from '../../src/theme';
+import { Text } from '../../src/kit/Text';
 
 export default function ParentGate() {
   const router = useRouter();

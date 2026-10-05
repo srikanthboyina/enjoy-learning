@@ -1,0 +1,723 @@
+{
+  "topicId": "healthy-food",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "healthy-food-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Food groups",
+      "intro": {
+        "say": "Food gives us energy to run, play and grow. Let's meet the food groups!",
+        "icons": [
+          "🍎",
+          "🥦",
+          "🍞",
+          "🥛"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Fruits are sweet foods that grow on plants, like apples and bananas. Vegetables are plants we eat, like carrots and broccoli.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🍌",
+              "🥕",
+              "🥦"
+            ]
+          },
+          "caption": "fruits · vegetables"
+        },
+        {
+          "mode": "show",
+          "say": "Grains like bread and rice give us energy. Protein like eggs and fish helps us grow. Dairy like milk and cheese helps our bones.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍞",
+              "🍚",
+              "🥚",
+              "🐟",
+              "🥛",
+              "🧀"
+            ]
+          },
+          "caption": "grains · protein · dairy"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a fruit?",
+          "options": [
+            {
+              "emoji": "🥕",
+              "label": "carrot",
+              "why": "A carrot is a vegetable. A banana is a fruit."
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread",
+              "why": "Bread is a grain. A banana is a fruit."
+            },
+            {
+              "emoji": "🍌",
+              "label": "banana"
+            }
+          ],
+          "answer": 2,
+          "explain": "A banana is a sweet fruit."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a vegetable?",
+          "options": [
+            {
+              "emoji": "🥦",
+              "label": "broccoli"
+            },
+            {
+              "emoji": "🧀",
+              "label": "cheese",
+              "why": "Cheese is made from milk. Broccoli is a vegetable."
+            }
+          ],
+          "answer": 0,
+          "explain": "Broccoli is a green vegetable."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it a fruit or a vegetable?",
+          "bins": [
+            {
+              "label": "fruit",
+              "emoji": "🍎"
+            },
+            {
+              "label": "vegetable",
+              "emoji": "🥦"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍌",
+              "bin": 0,
+              "name": "banana"
+            },
+            {
+              "emoji": "🍇",
+              "bin": 0,
+              "name": "grapes"
+            },
+            {
+              "emoji": "🍓",
+              "bin": 0,
+              "name": "strawberry"
+            },
+            {
+              "emoji": "🥕",
+              "bin": 1,
+              "name": "carrot"
+            },
+            {
+              "emoji": "🥬",
+              "bin": 1,
+              "name": "lettuce"
+            },
+            {
+              "emoji": "🥒",
+              "bin": 1,
+              "name": "cucumber"
+            }
+          ],
+          "explain": "Bananas, grapes and strawberries are fruits. Carrots, lettuce and cucumbers are vegetables."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which drink is made by cows and is dairy?",
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "water",
+              "why": "Water is great, but milk is the dairy drink."
+            },
+            {
+              "emoji": "🥛",
+              "label": "milk"
+            },
+            {
+              "emoji": "🧃",
+              "label": "orange juice",
+              "why": "Juice comes from fruit. Milk is dairy."
+            }
+          ],
+          "answer": 1,
+          "explain": "Milk comes from cows, and it is a dairy food."
+        }
+      ]
+    },
+    {
+      "id": "healthy-food-02",
+      "order": 2,
+      "difficulty": "simple",
+      "name": "Everyday and sometimes foods",
+      "intro": {
+        "say": "Some foods are everyday foods that help us grow. Others are sometimes foods, treats for now and then.",
+        "icons": [
+          "🍎",
+          "🍰",
+          "💧"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Everyday foods like fruit, vegetables, bread, eggs and milk help our bodies grow strong.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🥦",
+              "🍞",
+              "🥚",
+              "🥛"
+            ]
+          },
+          "caption": "everyday foods"
+        },
+        {
+          "mode": "show",
+          "say": "Sometimes foods like cake, candy and fries are yummy treats. We enjoy them now and then, not every day.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍰",
+              "🍬",
+              "🍟"
+            ]
+          },
+          "caption": "sometimes foods"
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it an everyday food or a sometimes food?",
+          "bins": [
+            {
+              "label": "everyday",
+              "emoji": "🍎"
+            },
+            {
+              "label": "sometimes",
+              "emoji": "🍰"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🥕",
+              "bin": 0,
+              "name": "carrot"
+            },
+            {
+              "emoji": "🍇",
+              "bin": 0,
+              "name": "grapes"
+            },
+            {
+              "emoji": "🥚",
+              "bin": 0,
+              "name": "egg"
+            },
+            {
+              "emoji": "🍩",
+              "bin": 1,
+              "name": "donut"
+            },
+            {
+              "emoji": "🍭",
+              "bin": 1,
+              "name": "lollipop"
+            },
+            {
+              "emoji": "🍟",
+              "bin": 1,
+              "name": "fries"
+            }
+          ],
+          "explain": "Fruit, vegetables and eggs are everyday foods. Donuts, lollipops and fries are treats."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the best drink when you are thirsty?",
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "water"
+            },
+            {
+              "emoji": "🥤",
+              "label": "soda",
+              "why": "Soda has lots of sugar. Water is best for thirst."
+            },
+            {
+              "emoji": "🍦",
+              "label": "milkshake",
+              "why": "Milkshakes are a treat. Water is best for thirst."
+            }
+          ],
+          "answer": 0,
+          "explain": "Water is the best drink. Our bodies need lots of it every day."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a sometimes food?",
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "apple",
+              "why": "Apples are everyday foods."
+            },
+            {
+              "emoji": "🍰",
+              "label": "cake"
+            },
+            {
+              "emoji": "🍚",
+              "label": "rice",
+              "why": "Rice is an everyday food that gives us energy."
+            }
+          ],
+          "answer": 1,
+          "explain": "Cake is a yummy treat for special times, like birthdays."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which snack is an everyday food?",
+          "options": [
+            {
+              "emoji": "🍬",
+              "label": "candy",
+              "why": "Candy is a sometimes treat."
+            },
+            {
+              "emoji": "🍓",
+              "label": "strawberries"
+            }
+          ],
+          "answer": 1,
+          "explain": "Strawberries are fruit, and fruit is an everyday food."
+        }
+      ]
+    },
+    {
+      "id": "healthy-food-03",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Sort the food groups",
+      "intro": {
+        "say": "Let's sort foods into their groups: fruit, vegetables, grains, protein and dairy.",
+        "icons": [
+          "🍇",
+          "🥕",
+          "🍞",
+          "🍗",
+          "🧀"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Grains come from plants like wheat and rice. Bread, pasta, rice and cereal are all grains.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍞",
+              "🍝",
+              "🍚",
+              "🥣"
+            ]
+          },
+          "caption": "grains"
+        },
+        {
+          "mode": "show",
+          "say": "Protein foods include meat, fish, eggs and nuts. Dairy foods are made from milk, like cheese and yogurt.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍗",
+              "🐟",
+              "🥚",
+              "🥜",
+              "🧀",
+              "🥛"
+            ]
+          },
+          "caption": "protein · dairy"
+        },
+        {
+          "mode": "sort",
+          "ask": "Fruit, vegetable, or grain? Sort them!",
+          "bins": [
+            {
+              "label": "fruit",
+              "emoji": "🍎"
+            },
+            {
+              "label": "vegetable",
+              "emoji": "🥦"
+            },
+            {
+              "label": "grain",
+              "emoji": "🍞"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍐",
+              "bin": 0,
+              "name": "pear"
+            },
+            {
+              "emoji": "🍉",
+              "bin": 0,
+              "name": "watermelon"
+            },
+            {
+              "emoji": "🥕",
+              "bin": 1,
+              "name": "carrot"
+            },
+            {
+              "emoji": "🌽",
+              "bin": 1,
+              "name": "corn"
+            },
+            {
+              "emoji": "🍝",
+              "bin": 2,
+              "name": "pasta"
+            },
+            {
+              "emoji": "🍚",
+              "bin": 2,
+              "name": "rice"
+            }
+          ],
+          "explain": "Pears and watermelon are fruits, carrots and corn are vegetables, and pasta and rice are grains."
+        },
+        {
+          "mode": "sort",
+          "ask": "Protein or dairy? Sort them!",
+          "bins": [
+            {
+              "label": "protein",
+              "emoji": "🍗"
+            },
+            {
+              "label": "dairy",
+              "emoji": "🥛"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🥚",
+              "bin": 0,
+              "name": "egg"
+            },
+            {
+              "emoji": "🐟",
+              "bin": 0,
+              "name": "fish"
+            },
+            {
+              "emoji": "🥜",
+              "bin": 0,
+              "name": "peanuts"
+            },
+            {
+              "emoji": "🧀",
+              "bin": 1,
+              "name": "cheese"
+            },
+            {
+              "emoji": "🥛",
+              "bin": 1,
+              "name": "milk"
+            },
+            {
+              "emoji": "🍦",
+              "bin": 1,
+              "name": "ice cream"
+            }
+          ],
+          "explain": "Eggs, fish and nuts are protein. Cheese, milk and ice cream are made from milk, so they are dairy."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which food group is cheese in?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧀"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍞",
+              "label": "grains",
+              "why": "Grains are things like bread. Cheese is made from milk."
+            },
+            {
+              "emoji": "🍗",
+              "label": "protein",
+              "why": "Cheese has some protein, but it is made from milk, so it's dairy."
+            },
+            {
+              "emoji": "🥛",
+              "label": "dairy"
+            }
+          ],
+          "answer": 2,
+          "explain": "Cheese is made from milk, so it is dairy."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which food is a grain?",
+          "options": [
+            {
+              "emoji": "🥚",
+              "label": "egg",
+              "why": "An egg is a protein food."
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread"
+            },
+            {
+              "emoji": "🍐",
+              "label": "pear",
+              "why": "A pear is a fruit."
+            }
+          ],
+          "answer": 1,
+          "explain": "Bread is made from wheat, which is a grain."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which food group gives us lots of energy to run and play?",
+          "options": [
+            {
+              "emoji": "🍝",
+              "label": "grains"
+            },
+            {
+              "emoji": "💧",
+              "label": "water",
+              "why": "Water keeps us healthy, but grains give lots of energy."
+            }
+          ],
+          "answer": 0,
+          "explain": "Grains like pasta, rice and bread give us energy."
+        }
+      ]
+    },
+    {
+      "id": "healthy-food-04",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Why food helps",
+      "intro": {
+        "say": "Different foods help our bodies in different ways. Let's find out why, and build a balanced plate!",
+        "icons": [
+          "🍽️",
+          "💪",
+          "🦴"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Dairy foods like milk have calcium. Calcium helps build strong bones and teeth.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥛",
+              "🧀",
+              "🦴",
+              "🦷"
+            ]
+          },
+          "caption": "dairy → strong bones"
+        },
+        {
+          "mode": "show",
+          "say": "Protein helps build strong muscles. Fruit and vegetables have vitamins that keep us healthy. Carrots help keep our eyes healthy.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥚",
+              "💪",
+              "🥕",
+              "👀"
+            ]
+          },
+          "caption": "protein → muscles · vitamins → healthy"
+        },
+        {
+          "mode": "show",
+          "say": "A balanced plate has fruit and vegetables on half, plus some grains, some protein, and a dairy drink.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥦",
+              "🍎",
+              "🍚",
+              "🐟",
+              "🥛"
+            ]
+          },
+          "caption": "a balanced plate"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why is milk good for you?",
+          "options": [
+            {
+              "emoji": "🦴",
+              "label": "it builds strong bones"
+            },
+            {
+              "emoji": "🌳",
+              "label": "it makes you taller than a tree",
+              "why": "Milk won't make you that tall! It helps build strong bones."
+            },
+            {
+              "emoji": "😴",
+              "label": "it gives you no energy",
+              "why": "Milk does give energy. It's best known for strong bones."
+            }
+          ],
+          "answer": 0,
+          "explain": "Milk has calcium, which helps build strong bones and teeth."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which food helps build strong muscles?",
+          "options": [
+            {
+              "emoji": "🍭",
+              "label": "lollipop",
+              "why": "Lollipops are sweet treats. Protein helps build muscles."
+            },
+            {
+              "emoji": "🥚",
+              "label": "egg"
+            },
+            {
+              "emoji": "🥬",
+              "label": "lettuce",
+              "why": "Lettuce has vitamins, but protein like eggs builds muscles."
+            }
+          ],
+          "answer": 1,
+          "explain": "Eggs have protein, and protein helps build strong muscles."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which plate is the most balanced?",
+          "options": [
+            {
+              "label": "🍰🍩🍬",
+              "why": "That plate is all treats. A balanced plate has many food groups."
+            },
+            {
+              "label": "🍞🍝🍚",
+              "why": "That plate is all grains. Add vegetables, protein and dairy."
+            },
+            {
+              "label": "🥦🍚🐟🥛"
+            }
+          ],
+          "answer": 2,
+          "explain": "That plate has vegetables, grains, protein and dairy. That's balanced!",
+          "hint": "Look for the plate with the most different food groups."
+        },
+        {
+          "mode": "sort",
+          "ask": "What does it help? Sort each food by its job.",
+          "bins": [
+            {
+              "label": "bones",
+              "emoji": "🦴"
+            },
+            {
+              "label": "muscles",
+              "emoji": "💪"
+            },
+            {
+              "label": "energy",
+              "emoji": "⚡"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🥛",
+              "bin": 0,
+              "name": "milk"
+            },
+            {
+              "emoji": "🧀",
+              "bin": 0,
+              "name": "cheese"
+            },
+            {
+              "emoji": "🐟",
+              "bin": 1,
+              "name": "fish"
+            },
+            {
+              "emoji": "🍗",
+              "bin": 1,
+              "name": "chicken"
+            },
+            {
+              "emoji": "🍞",
+              "bin": 2,
+              "name": "bread"
+            },
+            {
+              "emoji": "🍝",
+              "bin": 2,
+              "name": "pasta"
+            }
+          ],
+          "explain": "Dairy builds bones, protein builds muscles, and grains give us energy."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do we need to drink water every day?",
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "our bodies are mostly water"
+            },
+            {
+              "emoji": "🍬",
+              "label": "water tastes like candy",
+              "why": "Water has no sugar. We drink it because our bodies need it."
+            },
+            {
+              "emoji": "😴",
+              "label": "to make us sleepy",
+              "why": "Water doesn't make us sleepy. Our bodies need it to work well."
+            }
+          ],
+          "answer": 0,
+          "explain": "Our bodies are mostly water, so we need to drink it to stay healthy."
+        }
+      ]
+    }
+  ]
+}

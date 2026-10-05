@@ -1,55 +1,201 @@
 {
+  "topicId": "counting",
   "gameId": "counting",
   "version": 1,
   "levels": [
     {
       "id": "counting-01",
       "order": 1,
+      "difficulty": "simple",
       "name": "Count to 3",
-      "intro": { "say": "Let's count! Put the right number in the basket.", "icons": ["drag", "apple", "basket"] },
+      "intro": {
+        "say": "Let's count! Put the right number in the basket.",
+        "icons": [
+          "drag",
+          "apple",
+          "basket"
+        ]
+      },
       "rounds": [
-        { "mode": "collect", "target": 2, "item": "apple", "available": 4 },
-        { "mode": "collect", "target": 3, "item": "star", "available": 5 },
-        { "mode": "collect", "target": 1, "item": "duck", "available": 3 },
-        { "mode": "collect", "target": 3, "item": "banana", "available": 4 }
+        {
+          "mode": "collect",
+          "target": 2,
+          "item": "apple",
+          "available": 4
+        },
+        {
+          "mode": "collect",
+          "target": 3,
+          "item": "star",
+          "available": 5
+        },
+        {
+          "mode": "collect",
+          "target": 1,
+          "item": "duck",
+          "available": 3
+        },
+        {
+          "mode": "collect",
+          "target": 3,
+          "item": "banana",
+          "available": 4
+        }
       ]
     },
     {
       "id": "counting-02",
-      "order": 2,
+      "order": 1,
+      "difficulty": "medium",
       "name": "Count to 5",
-      "intro": { "say": "Can you count to five?", "icons": ["drag", "fish", "basket"] },
+      "intro": {
+        "say": "Can you count to five?",
+        "icons": [
+          "drag",
+          "fish",
+          "basket"
+        ]
+      },
       "rounds": [
-        { "mode": "collect", "target": 4, "item": "fish", "available": 6 },
-        { "mode": "collect", "target": 5, "item": "strawberry", "available": 7 },
-        { "mode": "match", "groups": [3, 5], "showNumeral": 5, "item": "ball" },
-        { "mode": "collect", "target": 3, "item": "flower", "available": 6, "hideDots": true }
+        {
+          "mode": "collect",
+          "target": 4,
+          "item": "fish",
+          "available": 6
+        },
+        {
+          "mode": "collect",
+          "target": 5,
+          "item": "strawberry",
+          "available": 7
+        },
+        {
+          "mode": "match",
+          "groups": [
+            3,
+            5
+          ],
+          "showNumeral": 5,
+          "item": "ball"
+        },
+        {
+          "mode": "collect",
+          "target": 3,
+          "item": "flower",
+          "available": 6,
+          "hideDots": true
+        }
       ]
     },
     {
       "id": "counting-03",
-      "order": 3,
+      "order": 1,
+      "difficulty": "complex",
       "name": "Count to 10",
-      "intro": { "say": "Big numbers now! Count carefully.", "icons": ["eyes", "car", "basket"] },
-      "stars": { "three": 0, "two": 3 },
+      "intro": {
+        "say": "Big numbers now! Count carefully.",
+        "icons": [
+          "eyes",
+          "car",
+          "basket"
+        ]
+      },
+      "stars": {
+        "three": 0,
+        "two": 3
+      },
       "rounds": [
-        { "mode": "collect", "target": 7, "item": "car", "available": 10 },
-        { "mode": "collect", "target": 6, "item": "flower", "available": 9, "hideDots": true },
-        { "mode": "match", "groups": [6, 8, 9], "showNumeral": 8, "item": "carrot" },
-        { "mode": "collect", "target": 9, "item": "carrot", "available": 11, "hideDots": true }
+        {
+          "mode": "collect",
+          "target": 7,
+          "item": "car",
+          "available": 10
+        },
+        {
+          "mode": "collect",
+          "target": 6,
+          "item": "flower",
+          "available": 9,
+          "hideDots": true
+        },
+        {
+          "mode": "match",
+          "groups": [
+            6,
+            8,
+            9
+          ],
+          "showNumeral": 8,
+          "item": "carrot"
+        },
+        {
+          "mode": "collect",
+          "target": 9,
+          "item": "carrot",
+          "available": 11,
+          "hideDots": true
+        }
       ]
     },
     {
       "id": "counting-04",
-      "order": 4,
+      "order": 2,
+      "difficulty": "complex",
       "name": "Numbers and groups",
-      "intro": { "say": "Find the group that matches the number.", "icons": ["ear", "eyes", "tap"] },
-      "stars": { "three": 0, "two": 2 },
+      "intro": {
+        "say": "Find the group that matches the number.",
+        "icons": [
+          "ear",
+          "eyes",
+          "tap"
+        ]
+      },
+      "stars": {
+        "three": 0,
+        "two": 2
+      },
       "rounds": [
-        { "mode": "match", "groups": [2, 5, 7], "showNumeral": 5, "item": "apple" },
-        { "mode": "match", "groups": [4, 9, 6], "showNumeral": 9, "item": "star" },
-        { "mode": "match", "groups": [7, 3, 10], "showNumeral": 10, "item": "duck" },
-        { "mode": "match", "groups": [8, 6, 1, 4], "showNumeral": 6, "item": "strawberry" }
+        {
+          "mode": "match",
+          "groups": [
+            2,
+            5,
+            7
+          ],
+          "showNumeral": 5,
+          "item": "apple"
+        },
+        {
+          "mode": "match",
+          "groups": [
+            4,
+            9,
+            6
+          ],
+          "showNumeral": 9,
+          "item": "star"
+        },
+        {
+          "mode": "match",
+          "groups": [
+            7,
+            3,
+            10
+          ],
+          "showNumeral": 10,
+          "item": "duck"
+        },
+        {
+          "mode": "match",
+          "groups": [
+            8,
+            6,
+            1,
+            4
+          ],
+          "showNumeral": 6,
+          "item": "strawberry"
+        }
       ]
     }
   ]

@@ -1,0 +1,723 @@
+{
+  "topicId": "patterns",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "patterns-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Red, blue, red, blue",
+      "intro": {
+        "say": "A pattern is something that repeats again and again. Let's find what comes next!",
+        "icons": [
+          "🔴",
+          "🔵",
+          "🔴",
+          "🔵"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Red, blue, red, blue, red, blue. The colours take turns. That is a pattern!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🔴",
+              "🔵",
+              "🔴",
+              "🔵",
+              "🔴",
+              "🔵"
+            ]
+          },
+          "caption": "red blue red blue"
+        },
+        {
+          "mode": "show",
+          "say": "Red, blue, red, blue, red. What comes next? Blue, because blue always comes after red!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🔴",
+              "🔵",
+              "🔴",
+              "🔵",
+              "🔴",
+              "🔵"
+            ]
+          },
+          "caption": "🔴 🔵 🔴 🔵 🔴 → 🔵"
+        },
+        {
+          "mode": "choice",
+          "ask": "Red, blue, red, blue. What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🔴",
+              "🔵",
+              "🔴",
+              "🔵",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🔵",
+              "why": "Blue just came. Now it is red's turn."
+            },
+            {
+              "emoji": "🔴"
+            },
+            {
+              "emoji": "🟢",
+              "why": "Green is not in this pattern."
+            }
+          ],
+          "answer": 1,
+          "explain": "After blue comes red, so red is next."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🟡",
+              "🟢",
+              "🟡",
+              "🟢",
+              "🟡",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🟡",
+              "why": "Yellow just came. Who comes after yellow?"
+            },
+            {
+              "emoji": "🔴",
+              "why": "Red is not in this pattern."
+            },
+            {
+              "emoji": "🟢"
+            }
+          ],
+          "answer": 2,
+          "explain": "Yellow, green, yellow, green. After yellow comes green."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🐶",
+              "🐱",
+              "🐶",
+              "🐱",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🐶"
+            },
+            {
+              "emoji": "🐱",
+              "why": "The cat just came. Now it is the dog's turn."
+            },
+            {
+              "emoji": "🐭",
+              "why": "The mouse is not in this pattern."
+            }
+          ],
+          "answer": 0,
+          "explain": "Dog, cat, dog, cat. After cat comes dog."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is missing?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🍎",
+              "🍌",
+              "?",
+              "🍌",
+              "🍎",
+              "🍌"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍌",
+              "why": "That would make two bananas together."
+            },
+            {
+              "emoji": "🍎"
+            },
+            {
+              "emoji": "🍇",
+              "why": "Grapes are not in this pattern."
+            }
+          ],
+          "answer": 1,
+          "explain": "Apple, banana, apple, banana. The missing one is an apple."
+        }
+      ]
+    },
+    {
+      "id": "patterns-02",
+      "order": 2,
+      "difficulty": "simple",
+      "name": "Pattern parade",
+      "intro": {
+        "say": "Animals and colours can make patterns too. Can you keep the pattern going?",
+        "icons": [
+          "⭐",
+          "🌙",
+          "⭐",
+          "🌙"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Star, moon, star, moon. Say it with me! Star, moon, star, moon.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "⭐",
+              "🌙",
+              "⭐",
+              "🌙",
+              "⭐",
+              "🌙"
+            ]
+          },
+          "caption": "star moon star moon"
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "⭐",
+              "🌙",
+              "⭐",
+              "🌙",
+              "⭐",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⭐",
+              "why": "Star just came. Now the moon comes."
+            },
+            {
+              "emoji": "🌙"
+            },
+            {
+              "emoji": "☀️",
+              "why": "The sun is not in this pattern."
+            }
+          ],
+          "answer": 1,
+          "explain": "Star, moon, star, moon. After star comes moon."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🟥",
+              "🟦",
+              "🟥",
+              "🟦",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🟦",
+              "why": "Blue just came. It is red's turn now."
+            },
+            {
+              "emoji": "🟩",
+              "why": "Green is not in this pattern."
+            },
+            {
+              "emoji": "🟥"
+            }
+          ],
+          "answer": 2,
+          "explain": "Red, blue, red, blue. After blue comes red."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which row is a pattern?",
+          "options": [
+            {
+              "label": "🐸🐸🐟🐸",
+              "why": "That one does not repeat the same way."
+            },
+            {
+              "label": "🐸🐟🐸🐟"
+            }
+          ],
+          "answer": 1,
+          "explain": "Frog, fish, frog, fish repeats again and again."
+        },
+        {
+          "mode": "order",
+          "ask": "Make the pattern: sun, cloud, sun, cloud.",
+          "items": [
+            {
+              "emoji": "☀️",
+              "label": "sun"
+            },
+            {
+              "emoji": "☁️",
+              "label": "cloud"
+            },
+            {
+              "emoji": "☀️",
+              "label": "sun"
+            },
+            {
+              "emoji": "☁️",
+              "label": "cloud"
+            }
+          ],
+          "explain": "Sun and cloud take turns. That is a pattern!"
+        }
+      ]
+    },
+    {
+      "id": "patterns-03",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Bigger patterns",
+      "intro": {
+        "say": "Some patterns have a longer part that repeats, like red, blue, blue. Let's look closely!",
+        "icons": [
+          "🔴",
+          "🔵",
+          "🔵"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Red, blue, blue. Red, blue, blue. The part that repeats is red, blue, blue.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🔴",
+              "🔵",
+              "🔵",
+              "🔴",
+              "🔵",
+              "🔵"
+            ]
+          },
+          "caption": "🔴🔵🔵 | 🔴🔵🔵"
+        },
+        {
+          "mode": "show",
+          "say": "Patterns can have three different things too. Cat, dog, bunny. Cat, dog, bunny.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🐱",
+              "🐶",
+              "🐰",
+              "🐱",
+              "🐶",
+              "🐰"
+            ]
+          },
+          "caption": "🐱🐶🐰 | 🐱🐶🐰"
+        },
+        {
+          "mode": "choice",
+          "ask": "Red, blue, blue, red, blue. What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🔴",
+              "🔵",
+              "🔵",
+              "🔴",
+              "🔵",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🔴",
+              "why": "There are two blues after each red."
+            },
+            {
+              "emoji": "🔵"
+            },
+            {
+              "emoji": "🟢",
+              "why": "Green is not in this pattern."
+            }
+          ],
+          "answer": 1,
+          "explain": "Each red has two blues after it, so blue comes next."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🍎",
+              "🍌",
+              "🍇",
+              "🍎",
+              "🍌",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍎",
+              "why": "Apple comes after grapes. What comes after banana?"
+            },
+            {
+              "emoji": "🍌",
+              "why": "Banana just came."
+            },
+            {
+              "emoji": "🍇"
+            }
+          ],
+          "answer": 2,
+          "explain": "Apple, banana, grapes repeats. After banana come grapes."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "⭐",
+              "⭐",
+              "🌙",
+              "⭐",
+              "⭐",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌙"
+            },
+            {
+              "emoji": "⭐",
+              "why": "There are only two stars before each moon."
+            },
+            {
+              "emoji": "☀️",
+              "why": "The sun is not in this pattern."
+            }
+          ],
+          "answer": 0,
+          "explain": "Star, star, moon repeats. After two stars comes a moon."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is missing?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🟢",
+              "🟡",
+              "🔴",
+              "🟢",
+              "?",
+              "🔴"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🔴",
+              "why": "Red comes later. Which colour comes after green?"
+            },
+            {
+              "emoji": "🟡"
+            },
+            {
+              "emoji": "🟢",
+              "why": "Green just came."
+            }
+          ],
+          "answer": 1,
+          "explain": "Green, yellow, red repeats. Yellow comes after green."
+        },
+        {
+          "mode": "order",
+          "ask": "Build the pattern: cat, dog, bunny, cat, dog, bunny.",
+          "items": [
+            {
+              "emoji": "🐱",
+              "label": "cat"
+            },
+            {
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "emoji": "🐰",
+              "label": "bunny"
+            },
+            {
+              "emoji": "🐱",
+              "label": "cat"
+            },
+            {
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "emoji": "🐰",
+              "label": "bunny"
+            }
+          ],
+          "explain": "Cat, dog, bunny, and then it starts again."
+        }
+      ]
+    },
+    {
+      "id": "patterns-04",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Growing patterns",
+      "intro": {
+        "say": "Some patterns grow! Numbers can go up by the same amount each time. Let's find the rule.",
+        "icons": [
+          "1️⃣",
+          "3️⃣",
+          "5️⃣",
+          "❓"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "1, 3, 5, 7. Each number is 2 more than the one before. The rule is add 2.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "1",
+              "3",
+              "5",
+              "7"
+            ]
+          },
+          "caption": "+2 each time"
+        },
+        {
+          "mode": "show",
+          "say": "Shapes can grow too. One dot, two dots, three dots. Each step adds one more.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔵"
+              },
+              {
+                "count": 2,
+                "emoji": "🔵"
+              },
+              {
+                "count": 3,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "and"
+          },
+          "caption": "1, 2, 3 …"
+        },
+        {
+          "mode": "choice",
+          "ask": "1, 3, 5. What number comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "1",
+              "3",
+              "5",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "The numbers jump by 2, not by 1."
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "9",
+              "why": "That jump is too big. Add 2 to 5."
+            }
+          ],
+          "answer": 1,
+          "explain": "Each number goes up by 2, and 5 and 2 more make 7.",
+          "hint": "How much bigger is 3 than 1?"
+        },
+        {
+          "mode": "choice",
+          "ask": "2, 4, 6, 8. What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "2",
+              "4",
+              "6",
+              "8",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "We jump by 2 each time."
+            },
+            {
+              "label": "12",
+              "why": "That is a jump of 4. Try a jump of 2."
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "answer": 2,
+          "explain": "We add 2 each time, and 8 and 2 more make 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "5, 10, 15. What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "5",
+              "10",
+              "15",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "20"
+            },
+            {
+              "label": "16",
+              "why": "The jumps are 5 each time."
+            },
+            {
+              "label": "25",
+              "why": "That skips one. Add 5 to 15."
+            }
+          ],
+          "answer": 0,
+          "explain": "We count by fives: 5, 10, 15, 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "Triangle, circle, square, triangle, circle, square, triangle. Which shape comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🔺",
+              "🔴",
+              "🟦",
+              "🔺",
+              "🔴",
+              "🟦",
+              "🔺",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "shape": "square",
+              "why": "Square comes after circle. What comes after triangle?"
+            },
+            {
+              "shape": "circle"
+            },
+            {
+              "shape": "triangle",
+              "why": "Triangle just came."
+            }
+          ],
+          "answer": 1,
+          "explain": "Triangle, circle, square repeats, so circle comes after triangle."
+        },
+        {
+          "mode": "choice",
+          "ask": "10, 8, 6, 4. What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "10",
+              "8",
+              "6",
+              "4",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "The numbers go down by 2 each time."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "5",
+              "why": "Count back by 2 from 4."
+            }
+          ],
+          "answer": 1,
+          "explain": "Each number is 2 less, and 4 take away 2 is 2."
+        },
+        {
+          "mode": "order",
+          "ask": "Build the growing pattern, counting by 3s.",
+          "items": [
+            {
+              "label": "3"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "12"
+            }
+          ],
+          "explain": "Each number is 3 more than the one before: 3, 6, 9, 12."
+        }
+      ]
+    }
+  ]
+}

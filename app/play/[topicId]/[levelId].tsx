@@ -9,7 +9,7 @@ export default function PlayScreen() {
   const { topicId, levelId } = useLocalSearchParams<{ topicId: string; levelId: string }>();
   const topic = getTopic(topicId);
   const definition = topic && getGame(topic.gameId);
-  const levels = topic ? getLevels(topic.gameId) : [];
+  const levels = topic ? getLevels(topic.id) : [];
   const index = levels.findIndex((l) => l.id === levelId);
   if (!topic || !definition || index < 0) return <Redirect href="/" />;
 

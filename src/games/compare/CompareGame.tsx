@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 import Animated, { FadeIn, ZoomIn } from 'react-native-reanimated';
 
 import { numberWord } from '../../engine/phrases';
@@ -11,6 +11,7 @@ import { colors, radii, sizes, spacing } from '../../theme';
 import { Croc } from './parts/Croc';
 import { Group } from './parts/Group';
 import { signFor, type CompareRound, type Sign } from './schema';
+import { Text } from '../../kit/Text';
 
 type ShowRound = Extract<CompareRound, { mode: 'show' }>;
 type PickRound = Extract<CompareRound, { mode: 'pick' }>;

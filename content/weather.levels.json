@@ -1,0 +1,577 @@
+{
+  "topicId": "weather",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "weather-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "What is the weather?",
+      "intro": {
+        "say": "Weather is what the sky and air are like outside. Let's look out the window!",
+        "icons": [
+          "☀️",
+          "🌧️",
+          "❄️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Sunny days are bright and warm. Rainy days have water falling from clouds.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "🌧️"
+            ]
+          },
+          "caption": "sunny · rainy"
+        },
+        {
+          "mode": "show",
+          "say": "Cloudy days have lots of clouds. Snowy days are cold and white. Windy days blow things around!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☁️",
+              "❄️",
+              "🌬️"
+            ]
+          },
+          "caption": "cloudy · snowy · windy"
+        },
+        {
+          "mode": "choice",
+          "ask": "Water is falling from the clouds. What is the weather?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌧️",
+              "☔",
+              "💧"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "☀️",
+              "label": "sunny",
+              "why": "Look, there is water falling. That's rain."
+            },
+            {
+              "emoji": "🌧️",
+              "label": "rainy"
+            },
+            {
+              "emoji": "❄️",
+              "label": "snowy",
+              "why": "Snow is white and cold. This is water."
+            }
+          ],
+          "answer": 1,
+          "explain": "Water falling from the clouds is rain."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which weather is good for making a snowman?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⛄"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "☀️",
+              "label": "sunny",
+              "why": "It's too warm for snow on a hot sunny day."
+            },
+            {
+              "emoji": "🌬️",
+              "label": "windy",
+              "why": "Wind blows, but we need snow for a snowman."
+            },
+            {
+              "emoji": "❄️",
+              "label": "snowy"
+            }
+          ],
+          "answer": 2,
+          "explain": "You need cold, snowy weather to build a snowman."
+        },
+        {
+          "mode": "choice",
+          "ask": "The kite is flying high. What is the weather?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪁",
+              "🌬️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌬️",
+              "label": "windy"
+            },
+            {
+              "emoji": "🌧️",
+              "label": "rainy",
+              "why": "Rain makes things wet. Wind makes kites fly."
+            }
+          ],
+          "answer": 0,
+          "explain": "Wind pushes the kite up into the sky."
+        },
+        {
+          "mode": "sort",
+          "ask": "What do we wear? Sort each thing into sunny, rainy or snowy.",
+          "bins": [
+            {
+              "label": "sunny",
+              "emoji": "☀️"
+            },
+            {
+              "label": "rainy",
+              "emoji": "🌧️"
+            },
+            {
+              "label": "snowy",
+              "emoji": "❄️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🕶️",
+              "bin": 0,
+              "name": "sunglasses"
+            },
+            {
+              "emoji": "🩳",
+              "bin": 0,
+              "name": "shorts"
+            },
+            {
+              "emoji": "☂️",
+              "bin": 1,
+              "name": "umbrella"
+            },
+            {
+              "emoji": "🌂",
+              "bin": 1,
+              "name": "closed umbrella"
+            },
+            {
+              "emoji": "🧣",
+              "bin": 2,
+              "name": "scarf"
+            },
+            {
+              "emoji": "🧤",
+              "bin": 2,
+              "name": "gloves"
+            }
+          ],
+          "explain": "We dress for the weather to stay cool, dry, or warm."
+        },
+        {
+          "mode": "choice",
+          "ask": "It is sunny and hot. What should you wear?",
+          "options": [
+            {
+              "emoji": "🧣",
+              "label": "scarf",
+              "why": "A scarf is for cold days. On hot days, wear a sun hat."
+            },
+            {
+              "emoji": "👒",
+              "label": "sun hat"
+            }
+          ],
+          "answer": 1,
+          "explain": "A sun hat keeps the hot sun off your head and face."
+        }
+      ]
+    },
+    {
+      "id": "weather-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "The four seasons",
+      "intro": {
+        "say": "A year has four seasons: spring, summer, autumn and winter. Each one has different weather.",
+        "icons": [
+          "🌷",
+          "☀️",
+          "🍂",
+          "⛄"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "In spring, it gets warmer. Flowers bloom and baby animals are born. In summer, it is hot and sunny.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌷",
+              "🐣",
+              "☀️",
+              "🏖️"
+            ]
+          },
+          "caption": "spring · summer"
+        },
+        {
+          "mode": "show",
+          "say": "In autumn, it gets cooler and leaves fall from trees. In winter, it is cold, and in some places it snows.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍂",
+              "🍁",
+              "⛄",
+              "❄️"
+            ]
+          },
+          "caption": "autumn · winter"
+        },
+        {
+          "mode": "order",
+          "ask": "Put the seasons in order, starting with spring.",
+          "items": [
+            {
+              "emoji": "🌷",
+              "label": "spring"
+            },
+            {
+              "emoji": "☀️",
+              "label": "summer"
+            },
+            {
+              "emoji": "🍂",
+              "label": "autumn"
+            },
+            {
+              "emoji": "⛄",
+              "label": "winter"
+            }
+          ],
+          "explain": "Spring, summer, autumn, winter. Then spring comes again!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Leaves are falling from the trees. What season is it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍁",
+              "🍂",
+              "🍂"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "☀️",
+              "label": "summer",
+              "why": "In summer, trees are full of green leaves."
+            },
+            {
+              "emoji": "🍂",
+              "label": "autumn"
+            },
+            {
+              "emoji": "🌷",
+              "label": "spring",
+              "why": "In spring, new leaves grow on trees."
+            }
+          ],
+          "answer": 1,
+          "explain": "In autumn, leaves change color and fall from the trees."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it summer or winter? Sort the pictures.",
+          "bins": [
+            {
+              "label": "summer",
+              "emoji": "☀️"
+            },
+            {
+              "label": "winter",
+              "emoji": "⛄"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏖️",
+              "bin": 0,
+              "name": "beach"
+            },
+            {
+              "emoji": "🍦",
+              "bin": 0,
+              "name": "ice cream"
+            },
+            {
+              "emoji": "🩳",
+              "bin": 0,
+              "name": "shorts"
+            },
+            {
+              "emoji": "⛄",
+              "bin": 1,
+              "name": "snowman"
+            },
+            {
+              "emoji": "🧤",
+              "bin": 1,
+              "name": "gloves"
+            },
+            {
+              "emoji": "🛷",
+              "bin": 1,
+              "name": "sled"
+            }
+          ],
+          "explain": "Summer is hot, so we go to the beach. Winter is cold, so we wrap up warm."
+        },
+        {
+          "mode": "choice",
+          "ask": "What season comes after winter?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🍂",
+              "⛄",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍂",
+              "label": "autumn",
+              "why": "Autumn comes before winter."
+            },
+            {
+              "emoji": "☀️",
+              "label": "summer",
+              "why": "Summer comes after spring."
+            },
+            {
+              "emoji": "🌷",
+              "label": "spring"
+            }
+          ],
+          "answer": 2,
+          "explain": "After cold winter comes spring, when it gets warmer again."
+        },
+        {
+          "mode": "choice",
+          "ask": "Flowers bloom and baby birds hatch. What season is it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌷",
+              "🌼",
+              "🐣"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌷",
+              "label": "spring"
+            },
+            {
+              "emoji": "⛄",
+              "label": "winter",
+              "why": "Winter is cold. Flowers bloom when it warms up."
+            }
+          ],
+          "answer": 0,
+          "explain": "Spring is when plants and animals start new life."
+        }
+      ]
+    },
+    {
+      "id": "weather-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Rain, rainbows and storms",
+      "intro": {
+        "say": "Where does rain come from? How is a rainbow made? Let's find out, and learn to stay safe in a storm.",
+        "icons": [
+          "🌧️",
+          "🌈",
+          "⛈️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The Sun warms water in seas and puddles. It rises up as tiny drops we can't see, and makes clouds.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "🌊",
+              "⬆️",
+              "☁️"
+            ]
+          },
+          "caption": "water rises → clouds"
+        },
+        {
+          "mode": "show",
+          "say": "When clouds get full and heavy, the water falls as rain. Then it goes back to the sea. This is the water cycle!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☁️",
+              "🌧️",
+              "🌊",
+              "🔁"
+            ]
+          },
+          "caption": "the water cycle"
+        },
+        {
+          "mode": "show",
+          "say": "A rainbow needs sunshine and raindrops at the same time. Sunlight shines through the drops and splits into colors.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "➕",
+              "🌧️",
+              "🟰",
+              "🌈"
+            ]
+          },
+          "caption": "sun + rain = rainbow"
+        },
+        {
+          "mode": "order",
+          "ask": "Put the water cycle in order.",
+          "items": [
+            {
+              "emoji": "☀️",
+              "label": "Sun warms water"
+            },
+            {
+              "emoji": "☁️",
+              "label": "clouds form"
+            },
+            {
+              "emoji": "🌧️",
+              "label": "rain falls"
+            },
+            {
+              "emoji": "🌊",
+              "label": "back to sea"
+            }
+          ],
+          "explain": "Water rises, makes clouds, falls as rain, and goes back. Then it starts again!",
+          "hint": "Start with the Sun warming the water."
+        },
+        {
+          "mode": "choice",
+          "ask": "What two things do you need to see a rainbow?",
+          "options": [
+            {
+              "emoji": "❄️",
+              "label": "snow and wind",
+              "why": "A rainbow needs sunlight shining through raindrops."
+            },
+            {
+              "emoji": "🌈",
+              "label": "sun and rain"
+            },
+            {
+              "emoji": "🌙",
+              "label": "clouds and night",
+              "why": "At night there is no sunlight to make a rainbow."
+            }
+          ],
+          "answer": 1,
+          "explain": "Sunlight shining through raindrops makes a rainbow."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do clouds make rain?",
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "they get full of water"
+            },
+            {
+              "emoji": "☀️",
+              "label": "the Sun is sad",
+              "why": "The Sun doesn't have feelings. Clouds rain when full of water."
+            },
+            {
+              "emoji": "🌬️",
+              "label": "the wind is cold",
+              "why": "Wind moves clouds, but rain falls when clouds are full of water."
+            }
+          ],
+          "answer": 0,
+          "explain": "Clouds are made of tiny water drops. When they get too heavy, they fall as rain."
+        },
+        {
+          "mode": "choice",
+          "ask": "You see lightning and hear thunder. Where is the safest place to go?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⛈️",
+              "⚡"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌳",
+              "label": "under a tall tree",
+              "why": "Lightning can hit tall trees. It's safer inside."
+            },
+            {
+              "emoji": "🏠",
+              "label": "inside a building"
+            },
+            {
+              "emoji": "🏞️",
+              "label": "an open field",
+              "why": "Open fields are not safe in a storm. Go inside."
+            }
+          ],
+          "answer": 1,
+          "explain": "Going indoors is the safest thing to do in a thunderstorm."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do we see lightning before we hear thunder?",
+          "options": [
+            {
+              "emoji": "⚡",
+              "label": "light travels faster"
+            },
+            {
+              "emoji": "🙈",
+              "label": "thunder is shy",
+              "why": "Thunder has no feelings. Light is just faster than sound."
+            },
+            {
+              "emoji": "👂",
+              "label": "our ears are slow",
+              "why": "Our ears work fine. Sound just moves slower than light."
+            }
+          ],
+          "answer": 0,
+          "explain": "Light travels much faster than sound, so the flash reaches us first.",
+          "hint": "Think about which is faster, light or sound."
+        }
+      ]
+    }
+  ]
+}

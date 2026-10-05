@@ -4,59 +4,239 @@
     "gameId": "counting",
     "subject": "math",
     "title": "Counting",
-    "icon": "numbers",
-    "color": "sunshine",
-    "mapPosition": {
-      "x": 0.27,
-      "y": 0.13
-    }
-  },
-  {
-    "id": "fractions",
-    "gameId": "fractions",
-    "subject": "math",
-    "title": "Pizza Parts",
-    "icon": "pizza",
-    "color": "tomato",
-    "mapPosition": {
-      "x": 0.73,
-      "y": 0.3
-    }
+    "emoji": "🔢",
+    "blurb": "Count things one by one and learn the numbers up to ten.",
+    "colors": [
+      "#FFB74D",
+      "#FF7043"
+    ]
   },
   {
     "id": "compare",
     "gameId": "compare",
     "subject": "math",
     "title": "More or Less",
-    "icon": "crocodile",
-    "color": "grape",
-    "mapPosition": {
-      "x": 0.27,
-      "y": 0.47
-    }
+    "emoji": "🐊",
+    "blurb": "Find out which group has more, which has fewer, and when they are the same.",
+    "colors": [
+      "#B39DDB",
+      "#7E57C2"
+    ]
+  },
+  {
+    "id": "addition",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Adding",
+    "emoji": "➕",
+    "blurb": "Put groups together and find out how many there are in all.",
+    "colors": [
+      "#FF8A80",
+      "#E53935"
+    ]
+  },
+  {
+    "id": "subtraction",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Taking Away",
+    "emoji": "➖",
+    "blurb": "Take some away and find out how many are left.",
+    "colors": [
+      "#4FC3F7",
+      "#1E88E5"
+    ]
+  },
+  {
+    "id": "shapes",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Shapes",
+    "emoji": "🔺",
+    "blurb": "Find circles, squares, triangles and more, and count their sides and corners.",
+    "colors": [
+      "#FFCA28",
+      "#FB8C00"
+    ]
+  },
+  {
+    "id": "patterns",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Patterns",
+    "emoji": "🎨",
+    "blurb": "Spot what repeats and guess what comes next.",
+    "colors": [
+      "#F48FB1",
+      "#D81B60"
+    ]
+  },
+  {
+    "id": "odd-even",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Odd & Even",
+    "emoji": "🧦",
+    "blurb": "Make pairs to find out if a number is odd or even.",
+    "colors": [
+      "#80CBC4",
+      "#00897B"
+    ]
+  },
+  {
+    "id": "skip-counting",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Skip Counting",
+    "emoji": "🐸",
+    "blurb": "Hop like a frog and count by twos, fives and tens.",
+    "colors": [
+      "#AED581",
+      "#43A047"
+    ]
+  },
+  {
+    "id": "time",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Telling Time",
+    "emoji": "🕒",
+    "blurb": "Read the clock: o’clock, half past and quarter past.",
+    "colors": [
+      "#9FA8DA",
+      "#3F51B5"
+    ]
+  },
+  {
+    "id": "measure",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Big & Small",
+    "emoji": "📏",
+    "blurb": "Compare things: big and small, long and short, heavy and light.",
+    "colors": [
+      "#FFAB91",
+      "#F4511E"
+    ]
+  },
+  {
+    "id": "fractions",
+    "gameId": "fractions",
+    "subject": "math",
+    "title": "Pizza Parts",
+    "emoji": "🍕",
+    "blurb": "Share pizza and cake fairly, and learn halves, thirds and quarters.",
+    "colors": [
+      "#FF8A65",
+      "#D84315"
+    ]
   },
   {
     "id": "matter",
     "gameId": "matter",
     "subject": "science",
     "title": "Ice, Water, Steam",
-    "icon": "ice",
-    "color": "sky",
-    "mapPosition": {
-      "x": 0.73,
-      "y": 0.64
-    }
+    "emoji": "🧊",
+    "blurb": "Heat things up and cool them down to see water change.",
+    "colors": [
+      "#4FC3F7",
+      "#0277BD"
+    ]
   },
   {
     "id": "plants",
-    "gameId": "plants",
+    "gameId": "explore",
     "subject": "science",
     "title": "Growing Plants",
-    "icon": "sprout",
-    "color": "leaf",
-    "mapPosition": {
-      "x": 0.27,
-      "y": 0.82
-    }
+    "emoji": "🌱",
+    "blurb": "See how a tiny seed grows into a plant, and what plants need.",
+    "colors": [
+      "#9CCC65",
+      "#558B2F"
+    ]
+  },
+  {
+    "id": "living",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Living Things",
+    "emoji": "🐞",
+    "blurb": "Living things grow, eat and breathe. Find out what is alive!",
+    "colors": [
+      "#FFB74D",
+      "#EF6C00"
+    ]
+  },
+  {
+    "id": "animal-homes",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Animal Homes",
+    "emoji": "🦁",
+    "blurb": "Where do animals live? In nests, in the sea, in caves and more.",
+    "colors": [
+      "#BCAAA4",
+      "#795548"
+    ]
+  },
+  {
+    "id": "sink-float",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Sink or Float",
+    "emoji": "🛟",
+    "blurb": "Will it sink or float? Test things in the water!",
+    "colors": [
+      "#4DD0E1",
+      "#00838F"
+    ]
+  },
+  {
+    "id": "senses",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Five Senses",
+    "emoji": "👀",
+    "blurb": "We see, hear, smell, taste and touch to learn about the world.",
+    "colors": [
+      "#F06292",
+      "#AD1457"
+    ]
+  },
+  {
+    "id": "weather",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Weather & Seasons",
+    "emoji": "🌦️",
+    "blurb": "Sunny, rainy, snowy or windy? Learn the weather and the four seasons.",
+    "colors": [
+      "#90CAF9",
+      "#1E88E5"
+    ]
+  },
+  {
+    "id": "space",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Day, Night & Space",
+    "emoji": "🌙",
+    "blurb": "Day and night, the Sun, the Moon and the planets.",
+    "colors": [
+      "#7986CB",
+      "#283593"
+    ]
+  },
+  {
+    "id": "healthy-food",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Healthy Food",
+    "emoji": "🥦",
+    "blurb": "Which foods help us grow strong and healthy?",
+    "colors": [
+      "#E57373",
+      "#C62828"
+    ]
   }
 ]

@@ -6,7 +6,7 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 
 import { getLevels, getTopics } from '../engine/loadContent';
 import { levelKey } from '../engine/scoring';
-import type { GameId, Stars } from '../engine/types';
+import type { Stars } from '../engine/types';
 
 export interface LevelProgress {
   bestStars: Stars;
@@ -29,7 +29,7 @@ interface ProgressState {
   settings: Settings;
 
   /** Saves a finished level and returns any badges earned just now. */
-  recordLevel: (gameId: GameId, levelId: string, stars: Stars, mistakes: number) => string[];
+  recordLevel: (topicId: string, levelId: string, stars: Stars, mistakes: number) => string[];
   setSetting: <K extends keyof Settings>(key: K, value: Settings[K]) => void;
   resetProgress: () => void;
 }
@@ -44,9 +44,9 @@ export const badgeIds = {
 function computeBadges(levels: Record<string, LevelProgress>): string[] {
   const badges: string[] = [];
   for (const topic of getTopics()) {
-    const topicLevels = getLevels(topic.gameId);
+    const topicLevels = getLevels(topic.id);
     if (topicLevels.length === 0) continue;
-    const stars = topicLevels.map((l) => levels[levelKey(topic.gameId, l.id)]?.bestStars ?? 0);
+    const stars = topicLevels.map((l) => levels[levelKey(topic.id, l.id)]?.bestStars ?? 0);
     if (stars.every((s) => s >= 1)) badges.push(badgeIds.complete(topic.id));
     if (stars.every((s) => s === 3)) badges.push(badgeIds.allStars(topic.id));
   }
@@ -61,8 +61,8 @@ export const useProgress = create<ProgressState>()(
       badges: [],
       settings: DEFAULT_SETTINGS,
 
-      recordLevel: (gameId, levelId, stars, mistakes) => {
-        const key = levelKey(gameId, levelId);
+      recordLevel: (topicId, levelId, stars, mistakes) => {
+        const key = levelKey(topicId, levelId);
         const prev = get().levels[key];
         const levels = {
           ...get().levels,
@@ -120,19 +120,4 @@ export function useHasHydrated(): boolean {
     };
   }, []);
   return hydrated;
-}
-
-export function levelProgress(gameId: GameId, levelId: string): LevelProgress | undefined {
-  return useProgress.getState().levels[levelKey(gameId, levelId)];
-}
-
-/** Level n is open when level n-1 has at least one star. */
-export function isLevelUnlocked(
-  levels: Record<string, LevelProgress>,
-  gameId: GameId,
-  index: number,
-): boolean {
-  if (index === 0) return true;
-  const prev = getLevels(gameId)[index - 1];
-  return (levels[levelKey(gameId, prev.id)]?.bestStars ?? 0) >= 1;
 }

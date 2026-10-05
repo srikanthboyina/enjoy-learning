@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 import Animated, { ZoomIn } from 'react-native-reanimated';
 
 import type { GameProps } from '../../engine/types';
@@ -10,6 +10,7 @@ import { colors, radii, sizes, spacing } from '../../theme';
 import { Thermometer } from './parts/Thermometer';
 import { applyTool, STATES, TOOLS, type MatterRound, type MatterState, type Tool } from './schema';
 import { changeWords, needWords } from './words';
+import { Text } from '../../kit/Text';
 
 type ChangeRound = Extract<MatterRound, { mode: 'change' }>;
 type PredictRound = Extract<MatterRound, { mode: 'predict' }>;

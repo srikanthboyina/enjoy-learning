@@ -1,0 +1,787 @@
+{
+  "topicId": "addition",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "addition-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Putting together",
+      "intro": {
+        "say": "Adding means putting groups together to find how many in all.",
+        "icons": [
+          "🍎",
+          "➕",
+          "🍎"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Two apples and one more apple. Count them all: one, two, three! Two plus one makes three.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍎"
+              },
+              {
+                "count": 1,
+                "emoji": "🍎"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "2 + 1 = 3"
+        },
+        {
+          "mode": "show",
+          "say": "One star and one more star. One, two! One plus one makes two.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "⭐"
+              },
+              {
+                "count": 1,
+                "emoji": "⭐"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "1 + 1 = 2"
+        },
+        {
+          "mode": "choice",
+          "ask": "One duck and two more ducks. How many ducks in all?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🦆"
+              },
+              {
+                "count": 2,
+                "emoji": "🦆"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count every duck, in both groups."
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "4",
+              "why": "Let's count again, one by one."
+            }
+          ],
+          "answer": 1,
+          "explain": "One and two more make three."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two cats and two more cats. How many cats?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐱"
+              },
+              {
+                "count": 2,
+                "emoji": "🐱"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Count all the cats, one by one."
+            },
+            {
+              "label": "5",
+              "why": "Touch each cat as you count."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "Two and two make four."
+        },
+        {
+          "mode": "choice",
+          "ask": "Three balloons and one more. How many balloons?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🎈"
+              },
+              {
+                "count": 1,
+                "emoji": "🎈"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "3",
+              "why": "Don't forget the new balloon!"
+            },
+            {
+              "label": "2",
+              "why": "Count both groups together."
+            }
+          ],
+          "answer": 0,
+          "explain": "Three and one more make four."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two fish and three fish. How many fish swim together?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐟"
+              },
+              {
+                "count": 3,
+                "emoji": "🐟"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count every fish, in both groups."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "6",
+              "why": "Let's count again, slowly."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two and three make five."
+        },
+        {
+          "mode": "choice",
+          "ask": "Four cookies and one more cookie. How many cookies?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🍪"
+              },
+              {
+                "count": 1,
+                "emoji": "🍪"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Adding makes more, not fewer."
+            },
+            {
+              "label": "6",
+              "why": "Count each cookie just once."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "Four and one more make five."
+        }
+      ]
+    },
+    {
+      "id": "addition-02",
+      "order": 2,
+      "difficulty": "simple",
+      "name": "Adding zero",
+      "intro": {
+        "say": "When we add zero, nothing new comes. The number stays the same!",
+        "icons": [
+          "🐶",
+          "➕",
+          "0️⃣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Three puppies and zero more puppies. Still three! Adding zero keeps the number the same.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🐶"
+              },
+              {
+                "count": 0,
+                "emoji": "🐶"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 + 0 = 3"
+        },
+        {
+          "mode": "show",
+          "say": "Count on from the bigger group. Say four, then one more: five!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🌸"
+              },
+              {
+                "count": 1,
+                "emoji": "🌸"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "4 + 1 = 5"
+        },
+        {
+          "mode": "choice",
+          "ask": "Two bees and zero more bees. How many bees?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐝"
+              },
+              {
+                "count": 0,
+                "emoji": "🐝"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "0",
+              "why": "The two bees are still here!"
+            },
+            {
+              "label": "3",
+              "why": "Zero means no new bees came."
+            }
+          ],
+          "answer": 0,
+          "explain": "Two plus zero is still two."
+        },
+        {
+          "mode": "choice",
+          "ask": "Count on! Three cars and two more. How many cars?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🚗"
+              },
+              {
+                "count": 2,
+                "emoji": "🚗"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Say three, then count two more."
+            },
+            {
+              "label": "6",
+              "why": "Count each car only once."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "Three, then four, five. Five cars!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which picture shows four in all?",
+          "options": [
+            {
+              "label": "🍓🍓 + 🍓",
+              "why": "That makes three."
+            },
+            {
+              "label": "🍓🍓 + 🍓🍓"
+            },
+            {
+              "label": "🍓 + 🍓",
+              "why": "That makes two."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two and two make four.",
+          "hint": "Count the berries in each card."
+        },
+        {
+          "mode": "choice",
+          "ask": "One frog and four more frogs. How many frogs?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🐸"
+              },
+              {
+                "count": 4,
+                "emoji": "🐸"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count the first frog too!"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "3",
+              "why": "Let's count every frog."
+            }
+          ],
+          "answer": 1,
+          "explain": "One and four make five."
+        }
+      ]
+    },
+    {
+      "id": "addition-03",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Sums to 10",
+      "intro": {
+        "say": "Let's add bigger groups and write number sentences, like 5 plus 3 equals 8.",
+        "icons": [
+          "🔟",
+          "➕",
+          "✏️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Five balls plus three balls. Start at five and count on: six, seven, eight. Five plus three equals eight.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "⚽"
+              },
+              {
+                "count": 3,
+                "emoji": "⚽"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "5 + 3 = 8"
+        },
+        {
+          "mode": "show",
+          "say": "We can swap the groups and get the same answer. Three plus five is eight too!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "⚽"
+              },
+              {
+                "count": 5,
+                "emoji": "⚽"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 + 5 = 8"
+        },
+        {
+          "mode": "choice",
+          "ask": "Six plus two equals what?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🍌"
+              },
+              {
+                "count": 2,
+                "emoji": "🍌"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "Start at six and count two more."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "9",
+              "why": "Count on just two, not three."
+            }
+          ],
+          "answer": 1,
+          "explain": "Six, then seven, eight. Six plus two is eight."
+        },
+        {
+          "mode": "choice",
+          "ask": "Four plus four equals what?",
+          "visual": {
+            "kind": "text",
+            "text": "4 + 4 = ?"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Try counting on from four."
+            },
+            {
+              "label": "9",
+              "why": "Count on just four steps."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "Four and four make eight. That's a double!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Seven plus three equals what?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 7,
+                "emoji": "🌟"
+              },
+              {
+                "count": 3,
+                "emoji": "🌟"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "9",
+              "why": "Count on three: eight, nine, ten."
+            },
+            {
+              "label": "11",
+              "why": "Let's count again carefully."
+            }
+          ],
+          "answer": 0,
+          "explain": "Seven, then eight, nine, ten. That makes ten!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number sentence matches the picture?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🐞"
+              },
+              {
+                "count": 2,
+                "emoji": "🐞"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "5 + 3 = 8",
+              "why": "Look again: there are two ladybugs in the second group."
+            },
+            {
+              "label": "5 + 2 = 7"
+            },
+            {
+              "label": "4 + 2 = 6",
+              "why": "Count the first group again."
+            }
+          ],
+          "answer": 1,
+          "explain": "Five ladybugs and two ladybugs make seven."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which two numbers make ten?",
+          "options": [
+            {
+              "label": "5 + 4",
+              "why": "That makes nine."
+            },
+            {
+              "label": "6 + 3",
+              "why": "That makes nine."
+            },
+            {
+              "label": "6 + 4"
+            }
+          ],
+          "answer": 2,
+          "explain": "Six plus four makes ten.",
+          "hint": "Try counting on from the bigger number."
+        }
+      ]
+    },
+    {
+      "id": "addition-04",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Sums to 20 and puzzles",
+      "intro": {
+        "say": "Let's add big numbers, solve stories, and find missing numbers!",
+        "icons": [
+          "🧠",
+          "➕",
+          "❓"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Make a ten first! Nine plus four: take one from four to make ten. Ten plus three is thirteen.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 9,
+                "emoji": "🍎"
+              },
+              {
+                "count": 4,
+                "emoji": "🍎"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "9 + 4 = 13"
+        },
+        {
+          "mode": "show",
+          "say": "A missing number puzzle! Three plus what makes seven? Count on from three: four, five, six, seven. That's four more.",
+          "visual": {
+            "kind": "text",
+            "text": "3 + ? = 7"
+          },
+          "caption": "3 + 4 = 7"
+        },
+        {
+          "mode": "choice",
+          "ask": "Eight plus five equals what?",
+          "visual": {
+            "kind": "text",
+            "text": "8 + 5 = ?"
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "Make ten first: eight plus two, then three more."
+            },
+            {
+              "label": "13"
+            },
+            {
+              "label": "14",
+              "why": "Count on just five steps."
+            }
+          ],
+          "answer": 1,
+          "explain": "Eight plus two is ten, and three more is thirteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia has 7 stickers. She gets 6 more. How many stickers now?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 7,
+                "emoji": "⭐"
+              },
+              {
+                "count": 6,
+                "emoji": "⭐"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "Seven plus three is ten, then three more."
+            },
+            {
+              "label": "14",
+              "why": "Count on six, not seven."
+            },
+            {
+              "label": "13"
+            }
+          ],
+          "answer": 2,
+          "explain": "Seven plus six makes thirteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "Three plus what makes seven?",
+          "visual": {
+            "kind": "text",
+            "text": "3 + ? = 7"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "3",
+              "why": "Three plus three is only six."
+            },
+            {
+              "label": "10",
+              "why": "That is too many!"
+            }
+          ],
+          "answer": 0,
+          "explain": "Three plus four makes seven."
+        },
+        {
+          "mode": "choice",
+          "ask": "Five plus what makes twelve?",
+          "visual": {
+            "kind": "text",
+            "text": "5 + ? = 12"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Five plus six is eleven."
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "8",
+              "why": "Five plus eight is thirteen."
+            }
+          ],
+          "answer": 1,
+          "explain": "Five plus seven makes twelve.",
+          "hint": "Count on from five until you reach twelve."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 10 birds in a tree. 9 more birds fly in. How many birds now?",
+          "options": [
+            {
+              "label": "18",
+              "why": "Ten plus nine is one more than that."
+            },
+            {
+              "label": "19"
+            },
+            {
+              "label": "20",
+              "why": "Ten plus ten would be twenty."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten plus nine makes nineteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one makes fifteen?",
+          "options": [
+            {
+              "label": "7 + 7",
+              "why": "That makes fourteen."
+            },
+            {
+              "label": "9 + 5",
+              "why": "That makes fourteen."
+            },
+            {
+              "label": "8 + 7"
+            }
+          ],
+          "answer": 2,
+          "explain": "Eight plus seven makes fifteen."
+        }
+      ]
+    }
+  ]
+}

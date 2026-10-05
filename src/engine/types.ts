@@ -2,18 +2,20 @@ import type { ComponentType } from 'react';
 import type { z } from 'zod';
 
 import type { GlyphId } from '../assets-map';
-import type { GAME_IDS, PromptSchema, StarRuleSchema, TopicSchema } from './contentSchema';
+import type { DIFFICULTIES, GAME_IDS, PromptSchema, StarRuleSchema, TopicSchema } from './contentSchema';
 
 export type GameId = (typeof GAME_IDS)[number];
 export type Prompt = z.infer<typeof PromptSchema>;
 export type StarRule = z.infer<typeof StarRuleSchema>;
 export type Topic = z.infer<typeof TopicSchema>;
 export type Stars = 0 | 1 | 2 | 3;
+export type Difficulty = (typeof DIFFICULTIES)[number];
 export type { GlyphId };
 
 export interface Level<TRound = unknown> {
   id: string;
   order: number;
+  difficulty: Difficulty;
   name: string;
   intro: Prompt;
   stars?: StarRule;
@@ -26,8 +28,11 @@ export interface GameProps<TRound> {
   roundIndex: number;
   /** Report each answer. GameShell gives gentle feedback and counts mistakes. */
   onAttempt: (correct: boolean, opts?: { hint?: Prompt }) => void;
-  /** Call once when the round is solved. GameShell celebrates and moves on. */
-  onRoundComplete: () => void;
+  /**
+   * Call once when the round is solved. GameShell celebrates and moves on.
+   * `explain` is spoken after the praise: say *why* the answer is right.
+   */
+  onRoundComplete: (opts?: { explain?: string }) => void;
   /** Speak (and show) a prompt, respecting the parent's voice setting. */
   speak: (prompt: Prompt | string) => void;
   /** True after the child asked for help or made 2 mistakes this round. */

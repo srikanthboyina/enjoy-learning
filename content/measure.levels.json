@@ -1,0 +1,580 @@
+{
+  "topicId": "measure",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "measure-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Big and small",
+      "intro": {
+        "say": "Some things are big and some are small. Let's compare!",
+        "icons": [
+          "🐘",
+          "🐭"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "An elephant is big. A mouse is small.",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🐘",
+                "scale": 2
+              },
+              {
+                "emoji": "🐭",
+                "scale": 0.6
+              }
+            ]
+          },
+          "caption": "big  small"
+        },
+        {
+          "mode": "show",
+          "say": "Here are two balls. One is big and one is small.",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "⚽",
+                "scale": 1.8
+              },
+              {
+                "emoji": "⚽",
+                "scale": 0.7
+              }
+            ]
+          },
+          "caption": "big ball, small ball"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is big?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🐶",
+                "scale": 0.6
+              },
+              {
+                "emoji": "🐶",
+                "scale": 1.8
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "first",
+              "why": "That dog is the small one."
+            },
+            {
+              "label": "second"
+            }
+          ],
+          "answer": 1,
+          "explain": "The second dog is bigger, it takes up more space."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal is small?",
+          "options": [
+            {
+              "emoji": "🐘",
+              "label": "elephant",
+              "why": "An elephant is very big!"
+            },
+            {
+              "emoji": "🐜",
+              "label": "ant"
+            },
+            {
+              "emoji": "🦒",
+              "label": "giraffe",
+              "why": "A giraffe is very tall and big."
+            }
+          ],
+          "answer": 1,
+          "explain": "An ant is tiny, much smaller than an elephant or a giraffe."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is smallest?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🍎",
+                "scale": 1.2
+              },
+              {
+                "emoji": "🍎",
+                "scale": 0.5
+              },
+              {
+                "emoji": "🍎",
+                "scale": 2
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "first",
+              "why": "Look for the tiniest apple."
+            },
+            {
+              "label": "middle"
+            },
+            {
+              "label": "last",
+              "why": "That apple is the biggest one."
+            }
+          ],
+          "answer": 1,
+          "explain": "The middle apple is the smallest."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort them: big or small?",
+          "bins": [
+            {
+              "label": "big",
+              "emoji": "🐘"
+            },
+            {
+              "label": "small",
+              "emoji": "🐭"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐳",
+              "bin": 0,
+              "name": "whale"
+            },
+            {
+              "emoji": "🐜",
+              "bin": 1,
+              "name": "ant"
+            },
+            {
+              "emoji": "🚌",
+              "bin": 0,
+              "name": "bus"
+            },
+            {
+              "emoji": "🐞",
+              "bin": 1,
+              "name": "ladybug"
+            },
+            {
+              "emoji": "🏠",
+              "bin": 0,
+              "name": "house"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 1,
+              "name": "key"
+            }
+          ],
+          "explain": "Whales, buses and houses are big. Ants, ladybugs and keys are small."
+        }
+      ]
+    },
+    {
+      "id": "measure-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Long, short and tall",
+      "intro": {
+        "say": "Things can be long or short, and tall or short. Let's measure with our eyes!",
+        "icons": [
+          "🦒",
+          "📏",
+          "🐍"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A giraffe is tall. A bunny is short. Tall means it goes up high.",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🦒",
+                "scale": 2
+              },
+              {
+                "emoji": "🐰",
+                "scale": 0.7
+              }
+            ]
+          },
+          "caption": "tall  short"
+        },
+        {
+          "mode": "show",
+          "say": "A long snake stretches far. A short worm is tiny. Long means it goes a long way across.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐍",
+              "🐍",
+              "🐍",
+              "🐛"
+            ]
+          },
+          "caption": "long  short"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is taller?",
+          "options": [
+            {
+              "emoji": "🦒",
+              "label": "giraffe"
+            },
+            {
+              "emoji": "🐈",
+              "label": "cat",
+              "why": "A cat is much shorter than a giraffe."
+            }
+          ],
+          "answer": 0,
+          "explain": "A giraffe has a long neck and is very tall."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which tree is the tallest?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🌲",
+                "scale": 1
+              },
+              {
+                "emoji": "🌲",
+                "scale": 2
+              },
+              {
+                "emoji": "🌲",
+                "scale": 1.4
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "first",
+              "why": "That tree is short. Look for the highest one."
+            },
+            {
+              "label": "middle"
+            },
+            {
+              "label": "last",
+              "why": "Close! But one tree is even taller."
+            }
+          ],
+          "answer": 1,
+          "explain": "The middle tree reaches up the highest."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is longer, a train or a car?",
+          "options": [
+            {
+              "emoji": "🚗",
+              "label": "car",
+              "why": "A train has many carriages joined together."
+            },
+            {
+              "emoji": "🚆",
+              "label": "train"
+            }
+          ],
+          "answer": 1,
+          "explain": "A train has lots of carriages, so it is much longer than a car."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them from shortest to tallest.",
+          "items": [
+            {
+              "emoji": "🐭",
+              "label": "mouse"
+            },
+            {
+              "emoji": "🐕",
+              "label": "dog"
+            },
+            {
+              "emoji": "🐴",
+              "label": "horse"
+            },
+            {
+              "emoji": "🦒",
+              "label": "giraffe"
+            }
+          ],
+          "explain": "Mouse, dog, horse, giraffe: each one is taller than the last."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them from smallest to biggest.",
+          "items": [
+            {
+              "emoji": "🐜",
+              "label": "ant"
+            },
+            {
+              "emoji": "🐱",
+              "label": "cat"
+            },
+            {
+              "emoji": "🐄",
+              "label": "cow"
+            },
+            {
+              "emoji": "🐘",
+              "label": "elephant"
+            }
+          ],
+          "explain": "An ant is tiniest and an elephant is biggest."
+        }
+      ]
+    },
+    {
+      "id": "measure-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Heavy and light",
+      "intro": {
+        "say": "Heavy things are hard to lift. Light things are easy to lift. Size can trick us, so let's think!",
+        "icons": [
+          "🏋️",
+          "🪶",
+          "⚖️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A bowling ball is heavy. A feather is light. Heavy things pull down hard.",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🎳",
+                "scale": 1.3
+              },
+              {
+                "emoji": "🪶",
+                "scale": 1
+              }
+            ]
+          },
+          "caption": "heavy  light"
+        },
+        {
+          "mode": "show",
+          "say": "Big things are not always heavy! A big balloon is light, but a small rock is heavy.",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🎈",
+                "scale": 2
+              },
+              {
+                "emoji": "🪨",
+                "scale": 0.8
+              }
+            ]
+          },
+          "caption": "big but light, small but heavy"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is heavier?",
+          "options": [
+            {
+              "emoji": "🪶",
+              "label": "feather",
+              "why": "A feather floats in the air. It is very light."
+            },
+            {
+              "emoji": "🧱",
+              "label": "brick"
+            }
+          ],
+          "answer": 1,
+          "explain": "A brick is hard and solid, so it is much heavier than a feather."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is lighter?",
+          "options": [
+            {
+              "emoji": "🐘",
+              "label": "elephant",
+              "why": "An elephant is one of the heaviest animals!"
+            },
+            {
+              "emoji": "🐶",
+              "label": "dog",
+              "why": "A dog is light next to an elephant, but a mouse is lighter still."
+            },
+            {
+              "emoji": "🐭",
+              "label": "mouse"
+            }
+          ],
+          "answer": 2,
+          "explain": "A mouse is tiny, so it is the lightest of them all."
+        },
+        {
+          "mode": "choice",
+          "ask": "This balloon is bigger than the apple. Which is heavier?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🎈",
+                "scale": 2
+              },
+              {
+                "emoji": "🍎",
+                "scale": 0.8
+              }
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🎈",
+              "label": "balloon",
+              "why": "A balloon is big but full of air, so it is light."
+            }
+          ],
+          "answer": 0,
+          "explain": "A balloon is full of air, so the small apple is heavier.",
+          "hint": "Think about lifting each one."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort them: heavy or light?",
+          "bins": [
+            {
+              "label": "heavy",
+              "emoji": "🏋️"
+            },
+            {
+              "label": "light",
+              "emoji": "🪶"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🚗",
+              "bin": 0,
+              "name": "car"
+            },
+            {
+              "emoji": "🍃",
+              "bin": 1,
+              "name": "leaf"
+            },
+            {
+              "emoji": "🪨",
+              "bin": 0,
+              "name": "rock"
+            },
+            {
+              "emoji": "🎈",
+              "bin": 1,
+              "name": "balloon"
+            },
+            {
+              "emoji": "🐘",
+              "bin": 0,
+              "name": "elephant"
+            },
+            {
+              "emoji": "🧻",
+              "bin": 1,
+              "name": "tissue paper"
+            },
+            {
+              "emoji": "🎳",
+              "bin": 0,
+              "name": "bowling ball"
+            }
+          ],
+          "explain": "Cars, rocks, elephants and bowling balls are heavy. Leaves, balloons and paper are light."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them from lightest to heaviest.",
+          "items": [
+            {
+              "emoji": "🪶",
+              "label": "feather"
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "emoji": "🚗",
+              "label": "car"
+            }
+          ],
+          "explain": "A feather is lightest, then an apple, then a dog, and a car is heaviest."
+        },
+        {
+          "mode": "choice",
+          "ask": "A big pillow and a small rock. Which is heavier?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🛏️",
+                "scale": 2
+              },
+              {
+                "emoji": "🪨",
+                "scale": 0.7
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "pillow",
+              "why": "A pillow is big but soft and fluffy, so it is light."
+            },
+            {
+              "label": "rock"
+            }
+          ],
+          "answer": 1,
+          "explain": "The rock is small but hard and solid, so it is heavier."
+        }
+      ]
+    }
+  ]
+}

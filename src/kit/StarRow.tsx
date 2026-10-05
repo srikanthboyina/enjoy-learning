@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import type { Stars } from '../engine/types';
 import { colors } from '../theme';
+import { Text } from './Text';
 
 export function StarRow({ stars, size = 22 }: { stars: Stars; size?: number }) {
   return (

@@ -35,7 +35,7 @@ npm run check             # both of the above; run before calling work done
 | `src/games/schemas.ts` | gameId → round schema (pure TS, used by app and validator). |
 | `src/games/registry.ts` | gameId → `GameDefinition` (the only registration point). |
 | `src/engine/` | Game-agnostic runtime: `GameShell`, scoring, content loading, types. |
-| `src/kit/` | Reusable kid-friendly UI: `BigButton`, `Glyph`, drag-and-drop, feedback. |
+| `src/kit/` | Reusable kid-friendly UI: `BigButton`, `Glyph`, `Text` (Fredoka font), `Gradient`, `Mascot` (Ollie the owl), `Bob`, `Confetti`, drag-and-drop, feedback. |
 | `src/services/` | `speech`, `sound`, `progressStore`, `parentGate`. |
 | `src/theme/` | Colours, spacing, sizes, motion. Use tokens, not literals. |
 | `src/assets-map.ts` | `GlyphId` → picture (emoji in v1) + spoken name. |
@@ -47,15 +47,32 @@ Import boundaries: a game may import from `engine/`, `kit/`, `services/`, `theme
 
 ## Content (levels) rules
 
-- One file per game: `content/<gameId>.levels.json` with `{ gameId, version: 1, levels }`.
-- Each level: `id` (unique, e.g. `counting-05`), `order`, `name` (parent screen only),
-  `intro` prompt, optional `stars`, and 3–6 `rounds`.
+- Topics on the home screen are in `content/topics.json` (`id`, `gameId`, `subject`,
+  `title`, `emoji`, `blurb`, `colors` = two-stop gradient). Many topics can share one
+  game; most use the data-driven **explore** engine.
+- One file per topic: `content/<topicId>.levels.json` with
+  `{ topicId, gameId, version: 1, levels }`. Files are auto-discovered
+  (`require.context` in `src/engine/loadContent.ts`); no import needed.
+- Each level: `id` (unique, e.g. `addition-03`), `difficulty` (`simple` | `medium` |
+  `complex`), `order` (within its difficulty), `name`, `intro` prompt, optional
+  `stars`, and up to 10 `rounds`. Every level is open; kids choose their difficulty.
+- Level pattern the owner likes: **explain → worked examples → questions**. Start with
+  1–3 lesson rounds, then questions that carry `explain` (why the answer is right) and
+  `why` on wrong options (gentle, never "wrong").
 - Round shapes are defined by the game's zod schema in `src/games/<gameId>/schema.ts`.
   The TS type is `z.infer` of that schema. Never hand-write a duplicate type.
-- Topics on the world map are in `content/topics.json`. A topic whose game has no
-  levels file shows as "coming soon".
+- A topic with no levels file shows as "Soon".
 - Invalid levels are logged and skipped at runtime; `npm run validate:content` must
   pass before a change is done.
+
+### The explore engine (`src/games/explore/`)
+
+Round modes: `show` (lesson picture + narration + ▶), `choice` (2–4 cards), `sort`
+(drag or tap things into 2–3 boxes), `order` (tap cards in sequence), `grow` (water and
+sun grow a plant). Pictures come from `visual` kinds: `emoji`, `text`, `groups`, `take`,
+`sequence`, `clock`, `shapes`, `pairs`, `sizes`, `numberline`. To add a topic that fits
+these, write only JSON. Add a new visual kind or mode in `schema.ts` +
+`parts/Visual.tsx` / `ExploreGame.tsx` when a topic needs one.
 
 ## Mini-game contract
 
@@ -82,9 +99,10 @@ round state can live in `useState`.
 1. `src/games/<id>/schema.ts` (zod round schema), `<Name>Game.tsx`, `index.ts`.
 2. Add the id to `GAME_IDS` in `src/engine/contentSchema.ts` (if new), the schema to
    `src/games/schemas.ts`, the definition to `src/games/registry.ts`.
-3. `content/<id>.levels.json` + an entry in `content/topics.json`.
-4. Import the JSON in `src/engine/loadContent.ts`.
-5. `npm run check`.
+3. `content/<topicId>.levels.json` + an entry in `content/topics.json`.
+4. `npm run check`.
+
+For a topic that fits the explore engine, only step 3 is needed.
 
 ## Child-focused UX rules
 
@@ -95,7 +113,8 @@ round state can live in `useState`.
 - **Never say "wrong".** Mistakes get a soft wiggle, a gentle sound and phrases from
   `engine/phrases.ts`. A round can't be failed; hints appear after 2 mistakes.
 - **Motion** respects reduced motion (`useReducedMotion`): swap big movement for fades.
-- Bright colours from `theme`; one primary action per screen.
+- Bright colours from `theme` (`gradients`, topic `colors`); one primary action per screen.
+- Always import `Text` from `src/kit/Text` (not react-native) so the rounded font applies.
 
 ## Child safety & privacy (hard rules)
 

@@ -46,11 +46,40 @@ export const sizes = {
   bigGlyph: 72,
 } as const;
 
+/** Fredoka: a round, friendly face that is easy for early readers. */
+export const families = {
+  regular: 'Fredoka_400Regular',
+  medium: 'Fredoka_500Medium',
+  semibold: 'Fredoka_600SemiBold',
+  bold: 'Fredoka_700Bold',
+} as const;
+
 export const fonts = {
   label: { fontSize: 18, fontWeight: '700' as const },
   title: { fontSize: 28, fontWeight: '800' as const },
   numeral: { fontSize: 72, fontWeight: '900' as const },
 };
+
+/** Two-stop gradients. Topics pick their own pair in content/topics.json. */
+export const gradients = {
+  sky: ['#7FD3FF', '#C9F0FF'],
+  sunset: ['#FFB86B', '#FF7EB3'],
+  meadow: ['#A8E063', '#56AB2F'],
+  candy: ['#FF9A9E', '#FECFEF'],
+  ocean: ['#4FACFE', '#00F2FE'],
+  grape: ['#A18CD1', '#FBC2EB'],
+  lemon: ['#FDEB71', '#F8D800'],
+  mint: ['#84FAB0', '#8FD3F4'],
+  simple: ['#6EE7B7', '#22C55E'],
+  medium: ['#FDBA74', '#F97316'],
+  complex: ['#C4B5FD', '#8B5CF6'],
+  success: ['#86EFAC', '#22C55E'],
+  primary: ['#60A5FA', '#3B82F6'],
+} as const satisfies Record<string, readonly [string, string]>;
+
+export type GradientPair = readonly [string, string];
+
+export const confettiColors = ['#FF6B6B', '#FFD43B', '#51CF66', '#4DABF7', '#9775FA', '#FF922B', '#F783AC'];
 
 export const motion = {
   quick: 150,

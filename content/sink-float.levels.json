@@ -1,0 +1,580 @@
+{
+  "topicId": "sink-float",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "sink-float-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Sink or float?",
+      "intro": {
+        "say": "Some things float on top of water, and some sink to the bottom. Let's test!",
+        "icons": [
+          "🛟",
+          "💧",
+          "🪨"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Drop a rock in water. Splash! It goes down to the bottom. The rock sinks.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪨",
+              "⬇️",
+              "💧"
+            ]
+          },
+          "caption": "Rock sinks"
+        },
+        {
+          "mode": "show",
+          "say": "Put a rubber duck in water. It stays on top. The duck floats!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦆",
+              "💧"
+            ]
+          },
+          "caption": "Duck floats"
+        },
+        {
+          "mode": "choice",
+          "ask": "Will a rock sink or float?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪨"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🛟",
+              "label": "Float",
+              "why": "A rock is too heavy for its size to float."
+            },
+            {
+              "emoji": "⬇️",
+              "label": "Sink"
+            }
+          ],
+          "answer": 1,
+          "explain": "A rock sinks to the bottom."
+        },
+        {
+          "mode": "choice",
+          "ask": "Will a rubber duck sink or float?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦆"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🛟",
+              "label": "Float"
+            },
+            {
+              "emoji": "⬇️",
+              "label": "Sink",
+              "why": "Try it in the bath. It bobs on top!"
+            }
+          ],
+          "answer": 0,
+          "explain": "A rubber duck floats on the water."
+        },
+        {
+          "mode": "choice",
+          "ask": "Will a coin sink or float?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪙"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🛟",
+              "label": "Float",
+              "why": "A metal coin is small but heavy for its size."
+            },
+            {
+              "emoji": "⬇️",
+              "label": "Sink"
+            }
+          ],
+          "answer": 1,
+          "explain": "A coin is made of metal, so it sinks."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort them. Does it sink or float?",
+          "bins": [
+            {
+              "label": "Sink",
+              "emoji": "⬇️"
+            },
+            {
+              "label": "Float",
+              "emoji": "🛟"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🪨",
+              "bin": 0,
+              "name": "rock"
+            },
+            {
+              "emoji": "🦆",
+              "bin": 1,
+              "name": "rubber duck"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 0,
+              "name": "key"
+            },
+            {
+              "emoji": "🍃",
+              "bin": 1,
+              "name": "leaf"
+            },
+            {
+              "emoji": "🪙",
+              "bin": 0,
+              "name": "coin"
+            },
+            {
+              "emoji": "⚽",
+              "bin": 1,
+              "name": "ball"
+            }
+          ],
+          "explain": "Rocks, keys and coins sink. Ducks, leaves and balls float."
+        }
+      ]
+    },
+    {
+      "id": "sink-float-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Test results",
+      "intro": {
+        "say": "Let's test more things and see what happens in the water!",
+        "icons": [
+          "🍎",
+          "🔑",
+          "🪶"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "We tested an apple. It floats! A key sinks to the bottom.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🛟",
+              "🔑",
+              "⬇️"
+            ]
+          },
+          "caption": "Apple floats · Key sinks"
+        },
+        {
+          "mode": "show",
+          "say": "A feather is so light that it floats. A metal spoon sinks.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪶",
+              "🛟",
+              "🥄",
+              "⬇️"
+            ]
+          },
+          "caption": "Feather floats · Spoon sinks"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one will float?",
+          "options": [
+            {
+              "emoji": "🔑",
+              "label": "Key",
+              "why": "A metal key sinks."
+            },
+            {
+              "emoji": "🍎",
+              "label": "Apple"
+            },
+            {
+              "emoji": "🪙",
+              "label": "Coin",
+              "why": "A coin sinks."
+            }
+          ],
+          "answer": 1,
+          "explain": "An apple floats because it has lots of air inside."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one will sink?",
+          "options": [
+            {
+              "emoji": "🪶",
+              "label": "Feather",
+              "why": "A feather is very light and floats."
+            },
+            {
+              "emoji": "🍃",
+              "label": "Leaf",
+              "why": "A leaf floats on top."
+            },
+            {
+              "emoji": "🥄",
+              "label": "Metal spoon"
+            }
+          ],
+          "answer": 2,
+          "explain": "A metal spoon sinks to the bottom."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort them into sink and float.",
+          "bins": [
+            {
+              "label": "Sink",
+              "emoji": "⬇️"
+            },
+            {
+              "label": "Float",
+              "emoji": "🛟"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "bin": 1,
+              "name": "apple"
+            },
+            {
+              "emoji": "🥄",
+              "bin": 0,
+              "name": "metal spoon"
+            },
+            {
+              "emoji": "🪶",
+              "bin": 1,
+              "name": "feather"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 0,
+              "name": "key"
+            },
+            {
+              "emoji": "🪵",
+              "bin": 1,
+              "name": "wood"
+            },
+            {
+              "emoji": "🪨",
+              "bin": 0,
+              "name": "rock"
+            },
+            {
+              "emoji": "🏐",
+              "bin": 1,
+              "name": "ball"
+            }
+          ],
+          "explain": "Metal and rock sink. Apples, feathers, wood and balls float."
+        },
+        {
+          "mode": "choice",
+          "ask": "Does a wooden block sink or float?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪵"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬇️",
+              "label": "Sink",
+              "why": "Wood is light for its size, so it floats."
+            },
+            {
+              "emoji": "🛟",
+              "label": "Float"
+            }
+          ],
+          "answer": 1,
+          "explain": "Wood floats. That's why rafts are made of wood!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Is it the big ball or the small coin that sinks?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "⚽",
+                "scale": 1.8
+              },
+              {
+                "emoji": "🪙",
+                "scale": 0.6
+              }
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⚽",
+              "label": "Big ball",
+              "why": "The ball is full of air, so it floats."
+            },
+            {
+              "emoji": "🪙",
+              "label": "Small coin"
+            }
+          ],
+          "answer": 1,
+          "explain": "Even though the coin is small, it sinks. Being big doesn't make things sink."
+        }
+      ]
+    },
+    {
+      "id": "sink-float-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Why things float",
+      "intro": {
+        "say": "Why do some things float and others sink? Let's think like scientists!",
+        "icons": [
+          "🤔",
+          "🛟",
+          "🚢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Things that are heavy for their size sink, like a small coin. Things that are light for their size float, like a big beach ball.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪙",
+              "⬇️",
+              "🏐",
+              "🛟"
+            ]
+          },
+          "caption": "Heavy for its size → sinks"
+        },
+        {
+          "mode": "show",
+          "say": "Things with air inside often float. A ball is full of air, so it bobs on top.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽",
+              "💨",
+              "🛟"
+            ]
+          },
+          "caption": "Air inside helps floating"
+        },
+        {
+          "mode": "show",
+          "say": "A big ship is made of metal, but it floats! Its shape is wide and hollow, full of air.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚢",
+              "🌊"
+            ]
+          },
+          "caption": "Shape helps boats float"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why does a ball float?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⭕",
+              "label": "It is round",
+              "why": "A round marble sinks, so being round isn't the reason."
+            },
+            {
+              "emoji": "💨",
+              "label": "It is full of air"
+            },
+            {
+              "emoji": "🎨",
+              "label": "It is colorful",
+              "why": "Color doesn't change floating."
+            }
+          ],
+          "answer": 1,
+          "explain": "The air inside makes the ball light for its size, so it floats."
+        },
+        {
+          "mode": "choice",
+          "ask": "A key is small, but it sinks. Why?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔑"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⚖️",
+              "label": "It's heavy for its size"
+            },
+            {
+              "emoji": "✨",
+              "label": "It's too shiny",
+              "why": "Shiny things can float too."
+            },
+            {
+              "emoji": "🤏",
+              "label": "It's too tiny",
+              "why": "Tiny feathers float, so size isn't it."
+            }
+          ],
+          "answer": 0,
+          "explain": "A metal key is heavy for its size, so it sinks."
+        },
+        {
+          "mode": "choice",
+          "ask": "A metal ship is very heavy. How can it float?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚢"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🚲",
+              "label": "It has wheels",
+              "why": "Ships don't use wheels in water."
+            },
+            {
+              "emoji": "🎨",
+              "label": "It is painted",
+              "why": "Paint doesn't help it float."
+            },
+            {
+              "emoji": "🛶",
+              "label": "Its hollow shape"
+            }
+          ],
+          "answer": 2,
+          "explain": "A ship's wide, hollow shape is full of air, so it floats."
+        },
+        {
+          "mode": "choice",
+          "ask": "A big log and a small pebble go in the river. Which one sinks?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🪵",
+                "scale": 2
+              },
+              {
+                "emoji": "🪨",
+                "scale": 0.6
+              }
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🪵",
+              "label": "Big log",
+              "why": "Wood is light for its size, so even a big log floats."
+            },
+            {
+              "emoji": "🪨",
+              "label": "Small pebble"
+            }
+          ],
+          "answer": 1,
+          "explain": "The pebble is heavy for its size, so it sinks. The log floats."
+        },
+        {
+          "mode": "sort",
+          "ask": "Think it through. Sink or float?",
+          "bins": [
+            {
+              "label": "Sink",
+              "emoji": "⬇️"
+            },
+            {
+              "label": "Float",
+              "emoji": "🛟"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🪙",
+              "bin": 0,
+              "name": "coin"
+            },
+            {
+              "emoji": "🛶",
+              "bin": 1,
+              "name": "boat"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 0,
+              "name": "key"
+            },
+            {
+              "emoji": "🦆",
+              "bin": 1,
+              "name": "rubber duck"
+            },
+            {
+              "emoji": "🥄",
+              "bin": 0,
+              "name": "metal spoon"
+            },
+            {
+              "emoji": "🍃",
+              "bin": 1,
+              "name": "leaf"
+            }
+          ],
+          "explain": "Small heavy metal things sink. Boats, ducks and leaves float."
+        }
+      ]
+    }
+  ]
+}
