@@ -1,0 +1,38 @@
+[
+  {
+    "id": "counting",
+    "gameId": "counting",
+    "subject": "math",
+    "title": "Counting",
+    "icon": "numbers",
+    "color": "sunshine",
+    "mapPosition": { "x": 0.27, "y": 0.22 }
+  },
+  {
+    "id": "fractions",
+    "gameId": "fractions",
+    "subject": "math",
+    "title": "Pizza Parts",
+    "icon": "pizza",
+    "color": "tomato",
+    "mapPosition": { "x": 0.73, "y": 0.38 }
+  },
+  {
+    "id": "matter",
+    "gameId": "matter",
+    "subject": "science",
+    "title": "Ice, Water, Steam",
+    "icon": "ice",
+    "color": "sky",
+    "mapPosition": { "x": 0.27, "y": 0.6 }
+  },
+  {
+    "id": "plants",
+    "gameId": "plants",
+    "subject": "science",
+    "title": "Growing Plants",
+    "icon": "sprout",
+    "color": "leaf",
+    "mapPosition": { "x": 0.73, "y": 0.8 }
+  }
+]

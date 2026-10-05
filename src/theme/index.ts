@@ -1,0 +1,62 @@
+export const colors = {
+  // topic colours (referenced by name from content/topics.json)
+  sunshine: '#FFC93C',
+  tomato: '#FF6B6B',
+  sky: '#4DABF7',
+  leaf: '#51CF66',
+  grape: '#9775FA',
+  tangerine: '#FF922B',
+
+  // surfaces
+  background: '#FFF8E7',
+  card: '#FFFFFF',
+  mapSky: '#BDE7FF',
+  mapGrass: '#B2F2BB',
+  mapWater: '#74C0FC',
+
+  // text and lines
+  ink: '#2B2D42',
+  inkSoft: '#6C6F7F',
+  line: '#E6DFCF',
+  locked: '#CED4DA',
+
+  // feedback
+  star: '#FFD43B',
+  starEmpty: '#DEE2E6',
+  success: '#40C057',
+  gentle: '#FFA94D',
+  overlay: 'rgba(43, 45, 66, 0.45)',
+} as const;
+
+export type ColorName = keyof typeof colors;
+
+export function topicColor(name: string): string {
+  return (colors as Record<string, string>)[name] ?? colors.sky;
+}
+
+export const spacing = { xs: 4, sm: 8, md: 16, lg: 24, xl: 32, xxl: 48 } as const;
+
+export const radii = { sm: 12, md: 20, lg: 32, round: 999 } as const;
+
+export const sizes = {
+  /** minimum touch target for children */
+  touch: 64,
+  bigTouch: 88,
+  glyph: 48,
+  bigGlyph: 72,
+} as const;
+
+export const fonts = {
+  label: { fontSize: 18, fontWeight: '700' as const },
+  title: { fontSize: 28, fontWeight: '800' as const },
+  numeral: { fontSize: 72, fontWeight: '900' as const },
+};
+
+export const motion = {
+  quick: 150,
+  normal: 300,
+  slow: 600,
+  /** pause after a solved round before the next one starts */
+  roundPause: 1400,
+  spring: { damping: 14, stiffness: 180 },
+} as const;
