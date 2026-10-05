@@ -26,6 +26,11 @@ export const GLYPHS = {
   flower: { emoji: '🌼', name: 'flower', plural: 'flowers' },
   carrot: { emoji: '🥕', name: 'carrot', plural: 'carrots' },
 
+  // fractions
+  cut: { emoji: '✂️', name: 'cut', plural: 'cut' },
+  friends: { emoji: '👫', name: 'friends', plural: 'friends' },
+  plate: { emoji: '🍽️', name: 'plate', plural: 'plates' },
+
   // topic icons
   pizza: { emoji: '🍕', name: 'pizza', plural: 'pizzas' },
   cake: { emoji: '🍰', name: 'cake', plural: 'cakes' },

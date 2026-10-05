@@ -1,12 +1,14 @@
 // Loads and validates content/*.json once at startup.
 // To add a new game's levels: import its JSON below and add it to LEVEL_FILES.
 import countingLevels from '../../content/counting.levels.json';
+import fractionsLevels from '../../content/fractions.levels.json';
 import topicsJson from '../../content/topics.json';
 import { parseLevelFile, parseTopics, type ParseIssue } from './parseContent';
 import type { GameId, Level, Topic } from './types';
 
 const LEVEL_FILES: Record<string, unknown> = {
   'counting.levels.json': countingLevels,
+  'fractions.levels.json': fractionsLevels,
 };
 
 function load() {
