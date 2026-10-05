@@ -2,6 +2,7 @@
 import type { z } from 'zod';
 
 import type { GameId } from '../engine/types';
+import { CompareRoundSchema } from './compare/schema';
 import { CountingRoundSchema } from './counting/schema';
 import { FractionsRoundSchema } from './fractions/schema';
 import { MatterRoundSchema } from './matter/schema';
@@ -10,4 +11,5 @@ export const ROUND_SCHEMAS: Partial<Record<GameId, z.ZodTypeAny>> = {
   counting: CountingRoundSchema,
   fractions: FractionsRoundSchema,
   matter: MatterRoundSchema,
+  compare: CompareRoundSchema,
 };

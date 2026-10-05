@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 import { GLYPH_IDS } from '../assets-map';
 
-export const GAME_IDS = ['counting', 'fractions', 'matter', 'plants'] as const;
+export const GAME_IDS = ['counting', 'fractions', 'matter', 'plants', 'compare'] as const;
 export const GameIdSchema = z.enum(GAME_IDS);
 
 export const GlyphIdSchema = z.enum(GLYPH_IDS);

@@ -76,6 +76,7 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
 
   const showHint = useCallback(() => {
     if (transitioning.current) return;
+    if (definition.isLesson?.(round)) return speak(prompt);
     setHintActive((was) => {
       if (!was) hints.current += 1;
       return true;
@@ -105,9 +106,13 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
   const onRoundComplete = useCallback(() => {
     if (transitioning.current) return;
     transitioning.current = true;
-    playSound('success');
-    setFeedback((f) => ({ kind: 'success', nonce: f.nonce + 1 }));
-    speak(phrases.roundPraise());
+    // Lesson steps (explanations, worked examples) just move on: no praise, no score.
+    const lesson = definition.isLesson?.(level.rounds[roundIndex]) ?? false;
+    if (!lesson) {
+      playSound('success');
+      setFeedback((f) => ({ kind: 'success', nonce: f.nonce + 1 }));
+      speak(phrases.roundPraise());
+    }
 
     timer.current = setTimeout(() => {
       const isLast = roundIndex >= level.rounds.length - 1;
@@ -124,8 +129,8 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
       playSound('celebrate');
       speak(phrases.levelPraise() + (newBadges.length ? ` ${phrases.newBadge}` : ''));
       setResult({ stars, newBadges });
-    }, motion.roundPause);
-  }, [roundIndex, level, definition.id, recordLevel]);
+    }, lesson ? motion.normal : motion.roundPause);
+  }, [roundIndex, level, definition, recordLevel]);
 
   const replay = () => {
     mistakes.current = 0;

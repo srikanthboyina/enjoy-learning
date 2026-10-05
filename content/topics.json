@@ -6,7 +6,10 @@
     "title": "Counting",
     "icon": "numbers",
     "color": "sunshine",
-    "mapPosition": { "x": 0.27, "y": 0.22 }
+    "mapPosition": {
+      "x": 0.27,
+      "y": 0.13
+    }
   },
   {
     "id": "fractions",
@@ -15,7 +18,22 @@
     "title": "Pizza Parts",
     "icon": "pizza",
     "color": "tomato",
-    "mapPosition": { "x": 0.73, "y": 0.38 }
+    "mapPosition": {
+      "x": 0.73,
+      "y": 0.3
+    }
+  },
+  {
+    "id": "compare",
+    "gameId": "compare",
+    "subject": "math",
+    "title": "More or Less",
+    "icon": "crocodile",
+    "color": "grape",
+    "mapPosition": {
+      "x": 0.27,
+      "y": 0.47
+    }
   },
   {
     "id": "matter",
@@ -24,7 +42,10 @@
     "title": "Ice, Water, Steam",
     "icon": "ice",
     "color": "sky",
-    "mapPosition": { "x": 0.27, "y": 0.6 }
+    "mapPosition": {
+      "x": 0.73,
+      "y": 0.64
+    }
   },
   {
     "id": "plants",
@@ -33,6 +54,9 @@
     "title": "Growing Plants",
     "icon": "sprout",
     "color": "leaf",
-    "mapPosition": { "x": 0.73, "y": 0.8 }
+    "mapPosition": {
+      "x": 0.27,
+      "y": 0.82
+    }
   }
 ]

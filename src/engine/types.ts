@@ -42,6 +42,12 @@ export interface GameDefinition<TRound> {
   defaultRoundPrompt: (round: TRound) => Prompt;
   /** Spoken when the hint button is pressed or after repeated mistakes. */
   hintFor?: (round: TRound) => Prompt;
+  /**
+   * True for "watch and learn" rounds (explanations, worked examples). They are not
+   * scored: the game calls onRoundComplete when the child taps next, and GameShell
+   * moves on without praise.
+   */
+  isLesson?: (round: TRound) => boolean;
 }
 
 export interface LevelResult {

@@ -31,6 +31,11 @@ export const GLYPHS = {
   friends: { emoji: '👫', name: 'friends', plural: 'friends' },
   plate: { emoji: '🍽️', name: 'plate', plural: 'plates' },
 
+  // comparing
+  crocodile: { emoji: '🐊', name: 'crocodile', plural: 'crocodiles' },
+  scale: { emoji: '⚖️', name: 'same', plural: 'same' },
+  next: { emoji: '▶️', name: 'next', plural: 'next' },
+
   // topic icons
   pizza: { emoji: '🍕', name: 'pizza', plural: 'pizzas' },
   cake: { emoji: '🍰', name: 'cake', plural: 'cakes' },

@@ -1,0 +1,65 @@
+{
+  "gameId": "compare",
+  "version": 1,
+  "levels": [
+    {
+      "id": "compare-01",
+      "order": 1,
+      "name": "More or fewer",
+      "intro": { "say": "Let's learn to compare! Comparing means looking at two groups to see which one has more.", "icons": ["eyes", "apple", "apple"] },
+      "rounds": [
+        { "mode": "show", "left": 5, "right": 2, "item": "apple", "say": "Look! This side has five apples. That side has two apples. Five is more than two." },
+        { "mode": "show", "left": 3, "right": 6, "item": "duck", "say": "Three ducks and six ducks. Three is fewer than six. Fewer means not as many." },
+        { "mode": "pick", "left": 4, "right": 1, "item": "apple", "ask": "more" },
+        { "mode": "pick", "left": 2, "right": 5, "item": "star", "ask": "more" },
+        { "mode": "pick", "left": 6, "right": 3, "item": "fish", "ask": "fewer" },
+        { "mode": "pick", "left": 2, "right": 7, "item": "car", "ask": "fewer" },
+        { "mode": "pick", "left": 8, "right": 6, "item": "strawberry", "ask": "more" }
+      ]
+    },
+    {
+      "id": "compare-02",
+      "order": 2,
+      "name": "The same",
+      "intro": { "say": "Sometimes two groups have the same number. We call that equal.", "icons": ["ball", "scale", "ball"] },
+      "rounds": [
+        { "mode": "show", "left": 4, "right": 4, "item": "ball", "say": "Four balls and four balls. They are the same! Same means equal." },
+        { "mode": "show", "left": 3, "right": 5, "item": "flower", "say": "Three flowers and five flowers. These are not the same. Five is more." },
+        { "mode": "pick", "left": 3, "right": 3, "item": "banana", "ask": "more", "allowSame": true },
+        { "mode": "pick", "left": 5, "right": 2, "item": "duck", "ask": "more", "allowSame": true },
+        { "mode": "pick", "left": 6, "right": 6, "item": "carrot", "ask": "fewer", "allowSame": true },
+        { "mode": "pick", "left": 4, "right": 7, "item": "apple", "ask": "fewer", "allowSame": true }
+      ]
+    },
+    {
+      "id": "compare-03",
+      "order": 3,
+      "name": "Hungry crocodile",
+      "intro": { "say": "Meet the hungry crocodile! It always wants the bigger number.", "icons": ["crocodile", "eyes"] },
+      "rounds": [
+        { "mode": "show", "left": 7, "right": 3, "item": "apple", "showSymbol": true, "say": "Seven apples and three apples. Seven is bigger, so the crocodile opens its mouth to seven. We say seven is greater than three." },
+        { "mode": "show", "left": 2, "right": 6, "item": "fish", "showSymbol": true, "say": "Two fish and six fish. The crocodile opens its mouth to six. We say two is less than six." },
+        { "mode": "show", "left": 5, "right": 5, "item": "star", "showSymbol": true, "say": "Five and five are the same. The crocodile can't choose, so we use the equals sign." },
+        { "mode": "symbol", "left": 6, "right": 2, "item": "strawberry" },
+        { "mode": "symbol", "left": 3, "right": 8, "item": "ball" },
+        { "mode": "symbol", "left": 4, "right": 4, "item": "duck" },
+        { "mode": "symbol", "left": 9, "right": 5, "item": "star" }
+      ]
+    },
+    {
+      "id": "compare-04",
+      "order": 4,
+      "name": "Big numbers",
+      "intro": { "say": "Now just numbers, up to twenty! The crocodile still wants the bigger one.", "icons": ["crocodile", "numbers"] },
+      "stars": { "three": 0, "two": 2 },
+      "rounds": [
+        { "mode": "show", "left": 12, "right": 17, "showSymbol": true, "say": "Twelve and seventeen. Seventeen is bigger, so the crocodile opens to seventeen. Twelve is less than seventeen." },
+        { "mode": "symbol", "left": 15, "right": 11 },
+        { "mode": "symbol", "left": 9, "right": 19 },
+        { "mode": "symbol", "left": 14, "right": 14 },
+        { "mode": "symbol", "left": 20, "right": 18 },
+        { "mode": "symbol", "left": 13, "right": 16 }
+      ]
+    }
+  ]
+}

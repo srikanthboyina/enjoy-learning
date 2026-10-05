@@ -67,6 +67,12 @@ A game component renders **one round** and receives `GameProps<TRound>`
 - may call `speak(prompt)` for in-game narration (e.g. counting aloud),
 - reads `hintActive` to show visual help.
 
+**Lesson steps.** A level can teach before it tests: put "watch and learn" rounds
+(explanations, worked examples) first and have the definition's `isLesson(round)`
+return true for them. The game shows the example with a ▶️ button that calls
+`onRoundComplete()`; GameShell moves on without praise or scoring. The round's
+prompt (its narration) is spoken automatically. See `src/games/compare/`.
+
 It never touches storage, navigation, scoring, stars, or sounds for right/wrong;
 `GameShell` owns those. Remount per round is guaranteed (`key={roundIndex}`), so
 round state can live in `useState`.
