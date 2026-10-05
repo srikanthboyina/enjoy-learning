@@ -1,0 +1,54 @@
+{
+  "gameId": "matter",
+  "version": 1,
+  "levels": [
+    {
+      "id": "matter-01",
+      "order": 1,
+      "name": "Melt and freeze",
+      "intro": { "say": "Ice, water and steam are the same thing at different temperatures. Let's play!", "icons": ["ice", "drop", "steam"] },
+      "rounds": [
+        { "mode": "change", "start": "ice", "goal": "water", "tools": ["heat"] },
+        { "mode": "change", "start": "water", "goal": "ice", "tools": ["cool"] },
+        { "mode": "change", "start": "ice", "goal": "water" }
+      ]
+    },
+    {
+      "id": "matter-02",
+      "order": 2,
+      "name": "Boil and cool",
+      "intro": { "say": "Water can turn into steam! Can you make it?", "icons": ["drop", "fire", "steam"] },
+      "rounds": [
+        { "mode": "change", "start": "water", "goal": "steam" },
+        { "mode": "change", "start": "steam", "goal": "water" },
+        { "mode": "change", "start": "water", "goal": "ice" },
+        { "mode": "change", "start": "steam", "goal": "water" }
+      ]
+    },
+    {
+      "id": "matter-03",
+      "order": 3,
+      "name": "Two steps",
+      "intro": { "say": "Some changes take two steps. Think carefully!", "icons": ["ice", "fire", "fire", "steam"] },
+      "stars": { "three": 0, "two": 2 },
+      "rounds": [
+        { "mode": "change", "start": "ice", "goal": "steam" },
+        { "mode": "change", "start": "steam", "goal": "ice" },
+        { "mode": "change", "start": "ice", "goal": "steam" }
+      ]
+    },
+    {
+      "id": "matter-04",
+      "order": 4,
+      "name": "What happens if",
+      "intro": { "say": "Can you guess what happens?", "icons": ["question", "fire", "snow"] },
+      "stars": { "three": 0, "two": 1 },
+      "rounds": [
+        { "mode": "predict", "start": "ice", "tool": "heat" },
+        { "mode": "predict", "start": "water", "tool": "cool" },
+        { "mode": "predict", "start": "water", "tool": "heat" },
+        { "mode": "predict", "start": "steam", "tool": "cool" }
+      ]
+    }
+  ]
+}
