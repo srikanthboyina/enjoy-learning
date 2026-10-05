@@ -1,0 +1,513 @@
+{
+  "topicId": "ten-frames",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "ten-frames-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Fill the frame",
+      "intro": {
+        "say": "A ten frame has ten boxes. We fill the top row first, then the bottom row.",
+        "icons": [
+          "🔲",
+          "🔵",
+          "🔟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This is a ten frame. It has two rows of five boxes. Ten boxes in all!",
+          "visual": {
+            "kind": "tenframe",
+            "count": 0
+          },
+          "caption": "5 + 5 = 10 boxes"
+        },
+        {
+          "mode": "show",
+          "say": "A full top row is five. So here we see five without counting one by one!",
+          "visual": {
+            "kind": "tenframe",
+            "count": 5
+          },
+          "caption": "5"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many dots? The top row is full.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 5
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "A full row has five."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "10",
+              "why": "Only the top row is full."
+            }
+          ],
+          "answer": 1,
+          "explain": "A full top row is five."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many dots? Five and one more.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 6
+          },
+          "options": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "7",
+              "why": "Only one dot on the bottom row."
+            },
+            {
+              "label": "5",
+              "why": "Look, one more on the bottom."
+            }
+          ],
+          "answer": 0,
+          "explain": "Five and one more make six."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many ladybugs?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 3,
+            "emoji": "🐞"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "The top row is not full."
+            },
+            {
+              "label": "2",
+              "why": "Count them one by one."
+            },
+            {
+              "label": "3"
+            }
+          ],
+          "answer": 2,
+          "explain": "Three ladybugs, with two empty boxes on top."
+        },
+        {
+          "mode": "choice",
+          "ask": "The frame is full. How many?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 10,
+            "emoji": "⭐"
+          },
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "5",
+              "why": "Both rows are full."
+            },
+            {
+              "label": "9",
+              "why": "There are no empty boxes."
+            }
+          ],
+          "answer": 0,
+          "explain": "A full ten frame is ten."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is the top row full, or not full?",
+          "bins": [
+            {
+              "label": "Full row",
+              "emoji": "✅"
+            },
+            {
+              "label": "Not full",
+              "emoji": "⬜"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "5️⃣",
+              "bin": 0,
+              "name": "five"
+            },
+            {
+              "emoji": "🔟",
+              "bin": 0,
+              "name": "ten"
+            },
+            {
+              "emoji": "3️⃣",
+              "bin": 1,
+              "name": "three"
+            },
+            {
+              "emoji": "2️⃣",
+              "bin": 1,
+              "name": "two"
+            },
+            {
+              "emoji": "7️⃣",
+              "bin": 0,
+              "name": "seven"
+            }
+          ],
+          "explain": "Five or more fills the top row."
+        }
+      ]
+    },
+    {
+      "id": "ten-frames-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "See it fast",
+      "intro": {
+        "say": "Ten frames help us see numbers fast and find how many more make ten.",
+        "icons": [
+          "⚡",
+          "🔲",
+          "👀"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Look at the empty boxes! Seven dots and three empty boxes. Seven and three make ten.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 7
+          },
+          "caption": "7 + 3 = 10"
+        },
+        {
+          "mode": "show",
+          "say": "Eight is a full top row and three more. Five and three make eight.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 8
+          },
+          "caption": "5 + 3 = 8"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many dots? Look at the rows.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 9
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "Only one box is empty."
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "10",
+              "why": "One box is still empty."
+            }
+          ],
+          "answer": 1,
+          "explain": "Nine dots with one empty box."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many more to make ten?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 6
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "6",
+              "why": "That is how many dots there are."
+            },
+            {
+              "label": "3",
+              "why": "Count the empty boxes."
+            }
+          ],
+          "answer": 0,
+          "explain": "Four boxes are empty, so four more make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many apples?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 7,
+            "emoji": "🍎"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Look, two on the bottom row."
+            },
+            {
+              "label": "8",
+              "why": "Three boxes are empty."
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "answer": 2,
+          "explain": "Five on top and two more make seven."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many more to fill the frame?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 2,
+            "emoji": "🐟"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "That is how many fish are there."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "10",
+              "why": "Some boxes already have fish."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two and eight make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which frame shows 8?",
+          "options": [
+            {
+              "label": "5 and 3"
+            },
+            {
+              "label": "5 and 5",
+              "why": "That is ten."
+            },
+            {
+              "label": "4 and 3",
+              "why": "That is seven."
+            }
+          ],
+          "answer": 0,
+          "explain": "A full row of five and three more make eight."
+        },
+        {
+          "mode": "order",
+          "ask": "Order the numbers the frames show, smallest first.",
+          "items": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "explain": "Fewer filled boxes is a smaller number."
+        }
+      ]
+    },
+    {
+      "id": "ten-frames-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Two ten frames",
+      "intro": {
+        "say": "Two ten frames show numbers up to twenty. Let us use them to add fast!",
+        "icons": [
+          "🔲",
+          "🔲",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Nine and four? Move one to fill the ten. Now it is ten and three: thirteen!",
+          "visual": {
+            "kind": "tenframe",
+            "count": 13
+          },
+          "caption": "9 + 4 = 10 + 3 = 13"
+        },
+        {
+          "mode": "show",
+          "say": "Seventeen is one full frame and seven more. Ten and seven make seventeen.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 17
+          },
+          "caption": "10 + 7 = 17"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many dots in both frames?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 15
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Remember the full ten."
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "16",
+              "why": "Look at the second frame: five."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten and five make fifteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many more to make 20?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 16
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "That is how many are in the second frame."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "10",
+              "why": "Some boxes are already full."
+            }
+          ],
+          "answer": 1,
+          "explain": "Four empty boxes. Sixteen and four make twenty."
+        },
+        {
+          "mode": "choice",
+          "ask": "8 bees and 5 more bees. Fill the ten first. How many?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 13,
+            "emoji": "🐝"
+          },
+          "options": [
+            {
+              "label": "13"
+            },
+            {
+              "label": "12",
+              "why": "Move two to fill the ten, then three are left."
+            },
+            {
+              "label": "85",
+              "why": "We add the numbers, not join the digits."
+            }
+          ],
+          "answer": 0,
+          "explain": "Eight and two fill the ten, and three more make thirteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many dots?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 19
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "The first frame is a full ten."
+            },
+            {
+              "label": "20",
+              "why": "One box is empty."
+            },
+            {
+              "label": "19"
+            }
+          ],
+          "answer": 2,
+          "explain": "Ten and nine make nineteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the same as seven plus five?",
+          "options": [
+            {
+              "label": "10 + 2"
+            },
+            {
+              "label": "10 + 5",
+              "why": "That is fifteen."
+            },
+            {
+              "label": "7 + 7",
+              "why": "That is fourteen."
+            }
+          ],
+          "answer": 0,
+          "explain": "Move three from the five to fill the ten. Ten and two make twelve."
+        },
+        {
+          "mode": "choice",
+          "ask": "Zoe has 11 stickers. How many more to reach 20?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 11,
+            "emoji": "⭐"
+          },
+          "options": [
+            {
+              "label": "11",
+              "why": "Count only the empty boxes."
+            },
+            {
+              "label": "8",
+              "why": "Count the empty boxes again."
+            },
+            {
+              "label": "9"
+            }
+          ],
+          "answer": 2,
+          "explain": "Nine boxes are empty. Eleven and nine make twenty."
+        }
+      ]
+    }
+  ]
+}

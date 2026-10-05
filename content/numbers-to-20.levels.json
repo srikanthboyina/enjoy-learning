@@ -1,0 +1,482 @@
+{
+  "topicId": "numbers-to-20",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "numbers-to-20-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Ten and some more",
+      "intro": {
+        "say": "Numbers after ten are made of one full ten and some more. Let us meet eleven, twelve and thirteen!",
+        "icons": [
+          "🔟",
+          "➕",
+          "⭐"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Here is a full ten frame. That is ten! One more dot in the next frame makes eleven.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 11
+          },
+          "caption": "10 and 1 = 11"
+        },
+        {
+          "mode": "show",
+          "say": "Ten and two more make twelve. Ten and three more make thirteen.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 13
+          },
+          "caption": "10 and 3 = 13"
+        },
+        {
+          "mode": "choice",
+          "ask": "A full ten and one more. What number is it?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 11
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "Look, there is one more after the full ten."
+            },
+            {
+              "label": "11"
+            },
+            {
+              "label": "12",
+              "why": "Only one extra dot, not two."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten and one more is eleven."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many stars? Remember the top frame is a full ten.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 12,
+            "emoji": "⭐"
+          },
+          "options": [
+            {
+              "label": "14",
+              "why": "Count the extra stars again: just two."
+            },
+            {
+              "label": "20",
+              "why": "The second frame is not full."
+            },
+            {
+              "label": "12"
+            }
+          ],
+          "answer": 2,
+          "explain": "Ten and two more make twelve."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one makes 13?",
+          "options": [
+            {
+              "label": "10 and 3"
+            },
+            {
+              "label": "10 and 1",
+              "why": "That is eleven."
+            },
+            {
+              "label": "3",
+              "why": "Thirteen needs a full ten too."
+            }
+          ],
+          "answer": 0,
+          "explain": "Thirteen is ten and three more."
+        },
+        {
+          "mode": "choice",
+          "ask": "Count on from ten: ten, eleven, twelve... What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "10",
+              "11",
+              "12",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "14",
+              "why": "We skipped one! Say them slowly."
+            },
+            {
+              "label": "13"
+            },
+            {
+              "label": "20",
+              "why": "That is much further."
+            }
+          ],
+          "answer": 1,
+          "explain": "After twelve comes thirteen."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the numbers in counting order.",
+          "items": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "11"
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "13"
+            }
+          ],
+          "explain": "Ten, eleven, twelve, thirteen. Each one is one more."
+        }
+      ]
+    },
+    {
+      "id": "numbers-to-20-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Up to twenty",
+      "intro": {
+        "say": "Let us count all the way to twenty using ten frames!",
+        "icons": [
+          "🔟",
+          "🔟",
+          "🎉"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Ten and five more make fifteen. Start at ten and count on: eleven, twelve, thirteen, fourteen, fifteen!",
+          "visual": {
+            "kind": "tenframe",
+            "count": 15
+          },
+          "caption": "10 and 5 = 15"
+        },
+        {
+          "mode": "show",
+          "say": "Two full ten frames! Ten and ten make twenty.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 20
+          },
+          "caption": "10 and 10 = 20"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many dots? Start at ten and count on.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 16
+          },
+          "options": [
+            {
+              "label": "16"
+            },
+            {
+              "label": "6",
+              "why": "Do not forget the full ten!"
+            },
+            {
+              "label": "17",
+              "why": "Count the extra dots again: six."
+            }
+          ],
+          "answer": 0,
+          "explain": "Ten and six more make sixteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many apples are there?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 18,
+            "emoji": "🍎"
+          },
+          "options": [
+            {
+              "label": "19",
+              "why": "Count the extra apples slowly."
+            },
+            {
+              "label": "8",
+              "why": "Add the full ten on top."
+            },
+            {
+              "label": "18"
+            }
+          ],
+          "answer": 2,
+          "explain": "Ten and eight more make eighteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is ten and four more?",
+          "options": [
+            {
+              "label": "40",
+              "why": "Forty is four tens, much bigger."
+            },
+            {
+              "label": "14"
+            },
+            {
+              "label": "41",
+              "why": "That is forty one."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten and four more make fourteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "Both frames are full. How many?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 20,
+            "emoji": "🐞"
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "There are two full frames."
+            },
+            {
+              "label": "19",
+              "why": "Every box is full. Count again!"
+            },
+            {
+              "label": "20"
+            }
+          ],
+          "answer": 2,
+          "explain": "Two full tens make twenty."
+        },
+        {
+          "mode": "order",
+          "ask": "Put these numbers in order, smallest first.",
+          "items": [
+            {
+              "label": "12"
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "17"
+            },
+            {
+              "label": "20"
+            }
+          ],
+          "explain": "Twelve, fifteen, seventeen, twenty. They get bigger each time."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes after nineteen?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "17",
+              "18",
+              "19",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "We keep going up, not back."
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "91",
+              "why": "That swaps the digits."
+            }
+          ],
+          "answer": 1,
+          "explain": "After nineteen comes twenty."
+        }
+      ]
+    },
+    {
+      "id": "numbers-to-20-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Teen number detective",
+      "intro": {
+        "say": "Teen numbers can trick us. Let us spot them by their ten and their ones!",
+        "icons": [
+          "🕵️",
+          "🔟",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Look at 17. The 1 means one ten. The 7 means seven ones. Seventeen is ten and seven.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 17
+          },
+          "caption": "17 = 10 + 7"
+        },
+        {
+          "mode": "show",
+          "say": "Be careful! Twelve and twenty-one sound alike but are different. Twelve is ten and two. Twenty-one is two tens and one.",
+          "visual": {
+            "kind": "text",
+            "text": "12 ≠ 21"
+          },
+          "caption": "12 is not 21"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is seventeen?",
+          "options": [
+            {
+              "label": "71",
+              "why": "That is seventy-one, the digits swapped."
+            },
+            {
+              "label": "7",
+              "why": "Seventeen needs a ten as well."
+            },
+            {
+              "label": "17"
+            }
+          ],
+          "answer": 2,
+          "explain": "Seventeen is written one, seven: one ten and seven ones."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia has 10 shells and finds 9 more. How many shells now?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 19,
+            "emoji": "🐚"
+          },
+          "options": [
+            {
+              "label": "19"
+            },
+            {
+              "label": "18",
+              "why": "Count the extra shells again."
+            },
+            {
+              "label": "20",
+              "why": "One box is still empty."
+            }
+          ],
+          "answer": 0,
+          "explain": "Ten and nine more make nineteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many more dots to fill both frames and make 20?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 14
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "That is how many are in the second frame."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "10",
+              "why": "Look, some boxes are already full."
+            }
+          ],
+          "answer": 1,
+          "explain": "Fourteen and six more make twenty. Count the empty boxes."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is bigger: 13 or 16?",
+          "options": [
+            {
+              "label": "13",
+              "why": "Thirteen has only three extra ones."
+            },
+            {
+              "label": "16"
+            }
+          ],
+          "answer": 1,
+          "explain": "Both have one ten, and six ones is more than three."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number has 1 ten and 0 ones?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 10
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "One is just one dot."
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "11",
+              "why": "Eleven has one extra one."
+            }
+          ],
+          "answer": 1,
+          "explain": "One ten and no ones is ten."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the numbers from smallest to biggest.",
+          "items": [
+            {
+              "label": "11"
+            },
+            {
+              "label": "14"
+            },
+            {
+              "label": "18"
+            },
+            {
+              "label": "19"
+            }
+          ],
+          "explain": "Look at the ones: one, four, eight, nine."
+        }
+      ]
+    }
+  ]
+}

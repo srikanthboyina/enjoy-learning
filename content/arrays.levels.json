@@ -1,0 +1,562 @@
+{
+  "topicId": "arrays",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "arrays-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Rows and columns",
+      "intro": {
+        "say": "An array is things in neat rows. Rows go across, like lines of children.",
+        "icons": [
+          "🍫",
+          "➡️",
+          "⬇️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Here are 2 rows. Each row has 3 cookies. Count them all: six cookies!",
+          "visual": {
+            "kind": "array",
+            "rows": 2,
+            "cols": 3,
+            "emoji": "🍪"
+          },
+          "caption": "2 rows of 3 = 6"
+        },
+        {
+          "mode": "show",
+          "say": "Rows go across, side to side. Columns go up and down. This array has 3 rows.",
+          "visual": {
+            "kind": "array",
+            "rows": 3,
+            "cols": 2,
+            "emoji": "🍓"
+          },
+          "caption": "3 rows of 2"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many rows are there?",
+          "visual": {
+            "kind": "array",
+            "rows": 2,
+            "cols": 4,
+            "emoji": "⭐"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "That is how many in each row."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "8",
+              "why": "That is all of the stars."
+            }
+          ],
+          "answer": 1,
+          "explain": "There are 2 rows going across."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many are in each row?",
+          "visual": {
+            "kind": "array",
+            "rows": 3,
+            "cols": 3,
+            "emoji": "🌼"
+          },
+          "options": [
+            {
+              "label": "3"
+            },
+            {
+              "label": "2",
+              "why": "Count one row across."
+            },
+            {
+              "label": "9",
+              "why": "That is all the flowers."
+            }
+          ],
+          "answer": 0,
+          "explain": "Each row has 3 flowers."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many apples in all?",
+          "visual": {
+            "kind": "array",
+            "rows": 2,
+            "cols": 2,
+            "emoji": "🍎"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count both rows."
+            },
+            {
+              "label": "6",
+              "why": "Count again: 2 and 2."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "2 rows of 2 make 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many ducks in all?",
+          "visual": {
+            "kind": "array",
+            "rows": 2,
+            "cols": 5,
+            "emoji": "🐥"
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "Count both rows of 5."
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "5",
+              "why": "That is only one row."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 rows of 5. Five and five make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many rows of cars?",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 2,
+            "emoji": "🚗"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "2",
+              "why": "That is how many in each row."
+            },
+            {
+              "label": "8",
+              "why": "That is all the cars."
+            }
+          ],
+          "answer": 0,
+          "explain": "There are 4 rows going across."
+        }
+      ]
+    },
+    {
+      "id": "arrays-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Rows times columns",
+      "intro": {
+        "say": "Count arrays fast: count in jumps, one row at a time!",
+        "icons": [
+          "🍫",
+          "✖️",
+          "🧮"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "3 rows of 4 chocolates. Count each row in jumps: 4, 8, 12. Three rows of four is 12!",
+          "visual": {
+            "kind": "array",
+            "rows": 3,
+            "cols": 4,
+            "emoji": "🍫"
+          },
+          "caption": "3 × 4 = 12"
+        },
+        {
+          "mode": "show",
+          "say": "Turn the array on its side: 4 rows of 3. Count: 3, 6, 9, 12. Still 12! Turning does not change the total.",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 3,
+            "emoji": "🍫"
+          },
+          "caption": "4 × 3 = 12"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many cupcakes? Count row by row.",
+          "visual": {
+            "kind": "array",
+            "rows": 2,
+            "cols": 6,
+            "emoji": "🧁"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "Count both rows of 6."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "6",
+              "why": "That is only one row."
+            }
+          ],
+          "answer": 1,
+          "explain": "6 and 6 more make 12."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many eggs?",
+          "visual": {
+            "kind": "array",
+            "rows": 3,
+            "cols": 5,
+            "emoji": "🥚"
+          },
+          "options": [
+            {
+              "label": "15"
+            },
+            {
+              "label": "8",
+              "why": "Count in fives: 5, 10, 15."
+            },
+            {
+              "label": "10",
+              "why": "There are 3 rows, not 2."
+            }
+          ],
+          "answer": 0,
+          "explain": "Three rows of 5: five, ten, fifteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which words match this array?",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 5,
+            "emoji": "🌟"
+          },
+          "options": [
+            {
+              "label": "5 rows of 4",
+              "why": "Rows go across. Count the rows first."
+            },
+            {
+              "label": "4 rows of 3",
+              "why": "Count how many in one row."
+            },
+            {
+              "label": "4 rows of 5"
+            }
+          ],
+          "answer": 2,
+          "explain": "There are 4 rows going across, with 5 stars in each."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many windows?",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 2,
+            "emoji": "🪟"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Count in twos: 2, 4, 6, 8."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "4",
+              "why": "That is the rows."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 rows of 2: two, four, six, eight."
+        },
+        {
+          "mode": "order",
+          "ask": "Order these arrays from fewest to most.",
+          "items": [
+            {
+              "label": "2 rows of 2"
+            },
+            {
+              "label": "2 rows of 3"
+            },
+            {
+              "label": "3 rows of 3"
+            },
+            {
+              "label": "3 rows of 4"
+            }
+          ],
+          "explain": "Four, six, nine, twelve. Each array is bigger."
+        },
+        {
+          "mode": "choice",
+          "ask": "2 rows of 3 or 3 rows of 2. Which has more?",
+          "visual": {
+            "kind": "array",
+            "rows": 3,
+            "cols": 2,
+            "emoji": "🍩"
+          },
+          "options": [
+            {
+              "label": "2 rows of 3",
+              "why": "Count both. They each make 6."
+            },
+            {
+              "label": "Same"
+            },
+            {
+              "label": "3 rows of 2",
+              "why": "Count both. They each make 6."
+            }
+          ],
+          "answer": 1,
+          "explain": "Both make 6. Turning an array does not change how many."
+        }
+      ]
+    },
+    {
+      "id": "arrays-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Array puzzles",
+      "intro": {
+        "say": "Arrays help us multiply. Let us solve trickier array puzzles!",
+        "icons": [
+          "🍫",
+          "🧠",
+          "✖️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "5 rows of 6 seats. Count in sixes, or count in fives along the columns: 5, 10, 15, 20, 25, 30. Thirty seats!",
+          "visual": {
+            "kind": "array",
+            "rows": 5,
+            "cols": 6,
+            "emoji": "💺"
+          },
+          "caption": "5 × 6 = 30"
+        },
+        {
+          "mode": "show",
+          "say": "An egg box has 2 rows of 6. That is 12 eggs. Many things come in arrays!",
+          "visual": {
+            "kind": "array",
+            "rows": 2,
+            "cols": 6,
+            "emoji": "🥚"
+          },
+          "caption": "2 × 6 = 12"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many cookies on the tray?",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 5,
+            "emoji": "🍪"
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "Four plus five adds, but we need four rows of five."
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "25",
+              "why": "That would be 5 rows of 5."
+            }
+          ],
+          "answer": 1,
+          "explain": "Four rows of 5: five, ten, fifteen, twenty."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many strawberries?",
+          "visual": {
+            "kind": "array",
+            "rows": 6,
+            "cols": 5,
+            "emoji": "🍓"
+          },
+          "options": [
+            {
+              "label": "30"
+            },
+            {
+              "label": "11",
+              "why": "Six plus five is not enough. Count every row."
+            },
+            {
+              "label": "35",
+              "why": "Count in fives: six jumps of five."
+            }
+          ],
+          "answer": 0,
+          "explain": "6 rows of 5: five, ten, fifteen, twenty, twenty five, thirty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which array has 12 things?",
+          "options": [
+            {
+              "label": "3 rows of 4"
+            },
+            {
+              "label": "3 rows of 3",
+              "why": "That is 9."
+            },
+            {
+              "label": "2 rows of 5",
+              "why": "That is 10."
+            },
+            {
+              "label": "4 rows of 4",
+              "why": "That is 16."
+            }
+          ],
+          "answer": 0,
+          "explain": "3 rows of 4: four, eight, twelve."
+        },
+        {
+          "mode": "choice",
+          "ask": "A garden has 3 rows of 10 carrots. How many carrots?",
+          "visual": {
+            "kind": "array",
+            "rows": 3,
+            "cols": 10,
+            "emoji": "🥕"
+          },
+          "options": [
+            {
+              "label": "13",
+              "why": "Three rows of ten means count in tens."
+            },
+            {
+              "label": "30"
+            },
+            {
+              "label": "31",
+              "why": "Count in tens: 10, 20, 30."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten, twenty, thirty. Thirty carrots."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 16 chairs in 4 equal rows. How many in each row?",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 4,
+            "emoji": "🪑"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "8",
+              "why": "Two rows of 8 is 16, but we have 4 rows."
+            },
+            {
+              "label": "12",
+              "why": "Four rows of 12 is far too many."
+            }
+          ],
+          "answer": 0,
+          "explain": "4 rows of 4: four, eight, twelve, sixteen.",
+          "hint": "Count one row."
+        },
+        {
+          "mode": "choice",
+          "ask": "5 rows of 4 and 4 rows of 5. Why are they the same?",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 5,
+            "emoji": "🌼"
+          },
+          "options": [
+            {
+              "label": "It is turned"
+            },
+            {
+              "label": "Both have 5 rows",
+              "why": "One has 5 rows, the other has 4."
+            },
+            {
+              "label": "Flowers are small",
+              "why": "Size does not change how many."
+            }
+          ],
+          "answer": 0,
+          "explain": "It is the same array turned on its side, so both make 20."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from fewest to most.",
+          "items": [
+            {
+              "label": "2 rows of 5"
+            },
+            {
+              "label": "3 rows of 4"
+            },
+            {
+              "label": "4 rows of 4"
+            },
+            {
+              "label": "5 rows of 4"
+            },
+            {
+              "label": "3 rows of 10"
+            }
+          ],
+          "explain": "Ten, twelve, sixteen, twenty, thirty.",
+          "hint": "Work out each total first."
+        }
+      ]
+    }
+  ]
+}

@@ -478,7 +478,7 @@
         },
         {
           "mode": "choice",
-          "ask": "A plant has no flowers. What can't it make?",
+          "ask": "This plant does not have flowers. What can't it make?",
           "options": [
             {
               "emoji": "🍃",

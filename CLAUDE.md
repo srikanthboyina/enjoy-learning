@@ -35,7 +35,7 @@ npm run check             # both of the above; run before calling work done
 | `src/games/schemas.ts` | gameId → round schema (pure TS, used by app and validator). |
 | `src/games/registry.ts` | gameId → `GameDefinition` (the only registration point). |
 | `src/engine/` | Game-agnostic runtime: `GameShell`, scoring, content loading, types. |
-| `src/kit/` | Reusable kid-friendly UI: `BigButton`, `Glyph`, `Text` (Fredoka font), `Gradient`, `Mascot` (Ollie the owl), `Bob`, `Confetti`, drag-and-drop, feedback. |
+| `src/kit/` | Reusable kid-friendly UI: `BigButton`, `Glyph`, `Text` (Fredoka font), `Gradient`, `Mascot` (Ellie the elephant), `Bob`, `Confetti`, drag-and-drop, feedback. |
 | `src/services/` | `speech`, `sound`, `progressStore`, `parentGate`. |
 | `src/theme/` | Colours, spacing, sizes, motion. Use tokens, not literals. |
 | `src/assets-map.ts` | `GlyphId` → picture (emoji in v1) + spoken name. |
@@ -47,9 +47,12 @@ Import boundaries: a game may import from `engine/`, `kit/`, `services/`, `theme
 
 ## Content (levels) rules
 
-- Topics on the home screen are in `content/topics.json` (`id`, `gameId`, `subject`,
-  `title`, `emoji`, `blurb`, `colors` = two-stop gradient). Many topics can share one
-  game; most use the data-driven **explore** engine.
+- Topics are in `content/topics.json` (`id`, `gameId`, `subject`, `group`, `title`,
+  `emoji`, `blurb`, `colors` = two-stop gradient). Many topics can share one game; most
+  use the data-driven **explore** engine.
+- Groups are in `content/groups.json` (e.g. Numbers, Shapes & Space, My Body). The home
+  screen shows Math Land and Science Land as shelves of group cards; a group screen
+  (`app/group/[groupId].tsx`) lists its topics. Every topic's `group` must exist.
 - One file per topic: `content/<topicId>.levels.json` with
   `{ topicId, gameId, version: 1, levels }`. Files are auto-discovered
   (`require.context` in `src/engine/loadContent.ts`); no import needed.
@@ -70,7 +73,8 @@ Import boundaries: a game may import from `engine/`, `kit/`, `services/`, `theme
 Round modes: `show` (lesson picture + narration + ▶), `choice` (2–4 cards), `sort`
 (drag or tap things into 2–3 boxes), `order` (tap cards in sequence), `grow` (water and
 sun grow a plant). Pictures come from `visual` kinds: `emoji`, `text`, `groups`, `take`,
-`sequence`, `clock`, `shapes`, `pairs`, `sizes`, `numberline`. To add a topic that fits
+`sequence`, `clock`, `shapes`, `pairs`, `sizes`, `numberline`, `tenframe`, `placevalue`,
+`coins`, `bars`, `tally`, `array`, `ruler`, `thermometer`, `balance`, `fraction`, `week`. To add a topic that fits
 these, write only JSON. Add a new visual kind or mode in `schema.ts` +
 `parts/Visual.tsx` / `ExploreGame.tsx` when a topic needs one.
 

@@ -1,0 +1,574 @@
+{
+  "topicId": "ordinal",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "ordinal-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "First, second, third",
+      "intro": {
+        "say": "In a race, we say who came first, second and third. Let us learn these words!",
+        "icons": [
+          "🥇",
+          "🥈",
+          "🥉"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The animals are racing to the flag. The turtle is at the front, so the turtle is first!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐢",
+              "🐇",
+              "🦊"
+            ],
+            "size": "lg"
+          },
+          "caption": "🐢 1st, 🐇 2nd, 🦊 3rd"
+        },
+        {
+          "mode": "show",
+          "say": "First gets a gold medal, second gets silver, third gets bronze.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥇",
+              "🥈",
+              "🥉"
+            ],
+            "size": "lg"
+          },
+          "caption": "1st, 2nd, 3rd"
+        },
+        {
+          "mode": "choice",
+          "ask": "The race goes to the flag. Who is first?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐇",
+              "🐢",
+              "🦊"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐢",
+              "why": "The turtle is behind the rabbit."
+            },
+            {
+              "emoji": "🐇"
+            },
+            {
+              "emoji": "🦊",
+              "why": "The fox is at the back."
+            }
+          ],
+          "answer": 1,
+          "explain": "The rabbit is closest to the flag, so it is first."
+        },
+        {
+          "mode": "choice",
+          "ask": "Who is second, next after the first?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐻",
+              "🐸",
+              "🐇"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐻",
+              "why": "The bear is first."
+            },
+            {
+              "emoji": "🐇",
+              "why": "The rabbit is third."
+            },
+            {
+              "emoji": "🐸"
+            }
+          ],
+          "answer": 2,
+          "explain": "The frog is right behind the bear, so it is second."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which medal is for first place?",
+          "options": [
+            {
+              "emoji": "🥉",
+              "label": "bronze",
+              "why": "Bronze is for third."
+            },
+            {
+              "emoji": "🥇",
+              "label": "gold"
+            },
+            {
+              "emoji": "🥈",
+              "label": "silver",
+              "why": "Silver is for second."
+            }
+          ],
+          "answer": 1,
+          "explain": "Gold is for first place."
+        },
+        {
+          "mode": "choice",
+          "ask": "Who is third in the line?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐶",
+              "🐱",
+              "🐭"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐶",
+              "why": "The dog is first."
+            },
+            {
+              "emoji": "🐱",
+              "why": "The cat is second."
+            },
+            {
+              "emoji": "🐭"
+            }
+          ],
+          "answer": 2,
+          "explain": "The mouse is the third one, after the dog and the cat."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the medals in order: first, second, third.",
+          "items": [
+            {
+              "emoji": "🥇",
+              "label": "1st"
+            },
+            {
+              "emoji": "🥈",
+              "label": "2nd"
+            },
+            {
+              "emoji": "🥉",
+              "label": "3rd"
+            }
+          ],
+          "explain": "Gold first, silver second, bronze third."
+        }
+      ]
+    },
+    {
+      "id": "ordinal-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Up to fifth",
+      "intro": {
+        "say": "After third come fourth and fifth. Let us count places in a line!",
+        "icons": [
+          "🚂",
+          "🚃",
+          "5️⃣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Count the places from the front: first, second, third, fourth, fifth.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐢",
+              "🐇",
+              "🦊",
+              "🐻",
+              "🐸"
+            ],
+            "size": "lg"
+          },
+          "caption": "1st 2nd 3rd 4th 5th"
+        },
+        {
+          "mode": "show",
+          "say": "The bear is fourth. The frog is fifth and last in this line.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐢",
+              "🐇",
+              "🦊",
+              "🐻",
+              "🐸"
+            ],
+            "size": "lg"
+          },
+          "caption": "🐻 4th, 🐸 5th"
+        },
+        {
+          "mode": "choice",
+          "ask": "Who is fourth in the line?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐱",
+              "🐶",
+              "🐷",
+              "🐮",
+              "🐔"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐷",
+              "why": "The pig is third."
+            },
+            {
+              "emoji": "🐮"
+            },
+            {
+              "emoji": "🐔",
+              "why": "The hen is fifth."
+            }
+          ],
+          "answer": 1,
+          "explain": "Count from the flag: cat, dog, pig, cow. The cow is fourth."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which fruit is fifth from the front?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🍎",
+              "🍌",
+              "🍇",
+              "🍓",
+              "🍐"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🍐"
+            },
+            {
+              "emoji": "🍓",
+              "why": "The strawberry is fourth."
+            },
+            {
+              "emoji": "🍎",
+              "why": "The apple is first."
+            }
+          ],
+          "answer": 0,
+          "explain": "Apple, banana, grapes, strawberry, pear. The pear is fifth."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where is the duck in the line?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐸",
+              "🐦",
+              "🦆",
+              "🐢"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "1st",
+              "why": "The frog is first."
+            },
+            {
+              "label": "3rd"
+            },
+            {
+              "label": "4th",
+              "why": "The turtle is fourth."
+            }
+          ],
+          "answer": 1,
+          "explain": "Frog, bird, duck: the duck is third."
+        },
+        {
+          "mode": "choice",
+          "ask": "Kim came second. Which medal does Kim get?",
+          "options": [
+            {
+              "emoji": "🥇",
+              "label": "gold",
+              "why": "Gold is for first."
+            },
+            {
+              "emoji": "🥉",
+              "label": "bronze",
+              "why": "Bronze is for third."
+            },
+            {
+              "emoji": "🥈",
+              "label": "silver"
+            }
+          ],
+          "answer": 2,
+          "explain": "Second place gets silver."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the words in order.",
+          "items": [
+            {
+              "label": "first"
+            },
+            {
+              "label": "second"
+            },
+            {
+              "label": "third"
+            },
+            {
+              "label": "fourth"
+            },
+            {
+              "label": "fifth"
+            }
+          ],
+          "explain": "First, second, third, fourth, fifth."
+        }
+      ]
+    },
+    {
+      "id": "ordinal-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Place puzzles",
+      "intro": {
+        "say": "Now let us solve tricky puzzles about places in a line!",
+        "icons": [
+          "🧩",
+          "🏃",
+          "🏁"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Places go on: sixth, seventh, eighth, ninth, tenth. The truck is tenth, last of ten.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🚗",
+              "🚕",
+              "🚙",
+              "🚌",
+              "🚎",
+              "🚓",
+              "🚑",
+              "🚒",
+              "🚐",
+              "🚚"
+            ],
+            "size": "md"
+          },
+          "caption": "🚚 is 10th"
+        },
+        {
+          "mode": "show",
+          "say": "If you pass the runner in second place, you take their place. Now you are second!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐇",
+              "🐢",
+              "🦊"
+            ],
+            "size": "lg"
+          },
+          "caption": "pass 2nd → you are 2nd"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which vehicle is sixth from the flag?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🚗",
+              "🚕",
+              "🚙",
+              "🚌",
+              "🚎",
+              "🚓",
+              "🚑"
+            ],
+            "size": "md"
+          },
+          "options": [
+            {
+              "emoji": "🚎",
+              "why": "The trolley bus is fifth."
+            },
+            {
+              "emoji": "🚓"
+            },
+            {
+              "emoji": "🚑",
+              "why": "The ambulance is seventh."
+            }
+          ],
+          "answer": 1,
+          "explain": "Count from the flag to six: the police car is sixth."
+        },
+        {
+          "mode": "choice",
+          "ask": "Five children are in a line. Ana is first. Who is last?",
+          "options": [
+            {
+              "label": "the 1st",
+              "why": "Ana is first, at the front."
+            },
+            {
+              "label": "the 3rd",
+              "why": "Third is in the middle."
+            },
+            {
+              "label": "the 5th"
+            }
+          ],
+          "answer": 2,
+          "explain": "With five in a line, the fifth one is last."
+        },
+        {
+          "mode": "choice",
+          "ask": "Tom is third in the race. How many runners are in front of him?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🏃",
+              "🏃",
+              "🏃"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Tom himself is the third."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "1",
+              "why": "Count the ones ahead of him again."
+            }
+          ],
+          "answer": 1,
+          "explain": "First and second are in front, so two runners."
+        },
+        {
+          "mode": "choice",
+          "ask": "You pass the runner who is second. What place are you now?",
+          "options": [
+            {
+              "label": "1st",
+              "why": "The first runner is still ahead."
+            },
+            {
+              "label": "2nd"
+            },
+            {
+              "label": "3rd",
+              "why": "You moved up a place."
+            }
+          ],
+          "answer": 1,
+          "explain": "You take the second runner’s place, so you are second."
+        },
+        {
+          "mode": "choice",
+          "ask": "Seven animals in a line. Which place is the middle?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐶",
+              "🐱",
+              "🐭",
+              "🐰",
+              "🦊",
+              "🐻",
+              "🐼"
+            ],
+            "size": "md"
+          },
+          "options": [
+            {
+              "label": "3rd",
+              "why": "Three are before, but four come after."
+            },
+            {
+              "label": "4th"
+            },
+            {
+              "label": "7th",
+              "why": "That is last."
+            }
+          ],
+          "answer": 1,
+          "explain": "Three are in front and three behind, so fourth is the middle."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the places in order.",
+          "items": [
+            {
+              "label": "6th"
+            },
+            {
+              "label": "7th"
+            },
+            {
+              "label": "8th"
+            },
+            {
+              "label": "9th"
+            },
+            {
+              "label": "10th"
+            }
+          ],
+          "explain": "Sixth, seventh, eighth, ninth, tenth."
+        }
+      ]
+    }
+  ]
+}

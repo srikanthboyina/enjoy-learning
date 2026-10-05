@@ -1,0 +1,518 @@
+{
+  "topicId": "rounding",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "rounding-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Closer to which ten?",
+      "intro": {
+        "say": "Some numbers sit between two tens. Let’s find which ten they are closer to!",
+        "icons": [
+          "🎯",
+          "📏"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Look at 13. It is only 3 hops from 10, but 7 hops from 20. So 13 is closer to 10.",
+          "visual": {
+            "kind": "numberline",
+            "from": 10,
+            "to": 20,
+            "step": 1,
+            "hops": 3
+          },
+          "caption": "13 is closer to 10"
+        },
+        {
+          "mode": "show",
+          "say": "Now look at 18. It is 8 hops from 10, but only 2 hops from 20. So 18 is closer to 20.",
+          "visual": {
+            "kind": "numberline",
+            "from": 10,
+            "to": 20,
+            "step": 1,
+            "hops": 8
+          },
+          "caption": "18 is closer to 20"
+        },
+        {
+          "mode": "choice",
+          "ask": "Is 12 closer to 10 or to 20?",
+          "visual": {
+            "kind": "numberline",
+            "from": 10,
+            "to": 20,
+            "step": 1,
+            "hops": 2
+          },
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "20",
+              "why": "20 is 8 hops away, but 10 is only 2 hops back."
+            }
+          ],
+          "answer": 0,
+          "explain": "12 is just 2 hops from 10, so it is closer to 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is 19 closer to 10 or to 20?",
+          "visual": {
+            "kind": "numberline",
+            "from": 10,
+            "to": 20,
+            "step": 1,
+            "hops": 9
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "10 is 9 hops back. 20 is just 1 hop away!"
+            },
+            {
+              "label": "20"
+            }
+          ],
+          "answer": 1,
+          "explain": "19 is only 1 hop from 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is 3 closer to 0 or to 10?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1,
+            "hops": 3
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "10 is 7 hops away. 0 is just 3 hops back."
+            },
+            {
+              "label": "0"
+            }
+          ],
+          "answer": 1,
+          "explain": "3 is only 3 hops from 0, so it is closer to 0."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is 8 closer to 0 or to 10?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1,
+            "hops": 8
+          },
+          "options": [
+            {
+              "label": "0",
+              "why": "0 is 8 hops back. 10 is only 2 hops away."
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "answer": 1,
+          "explain": "8 is just 2 hops from 10."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort the numbers. Closer to 10, or closer to 20?",
+          "bins": [
+            {
+              "label": "Closer to 10",
+              "emoji": "⬅️"
+            },
+            {
+              "label": "Closer to 20",
+              "emoji": "➡️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "11",
+              "bin": 0,
+              "name": "eleven"
+            },
+            {
+              "emoji": "16",
+              "bin": 1,
+              "name": "sixteen"
+            },
+            {
+              "emoji": "14",
+              "bin": 0,
+              "name": "fourteen"
+            },
+            {
+              "emoji": "19",
+              "bin": 1,
+              "name": "nineteen"
+            },
+            {
+              "emoji": "12",
+              "bin": 0,
+              "name": "twelve"
+            },
+            {
+              "emoji": "17",
+              "bin": 1,
+              "name": "seventeen"
+            }
+          ],
+          "explain": "Numbers up to 14 are closer to 10. Numbers from 16 are closer to 20.",
+          "hint": "Count the hops to each ten."
+        }
+      ]
+    },
+    {
+      "id": "rounding-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Round to the nearest ten",
+      "intro": {
+        "say": "Rounding means jumping to the nearest ten. It helps us guess numbers quickly!",
+        "icons": [
+          "🎯",
+          "🔟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "24 is between 20 and 30. It is closer to 20, so 24 rounds to 20.",
+          "visual": {
+            "kind": "numberline",
+            "from": 20,
+            "to": 30,
+            "step": 1,
+            "hops": 4
+          },
+          "caption": "24 rounds to 20"
+        },
+        {
+          "mode": "show",
+          "say": "35 is right in the middle of 30 and 40! The rule is: a 5 rounds up. So 35 rounds to 40.",
+          "visual": {
+            "kind": "numberline",
+            "from": 30,
+            "to": 40,
+            "step": 1,
+            "hops": 5
+          },
+          "caption": "35 rounds to 40 (5 rounds up)"
+        },
+        {
+          "mode": "choice",
+          "ask": "Round 27 to the nearest ten.",
+          "visual": {
+            "kind": "numberline",
+            "from": 20,
+            "to": 30,
+            "step": 1,
+            "hops": 7
+          },
+          "options": [
+            {
+              "label": "20",
+              "why": "27 is 7 hops from 20, but only 3 hops from 30."
+            },
+            {
+              "label": "30"
+            },
+            {
+              "label": "25",
+              "why": "Rounding to a ten lands on a number ending in zero."
+            }
+          ],
+          "answer": 1,
+          "explain": "27 is closer to 30, so it rounds up to 30."
+        },
+        {
+          "mode": "choice",
+          "ask": "Round 41 to the nearest ten.",
+          "visual": {
+            "kind": "numberline",
+            "from": 40,
+            "to": 50,
+            "step": 1,
+            "hops": 1
+          },
+          "options": [
+            {
+              "label": "50",
+              "why": "50 is 9 hops away. 40 is just 1 hop back."
+            },
+            {
+              "label": "40"
+            }
+          ],
+          "answer": 1,
+          "explain": "41 is only 1 hop past 40, so it rounds down to 40."
+        },
+        {
+          "mode": "choice",
+          "ask": "Round 15 to the nearest ten.",
+          "visual": {
+            "kind": "numberline",
+            "from": 10,
+            "to": 20,
+            "step": 1,
+            "hops": 5
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "15 is right in the middle, and a 5 rounds up."
+            },
+            {
+              "label": "20"
+            }
+          ],
+          "answer": 1,
+          "explain": "15 is in the middle, and a 5 always rounds up to 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "Round 62 to the nearest ten.",
+          "visual": {
+            "kind": "text",
+            "text": "62 ≈ ?"
+          },
+          "options": [
+            {
+              "label": "70",
+              "why": "62 is only 2 more than 60. 70 is further away."
+            },
+            {
+              "label": "100",
+              "why": "100 is much too far away."
+            },
+            {
+              "label": "60"
+            }
+          ],
+          "answer": 2,
+          "explain": "62 is just 2 more than 60, so it rounds to 60."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it round to 50 or to 60?",
+          "bins": [
+            {
+              "label": "Round to 50",
+              "emoji": "⬅️"
+            },
+            {
+              "label": "Round to 60",
+              "emoji": "➡️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "51",
+              "bin": 0,
+              "name": "fifty one"
+            },
+            {
+              "emoji": "57",
+              "bin": 1,
+              "name": "fifty seven"
+            },
+            {
+              "emoji": "53",
+              "bin": 0,
+              "name": "fifty three"
+            },
+            {
+              "emoji": "55",
+              "bin": 1,
+              "name": "fifty five"
+            },
+            {
+              "emoji": "54",
+              "bin": 0,
+              "name": "fifty four"
+            },
+            {
+              "emoji": "59",
+              "bin": 1,
+              "name": "fifty nine"
+            }
+          ],
+          "explain": "51 to 54 round down to 50. 55 and up round up to 60.",
+          "hint": "Remember, a 5 rounds up."
+        }
+      ]
+    },
+    {
+      "id": "rounding-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Rounding detective",
+      "intro": {
+        "say": "Let’s round bigger numbers and use rounding to make smart guesses!",
+        "icons": [
+          "🎯",
+          "🕵️",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Look at the ones. 0 to 4 ones round down. 5 to 9 ones round up. 86 has 6 ones, so it rounds up to 90.",
+          "visual": {
+            "kind": "text",
+            "text": "86 ≈ 90"
+          },
+          "caption": "6 ones: round up"
+        },
+        {
+          "mode": "show",
+          "say": "73 has 7 tens and 3 ones. 3 ones is small, so we round down to 70.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 7,
+            "ones": 3
+          },
+          "caption": "73 ≈ 70"
+        },
+        {
+          "mode": "choice",
+          "ask": "Round 45 to the nearest ten.",
+          "visual": {
+            "kind": "text",
+            "text": "45 ≈ ?"
+          },
+          "options": [
+            {
+              "label": "40",
+              "why": "45 is exactly in the middle, and a 5 rounds up."
+            },
+            {
+              "label": "50"
+            },
+            {
+              "label": "45",
+              "why": "We need a number that ends in zero."
+            }
+          ],
+          "answer": 1,
+          "explain": "45 has 5 ones, so it rounds up to 50."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number rounds to 30?",
+          "visual": {
+            "kind": "text",
+            "text": "? ≈ 30"
+          },
+          "options": [
+            {
+              "label": "24",
+              "why": "24 rounds to 20."
+            },
+            {
+              "label": "36",
+              "why": "36 rounds to 40."
+            },
+            {
+              "label": "39",
+              "why": "39 rounds to 40."
+            },
+            {
+              "label": "33"
+            }
+          ],
+          "answer": 3,
+          "explain": "33 is only 3 more than 30, so it rounds to 30."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia has 38 stickers. About how many is that, to the nearest ten?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 8
+          },
+          "options": [
+            {
+              "label": "30",
+              "why": "38 has 8 ones, and 8 ones round up."
+            },
+            {
+              "label": "40"
+            }
+          ],
+          "answer": 1,
+          "explain": "38 has 8 ones, so it rounds up to 40."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number does NOT round to 70?",
+          "visual": {
+            "kind": "text",
+            "text": "≈ 70 ?"
+          },
+          "options": [
+            {
+              "label": "68",
+              "why": "68 rounds up to 70."
+            },
+            {
+              "label": "74",
+              "why": "74 rounds down to 70."
+            },
+            {
+              "label": "76"
+            },
+            {
+              "label": "65",
+              "why": "65 has 5 ones, so it rounds up to 70."
+            }
+          ],
+          "answer": 2,
+          "explain": "76 has 6 ones, so it rounds up to 80, not 70.",
+          "hint": "Look for the one that is closer to 80."
+        },
+        {
+          "mode": "choice",
+          "ask": "19 apples and 32 pears. Round each to the nearest ten. About how many fruits altogether?",
+          "visual": {
+            "kind": "text",
+            "text": "19 + 32 ≈ ?"
+          },
+          "options": [
+            {
+              "label": "40",
+              "why": "19 rounds to 20 and 32 rounds to 30. Add those."
+            },
+            {
+              "label": "50"
+            },
+            {
+              "label": "60",
+              "why": "32 rounds down to 30, not up to 40."
+            }
+          ],
+          "answer": 1,
+          "explain": "19 rounds to 20, 32 rounds to 30, and 20 plus 30 is 50."
+        }
+      ]
+    }
+  ]
+}

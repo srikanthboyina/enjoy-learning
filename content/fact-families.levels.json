@@ -1,0 +1,542 @@
+{
+  "topicId": "fact-families",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "fact-families-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "A number family",
+      "intro": {
+        "say": "A fact family is three numbers that work together. They can add and take away!",
+        "icons": [
+          "👨‍👩‍👧",
+          "➕",
+          "➖"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "2, 3 and 5 are a family. 2 plus 3 is 5, and 3 plus 2 is 5 too!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐟"
+              },
+              {
+                "count": 3,
+                "emoji": "🐟"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "2 + 3 = 5    3 + 2 = 5"
+        },
+        {
+          "mode": "show",
+          "say": "The family can take away too. 5 take away 2 leaves 3. And 5 take away 3 leaves 2.",
+          "visual": {
+            "kind": "take",
+            "count": 5,
+            "remove": 2,
+            "emoji": "🐟"
+          },
+          "caption": "5 − 2 = 3    5 − 3 = 2"
+        },
+        {
+          "mode": "choice",
+          "ask": "1 plus 3 is 4. So what is 3 plus 1?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍎"
+              },
+              {
+                "count": 1,
+                "emoji": "🍎"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Turning the numbers around keeps the same total."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5",
+              "why": "Turning the numbers around keeps the same total."
+            }
+          ],
+          "answer": 1,
+          "explain": "3 plus 1 is 4, just like 1 plus 3."
+        },
+        {
+          "mode": "choice",
+          "ask": "2 plus 2 is 4. So what is 4 take away 2?",
+          "visual": {
+            "kind": "take",
+            "count": 4,
+            "remove": 2,
+            "emoji": "🐱"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Two cats go away. How many stay?"
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "6",
+              "why": "Taking away makes it smaller."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 take away 2 is 2. They are in the same family."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which three numbers make a family?",
+          "options": [
+            {
+              "label": "1, 2, 5",
+              "why": "1 plus 2 is 3, not 5."
+            },
+            {
+              "label": "2, 2, 5",
+              "why": "2 plus 2 is 4, not 5."
+            },
+            {
+              "label": "1, 2, 3"
+            }
+          ],
+          "answer": 2,
+          "explain": "1 plus 2 is 3, so 1, 2 and 3 are a family."
+        },
+        {
+          "mode": "choice",
+          "ask": "4 plus 1 is 5. So what is 5 take away 1?",
+          "visual": {
+            "kind": "take",
+            "count": 5,
+            "remove": 1,
+            "emoji": "🦆"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Only one duck swims away."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "6",
+              "why": "Taking away makes it smaller."
+            }
+          ],
+          "answer": 1,
+          "explain": "5 take away 1 is 4. The family is 1, 4 and 5."
+        },
+        {
+          "mode": "sort",
+          "ask": "Which facts use only the numbers 2, 4 and 6?",
+          "bins": [
+            {
+              "label": "In the family",
+              "emoji": "👨‍👩‍👧"
+            },
+            {
+              "label": "Not in it",
+              "emoji": "🙅"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "2+4",
+              "bin": 0,
+              "name": "2 plus 4"
+            },
+            {
+              "emoji": "6−2",
+              "bin": 0,
+              "name": "6 take away 2"
+            },
+            {
+              "emoji": "3+3",
+              "bin": 1,
+              "name": "3 plus 3"
+            },
+            {
+              "emoji": "4+2",
+              "bin": 0,
+              "name": "4 plus 2"
+            },
+            {
+              "emoji": "5+1",
+              "bin": 1,
+              "name": "5 plus 1"
+            },
+            {
+              "emoji": "6−4",
+              "bin": 0,
+              "name": "6 take away 4"
+            }
+          ],
+          "explain": "2 plus 4, 4 plus 2, 6 take away 2 and 6 take away 4 all belong to the family.",
+          "hint": "Look for a 3, 5 or 1. They are not in the family."
+        }
+      ]
+    },
+    {
+      "id": "fact-families-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Four facts",
+      "intro": {
+        "say": "Every fact family has four facts: two adding facts and two take away facts.",
+        "icons": [
+          "👨‍👩‍👧",
+          "4️⃣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Meet the family 3, 4 and 7. 3 plus 4 is 7. 4 plus 3 is 7. 7 take away 3 is 4. 7 take away 4 is 3.",
+          "visual": {
+            "kind": "text",
+            "text": "3   4   7"
+          },
+          "caption": "3+4=7  4+3=7  7−3=4  7−4=3"
+        },
+        {
+          "mode": "show",
+          "say": "The biggest number is the whole. The two smaller numbers are the parts. The parts add up to the whole.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍬"
+              },
+              {
+                "count": 4,
+                "emoji": "🍬"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "Parts 3 and 4, whole 7"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which fact is in the family of 2, 6 and 8?",
+          "options": [
+            {
+              "label": "8 + 2 = 10",
+              "why": "10 is not in the family."
+            },
+            {
+              "label": "8 − 2 = 6"
+            },
+            {
+              "label": "6 − 2 = 4",
+              "why": "4 is not in the family."
+            }
+          ],
+          "answer": 1,
+          "explain": "8 take away 2 is 6, and it only uses 2, 6 and 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "5 plus 4 is 9. Which take away fact is in this family?",
+          "options": [
+            {
+              "label": "9 − 5 = 3",
+              "why": "9 take away 5 is 4, not 3."
+            },
+            {
+              "label": "5 − 4 = 1",
+              "why": "Take away starts with the whole, 9."
+            },
+            {
+              "label": "9 − 4 = 5"
+            }
+          ],
+          "answer": 2,
+          "explain": "9 take away 4 is 5, using the same three numbers."
+        },
+        {
+          "mode": "choice",
+          "ask": "10 take away 3 is 7. So 3 plus what is 10?",
+          "visual": {
+            "kind": "text",
+            "text": "3 + ? = 10"
+          },
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "13",
+              "why": "3 plus 13 is much more than 10."
+            },
+            {
+              "label": "6",
+              "why": "3 plus 6 is 9."
+            }
+          ],
+          "answer": 0,
+          "explain": "3 plus 7 is 10. Same family: 3, 7 and 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "The whole is 9 and one part is 4. What is the other part?",
+          "visual": {
+            "kind": "text",
+            "text": "9 = 4 + ?"
+          },
+          "options": [
+            {
+              "label": "13",
+              "why": "The parts must be smaller than the whole."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "3",
+              "why": "4 plus 3 is 7, not 9."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 plus 5 is 9."
+        },
+        {
+          "mode": "order",
+          "ask": "Tap the cards to make the fact 6 plus 3 equals 9.",
+          "items": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "+"
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "="
+            },
+            {
+              "label": "9"
+            }
+          ],
+          "explain": "6 plus 3 equals 9."
+        }
+      ]
+    },
+    {
+      "id": "fact-families-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Fact triangles",
+      "intro": {
+        "say": "A fact triangle holds a family. The whole sits on top, and the parts sit at the bottom.",
+        "icons": [
+          "👨‍👩‍👧",
+          "🔺",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "In this triangle, 12 is on top. 5 and 7 are at the bottom. 5 plus 7 is 12, and 12 take away 5 is 7.",
+          "visual": {
+            "kind": "text",
+            "text": "🔺 12 : 5 and 7"
+          },
+          "caption": "Top 12, bottom 5 and 7"
+        },
+        {
+          "mode": "show",
+          "say": "Stuck on a take away? Think adding! 13 take away 8 is tricky, but 8 plus 5 is 13. So the answer is 5.",
+          "visual": {
+            "kind": "text",
+            "text": "13 − 8 = ?   8 + 5 = 13"
+          },
+          "caption": "13 − 8 = 5"
+        },
+        {
+          "mode": "choice",
+          "ask": "The triangle has 15 on top and 9 at the bottom. What is the missing corner?",
+          "visual": {
+            "kind": "text",
+            "text": "🔺 15 : 9 and ?"
+          },
+          "options": [
+            {
+              "label": "24",
+              "why": "The top is the whole, the biggest number."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "5",
+              "why": "9 plus 5 is 14, not 15."
+            }
+          ],
+          "answer": 1,
+          "explain": "9 plus 6 is 15."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which fact is NOT in the family of 6, 8 and 14?",
+          "options": [
+            {
+              "label": "14 − 6 = 8",
+              "why": "That one is in the family!"
+            },
+            {
+              "label": "8 + 6 = 14",
+              "why": "That one is in the family!"
+            },
+            {
+              "label": "8 − 6 = 2"
+            },
+            {
+              "label": "14 − 8 = 6",
+              "why": "That one is in the family!"
+            }
+          ],
+          "answer": 2,
+          "explain": "2 is not in the family, so 8 take away 6 does not belong."
+        },
+        {
+          "mode": "choice",
+          "ask": "Think adding. What is 11 take away 7?",
+          "visual": {
+            "kind": "text",
+            "text": "7 + ? = 11"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "3",
+              "why": "7 plus 3 is 10, not 11."
+            },
+            {
+              "label": "18",
+              "why": "Take away makes it smaller."
+            }
+          ],
+          "answer": 0,
+          "explain": "7 plus 4 is 11, so 11 take away 7 is 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "16 buns. 9 were eaten. Which adding fact helps find how many are left?",
+          "options": [
+            {
+              "label": "16 + 9 = 25",
+              "why": "We are taking away, so the answer is smaller than 16."
+            },
+            {
+              "label": "9 + 7 = 16"
+            },
+            {
+              "label": "9 + 9 = 18",
+              "why": "18 is not part of this story."
+            }
+          ],
+          "answer": 1,
+          "explain": "9 plus 7 is 16, so 7 buns are left."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it in the family of 7, 9 and 16?",
+          "bins": [
+            {
+              "label": "In the family",
+              "emoji": "👨‍👩‍👧"
+            },
+            {
+              "label": "Not in it",
+              "emoji": "🙅"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "7+9",
+              "bin": 0,
+              "name": "7 plus 9"
+            },
+            {
+              "emoji": "16−7",
+              "bin": 0,
+              "name": "16 take away 7"
+            },
+            {
+              "emoji": "9−7",
+              "bin": 1,
+              "name": "9 take away 7"
+            },
+            {
+              "emoji": "9+7",
+              "bin": 0,
+              "name": "9 plus 7"
+            },
+            {
+              "emoji": "16+7",
+              "bin": 1,
+              "name": "16 plus 7"
+            },
+            {
+              "emoji": "16−9",
+              "bin": 0,
+              "name": "16 take away 9"
+            }
+          ],
+          "explain": "The family facts are 7 plus 9, 9 plus 7, 16 take away 7 and 16 take away 9."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which three numbers make a fact family?",
+          "options": [
+            {
+              "label": "4, 6, 11",
+              "why": "4 plus 6 is 10, not 11."
+            },
+            {
+              "label": "5, 8, 13"
+            },
+            {
+              "label": "3, 9, 11",
+              "why": "3 plus 9 is 12, not 11."
+            }
+          ],
+          "answer": 1,
+          "explain": "5 plus 8 is 13, so 5, 8 and 13 are a family."
+        }
+      ]
+    }
+  ]
+}

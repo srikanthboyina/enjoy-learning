@@ -1,0 +1,624 @@
+{
+  "topicId": "materials",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "materials-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Wood, metal, plastic",
+      "intro": {
+        "say": "Everything is made of something. Let us find out what things are made of!",
+        "icons": [
+          "🪵",
+          "🥄",
+          "🧸"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Wood comes from trees. Tables, chairs and pencils are often made of wood.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌳",
+              "🪵",
+              "🪑",
+              "✏️"
+            ]
+          },
+          "caption": "wood"
+        },
+        {
+          "mode": "show",
+          "say": "Metal is hard and shiny, like a spoon, a key or a can. Plastic is light and can be any colour, like a toy or a bottle.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥄",
+              "🔑",
+              "🥫",
+              "🧴",
+              "🪀"
+            ]
+          },
+          "caption": "metal · plastic"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is a wooden chair made from?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪑"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🪨",
+              "label": "rock",
+              "why": "Rock is too heavy and hard to shape into a chair."
+            },
+            {
+              "emoji": "🌳",
+              "label": "trees"
+            },
+            {
+              "emoji": "💧",
+              "label": "water",
+              "why": "You cannot sit on water!"
+            }
+          ],
+          "answer": 1,
+          "explain": "Wood comes from trees, so a wooden chair was once part of a tree."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which thing is made of metal?",
+          "options": [
+            {
+              "emoji": "🧦",
+              "label": "sock",
+              "why": "A sock is made of soft fabric."
+            },
+            {
+              "emoji": "📄",
+              "label": "paper",
+              "why": "Paper is made from wood."
+            },
+            {
+              "emoji": "🔑",
+              "label": "key"
+            }
+          ],
+          "answer": 2,
+          "explain": "Keys are made of metal so they are strong and do not bend."
+        },
+        {
+          "mode": "choice",
+          "ask": "A T-shirt is made of…",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👕"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧵",
+              "label": "fabric"
+            },
+            {
+              "emoji": "🪟",
+              "label": "glass",
+              "why": "Glass is hard; you could not wear it!"
+            },
+            {
+              "emoji": "🔩",
+              "label": "metal",
+              "why": "Metal is too hard and heavy for a T-shirt."
+            }
+          ],
+          "answer": 0,
+          "explain": "Fabric is soft and bendy, so it is great for clothes."
+        },
+        {
+          "mode": "sort",
+          "ask": "Wood or metal?",
+          "bins": [
+            {
+              "label": "wood",
+              "emoji": "🪵"
+            },
+            {
+              "label": "metal",
+              "emoji": "🔩"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🪑",
+              "bin": 0,
+              "name": "wooden chair"
+            },
+            {
+              "emoji": "✏️",
+              "bin": 0,
+              "name": "pencil"
+            },
+            {
+              "emoji": "🪵",
+              "bin": 0,
+              "name": "log"
+            },
+            {
+              "emoji": "🥄",
+              "bin": 1,
+              "name": "spoon"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 1,
+              "name": "key"
+            },
+            {
+              "emoji": "🥫",
+              "bin": 1,
+              "name": "can"
+            }
+          ],
+          "explain": "Wood comes from trees; metal is hard and shiny."
+        }
+      ]
+    },
+    {
+      "id": "materials-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "What is it like?",
+      "intro": {
+        "say": "Materials feel and act differently. Some bend, some let light through, some keep water out!",
+        "icons": [
+          "🪟",
+          "☂️",
+          "🧦"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Glass is see-through, so light comes in through a window. Wood is not see-through.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪟",
+              "☀️"
+            ]
+          },
+          "caption": "see-through"
+        },
+        {
+          "mode": "show",
+          "say": "Waterproof means water cannot get through. A plastic raincoat keeps you dry. Fabric like a sock gets soggy.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧥",
+              "🌧️",
+              "🧦"
+            ]
+          },
+          "caption": "waterproof"
+        },
+        {
+          "mode": "show",
+          "say": "Bendy things change shape when you push them, like fabric or paper. Hard things like metal and rock stay stiff.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📄",
+              "🧣",
+              "🔩"
+            ]
+          },
+          "caption": "bendy · hard"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why are windows made of glass?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪟"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧸",
+              "label": "it is soft",
+              "why": "Glass is hard, not soft."
+            },
+            {
+              "emoji": "👀",
+              "label": "it is see-through"
+            },
+            {
+              "emoji": "〰️",
+              "label": "it is bendy",
+              "why": "Glass does not bend."
+            }
+          ],
+          "answer": 1,
+          "explain": "Glass lets light in so we can see outside."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is waterproof?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌧️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🛍️",
+              "label": "paper bag",
+              "why": "Paper goes soggy and tears when wet."
+            },
+            {
+              "emoji": "🧦",
+              "label": "woolly sock",
+              "why": "Wool soaks up water."
+            },
+            {
+              "emoji": "☂️",
+              "label": "umbrella"
+            }
+          ],
+          "answer": 2,
+          "explain": "An umbrella is waterproof so rain runs off it."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is bendy?",
+          "options": [
+            {
+              "emoji": "🧣",
+              "label": "scarf"
+            },
+            {
+              "emoji": "🪨",
+              "label": "rock",
+              "why": "A rock is hard and will not bend."
+            },
+            {
+              "emoji": "🔨",
+              "label": "hammer",
+              "why": "A hammer is hard and stiff."
+            }
+          ],
+          "answer": 0,
+          "explain": "Fabric is soft and bendy, so a scarf can wrap round your neck."
+        },
+        {
+          "mode": "sort",
+          "ask": "Can you see through it?",
+          "bins": [
+            {
+              "label": "see-through",
+              "emoji": "👀"
+            },
+            {
+              "label": "not see-through",
+              "emoji": "🙈"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🪟",
+              "bin": 0,
+              "name": "window"
+            },
+            {
+              "emoji": "🔍",
+              "bin": 0,
+              "name": "magnifying glass"
+            },
+            {
+              "emoji": "👓",
+              "bin": 0,
+              "name": "glasses"
+            },
+            {
+              "emoji": "🧱",
+              "bin": 1,
+              "name": "brick"
+            },
+            {
+              "emoji": "🪵",
+              "bin": 1,
+              "name": "wood"
+            },
+            {
+              "emoji": "📕",
+              "bin": 1,
+              "name": "book"
+            }
+          ],
+          "explain": "Clear glass lets light through; brick, wood and books block it."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the hardest?",
+          "options": [
+            {
+              "emoji": "🛏️",
+              "label": "pillow",
+              "why": "A pillow is soft and squishy."
+            },
+            {
+              "emoji": "🧽",
+              "label": "sponge",
+              "why": "A sponge squashes easily."
+            },
+            {
+              "emoji": "🪨",
+              "label": "rock"
+            },
+            {
+              "emoji": "🧶",
+              "label": "jumper",
+              "why": "Wool is soft."
+            }
+          ],
+          "answer": 2,
+          "explain": "A rock is very hard; you cannot squash it."
+        }
+      ]
+    },
+    {
+      "id": "materials-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "The right material",
+      "intro": {
+        "say": "Builders and designers pick the best material for each job. Can you think like them?",
+        "icons": [
+          "🏗️",
+          "🤔",
+          "🔨"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "We choose a material because of what it is like. A pan is metal because metal does not melt on the cooker.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍳",
+              "🔥"
+            ]
+          },
+          "caption": "metal: strong in heat"
+        },
+        {
+          "mode": "show",
+          "say": "A chocolate teapot would melt! A paper umbrella would go soggy. The material has to suit the job.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍫",
+              "🫖",
+              "📄",
+              "☂️"
+            ]
+          },
+          "caption": "pick the right material"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is the best material for a raincoat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧥",
+              "🌧️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "📄",
+              "label": "paper",
+              "why": "Paper would get soggy and rip."
+            },
+            {
+              "emoji": "🧴",
+              "label": "plastic"
+            },
+            {
+              "emoji": "🧶",
+              "label": "wool",
+              "why": "Wool soaks up the rain."
+            }
+          ],
+          "answer": 1,
+          "explain": "Plastic is waterproof, so the rain cannot reach you."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why is a cooking pan made of metal, not plastic?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍳"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "👀",
+              "label": "metal is see-through",
+              "why": "Metal is not see-through."
+            },
+            {
+              "emoji": "🧸",
+              "label": "metal is soft",
+              "why": "Metal is hard, not soft."
+            },
+            {
+              "emoji": "🔥",
+              "label": "plastic would melt"
+            }
+          ],
+          "answer": 2,
+          "explain": "Metal can take the heat of the cooker; plastic would melt."
+        },
+        {
+          "mode": "choice",
+          "ask": "What would make the best window?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏠"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🪟",
+              "label": "glass"
+            },
+            {
+              "emoji": "🪵",
+              "label": "wood",
+              "why": "Wood is strong but you could not see out."
+            },
+            {
+              "emoji": "🧵",
+              "label": "fabric",
+              "why": "Fabric would let rain and wind in."
+            }
+          ],
+          "answer": 0,
+          "explain": "Glass is hard, waterproof and see-through, perfect for a window."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why would a paper umbrella not work well?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📄",
+              "☂️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🏋️",
+              "label": "paper is too heavy",
+              "why": "Paper is actually very light."
+            },
+            {
+              "emoji": "💧",
+              "label": "paper is not waterproof"
+            },
+            {
+              "emoji": "👀",
+              "label": "paper is see-through",
+              "why": "Most paper is not see-through."
+            }
+          ],
+          "answer": 1,
+          "explain": "Paper soaks up rain and tears, so it cannot keep you dry."
+        },
+        {
+          "mode": "choice",
+          "ask": "A bridge for cars must be very strong. Which material is best?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌉",
+              "🚗"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "📄",
+              "label": "paper",
+              "why": "Paper would rip under a car."
+            },
+            {
+              "emoji": "🪟",
+              "label": "glass",
+              "why": "Glass could crack and break."
+            },
+            {
+              "emoji": "🧵",
+              "label": "fabric",
+              "why": "Fabric is far too floppy."
+            },
+            {
+              "emoji": "🔩",
+              "label": "metal"
+            }
+          ],
+          "answer": 3,
+          "explain": "Metal is very strong, so it can hold up heavy cars."
+        },
+        {
+          "mode": "sort",
+          "ask": "Which material is best for each thing?",
+          "bins": [
+            {
+              "label": "metal",
+              "emoji": "🔩"
+            },
+            {
+              "label": "glass",
+              "emoji": "🪟"
+            },
+            {
+              "label": "fabric",
+              "emoji": "🧵"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍳",
+              "bin": 0,
+              "name": "cooking pan"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 0,
+              "name": "key"
+            },
+            {
+              "emoji": "🪟",
+              "bin": 1,
+              "name": "window"
+            },
+            {
+              "emoji": "🪞",
+              "bin": 1,
+              "name": "mirror"
+            },
+            {
+              "emoji": "🧦",
+              "bin": 2,
+              "name": "sock"
+            },
+            {
+              "emoji": "👕",
+              "bin": 2,
+              "name": "T-shirt"
+            }
+          ],
+          "explain": "Pans and keys need strong metal, windows and mirrors need smooth, hard glass, and clothes need soft fabric."
+        }
+      ]
+    }
+  ]
+}

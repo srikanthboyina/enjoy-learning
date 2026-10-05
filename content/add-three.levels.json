@@ -1,0 +1,683 @@
+{
+  "topicId": "add-three",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "add-three-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Three little groups",
+      "intro": {
+        "say": "Let’s add three groups! Count them all, one group at a time.",
+        "icons": [
+          "🎲",
+          "➕"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "2 apples, 1 banana and 3 strawberries. 2 and 1 make 3, and 3 more make 6 fruits!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍎"
+              },
+              {
+                "count": 1,
+                "emoji": "🍌"
+              },
+              {
+                "count": 3,
+                "emoji": "🍓"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "2 + 1 + 3 = 6"
+        },
+        {
+          "mode": "show",
+          "say": "One dog, one more dog, and one more dog. 1 plus 1 plus 1 is 3.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🐶"
+              },
+              {
+                "count": 1,
+                "emoji": "🐶"
+              },
+              {
+                "count": 1,
+                "emoji": "🐶"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "1 + 1 + 1 = 3"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many stars in all?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "⭐"
+              },
+              {
+                "count": 2,
+                "emoji": "⭐"
+              },
+              {
+                "count": 1,
+                "emoji": "⭐"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Count the stars in all three groups."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5",
+              "why": "Count again, one star at a time."
+            }
+          ],
+          "answer": 1,
+          "explain": "1 plus 2 is 3, and 1 more is 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many fish in all three groups?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐟"
+              },
+              {
+                "count": 2,
+                "emoji": "🐟"
+              },
+              {
+                "count": 2,
+                "emoji": "🐟"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "4",
+              "why": "Don’t forget the third group!"
+            },
+            {
+              "label": "8",
+              "why": "Count again, one fish at a time."
+            }
+          ],
+          "answer": 0,
+          "explain": "2 plus 2 plus 2 is 6."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many balloons altogether?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🎈"
+              },
+              {
+                "count": 1,
+                "emoji": "🎈"
+              },
+              {
+                "count": 2,
+                "emoji": "🎈"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Count every group, one balloon at a time."
+            },
+            {
+              "label": "7",
+              "why": "Count again carefully."
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "3 and 1 make 4, and 2 more make 6."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many cookies in all?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🍪"
+              },
+              {
+                "count": 1,
+                "emoji": "🍪"
+              },
+              {
+                "count": 2,
+                "emoji": "🍪"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Count again, the last group too."
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "8",
+              "why": "Count again, one cookie at a time."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 and 1 make 5, and 2 more make 7."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sum matches the picture?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐱"
+              },
+              {
+                "count": 3,
+                "emoji": "🐱"
+              },
+              {
+                "count": 1,
+                "emoji": "🐱"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "2 + 3",
+              "why": "There are three groups. Add all three."
+            },
+            {
+              "label": "2 + 3 + 1"
+            },
+            {
+              "label": "2 + 2 + 1",
+              "why": "Count the middle group again."
+            }
+          ],
+          "answer": 1,
+          "explain": "The groups have 2, 3 and 1 cats."
+        }
+      ]
+    },
+    {
+      "id": "add-three-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Find the easy pair",
+      "intro": {
+        "say": "When adding three numbers, find an easy pair first, like a double or a ten pair!",
+        "icons": [
+          "🎲",
+          "🔍"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "3 plus 5 plus 3. Spot the double! 3 and 3 make 6, then add 5. That is 11.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍩"
+              },
+              {
+                "count": 5,
+                "emoji": "🍩"
+              },
+              {
+                "count": 3,
+                "emoji": "🍩"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 + 3 = 6, 6 + 5 = 11"
+        },
+        {
+          "mode": "show",
+          "say": "6 plus 2 plus 4. 6 and 4 make ten! Then 2 more is 12.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🌟"
+              },
+              {
+                "count": 2,
+                "emoji": "🌟"
+              },
+              {
+                "count": 4,
+                "emoji": "🌟"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "6 + 4 = 10, 10 + 2 = 12"
+        },
+        {
+          "mode": "choice",
+          "ask": "7 plus 5 plus 3. Which two numbers make an easy ten?",
+          "visual": {
+            "kind": "text",
+            "text": "7 + 5 + 3"
+          },
+          "options": [
+            {
+              "label": "7 + 5",
+              "why": "7 plus 5 is 12, not ten."
+            },
+            {
+              "label": "7 + 3"
+            },
+            {
+              "label": "5 + 3",
+              "why": "5 plus 3 is 8, not ten."
+            }
+          ],
+          "answer": 1,
+          "explain": "7 and 3 make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "So what is 7 plus 5 plus 3?",
+          "visual": {
+            "kind": "text",
+            "text": "7 + 5 + 3 = ?"
+          },
+          "options": [
+            {
+              "label": "14",
+              "why": "7 and 3 make 10. Then add 5."
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "16",
+              "why": "7 and 3 make 10. Then add just 5."
+            }
+          ],
+          "answer": 1,
+          "explain": "7 and 3 make 10, and 10 plus 5 is 15."
+        },
+        {
+          "mode": "choice",
+          "ask": "Add them up: 4 plus 4 plus 2.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🐞"
+              },
+              {
+                "count": 4,
+                "emoji": "🐞"
+              },
+              {
+                "count": 2,
+                "emoji": "🐞"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "Add the last group too!"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "9",
+              "why": "4 and 4 make 8, then 2 more."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 and 4 is a double, 8. Then 2 more makes 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "Find the double: 2 plus 6 plus 2.",
+          "visual": {
+            "kind": "text",
+            "text": "2 + 6 + 2 = ?"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "2 and 2 make 4. Add the 6 too."
+            },
+            {
+              "label": "12",
+              "why": "2 and 2 make 4, and 4 plus 6 is 10."
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "answer": 2,
+          "explain": "2 and 2 make 4, and 4 plus 6 is 10."
+        },
+        {
+          "mode": "sort",
+          "ask": "Which ones make 10?",
+          "bins": [
+            {
+              "label": "Makes 10",
+              "emoji": "🔟"
+            },
+            {
+              "label": "Not 10",
+              "emoji": "🙅"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "5+3+2",
+              "bin": 0,
+              "name": "5 plus 3 plus 2"
+            },
+            {
+              "emoji": "4+4+4",
+              "bin": 1,
+              "name": "4 plus 4 plus 4"
+            },
+            {
+              "emoji": "1+2+7",
+              "bin": 0,
+              "name": "1 plus 2 plus 7"
+            },
+            {
+              "emoji": "3+3+3",
+              "bin": 1,
+              "name": "3 plus 3 plus 3"
+            },
+            {
+              "emoji": "6+2+2",
+              "bin": 0,
+              "name": "6 plus 2 plus 2"
+            },
+            {
+              "emoji": "2+2+2",
+              "bin": 1,
+              "name": "2 plus 2 plus 2"
+            }
+          ],
+          "explain": "5 plus 3 plus 2, 1 plus 2 plus 7, and 6 plus 2 plus 2 all make ten.",
+          "hint": "Find an easy pair first."
+        }
+      ]
+    },
+    {
+      "id": "add-three-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Three-number stories",
+      "intro": {
+        "say": "Let’s solve bigger three-number sums and stories. Look for tens and doubles!",
+        "icons": [
+          "🎲",
+          "📖",
+          "🦸"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "8 plus 7 plus 2. 8 and 2 make 10. Then 10 plus 7 is 17.",
+          "visual": {
+            "kind": "text",
+            "text": "8 + 7 + 2"
+          },
+          "caption": "8 + 2 = 10, 10 + 7 = 17"
+        },
+        {
+          "mode": "show",
+          "say": "5 plus 9 plus 5. Two fives make 10, then add 9. That is 19!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🐠"
+              },
+              {
+                "count": 9,
+                "emoji": "🐠"
+              },
+              {
+                "count": 5,
+                "emoji": "🐠"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "5 + 5 = 10, 10 + 9 = 19"
+        },
+        {
+          "mode": "choice",
+          "ask": "Sara picks 4 roses, 6 sunflowers and 5 blossoms. How many flowers?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🌹"
+              },
+              {
+                "count": 6,
+                "emoji": "🌻"
+              },
+              {
+                "count": 5,
+                "emoji": "🌸"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "14",
+              "why": "4 and 6 make 10, then add 5."
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "16",
+              "why": "4 and 6 make 10, then add just 5."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 and 6 make 10, and 5 more is 15."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 9 plus 3 plus 1?",
+          "visual": {
+            "kind": "text",
+            "text": "9 + 3 + 1 = ?"
+          },
+          "options": [
+            {
+              "label": "13"
+            },
+            {
+              "label": "12",
+              "why": "9 and 1 make 10. Then add 3."
+            },
+            {
+              "label": "14",
+              "why": "9 and 1 make 10, then just 3 more."
+            }
+          ],
+          "answer": 0,
+          "explain": "9 and 1 make 10, then 3 more is 13."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sum is the biggest?",
+          "options": [
+            {
+              "label": "3+3+3",
+              "why": "That makes 9."
+            },
+            {
+              "label": "5+2+4",
+              "why": "That makes 11."
+            },
+            {
+              "label": "6+6+1"
+            },
+            {
+              "label": "4+4+2",
+              "why": "That makes 10."
+            }
+          ],
+          "answer": 2,
+          "explain": "6 plus 6 plus 1 is 13, the biggest."
+        },
+        {
+          "mode": "choice",
+          "ask": "Three friends each have 6 marbles. How many marbles altogether?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🔵"
+              },
+              {
+                "count": 6,
+                "emoji": "🔵"
+              },
+              {
+                "count": 6,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "That is only two friends. Add the third!"
+            },
+            {
+              "label": "16",
+              "why": "6 plus 6 is 12, then 6 more."
+            },
+            {
+              "label": "18"
+            }
+          ],
+          "answer": 2,
+          "explain": "6 plus 6 is 12, and 6 more is 18."
+        },
+        {
+          "mode": "choice",
+          "ask": "2 plus 8 plus a hiding number makes 15. What is hiding?",
+          "visual": {
+            "kind": "text",
+            "text": "2 + 8 + ? = 15"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "2 and 8 make 10. 10 plus 3 is 13."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "7",
+              "why": "2 and 8 make 10. 10 plus 7 is 17."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 and 8 make 10, and 10 plus 5 is 15."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the sums in order, smallest first.",
+          "items": [
+            {
+              "label": "1+1+1"
+            },
+            {
+              "label": "2+2+3"
+            },
+            {
+              "label": "4+3+3"
+            },
+            {
+              "label": "5+5+5"
+            }
+          ],
+          "explain": "They make 3, then 7, then 10, then 15."
+        }
+      ]
+    }
+  ]
+}

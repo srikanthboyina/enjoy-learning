@@ -1,0 +1,607 @@
+{
+  "topicId": "time-words",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "time-words-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Parts of the day",
+      "intro": {
+        "say": "A day has parts: morning, afternoon, evening and night. Let's learn them.",
+        "icons": [
+          "🌅",
+          "☀️",
+          "🌇",
+          "🌙"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Morning is when the sun comes up. Afternoon comes after lunch. Evening is when the sun goes down. Night is dark.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌅",
+              "☀️",
+              "🌇",
+              "🌙"
+            ]
+          },
+          "caption": "Morning, afternoon, evening, night"
+        },
+        {
+          "mode": "show",
+          "say": "Before means first. After means later. We put on socks before shoes. Shoes go on after socks.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧦",
+              "➡️",
+              "👟"
+            ]
+          },
+          "caption": "Socks before shoes"
+        },
+        {
+          "mode": "choice",
+          "ask": "When do we see the moon and stars?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌙",
+              "⭐",
+              "✨"
+            ]
+          },
+          "options": [
+            {
+              "label": "Morning",
+              "emoji": "🌅",
+              "why": "In the morning the sun is coming up."
+            },
+            {
+              "label": "Night",
+              "emoji": "🌙"
+            },
+            {
+              "label": "Afternoon",
+              "emoji": "☀️",
+              "why": "In the afternoon the sun is still bright."
+            }
+          ],
+          "answer": 1,
+          "explain": "At night it is dark, so we see the moon and stars."
+        },
+        {
+          "mode": "choice",
+          "ask": "The sun is coming up. What part of the day is it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌅"
+            ]
+          },
+          "options": [
+            {
+              "label": "Night",
+              "why": "At night the sky is dark."
+            },
+            {
+              "label": "Evening",
+              "why": "In the evening the sun goes down."
+            },
+            {
+              "label": "Morning"
+            }
+          ],
+          "answer": 2,
+          "explain": "The sun comes up in the morning."
+        },
+        {
+          "mode": "choice",
+          "ask": "Do we eat lunch before or after breakfast?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥣",
+              "🥪"
+            ]
+          },
+          "options": [
+            {
+              "label": "Before",
+              "why": "Breakfast is the first meal of the day."
+            },
+            {
+              "label": "After"
+            }
+          ],
+          "answer": 1,
+          "explain": "Breakfast comes first, then lunch later."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the parts of the day in order.",
+          "items": [
+            {
+              "label": "morning",
+              "emoji": "🌅"
+            },
+            {
+              "label": "afternoon",
+              "emoji": "☀️"
+            },
+            {
+              "label": "evening",
+              "emoji": "🌇"
+            },
+            {
+              "label": "night",
+              "emoji": "🌙"
+            }
+          ],
+          "explain": "Morning, afternoon, evening, then night."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order: first, next, then, last.",
+          "items": [
+            {
+              "emoji": "🥚"
+            },
+            {
+              "emoji": "🐣"
+            },
+            {
+              "emoji": "🐥"
+            },
+            {
+              "emoji": "🐔"
+            }
+          ],
+          "explain": "First an egg, then it hatches, then a chick, and last a hen."
+        },
+        {
+          "mode": "sort",
+          "ask": "Do we see it in the day or at night?",
+          "bins": [
+            {
+              "label": "Day",
+              "emoji": "☀️"
+            },
+            {
+              "label": "Night",
+              "emoji": "🌙"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🦉",
+              "bin": 1,
+              "name": "owl"
+            },
+            {
+              "emoji": "⭐",
+              "bin": 1,
+              "name": "star"
+            },
+            {
+              "emoji": "🌈",
+              "bin": 0,
+              "name": "rainbow"
+            },
+            {
+              "emoji": "🦇",
+              "bin": 1,
+              "name": "bat"
+            },
+            {
+              "emoji": "🌻",
+              "bin": 0,
+              "name": "sunflower in the sun"
+            }
+          ],
+          "explain": "Owls, bats and stars come out at night. Rainbows and sunflowers in the sunshine are seen in the day."
+        }
+      ]
+    },
+    {
+      "id": "time-words-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Yesterday, today, tomorrow",
+      "intro": {
+        "say": "Let's learn yesterday, today and tomorrow, and which things take a long time.",
+        "icons": [
+          "⬅️",
+          "📍",
+          "➡️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Today is now. Yesterday was the day before today. Tomorrow is the day after today.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⬅️",
+              "📍",
+              "➡️"
+            ]
+          },
+          "caption": "Yesterday ← Today → Tomorrow"
+        },
+        {
+          "mode": "show",
+          "say": "Some things are quick, like a clap. Some things take a long time, like a whole night of sleep.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👏",
+              "⚡",
+              "😴",
+              "⏳"
+            ]
+          },
+          "caption": "Quick or long?"
+        },
+        {
+          "mode": "choice",
+          "ask": "We went to the zoo the day before today. When was that?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦁",
+              "🦒"
+            ]
+          },
+          "options": [
+            {
+              "label": "Tomorrow",
+              "why": "Tomorrow has not happened yet."
+            },
+            {
+              "label": "Yesterday"
+            },
+            {
+              "label": "Today",
+              "why": "Today is now, not the day before."
+            }
+          ],
+          "answer": 1,
+          "explain": "The day before today is yesterday."
+        },
+        {
+          "mode": "choice",
+          "ask": "Your party is the day after today! When is it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎉",
+              "🎈"
+            ]
+          },
+          "options": [
+            {
+              "label": "Yesterday",
+              "why": "Yesterday is already over."
+            },
+            {
+              "label": "Today",
+              "why": "Today is now. The party is the next day."
+            },
+            {
+              "label": "Tomorrow"
+            }
+          ],
+          "answer": 2,
+          "explain": "The day after today is tomorrow."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which takes longer?",
+          "options": [
+            {
+              "label": "Blink",
+              "emoji": "😉",
+              "why": "A blink is super quick."
+            },
+            {
+              "label": "Sleep all night",
+              "emoji": "😴"
+            }
+          ],
+          "answer": 1,
+          "explain": "Sleeping all night takes many hours. A blink is very quick."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is quicker?",
+          "options": [
+            {
+              "label": "School day",
+              "emoji": "🏫",
+              "why": "A school day takes many hours."
+            },
+            {
+              "label": "Brush teeth",
+              "emoji": "🪥"
+            }
+          ],
+          "answer": 1,
+          "explain": "Brushing your teeth takes just a few minutes."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order.",
+          "items": [
+            {
+              "label": "Yesterday"
+            },
+            {
+              "label": "Today"
+            },
+            {
+              "label": "Tomorrow"
+            }
+          ],
+          "explain": "Yesterday comes first, then today, then tomorrow."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it quick or does it take a long time?",
+          "bins": [
+            {
+              "label": "Quick",
+              "emoji": "⚡"
+            },
+            {
+              "label": "Long time",
+              "emoji": "⏳"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "👏",
+              "bin": 0,
+              "name": "a clap"
+            },
+            {
+              "emoji": "🤧",
+              "bin": 0,
+              "name": "a sneeze"
+            },
+            {
+              "emoji": "😉",
+              "bin": 0,
+              "name": "a blink"
+            },
+            {
+              "emoji": "😴",
+              "bin": 1,
+              "name": "a night of sleep"
+            },
+            {
+              "emoji": "🌳",
+              "bin": 1,
+              "name": "a tree growing"
+            }
+          ],
+          "explain": "Claps, sneezes and blinks are quick. Sleeping all night and growing a tree take a long time."
+        }
+      ]
+    },
+    {
+      "id": "time-words-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Earlier, later and soon",
+      "intro": {
+        "say": "Let's solve puzzles with time words like earlier, later, soon and next year.",
+        "icons": [
+          "⏳",
+          "🤔",
+          "📅"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Today is Wednesday. The day before yesterday was Monday. The day after tomorrow is Friday.",
+          "visual": {
+            "kind": "week",
+            "highlight": 2
+          },
+          "caption": "Monday ← ← Wednesday → → Friday"
+        },
+        {
+          "mode": "show",
+          "say": "Soon means in a little while. Later means after more time. Earlier means before now.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⏳",
+              "🕰️"
+            ]
+          },
+          "caption": "Earlier, now, soon, later"
+        },
+        {
+          "mode": "choice",
+          "ask": "Today is Saturday. What was the day before yesterday?",
+          "visual": {
+            "kind": "week",
+            "highlight": 5
+          },
+          "options": [
+            {
+              "label": "Friday",
+              "why": "Friday was yesterday."
+            },
+            {
+              "label": "Thursday"
+            },
+            {
+              "label": "Sunday",
+              "why": "Sunday is tomorrow."
+            }
+          ],
+          "answer": 1,
+          "explain": "Yesterday was Friday, and the day before that was Thursday.",
+          "hint": "Go back two days."
+        },
+        {
+          "mode": "choice",
+          "ask": "It is the afternoon now. What part of the day comes next?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "➡️",
+              "❓"
+            ]
+          },
+          "options": [
+            {
+              "label": "Evening"
+            },
+            {
+              "label": "Morning",
+              "why": "Morning was earlier today."
+            },
+            {
+              "label": "Night",
+              "why": "Night comes after the evening."
+            }
+          ],
+          "answer": 0,
+          "explain": "After the afternoon comes the evening."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia had breakfast, then played football, then had lunch. What did she do just before lunch?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥣",
+              "⚽",
+              "🥪"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🥣",
+              "why": "Breakfast was even earlier."
+            },
+            {
+              "emoji": "⚽"
+            },
+            {
+              "emoji": "🛌",
+              "why": "Bedtime is much later."
+            }
+          ],
+          "answer": 1,
+          "explain": "She played football right before lunch."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam was 6 last year. How old will he be next year?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎂"
+            ]
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "That was last year."
+            },
+            {
+              "label": "7",
+              "why": "7 is his age this year."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "Last year 6, this year 7, next year 8.",
+          "hint": "He gets one year older each year."
+        },
+        {
+          "mode": "choice",
+          "ask": "Lunch is in 5 minutes. Bedtime is in 6 hours. Your birthday is in 3 months. Which comes soonest?",
+          "options": [
+            {
+              "emoji": "🛌",
+              "why": "6 hours is longer than 5 minutes."
+            },
+            {
+              "emoji": "🎂",
+              "why": "3 months is a long time away."
+            },
+            {
+              "emoji": "🥪"
+            }
+          ],
+          "answer": 2,
+          "explain": "5 minutes is the shortest wait, so lunch comes soonest."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ella says, I will tidy my room soon. When will she tidy it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧸",
+              "🧹"
+            ]
+          },
+          "options": [
+            {
+              "label": "In a little while"
+            },
+            {
+              "label": "Last week",
+              "why": "Last week is in the past. Soon is a little time from now."
+            },
+            {
+              "label": "Never",
+              "why": "Soon means it will happen."
+            }
+          ],
+          "answer": 0,
+          "explain": "Soon means in a little while."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order, from the past to the future.",
+          "items": [
+            {
+              "label": "Last year"
+            },
+            {
+              "label": "Yesterday"
+            },
+            {
+              "label": "Today"
+            },
+            {
+              "label": "Tomorrow"
+            },
+            {
+              "label": "Next year"
+            }
+          ],
+          "explain": "Last year is longest ago, then yesterday, today, tomorrow, and next year is furthest away."
+        }
+      ]
+    }
+  ]
+}

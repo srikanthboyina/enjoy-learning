@@ -4,7 +4,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-import { parseLevelFile, parseTopics, type ParseIssue } from '../src/engine/parseContent';
+import { parseGroups, parseLevelFile, parseTopics, type ParseIssue } from '../src/engine/parseContent';
 import { ROUND_SCHEMAS } from '../src/games/schemas';
 
 const dir = join(__dirname, '..', 'content');
@@ -12,6 +12,7 @@ const issues: ParseIssue[] = [];
 const read = (f: string): unknown => JSON.parse(readFileSync(join(dir, f), 'utf8'));
 
 const topics = parseTopics(read('topics.json'), issues);
+parseGroups(read('groups.json'), topics, issues);
 const levelFiles = readdirSync(dir).filter((f) => f.endsWith('.levels.json'));
 const gamesWithLevels = new Set<string>();
 

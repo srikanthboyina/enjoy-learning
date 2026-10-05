@@ -1,0 +1,614 @@
+{
+  "topicId": "doubles",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "doubles-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Same again",
+      "intro": {
+        "say": "Doubling means the same number again. Two hands, two eyes, double the fun!",
+        "icons": [
+          "👯",
+          "🪞"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Two cookies and two more cookies. The same again! Double 2 is 4.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍪"
+              },
+              {
+                "count": 2,
+                "emoji": "🍪"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "2 + 2 = 4"
+        },
+        {
+          "mode": "show",
+          "say": "Three ladybugs on each side, like a mirror. Double 3 is 6.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🐞"
+              },
+              {
+                "count": 3,
+                "emoji": "🐞"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 + 3 = 6"
+        },
+        {
+          "mode": "choice",
+          "ask": "Double 1. One sock and one more sock. How many socks?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🧦"
+              },
+              {
+                "count": 1,
+                "emoji": "🧦"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "1",
+              "why": "Double means the same again, so add another one."
+            },
+            {
+              "label": "3",
+              "why": "Count the socks one by one."
+            }
+          ],
+          "answer": 0,
+          "explain": "One and one more make 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a double?",
+          "options": [
+            {
+              "label": "2 + 3",
+              "why": "2 and 3 are not the same number."
+            },
+            {
+              "label": "2 + 2"
+            },
+            {
+              "label": "1 + 4",
+              "why": "1 and 4 are not the same number."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 plus 2 uses the same number twice.",
+          "hint": "A double has the same number on both sides."
+        },
+        {
+          "mode": "choice",
+          "ask": "Double 4. Four stars and four more stars. How many stars?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "⭐"
+              },
+              {
+                "count": 4,
+                "emoji": "⭐"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Count both groups of stars."
+            },
+            {
+              "label": "9",
+              "why": "Count again, one star at a time."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "4 plus 4 is 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "Double 5! Look at both hands. How many fingers?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖐️",
+              "🖐️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "5",
+              "why": "That is one hand. Double means both hands!"
+            },
+            {
+              "label": "8",
+              "why": "Each hand has 5 fingers."
+            }
+          ],
+          "answer": 0,
+          "explain": "5 plus 5 is 10."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it a double? Sort them.",
+          "bins": [
+            {
+              "label": "Double",
+              "emoji": "👯"
+            },
+            {
+              "label": "Not a double",
+              "emoji": "🔀"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "3+3",
+              "bin": 0,
+              "name": "3 plus 3"
+            },
+            {
+              "emoji": "2+4",
+              "bin": 1,
+              "name": "2 plus 4"
+            },
+            {
+              "emoji": "1+1",
+              "bin": 0,
+              "name": "1 plus 1"
+            },
+            {
+              "emoji": "4+5",
+              "bin": 1,
+              "name": "4 plus 5"
+            },
+            {
+              "emoji": "5+5",
+              "bin": 0,
+              "name": "5 plus 5"
+            },
+            {
+              "emoji": "2+1",
+              "bin": 1,
+              "name": "2 plus 1"
+            }
+          ],
+          "explain": "A double adds a number to itself.",
+          "hint": "Are both numbers the same?"
+        }
+      ]
+    },
+    {
+      "id": "doubles-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Double facts",
+      "intro": {
+        "say": "Let’s learn the doubles up to 10 plus 10. Doubles are always even!",
+        "icons": [
+          "👯",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Six and six more. Double 6 is 12.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🧦"
+              },
+              {
+                "count": 6,
+                "emoji": "🧦"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "6 + 6 = 12"
+        },
+        {
+          "mode": "show",
+          "say": "Two rows of seven. A double is like two equal rows! Double 7 is 14.",
+          "visual": {
+            "kind": "array",
+            "rows": 2,
+            "cols": 7,
+            "emoji": "🐞"
+          },
+          "caption": "7 + 7 = 14"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is double 8?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 8,
+                "emoji": "🍩"
+              },
+              {
+                "count": 8,
+                "emoji": "🍩"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "14",
+              "why": "14 is double 7. Try one bigger."
+            },
+            {
+              "label": "16"
+            },
+            {
+              "label": "18",
+              "why": "18 is double 9."
+            }
+          ],
+          "answer": 1,
+          "explain": "8 plus 8 is 16."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is double 9?",
+          "visual": {
+            "kind": "text",
+            "text": "9 + 9 = ?"
+          },
+          "options": [
+            {
+              "label": "18"
+            },
+            {
+              "label": "16",
+              "why": "16 is double 8."
+            },
+            {
+              "label": "19",
+              "why": "Doubles are always even. Try again."
+            }
+          ],
+          "answer": 0,
+          "explain": "9 plus 9 is 18."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is double 10?",
+          "visual": {
+            "kind": "text",
+            "text": "10 + 10 = ?"
+          },
+          "options": [
+            {
+              "label": "11",
+              "why": "Double 10 is 10 plus 10, not 10 plus 1."
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "100",
+              "why": "That is too many! Add 10 and 10."
+            }
+          ],
+          "answer": 1,
+          "explain": "10 plus 10 is 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "12 is double what number?",
+          "visual": {
+            "kind": "text",
+            "text": "? + ? = 12"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "5 plus 5 is 10."
+            },
+            {
+              "label": "4",
+              "why": "4 plus 4 is 8."
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "6 plus 6 is 12."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the doubles in order, smallest answer first.",
+          "items": [
+            {
+              "label": "1+1"
+            },
+            {
+              "label": "3+3"
+            },
+            {
+              "label": "5+5"
+            },
+            {
+              "label": "8+8"
+            }
+          ],
+          "explain": "1 plus 1 is 2, 3 plus 3 is 6, 5 plus 5 is 10, and 8 plus 8 is 16."
+        }
+      ]
+    },
+    {
+      "id": "doubles-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Near doubles",
+      "intro": {
+        "say": "Doubles are a super trick! Use a double to add numbers that are next-door neighbours.",
+        "icons": [
+          "👯",
+          "➕",
+          "🦸"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "6 plus 7 is a near double. 6 plus 6 is 12, and one more makes 13.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🍓"
+              },
+              {
+                "count": 7,
+                "emoji": "🍓"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "6 + 7 = 6 + 6 + 1 = 13"
+        },
+        {
+          "mode": "show",
+          "say": "5 plus 4? Think 5 plus 5 is 10, then take one away. That is 9!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🐠"
+              },
+              {
+                "count": 4,
+                "emoji": "🐠"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "5 + 4 = 5 + 5 − 1 = 9"
+        },
+        {
+          "mode": "choice",
+          "ask": "Use a double. What is 4 plus 5?",
+          "visual": {
+            "kind": "text",
+            "text": "4 + 5 = ?"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "4 plus 4 is 8. Now add one more."
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "10",
+              "why": "10 is 5 plus 5. 4 is one less."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 plus 4 is 8, and one more is 9."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which double helps you solve 7 plus 8?",
+          "visual": {
+            "kind": "text",
+            "text": "7 + 8"
+          },
+          "options": [
+            {
+              "label": "4 + 4",
+              "why": "Pick a double close to 7 and 8."
+            },
+            {
+              "label": "7 + 7"
+            },
+            {
+              "label": "10 + 10",
+              "why": "Pick a double close to 7 and 8."
+            }
+          ],
+          "answer": 1,
+          "explain": "7 plus 7 is 14, then one more makes 15."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 8 plus 9?",
+          "visual": {
+            "kind": "text",
+            "text": "8 + 9 = ?"
+          },
+          "options": [
+            {
+              "label": "16",
+              "why": "That is 8 plus 8. Add one more!"
+            },
+            {
+              "label": "18",
+              "why": "That is 9 plus 9. 8 plus 9 is one less."
+            },
+            {
+              "label": "17"
+            }
+          ],
+          "answer": 2,
+          "explain": "8 plus 8 is 16, and one more is 17."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ben has 6 cars. Ali has double that. How many cars does Ali have?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🚗"
+              }
+            ],
+            "op": "and"
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "Double means 6 and 6 more."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "6",
+              "why": "Ali has double, so Ali has more than Ben."
+            }
+          ],
+          "answer": 1,
+          "explain": "Double 6 is 6 plus 6, which is 12."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it a double or a near double?",
+          "bins": [
+            {
+              "label": "Double",
+              "emoji": "👯"
+            },
+            {
+              "label": "Near double",
+              "emoji": "🤏"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "4+4",
+              "bin": 0,
+              "name": "4 plus 4"
+            },
+            {
+              "emoji": "6+7",
+              "bin": 1,
+              "name": "6 plus 7"
+            },
+            {
+              "emoji": "9+9",
+              "bin": 0,
+              "name": "9 plus 9"
+            },
+            {
+              "emoji": "3+4",
+              "bin": 1,
+              "name": "3 plus 4"
+            },
+            {
+              "emoji": "8+9",
+              "bin": 1,
+              "name": "8 plus 9"
+            },
+            {
+              "emoji": "7+7",
+              "bin": 0,
+              "name": "7 plus 7"
+            }
+          ],
+          "explain": "Near doubles have numbers that are just one apart."
+        },
+        {
+          "mode": "choice",
+          "ask": "I doubled a number and got 14. What was my number?",
+          "visual": {
+            "kind": "text",
+            "text": "? + ? = 14"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "6 plus 6 is 12."
+            },
+            {
+              "label": "8",
+              "why": "8 plus 8 is 16."
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "answer": 2,
+          "explain": "7 plus 7 is 14."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "topicId": "missing-numbers",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "missing-numbers-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Find the hiding number",
+      "intro": {
+        "say": "A number is hiding behind a question mark. Let’s be detectives and find it!",
+        "icons": [
+          "🕵️",
+          "❓"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "2 chicks and some more make 3. Count up from 2: three! That is 1 more chick. The hiding number is 1.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐣"
+              },
+              {
+                "count": 1,
+                "emoji": "🐣"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "2 + 1 = 3"
+        },
+        {
+          "mode": "show",
+          "say": "4 plus what makes 6? Start at 4 and count up: 5, 6. That is 2 more!",
+          "visual": {
+            "kind": "text",
+            "text": "4 + ? = 6"
+          },
+          "caption": "4 + 2 = 6"
+        },
+        {
+          "mode": "choice",
+          "ask": "1 plus what makes 3?",
+          "visual": {
+            "kind": "text",
+            "text": "1 + ? = 3"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "1 plus 3 is 4. Count up from 1 to 3."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "1",
+              "why": "1 plus 1 is 2. One more!"
+            }
+          ],
+          "answer": 1,
+          "explain": "1 plus 2 is 3."
+        },
+        {
+          "mode": "choice",
+          "ask": "What number plus 2 makes 4?",
+          "visual": {
+            "kind": "text",
+            "text": "? + 2 = 4"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "4 plus 2 is 6. Too many!"
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "6",
+              "why": "That is too many."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 plus 2 is 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "3 ducks, then some more. Now there are 5. How many more came?",
+          "visual": {
+            "kind": "text",
+            "text": "🦆🦆🦆 + ? = 5"
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "3 plus 1 is 4. Count up to 5."
+            },
+            {
+              "label": "3",
+              "why": "3 plus 3 is 6. Too many!"
+            },
+            {
+              "label": "2"
+            }
+          ],
+          "answer": 2,
+          "explain": "3 plus 2 is 5. Two more ducks came."
+        },
+        {
+          "mode": "choice",
+          "ask": "5 plus what makes 5?",
+          "visual": {
+            "kind": "text",
+            "text": "5 + ? = 5"
+          },
+          "options": [
+            {
+              "label": "0"
+            },
+            {
+              "label": "5",
+              "why": "5 plus 5 is 10."
+            },
+            {
+              "label": "1",
+              "why": "5 plus 1 is 6."
+            }
+          ],
+          "answer": 0,
+          "explain": "Adding zero keeps the number the same."
+        },
+        {
+          "mode": "choice",
+          "ask": "3 plus what makes 7?",
+          "visual": {
+            "kind": "text",
+            "text": "3 + ? = 7"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "3 plus 3 is 6. One more!"
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "10",
+              "why": "3 plus 10 is too many."
+            }
+          ],
+          "answer": 1,
+          "explain": "Count up from 3: 4, 5, 6, 7. That is 4."
+        }
+      ]
+    },
+    {
+      "id": "missing-numbers-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Hiding in take away",
+      "intro": {
+        "say": "Numbers can hide in take away sums too. Count up or count back to find them!",
+        "icons": [
+          "🕵️",
+          "➖",
+          "🔍"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "8 cookies. Some get eaten and 5 are left. How many were eaten? Count back from 8 to 5. That is 3 cookies!",
+          "visual": {
+            "kind": "take",
+            "count": 8,
+            "remove": 3,
+            "emoji": "🍪"
+          },
+          "caption": "8 − 3 = 5"
+        },
+        {
+          "mode": "show",
+          "say": "10 take away what is 6? Count up from 6 to 10: 7, 8, 9, 10. That is 4.",
+          "visual": {
+            "kind": "text",
+            "text": "10 − ? = 6"
+          },
+          "caption": "10 − 4 = 6"
+        },
+        {
+          "mode": "choice",
+          "ask": "7 take away what is 5?",
+          "visual": {
+            "kind": "text",
+            "text": "7 − ? = 5"
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "12",
+              "why": "Take away makes it smaller. Count from 5 up to 7."
+            },
+            {
+              "label": "3",
+              "why": "7 take away 3 is 4."
+            }
+          ],
+          "answer": 0,
+          "explain": "Count up from 5 to 7: that is 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "What number take away 2 is 6?",
+          "visual": {
+            "kind": "text",
+            "text": "? − 2 = 6"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "4 take away 2 is only 2."
+            },
+            {
+              "label": "6",
+              "why": "6 take away 2 is 4."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "8 take away 2 is 6."
+        },
+        {
+          "mode": "choice",
+          "ask": "6 plus what makes 10?",
+          "visual": {
+            "kind": "text",
+            "text": "6 + ? = 10"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "6 plus 3 is 9. One more!"
+            },
+            {
+              "label": "16",
+              "why": "That is too many."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "6 and 4 make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "9 birds sat here. Some flew away. Now 4 are left. How many flew away?",
+          "visual": {
+            "kind": "take",
+            "count": 9,
+            "remove": 5,
+            "emoji": "🐦"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "4 birds are still here. Count the ones that left."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "13",
+              "why": "Birds flew away, so we take away."
+            }
+          ],
+          "answer": 1,
+          "explain": "9 take away 5 is 4, so 5 birds flew away."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is the hiding number 3?",
+          "bins": [
+            {
+              "label": "It is 3",
+              "emoji": "3️⃣"
+            },
+            {
+              "label": "Not 3",
+              "emoji": "🙅"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "2+?=5",
+              "bin": 0,
+              "name": "2 plus what is 5"
+            },
+            {
+              "emoji": "6−?=4",
+              "bin": 1,
+              "name": "6 take away what is 4"
+            },
+            {
+              "emoji": "?+4=7",
+              "bin": 0,
+              "name": "what plus 4 is 7"
+            },
+            {
+              "emoji": "?+1=5",
+              "bin": 1,
+              "name": "what plus 1 is 5"
+            },
+            {
+              "emoji": "9−?=6",
+              "bin": 0,
+              "name": "9 take away what is 6"
+            },
+            {
+              "emoji": "8−?=5",
+              "bin": 0,
+              "name": "8 take away what is 5"
+            }
+          ],
+          "explain": "The hiding number is 3 in 2 plus 3, 3 plus 4, 9 take away 3 and 8 take away 3.",
+          "hint": "Try putting 3 in the gap and check."
+        }
+      ]
+    },
+    {
+      "id": "missing-numbers-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Number detective",
+      "intro": {
+        "say": "Bigger mystery numbers! Use adding and taking away to crack each case.",
+        "icons": [
+          "🕵️",
+          "🔎",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A hiding number plus 8 makes 15. Think: 15 take away 8 is 7. So the missing number is 7!",
+          "visual": {
+            "kind": "text",
+            "text": "? + 8 = 15"
+          },
+          "caption": "7 + 8 = 15"
+        },
+        {
+          "mode": "show",
+          "say": "Both sides must match, like a balance. 6 plus 4 is 10. 5 plus 5 is also 10. So the hiding number is 5.",
+          "visual": {
+            "kind": "text",
+            "text": "6 + 4 = 5 + ?"
+          },
+          "caption": "6 + 4 = 5 + 5"
+        },
+        {
+          "mode": "choice",
+          "ask": "9 plus what makes 16?",
+          "visual": {
+            "kind": "text",
+            "text": "9 + ? = 16"
+          },
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "6",
+              "why": "9 plus 6 is 15. One more!"
+            },
+            {
+              "label": "25",
+              "why": "That is far too many."
+            }
+          ],
+          "answer": 0,
+          "explain": "9 plus 7 is 16."
+        },
+        {
+          "mode": "choice",
+          "ask": "20 take away what is 12?",
+          "visual": {
+            "kind": "text",
+            "text": "20 − ? = 12"
+          },
+          "options": [
+            {
+              "label": "32",
+              "why": "Take away makes it smaller."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "7",
+              "why": "20 take away 7 is 13."
+            }
+          ],
+          "answer": 1,
+          "explain": "12 plus 8 is 20, so 20 take away 8 is 12."
+        },
+        {
+          "mode": "choice",
+          "ask": "Make both sides match. 3 plus 7 equals 2 plus what?",
+          "visual": {
+            "kind": "text",
+            "text": "3 + 7 = 2 + ?"
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "Both sides must be equal. 2 plus 10 is 12."
+            },
+            {
+              "label": "5",
+              "why": "2 plus 5 is only 7."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "3 plus 7 is 10, and 2 plus 8 is also 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "Lily had some shells. She found 6 more. Now she has 14. How many did she have at first?",
+          "visual": {
+            "kind": "text",
+            "text": "? + 6 = 14"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "6 are the new shells. How many were there before?"
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "20",
+              "why": "Now she has 14, so she had fewer at first."
+            }
+          ],
+          "answer": 1,
+          "explain": "8 plus 6 is 14, so Lily had 8 shells."
+        },
+        {
+          "mode": "choice",
+          "ask": "What number take away 5 is 9?",
+          "visual": {
+            "kind": "text",
+            "text": "? − 5 = 9"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "We need a bigger number. Add 9 and 5."
+            },
+            {
+              "label": "13",
+              "why": "13 take away 5 is 8."
+            },
+            {
+              "label": "14"
+            }
+          ],
+          "answer": 2,
+          "explain": "9 plus 5 is 14, so 14 take away 5 is 9."
+        },
+        {
+          "mode": "order",
+          "ask": "Order them by their hiding number, smallest first.",
+          "items": [
+            {
+              "label": "5+?=6"
+            },
+            {
+              "label": "2+?=5"
+            },
+            {
+              "label": "9−?=4"
+            },
+            {
+              "label": "?+3=10"
+            }
+          ],
+          "explain": "The hiding numbers are 1, 3, 5 and 7."
+        }
+      ]
+    }
+  ]
+}

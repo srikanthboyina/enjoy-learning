@@ -1,18 +1,17 @@
-// Home: a bright sky with Ollie the Owl and a card for every topic, grouped by subject.
+// Home: a bright sky with Ellie the Elephant, then Math Land and Science Land, each a shelf of topic groups.
 import { useRouter } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { getTopics } from '../src/engine/loadContent';
-import { phrases } from '../src/engine/phrases';
-import { isPlayable, isTopicUnlocked, topicStars } from '../src/engine/topics';
-import type { Topic } from '../src/engine/types';
+import { getGroups, getTopics, getTopicsIn } from '../src/engine/loadContent';
+import { topicStars } from '../src/engine/topics';
+import type { Group, Topic } from '../src/engine/types';
 import { Bob } from '../src/kit/Bob';
 import { Glyph } from '../src/kit/Glyph';
 import { Gradient } from '../src/kit/Gradient';
 import { Text } from '../src/kit/Text';
 import { Sky } from '../src/screens/Sky';
-import { TopicCard } from '../src/screens/TopicCard';
+import { GroupCard } from '../src/screens/GroupCard';
 import { useProgress } from '../src/services/progressStore';
 import { speak } from '../src/services/speech';
 import { colors, radii, spacing, type GradientPair } from '../src/theme';
@@ -25,24 +24,32 @@ const LANDS: { subject: Topic['subject']; title: string; emoji: string; colors: 
   { subject: 'science', title: 'Science Land', emoji: '🔬', colors: ['#26C6DA', '#5C6BC0'] },
 ];
 
-const GREETING = "Hi, I'm Ollie! Pick a topic and let's learn together.";
+const GREETING = "Hi, I'm Ellie the elephant! Pick a world and let's learn together.";
 
 export default function Home() {
   const router = useRouter();
   const levels = useProgress((s) => s.levels);
   const topics = getTopics();
+  const groups = getGroups();
   const { width } = useWindowDimensions();
   const contentWidth = Math.min(width, 960) - spacing.md * 2;
   const columns = contentWidth > 760 ? 4 : contentWidth > 520 ? 3 : 2;
   const gap = spacing.md;
   const cardWidth = (contentWidth - gap * (columns - 1)) / columns;
 
-  const open = (topic: Topic) => {
-    if (!isPlayable(topic)) return speak(phrases.comingSoon);
-    if (!isTopicUnlocked(topic, topics, levels)) return speak(phrases.locked);
-    speak(topic.title);
-    router.push({ pathname: '/topic/[topicId]', params: { topicId: topic.id } });
+  const open = (group: Group) => {
+    speak(group.title);
+    router.push({ pathname: '/group/[groupId]', params: { groupId: group.id } });
   };
+
+  const groupStars = (group: Group) =>
+    getTopicsIn(group.id).reduce(
+      (acc, t) => {
+        const s = topicStars(t, levels);
+        return { earned: acc.earned + s.earned, max: acc.max + s.max };
+      },
+      { earned: 0, max: 0 },
+    );
 
   return (
     <Gradient colors={['#7DD3FC', '#E0F2FE']} style={styles.screen}>
@@ -64,7 +71,7 @@ export default function Home() {
 
           <Pressable accessibilityRole="button" accessibilityLabel={GREETING} onPress={() => speak(GREETING)} style={styles.greeting}>
             <Bob distance={6} wobble>
-              <Glyph id="🦉" size={64} accessible={false} />
+              <Glyph id="🐘" size={64} accessible={false} />
             </Bob>
             <View style={styles.greetingBubble}>
               <Text style={styles.greetingText}>{GREETING}</Text>
@@ -73,26 +80,27 @@ export default function Home() {
           </Pressable>
 
           {LANDS.map((land) => {
-            const list = topics.filter((t) => t.subject === land.subject);
+            const list = groups.filter((g) => g.subject === land.subject);
             if (!list.length) return null;
+            const count = topics.filter((t: Topic) => t.subject === land.subject).length;
             return (
               <View key={land.subject} style={styles.land}>
                 <Gradient colors={land.colors} direction="diagonal" style={styles.landHeader}>
                   <Text style={styles.landTitle}>
                     {land.emoji} {land.title}
                   </Text>
-                  <Text style={styles.landCount}>{list.length} topics</Text>
+                  <Text style={styles.landCount}>{count} topics</Text>
                 </Gradient>
                 <View style={[styles.grid, { gap }]}>
-                  {list.map((topic, i) => (
-                    <TopicCard
-                      key={topic.id}
-                      topic={topic}
+                  {list.map((group, i) => (
+                    <GroupCard
+                      key={group.id}
+                      group={group}
+                      topics={getTopicsIn(group.id)}
                       index={i}
                       width={cardWidth}
-                      stars={topicStars(topic, levels)}
-                      playable={isPlayable(topic)}
-                      onPress={() => open(topic)}
+                      stars={groupStars(group)}
+                      onPress={() => open(group)}
                     />
                   ))}
                 </View>

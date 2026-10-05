@@ -1,0 +1,758 @@
+{
+  "topicId": "sharing",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "sharing-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Fair shares",
+      "intro": {
+        "say": "Sharing fairly means everyone gets the same number. Let us share!",
+        "icons": [
+          "🤝",
+          "🍪",
+          "🧒"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Here are 6 cookies for 2 friends. Give one to each friend, again and again.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪"
+            ],
+            "size": "lg"
+          },
+          "caption": "6 cookies, 2 friends"
+        },
+        {
+          "mode": "show",
+          "say": "Now each friend has 3 cookies. 3 and 3. That is fair!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍪"
+              },
+              {
+                "count": 3,
+                "emoji": "🍪"
+              }
+            ],
+            "showNumbers": true
+          },
+          "caption": "6 shared by 2 = 3 each"
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 4 apples between 2 friends. How many each?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🍎",
+              "🍎",
+              "🍎"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "Then some apples are not shared."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "4",
+              "why": "Then the other friend gets none."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 and 2 make 4, so each friend gets 2.",
+          "hint": "Give one each, then one each again."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is this a fair share?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🍬"
+              },
+              {
+                "count": 2,
+                "emoji": "🍬"
+              }
+            ],
+            "showNumbers": true
+          },
+          "options": [
+            {
+              "label": "Fair",
+              "why": "One friend has 4, the other has 2."
+            },
+            {
+              "label": "Not fair"
+            }
+          ],
+          "answer": 1,
+          "explain": "4 and 2 are not the same, so it is not fair."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is this a fair share?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍓"
+              },
+              {
+                "count": 3,
+                "emoji": "🍓"
+              }
+            ],
+            "showNumbers": true
+          },
+          "options": [
+            {
+              "label": "Not fair",
+              "why": "Count both. They each have 3."
+            },
+            {
+              "label": "Fair"
+            }
+          ],
+          "answer": 1,
+          "explain": "Both friends have 3. Same number, so it is fair."
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 8 balls between 2 children. How many each?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽"
+            ]
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "3",
+              "why": "Then 2 balls are left over."
+            },
+            {
+              "label": "6",
+              "why": "Six and six is more than eight."
+            }
+          ],
+          "answer": 0,
+          "explain": "4 and 4 make 8, so each child gets 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 2 bananas between 2 monkeys. How many each?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍌",
+              "🍌",
+              "🐒",
+              "🐒"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Then one monkey gets none."
+            },
+            {
+              "label": "1"
+            },
+            {
+              "label": "0",
+              "why": "Every monkey should get some."
+            }
+          ],
+          "answer": 1,
+          "explain": "One banana each. That is fair!"
+        }
+      ]
+    },
+    {
+      "id": "sharing-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Sharing between more",
+      "intro": {
+        "say": "Now let us share with 3 or 4 friends. Give one each, round and round!",
+        "icons": [
+          "🤝",
+          "🧒",
+          "👧"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Share 12 sweets between 3 friends. One each, again and again, until none are left. Each friend gets 4!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🍬"
+              },
+              {
+                "count": 4,
+                "emoji": "🍬"
+              },
+              {
+                "count": 4,
+                "emoji": "🍬"
+              }
+            ],
+            "showNumbers": true
+          },
+          "caption": "12 shared by 3 = 4 each"
+        },
+        {
+          "mode": "show",
+          "say": "Ana has 8 grapes. She gives half to Ben, so each has 4. 8 shared by 2 is 4.",
+          "visual": {
+            "kind": "take",
+            "count": 8,
+            "remove": 4,
+            "emoji": "🍇"
+          },
+          "caption": "8 shared by 2 = 4 each"
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 9 stars between 3 children. How many each?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐"
+            ]
+          },
+          "options": [
+            {
+              "label": "3"
+            },
+            {
+              "label": "2",
+              "why": "Then 3 stars are left over."
+            },
+            {
+              "label": "4",
+              "why": "Three fours make twelve, too many."
+            }
+          ],
+          "answer": 0,
+          "explain": "3, 3 and 3 make 9, so each child gets 3."
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 10 pencils between 2 children. How many each?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "✏️",
+              "✏️",
+              "✏️",
+              "✏️",
+              "✏️",
+              "✏️",
+              "✏️",
+              "✏️",
+              "✏️",
+              "✏️"
+            ]
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Then 2 pencils are left over."
+            },
+            {
+              "label": "8",
+              "why": "Then the other child gets only 2."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "5 and 5 make 10. Each child gets 5."
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 8 cookies between 4 friends. How many each?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪"
+            ]
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "4",
+              "why": "Four friends with 4 each needs 16 cookies."
+            },
+            {
+              "label": "1",
+              "why": "Then 4 cookies are left over."
+            }
+          ],
+          "answer": 0,
+          "explain": "2, 2, 2 and 2 make 8. Each friend gets 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is this a fair share for 3 friends?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍩"
+              },
+              {
+                "count": 3,
+                "emoji": "🍩"
+              },
+              {
+                "count": 2,
+                "emoji": "🍩"
+              }
+            ],
+            "showNumbers": true
+          },
+          "options": [
+            {
+              "label": "Fair",
+              "why": "The middle friend has more."
+            },
+            {
+              "label": "Not fair"
+            }
+          ],
+          "answer": 1,
+          "explain": "One friend has 3, the others have 2. Not the same, so not fair."
+        },
+        {
+          "mode": "sort",
+          "ask": "Can we share these between 2 friends with none left over?",
+          "bins": [
+            {
+              "label": "Fair, none left",
+              "emoji": "🤝"
+            },
+            {
+              "label": "One left over",
+              "emoji": "➕"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "4️⃣",
+              "bin": 0,
+              "name": "four"
+            },
+            {
+              "emoji": "6️⃣",
+              "bin": 0,
+              "name": "six"
+            },
+            {
+              "emoji": "3️⃣",
+              "bin": 1,
+              "name": "three"
+            },
+            {
+              "emoji": "8️⃣",
+              "bin": 0,
+              "name": "eight"
+            },
+            {
+              "emoji": "5️⃣",
+              "bin": 1,
+              "name": "five"
+            },
+            {
+              "emoji": "7️⃣",
+              "bin": 1,
+              "name": "seven"
+            }
+          ],
+          "explain": "Four, six and eight share into two equal groups. Three, five and seven leave one over.",
+          "hint": "Try giving one each, again and again."
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 6 pears between 3 bears. How many each?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍐"
+              },
+              {
+                "count": 2,
+                "emoji": "🍐"
+              },
+              {
+                "count": 2,
+                "emoji": "🍐"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Three bears with 3 each needs 9 pears."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "1",
+              "why": "Then 3 pears are left over."
+            }
+          ],
+          "answer": 1,
+          "explain": "2, 2 and 2 make 6. Each bear gets 2."
+        }
+      ]
+    },
+    {
+      "id": "sharing-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Leftovers",
+      "intro": {
+        "say": "Sometimes things do not share out evenly. The ones left over are called leftovers!",
+        "icons": [
+          "🤝",
+          "🍪",
+          "❓"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Share 7 cookies between 2 friends. Each gets 3, and 1 cookie is left over. We cannot share it fairly, unless we cut it!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍪"
+              },
+              {
+                "count": 3,
+                "emoji": "🍪"
+              },
+              {
+                "count": 1,
+                "emoji": "🍪"
+              }
+            ],
+            "op": "and",
+            "showNumbers": true
+          },
+          "caption": "7 shared by 2 = 3 each, 1 left"
+        },
+        {
+          "mode": "show",
+          "say": "Share 10 cars between 3 children. Each gets 3, and 1 is left over. 3, 3 and 3 make 9, then 1 more.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚗",
+              "🚗",
+              "🚗",
+              "🚗",
+              "🚗",
+              "🚗",
+              "🚗",
+              "🚗",
+              "🚗",
+              "🚗"
+            ]
+          },
+          "caption": "10 shared by 3 = 3 each, 1 left"
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 9 balloons between 2 children. How many are left over?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎈",
+              "🎈",
+              "🎈",
+              "🎈",
+              "🎈",
+              "🎈",
+              "🎈",
+              "🎈",
+              "🎈"
+            ]
+          },
+          "options": [
+            {
+              "label": "0",
+              "why": "4 and 4 make 8, so one is left."
+            },
+            {
+              "label": "1"
+            },
+            {
+              "label": "2",
+              "why": "Then each child could get one more."
+            }
+          ],
+          "answer": 1,
+          "explain": "Each child gets 4. Four and four make 8, so 1 balloon is left over."
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 12 crayons between 4 friends. How many each?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️",
+              "🖍️"
+            ]
+          },
+          "options": [
+            {
+              "label": "3"
+            },
+            {
+              "label": "4",
+              "why": "Four fours make sixteen, too many."
+            },
+            {
+              "label": "2",
+              "why": "Then 4 crayons are left over."
+            }
+          ],
+          "answer": 0,
+          "explain": "3, 3, 3 and 3 make 12. Each friend gets 3."
+        },
+        {
+          "mode": "choice",
+          "ask": "Share 11 sweets between 3 friends. How many each, and how many left?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍬",
+              "🍬",
+              "🍬",
+              "🍬",
+              "🍬",
+              "🍬",
+              "🍬",
+              "🍬",
+              "🍬",
+              "🍬",
+              "🍬"
+            ]
+          },
+          "options": [
+            {
+              "label": "3 each, 2 left"
+            },
+            {
+              "label": "4 each, 1 left",
+              "why": "Three fours make 12, more than 11."
+            },
+            {
+              "label": "3 each, 1 left",
+              "why": "Three threes make 9. Count what is left."
+            }
+          ],
+          "answer": 0,
+          "explain": "3, 3 and 3 make 9, and 2 sweets are left over."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 15 stickers for 5 children. How many does each child get?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐"
+            ]
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Five fives make 25, too many."
+            },
+            {
+              "label": "2",
+              "why": "Then 5 stickers are left over."
+            },
+            {
+              "label": "3"
+            }
+          ],
+          "answer": 2,
+          "explain": "Five threes make 15, so each child gets 3."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mum shares 20 grapes between 2 plates. How many on each plate?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇",
+              "🍇"
+            ]
+          },
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "5",
+              "why": "Five and five is only ten."
+            },
+            {
+              "label": "12",
+              "why": "Twelve and twelve is more than twenty."
+            }
+          ],
+          "answer": 0,
+          "explain": "Half of 20 is 10. 10 and 10 make 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why can we not share 5 apples fairly between 2 friends?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍎"
+              },
+              {
+                "count": 2,
+                "emoji": "🍎"
+              },
+              {
+                "count": 1,
+                "emoji": "🍎"
+              }
+            ],
+            "op": "and"
+          },
+          "options": [
+            {
+              "label": "One is left over"
+            },
+            {
+              "label": "There are too few",
+              "why": "Each friend can still get 2."
+            },
+            {
+              "label": "Apples are round",
+              "why": "The shape does not matter."
+            }
+          ],
+          "answer": 0,
+          "explain": "Each friend gets 2, and 1 apple is left over, so the shares cannot be equal without cutting it."
+        }
+      ]
+    }
+  ]
+}

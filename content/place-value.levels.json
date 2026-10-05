@@ -1,0 +1,494 @@
+{
+  "topicId": "place-value",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "place-value-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Rods and cubes",
+      "intro": {
+        "say": "A tall rod is ten. A small cube is one. Let us build numbers!",
+        "icons": [
+          "🧱",
+          "🟦",
+          "🔟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This tall rod is ten cubes stuck together. Count them: it is ten. A small cube on its own is one.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 1,
+            "ones": 0
+          },
+          "caption": "1 rod = 10"
+        },
+        {
+          "mode": "show",
+          "say": "One rod and four cubes. One ten and four ones make fourteen.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 1,
+            "ones": 4
+          },
+          "caption": "1 ten + 4 ones = 14"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many tens can you see?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 2,
+            "ones": 3
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Those are the small cubes, the ones."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "5",
+              "why": "Count only the tall rods."
+            }
+          ],
+          "answer": 1,
+          "explain": "There are two tall rods, so two tens."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many ones can you see?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 1,
+            "ones": 6
+          },
+          "options": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "1",
+              "why": "That is the rod. Count the small cubes."
+            },
+            {
+              "label": "16",
+              "why": "That is the whole number."
+            }
+          ],
+          "answer": 0,
+          "explain": "There are six small cubes, so six ones."
+        },
+        {
+          "mode": "choice",
+          "ask": "One ten and two ones. What number?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 1,
+            "ones": 2
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "The rod is worth ten, not one."
+            },
+            {
+              "label": "21",
+              "why": "Only one rod, so ten something."
+            },
+            {
+              "label": "12"
+            }
+          ],
+          "answer": 2,
+          "explain": "Ten and two make twelve."
+        },
+        {
+          "mode": "choice",
+          "ask": "What number do these blocks make?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 2,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "20"
+            },
+            {
+              "label": "2",
+              "why": "Each rod is ten."
+            },
+            {
+              "label": "10",
+              "why": "There are two rods."
+            }
+          ],
+          "answer": 0,
+          "explain": "Two tens make twenty."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the numbers in order, smallest first.",
+          "items": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "14"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "23"
+            }
+          ],
+          "explain": "More rods means a bigger number."
+        }
+      ]
+    },
+    {
+      "id": "place-value-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Build a number",
+      "intro": {
+        "say": "Every two-digit number has a tens digit and a ones digit. Let us read them!",
+        "icons": [
+          "🧱",
+          "🔢",
+          "👀"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Look at 35. The 3 is in the tens place: three rods. The 5 is in the ones place: five cubes.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 5
+          },
+          "caption": "35 = 3 tens + 5 ones"
+        },
+        {
+          "mode": "show",
+          "say": "The first digit tells the tens. The second digit tells the ones. Fifty-two is five tens and two ones.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 5,
+            "ones": 2
+          },
+          "caption": "52 = 50 + 2"
+        },
+        {
+          "mode": "choice",
+          "ask": "What number do the blocks show?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 4,
+            "ones": 7
+          },
+          "options": [
+            {
+              "label": "74",
+              "why": "The rods are tens: there are four."
+            },
+            {
+              "label": "47"
+            },
+            {
+              "label": "11",
+              "why": "Rods are worth ten each."
+            }
+          ],
+          "answer": 1,
+          "explain": "Four tens and seven ones make forty-seven."
+        },
+        {
+          "mode": "choice",
+          "ask": "In the number 63, what does the 6 mean?",
+          "visual": {
+            "kind": "text",
+            "text": "63"
+          },
+          "options": [
+            {
+              "label": "6 ones",
+              "why": "The first digit is in the tens place."
+            },
+            {
+              "label": "6 tens"
+            },
+            {
+              "label": "63 ones",
+              "why": "Just look at the 6."
+            }
+          ],
+          "answer": 1,
+          "explain": "The 6 is in the tens place, so it means six tens, sixty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which blocks show 28?",
+          "options": [
+            {
+              "label": "8 tens, 2 ones",
+              "why": "That would be eighty-two."
+            },
+            {
+              "label": "2 tens, 8 ones"
+            },
+            {
+              "label": "2 tens, 0 ones",
+              "why": "That is only twenty."
+            }
+          ],
+          "answer": 1,
+          "explain": "Twenty-eight is two tens and eight ones."
+        },
+        {
+          "mode": "choice",
+          "ask": "What number is this?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 8,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "Each rod is ten."
+            },
+            {
+              "label": "18",
+              "why": "There are eight rods, no cubes."
+            },
+            {
+              "label": "80"
+            }
+          ],
+          "answer": 2,
+          "explain": "Eight tens and zero ones make eighty."
+        },
+        {
+          "mode": "choice",
+          "ask": "In 91, how many ones are there?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 9,
+            "ones": 1
+          },
+          "options": [
+            {
+              "label": "1"
+            },
+            {
+              "label": "9",
+              "why": "Nine is the tens digit."
+            },
+            {
+              "label": "91",
+              "why": "That is the whole number."
+            }
+          ],
+          "answer": 0,
+          "explain": "The ones digit of ninety-one is one."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order, smallest first.",
+          "items": [
+            {
+              "label": "26"
+            },
+            {
+              "label": "39"
+            },
+            {
+              "label": "62"
+            },
+            {
+              "label": "93"
+            }
+          ],
+          "explain": "Compare the tens first: two, three, six, nine."
+        }
+      ]
+    },
+    {
+      "id": "place-value-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Place value puzzles",
+      "intro": {
+        "say": "Now let us solve tricky puzzles with tens and ones!",
+        "icons": [
+          "🧩",
+          "🧱",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Ten ones can trade for one ten! Twelve cubes is the same as one rod and two cubes.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 1,
+            "ones": 2
+          },
+          "caption": "12 ones = 1 ten + 2 ones"
+        },
+        {
+          "mode": "show",
+          "say": "The same digits in different places mean different numbers. In 41 the 4 is forty. In 14 the 4 is just four.",
+          "visual": {
+            "kind": "text",
+            "text": "41 and 14"
+          },
+          "caption": "41 ≠ 14"
+        },
+        {
+          "mode": "choice",
+          "ask": "I have 7 tens and 3 ones. What number am I?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 7,
+            "ones": 3
+          },
+          "options": [
+            {
+              "label": "37",
+              "why": "The tens come first."
+            },
+            {
+              "label": "73"
+            },
+            {
+              "label": "10",
+              "why": "Seven tens is seventy."
+            }
+          ],
+          "answer": 1,
+          "explain": "Seven tens is seventy and three more is seventy-three."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is the value of the 5 in 58?",
+          "visual": {
+            "kind": "text",
+            "text": "58"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "The 5 is in the tens place."
+            },
+            {
+              "label": "50"
+            },
+            {
+              "label": "8",
+              "why": "Eight is the other digit."
+            }
+          ],
+          "answer": 1,
+          "explain": "The 5 is in the tens place, so it is worth fifty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Add one more rod. What number now?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 6
+          },
+          "options": [
+            {
+              "label": "37",
+              "why": "A rod adds ten, not one."
+            },
+            {
+              "label": "46"
+            },
+            {
+              "label": "26",
+              "why": "That takes a rod away."
+            }
+          ],
+          "answer": 1,
+          "explain": "Thirty-six and ten more is forty-six."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the same as 2 tens and 15 ones?",
+          "options": [
+            {
+              "label": "215",
+              "why": "Trade ten ones for a ten."
+            },
+            {
+              "label": "25",
+              "why": "Fifteen ones is more than five."
+            },
+            {
+              "label": "35"
+            }
+          ],
+          "answer": 2,
+          "explain": "Fifteen ones is one ten and five ones. So three tens and five ones: thirty-five."
+        },
+        {
+          "mode": "choice",
+          "ask": "Make the biggest number using the digits 4 and 9.",
+          "visual": {
+            "kind": "text",
+            "text": "4  9"
+          },
+          "options": [
+            {
+              "label": "49",
+              "why": "Put the bigger digit in the tens place."
+            },
+            {
+              "label": "94"
+            },
+            {
+              "label": "13",
+              "why": "Use the digits, do not add them."
+            }
+          ],
+          "answer": 1,
+          "explain": "Nine tens and four ones is the biggest: ninety-four."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number has 0 ones?",
+          "options": [
+            {
+              "label": "60"
+            },
+            {
+              "label": "16",
+              "why": "Sixteen has six ones."
+            },
+            {
+              "label": "61",
+              "why": "Sixty-one has one one."
+            }
+          ],
+          "answer": 0,
+          "explain": "Sixty is six tens and zero ones."
+        }
+      ]
+    }
+  ]
+}

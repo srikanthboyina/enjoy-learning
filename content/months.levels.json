@@ -1,0 +1,549 @@
+{
+  "topicId": "months",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "months-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Twelve months",
+      "intro": {
+        "say": "A year is made of 12 months. Let's learn them!",
+        "icons": [
+          "🗓️",
+          "1️⃣",
+          "2️⃣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A year has 12 months. It starts with January and ends with December.",
+          "visual": {
+            "kind": "text",
+            "text": "Jan Feb Mar Apr May Jun   Jul Aug Sep Oct Nov Dec"
+          },
+          "caption": "12 months"
+        },
+        {
+          "mode": "show",
+          "say": "Your birthday comes once every year, in your birthday month.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎂",
+              "🎉",
+              "🗓️"
+            ]
+          },
+          "caption": "One birthday each year"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many months are in a year?",
+          "options": [
+            {
+              "label": "7",
+              "why": "7 is the days in a week."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "10",
+              "why": "Let's count the months again."
+            }
+          ],
+          "answer": 1,
+          "explain": "January to December is 12 months."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which month comes first in the year?",
+          "options": [
+            {
+              "label": "March",
+              "why": "March is the third month."
+            },
+            {
+              "label": "December",
+              "why": "December is the last month."
+            },
+            {
+              "label": "January"
+            }
+          ],
+          "answer": 2,
+          "explain": "The year starts with January."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which month is the last in the year?",
+          "options": [
+            {
+              "label": "December"
+            },
+            {
+              "label": "June",
+              "why": "June is in the middle of the year."
+            },
+            {
+              "label": "January",
+              "why": "January is the first month."
+            }
+          ],
+          "answer": 0,
+          "explain": "December is the 12th and last month."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which month is missing?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "Jan",
+              "Feb",
+              "?",
+              "Apr"
+            ]
+          },
+          "options": [
+            {
+              "label": "May",
+              "why": "May comes after April."
+            },
+            {
+              "label": "March"
+            },
+            {
+              "label": "June",
+              "why": "June comes much later."
+            }
+          ],
+          "answer": 1,
+          "explain": "January, February, March, April."
+        },
+        {
+          "mode": "choice",
+          "ask": "How often does your birthday come?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎂"
+            ]
+          },
+          "options": [
+            {
+              "label": "Every day",
+              "why": "That would be a lot of cake! It comes less often."
+            },
+            {
+              "label": "Every week",
+              "why": "A week is too short."
+            },
+            {
+              "label": "Every year"
+            }
+          ],
+          "answer": 2,
+          "explain": "Your birthday comes once every year."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the months in order.",
+          "items": [
+            {
+              "label": "January"
+            },
+            {
+              "label": "February"
+            },
+            {
+              "label": "March"
+            },
+            {
+              "label": "April"
+            }
+          ],
+          "explain": "January, February, March, April."
+        }
+      ]
+    },
+    {
+      "id": "months-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Months and seasons",
+      "intro": {
+        "say": "Months come in order, and the year has four seasons.",
+        "icons": [
+          "🌷",
+          "☀️",
+          "🍂",
+          "❄️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "There are 4 seasons: spring, summer, autumn and winter. Each season lasts about 3 months.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌷",
+              "☀️",
+              "🍂",
+              "❄️"
+            ]
+          },
+          "caption": "Spring, summer, autumn, winter"
+        },
+        {
+          "mode": "show",
+          "say": "In many places, December and January are cold winter months. In other parts of the world, they are summer!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "❄️",
+              "🌍",
+              "☀️"
+            ]
+          },
+          "caption": "Seasons depend on where you live"
+        },
+        {
+          "mode": "choice",
+          "ask": "What month comes after June?",
+          "options": [
+            {
+              "label": "July"
+            },
+            {
+              "label": "May",
+              "why": "May comes before June."
+            },
+            {
+              "label": "August",
+              "why": "August comes after July."
+            }
+          ],
+          "answer": 0,
+          "explain": "June, then July."
+        },
+        {
+          "mode": "choice",
+          "ask": "What month comes just before May?",
+          "options": [
+            {
+              "label": "June",
+              "why": "June comes after May."
+            },
+            {
+              "label": "April"
+            },
+            {
+              "label": "March",
+              "why": "March is two months before May."
+            }
+          ],
+          "answer": 1,
+          "explain": "April comes just before May."
+        },
+        {
+          "mode": "choice",
+          "ask": "In which season do many trees drop their leaves?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍂",
+              "🌳"
+            ]
+          },
+          "options": [
+            {
+              "label": "Spring",
+              "emoji": "🌷",
+              "why": "In spring, new leaves grow."
+            },
+            {
+              "label": "Autumn",
+              "emoji": "🍂"
+            },
+            {
+              "label": "Summer",
+              "emoji": "☀️",
+              "why": "In summer, trees are full of green leaves."
+            }
+          ],
+          "answer": 1,
+          "explain": "In autumn, leaves turn brown and fall."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it for summer or winter?",
+          "bins": [
+            {
+              "label": "Summer",
+              "emoji": "☀️"
+            },
+            {
+              "label": "Winter",
+              "emoji": "❄️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏖️",
+              "bin": 0,
+              "name": "beach"
+            },
+            {
+              "emoji": "⛄",
+              "bin": 1,
+              "name": "snowman"
+            },
+            {
+              "emoji": "🍦",
+              "bin": 0,
+              "name": "ice cream"
+            },
+            {
+              "emoji": "🧤",
+              "bin": 1,
+              "name": "gloves"
+            },
+            {
+              "emoji": "🩳",
+              "bin": 0,
+              "name": "shorts"
+            },
+            {
+              "emoji": "🧣",
+              "bin": 1,
+              "name": "scarf"
+            }
+          ],
+          "explain": "Beach days, ice cream and shorts are for summer. Snowmen, gloves and scarves are for winter."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the seasons in order, starting with spring.",
+          "items": [
+            {
+              "label": "spring",
+              "emoji": "🌷"
+            },
+            {
+              "label": "summer",
+              "emoji": "☀️"
+            },
+            {
+              "label": "autumn",
+              "emoji": "🍂"
+            },
+            {
+              "label": "winter",
+              "emoji": "❄️"
+            }
+          ],
+          "explain": "Spring, summer, autumn, winter, and then spring comes again."
+        },
+        {
+          "mode": "order",
+          "ask": "Put these months in order.",
+          "items": [
+            {
+              "label": "September"
+            },
+            {
+              "label": "October"
+            },
+            {
+              "label": "November"
+            },
+            {
+              "label": "December"
+            }
+          ],
+          "explain": "September, October, November, December."
+        }
+      ]
+    },
+    {
+      "id": "months-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Month puzzles",
+      "intro": {
+        "say": "Let's count forward through the months and solve puzzles.",
+        "icons": [
+          "🗓️",
+          "🤔",
+          "🎂"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "To find 3 months after January, count on: February, March, April. So it is April!",
+          "visual": {
+            "kind": "text",
+            "text": "Jan → Feb → Mar → Apr"
+          },
+          "caption": "January + 3 months = April"
+        },
+        {
+          "mode": "show",
+          "say": "Months have different lengths. Most have 30 or 31 days. February is shortest, with 28 days, or 29 in a leap year.",
+          "visual": {
+            "kind": "text",
+            "text": "February = 28 days"
+          },
+          "caption": "February is shortest"
+        },
+        {
+          "mode": "choice",
+          "ask": "What month is 2 months after October?",
+          "options": [
+            {
+              "label": "November",
+              "why": "That is only 1 month after."
+            },
+            {
+              "label": "December"
+            },
+            {
+              "label": "January",
+              "why": "That is 3 months after."
+            }
+          ],
+          "answer": 1,
+          "explain": "Count on: November, December.",
+          "hint": "Count on two months."
+        },
+        {
+          "mode": "choice",
+          "ask": "What month comes after December?",
+          "options": [
+            {
+              "label": "January"
+            },
+            {
+              "label": "November",
+              "why": "November comes before December."
+            },
+            {
+              "label": "February",
+              "why": "February comes after January."
+            }
+          ],
+          "answer": 0,
+          "explain": "After December a new year starts with January."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which month is the shortest?",
+          "options": [
+            {
+              "label": "July",
+              "why": "July has 31 days."
+            },
+            {
+              "label": "January",
+              "why": "January has 31 days."
+            },
+            {
+              "label": "February"
+            }
+          ],
+          "answer": 2,
+          "explain": "February has only 28 or 29 days."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia's birthday is in March. Ben's is in May. How many months after Mia's is Ben's?",
+          "options": [
+            {
+              "label": "1",
+              "why": "That would be April."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "3",
+              "why": "That would be June."
+            }
+          ],
+          "answer": 1,
+          "explain": "Count on from March: April, May. That is 2 months."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many months are in half a year?",
+          "options": [
+            {
+              "label": "12",
+              "why": "12 is the whole year."
+            },
+            {
+              "label": "4",
+              "why": "Half of 12 is more than 4."
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "6 and 6 make 12, so half a year is 6 months."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the 5th month of the year?",
+          "options": [
+            {
+              "label": "May"
+            },
+            {
+              "label": "June",
+              "why": "June is the 6th month."
+            },
+            {
+              "label": "April",
+              "why": "April is the 4th month."
+            }
+          ],
+          "answer": 0,
+          "explain": "January, February, March, April, May. May is 5th.",
+          "hint": "Count the months on your fingers."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the months in order, starting with October.",
+          "items": [
+            {
+              "label": "October"
+            },
+            {
+              "label": "November"
+            },
+            {
+              "label": "December"
+            },
+            {
+              "label": "January"
+            },
+            {
+              "label": "February"
+            },
+            {
+              "label": "March"
+            }
+          ],
+          "explain": "October, November, December, then a new year: January, February, March."
+        }
+      ]
+    }
+  ]
+}

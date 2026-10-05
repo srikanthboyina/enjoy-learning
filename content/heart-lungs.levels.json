@@ -1,0 +1,558 @@
+{
+ "topicId": "heart-lungs",
+ "gameId": "explore",
+ "version": 1,
+ "levels": [
+  {
+   "id": "heart-lungs-01",
+   "order": 1,
+   "difficulty": "simple",
+   "name": "Thump and breathe",
+   "intro": {
+    "say": "Let's meet two busy helpers in your chest: your heart and your lungs!",
+    "icons": [
+     "❤️",
+     "🫁",
+     "🌬️"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Your heart is in your chest. It goes thump, thump all day and night! Put your hand on your chest to feel it.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "❤️",
+       "✋",
+       "💓"
+      ]
+     },
+     "caption": "My heart beats"
+    },
+    {
+     "mode": "show",
+     "say": "Your lungs fill up with air when you breathe in, and empty when you breathe out. Like two balloons!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🫁",
+       "🎈",
+       "🌬️"
+      ]
+     },
+     "caption": "Breathe in, breathe out"
+    },
+    {
+     "mode": "choice",
+     "ask": "Where is your heart?",
+     "options": [
+      {
+       "emoji": "🦶",
+       "label": "In your foot",
+       "why": "Your heart is much higher up."
+      },
+      {
+       "emoji": "👕",
+       "label": "In your chest"
+      },
+      {
+       "emoji": "👂",
+       "label": "In your ear",
+       "why": "Ears are for hearing."
+      }
+     ],
+     "answer": 1,
+     "explain": "Your heart is inside your chest, behind your ribs."
+    },
+    {
+     "mode": "choice",
+     "ask": "What do your lungs help you do?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🫁"
+      ],
+      "size": "lg"
+     },
+     "options": [
+      {
+       "emoji": "🌬️",
+       "label": "Breathe"
+      },
+      {
+       "emoji": "👀",
+       "label": "See",
+       "why": "We see with our eyes."
+      },
+      {
+       "emoji": "🍽️",
+       "label": "Eat",
+       "why": "Eating uses your mouth and tummy."
+      }
+     ],
+     "answer": 0,
+     "explain": "Lungs help us breathe air in and out."
+    },
+    {
+     "mode": "choice",
+     "ask": "What sound does a heart make?",
+     "options": [
+      {
+       "emoji": "🐮",
+       "label": "Moo",
+       "why": "Cows say moo!"
+      },
+      {
+       "emoji": "🔔",
+       "label": "Ding dong",
+       "why": "That is a doorbell."
+      },
+      {
+       "emoji": "💓",
+       "label": "Thump thump"
+      }
+     ],
+     "answer": 2,
+     "explain": "A heartbeat sounds like thump, thump."
+    },
+    {
+     "mode": "choice",
+     "ask": "What do we breathe in?",
+     "options": [
+      {
+       "emoji": "💧",
+       "label": "Water",
+       "why": "We can't breathe water like fish."
+      },
+      {
+       "emoji": "🌬️",
+       "label": "Air"
+      },
+      {
+       "emoji": "🧃",
+       "label": "Juice",
+       "why": "Juice is for drinking."
+      }
+     ],
+     "answer": 1,
+     "explain": "We breathe in air through our nose and mouth."
+    },
+    {
+     "mode": "sort",
+     "ask": "Is it about the heart or the lungs?",
+     "bins": [
+      {
+       "label": "Heart",
+       "emoji": "❤️"
+      },
+      {
+       "label": "Lungs",
+       "emoji": "🫁"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "💓",
+       "bin": 0,
+       "name": "heartbeat"
+      },
+      {
+       "emoji": "🌬️",
+       "bin": 1,
+       "name": "breathing out"
+      },
+      {
+       "emoji": "🎈",
+       "bin": 1,
+       "name": "blowing a balloon"
+      },
+      {
+       "emoji": "🩸",
+       "bin": 0,
+       "name": "pumping blood"
+      },
+      {
+       "emoji": "💨",
+       "bin": 1,
+       "name": "a big breath"
+      }
+     ],
+     "explain": "Hearts beat and pump blood, lungs breathe air."
+    }
+   ]
+  },
+  {
+   "id": "heart-lungs-02",
+   "order": 1,
+   "difficulty": "medium",
+   "name": "The body's pump",
+   "intro": {
+    "say": "Your heart is a pump, and your lungs collect something your body needs!",
+    "icons": [
+     "❤️",
+     "🩸",
+     "🫁"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Your heart is a muscle that pumps blood all around your body, through tubes called blood vessels.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "❤️",
+       "🩸",
+       "🔄"
+      ]
+     },
+     "caption": "Heart pumps blood"
+    },
+    {
+     "mode": "show",
+     "say": "When you breathe in, your lungs take oxygen from the air. Your blood carries the oxygen to every part of you.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🌬️",
+       "🫁",
+       "🩸",
+       "🏃"
+      ]
+     },
+     "caption": "Air → lungs → blood"
+    },
+    {
+     "mode": "choice",
+     "ask": "What does your heart pump?",
+     "options": [
+      {
+       "emoji": "🩸",
+       "label": "Blood"
+      },
+      {
+       "emoji": "🌬️",
+       "label": "Air",
+       "why": "Air goes into your lungs."
+      },
+      {
+       "emoji": "🍔",
+       "label": "Food",
+       "why": "Food goes to your tummy."
+      }
+     ],
+     "answer": 0,
+     "explain": "The heart pumps blood all around your body."
+    },
+    {
+     "mode": "choice",
+     "ask": "Your heart is a kind of what?",
+     "options": [
+      {
+       "emoji": "🦴",
+       "label": "Bone",
+       "why": "The heart is not a bone."
+      },
+      {
+       "emoji": "💪",
+       "label": "Muscle"
+      },
+      {
+       "emoji": "🦷",
+       "label": "Tooth",
+       "why": "Teeth are in your mouth."
+      }
+     ],
+     "answer": 1,
+     "explain": "Your heart is a strong muscle that squeezes again and again."
+    },
+    {
+     "mode": "choice",
+     "ask": "What do your lungs take from the air?",
+     "options": [
+      {
+       "emoji": "🍬",
+       "label": "Sugar",
+       "why": "There is no sugar in air."
+      },
+      {
+       "emoji": "🧃",
+       "label": "Juice",
+       "why": "Air has no juice in it."
+      },
+      {
+       "emoji": "🌬️",
+       "label": "Oxygen"
+      }
+     ],
+     "answer": 2,
+     "explain": "Your lungs take oxygen from the air, and your body needs it."
+    },
+    {
+     "mode": "choice",
+     "ask": "What happens to your heartbeat when you run fast?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🏃",
+       "💓"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "🐢",
+       "label": "Slower",
+       "why": "Running makes it speed up."
+      },
+      {
+       "emoji": "🐇",
+       "label": "Faster"
+      },
+      {
+       "emoji": "🛑",
+       "label": "It stops",
+       "why": "Your heart never stops."
+      }
+     ],
+     "answer": 1,
+     "explain": "Your muscles need more oxygen, so your heart beats faster."
+    },
+    {
+     "mode": "order",
+     "ask": "Put the breathing journey in order.",
+     "items": [
+      {
+       "emoji": "👃",
+       "label": "Nose"
+      },
+      {
+       "emoji": "🫁",
+       "label": "Lungs"
+      },
+      {
+       "emoji": "🩸",
+       "label": "Blood"
+      },
+      {
+       "emoji": "💪",
+       "label": "Muscles"
+      }
+     ],
+     "explain": "Air goes in your nose to your lungs, then blood carries oxygen to your muscles."
+    }
+   ]
+  },
+  {
+   "id": "heart-lungs-03",
+   "order": 1,
+   "difficulty": "complex",
+   "name": "Heart and lung scientists",
+   "intro": {
+    "say": "Let's investigate heartbeats and breathing like real scientists!",
+    "icons": [
+     "🔬",
+     "❤️",
+     "🫁",
+     "🩺"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Doctors listen to your heart with a stethoscope. A resting child's heart beats about 90 times a minute. Running makes it much faster!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🩺",
+       "💓",
+       "🏃"
+      ]
+     },
+     "caption": "Rest: slow · Run: fast"
+    },
+    {
+     "mode": "show",
+     "say": "You breathe in oxygen and breathe out a gas called carbon dioxide. Exercise makes your heart and lungs stronger.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🌬️",
+       "🫁",
+       "💨",
+       "💪"
+      ]
+     },
+     "caption": "In: oxygen · Out: carbon dioxide"
+    },
+    {
+     "mode": "choice",
+     "ask": "What tool does a doctor use to listen to your heart?",
+     "options": [
+      {
+       "emoji": "🔨",
+       "label": "Hammer",
+       "why": "A hammer is for nails."
+      },
+      {
+       "emoji": "🩺",
+       "label": "Stethoscope"
+      },
+      {
+       "emoji": "🔭",
+       "label": "Telescope",
+       "why": "A telescope looks at stars."
+      }
+     ],
+     "answer": 1,
+     "explain": "A stethoscope lets the doctor hear your heartbeat."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which shows a heart after running a race?",
+     "visual": {
+      "kind": "bars",
+      "bars": [
+       {
+        "emoji": "🛋️",
+        "value": 4,
+        "label": "Rest"
+       },
+       {
+        "emoji": "🏃",
+        "value": 9,
+        "label": "Run"
+       }
+      ]
+     },
+     "options": [
+      {
+       "emoji": "🐌",
+       "label": "Very slow",
+       "why": "After a race your heart is fast, not slow."
+      },
+      {
+       "emoji": "🐆",
+       "label": "Very fast"
+      }
+     ],
+     "answer": 1,
+     "explain": "After running, your heart beats fast to send more oxygen."
+    },
+    {
+     "mode": "choice",
+     "ask": "What do we breathe out?",
+     "options": [
+      {
+       "emoji": "💨",
+       "label": "Carbon dioxide"
+      },
+      {
+       "emoji": "🩸",
+       "label": "Blood",
+       "why": "Blood stays inside your body."
+      },
+      {
+       "emoji": "🍎",
+       "label": "Food",
+       "why": "Food does not come out when we breathe."
+      }
+     ],
+     "answer": 0,
+     "explain": "We breathe out carbon dioxide, a gas our body does not need."
+    },
+    {
+     "mode": "choice",
+     "ask": "Why do you breathe faster when you exercise?",
+     "options": [
+      {
+       "emoji": "🎵",
+       "label": "To sing",
+       "why": "Singing is not the reason."
+      },
+      {
+       "emoji": "🥶",
+       "label": "You are cold",
+       "why": "Exercise warms you up."
+      },
+      {
+       "emoji": "🌬️",
+       "label": "Muscles need more oxygen"
+      }
+     ],
+     "answer": 2,
+     "explain": "Working muscles need extra oxygen, so you breathe faster."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which helps keep your heart and lungs healthy?",
+     "options": [
+      {
+       "emoji": "🚭",
+       "label": "No smoking, lots of play"
+      },
+      {
+       "emoji": "🛋️",
+       "label": "Sitting all day",
+       "why": "Hearts need exercise to stay strong."
+      },
+      {
+       "emoji": "🍟",
+       "label": "Only fried food",
+       "why": "Too much fried food is not good for hearts."
+      }
+     ],
+     "answer": 0,
+     "explain": "Fresh air, exercise and never smoking keep hearts and lungs healthy."
+    },
+    {
+     "mode": "sort",
+     "ask": "Would your heart beat fast or slow?",
+     "bins": [
+      {
+       "label": "Fast",
+       "emoji": "🐇"
+      },
+      {
+       "label": "Slow",
+       "emoji": "🐢"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "🏃",
+       "bin": 0,
+       "name": "running"
+      },
+      {
+       "emoji": "😴",
+       "bin": 1,
+       "name": "sleeping"
+      },
+      {
+       "emoji": "🚴",
+       "bin": 0,
+       "name": "cycling fast"
+      },
+      {
+       "emoji": "📖",
+       "bin": 1,
+       "name": "reading"
+      },
+      {
+       "emoji": "⛹️",
+       "bin": 0,
+       "name": "basketball"
+      },
+      {
+       "emoji": "🛋️",
+       "bin": 1,
+       "name": "resting on the sofa"
+      }
+     ],
+     "explain": "Active play makes your heart speed up, resting slows it down."
+    }
+   ]
+  }
+ ]
+}

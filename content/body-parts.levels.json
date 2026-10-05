@@ -1,0 +1,619 @@
+{
+  "topicId": "body-parts",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "body-parts-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Head to toe",
+      "intro": {
+        "say": "Let's name the parts of your body, from your head down to your toes!",
+        "icons": [
+          "🙂",
+          "✋",
+          "🦶"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "On your head you have eyes, ears, a nose and a mouth. Your eyes see. Your ears hear. Your mouth eats and talks.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👁️",
+              "👂",
+              "👃",
+              "👄"
+            ],
+            "size": "lg"
+          },
+          "caption": "Eyes · Ears · Nose · Mouth"
+        },
+        {
+          "mode": "show",
+          "say": "You have two arms with hands, and two legs with feet. Hands hold things. Feet help you walk and run.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💪",
+              "✋",
+              "🦵",
+              "🦶"
+            ],
+            "size": "lg"
+          },
+          "caption": "Arms · Hands · Legs · Feet"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part do you use to see?",
+          "options": [
+            {
+              "label": "Ear",
+              "emoji": "👂",
+              "why": "Ears are for hearing."
+            },
+            {
+              "label": "Eye",
+              "emoji": "👁️"
+            },
+            {
+              "label": "Nose",
+              "emoji": "👃",
+              "why": "Noses are for smelling."
+            }
+          ],
+          "answer": 1,
+          "explain": "You see with your eyes."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part do you walk on?",
+          "options": [
+            {
+              "label": "Foot",
+              "emoji": "🦶"
+            },
+            {
+              "label": "Hand",
+              "emoji": "✋",
+              "why": "Hands are for holding."
+            },
+            {
+              "label": "Ear",
+              "emoji": "👂",
+              "why": "Ears are for hearing."
+            }
+          ],
+          "answer": 0,
+          "explain": "Your feet carry you when you walk."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many fingers are on one hand?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖐️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Don't forget your thumb!"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "10",
+              "why": "10 is on both hands together."
+            }
+          ],
+          "answer": 1,
+          "explain": "One hand has 5 fingers, counting the thumb.",
+          "hint": "Count each finger and the thumb."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part do you use to hear music?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎵"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Mouth",
+              "emoji": "👄",
+              "why": "Your mouth can sing, but you hear with ears."
+            },
+            {
+              "label": "Foot",
+              "emoji": "🦶",
+              "why": "Feet can dance, but they can't hear."
+            },
+            {
+              "label": "Ear",
+              "emoji": "👂"
+            }
+          ],
+          "answer": 2,
+          "explain": "Your ears hear sounds and music."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where do you wear a hat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎩"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "On your feet",
+              "emoji": "🦶",
+              "why": "Socks and shoes go on feet."
+            },
+            {
+              "label": "On your head",
+              "emoji": "🙂"
+            },
+            {
+              "label": "On your hand",
+              "emoji": "✋",
+              "why": "Gloves go on hands."
+            }
+          ],
+          "answer": 1,
+          "explain": "A hat goes on your head."
+        }
+      ]
+    },
+    {
+      "id": "body-parts-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Count and bend",
+      "intro": {
+        "say": "Let's count body parts, and find the parts that bend!",
+        "icons": [
+          "🖐️",
+          "🦵",
+          "💪"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "You have 2 eyes, 2 ears and 1 nose. You have 10 fingers and 10 toes.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👁️",
+              "👁️",
+              "👂",
+              "👂",
+              "👃"
+            ],
+            "size": "lg"
+          },
+          "caption": "2 eyes · 2 ears · 1 nose"
+        },
+        {
+          "mode": "show",
+          "say": "Your body bends at joints. Your elbow bends your arm. Your knee bends your leg. Your neck lets your head turn.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💪",
+              "🦵",
+              "🙂"
+            ],
+            "size": "lg"
+          },
+          "caption": "Elbow · Knee · Neck"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many fingers on two hands?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖐️",
+              "🖐️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "That is just one hand."
+            },
+            {
+              "label": "8",
+              "why": "Count both hands, thumbs too."
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "answer": 2,
+          "explain": "5 fingers and 5 more make 10 fingers."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part bends in the middle of your arm?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💪"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Knee",
+              "why": "Your knee is in your leg."
+            },
+            {
+              "label": "Elbow"
+            },
+            {
+              "label": "Ankle",
+              "why": "Your ankle is near your foot."
+            }
+          ],
+          "answer": 1,
+          "explain": "Your elbow lets your arm bend."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part bends when you kneel or kick a ball?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Knee"
+            },
+            {
+              "label": "Elbow",
+              "why": "Your elbow is in your arm."
+            },
+            {
+              "label": "Wrist",
+              "why": "Your wrist is by your hand."
+            }
+          ],
+          "answer": 0,
+          "explain": "Your knee bends your leg."
+        },
+        {
+          "mode": "order",
+          "ask": "Head, shoulders, knees and toes! Put them in order from top to bottom.",
+          "items": [
+            {
+              "label": "Head",
+              "emoji": "🙂"
+            },
+            {
+              "label": "Shoulders",
+              "emoji": "🤷"
+            },
+            {
+              "label": "Knees",
+              "emoji": "🦵"
+            },
+            {
+              "label": "Toes",
+              "emoji": "🦶"
+            }
+          ],
+          "explain": "Head at the top, then shoulders, then knees, and toes at the bottom!"
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it on your head, your arm, or your leg?",
+          "bins": [
+            {
+              "label": "Head",
+              "emoji": "🙂"
+            },
+            {
+              "label": "Arm",
+              "emoji": "💪"
+            },
+            {
+              "label": "Leg",
+              "emoji": "🦵"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "👃",
+              "bin": 0,
+              "name": "nose"
+            },
+            {
+              "emoji": "✋",
+              "bin": 1,
+              "name": "hand"
+            },
+            {
+              "emoji": "🦶",
+              "bin": 2,
+              "name": "foot"
+            },
+            {
+              "emoji": "👂",
+              "bin": 0,
+              "name": "ear"
+            },
+            {
+              "emoji": "👁️",
+              "bin": 0,
+              "name": "eye"
+            },
+            {
+              "emoji": "🦵",
+              "bin": 2,
+              "name": "knee"
+            },
+            {
+              "emoji": "👍",
+              "bin": 1,
+              "name": "thumb"
+            }
+          ],
+          "explain": "Nose, ears and eyes are on your head. Hands and thumbs are on your arms. Feet and knees are on your legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many ears do you have?",
+          "options": [
+            {
+              "label": "1",
+              "why": "Feel both sides of your head."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "3",
+              "why": "That's one too many!"
+            }
+          ],
+          "answer": 1,
+          "explain": "You have 2 ears, one on each side of your head."
+        }
+      ]
+    },
+    {
+      "id": "body-parts-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Body puzzles",
+      "intro": {
+        "say": "Let's solve some tricky body puzzles with counting and thinking!",
+        "icons": [
+          "🧠",
+          "🖐️",
+          "🦶"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Your brain is inside your head. It tells every body part what to do. Your thumb helps your hand grip things like a pencil.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧠",
+              "👍",
+              "✏️"
+            ]
+          },
+          "caption": "Brain · Thumb"
+        },
+        {
+          "mode": "show",
+          "say": "You have 10 fingers and 10 toes. Together that is 20! Ten and ten make twenty.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 10,
+                "emoji": "👆"
+              },
+              {
+                "count": 10,
+                "emoji": "👣"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "10 + 10 = 20"
+        },
+        {
+          "mode": "choice",
+          "ask": "3 children are playing. How many eyes altogether?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🧒"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Each child has 2 eyes."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "9",
+              "why": "Count in twos: 2, 4, 6."
+            }
+          ],
+          "answer": 1,
+          "explain": "Each child has 2 eyes: 2, 4, 6. That's 6 eyes.",
+          "hint": "Count in twos."
+        },
+        {
+          "mode": "choice",
+          "ask": "Tom puts a sock on one foot. How many of his toes can you still see?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧦",
+              "🦶"
+            ]
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "One foot is inside a sock."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "0",
+              "why": "Only one foot has a sock."
+            }
+          ],
+          "answer": 1,
+          "explain": "One foot has 5 toes, and it has no sock, so we see 5 toes."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part tells your body what to do?",
+          "options": [
+            {
+              "label": "Brain",
+              "emoji": "🧠"
+            },
+            {
+              "label": "Nose",
+              "emoji": "👃",
+              "why": "Your nose smells things."
+            },
+            {
+              "label": "Foot",
+              "emoji": "🦶",
+              "why": "Feet help you walk."
+            }
+          ],
+          "answer": 0,
+          "explain": "Your brain is the boss of your body."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part helps you hold a pencil tightly?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "✏️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Ear",
+              "emoji": "👂",
+              "why": "Ears hear, they can't hold."
+            },
+            {
+              "label": "Knee",
+              "emoji": "🦵",
+              "why": "Knees bend your legs."
+            },
+            {
+              "label": "Thumb",
+              "emoji": "👍"
+            }
+          ],
+          "answer": 2,
+          "explain": "Your thumb pushes against your fingers to grip."
+        },
+        {
+          "mode": "choice",
+          "ask": "Your fingers and your toes together. How many is that?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 10,
+                "emoji": "👆"
+              },
+              {
+                "count": 10,
+                "emoji": "👣"
+              }
+            ],
+            "op": "and"
+          },
+          "options": [
+            {
+              "label": "20"
+            },
+            {
+              "label": "10",
+              "why": "That's just fingers. Add the toes too."
+            },
+            {
+              "label": "15",
+              "why": "Try 10 and 10 more."
+            }
+          ],
+          "answer": 0,
+          "explain": "10 fingers and 10 toes make 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which joint lets your hand bend to wave hello?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👋"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Ankle",
+              "why": "Your ankle is down by your foot."
+            },
+            {
+              "label": "Knee",
+              "why": "Your knee bends your leg."
+            },
+            {
+              "label": "Wrist"
+            }
+          ],
+          "answer": 2,
+          "explain": "Your wrist joins your hand to your arm, so your hand can bend and wave."
+        }
+      ]
+    }
+  ]
+}

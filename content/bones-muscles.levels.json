@@ -1,0 +1,563 @@
+{
+ "topicId": "bones-muscles",
+ "gameId": "explore",
+ "version": 1,
+ "levels": [
+  {
+   "id": "bones-muscles-01",
+   "order": 1,
+   "difficulty": "simple",
+   "name": "My bones",
+   "intro": {
+    "say": "Inside your body there are bones. Let's find out what they do!",
+    "icons": [
+     "🦴",
+     "💀",
+     "💪"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Inside you are lots of hard bones. All your bones together are called your skeleton. It holds you up, like a frame!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "💀",
+       "🦴",
+       "🦴"
+      ],
+      "size": "lg"
+     },
+     "caption": "Skeleton = all my bones"
+    },
+    {
+     "mode": "show",
+     "say": "Without bones you would be floppy like a jelly. Bones help you stand tall!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🧍",
+       "🦴",
+       "🍮"
+      ]
+     },
+     "caption": "Bones hold me up"
+    },
+    {
+     "mode": "choice",
+     "ask": "Are bones hard or soft?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🦴"
+      ],
+      "size": "lg"
+     },
+     "options": [
+      {
+       "emoji": "🪨",
+       "label": "Hard"
+      },
+      {
+       "emoji": "☁️",
+       "label": "Soft",
+       "why": "Bones are not soft like a cloud. Tap your knee and feel!"
+      }
+     ],
+     "answer": 0,
+     "explain": "Bones are hard and strong, that is how they hold you up."
+    },
+    {
+     "mode": "choice",
+     "ask": "What do we call all our bones together?",
+     "options": [
+      {
+       "emoji": "🫁",
+       "label": "Lungs",
+       "why": "Lungs help us breathe."
+      },
+      {
+       "emoji": "💀",
+       "label": "Skeleton"
+      },
+      {
+       "emoji": "🧠",
+       "label": "Brain",
+       "why": "The brain helps us think."
+      }
+     ],
+     "answer": 1,
+     "explain": "All of your bones together make your skeleton."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which one of these is a bone?",
+     "options": [
+      {
+       "emoji": "🍎",
+       "label": "Apple",
+       "why": "An apple is a food."
+      },
+      {
+       "emoji": "🧸",
+       "label": "Teddy",
+       "why": "A teddy is a soft toy."
+      },
+      {
+       "emoji": "🦴",
+       "label": "Bone"
+      }
+     ],
+     "answer": 2,
+     "explain": "That is a bone, hard and strong."
+    },
+    {
+     "mode": "choice",
+     "ask": "What would happen if you had no bones?",
+     "options": [
+      {
+       "emoji": "🍮",
+       "label": "Floppy"
+      },
+      {
+       "emoji": "🚀",
+       "label": "Fly away",
+       "why": "Bones hold us up. They do not make us fly."
+      },
+      {
+       "emoji": "🌈",
+       "label": "Turn colours",
+       "why": "Bones do not change our colour."
+      }
+     ],
+     "answer": 0,
+     "explain": "Without bones your body could not stand up, it would be floppy."
+    },
+    {
+     "mode": "sort",
+     "ask": "Is it hard like a bone, or soft like a pillow?",
+     "bins": [
+      {
+       "label": "Hard",
+       "emoji": "🦴"
+      },
+      {
+       "label": "Soft",
+       "emoji": "☁️"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "🪨",
+       "bin": 0,
+       "name": "rock"
+      },
+      {
+       "emoji": "🧸",
+       "bin": 1,
+       "name": "teddy"
+      },
+      {
+       "emoji": "🦴",
+       "bin": 0,
+       "name": "bone"
+      },
+      {
+       "emoji": "🛏️",
+       "bin": 1,
+       "name": "pillow"
+      },
+      {
+       "emoji": "🥜",
+       "bin": 0,
+       "name": "nut"
+      }
+     ],
+     "explain": "Bones are hard, like a rock or a nut shell."
+    }
+   ]
+  },
+  {
+   "id": "bones-muscles-02",
+   "order": 1,
+   "difficulty": "medium",
+   "name": "Bones protect, muscles move",
+   "intro": {
+    "say": "Bones keep soft parts safe, and muscles help you move!",
+    "icons": [
+     "💀",
+     "💪",
+     "🏃"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Some bones are like helmets. Your skull is a hard bony case that keeps your brain safe.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "💀",
+       "🧠",
+       "⛑️"
+      ]
+     },
+     "caption": "Skull protects brain"
+    },
+    {
+     "mode": "show",
+     "say": "Your ribs are like a cage. They protect your heart and lungs inside your chest.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🦴",
+       "❤️",
+       "🫁"
+      ]
+     },
+     "caption": "Ribs protect heart and lungs"
+    },
+    {
+     "mode": "show",
+     "say": "Muscles are joined to your bones. When a muscle pulls, your bone moves! That is how you wave, walk and jump.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "💪",
+       "🦵",
+       "🤸"
+      ]
+     },
+     "caption": "Muscles pull bones"
+    },
+    {
+     "mode": "choice",
+     "ask": "Which bone keeps your brain safe?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🧠"
+      ],
+      "size": "lg"
+     },
+     "options": [
+      {
+       "emoji": "🦴",
+       "label": "Ribs",
+       "why": "Ribs keep your heart and lungs safe."
+      },
+      {
+       "emoji": "💀",
+       "label": "Skull"
+      },
+      {
+       "emoji": "🦵",
+       "label": "Leg bone",
+       "why": "Leg bones hold you up when you stand."
+      }
+     ],
+     "answer": 1,
+     "explain": "The skull is a hard case around your brain."
+    },
+    {
+     "mode": "choice",
+     "ask": "Your ribs protect which parts?",
+     "options": [
+      {
+       "emoji": "❤️",
+       "label": "Heart and lungs"
+      },
+      {
+       "emoji": "🦶",
+       "label": "Feet",
+       "why": "Feet are far from your ribs."
+      },
+      {
+       "emoji": "👀",
+       "label": "Eyes",
+       "why": "Your eyes are kept safe by your skull."
+      }
+     ],
+     "answer": 0,
+     "explain": "Your ribs make a cage around your heart and lungs."
+    },
+    {
+     "mode": "choice",
+     "ask": "What makes your bones move?",
+     "options": [
+      {
+       "emoji": "💧",
+       "label": "Water",
+       "why": "Water does not move your bones."
+      },
+      {
+       "emoji": "🦷",
+       "label": "Teeth",
+       "why": "Teeth are for chewing."
+      },
+      {
+       "emoji": "💪",
+       "label": "Muscles"
+      }
+     ],
+     "answer": 2,
+     "explain": "Muscles pull on bones to move them."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which one uses muscles?",
+     "options": [
+      {
+       "emoji": "🏃",
+       "label": "Running"
+      },
+      {
+       "emoji": "🛌",
+       "label": "Nothing",
+       "why": "Even small moves use muscles!"
+      }
+     ],
+     "answer": 0,
+     "explain": "Running uses lots of leg muscles pulling on leg bones."
+    },
+    {
+     "mode": "sort",
+     "ask": "Does this bone protect, or help you move?",
+     "bins": [
+      {
+       "label": "Protects",
+       "emoji": "🛡️"
+      },
+      {
+       "label": "Moves",
+       "emoji": "🏃"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "💀",
+       "bin": 0,
+       "name": "skull"
+      },
+      {
+       "emoji": "🦵",
+       "bin": 1,
+       "name": "leg bone"
+      },
+      {
+       "emoji": "🦴",
+       "bin": 0,
+       "name": "ribs"
+      },
+      {
+       "emoji": "🦶",
+       "bin": 1,
+       "name": "foot bones"
+      },
+      {
+       "emoji": "✋",
+       "bin": 1,
+       "name": "hand bones"
+      }
+     ],
+     "explain": "The skull and ribs protect, legs, feet and hands help us move."
+    }
+   ]
+  },
+  {
+   "id": "bones-muscles-03",
+   "order": 1,
+   "difficulty": "complex",
+   "name": "Strong body detectives",
+   "intro": {
+    "say": "Let's think hard about joints, muscles, and how to keep bones strong.",
+    "icons": [
+     "🦴",
+     "💪",
+     "🥛",
+     "🤸"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Where two bones meet there is a joint, like your knee or elbow. Joints let you bend!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🦵",
+       "💪",
+       "🤸"
+      ]
+     },
+     "caption": "Knee · Elbow · Joints"
+    },
+    {
+     "mode": "show",
+     "say": "Exercise makes muscles stronger. Milk, cheese and yogurt have calcium, which helps bones grow strong.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🏃",
+       "💪",
+       "🥛",
+       "🧀"
+      ]
+     },
+     "caption": "Move + calcium = strong"
+    },
+    {
+     "mode": "choice",
+     "ask": "Where is a joint that lets your arm bend?",
+     "options": [
+      {
+       "emoji": "🖐️",
+       "label": "Fingernail",
+       "why": "Fingernails are not joints."
+      },
+      {
+       "emoji": "💪",
+       "label": "Elbow"
+      },
+      {
+       "emoji": "👃",
+       "label": "Nose",
+       "why": "Your nose does not bend like that."
+      }
+     ],
+     "answer": 1,
+     "explain": "Your elbow is a joint, where arm bones meet and bend."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which food helps build strong bones?",
+     "options": [
+      {
+       "emoji": "🍭",
+       "label": "Lollipop",
+       "why": "Sweets do not help bones grow."
+      },
+      {
+       "emoji": "🥤",
+       "label": "Fizzy drink",
+       "why": "Fizzy drinks do not help bones."
+      },
+      {
+       "emoji": "🥛",
+       "label": "Milk"
+      }
+     ],
+     "answer": 2,
+     "explain": "Milk has calcium, which helps bones get strong."
+    },
+    {
+     "mode": "choice",
+     "ask": "Mia plays football every day. What happens to her leg muscles?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "⚽",
+       "🏃‍♀️"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "💪",
+       "label": "Get stronger"
+      },
+      {
+       "emoji": "🍮",
+       "label": "Get floppier",
+       "why": "Using muscles makes them stronger, not floppier."
+      },
+      {
+       "emoji": "🦴",
+       "label": "Turn to bone",
+       "why": "Muscles stay muscles."
+      }
+     ],
+     "answer": 0,
+     "explain": "Using muscles a lot makes them grow stronger."
+    },
+    {
+     "mode": "choice",
+     "ask": "Why is it good to wear a helmet when you ride a bike?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🚲",
+       "⛑️"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "🎨",
+       "label": "Looks nice",
+       "why": "It may look nice, but there is a more important reason."
+      },
+      {
+       "emoji": "🛡️",
+       "label": "Protects skull"
+      },
+      {
+       "emoji": "🦵",
+       "label": "Makes legs fast",
+       "why": "A helmet does not make you faster."
+      }
+     ],
+     "answer": 1,
+     "explain": "A helmet adds extra protection for your skull and brain."
+    },
+    {
+     "mode": "choice",
+     "ask": "Your heart is a muscle too! What does it never do?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "❤️"
+      ],
+      "size": "lg"
+     },
+     "options": [
+      {
+       "emoji": "😴",
+       "label": "Stop to rest"
+      },
+      {
+       "emoji": "💓",
+       "label": "Beat",
+       "why": "Your heart beats all the time."
+      }
+     ],
+     "answer": 0,
+     "explain": "Your heart muscle keeps working all day and all night.",
+     "hint": "Think about when you are asleep."
+    },
+    {
+     "mode": "order",
+     "ask": "Put these in order: how does your arm lift a cup?",
+     "items": [
+      {
+       "emoji": "🧠",
+       "label": "Brain sends message"
+      },
+      {
+       "emoji": "💪",
+       "label": "Muscle pulls"
+      },
+      {
+       "emoji": "🦴",
+       "label": "Bone moves"
+      },
+      {
+       "emoji": "☕",
+       "label": "Cup goes up"
+      }
+     ],
+     "explain": "Your brain tells the muscle to pull, the muscle moves the bone, and up goes the cup!"
+    }
+   ]
+  }
+ ]
+}

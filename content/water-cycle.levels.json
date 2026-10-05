@@ -1,0 +1,554 @@
+{
+ "topicId": "water-cycle",
+ "gameId": "explore",
+ "version": 1,
+ "levels": [
+  {
+   "id": "water-cycle-01",
+   "order": 1,
+   "difficulty": "simple",
+   "name": "Where does rain come from?",
+   "intro": {
+    "say": "Let's follow a raindrop on a big journey!",
+    "icons": [
+     "☀️",
+     "☁️",
+     "🌧️",
+     "💧"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "The sun warms water in seas and puddles. The water rises up into the sky, so tiny we can't see it.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "☀️",
+       "🌊",
+       "⬆️"
+      ]
+     },
+     "caption": "Sun warms water"
+    },
+    {
+     "mode": "show",
+     "say": "Up high it cools and makes clouds. When clouds get full and heavy, water falls as rain!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "☁️",
+       "🌧️",
+       "💧"
+      ]
+     },
+     "caption": "Clouds → rain"
+    },
+    {
+     "mode": "choice",
+     "ask": "Where does rain fall from?",
+     "options": [
+      {
+       "emoji": "🌳",
+       "label": "Trees",
+       "why": "Trees drip, but rain comes from higher up."
+      },
+      {
+       "emoji": "☁️",
+       "label": "Clouds"
+      },
+      {
+       "emoji": "🌙",
+       "label": "The Moon",
+       "why": "The Moon does not make rain."
+      }
+     ],
+     "answer": 1,
+     "explain": "Rain falls from clouds."
+    },
+    {
+     "mode": "choice",
+     "ask": "What warms the water so it goes up?",
+     "options": [
+      {
+       "emoji": "☀️",
+       "label": "The sun"
+      },
+      {
+       "emoji": "❄️",
+       "label": "Snow",
+       "why": "Snow is cold, not warm."
+      },
+      {
+       "emoji": "🌙",
+       "label": "The Moon",
+       "why": "The Moon does not warm water."
+      }
+     ],
+     "answer": 0,
+     "explain": "The sun warms the water and it rises into the sky."
+    },
+    {
+     "mode": "choice",
+     "ask": "What are clouds made of?",
+     "options": [
+      {
+       "emoji": "🍭",
+       "label": "Candy floss",
+       "why": "They look fluffy, but they are not candy!"
+      },
+      {
+       "emoji": "🪶",
+       "label": "Feathers",
+       "why": "Clouds are not feathers."
+      },
+      {
+       "emoji": "💧",
+       "label": "Tiny water drops"
+      }
+     ],
+     "answer": 2,
+     "explain": "Clouds are made of tiny drops of water."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which picture shows rain?",
+     "options": [
+      {
+       "emoji": "☀️",
+       "label": "Sunny",
+       "why": "That is sunshine."
+      },
+      {
+       "emoji": "🌧️",
+       "label": "Rain"
+      },
+      {
+       "emoji": "🌈",
+       "label": "Rainbow",
+       "why": "A rainbow can come after rain."
+      }
+     ],
+     "answer": 1,
+     "explain": "That cloud has rain falling from it."
+    },
+    {
+     "mode": "order",
+     "ask": "Put the raindrop's journey in order.",
+     "items": [
+      {
+       "emoji": "🌊",
+       "label": "Water in the sea"
+      },
+      {
+       "emoji": "☀️",
+       "label": "Sun warms it"
+      },
+      {
+       "emoji": "☁️",
+       "label": "Cloud"
+      },
+      {
+       "emoji": "🌧️",
+       "label": "Rain"
+      }
+     ],
+     "explain": "Water warms, goes up, makes a cloud, then falls as rain."
+    }
+   ]
+  },
+  {
+   "id": "water-cycle-02",
+   "order": 1,
+   "difficulty": "medium",
+   "name": "Up and down again",
+   "intro": {
+    "say": "Water goes round and round. Let's learn the big words for each step!",
+    "icons": [
+     "🔄",
+     "☁️",
+     "💧"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "When the sun warms water, it turns into a gas called water vapour and floats up. This is called evaporation.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "☀️",
+       "🌊",
+       "💨",
+       "⬆️"
+      ]
+     },
+     "caption": "Evaporation: water goes up"
+    },
+    {
+     "mode": "show",
+     "say": "High up, the vapour cools and turns into tiny drops, making clouds. Then the drops fall as rain or snow.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "☁️",
+       "🌧️",
+       "🌨️"
+      ]
+     },
+     "caption": "Cloud → rain or snow"
+    },
+    {
+     "mode": "show",
+     "say": "Rain flows into rivers, lakes and the sea. Then it all starts again! That is the water cycle.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🌧️",
+       "🏞️",
+       "🌊",
+       "🔄"
+      ]
+     },
+     "caption": "Round and round"
+    },
+    {
+     "mode": "choice",
+     "ask": "What do we call water turning into vapour and going up?",
+     "options": [
+      {
+       "emoji": "🌊",
+       "label": "Splashing",
+       "why": "Splashing does not send water up into the sky."
+      },
+      {
+       "emoji": "💨",
+       "label": "Evaporation"
+      },
+      {
+       "emoji": "🧊",
+       "label": "Freezing",
+       "why": "Freezing turns water into ice."
+      }
+     ],
+     "answer": 1,
+     "explain": "Evaporation is when water warms up and rises as vapour."
+    },
+    {
+     "mode": "choice",
+     "ask": "A puddle is gone on a sunny day. Where did the water go?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "☀️",
+       "💧"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "⬆️",
+       "label": "Up into the air"
+      },
+      {
+       "emoji": "🐸",
+       "label": "A frog drank it all",
+       "why": "Frogs don't drink whole puddles!"
+      },
+      {
+       "emoji": "🕳️",
+       "label": "Into a hole",
+       "why": "The sun dried it up."
+      }
+     ],
+     "answer": 0,
+     "explain": "The sun evaporated the puddle into the air."
+    },
+    {
+     "mode": "choice",
+     "ask": "When it is very cold, what can fall from clouds?",
+     "options": [
+      {
+       "emoji": "🍃",
+       "label": "Leaves",
+       "why": "Leaves fall from trees."
+      },
+      {
+       "emoji": "🪨",
+       "label": "Rocks",
+       "why": "Rocks do not fall from clouds."
+      },
+      {
+       "emoji": "❄️",
+       "label": "Snow"
+      }
+     ],
+     "answer": 2,
+     "explain": "When it is cold, water in clouds falls as snow."
+    },
+    {
+     "mode": "choice",
+     "ask": "Where does rain go after it falls?",
+     "options": [
+      {
+       "emoji": "🌙",
+       "label": "The Moon",
+       "why": "Rain stays on Earth."
+      },
+      {
+       "emoji": "🏞️",
+       "label": "Rivers and seas"
+      }
+     ],
+     "answer": 1,
+     "explain": "Rain flows into rivers, lakes and the sea."
+    },
+    {
+     "mode": "order",
+     "ask": "Put the water cycle in order.",
+     "items": [
+      {
+       "emoji": "☀️",
+       "label": "Sun warms sea"
+      },
+      {
+       "emoji": "💨",
+       "label": "Vapour rises"
+      },
+      {
+       "emoji": "☁️",
+       "label": "Clouds form"
+      },
+      {
+       "emoji": "🌧️",
+       "label": "Rain falls"
+      },
+      {
+       "emoji": "🏞️",
+       "label": "River to sea"
+      }
+     ],
+     "explain": "Then the sun warms the sea again, and the cycle goes round."
+    }
+   ]
+  },
+  {
+   "id": "water-cycle-03",
+   "order": 1,
+   "difficulty": "complex",
+   "name": "Water cycle experts",
+   "intro": {
+    "say": "Let's solve water cycle puzzles like real scientists!",
+    "icons": [
+     "🔬",
+     "💨",
+     "☁️",
+     "🔄"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Cold makes water vapour turn back into drops. This is condensation. You see it on a cold glass or a bathroom mirror!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🥶",
+       "🥛",
+       "💧"
+      ]
+     },
+     "caption": "Condensation: vapour → drops"
+    },
+    {
+     "mode": "show",
+     "say": "Rain, snow and hail falling from clouds are called precipitation. The same water has gone round and round for millions of years!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🌧️",
+       "🌨️",
+       "🔄"
+      ]
+     },
+     "caption": "Precipitation: water falls"
+    },
+    {
+     "mode": "choice",
+     "ask": "Drops form on a cold glass of juice. What is this called?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🧃",
+       "🧊",
+       "💧"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "💧",
+       "label": "Condensation"
+      },
+      {
+       "emoji": "💨",
+       "label": "Evaporation",
+       "why": "Evaporation is water going up, not drops forming."
+      },
+      {
+       "emoji": "🧊",
+       "label": "Melting",
+       "why": "Melting is ice turning to water."
+      }
+     ],
+     "answer": 0,
+     "explain": "Vapour in the air cools on the cold glass and turns into drops."
+    },
+    {
+     "mode": "choice",
+     "ask": "Rain, snow and hail are all called what?",
+     "options": [
+      {
+       "emoji": "☁️",
+       "label": "Clouds",
+       "why": "Clouds are where it starts."
+      },
+      {
+       "emoji": "🌧️",
+       "label": "Precipitation"
+      },
+      {
+       "emoji": "🌬️",
+       "label": "Wind",
+       "why": "Wind is moving air."
+      }
+     ],
+     "answer": 1,
+     "explain": "Any water that falls from clouds is precipitation."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which day would dry wet washing fastest?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "👕",
+       "💧"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "🌧️",
+       "label": "Cold and rainy",
+       "why": "Rain makes washing wetter!"
+      },
+      {
+       "emoji": "🌫️",
+       "label": "Cold and foggy",
+       "why": "Cold air dries things slowly."
+      },
+      {
+       "emoji": "☀️",
+       "label": "Hot and sunny"
+      }
+     ],
+     "answer": 2,
+     "explain": "Heat makes water evaporate faster."
+    },
+    {
+     "mode": "choice",
+     "ask": "Why does a bathroom mirror get misty after a hot shower?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🚿",
+       "🪞"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "🧼",
+       "label": "Soap bubbles",
+       "why": "The mist is water, not soap."
+      },
+      {
+       "emoji": "💨",
+       "label": "Warm vapour cools on it"
+      },
+      {
+       "emoji": "👻",
+       "label": "A ghost",
+       "why": "No ghosts, just science!"
+      }
+     ],
+     "answer": 1,
+     "explain": "Warm water vapour touches the cool mirror and condenses into drops."
+    },
+    {
+     "mode": "choice",
+     "ask": "Is the water we drink today new water?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "💧",
+       "🦕"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "✅",
+       "label": "Yes, brand new",
+       "why": "Water is not made new, it is recycled."
+      },
+      {
+       "emoji": "🔄",
+       "label": "No, it goes round and round"
+      }
+     ],
+     "answer": 1,
+     "explain": "Water keeps cycling, so it may once have been in a dinosaur's river!"
+    },
+    {
+     "mode": "sort",
+     "ask": "Is water going up or coming down?",
+     "bins": [
+      {
+       "label": "Up",
+       "emoji": "⬆️"
+      },
+      {
+       "label": "Down",
+       "emoji": "⬇️"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "💨",
+       "bin": 0,
+       "name": "vapour rising"
+      },
+      {
+       "emoji": "🌧️",
+       "bin": 1,
+       "name": "rain"
+      },
+      {
+       "emoji": "🌨️",
+       "bin": 1,
+       "name": "snow"
+      },
+      {
+       "emoji": "♨️",
+       "bin": 0,
+       "name": "steam"
+      },
+      {
+       "emoji": "🌩️",
+       "bin": 1,
+       "name": "a storm's rain"
+      }
+     ],
+     "explain": "Evaporation sends water up, precipitation brings it down."
+    }
+   ]
+  }
+ ]
+}

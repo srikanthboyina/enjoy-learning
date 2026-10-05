@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Switch, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { getLevels, getTopics } from '../../src/engine/loadContent';
+import { getGroups, getLevels, getTopics, getTopicsIn } from '../../src/engine/loadContent';
 import { levelKey } from '../../src/engine/scoring';
 import { isPlayable, topicStars } from '../../src/engine/topics';
 import { Glyph } from '../../src/kit/Glyph';
@@ -15,7 +15,10 @@ import { colors, radii, spacing } from '../../src/theme';
 import { Text } from '../../src/kit/Text';
 
 function formatDate(ms: number): string {
-  return new Date(ms).toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
+  return new Date(ms).toLocaleDateString(undefined, {
+    day: 'numeric',
+    month: 'short',
+  });
 }
 
 export default function ParentDashboard() {
@@ -39,55 +42,75 @@ export default function ParentDashboard() {
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
-        {getTopics().map((topic) => {
-          const playable = isPlayable(topic);
-          const s = topicStars(topic, levels);
-          return (
-            <View key={topic.id} style={styles.card}>
-              <View style={styles.cardHeader}>
-                <Glyph id={topic.emoji} size={32} />
-                <View style={{ flex: 1 }}>
-                  <Text style={styles.topicTitle}>{topic.title}</Text>
-                  <Text style={styles.meta}>
-                    {playable ? `${s.done} of ${s.total} levels · ${s.earned}/${s.max} stars` : 'Coming soon'}
-                  </Text>
-                </View>
-                {badges.includes(badgeIds.complete(topic.id)) && <Text style={styles.badge}>🏅</Text>}
-                {badges.includes(badgeIds.allStars(topic.id)) && <Text style={styles.badge}>🏆</Text>}
-              </View>
-              {playable && (
-                <View style={styles.bar}>
-                  <View
-                    style={[
-                      styles.barFill,
-                      { width: `${s.total ? (s.done / s.total) * 100 : 0}%`, backgroundColor: topic.colors[1] },
-                    ]}
-                  />
-                </View>
-              )}
-              {getLevels(topic.id).map((level) => {
-                const p = levels[levelKey(topic.id, level.id)];
-                return (
-                  <View key={level.id} style={styles.levelRow}>
-                    <Text style={styles.levelName}>
-                      {level.difficulty[0].toUpperCase() + level.difficulty.slice(1)} · {level.name}
-                    </Text>
-                    {p ? (
-                      <>
-                        <Text style={styles.levelMeta}>
-                          {p.attempts}× · {formatDate(p.lastPlayedAt)}
-                        </Text>
-                        <StarRow stars={p.bestStars} size={16} />
-                      </>
-                    ) : (
-                      <Text style={styles.levelMeta}>not played</Text>
-                    )}
+        <View style={styles.card}>
+          <Text style={styles.topicTitle}>
+            {getTopics().filter((t) => topicStars(t, levels).done > 0).length} of {getTopics().length} topics started
+          </Text>
+          <Text style={styles.meta}>
+            {Object.keys(levels).length} levels played · {Object.values(levels).reduce((a, l) => a + l.bestStars, 0)}{' '}
+            stars · {badges.length} badges
+          </Text>
+        </View>
+        {getGroups().map((group) => (
+          <View key={group.id} style={styles.groupBlock}>
+            <Text style={styles.section}>
+              {group.emoji} {group.title}
+            </Text>
+            {getTopicsIn(group.id).map((topic) => {
+              const playable = isPlayable(topic);
+              const s = topicStars(topic, levels);
+              return (
+                <View key={topic.id} style={styles.card}>
+                  <View style={styles.cardHeader}>
+                    <Glyph id={topic.emoji} size={32} />
+                    <View style={{ flex: 1 }}>
+                      <Text style={styles.topicTitle}>{topic.title}</Text>
+                      <Text style={styles.meta}>
+                        {playable ? `${s.done} of ${s.total} levels · ${s.earned}/${s.max} stars` : 'Coming soon'}
+                      </Text>
+                    </View>
+                    {badges.includes(badgeIds.complete(topic.id)) && <Text style={styles.badge}>🏅</Text>}
+                    {badges.includes(badgeIds.allStars(topic.id)) && <Text style={styles.badge}>🏆</Text>}
                   </View>
-                );
-              })}
-            </View>
-          );
-        })}
+                  {playable && (
+                    <View style={styles.bar}>
+                      <View
+                        style={[
+                          styles.barFill,
+                          {
+                            width: `${s.total ? (s.done / s.total) * 100 : 0}%`,
+                            backgroundColor: topic.colors[1],
+                          },
+                        ]}
+                      />
+                    </View>
+                  )}
+                  {s.done > 0 &&
+                    getLevels(topic.id).map((level) => {
+                      const p = levels[levelKey(topic.id, level.id)];
+                      return (
+                        <View key={level.id} style={styles.levelRow}>
+                          <Text style={styles.levelName}>
+                            {level.difficulty[0].toUpperCase() + level.difficulty.slice(1)} · {level.name}
+                          </Text>
+                          {p ? (
+                            <>
+                              <Text style={styles.levelMeta}>
+                                {p.attempts}× · {formatDate(p.lastPlayedAt)}
+                              </Text>
+                              <StarRow stars={p.bestStars} size={16} />
+                            </>
+                          ) : (
+                            <Text style={styles.levelMeta}>not played</Text>
+                          )}
+                        </View>
+                      );
+                    })}
+                </View>
+              );
+            })}
+          </View>
+        ))}
 
         <Text style={styles.section}>Settings</Text>
         <View style={styles.card}>
@@ -105,7 +128,8 @@ export default function ParentDashboard() {
                   key={o.label}
                   accessibilityRole="button"
                   onPress={() => setSetting('speechRate', o.value)}
-                  style={[styles.segmentItem, settings.speechRate === o.value && styles.segmentOn]}>
+                  style={[styles.segmentItem, settings.speechRate === o.value && styles.segmentOn]}
+                >
                   <Text style={styles.segmentText}>{o.label}</Text>
                 </Pressable>
               ))}
@@ -116,8 +140,7 @@ export default function ParentDashboard() {
         <Text style={styles.section}>Privacy</Text>
         <View style={styles.card}>
           <Text style={styles.privacy}>
-            No ads, no accounts, no tracking. Progress is saved only on this device and never sent
-            anywhere.
+            No ads, no accounts, no tracking. Progress is saved only on this device and never sent anywhere.
           </Text>
         </View>
 
@@ -128,7 +151,8 @@ export default function ParentDashboard() {
             resetProgress();
             setConfirmReset(false);
           }}
-          style={[styles.reset, confirmReset && styles.resetConfirm]}>
+          style={[styles.reset, confirmReset && styles.resetConfirm]}
+        >
           <Text style={[styles.resetText, confirmReset && { color: colors.card }]}>
             {confirmReset ? 'Tap again to erase all progress' : 'Reset progress'}
           </Text>
@@ -159,21 +183,54 @@ const styles = StyleSheet.create({
   heading: { fontSize: 26, fontWeight: '800', color: colors.ink },
   done: { paddingHorizontal: spacing.md, paddingVertical: spacing.sm },
   doneText: { fontSize: 17, fontWeight: '700', color: colors.sky },
-  content: { padding: spacing.md, gap: spacing.md, maxWidth: 640, width: '100%', alignSelf: 'center' },
-  card: { backgroundColor: colors.card, borderRadius: radii.sm, padding: spacing.md, gap: spacing.sm },
+  content: {
+    padding: spacing.md,
+    gap: spacing.md,
+    maxWidth: 640,
+    width: '100%',
+    alignSelf: 'center',
+  },
+  card: {
+    backgroundColor: colors.card,
+    borderRadius: radii.sm,
+    padding: spacing.md,
+    gap: spacing.sm,
+  },
   cardHeader: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
+  groupBlock: { gap: spacing.sm },
   topicTitle: { fontSize: 18, fontWeight: '700', color: colors.ink },
   meta: { fontSize: 13, color: colors.inkSoft },
   badge: { fontSize: 24 },
-  bar: { height: 8, borderRadius: 4, backgroundColor: colors.line, overflow: 'hidden' },
+  bar: {
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: colors.line,
+    overflow: 'hidden',
+  },
   barFill: { height: 8 },
   levelRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   levelName: { flex: 1, fontSize: 14, color: colors.ink },
   levelMeta: { fontSize: 12, color: colors.inkSoft },
-  section: { fontSize: 15, fontWeight: '700', color: colors.inkSoft, marginTop: spacing.sm },
-  settingRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', minHeight: 44 },
+  section: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: colors.inkSoft,
+    marginTop: spacing.sm,
+  },
+  settingRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    minHeight: 44,
+  },
   settingLabel: { fontSize: 16, color: colors.ink },
-  segment: { flexDirection: 'row', borderRadius: radii.sm, borderWidth: 1, borderColor: colors.line, overflow: 'hidden' },
+  segment: {
+    flexDirection: 'row',
+    borderRadius: radii.sm,
+    borderWidth: 1,
+    borderColor: colors.line,
+    overflow: 'hidden',
+  },
   segmentItem: { paddingHorizontal: spacing.md, paddingVertical: spacing.sm },
   segmentOn: { backgroundColor: colors.mapSky },
   segmentText: { fontSize: 14, color: colors.ink },

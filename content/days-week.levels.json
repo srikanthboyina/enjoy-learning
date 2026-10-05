@@ -1,0 +1,536 @@
+{
+  "topicId": "days-week",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "days-week-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Seven days",
+      "intro": {
+        "say": "A week has seven days. Let's meet them all!",
+        "icons": [
+          "📅",
+          "7️⃣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "There are 7 days in a week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.",
+          "visual": {
+            "kind": "week"
+          },
+          "caption": "7 days in a week"
+        },
+        {
+          "mode": "show",
+          "say": "Saturday and Sunday are the weekend. Many people rest and play then.",
+          "visual": {
+            "kind": "week",
+            "highlight": 5
+          },
+          "caption": "Weekend: Saturday + Sunday"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many days are in a week?",
+          "visual": {
+            "kind": "week"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "5 is just Monday to Friday. Add the weekend too."
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "10",
+              "why": "Let's count the days again."
+            }
+          ],
+          "answer": 1,
+          "explain": "Monday to Sunday makes 7 days."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which day is lit up?",
+          "visual": {
+            "kind": "week",
+            "highlight": 0
+          },
+          "options": [
+            {
+              "label": "Friday",
+              "why": "Friday is near the end of the row."
+            },
+            {
+              "label": "Monday"
+            },
+            {
+              "label": "Sunday",
+              "why": "Sunday is the last day in the row."
+            }
+          ],
+          "answer": 1,
+          "explain": "The first day in the row is Monday."
+        },
+        {
+          "mode": "choice",
+          "ask": "What day comes after Monday?",
+          "visual": {
+            "kind": "week",
+            "highlight": 0
+          },
+          "options": [
+            {
+              "label": "Sunday",
+              "why": "Sunday comes before Monday."
+            },
+            {
+              "label": "Wednesday",
+              "why": "Wednesday comes after Tuesday."
+            },
+            {
+              "label": "Tuesday"
+            }
+          ],
+          "answer": 2,
+          "explain": "Monday, then Tuesday."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which day is lit up?",
+          "visual": {
+            "kind": "week",
+            "highlight": 4
+          },
+          "options": [
+            {
+              "label": "Friday"
+            },
+            {
+              "label": "Thursday",
+              "why": "Thursday is just before this day."
+            },
+            {
+              "label": "Saturday",
+              "why": "Saturday is just after this day."
+            }
+          ],
+          "answer": 0,
+          "explain": "This is Friday, the fifth day."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which day is on the weekend?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏖️",
+              "⚽"
+            ]
+          },
+          "options": [
+            {
+              "label": "Tuesday",
+              "why": "Tuesday is a weekday."
+            },
+            {
+              "label": "Sunday"
+            },
+            {
+              "label": "Thursday",
+              "why": "Thursday is a weekday."
+            }
+          ],
+          "answer": 1,
+          "explain": "Saturday and Sunday are the weekend."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the days in order, starting with Monday.",
+          "items": [
+            {
+              "label": "Monday"
+            },
+            {
+              "label": "Tuesday"
+            },
+            {
+              "label": "Wednesday"
+            },
+            {
+              "label": "Thursday"
+            }
+          ],
+          "explain": "Monday, Tuesday, Wednesday, Thursday."
+        }
+      ]
+    },
+    {
+      "id": "days-week-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Yesterday and tomorrow",
+      "intro": {
+        "say": "Let's find the day before and the day after.",
+        "icons": [
+          "📅",
+          "⬅️",
+          "➡️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Today is Wednesday. Yesterday was Tuesday, the day before. Tomorrow is Thursday, the day after.",
+          "visual": {
+            "kind": "week",
+            "highlight": 2
+          },
+          "caption": "Tuesday ← Wednesday → Thursday"
+        },
+        {
+          "mode": "show",
+          "say": "After Sunday, the week starts again with Monday! The days go round and round.",
+          "visual": {
+            "kind": "week",
+            "highlight": 6
+          },
+          "caption": "Sunday → Monday"
+        },
+        {
+          "mode": "choice",
+          "ask": "Today is Thursday. What day was yesterday?",
+          "visual": {
+            "kind": "week",
+            "highlight": 3
+          },
+          "options": [
+            {
+              "label": "Friday",
+              "why": "Friday is tomorrow, after Thursday."
+            },
+            {
+              "label": "Wednesday"
+            },
+            {
+              "label": "Tuesday",
+              "why": "Tuesday was two days ago."
+            }
+          ],
+          "answer": 1,
+          "explain": "The day before Thursday is Wednesday."
+        },
+        {
+          "mode": "choice",
+          "ask": "Today is Sunday. What day is tomorrow?",
+          "visual": {
+            "kind": "week",
+            "highlight": 6
+          },
+          "options": [
+            {
+              "label": "Monday"
+            },
+            {
+              "label": "Saturday",
+              "why": "Saturday was yesterday."
+            },
+            {
+              "label": "Friday",
+              "why": "Friday was two days ago."
+            }
+          ],
+          "answer": 0,
+          "explain": "After Sunday, the week starts again with Monday."
+        },
+        {
+          "mode": "choice",
+          "ask": "What day is missing?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "Mon",
+              "Tue",
+              "?",
+              "Thu"
+            ]
+          },
+          "options": [
+            {
+              "label": "Friday",
+              "why": "Friday comes after Thursday."
+            },
+            {
+              "label": "Sunday",
+              "why": "Sunday is at the end of the week."
+            },
+            {
+              "label": "Wednesday"
+            }
+          ],
+          "answer": 2,
+          "explain": "Monday, Tuesday, Wednesday, Thursday."
+        },
+        {
+          "mode": "choice",
+          "ask": "What day comes just before Saturday?",
+          "visual": {
+            "kind": "week",
+            "highlight": 5
+          },
+          "options": [
+            {
+              "label": "Sunday",
+              "why": "Sunday comes after Saturday."
+            },
+            {
+              "label": "Friday"
+            },
+            {
+              "label": "Thursday",
+              "why": "Thursday is two days before."
+            }
+          ],
+          "answer": 1,
+          "explain": "Friday comes just before Saturday."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many days are in the weekend?",
+          "options": [
+            {
+              "label": "5",
+              "why": "5 is the number of weekdays."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "7",
+              "why": "7 is the whole week."
+            }
+          ],
+          "answer": 1,
+          "explain": "The weekend is Saturday and Sunday, so 2 days."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the days in order, starting with Friday.",
+          "items": [
+            {
+              "label": "Friday"
+            },
+            {
+              "label": "Saturday"
+            },
+            {
+              "label": "Sunday"
+            },
+            {
+              "label": "Monday"
+            }
+          ],
+          "explain": "Friday, Saturday, Sunday, and then the week starts again with Monday."
+        }
+      ]
+    },
+    {
+      "id": "days-week-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Week puzzles",
+      "intro": {
+        "say": "Let's count forward and back through the week to solve puzzles.",
+        "icons": [
+          "📅",
+          "🤔",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "To find 3 days after Monday, count on: Tuesday, Wednesday, Thursday. So it is Thursday!",
+          "visual": {
+            "kind": "week",
+            "highlight": 3
+          },
+          "caption": "Monday + 3 days = Thursday"
+        },
+        {
+          "mode": "show",
+          "say": "One week is 7 days. Two weeks is 7 and 7, which makes 14 days.",
+          "visual": {
+            "kind": "text",
+            "text": "1 week = 7 days"
+          },
+          "caption": "2 weeks = 14 days"
+        },
+        {
+          "mode": "choice",
+          "ask": "Today is Tuesday. What day will it be in 2 days?",
+          "visual": {
+            "kind": "week",
+            "highlight": 1
+          },
+          "options": [
+            {
+              "label": "Wednesday",
+              "why": "That is only 1 day after."
+            },
+            {
+              "label": "Thursday"
+            },
+            {
+              "label": "Friday",
+              "why": "That is 3 days after."
+            }
+          ],
+          "answer": 1,
+          "explain": "Count on: Wednesday, Thursday.",
+          "hint": "Count on two days."
+        },
+        {
+          "mode": "choice",
+          "ask": "Today is Friday. What day was it 3 days ago?",
+          "visual": {
+            "kind": "week",
+            "highlight": 4
+          },
+          "options": [
+            {
+              "label": "Tuesday"
+            },
+            {
+              "label": "Monday",
+              "why": "That is 4 days ago."
+            },
+            {
+              "label": "Wednesday",
+              "why": "That is 2 days ago."
+            }
+          ],
+          "answer": 0,
+          "explain": "Count back: Thursday, Wednesday, Tuesday.",
+          "hint": "Count back three days."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many days are in 2 weeks?",
+          "options": [
+            {
+              "label": "7",
+              "why": "7 is one week."
+            },
+            {
+              "label": "12",
+              "why": "Add 7 and 7 again."
+            },
+            {
+              "label": "14"
+            }
+          ],
+          "answer": 2,
+          "explain": "7 plus 7 is 14 days."
+        },
+        {
+          "mode": "choice",
+          "ask": "Today is Saturday. Sam's party is in exactly 1 week. What day is the party?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎉",
+              "📅"
+            ]
+          },
+          "options": [
+            {
+              "label": "Sunday",
+              "why": "Sunday is just 1 day later."
+            },
+            {
+              "label": "Friday",
+              "why": "Friday is 6 days later."
+            },
+            {
+              "label": "Saturday"
+            }
+          ],
+          "answer": 2,
+          "explain": "After 7 days you come back to the same day, Saturday."
+        },
+        {
+          "mode": "choice",
+          "ask": "If yesterday was Sunday, what day is tomorrow?",
+          "options": [
+            {
+              "label": "Tuesday"
+            },
+            {
+              "label": "Monday",
+              "why": "Monday is today."
+            },
+            {
+              "label": "Saturday",
+              "why": "Saturday was before yesterday."
+            }
+          ],
+          "answer": 0,
+          "explain": "Yesterday Sunday means today is Monday, so tomorrow is Tuesday.",
+          "hint": "First find today."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many weekdays are there, from Monday to Friday?",
+          "visual": {
+            "kind": "week",
+            "highlight": 4
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count Friday too."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "6",
+              "why": "Saturday is not a weekday."
+            }
+          ],
+          "answer": 1,
+          "explain": "Monday, Tuesday, Wednesday, Thursday, Friday. That is 5."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the days in order, starting with Saturday.",
+          "items": [
+            {
+              "label": "Saturday"
+            },
+            {
+              "label": "Sunday"
+            },
+            {
+              "label": "Monday"
+            },
+            {
+              "label": "Tuesday"
+            },
+            {
+              "label": "Wednesday"
+            }
+          ],
+          "explain": "Saturday, Sunday, then a new week: Monday, Tuesday, Wednesday."
+        }
+      ]
+    }
+  ]
+}

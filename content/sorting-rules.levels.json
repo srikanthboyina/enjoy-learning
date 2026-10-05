@@ -1,0 +1,787 @@
+{
+  "topicId": "sorting-rules",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "sorting-rules-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Sort by colour and size",
+      "intro": {
+        "say": "Sorting means putting things that are alike together. Let us sort by colour and by size!",
+        "icons": [
+          "🍎",
+          "🍋",
+          "🗂️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Look! Red things go together, and yellow things go together. Our rule is colour.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🍓",
+              "🍒",
+              "🍋",
+              "🍌",
+              "🌻"
+            ]
+          },
+          "caption": "Red | Yellow"
+        },
+        {
+          "mode": "show",
+          "say": "We can also sort by size. Big things in one group, small things in another.",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🐘",
+                "scale": 1.9
+              },
+              {
+                "emoji": "🐭",
+                "scale": 0.6
+              },
+              {
+                "emoji": "🦒",
+                "scale": 1.9
+              },
+              {
+                "emoji": "🐜",
+                "scale": 0.5
+              }
+            ]
+          },
+          "caption": "Big | Small"
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort by colour. Put the red things in the red box and the blue things in the blue box.",
+          "bins": [
+            {
+              "label": "Red",
+              "emoji": "🔴"
+            },
+            {
+              "label": "Blue",
+              "emoji": "🔵"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "bin": 0,
+              "name": "the apple"
+            },
+            {
+              "emoji": "🫐",
+              "bin": 1,
+              "name": "the blueberries"
+            },
+            {
+              "emoji": "🍓",
+              "bin": 0,
+              "name": "the strawberry"
+            },
+            {
+              "emoji": "🧢",
+              "bin": 1,
+              "name": "the blue cap"
+            },
+            {
+              "emoji": "🚒",
+              "bin": 0,
+              "name": "the fire engine"
+            },
+            {
+              "emoji": "💙",
+              "bin": 1,
+              "name": "the blue heart"
+            }
+          ],
+          "explain": "Red things went together and blue things went together. The rule was colour!"
+        },
+        {
+          "mode": "choice",
+          "ask": "These are all red. Which one belongs with them?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🍓",
+              "🍒"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍌",
+              "label": "Banana",
+              "why": "A banana is yellow, not red."
+            },
+            {
+              "emoji": "🍅",
+              "label": "Tomato"
+            },
+            {
+              "emoji": "🥦",
+              "label": "Broccoli",
+              "why": "Broccoli is green, not red."
+            }
+          ],
+          "answer": 1,
+          "explain": "A tomato is red, so it fits the red group."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort by size. Big animals in one box, small animals in the other.",
+          "bins": [
+            {
+              "label": "Big",
+              "emoji": "🐘"
+            },
+            {
+              "label": "Small",
+              "emoji": "🐜"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🦒",
+              "bin": 0,
+              "name": "the giraffe"
+            },
+            {
+              "emoji": "🐭",
+              "bin": 1,
+              "name": "the mouse"
+            },
+            {
+              "emoji": "🐋",
+              "bin": 0,
+              "name": "the whale"
+            },
+            {
+              "emoji": "🐞",
+              "bin": 1,
+              "name": "the ladybird"
+            },
+            {
+              "emoji": "🦛",
+              "bin": 0,
+              "name": "the hippo"
+            },
+            {
+              "emoji": "🐝",
+              "bin": 1,
+              "name": "the bee"
+            }
+          ],
+          "explain": "Giraffes, whales and hippos are big. Mice, ladybirds and bees are small."
+        },
+        {
+          "mode": "choice",
+          "ask": "Someone sorted these shapes. What is the same about all of them?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "circle",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "square",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "triangle",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "star",
+                "color": "#E74C3C"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Same colour"
+            },
+            {
+              "label": "Same shape",
+              "why": "Look again: a circle, a square and a star are different shapes."
+            },
+            {
+              "label": "All round",
+              "why": "Only the circle is round. Look at the colour."
+            }
+          ],
+          "answer": 0,
+          "explain": "They are all red, so the rule was colour."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is the same about these?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "circle",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "circle",
+                "color": "#3498DB"
+              },
+              {
+                "shape": "circle",
+                "color": "#2ECC71"
+              },
+              {
+                "shape": "circle",
+                "color": "#F1C40F"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Same colour",
+              "why": "They are red, blue, green and yellow."
+            },
+            {
+              "label": "Same shape"
+            },
+            {
+              "label": "All have corners",
+              "why": "Circles do not have corners. Look at the shape of each one."
+            }
+          ],
+          "answer": 1,
+          "explain": "They are all circles, so the rule was shape."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does the lemon go?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍋"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🔴",
+              "label": "Red box",
+              "why": "A lemon is not red."
+            },
+            {
+              "emoji": "🟢",
+              "label": "Green box",
+              "why": "A lemon is not green."
+            },
+            {
+              "emoji": "🟡",
+              "label": "Yellow box"
+            }
+          ],
+          "answer": 2,
+          "explain": "A lemon is yellow, so it goes in the yellow box."
+        }
+      ]
+    },
+    {
+      "id": "sorting-rules-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Shapes and jobs",
+      "intro": {
+        "say": "We can sort by shape, or by what things can do. Let us find the rule!",
+        "icons": [
+          "🔺",
+          "🟦",
+          "🐟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Here the colours are all mixed up, but the rule is shape. Circles go together and squares go together.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔴",
+              "🟦",
+              "🟢",
+              "🟥",
+              "🔵",
+              "🟩"
+            ]
+          },
+          "caption": "Rule: shape"
+        },
+        {
+          "mode": "show",
+          "say": "We can sort by what things do. Birds and bees fly. Fish and octopuses swim.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦",
+              "🐝",
+              "🐟",
+              "🐙"
+            ]
+          },
+          "caption": "Fly | Swim"
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort by shape, not colour! Circles in one box, squares in the other.",
+          "bins": [
+            {
+              "label": "Circles",
+              "emoji": "⚪"
+            },
+            {
+              "label": "Squares",
+              "emoji": "⬜"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔴",
+              "bin": 0,
+              "name": "the red circle"
+            },
+            {
+              "emoji": "🟦",
+              "bin": 1,
+              "name": "the blue square"
+            },
+            {
+              "emoji": "🟢",
+              "bin": 0,
+              "name": "the green circle"
+            },
+            {
+              "emoji": "🟥",
+              "bin": 1,
+              "name": "the red square"
+            },
+            {
+              "emoji": "🔵",
+              "bin": 0,
+              "name": "the blue circle"
+            },
+            {
+              "emoji": "🟩",
+              "bin": 1,
+              "name": "the green square"
+            }
+          ],
+          "explain": "Each one went by its shape, whatever its colour.",
+          "hint": "Look at the corners. Squares have corners, circles do not."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort by what they do. Things that fly, and things that swim.",
+          "bins": [
+            {
+              "label": "Fly",
+              "emoji": "☁️"
+            },
+            {
+              "label": "Swim",
+              "emoji": "🌊"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🦅",
+              "bin": 0,
+              "name": "the eagle"
+            },
+            {
+              "emoji": "🐟",
+              "bin": 1,
+              "name": "the fish"
+            },
+            {
+              "emoji": "🐝",
+              "bin": 0,
+              "name": "the bee"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 1,
+              "name": "the shark"
+            },
+            {
+              "emoji": "✈️",
+              "bin": 0,
+              "name": "the plane"
+            },
+            {
+              "emoji": "🐙",
+              "bin": 1,
+              "name": "the octopus"
+            }
+          ],
+          "explain": "Eagles, bees and planes fly. Fish, sharks and octopuses swim."
+        },
+        {
+          "mode": "choice",
+          "ask": "All of these go together. What is the rule?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚗",
+              "🚌",
+              "🚲",
+              "🚂"
+            ]
+          },
+          "options": [
+            {
+              "label": "Red things",
+              "why": "A bus and a bike can be any colour."
+            },
+            {
+              "label": "Things we eat",
+              "why": "We cannot eat a car!"
+            },
+            {
+              "label": "Things that go"
+            }
+          ],
+          "answer": 2,
+          "explain": "Cars, buses, bikes and trains all move us along. They are things that go."
+        },
+        {
+          "mode": "choice",
+          "ask": "These shapes are all different colours. What is the same?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "triangle",
+                "color": "#3498DB"
+              },
+              {
+                "shape": "triangle",
+                "color": "#2ECC71"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Same colour",
+              "why": "They are red, blue and green."
+            },
+            {
+              "label": "3 sides each"
+            },
+            {
+              "label": "4 sides each",
+              "why": "Count the sides: one, two, three."
+            }
+          ],
+          "answer": 1,
+          "explain": "They are all triangles. Every triangle has 3 sides."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ana made two groups. What was her rule?",
+          "visual": {
+            "kind": "text",
+            "text": "🍎 🍌 🍇   |   🥕 🥦 🌽"
+          },
+          "options": [
+            {
+              "label": "Big and small",
+              "why": "The groups are not about size."
+            },
+            {
+              "label": "Fruit and vegetables"
+            },
+            {
+              "label": "Red and green",
+              "why": "There are many colours in each group."
+            }
+          ],
+          "answer": 1,
+          "explain": "Apples, bananas and grapes are fruit. Carrots, broccoli and corn are vegetables."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one goes in the group of things with wheels?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚗",
+              "🚲",
+              "🛹"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⛵",
+              "label": "Boat",
+              "why": "A boat floats on water. It does not have wheels."
+            },
+            {
+              "emoji": "🛴",
+              "label": "Scooter"
+            },
+            {
+              "emoji": "🎈",
+              "label": "Balloon",
+              "why": "A balloon floats in the air. It does not have wheels."
+            }
+          ],
+          "answer": 1,
+          "explain": "A scooter rolls along on wheels."
+        }
+      ]
+    },
+    {
+      "id": "sorting-rules-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Tricky rules",
+      "intro": {
+        "say": "Sometimes a rule has two parts, or is hidden. Let us be sorting detectives!",
+        "icons": [
+          "🕵️",
+          "🔴",
+          "🔺"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A rule can have two parts. Red AND square means it must be red, and it must be a square. Only one shape here fits both!",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "square",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "circle",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "square",
+                "color": "#3498DB"
+              }
+            ]
+          },
+          "caption": "Red AND square"
+        },
+        {
+          "mode": "show",
+          "say": "The same things can be sorted in different ways. These animals could be sorted by size, or by legs, or by where they live.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐘",
+              "🐔",
+              "🐟",
+              "🐜"
+            ]
+          },
+          "caption": "Many rules work!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is red AND a square?",
+          "options": [
+            {
+              "shape": "circle",
+              "color": "#E74C3C",
+              "why": "It is red, but it is a circle."
+            },
+            {
+              "shape": "square",
+              "color": "#3498DB",
+              "why": "It is a square, but it is blue."
+            },
+            {
+              "shape": "square",
+              "color": "#E74C3C"
+            },
+            {
+              "shape": "triangle",
+              "color": "#2ECC71",
+              "why": "It is green and a triangle."
+            }
+          ],
+          "answer": 2,
+          "explain": "This one is red and it is a square, so it fits both parts of the rule."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort by where they mostly live: on land, in water, or flying in the sky.",
+          "bins": [
+            {
+              "label": "Land",
+              "emoji": "🌳"
+            },
+            {
+              "label": "Water",
+              "emoji": "🌊"
+            },
+            {
+              "label": "Sky",
+              "emoji": "☁️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐄",
+              "bin": 0,
+              "name": "the cow"
+            },
+            {
+              "emoji": "🐬",
+              "bin": 1,
+              "name": "the dolphin"
+            },
+            {
+              "emoji": "🦅",
+              "bin": 2,
+              "name": "the eagle"
+            },
+            {
+              "emoji": "🐇",
+              "bin": 0,
+              "name": "the rabbit"
+            },
+            {
+              "emoji": "🐠",
+              "bin": 1,
+              "name": "the fish"
+            },
+            {
+              "emoji": "🦋",
+              "bin": 2,
+              "name": "the butterfly"
+            },
+            {
+              "emoji": "🐙",
+              "bin": 1,
+              "name": "the octopus"
+            }
+          ],
+          "explain": "Three boxes, one rule: where each animal lives."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam's rule is: animals with more than 2 legs. Which one does NOT fit?",
+          "options": [
+            {
+              "emoji": "🐕",
+              "label": "Dog",
+              "why": "A dog has 4 legs, so it fits."
+            },
+            {
+              "emoji": "🐔",
+              "label": "Hen"
+            },
+            {
+              "emoji": "🐜",
+              "label": "Ant",
+              "why": "An ant has 6 legs, so it fits."
+            },
+            {
+              "emoji": "🐈",
+              "label": "Cat",
+              "why": "A cat has 4 legs, so it fits."
+            }
+          ],
+          "answer": 1,
+          "explain": "A hen has only 2 legs, so it does not fit the rule."
+        },
+        {
+          "mode": "choice",
+          "ask": "Look at the two groups of numbers. What is the rule?",
+          "visual": {
+            "kind": "text",
+            "text": "A: 2, 5, 8    B: 12, 15, 19"
+          },
+          "options": [
+            {
+              "label": "A is odd, B is even",
+              "why": "8 is in group A, and 8 is even."
+            },
+            {
+              "label": "A is bigger",
+              "why": "The numbers in A are smaller."
+            },
+            {
+              "label": "A is less than 10"
+            }
+          ],
+          "answer": 2,
+          "explain": "Every number in group A is less than 10, and every number in group B is more than 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia made two groups. What was her rule?",
+          "visual": {
+            "kind": "text",
+            "text": "🍎 🚒 🍓   |   🍌 🌻 🧀"
+          },
+          "options": [
+            {
+              "label": "Food and not food",
+              "why": "A fire engine is not food, but it is with the apple."
+            },
+            {
+              "label": "Big and small",
+              "why": "A fire engine and a strawberry are very different sizes."
+            },
+            {
+              "label": "Red and yellow"
+            }
+          ],
+          "answer": 2,
+          "explain": "Apple, fire engine and strawberry are red. Banana, sunflower and cheese are yellow."
+        },
+        {
+          "mode": "order",
+          "ask": "Sort by size in a line: from the smallest to the biggest.",
+          "items": [
+            {
+              "emoji": "🐜",
+              "label": "Ant"
+            },
+            {
+              "emoji": "🐭",
+              "label": "Mouse"
+            },
+            {
+              "emoji": "🐕",
+              "label": "Dog"
+            },
+            {
+              "emoji": "🐘",
+              "label": "Elephant"
+            }
+          ],
+          "explain": "Ant, mouse, dog, elephant: each one is bigger than the one before."
+        }
+      ]
+    }
+  ]
+}

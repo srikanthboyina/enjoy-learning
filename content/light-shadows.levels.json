@@ -1,0 +1,602 @@
+{
+  "topicId": "light-shadows",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "light-shadows-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Light makers",
+      "intro": {
+        "say": "We need light to see. Some things make their own light!",
+        "icons": [
+          "☀️",
+          "💡",
+          "🔦"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The Sun makes light. So do lamps, torches and fires. Things that make light are called light sources.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "💡",
+              "🔦",
+              "🔥"
+            ],
+            "size": "lg"
+          },
+          "caption": "Light sources"
+        },
+        {
+          "mode": "show",
+          "say": "In the dark we can't see much. Switch on a torch, and now we can see!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌑",
+              "➡️",
+              "🔦",
+              "👀"
+            ],
+            "size": "lg"
+          },
+          "caption": "Light helps us see"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one makes light?",
+          "options": [
+            {
+              "emoji": "🪨",
+              "label": "Rock",
+              "why": "A rock doesn't glow. Try again!"
+            },
+            {
+              "emoji": "💡",
+              "label": "Lamp"
+            },
+            {
+              "emoji": "🧸",
+              "label": "Teddy",
+              "why": "A teddy doesn't glow. Try again!"
+            }
+          ],
+          "answer": 1,
+          "explain": "A lamp makes its own light."
+        },
+        {
+          "mode": "choice",
+          "ask": "What lights up the sky in the daytime?",
+          "options": [
+            {
+              "emoji": "☀️",
+              "label": "The Sun"
+            },
+            {
+              "emoji": "☁️",
+              "label": "A cloud",
+              "why": "Clouds don't make light. Something bright shines behind them."
+            },
+            {
+              "emoji": "🌈",
+              "label": "A rainbow",
+              "why": "A rainbow needs sunlight to appear."
+            }
+          ],
+          "answer": 0,
+          "explain": "The Sun is our biggest light source."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it make its own light?",
+          "bins": [
+            {
+              "label": "Makes light",
+              "emoji": "✨"
+            },
+            {
+              "label": "No light",
+              "emoji": "🌑"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "☀️",
+              "bin": 0,
+              "name": "Sun"
+            },
+            {
+              "emoji": "🔦",
+              "bin": 0,
+              "name": "torch"
+            },
+            {
+              "emoji": "🕯️",
+              "bin": 0,
+              "name": "candle"
+            },
+            {
+              "emoji": "📚",
+              "bin": 1,
+              "name": "books"
+            },
+            {
+              "emoji": "⚽",
+              "bin": 1,
+              "name": "ball"
+            },
+            {
+              "emoji": "🧸",
+              "bin": 1,
+              "name": "teddy"
+            }
+          ],
+          "explain": "The Sun, torches and candles make light. Books, balls and teddies don't."
+        },
+        {
+          "mode": "choice",
+          "ask": "It's dark in the tent at night. What helps you see?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⛺",
+              "🌙"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🧦",
+              "label": "Sock",
+              "why": "A sock can't make light."
+            },
+            {
+              "emoji": "🍪",
+              "label": "Cookie",
+              "why": "A cookie is tasty, but it can't make light."
+            },
+            {
+              "emoji": "🔦",
+              "label": "Torch"
+            }
+          ],
+          "answer": 2,
+          "explain": "A torch makes light so you can see."
+        },
+        {
+          "mode": "choice",
+          "ask": "We see things with our...",
+          "options": [
+            {
+              "emoji": "👀",
+              "label": "Eyes"
+            },
+            {
+              "emoji": "👂",
+              "label": "Ears",
+              "why": "Ears are for hearing."
+            }
+          ],
+          "answer": 0,
+          "explain": "Light goes into our eyes so we can see."
+        }
+      ]
+    },
+    {
+      "id": "light-shadows-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Making shadows",
+      "intro": {
+        "say": "When something blocks light, a dark shape appears behind it. That's a shadow!",
+        "icons": [
+          "🔦",
+          "✋",
+          "⬛"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Shine a torch at a wall. Put your hand in the way. Your hand blocks the light and makes a shadow!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔦",
+              "➡️",
+              "✋",
+              "⬛"
+            ],
+            "size": "lg"
+          },
+          "caption": "Blocked light = shadow"
+        },
+        {
+          "mode": "show",
+          "say": "Light travels in straight lines. It can't bend around your hand, so the space behind it stays dark.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔦",
+              "➖",
+              "➖",
+              "✋"
+            ]
+          },
+          "caption": "Light goes straight"
+        },
+        {
+          "mode": "choice",
+          "ask": "What do you need to make a shadow?",
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "Just water",
+              "why": "Water alone won't make a shadow."
+            },
+            {
+              "emoji": "🔦",
+              "label": "Light and a blocker"
+            },
+            {
+              "emoji": "📢",
+              "label": "A loud noise",
+              "why": "Noise doesn't make shadows."
+            }
+          ],
+          "answer": 1,
+          "explain": "A shadow needs light and something to block it."
+        },
+        {
+          "mode": "choice",
+          "ask": "You stand in the sunshine. Where does your shadow fall?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "🧍"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬛",
+              "label": "Away from the Sun"
+            },
+            {
+              "emoji": "☀️",
+              "label": "Towards the Sun",
+              "why": "Your body blocks the sunlight, so the shadow is on the other side."
+            }
+          ],
+          "answer": 0,
+          "explain": "Your body blocks the sunlight, so the shadow falls on the side away from the Sun."
+        },
+        {
+          "mode": "choice",
+          "ask": "The room is totally dark. Can you make a shadow?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌑"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Yes",
+              "why": "Shadows need light to block."
+            },
+            {
+              "emoji": "❌",
+              "label": "No"
+            }
+          ],
+          "answer": 1,
+          "explain": "With no light at all, there is nothing to block, so there's no shadow."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does light go through it, or does it block light?",
+          "bins": [
+            {
+              "label": "Lets light through",
+              "emoji": "✨"
+            },
+            {
+              "label": "Blocks light",
+              "emoji": "⬛"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🪟",
+              "bin": 0,
+              "name": "window glass"
+            },
+            {
+              "emoji": "👓",
+              "bin": 0,
+              "name": "glasses"
+            },
+            {
+              "emoji": "💧",
+              "bin": 0,
+              "name": "clear water"
+            },
+            {
+              "emoji": "🧱",
+              "bin": 1,
+              "name": "brick"
+            },
+            {
+              "emoji": "📚",
+              "bin": 1,
+              "name": "book"
+            },
+            {
+              "emoji": "🌳",
+              "bin": 1,
+              "name": "tree"
+            }
+          ],
+          "explain": "Clear things let light through. Things that block light make shadows."
+        },
+        {
+          "mode": "choice",
+          "ask": "A cat stands in front of a lamp. What shape is its shadow?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💡",
+              "🐈"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🟦",
+              "label": "Square",
+              "why": "The shadow matches the thing blocking the light."
+            },
+            {
+              "emoji": "⭐",
+              "label": "Star",
+              "why": "The shadow matches the thing blocking the light."
+            },
+            {
+              "emoji": "🐈",
+              "label": "Cat shape"
+            }
+          ],
+          "answer": 2,
+          "explain": "A shadow has the same outline as the thing blocking the light."
+        }
+      ]
+    },
+    {
+      "id": "light-shadows-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Shadows all day",
+      "intro": {
+        "say": "Shadows change as the Sun moves across the sky. And some bright things don't make light at all!",
+        "icons": [
+          "🌅",
+          "🌕",
+          "🪞"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "In the morning and evening, the Sun is low, so shadows are long. At midday, the Sun is high, so shadows are short.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌅",
+              "🧍",
+              "➖",
+              "➖",
+              "➖"
+            ]
+          },
+          "caption": "Low Sun = long shadow"
+        },
+        {
+          "mode": "show",
+          "say": "The Moon looks bright, but it makes no light of its own. It reflects light from the Sun, like a mirror does.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "➡️",
+              "🌕",
+              "➡️",
+              "👀"
+            ]
+          },
+          "caption": "The Moon reflects sunlight"
+        },
+        {
+          "mode": "choice",
+          "ask": "When is your shadow the shortest?",
+          "options": [
+            {
+              "emoji": "🌅",
+              "label": "Morning",
+              "why": "In the morning the Sun is low, so shadows are long."
+            },
+            {
+              "emoji": "☀️",
+              "label": "Midday"
+            },
+            {
+              "emoji": "🌇",
+              "label": "Evening",
+              "why": "In the evening the Sun is low, so shadows are long."
+            }
+          ],
+          "answer": 1,
+          "explain": "At midday the Sun is high in the sky, so shadows are short."
+        },
+        {
+          "mode": "choice",
+          "ask": "Does the Moon make its own light?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌕"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✨",
+              "label": "Yes, it glows",
+              "why": "The Moon has no light of its own."
+            },
+            {
+              "emoji": "🌕",
+              "label": "No, it reflects sunlight"
+            }
+          ],
+          "answer": 1,
+          "explain": "The Moon shines because sunlight bounces off it."
+        },
+        {
+          "mode": "sort",
+          "ask": "Light source or reflector?",
+          "bins": [
+            {
+              "label": "Makes light",
+              "emoji": "✨"
+            },
+            {
+              "label": "Reflects light",
+              "emoji": "🪞"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "☀️",
+              "bin": 0,
+              "name": "Sun"
+            },
+            {
+              "emoji": "🔥",
+              "bin": 0,
+              "name": "fire"
+            },
+            {
+              "emoji": "🕯️",
+              "bin": 0,
+              "name": "candle"
+            },
+            {
+              "emoji": "💡",
+              "bin": 0,
+              "name": "lamp"
+            },
+            {
+              "emoji": "🌕",
+              "bin": 1,
+              "name": "Moon"
+            },
+            {
+              "emoji": "🪞",
+              "bin": 1,
+              "name": "mirror"
+            }
+          ],
+          "explain": "The Sun, fire, candles and lamps make light. The Moon and mirrors only bounce it back."
+        },
+        {
+          "mode": "choice",
+          "ask": "You move a torch closer to your toy. What happens to the shadow?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔦",
+              "🦖"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬛",
+              "label": "It gets bigger"
+            },
+            {
+              "emoji": "▪️",
+              "label": "It gets smaller",
+              "why": "Closer to the light, the toy blocks more light."
+            },
+            {
+              "emoji": "❌",
+              "label": "It disappears",
+              "why": "The toy still blocks the light."
+            }
+          ],
+          "answer": 0,
+          "explain": "Closer to the light, the toy blocks more light, so the shadow grows."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from the longest shadow to the shortest shadow.",
+          "items": [
+            {
+              "emoji": "🌅",
+              "label": "Early morning"
+            },
+            {
+              "emoji": "🕘",
+              "label": "Mid-morning"
+            },
+            {
+              "emoji": "☀️",
+              "label": "Midday"
+            }
+          ],
+          "explain": "As the Sun climbs higher towards midday, shadows get shorter."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why is it shady under a tree on a sunny day?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "🌳"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🥤",
+              "label": "Trees drink light",
+              "why": "Trees don't drink light!"
+            },
+            {
+              "emoji": "🌙",
+              "label": "It's night there",
+              "why": "It's daytime everywhere around the tree."
+            },
+            {
+              "emoji": "🌳",
+              "label": "Leaves block sunlight"
+            }
+          ],
+          "answer": 2,
+          "explain": "The leaves block the sunlight, making a shadow underneath."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+{
+  "topicId": "times-tables",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "times-tables-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Counting in twos",
+      "intro": {
+        "say": "The two times table is counting in twos. Socks, shoes and eyes come in twos!",
+        "icons": [
+          "✖️",
+          "🧦",
+          "👀"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "One pair of socks is 2. Two pairs is 4. Three pairs is 6. We count 2, 4, 6!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🧦"
+              },
+              {
+                "count": 2,
+                "emoji": "🧦"
+              },
+              {
+                "count": 2,
+                "emoji": "🧦"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 × 2 = 6"
+        },
+        {
+          "mode": "show",
+          "say": "On the number line we hop 2 each time. 4 hops of 2 lands on 8. So 4 twos are 8.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 2,
+            "hops": 4
+          },
+          "caption": "4 × 2 = 8"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many shoes? Count in twos.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "👟"
+              },
+              {
+                "count": 2,
+                "emoji": "👟"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "That is one pair. Count both."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "3",
+              "why": "Count in twos: 2, 4."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two pairs of shoes: two, four."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many mittens? Count in twos.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🧤"
+              },
+              {
+                "count": 2,
+                "emoji": "🧤"
+              },
+              {
+                "count": 2,
+                "emoji": "🧤"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "5",
+              "why": "Count in twos: 2, 4, 6."
+            },
+            {
+              "label": "3",
+              "why": "That is the number of pairs."
+            }
+          ],
+          "answer": 0,
+          "explain": "Three pairs: two, four, six."
+        },
+        {
+          "mode": "choice",
+          "ask": "We hopped 5 times by 2. Where did we land?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 2,
+            "hops": 5
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Each hop is 2, not 1."
+            },
+            {
+              "label": "8",
+              "why": "Count the hops again."
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "answer": 2,
+          "explain": "Five hops of two: 2, 4, 6, 8, 10."
+        },
+        {
+          "mode": "order",
+          "ask": "Count in twos. Put these in order.",
+          "items": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "explain": "Two, four, six, eight, ten. Each is 2 more."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes next? 2, 4, 6, ...",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "2",
+              "4",
+              "6",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "We jump 2 each time."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "10",
+              "why": "That skips a jump."
+            }
+          ],
+          "answer": 1,
+          "explain": "Six and two more is eight."
+        }
+      ]
+    },
+    {
+      "id": "times-tables-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Fives and tens",
+      "intro": {
+        "say": "Count in fives with fingers on a hand, and in tens with fingers on two hands!",
+        "icons": [
+          "✖️",
+          "🖐️",
+          "🔟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "One hand has 5 fingers. Count the hands in fives: 5, 10, 15. Three fives are 15!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "☝️"
+              },
+              {
+                "count": 5,
+                "emoji": "☝️"
+              },
+              {
+                "count": 5,
+                "emoji": "☝️"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 × 5 = 15"
+        },
+        {
+          "mode": "show",
+          "say": "Hop in tens: 10, 20, 30, 40. Four tens are forty. Tens always end in zero!",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 100,
+            "step": 10,
+            "hops": 4
+          },
+          "caption": "4 × 10 = 40"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many fingers on 2 hands?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖐️",
+              "🖐️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "Each hand has 5 fingers."
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "12",
+              "why": "Count in fives: 5, 10."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two fives make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "We hopped 6 times by 5. Where did we land?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 50,
+            "step": 5,
+            "hops": 6
+          },
+          "options": [
+            {
+              "label": "30"
+            },
+            {
+              "label": "11",
+              "why": "Each hop is 5, not 1."
+            },
+            {
+              "label": "35",
+              "why": "Count the hops again: there are 6."
+            }
+          ],
+          "answer": 0,
+          "explain": "5, 10, 15, 20, 25, 30. Six fives are thirty."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 3 times 10?",
+          "visual": {
+            "kind": "text",
+            "text": "3 × 10 = ?"
+          },
+          "options": [
+            {
+              "label": "13",
+              "why": "Three tens, count in tens."
+            },
+            {
+              "label": "30"
+            },
+            {
+              "label": "300",
+              "why": "Count: ten, twenty, thirty."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten, twenty, thirty. Three tens are thirty."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes next? 5, 10, 15, 20, ...",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "5",
+              "10",
+              "15",
+              "20",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "21",
+              "why": "We jump 5 each time."
+            },
+            {
+              "label": "30",
+              "why": "That skips a jump."
+            },
+            {
+              "label": "25"
+            }
+          ],
+          "answer": 2,
+          "explain": "Twenty and five more is twenty five."
+        },
+        {
+          "mode": "order",
+          "ask": "Count in tens. Put them in order.",
+          "items": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "30"
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "50"
+            },
+            {
+              "label": "60"
+            }
+          ],
+          "explain": "Ten, twenty, thirty, forty, fifty, sixty."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 4 times 5?",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 5,
+            "emoji": "⭐"
+          },
+          "options": [
+            {
+              "label": "20"
+            },
+            {
+              "label": "9",
+              "why": "We need 4 groups of 5, not 4 plus 5."
+            },
+            {
+              "label": "15",
+              "why": "That is three fives. Add one more five."
+            }
+          ],
+          "answer": 0,
+          "explain": "5, 10, 15, 20. Four fives are twenty."
+        }
+      ]
+    },
+    {
+      "id": "times-tables-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Times table facts",
+      "intro": {
+        "say": "Let us practise twos, fives and tens, and spot clever patterns!",
+        "icons": [
+          "✖️",
+          "🧠",
+          "⚡"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Patterns help! The 2s are all even. The 10s always end in 0. The 5s end in 5 or 0.",
+          "visual": {
+            "kind": "text",
+            "text": "2, 4, 6 · 5, 10, 15 · 10, 20, 30"
+          },
+          "caption": "Twos, fives, tens"
+        },
+        {
+          "mode": "show",
+          "say": "7 times 2 is 7 twos. Double 7 is 14. So 7 times 2 is 14.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 20,
+            "step": 2,
+            "hops": 7
+          },
+          "caption": "7 × 2 = 14"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 6 times 5?",
+          "visual": {
+            "kind": "text",
+            "text": "6 × 5 = ?"
+          },
+          "options": [
+            {
+              "label": "25",
+              "why": "That is five fives. One more five."
+            },
+            {
+              "label": "30"
+            },
+            {
+              "label": "11",
+              "why": "Six plus five is eleven, but we need six fives."
+            }
+          ],
+          "answer": 1,
+          "explain": "Count six fives: 5, 10, 15, 20, 25, 30."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 8 times 10?",
+          "visual": {
+            "kind": "text",
+            "text": "8 × 10 = ?"
+          },
+          "options": [
+            {
+              "label": "18",
+              "why": "Count eight tens, not eight plus ten."
+            },
+            {
+              "label": "80"
+            },
+            {
+              "label": "70",
+              "why": "That is seven tens."
+            }
+          ],
+          "answer": 1,
+          "explain": "Eight tens are eighty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is not in the 5 times table?",
+          "options": [
+            {
+              "label": "15",
+              "why": "15 ends in 5, so it is in the fives."
+            },
+            {
+              "label": "25",
+              "why": "25 ends in 5, so it is in the fives."
+            },
+            {
+              "label": "32"
+            },
+            {
+              "label": "40",
+              "why": "40 ends in 0, so it is in the fives."
+            }
+          ],
+          "answer": 2,
+          "explain": "Fives always end in 5 or 0, and 32 ends in 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "What number is missing?",
+          "visual": {
+            "kind": "text",
+            "text": "? × 5 = 35"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Five fives is 25."
+            },
+            {
+              "label": "6",
+              "why": "Six fives is 30."
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "answer": 2,
+          "explain": "Seven fives: 5, 10, 15, 20, 25, 30, 35.",
+          "hint": "Count in fives up to 35."
+        },
+        {
+          "mode": "choice",
+          "ask": "9 times 2. How many?",
+          "visual": {
+            "kind": "text",
+            "text": "9 × 2 = ?"
+          },
+          "options": [
+            {
+              "label": "18"
+            },
+            {
+              "label": "11",
+              "why": "Nine plus two is eleven. We need nine twos."
+            },
+            {
+              "label": "16",
+              "why": "That is eight twos."
+            }
+          ],
+          "answer": 0,
+          "explain": "Double 9 is 18."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it in the 10 times table or not?",
+          "bins": [
+            {
+              "label": "In the 10s",
+              "emoji": "🔟"
+            },
+            {
+              "label": "Not in the 10s",
+              "emoji": "❌"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔟",
+              "bin": 0,
+              "name": "ten"
+            },
+            {
+              "emoji": "2️⃣",
+              "bin": 1,
+              "name": "two"
+            },
+            {
+              "emoji": "5️⃣",
+              "bin": 1,
+              "name": "five"
+            },
+            {
+              "emoji": "💯",
+              "bin": 0,
+              "name": "one hundred"
+            },
+            {
+              "emoji": "7️⃣",
+              "bin": 1,
+              "name": "seven"
+            }
+          ],
+          "explain": "Numbers in the tens table end in zero, like ten and one hundred."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam has 5 bags with 10 marbles in each. How many marbles?",
+          "visual": {
+            "kind": "array",
+            "rows": 5,
+            "cols": 10,
+            "emoji": "🔵"
+          },
+          "options": [
+            {
+              "label": "15",
+              "why": "Five bags of ten means count in tens."
+            },
+            {
+              "label": "50"
+            },
+            {
+              "label": "60",
+              "why": "Count five tens: 10, 20, 30, 40, 50."
+            }
+          ],
+          "answer": 1,
+          "explain": "Five tens are fifty."
+        }
+      ]
+    }
+  ]
+}

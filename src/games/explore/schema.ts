@@ -10,6 +10,9 @@ export const SHAPES = [
 const ShapeSchema = z.enum(SHAPES);
 const Color = z.string().regex(/^#[0-9a-fA-F]{6}$/);
 const Emoji = z.string().min(1);
+const Fraction = z
+  .object({ parts: z.number().int().min(1).max(12), shaded: z.number().int().min(0).max(12), shape: z.enum(['circle', 'bar']).optional() })
+  .refine((f) => f.shaded <= f.parts, { message: 'shaded must be <= parts' });
 const ClockTime = z.object({ hour: z.number().int().min(1).max(12), minute: z.number().int().min(0).max(59) });
 
 /** Pictures that explain or pose a question. */
@@ -36,6 +39,31 @@ export const VisualSchema = z.discriminatedUnion('kind', [
   /** emoji drawn at different sizes (scale 0.4–2) */
   z.object({ kind: z.literal('sizes'), items: z.array(z.object({ emoji: Emoji, scale: z.number().min(0.3).max(2.2) })).min(2).max(4) }),
   /** a number line with hops, for skip counting */
+  /** one or two ten frames (dots, or an emoji in each filled box) */
+  z.object({ kind: z.literal('tenframe'), count: z.number().int().min(0).max(20), emoji: Emoji.optional() }),
+  /** base-ten blocks: tall rods of ten and small ones */
+  z.object({ kind: z.literal('placevalue'), tens: z.number().int().min(0).max(9), ones: z.number().int().min(0).max(9) }),
+  /** coins drawn as circles showing their value, e.g. [10, 5, 1] */
+  z.object({ kind: z.literal('coins'), coins: z.array(z.number().int().min(1).max(100)).min(1).max(10) }),
+  /** a bar graph: one bar per row */
+  z.object({
+    kind: z.literal('bars'),
+    bars: z.array(z.object({ emoji: Emoji, value: z.number().int().min(0).max(10), label: z.string().optional() })).min(2).max(5),
+  }),
+  /** tally marks, bundled in fives */
+  z.object({ kind: z.literal('tally'), count: z.number().int().min(1).max(20) }),
+  /** rows × cols of the same thing (multiplication arrays) */
+  z.object({ kind: z.literal('array'), rows: z.number().int().min(1).max(6), cols: z.number().int().min(1).max(10), emoji: Emoji }),
+  /** a thing measured against a ruler, `length` units long */
+  z.object({ kind: z.literal('ruler'), length: z.number().int().min(1).max(12), emoji: Emoji, color: Color.optional() }),
+  /** a thermometer filled to `level` (0 = freezing … 10 = very hot) */
+  z.object({ kind: z.literal('thermometer'), level: z.number().int().min(0).max(10) }),
+  /** a balance scale: which side is heavier */
+  z.object({ kind: z.literal('balance'), left: Emoji, right: Emoji, heavier: z.enum(['left', 'right', 'same']) }),
+  /** a shape cut into equal parts, some shaded */
+  z.object({ kind: z.literal('fraction'), ...{ parts: z.number().int().min(1).max(12), shaded: z.number().int().min(0).max(12) }, shape: z.enum(['circle', 'bar']).optional() }),
+  /** the seven days, Monday first; `highlight` is 0–6 */
+  z.object({ kind: z.literal('week'), highlight: z.number().int().min(0).max(6).optional() }),
   z.object({
     kind: z.literal('numberline'),
     from: z.number().int().min(0),
@@ -54,14 +82,15 @@ export const OptionSchema = z
     shape: ShapeSchema.optional(),
     color: Color.optional(),
     clock: ClockTime.optional(),
+    fraction: Fraction.optional(),
     /** spoken when this option is chosen by mistake */
     why: z.string().optional(),
   })
-  .refine((o) => o.label || o.emoji || o.shape || o.clock, { message: 'an option needs a label, emoji, shape or clock' });
+  .refine((o) => o.label || o.emoji || o.shape || o.clock || o.fraction, { message: 'an option needs a label, emoji, shape, clock or fraction' });
 export type Option = z.infer<typeof OptionSchema>;
 
 const Common = {
-  /** icons shown in Ollie's speech bubble */
+  /** icons shown in Ellie's speech bubble */
   icons: z.array(IconSchema).min(1).max(5).optional(),
   /** spoken when the 💡 help button is pressed */
   hint: z.string().optional(),

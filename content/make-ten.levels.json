@@ -1,0 +1,514 @@
+{
+  "topicId": "make-ten",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "make-ten-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Fill the ten frame",
+      "intro": {
+        "say": "A ten frame has 10 boxes. Let’s find out how many more make ten!",
+        "icons": [
+          "🔟",
+          "🟩"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This is a ten frame. Two rows of five boxes make ten.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 10
+          },
+          "caption": "5 + 5 = 10"
+        },
+        {
+          "mode": "show",
+          "say": "7 boxes are full. Count the empty ones: 1, 2, 3. So 7 and 3 make ten!",
+          "visual": {
+            "kind": "tenframe",
+            "count": 7
+          },
+          "caption": "7 + 3 = 10"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many more to fill the frame?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 8
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "8",
+              "why": "8 boxes are full. Count the empty boxes."
+            },
+            {
+              "label": "3",
+              "why": "Count the empty boxes again."
+            }
+          ],
+          "answer": 0,
+          "explain": "8 and 2 more make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many more chicks to fill the frame?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 6,
+            "emoji": "🐥"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Count the empty boxes again."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5",
+              "why": "Count the empty boxes again."
+            }
+          ],
+          "answer": 1,
+          "explain": "6 and 4 make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many more apples make ten?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 9,
+            "emoji": "🍎"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Only one box is empty."
+            },
+            {
+              "label": "1"
+            }
+          ],
+          "answer": 1,
+          "explain": "9 and 1 make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "5 and how many more make ten?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 5
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count the empty boxes in the bottom row."
+            },
+            {
+              "label": "6",
+              "why": "Count the empty boxes again."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "5 and 5 make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "3 boxes are full. How many are empty?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 3,
+            "emoji": "🐞"
+          },
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "3",
+              "why": "3 boxes are full. Count the empty ones."
+            },
+            {
+              "label": "6",
+              "why": "Count the empty boxes again."
+            }
+          ],
+          "answer": 0,
+          "explain": "3 and 7 make ten."
+        }
+      ]
+    },
+    {
+      "id": "make-ten-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Ten pairs",
+      "intro": {
+        "say": "Some number pairs are best friends because they make ten together!",
+        "icons": [
+          "🔟",
+          "🤝"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "6 and 4 make ten. So do 4 and 6! Ten friends come in pairs.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🌟"
+              },
+              {
+                "count": 4,
+                "emoji": "🌟"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "6 + 4 = 10"
+        },
+        {
+          "mode": "show",
+          "say": "Here are all the ten pairs: 1 and 9, 2 and 8, 3 and 7, 4 and 6, and 5 and 5.",
+          "visual": {
+            "kind": "text",
+            "text": "1+9  2+8  3+7  4+6  5+5"
+          },
+          "caption": "Ten pairs"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 3’s ten friend?",
+          "visual": {
+            "kind": "text",
+            "text": "3 + ? = 10"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "3 plus 6 is 9. One more!"
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "8",
+              "why": "3 plus 8 is 11. Too many!"
+            }
+          ],
+          "answer": 1,
+          "explain": "3 and 7 make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which pair makes ten?",
+          "options": [
+            {
+              "label": "4 + 5",
+              "why": "4 plus 5 is 9."
+            },
+            {
+              "label": "3 + 6",
+              "why": "3 plus 6 is 9."
+            },
+            {
+              "label": "2 + 8"
+            }
+          ],
+          "answer": 2,
+          "explain": "2 and 8 make ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 1’s ten friend?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 1,
+            "emoji": "🎈"
+          },
+          "options": [
+            {
+              "label": "9"
+            },
+            {
+              "label": "10",
+              "why": "1 plus 10 is 11. Too many!"
+            },
+            {
+              "label": "8",
+              "why": "1 plus 8 is 9. One more!"
+            }
+          ],
+          "answer": 0,
+          "explain": "1 and 9 make ten."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does the pair make ten?",
+          "bins": [
+            {
+              "label": "Makes 10",
+              "emoji": "🔟"
+            },
+            {
+              "label": "Not 10",
+              "emoji": "🙅"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "7+3",
+              "bin": 0,
+              "name": "7 plus 3"
+            },
+            {
+              "emoji": "5+4",
+              "bin": 1,
+              "name": "5 plus 4"
+            },
+            {
+              "emoji": "6+4",
+              "bin": 0,
+              "name": "6 plus 4"
+            },
+            {
+              "emoji": "2+7",
+              "bin": 1,
+              "name": "2 plus 7"
+            },
+            {
+              "emoji": "9+1",
+              "bin": 0,
+              "name": "9 plus 1"
+            },
+            {
+              "emoji": "5+5",
+              "bin": 0,
+              "name": "5 plus 5"
+            },
+            {
+              "emoji": "3+8",
+              "bin": 1,
+              "name": "3 plus 8"
+            }
+          ],
+          "explain": "Ten pairs are 1 and 9, 2 and 8, 3 and 7, 4 and 6, and 5 and 5."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have 10 fingers. 4 are hiding. How many can you see?",
+          "visual": {
+            "kind": "text",
+            "text": "4 + ? = 10"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "4 plus 5 is 9."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "4",
+              "why": "4 plus 4 is 8."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 and 6 make ten, so you can see 6."
+        }
+      ]
+    },
+    {
+      "id": "make-ten-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Make ten to add",
+      "intro": {
+        "say": "Here is a super trick! To add 8 plus 5, first fill up to ten, then add what is left.",
+        "icons": [
+          "🔟",
+          "🦸",
+          "➕"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "8 plus 5. Move 2 from the 5 to fill 8 up to 10. 3 are left over. 10 plus 3 is 13!",
+          "visual": {
+            "kind": "tenframe",
+            "count": 13
+          },
+          "caption": "8 + 5 = 10 + 3 = 13"
+        },
+        {
+          "mode": "show",
+          "say": "9 plus 6. 9 needs 1 to make ten. The 6 gives 1 and keeps 5. 10 plus 5 is 15.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 15
+          },
+          "caption": "9 + 6 = 10 + 5 = 15"
+        },
+        {
+          "mode": "choice",
+          "ask": "Use make ten. What is 9 plus 4?",
+          "visual": {
+            "kind": "text",
+            "text": "9 + 4 = ?"
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "9 plus 1 is 10. Then add the 3 that are left."
+            },
+            {
+              "label": "13"
+            },
+            {
+              "label": "14",
+              "why": "9 plus 1 is 10, and only 3 are left."
+            }
+          ],
+          "answer": 1,
+          "explain": "9 plus 1 makes 10, and 3 are left. 10 plus 3 is 13."
+        },
+        {
+          "mode": "choice",
+          "ask": "8 plus 6. How many does 8 need to make ten?",
+          "visual": {
+            "kind": "text",
+            "text": "8 + 6"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "8 needs only a few to fill the frame."
+            },
+            {
+              "label": "4",
+              "why": "8 plus 4 is 12. Too many!"
+            },
+            {
+              "label": "2"
+            }
+          ],
+          "answer": 2,
+          "explain": "8 plus 2 is 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "8 plus 6 is the same as 10 plus what?",
+          "visual": {
+            "kind": "text",
+            "text": "8 + 6 = 10 + ?"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "2",
+              "why": "2 went to make ten. What is left of the 6?"
+            },
+            {
+              "label": "6",
+              "why": "The 6 gave 2 away to make ten."
+            }
+          ],
+          "answer": 0,
+          "explain": "The 6 gives 2 to the 8, so 4 are left. 10 plus 4 is 14."
+        },
+        {
+          "mode": "choice",
+          "ask": "7 apples and 5 apples. Make ten first! How many altogether?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 7,
+                "emoji": "🍎"
+              },
+              {
+                "count": 5,
+                "emoji": "🍎"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "11",
+              "why": "7 plus 3 is 10, then 2 more."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "13",
+              "why": "7 plus 3 is 10, then only 2 more."
+            }
+          ],
+          "answer": 1,
+          "explain": "7 plus 3 is 10, then 2 more make 12."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the same as 8 plus 7?",
+          "visual": {
+            "kind": "text",
+            "text": "8 + 7"
+          },
+          "options": [
+            {
+              "label": "10 + 7",
+              "why": "8 took 2 from the 7, so only 5 are left."
+            },
+            {
+              "label": "10 + 5"
+            },
+            {
+              "label": "10 + 3",
+              "why": "8 took 2 from the 7, so 5 are left."
+            }
+          ],
+          "answer": 1,
+          "explain": "8 plus 2 is 10, and 5 are left. That makes 15."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the steps for 9 plus 3 in order.",
+          "items": [
+            {
+              "label": "9 + 3"
+            },
+            {
+              "label": "9 + 1 = 10"
+            },
+            {
+              "label": "10 + 2 = 12"
+            }
+          ],
+          "explain": "First 9 plus 1 makes ten, then 2 more make 12."
+        }
+      ]
+    }
+  ]
+}

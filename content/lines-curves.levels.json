@@ -1,0 +1,562 @@
+{
+  "topicId": "lines-curves",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "lines-curves-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Straight or curvy?",
+      "intro": {
+        "say": "Some lines are straight like a ruler. Some lines are curvy like a snake!",
+        "icons": [
+          "📏",
+          "🐍",
+          "〰️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A straight line goes one way and never bends, like the edge of a ruler.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📏",
+              "✏️"
+            ],
+            "size": "lg"
+          },
+          "caption": "straight"
+        },
+        {
+          "mode": "show",
+          "say": "A curved line bends round smoothly, like a snake or a rainbow.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐍",
+              "🌈"
+            ],
+            "size": "lg"
+          },
+          "caption": "curved"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one has a curvy shape?",
+          "options": [
+            {
+              "label": "rainbow",
+              "emoji": "🌈"
+            },
+            {
+              "label": "pencil",
+              "emoji": "✏️",
+              "why": "A pencil is straight."
+            },
+            {
+              "label": "ruler",
+              "emoji": "📏",
+              "why": "A ruler is straight."
+            }
+          ],
+          "answer": 0,
+          "explain": "A rainbow bends round in a curve."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is straight?",
+          "options": [
+            {
+              "label": "snake",
+              "emoji": "🐍",
+              "why": "A snake bends and wiggles."
+            },
+            {
+              "label": "banana",
+              "emoji": "🍌",
+              "why": "A banana is curved."
+            },
+            {
+              "label": "ruler",
+              "emoji": "📏"
+            }
+          ],
+          "answer": 2,
+          "explain": "A ruler has a straight edge that never bends."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which line is curvy?",
+          "options": [
+            {
+              "emoji": "〰️"
+            },
+            {
+              "emoji": "➖",
+              "why": "That line is straight."
+            }
+          ],
+          "answer": 0,
+          "explain": "The wavy line bends up and down."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape is made of just one curve?",
+          "options": [
+            {
+              "shape": "square",
+              "why": "A square has straight sides."
+            },
+            {
+              "shape": "circle"
+            },
+            {
+              "shape": "triangle",
+              "why": "A triangle has straight sides."
+            }
+          ],
+          "answer": 1,
+          "explain": "A circle is one curved line going all the way round."
+        },
+        {
+          "mode": "sort",
+          "ask": "Straight or curved? Sort them!",
+          "bins": [
+            {
+              "label": "Straight",
+              "emoji": "📏"
+            },
+            {
+              "label": "Curved",
+              "emoji": "🌈"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "✏️",
+              "bin": 0,
+              "name": "pencil"
+            },
+            {
+              "emoji": "🐍",
+              "bin": 1,
+              "name": "snake"
+            },
+            {
+              "emoji": "🥢",
+              "bin": 0,
+              "name": "chopsticks"
+            },
+            {
+              "emoji": "🍌",
+              "bin": 1,
+              "name": "banana"
+            },
+            {
+              "emoji": "🌙",
+              "bin": 1,
+              "name": "moon"
+            },
+            {
+              "emoji": "🪜",
+              "bin": 0,
+              "name": "ladder"
+            }
+          ],
+          "explain": "Pencils, chopsticks and ladders are straight. Snakes, bananas and the moon are curved."
+        }
+      ]
+    },
+    {
+      "id": "lines-curves-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Counting straight sides",
+      "intro": {
+        "say": "Shapes are made of lines. Let's count the straight sides!",
+        "icons": [
+          "🔺",
+          "🟦",
+          "⚪"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A triangle has 3 straight sides. Trace them with your finger: one, two, three!",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle"
+              }
+            ]
+          },
+          "caption": "3 straight sides"
+        },
+        {
+          "mode": "show",
+          "say": "A circle has no straight sides at all. It is one curved line going round and round.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "circle"
+              }
+            ]
+          },
+          "caption": "0 straight sides"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many straight sides does this square have?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "square"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Count again, one side at a time."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5",
+              "why": "Trace each side once."
+            }
+          ],
+          "answer": 1,
+          "explain": "A square has 4 straight sides."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many straight sides does this shape have?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "pentagon"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count slowly around the shape."
+            },
+            {
+              "label": "6",
+              "why": "Count each side once."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "This pentagon has 5 straight sides.",
+          "hint": "Put your finger on one side and count round."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape has no straight sides?",
+          "options": [
+            {
+              "shape": "triangle",
+              "why": "A triangle has 3 straight sides."
+            },
+            {
+              "shape": "rectangle",
+              "why": "A rectangle has 4 straight sides."
+            },
+            {
+              "shape": "oval"
+            }
+          ],
+          "answer": 2,
+          "explain": "An oval is curved all the way round."
+        },
+        {
+          "mode": "sort",
+          "ask": "Straight sides or only curves?",
+          "bins": [
+            {
+              "label": "Straight sides",
+              "emoji": "🔺"
+            },
+            {
+              "label": "Only curves",
+              "emoji": "⚪"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔺",
+              "bin": 0,
+              "name": "triangle"
+            },
+            {
+              "emoji": "⚪",
+              "bin": 1,
+              "name": "circle"
+            },
+            {
+              "emoji": "🟥",
+              "bin": 0,
+              "name": "square"
+            },
+            {
+              "emoji": "🥚",
+              "bin": 1,
+              "name": "egg"
+            },
+            {
+              "emoji": "🔷",
+              "bin": 0,
+              "name": "diamond"
+            },
+            {
+              "emoji": "🟠",
+              "bin": 1,
+              "name": "orange circle"
+            }
+          ],
+          "explain": "Triangles, squares and diamonds have straight sides. Circles and eggs are only curves."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape has 6 straight sides?",
+          "options": [
+            {
+              "shape": "pentagon",
+              "why": "A pentagon has 5 sides."
+            },
+            {
+              "shape": "hexagon"
+            },
+            {
+              "shape": "square",
+              "why": "A square has 4 sides."
+            }
+          ],
+          "answer": 1,
+          "explain": "A hexagon has 6 straight sides, like a honeycomb cell."
+        }
+      ]
+    },
+    {
+      "id": "lines-curves-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Line detectives",
+      "intro": {
+        "say": "Let's be line detectives: add up sides, and find straight lines and curves in letters!",
+        "icons": [
+          "🕵️",
+          "📏",
+          "🔤"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A square and a triangle side by side. 4 straight sides and 3 straight sides make 7 altogether.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "square"
+              },
+              {
+                "shape": "triangle"
+              }
+            ]
+          },
+          "caption": "4 + 3 = 7 sides"
+        },
+        {
+          "mode": "show",
+          "say": "Letters are made of lines too. E uses only straight lines. C uses only a curve. D uses both!",
+          "visual": {
+            "kind": "text",
+            "text": "E  C  D"
+          },
+          "caption": "straight · curved · both"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many straight sides altogether?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle"
+              },
+              {
+                "shape": "triangle"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Each triangle has 3 sides."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "7",
+              "why": "Count 3 and 3 again."
+            }
+          ],
+          "answer": 1,
+          "explain": "Each triangle has 3 sides, and 3 and 3 make 6."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many straight sides altogether?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "rectangle"
+              },
+              {
+                "shape": "pentagon"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "9"
+            },
+            {
+              "label": "10",
+              "why": "Count again: 4 and 5."
+            },
+            {
+              "label": "8",
+              "why": "The pentagon has 5 sides."
+            }
+          ],
+          "answer": 0,
+          "explain": "A rectangle has 4 sides and a pentagon has 5, so 9 altogether.",
+          "hint": "Count one shape, then keep counting."
+        },
+        {
+          "mode": "choice",
+          "ask": "I have 4 straight sides, but they are not all the same length. What am I?",
+          "options": [
+            {
+              "shape": "square",
+              "why": "A square's sides are all the same length."
+            },
+            {
+              "shape": "circle",
+              "why": "A circle has no straight sides."
+            },
+            {
+              "shape": "rectangle"
+            }
+          ],
+          "answer": 2,
+          "explain": "A rectangle has 2 long sides and 2 short sides."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which letter is made only of straight lines?",
+          "options": [
+            {
+              "label": "C",
+              "why": "C is one curve."
+            },
+            {
+              "label": "E"
+            },
+            {
+              "label": "S",
+              "why": "S is all curves."
+            }
+          ],
+          "answer": 1,
+          "explain": "E is made of 4 straight lines."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which letter has a straight line AND a curve?",
+          "options": [
+            {
+              "label": "D"
+            },
+            {
+              "label": "L",
+              "why": "L is only straight lines."
+            },
+            {
+              "label": "O",
+              "why": "O is only a curve."
+            }
+          ],
+          "answer": 0,
+          "explain": "D has a straight back and a curved front."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort the letters: straight lines only, or curves too?",
+          "bins": [
+            {
+              "label": "Straight only",
+              "emoji": "📏"
+            },
+            {
+              "label": "Has curves",
+              "emoji": "🌈"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "A",
+              "bin": 0,
+              "name": "letter A"
+            },
+            {
+              "emoji": "C",
+              "bin": 1,
+              "name": "letter C"
+            },
+            {
+              "emoji": "T",
+              "bin": 0,
+              "name": "letter T"
+            },
+            {
+              "emoji": "U",
+              "bin": 1,
+              "name": "letter U"
+            },
+            {
+              "emoji": "Z",
+              "bin": 0,
+              "name": "letter Z"
+            },
+            {
+              "emoji": "B",
+              "bin": 1,
+              "name": "letter B"
+            }
+          ],
+          "explain": "A, T and Z are only straight lines. C, U and B have curves."
+        }
+      ]
+    }
+  ]
+}

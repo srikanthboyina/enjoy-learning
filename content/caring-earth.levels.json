@@ -1,0 +1,585 @@
+{
+  "topicId": "caring-earth",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "caring-earth-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Keep it clean",
+      "intro": {
+        "say": "Earth is our home. Let us learn easy ways to keep it clean and happy!",
+        "icons": [
+          "🌍",
+          "💚",
+          "♻️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Litter is rubbish dropped on the ground. It makes parks dirty and can hurt animals.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌳",
+              "🥤",
+              "🐦"
+            ]
+          },
+          "caption": "litter"
+        },
+        {
+          "mode": "show",
+          "say": "Always put rubbish in a bin. Some things can go in the recycling bin to be made into new things!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🗑️",
+              "♻️"
+            ]
+          },
+          "caption": "bin it!"
+        },
+        {
+          "mode": "choice",
+          "ask": "You finish a juice box at the park. What should you do?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧃",
+              "🌳"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌱",
+              "label": "throw it on the grass",
+              "why": "Litter on the grass can hurt animals."
+            },
+            {
+              "emoji": "🗑️",
+              "label": "put it in a bin"
+            },
+            {
+              "emoji": "🌿",
+              "label": "hide it in a bush",
+              "why": "Hidden litter is still litter."
+            }
+          ],
+          "answer": 1,
+          "explain": "Putting rubbish in a bin keeps the park clean and animals safe."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which picture shows someone caring for Earth?",
+          "options": [
+            {
+              "emoji": "🍫",
+              "label": "dropping litter",
+              "why": "Dropping litter makes Earth dirty."
+            },
+            {
+              "emoji": "🚰",
+              "label": "tap left running",
+              "why": "A running tap wastes water."
+            },
+            {
+              "emoji": "🌱",
+              "label": "planting a tree"
+            }
+          ],
+          "answer": 2,
+          "explain": "Planting trees gives animals homes and cleans the air."
+        },
+        {
+          "mode": "choice",
+          "ask": "You are leaving the room. What should you do with the light?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💡",
+              "🚪"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌑",
+              "label": "turn it off"
+            },
+            {
+              "emoji": "💡",
+              "label": "leave it on",
+              "why": "Lights left on waste electricity."
+            }
+          ],
+          "answer": 0,
+          "explain": "Turning off lights saves electricity and helps the planet."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sign means recycling?",
+          "options": [
+            {
+              "emoji": "🛑",
+              "label": "stop",
+              "why": "That sign tells cars to stop."
+            },
+            {
+              "emoji": "♻️",
+              "label": "recycle"
+            },
+            {
+              "emoji": "❤️",
+              "label": "heart",
+              "why": "A heart means love, not recycling."
+            }
+          ],
+          "answer": 1,
+          "explain": "The green arrows going round mean recycle: old things made into new things."
+        }
+      ]
+    },
+    {
+      "id": "caring-earth-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Reduce, reuse, recycle",
+      "intro": {
+        "say": "Three magic words help our planet: reduce, reuse and recycle. Let us learn them!",
+        "icons": [
+          "♻️",
+          "🛍️",
+          "📰"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Reduce means use less. Recycle means old things get made into new things. Paper, plastic, glass and cans can all be recycled.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📰",
+              "🧴",
+              "🍾",
+              "🥫"
+            ]
+          },
+          "caption": "reduce · recycle"
+        },
+        {
+          "mode": "show",
+          "say": "Reuse means use something again. Take a cloth bag to the shop again and again instead of a new plastic bag.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🛍️",
+              "🔁"
+            ]
+          },
+          "caption": "reuse"
+        },
+        {
+          "mode": "sort",
+          "ask": "Help sort the recycling!",
+          "bins": [
+            {
+              "label": "paper",
+              "emoji": "📰"
+            },
+            {
+              "label": "plastic",
+              "emoji": "🧴"
+            },
+            {
+              "label": "glass",
+              "emoji": "🍾"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "📰",
+              "bin": 0,
+              "name": "newspaper"
+            },
+            {
+              "emoji": "📦",
+              "bin": 0,
+              "name": "cardboard box"
+            },
+            {
+              "emoji": "🧴",
+              "bin": 1,
+              "name": "plastic bottle"
+            },
+            {
+              "emoji": "🥤",
+              "bin": 1,
+              "name": "plastic cup"
+            },
+            {
+              "emoji": "🍾",
+              "bin": 2,
+              "name": "glass bottle"
+            },
+            {
+              "emoji": "🍯",
+              "bin": 2,
+              "name": "glass jar"
+            }
+          ],
+          "explain": "Sorting things the right way means they can be made into new things."
+        },
+        {
+          "mode": "choice",
+          "ask": "Taking the same cloth bag to the shop every week is…",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🛍️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "♻️",
+              "label": "recycling",
+              "why": "Recycling makes it into something new; here we use it again."
+            },
+            {
+              "emoji": "🔁",
+              "label": "reusing"
+            },
+            {
+              "emoji": "🗑️",
+              "label": "wasting",
+              "why": "Using it again saves things from the bin."
+            }
+          ],
+          "answer": 1,
+          "explain": "Using the same bag again and again is reusing."
+        },
+        {
+          "mode": "choice",
+          "ask": "How can you save water when brushing your teeth?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪥",
+              "🚰"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "💦",
+              "label": "let the tap run",
+              "why": "A running tap wastes lots of water."
+            },
+            {
+              "emoji": "🚿",
+              "label": "brush faster in the shower",
+              "why": "A long shower uses lots of water."
+            },
+            {
+              "emoji": "🚰",
+              "label": "turn off the tap"
+            }
+          ],
+          "answer": 2,
+          "explain": "Turning off the tap while you brush saves lots of clean water."
+        },
+        {
+          "mode": "choice",
+          "ask": "An empty glass jar can be reused. Which is a good new job for it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍯"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "✏️",
+              "label": "holding pencils"
+            },
+            {
+              "emoji": "🛣️",
+              "label": "throw on the road",
+              "why": "Broken glass on the road is dangerous."
+            },
+            {
+              "emoji": "🌳",
+              "label": "bury it in the park",
+              "why": "Glass in the park could hurt someone."
+            }
+          ],
+          "answer": 0,
+          "explain": "A clean jar makes a great pencil pot, so it gets a second job."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is a way to reduce, or use less?",
+          "options": [
+            {
+              "emoji": "💡",
+              "label": "lights on all day",
+              "why": "That uses more electricity, not less."
+            },
+            {
+              "emoji": "🚲",
+              "label": "walk or ride a bike"
+            },
+            {
+              "emoji": "🚗",
+              "label": "drive to the next house",
+              "why": "A car uses fuel even for tiny trips."
+            }
+          ],
+          "answer": 1,
+          "explain": "Walking or cycling uses no fuel and keeps the air cleaner."
+        }
+      ]
+    },
+    {
+      "id": "caring-earth-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Earth helpers",
+      "intro": {
+        "say": "Let us think like Earth helpers. Why do our choices matter, and what is the best choice?",
+        "icons": [
+          "🌍",
+          "🦸",
+          "🐢",
+          "💚"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Plastic that ends up in the sea can hurt turtles, fish and birds. It can stay there for hundreds of years.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌊",
+              "🛍️",
+              "🐢",
+              "🐟"
+            ]
+          },
+          "caption": "plastic hurts sea animals"
+        },
+        {
+          "mode": "show",
+          "say": "Food scraps like peels can go in a compost bin. They rot into rich soil that helps plants grow.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍌",
+              "🍎",
+              "➡️",
+              "🌱"
+            ]
+          },
+          "caption": "compost"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why is plastic in the ocean a big problem?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌊",
+              "🧴"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🔥",
+              "label": "It makes the sea warm",
+              "why": "Plastic does not heat the sea."
+            },
+            {
+              "emoji": "🐢",
+              "label": "Animals can get hurt by it"
+            },
+            {
+              "emoji": "🐟",
+              "label": "It turns into fish",
+              "why": "Plastic never turns into living things."
+            }
+          ],
+          "answer": 1,
+          "explain": "Sea animals can get tangled in plastic or eat it by mistake."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where should a banana peel go?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍌"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "♻️",
+              "label": "recycling bin",
+              "why": "Recycling is for paper, plastic, glass and cans, not food."
+            },
+            {
+              "emoji": "🧹",
+              "label": "on the floor",
+              "why": "Peels on the floor are slippery and messy."
+            },
+            {
+              "emoji": "🌱",
+              "label": "compost bin"
+            }
+          ],
+          "answer": 2,
+          "explain": "A peel rots in the compost and turns into soil for plants."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the BEST choice for a drink at school?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏫",
+              "💧"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍶",
+              "label": "refill a water bottle"
+            },
+            {
+              "emoji": "🥤",
+              "label": "a new plastic cup every day",
+              "why": "Lots of cups make lots of rubbish."
+            },
+            {
+              "emoji": "🥫",
+              "label": "a new can every day",
+              "why": "Even recycled cans use energy to make again."
+            }
+          ],
+          "answer": 0,
+          "explain": "A refillable bottle is reused every day, so there is much less rubbish."
+        },
+        {
+          "mode": "sort",
+          "ask": "Recycle, compost or reuse?",
+          "bins": [
+            {
+              "label": "recycle",
+              "emoji": "♻️"
+            },
+            {
+              "label": "compost",
+              "emoji": "🌱"
+            },
+            {
+              "label": "reuse",
+              "emoji": "🔁"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🥫",
+              "bin": 0,
+              "name": "tin can"
+            },
+            {
+              "emoji": "📰",
+              "bin": 0,
+              "name": "newspaper"
+            },
+            {
+              "emoji": "🍎",
+              "bin": 1,
+              "name": "apple core"
+            },
+            {
+              "emoji": "🥕",
+              "bin": 1,
+              "name": "carrot peel"
+            },
+            {
+              "emoji": "🛍️",
+              "bin": 2,
+              "name": "cloth bag"
+            },
+            {
+              "emoji": "👕",
+              "bin": 2,
+              "name": "old T-shirt"
+            }
+          ],
+          "explain": "Cans and paper get recycled, food scraps get composted, and bags and clothes get used again."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why should we turn off lights and screens we are not using?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💡",
+              "📺"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧹",
+              "label": "to make them dusty",
+              "why": "Dust is not the reason."
+            },
+            {
+              "emoji": "⚡",
+              "label": "to save energy"
+            },
+            {
+              "emoji": "🔥",
+              "label": "so they get hot",
+              "why": "Turning them off stops them using power."
+            }
+          ],
+          "answer": 1,
+          "explain": "Making electricity often burns fuel, so using less helps keep the air clean."
+        },
+        {
+          "mode": "choice",
+          "ask": "Old toys you no longer play with. What is the most caring thing to do?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧸",
+              "🚂"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🗑️",
+              "label": "throw them in the bin",
+              "why": "They would be wasted in the bin."
+            },
+            {
+              "emoji": "🌧️",
+              "label": "leave them outside",
+              "why": "Rain would spoil them."
+            },
+            {
+              "emoji": "🎁",
+              "label": "give them to another child"
+            }
+          ],
+          "answer": 2,
+          "explain": "Giving toys away reuses them, so they are loved again and not wasted."
+        }
+      ]
+    }
+  ]
+}

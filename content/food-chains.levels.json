@@ -1,0 +1,622 @@
+{
+  "topicId": "food-chains",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "food-chains-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "What do they eat?",
+      "intro": {
+        "say": "All animals need food. Some eat plants and some eat other animals. Let's find out who eats what!",
+        "icons": [
+          "🐇",
+          "🥕",
+          "🦊"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A rabbit eats grass and carrots. A cow eats grass too. Animals that eat only plants are plant eaters.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐇",
+              "🌿",
+              "🐄",
+              "🥕"
+            ]
+          },
+          "caption": "Plant eaters"
+        },
+        {
+          "mode": "show",
+          "say": "A lion eats other animals. Animals that eat meat are meat eaters. They often have sharp teeth.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦁",
+              "🍖",
+              "🦈"
+            ]
+          },
+          "caption": "Meat eaters"
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a rabbit like to eat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐇"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Meat",
+              "emoji": "🍖",
+              "why": "Rabbits are plant eaters."
+            },
+            {
+              "label": "Carrot",
+              "emoji": "🥕"
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "Rabbits don't eat fish."
+            }
+          ],
+          "answer": 1,
+          "explain": "Rabbits eat plants, like grass and carrots."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal is a meat eater?",
+          "options": [
+            {
+              "label": "Cow",
+              "emoji": "🐄",
+              "why": "Cows munch grass all day."
+            },
+            {
+              "label": "Sheep",
+              "emoji": "🐑",
+              "why": "Sheep eat grass."
+            },
+            {
+              "label": "Lion",
+              "emoji": "🦁"
+            }
+          ],
+          "answer": 2,
+          "explain": "A lion hunts other animals for meat."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a cow eat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐄"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Grass",
+              "emoji": "🌿"
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "Cows eat plants, not fish."
+            },
+            {
+              "label": "Mice",
+              "emoji": "🐁",
+              "why": "Cows don't eat mice."
+            }
+          ],
+          "answer": 0,
+          "explain": "Cows eat grass. They are plant eaters."
+        },
+        {
+          "mode": "sort",
+          "ask": "Plant eater or meat eater?",
+          "bins": [
+            {
+              "label": "Plants",
+              "emoji": "🌿"
+            },
+            {
+              "label": "Meat",
+              "emoji": "🍖"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐇",
+              "bin": 0,
+              "name": "rabbit"
+            },
+            {
+              "emoji": "🦁",
+              "bin": 1,
+              "name": "lion"
+            },
+            {
+              "emoji": "🐄",
+              "bin": 0,
+              "name": "cow"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 1,
+              "name": "shark"
+            },
+            {
+              "emoji": "🦒",
+              "bin": 0,
+              "name": "giraffe"
+            },
+            {
+              "emoji": "🐅",
+              "bin": 1,
+              "name": "tiger"
+            }
+          ],
+          "explain": "Rabbits, cows and giraffes eat plants. Lions, sharks and tigers eat meat."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal eats bananas and leaves?",
+          "options": [
+            {
+              "label": "Shark",
+              "emoji": "🦈",
+              "why": "Sharks eat fish."
+            },
+            {
+              "label": "Monkey",
+              "emoji": "🐒"
+            },
+            {
+              "label": "Eagle",
+              "emoji": "🦅",
+              "why": "Eagles hunt small animals."
+            }
+          ],
+          "answer": 1,
+          "explain": "Monkeys munch fruit like bananas and leaves."
+        }
+      ]
+    },
+    {
+      "id": "food-chains-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Food chains",
+      "intro": {
+        "say": "A food chain shows who eats what. Each arrow means 'is eaten by'.",
+        "icons": [
+          "🌿",
+          "➡️",
+          "🐇",
+          "➡️",
+          "🦊"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Grass grows in the sun. A rabbit eats the grass. A fox eats the rabbit. That is a food chain!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌿",
+              "➡️",
+              "🐇",
+              "➡️",
+              "🦊"
+            ]
+          },
+          "caption": "grass → rabbit → fox"
+        },
+        {
+          "mode": "show",
+          "say": "Plant eaters are herbivores. Meat eaters are carnivores. Animals that eat both plants and meat, like bears, are omnivores.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐄",
+              "🦁",
+              "🐻"
+            ]
+          },
+          "caption": "Herbivore · Carnivore · Omnivore"
+        },
+        {
+          "mode": "order",
+          "ask": "Put this food chain in order. Start with the plant!",
+          "items": [
+            {
+              "label": "Grass",
+              "emoji": "🌿"
+            },
+            {
+              "label": "Rabbit",
+              "emoji": "🐇"
+            },
+            {
+              "label": "Fox",
+              "emoji": "🦊"
+            }
+          ],
+          "explain": "Grass is eaten by the rabbit, and the rabbit is eaten by the fox.",
+          "hint": "Food chains always start with a plant."
+        },
+        {
+          "mode": "choice",
+          "ask": "A bear eats berries and fish. What kind of eater is it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐻",
+              "🫐",
+              "🐟"
+            ]
+          },
+          "options": [
+            {
+              "label": "Herbivore",
+              "emoji": "🌿",
+              "why": "A bear eats fish too, not just plants."
+            },
+            {
+              "label": "Carnivore",
+              "emoji": "🍖",
+              "why": "A bear eats berries too, not just meat."
+            },
+            {
+              "label": "Omnivore",
+              "emoji": "🍽️"
+            }
+          ],
+          "answer": 2,
+          "explain": "A bear eats plants and meat, so it is an omnivore."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is missing in this food chain?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌾",
+              "➡️",
+              "?",
+              "➡️",
+              "🦉"
+            ]
+          },
+          "options": [
+            {
+              "label": "Lion",
+              "emoji": "🦁",
+              "why": "A lion doesn't eat seeds, and an owl can't eat a lion!"
+            },
+            {
+              "label": "Mouse",
+              "emoji": "🐁"
+            },
+            {
+              "label": "Carrot",
+              "emoji": "🥕",
+              "why": "We need an animal that eats the seeds."
+            }
+          ],
+          "answer": 1,
+          "explain": "A mouse eats seeds, and an owl eats the mouse."
+        },
+        {
+          "mode": "sort",
+          "ask": "Herbivore, carnivore or omnivore?",
+          "bins": [
+            {
+              "label": "Herbivore",
+              "emoji": "🌿"
+            },
+            {
+              "label": "Carnivore",
+              "emoji": "🍖"
+            },
+            {
+              "label": "Omnivore",
+              "emoji": "🍽️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐄",
+              "bin": 0,
+              "name": "cow"
+            },
+            {
+              "emoji": "🦁",
+              "bin": 1,
+              "name": "lion"
+            },
+            {
+              "emoji": "🐻",
+              "bin": 2,
+              "name": "bear"
+            },
+            {
+              "emoji": "🦒",
+              "bin": 0,
+              "name": "giraffe"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 1,
+              "name": "shark"
+            },
+            {
+              "emoji": "🐷",
+              "bin": 2,
+              "name": "pig"
+            }
+          ],
+          "explain": "Cows and giraffes eat plants. Lions and sharks eat meat. Bears and pigs eat both."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does every food chain start with?",
+          "options": [
+            {
+              "label": "A hunter",
+              "emoji": "🦊",
+              "why": "Hunters come at the end of a chain."
+            },
+            {
+              "label": "A plant",
+              "emoji": "🌱"
+            },
+            {
+              "label": "A rock",
+              "emoji": "🪨",
+              "why": "Nothing eats rocks!"
+            }
+          ],
+          "answer": 1,
+          "explain": "Food chains start with a plant, because plants make food from sunlight."
+        }
+      ]
+    },
+    {
+      "id": "food-chains-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Energy from the Sun",
+      "intro": {
+        "say": "All food energy starts with the Sun! Let's follow it along longer food chains.",
+        "icons": [
+          "🌞",
+          "🌿",
+          "🐛",
+          "🐦",
+          "🦅"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Plants are special. They use sunlight to make their own food. Animals can't do that, so they must eat plants or other animals.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌞",
+              "➡️",
+              "🌿",
+              "➡️",
+              "🐇",
+              "➡️",
+              "🦊"
+            ]
+          },
+          "caption": "sun → grass → rabbit → fox"
+        },
+        {
+          "mode": "show",
+          "say": "An animal that hunts is a predator. The animal it catches is its prey. A fox is a predator, and a rabbit is its prey.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦊",
+              "🐇"
+            ],
+            "size": "lg"
+          },
+          "caption": "Predator · Prey"
+        },
+        {
+          "mode": "order",
+          "ask": "Put this long food chain in order, starting with the Sun.",
+          "items": [
+            {
+              "label": "Sun",
+              "emoji": "🌞"
+            },
+            {
+              "label": "Leaf",
+              "emoji": "🌿"
+            },
+            {
+              "label": "Caterpillar",
+              "emoji": "🐛"
+            },
+            {
+              "label": "Bird",
+              "emoji": "🐦"
+            },
+            {
+              "label": "Eagle",
+              "emoji": "🦅"
+            }
+          ],
+          "explain": "The Sun helps the leaf grow, the caterpillar eats the leaf, the bird eats the caterpillar, and the eagle eats the bird."
+        },
+        {
+          "mode": "choice",
+          "ask": "In this food chain, which animal is the prey of the snake?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌾",
+              "➡️",
+              "🐁",
+              "➡️",
+              "🐍"
+            ]
+          },
+          "options": [
+            {
+              "label": "Mouse",
+              "emoji": "🐁"
+            },
+            {
+              "label": "Seeds",
+              "emoji": "🌾",
+              "why": "Seeds are a plant, not prey."
+            },
+            {
+              "label": "Snake",
+              "emoji": "🐍",
+              "why": "The snake is the predator here."
+            }
+          ],
+          "answer": 0,
+          "explain": "The snake hunts the mouse, so the mouse is its prey."
+        },
+        {
+          "mode": "choice",
+          "ask": "If all the rabbits disappeared, what would happen to the foxes?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌿",
+              "➡️",
+              "🐇",
+              "➡️",
+              "🦊"
+            ]
+          },
+          "options": [
+            {
+              "label": "More foxes",
+              "emoji": "🦊",
+              "why": "The foxes would lose some of their food."
+            },
+            {
+              "label": "Less food for foxes",
+              "emoji": "😟"
+            },
+            {
+              "label": "Foxes eat grass",
+              "emoji": "🌿",
+              "why": "Foxes would rather hunt other small animals."
+            }
+          ],
+          "answer": 1,
+          "explain": "Foxes eat rabbits, so with no rabbits they would have much less food.",
+          "hint": "What do the foxes eat?"
+        },
+        {
+          "mode": "choice",
+          "ask": "If all the rabbits disappeared, what would happen to the grass?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌿",
+              "🐇",
+              "❌"
+            ]
+          },
+          "options": [
+            {
+              "label": "It grows taller",
+              "emoji": "🌿"
+            },
+            {
+              "label": "It burns up",
+              "emoji": "🔥",
+              "why": "Rabbits don't stop fires."
+            },
+            {
+              "label": "It all dies",
+              "emoji": "🍂",
+              "why": "Nobody is eating it, so it can grow."
+            }
+          ],
+          "answer": 0,
+          "explain": "No rabbits are munching it, so the grass would grow taller."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why can't a food chain start with an animal?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌞",
+              "🌿"
+            ]
+          },
+          "options": [
+            {
+              "label": "Animals are too small",
+              "emoji": "🐾",
+              "why": "Size doesn't matter here."
+            },
+            {
+              "label": "Only plants make food",
+              "emoji": "🌞"
+            },
+            {
+              "label": "Animals sleep",
+              "emoji": "💤",
+              "why": "Plants rest too!"
+            }
+          ],
+          "answer": 1,
+          "explain": "Only plants can make their own food from sunlight, so they come first."
+        },
+        {
+          "mode": "order",
+          "ask": "Build a sea food chain, starting with the sea plant.",
+          "items": [
+            {
+              "label": "Seaweed",
+              "emoji": "🌿"
+            },
+            {
+              "label": "Shrimp",
+              "emoji": "🦐"
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟"
+            },
+            {
+              "label": "Seal",
+              "emoji": "🦭"
+            }
+          ],
+          "explain": "Shrimp eat tiny sea plants, fish eat shrimp, and seals eat fish."
+        }
+      ]
+    }
+  ]
+}

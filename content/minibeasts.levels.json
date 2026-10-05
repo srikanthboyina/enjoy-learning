@@ -1,0 +1,608 @@
+{
+  "topicId": "minibeasts",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "minibeasts-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Tiny creatures",
+      "intro": {
+        "say": "Minibeasts are tiny creatures, like bugs, spiders, snails and worms. Let's look closely!",
+        "icons": [
+          "🐞",
+          "🐌",
+          "🪱"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Minibeasts are small animals with no bones inside. Ladybirds, bees, snails and worms are all minibeasts.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐞",
+              "🐝",
+              "🐌",
+              "🪱",
+              "🐜"
+            ]
+          },
+          "caption": "Minibeasts"
+        },
+        {
+          "mode": "show",
+          "say": "You can find minibeasts in a garden: under leaves, on flowers, and in the soil. Look gently and never hurt them.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌸",
+              "🍂",
+              "🪨",
+              "🔍"
+            ]
+          },
+          "caption": "Look gently!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a minibeast?",
+          "options": [
+            {
+              "label": "Elephant",
+              "emoji": "🐘",
+              "why": "An elephant is very big!"
+            },
+            {
+              "label": "Ladybird",
+              "emoji": "🐞"
+            },
+            {
+              "label": "Cow",
+              "emoji": "🐄",
+              "why": "A cow is a big farm animal."
+            }
+          ],
+          "answer": 1,
+          "explain": "A ladybird is a tiny beetle, so it is a minibeast."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which minibeast makes honey?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍯"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Snail",
+              "emoji": "🐌",
+              "why": "Snails eat leaves. They don't make honey."
+            },
+            {
+              "label": "Ant",
+              "emoji": "🐜",
+              "why": "Bees are the honey makers, not ants."
+            },
+            {
+              "label": "Bee",
+              "emoji": "🐝"
+            }
+          ],
+          "answer": 2,
+          "explain": "Bees collect nectar from flowers and make honey."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which minibeast carries its shell on its back?",
+          "options": [
+            {
+              "label": "Snail",
+              "emoji": "🐌"
+            },
+            {
+              "label": "Butterfly",
+              "emoji": "🦋",
+              "why": "A butterfly has wings, not a shell."
+            },
+            {
+              "label": "Worm",
+              "emoji": "🪱",
+              "why": "A worm has soft skin and no shell."
+            }
+          ],
+          "answer": 0,
+          "explain": "A snail carries its shell home everywhere it goes."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which minibeast lives in the soil and has no legs?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🟫",
+              "🌱"
+            ]
+          },
+          "options": [
+            {
+              "label": "Bee",
+              "emoji": "🐝",
+              "why": "A bee has 6 legs and flies."
+            },
+            {
+              "label": "Worm",
+              "emoji": "🪱"
+            },
+            {
+              "label": "Ladybird",
+              "emoji": "🐞",
+              "why": "A ladybird has 6 legs."
+            }
+          ],
+          "answer": 1,
+          "explain": "A worm has no legs. It wriggles through the soil."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which minibeast has big colourful wings?",
+          "options": [
+            {
+              "label": "Ant",
+              "emoji": "🐜",
+              "why": "Most ants have no wings."
+            },
+            {
+              "label": "Snail",
+              "emoji": "🐌",
+              "why": "A snail slides along slowly."
+            },
+            {
+              "label": "Butterfly",
+              "emoji": "🦋"
+            }
+          ],
+          "answer": 2,
+          "explain": "A butterfly has big colourful wings to fly from flower to flower."
+        }
+      ]
+    },
+    {
+      "id": "minibeasts-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Insect or spider?",
+      "intro": {
+        "say": "Insects and spiders are both minibeasts, but they are different. Let's count their legs!",
+        "icons": [
+          "🐜",
+          "🕷️",
+          "🦵"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "An insect has 6 legs and 3 body parts: a head, a middle and a back part. Many insects have wings too.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐜",
+              "🐝",
+              "🐞",
+              "🦗"
+            ]
+          },
+          "caption": "Insects: 6 legs"
+        },
+        {
+          "mode": "show",
+          "say": "A spider has 8 legs and only 2 body parts. So a spider is not an insect! Spiders spin webs to catch food.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🕷️",
+              "🕸️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Spiders: 8 legs"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many legs does a spider have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🕷️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "6 legs is an insect. Spiders have 2 more."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "10",
+              "why": "Count again: 4 legs on each side."
+            }
+          ],
+          "answer": 1,
+          "explain": "A spider has 8 legs, 4 on each side."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which minibeast spins a web?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🕸️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Bee",
+              "emoji": "🐝",
+              "why": "Bees build hives, not webs."
+            },
+            {
+              "label": "Snail",
+              "emoji": "🐌",
+              "why": "Snails leave a slimy trail, not a web."
+            },
+            {
+              "label": "Spider",
+              "emoji": "🕷️"
+            }
+          ],
+          "answer": 2,
+          "explain": "Spiders spin sticky silk webs to catch flies."
+        },
+        {
+          "mode": "sort",
+          "ask": "Insect or not an insect? Count the legs!",
+          "bins": [
+            {
+              "label": "Insect",
+              "emoji": "🐜"
+            },
+            {
+              "label": "Not insect",
+              "emoji": "🕷️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐝",
+              "bin": 0,
+              "name": "bee"
+            },
+            {
+              "emoji": "🕷️",
+              "bin": 1,
+              "name": "spider"
+            },
+            {
+              "emoji": "🐞",
+              "bin": 0,
+              "name": "ladybird"
+            },
+            {
+              "emoji": "🪱",
+              "bin": 1,
+              "name": "worm"
+            },
+            {
+              "emoji": "🦋",
+              "bin": 0,
+              "name": "butterfly"
+            },
+            {
+              "emoji": "🐌",
+              "bin": 1,
+              "name": "snail"
+            }
+          ],
+          "explain": "Insects have 6 legs. Spiders, worms and snails are not insects.",
+          "hint": "An insect must have 6 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is a spider an insect?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🕷️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "emoji": "✅",
+              "why": "Insects have 6 legs, but a spider has 8."
+            },
+            {
+              "label": "No",
+              "emoji": "❌"
+            }
+          ],
+          "answer": 1,
+          "explain": "A spider has 8 legs, so it is not an insect."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which of these is an insect?",
+          "options": [
+            {
+              "label": "Cricket",
+              "emoji": "🦗"
+            },
+            {
+              "label": "Snail",
+              "emoji": "🐌",
+              "why": "A snail has no legs at all."
+            },
+            {
+              "label": "Spider",
+              "emoji": "🕷️",
+              "why": "A spider has 8 legs."
+            }
+          ],
+          "answer": 0,
+          "explain": "A cricket has 6 legs, so it is an insect."
+        }
+      ]
+    },
+    {
+      "id": "minibeasts-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Minibeast helpers",
+      "intro": {
+        "say": "Minibeasts are tiny but very important. Let's count legs and find out how they help us!",
+        "icons": [
+          "🪱",
+          "🐝",
+          "🐞"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Worms dig tunnels in the soil. The tunnels let air and water in, and worm poo makes the soil rich. Plants grow better!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪱",
+              "🟫",
+              "💧",
+              "🌱"
+            ]
+          },
+          "caption": "Worms help the soil"
+        },
+        {
+          "mode": "show",
+          "say": "Bees carry pollen from flower to flower, so plants can make fruit. Ladybirds eat tiny bugs that harm plants.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐝",
+              "🌸",
+              "🍎",
+              "🐞",
+              "🌿"
+            ]
+          },
+          "caption": "Garden helpers"
+        },
+        {
+          "mode": "choice",
+          "ask": "3 ants are walking in a line. How many legs is that altogether?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🐜"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "Each ant has 6 legs, not 3."
+            },
+            {
+              "label": "18"
+            },
+            {
+              "label": "24",
+              "why": "24 would be 4 ants."
+            }
+          ],
+          "answer": 1,
+          "explain": "Each ant has 6 legs. 6, 12, 18. That is 18 legs!",
+          "hint": "Count in sixes: 6, 12, 18."
+        },
+        {
+          "mode": "choice",
+          "ask": "2 spiders sit on a web. How many legs altogether?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🕷️"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "12 would be 2 insects. Spiders have 8 legs each."
+            },
+            {
+              "label": "10",
+              "why": "Try 8 and 8 more."
+            },
+            {
+              "label": "16"
+            }
+          ],
+          "answer": 2,
+          "explain": "8 legs and 8 more legs make 16 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why are worms good for a garden?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪱",
+              "🌱"
+            ]
+          },
+          "options": [
+            {
+              "label": "They help soil",
+              "emoji": "🌱"
+            },
+            {
+              "label": "They make honey",
+              "emoji": "🍯",
+              "why": "Bees make honey, not worms."
+            },
+            {
+              "label": "They spin webs",
+              "emoji": "🕸️",
+              "why": "Spiders spin webs."
+            }
+          ],
+          "answer": 0,
+          "explain": "Worm tunnels let in air and water, and help plants grow."
+        },
+        {
+          "mode": "choice",
+          "ask": "What would happen to apple trees if there were no bees?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🌳"
+            ]
+          },
+          "options": [
+            {
+              "label": "More apples",
+              "emoji": "🍎",
+              "why": "Bees help flowers turn into fruit, so we'd get less."
+            },
+            {
+              "label": "Fewer apples",
+              "emoji": "🌸"
+            },
+            {
+              "label": "Snow would fall",
+              "emoji": "❄️",
+              "why": "Bees don't change the weather."
+            }
+          ],
+          "answer": 1,
+          "explain": "Bees carry pollen between flowers. Without them, fewer flowers turn into apples."
+        },
+        {
+          "mode": "choice",
+          "ask": "Snails come out after rain. Why?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌧️",
+              "🐌"
+            ]
+          },
+          "options": [
+            {
+              "label": "They like hot sun",
+              "emoji": "☀️",
+              "why": "Hot sun dries a snail out."
+            },
+            {
+              "label": "They like it damp",
+              "emoji": "💧"
+            },
+            {
+              "label": "Rain is noisy",
+              "emoji": "🎵",
+              "why": "Snails don't come out for the noise."
+            }
+          ],
+          "answer": 1,
+          "explain": "Snails need to stay damp, so wet days are perfect for them."
+        },
+        {
+          "mode": "sort",
+          "ask": "Which minibeasts have 6 legs, 8 legs, or no legs?",
+          "bins": [
+            {
+              "label": "6 legs",
+              "emoji": "🐜"
+            },
+            {
+              "label": "8 legs",
+              "emoji": "🕷️"
+            },
+            {
+              "label": "No legs",
+              "emoji": "🪱"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐝",
+              "bin": 0,
+              "name": "bee"
+            },
+            {
+              "emoji": "🕷️",
+              "bin": 1,
+              "name": "spider"
+            },
+            {
+              "emoji": "🐌",
+              "bin": 2,
+              "name": "snail"
+            },
+            {
+              "emoji": "🦂",
+              "bin": 1,
+              "name": "scorpion"
+            },
+            {
+              "emoji": "🐞",
+              "bin": 0,
+              "name": "ladybird"
+            },
+            {
+              "emoji": "🪱",
+              "bin": 2,
+              "name": "worm"
+            }
+          ],
+          "explain": "Insects have 6 legs. Spiders and scorpions have 8. Snails and worms have none."
+        }
+      ]
+    }
+  ]
+}

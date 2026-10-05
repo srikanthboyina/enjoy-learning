@@ -663,7 +663,7 @@
             {
               "emoji": "🏜️",
               "label": "Sand",
-              "why": "There is no sand in a camel's hump!"
+              "why": "A camel's hump does not hold sand!"
             }
           ],
           "answer": 1,
@@ -750,7 +750,7 @@
             {
               "emoji": "❄️",
               "label": "Arctic",
-              "why": "The Arctic has no trees to climb."
+              "why": "The icy Arctic does not have trees to climb."
             }
           ],
           "answer": 1,

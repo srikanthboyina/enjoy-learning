@@ -1,0 +1,630 @@
+{
+  "topicId": "animal-groups",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "animal-groups-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Fur, feathers or fins?",
+      "intro": {
+        "say": "Animals belong to groups. Let's look at fur, feathers and fins!",
+        "icons": [
+          "🐄",
+          "🐦",
+          "🐟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Mammals have fur or hair. Mammal mums feed their babies milk. Cows, dogs and cats are mammals.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐄",
+              "🐕",
+              "🐈",
+              "🐇"
+            ]
+          },
+          "caption": "Mammals: fur and milk"
+        },
+        {
+          "mode": "show",
+          "say": "Birds have feathers and wings. Fish live in water. They swim with fins and breathe with gills.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦",
+              "🦆",
+              "🦉",
+              "🐟",
+              "🐠"
+            ]
+          },
+          "caption": "Birds: feathers · Fish: fins"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal has feathers?",
+          "options": [
+            {
+              "label": "Dog",
+              "emoji": "🐕",
+              "why": "A dog has fur, not feathers."
+            },
+            {
+              "label": "Duck",
+              "emoji": "🦆"
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "A fish has shiny scales."
+            }
+          ],
+          "answer": 1,
+          "explain": "A duck is a bird, and all birds have feathers."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal swims with fins and breathes with gills?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌊"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Cat",
+              "emoji": "🐈",
+              "why": "A cat breathes air with lungs. It does not have gills."
+            },
+            {
+              "label": "Bird",
+              "emoji": "🐦",
+              "why": "Birds breathe air with lungs."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐠"
+            }
+          ],
+          "answer": 2,
+          "explain": "Fish use fins to swim and gills to breathe under water."
+        },
+        {
+          "mode": "choice",
+          "ask": "This animal has soft fur and drinks milk as a baby. Which group is it in?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐇"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Mammal",
+              "emoji": "🐄"
+            },
+            {
+              "label": "Bird",
+              "emoji": "🐦",
+              "why": "Birds have feathers, and a rabbit has fur."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "Fish live in water and have fins."
+            }
+          ],
+          "answer": 0,
+          "explain": "A rabbit has fur and drinks milk, so it is a mammal."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort the animals: fur or feathers?",
+          "bins": [
+            {
+              "label": "Fur",
+              "emoji": "🐻"
+            },
+            {
+              "label": "Feathers",
+              "emoji": "🪶"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐕",
+              "bin": 0,
+              "name": "dog"
+            },
+            {
+              "emoji": "🦉",
+              "bin": 1,
+              "name": "owl"
+            },
+            {
+              "emoji": "🐄",
+              "bin": 0,
+              "name": "cow"
+            },
+            {
+              "emoji": "🦆",
+              "bin": 1,
+              "name": "duck"
+            },
+            {
+              "emoji": "🐈",
+              "bin": 0,
+              "name": "cat"
+            },
+            {
+              "emoji": "🐓",
+              "bin": 1,
+              "name": "rooster"
+            }
+          ],
+          "explain": "Furry animals are mammals. Feathery animals are birds."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a bird?",
+          "options": [
+            {
+              "label": "Mouse",
+              "emoji": "🐁",
+              "why": "A mouse has fur, so it is a mammal."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "A fish has fins, not wings."
+            },
+            {
+              "label": "Rooster",
+              "emoji": "🐓"
+            }
+          ],
+          "answer": 2,
+          "explain": "A rooster has feathers, wings and a beak. It is a bird!"
+        }
+      ]
+    },
+    {
+      "id": "animal-groups-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Scales, slime and six legs",
+      "intro": {
+        "say": "Let's meet three more groups: reptiles, amphibians and insects.",
+        "icons": [
+          "🐍",
+          "🐸",
+          "🐞"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Reptiles have dry, scaly skin. Most reptiles lay eggs. Snakes, lizards, turtles and crocodiles are reptiles.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐍",
+              "🦎",
+              "🐢",
+              "🐊"
+            ]
+          },
+          "caption": "Reptiles: dry scales"
+        },
+        {
+          "mode": "show",
+          "say": "Amphibians, like frogs, have smooth wet skin. They start life in water as tadpoles. Insects are tiny and have 6 legs.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐸",
+              "💧",
+              "🐜",
+              "🐞",
+              "🐝"
+            ]
+          },
+          "caption": "Amphibians: wet skin · Insects: 6 legs"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal is a reptile?",
+          "options": [
+            {
+              "label": "Frog",
+              "emoji": "🐸",
+              "why": "A frog has smooth wet skin. It is an amphibian."
+            },
+            {
+              "label": "Turtle",
+              "emoji": "🐢"
+            },
+            {
+              "label": "Rabbit",
+              "emoji": "🐇",
+              "why": "A rabbit has fur. It is a mammal."
+            }
+          ],
+          "answer": 1,
+          "explain": "A turtle has dry scaly skin and lays eggs, so it is a reptile."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal is an amphibian?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💧",
+              "🪨"
+            ]
+          },
+          "options": [
+            {
+              "label": "Lizard",
+              "emoji": "🦎",
+              "why": "A lizard has dry scales. It is a reptile."
+            },
+            {
+              "label": "Bee",
+              "emoji": "🐝",
+              "why": "A bee has 6 legs. It is an insect."
+            },
+            {
+              "label": "Frog",
+              "emoji": "🐸"
+            }
+          ],
+          "answer": 2,
+          "explain": "A frog has wet skin and starts life as a tadpole in water."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many legs does every insect have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐜"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count again: insects have 3 legs on each side."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "8",
+              "why": "8 legs is a spider, and spiders are not insects."
+            }
+          ],
+          "answer": 1,
+          "explain": "All insects have 6 legs: 3 on each side.",
+          "hint": "Count 3 legs on each side of the ant."
+        },
+        {
+          "mode": "sort",
+          "ask": "Reptile or insect? Sort them!",
+          "bins": [
+            {
+              "label": "Reptile",
+              "emoji": "🐊"
+            },
+            {
+              "label": "Insect",
+              "emoji": "🐞"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐍",
+              "bin": 0,
+              "name": "snake"
+            },
+            {
+              "emoji": "🐜",
+              "bin": 1,
+              "name": "ant"
+            },
+            {
+              "emoji": "🦎",
+              "bin": 0,
+              "name": "lizard"
+            },
+            {
+              "emoji": "🦋",
+              "bin": 1,
+              "name": "butterfly"
+            },
+            {
+              "emoji": "🐢",
+              "bin": 0,
+              "name": "turtle"
+            },
+            {
+              "emoji": "🐝",
+              "bin": 1,
+              "name": "bee"
+            }
+          ],
+          "explain": "Reptiles have scaly skin. Insects are tiny with 6 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "A crocodile has dry, scaly skin and lays eggs. Which group is it in?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐊"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Mammal",
+              "emoji": "🐄",
+              "why": "Mammals have fur and feed babies milk."
+            },
+            {
+              "label": "Reptile",
+              "emoji": "🐍"
+            },
+            {
+              "label": "Amphibian",
+              "emoji": "🐸",
+              "why": "Amphibians have wet, smooth skin."
+            }
+          ],
+          "answer": 1,
+          "explain": "Dry scales and eggs mean a crocodile is a reptile."
+        }
+      ]
+    },
+    {
+      "id": "animal-groups-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Tricky animals",
+      "intro": {
+        "say": "Some animals look like they belong in one group, but really belong in another. Let's be animal detectives!",
+        "icons": [
+          "🐳",
+          "🦇",
+          "🐧"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A whale lives in the sea, but it is not a fish. It breathes air through a blowhole and feeds its baby milk. It is a mammal!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐳",
+              "🐬",
+              "🥛"
+            ]
+          },
+          "caption": "Whales and dolphins are mammals"
+        },
+        {
+          "mode": "show",
+          "say": "A bat can fly, but it has fur and drinks milk, so it is a mammal. A penguin cannot fly, but it has feathers, so it is a bird.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦇",
+              "🐧",
+              "🪶"
+            ]
+          },
+          "caption": "Bat: mammal · Penguin: bird"
+        },
+        {
+          "mode": "choice",
+          "ask": "A dolphin swims in the sea, breathes air and feeds its baby milk. Which group is it in?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐬"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "Fish breathe with gills, but dolphins come up for air."
+            },
+            {
+              "label": "Mammal",
+              "emoji": "🐄"
+            },
+            {
+              "label": "Reptile",
+              "emoji": "🐍",
+              "why": "Reptiles have scales and most lay eggs."
+            }
+          ],
+          "answer": 1,
+          "explain": "Breathing air and feeding babies milk makes a dolphin a mammal."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which of these animals is a mammal that can fly?",
+          "options": [
+            {
+              "label": "Bat",
+              "emoji": "🦇"
+            },
+            {
+              "label": "Eagle",
+              "emoji": "🦅",
+              "why": "An eagle has feathers. It is a bird."
+            },
+            {
+              "label": "Butterfly",
+              "emoji": "🦋",
+              "why": "A butterfly has 6 legs. It is an insect."
+            }
+          ],
+          "answer": 0,
+          "explain": "A bat has fur and feeds its babies milk, so it is a flying mammal."
+        },
+        {
+          "mode": "choice",
+          "ask": "A penguin cannot fly. Why is it still a bird?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐧"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "It swims",
+              "emoji": "🌊",
+              "why": "Fish and seals swim too, so that is not the clue."
+            },
+            {
+              "label": "It has feathers",
+              "emoji": "🪶"
+            },
+            {
+              "label": "It lives in the cold",
+              "emoji": "❄️",
+              "why": "Polar bears live in the cold, and they are mammals."
+            }
+          ],
+          "answer": 1,
+          "explain": "Only birds have feathers, so a penguin is a bird.",
+          "hint": "Think: what do all birds have?"
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort these sea and sky animals into their groups.",
+          "bins": [
+            {
+              "label": "Mammal",
+              "emoji": "🐄"
+            },
+            {
+              "label": "Bird",
+              "emoji": "🐦"
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐳",
+              "bin": 0,
+              "name": "whale"
+            },
+            {
+              "emoji": "🐧",
+              "bin": 1,
+              "name": "penguin"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 2,
+              "name": "shark"
+            },
+            {
+              "emoji": "🦇",
+              "bin": 0,
+              "name": "bat"
+            },
+            {
+              "emoji": "🦢",
+              "bin": 1,
+              "name": "swan"
+            },
+            {
+              "emoji": "🐠",
+              "bin": 2,
+              "name": "clownfish"
+            },
+            {
+              "emoji": "🐬",
+              "bin": 0,
+              "name": "dolphin"
+            }
+          ],
+          "explain": "Whales, dolphins and bats are mammals. Penguins and swans are birds. Sharks and clownfish are fish."
+        },
+        {
+          "mode": "choice",
+          "ask": "A shark lives in the sea and breathes with gills. Which group is it in?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦈"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Mammal",
+              "emoji": "🐄",
+              "why": "Mammals breathe air, but sharks use gills."
+            },
+            {
+              "label": "Amphibian",
+              "emoji": "🐸",
+              "why": "Amphibians have wet skin and start as tadpoles."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟"
+            }
+          ],
+          "answer": 2,
+          "explain": "Sharks breathe with gills and swim with fins, so they are fish."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which clue tells you an animal is a mammal?",
+          "options": [
+            {
+              "label": "Lays eggs",
+              "emoji": "🥚",
+              "why": "Birds, reptiles and fish lay eggs too."
+            },
+            {
+              "label": "Lives in water",
+              "emoji": "🌊",
+              "why": "Fish and frogs live in water too."
+            },
+            {
+              "label": "Feeds babies milk",
+              "emoji": "🥛"
+            }
+          ],
+          "answer": 2,
+          "explain": "Only mammals feed their babies milk. That is the best clue."
+        }
+      ]
+    }
+  ]
+}

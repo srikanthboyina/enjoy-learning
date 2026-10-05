@@ -1,0 +1,683 @@
+{
+  "topicId": "multiply-stories",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "multiply-stories-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Legs and wheels",
+      "intro": {
+        "say": "Animals have legs and bikes have wheels. Let us count them in equal groups!",
+        "icons": [
+          "🐞",
+          "🚲",
+          "🐶"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A bird has 2 legs. Two birds have 2 and 2 legs. That is 4 legs!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦",
+              "🐦"
+            ],
+            "size": "lg"
+          },
+          "caption": "2 birds: 2 + 2 = 4 legs"
+        },
+        {
+          "mode": "show",
+          "say": "A bike has 2 wheels. Three bikes: 2, 4, 6. Six wheels!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "⚫"
+              },
+              {
+                "count": 2,
+                "emoji": "⚫"
+              },
+              {
+                "count": 2,
+                "emoji": "⚫"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 bikes: 6 wheels"
+        },
+        {
+          "mode": "choice",
+          "ask": "A dog has 4 legs. How many legs on 2 dogs?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶",
+              "🐶"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "That is one dog. Count both dogs."
+            },
+            {
+              "label": "6",
+              "why": "Count again: 4 and 4."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "4 and 4 make 8 legs.",
+          "hint": "Each dog has 4 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many wheels on 2 bikes?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚲",
+              "🚲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "2",
+              "why": "That is one bike."
+            },
+            {
+              "label": "3",
+              "why": "Each bike has 2 wheels."
+            }
+          ],
+          "answer": 0,
+          "explain": "2 and 2 make 4 wheels."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many eyes on 3 cats?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐱",
+              "🐱",
+              "🐱"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Each cat has 2 eyes."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "5",
+              "why": "Count in twos: 2, 4, 6."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two, four, six. Six eyes."
+        },
+        {
+          "mode": "sort",
+          "ask": "How many legs? Sort the animals.",
+          "bins": [
+            {
+              "label": "2 legs",
+              "emoji": "🐔"
+            },
+            {
+              "label": "4 legs",
+              "emoji": "🐶"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🦆",
+              "bin": 0,
+              "name": "duck"
+            },
+            {
+              "emoji": "🐱",
+              "bin": 1,
+              "name": "cat"
+            },
+            {
+              "emoji": "🐄",
+              "bin": 1,
+              "name": "cow"
+            },
+            {
+              "emoji": "🐧",
+              "bin": 0,
+              "name": "penguin"
+            },
+            {
+              "emoji": "🐴",
+              "bin": 1,
+              "name": "horse"
+            },
+            {
+              "emoji": "🐓",
+              "bin": 0,
+              "name": "rooster"
+            }
+          ],
+          "explain": "Birds have 2 legs. Cats, cows and horses have 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many ears on 2 bunnies?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐰",
+              "🐰"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Each bunny has 2 ears."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "6",
+              "why": "There are only 2 bunnies."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 and 2 make 4 ears."
+        }
+      ]
+    },
+    {
+      "id": "multiply-stories-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Ladybugs and cars",
+      "intro": {
+        "say": "More stories! Find how many are in one group, then count all the groups.",
+        "icons": [
+          "🐞",
+          "🚗",
+          "🐙"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A ladybug has 6 legs. Three ladybugs: 6, 12, 18. Eighteen legs!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🦵"
+              },
+              {
+                "count": 6,
+                "emoji": "🦵"
+              },
+              {
+                "count": 6,
+                "emoji": "🦵"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 × 6 = 18"
+        },
+        {
+          "mode": "show",
+          "say": "A car has 4 wheels. Four cars: count in fours. 4, 8, 12, 16. Sixteen wheels!",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 4,
+            "emoji": "⚫"
+          },
+          "caption": "4 cars × 4 wheels = 16"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many legs on 3 ladybugs?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐞",
+              "🐞",
+              "🐞"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "Each ladybug has 6 legs, not 3."
+            },
+            {
+              "label": "18"
+            },
+            {
+              "label": "12",
+              "why": "That is only 2 ladybugs."
+            }
+          ],
+          "answer": 1,
+          "explain": "6, 12, 18. Three ladybugs have 18 legs.",
+          "hint": "A ladybug has 6 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many wheels on 3 cars?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚗",
+              "🚗",
+              "🚗"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "12"
+            },
+            {
+              "label": "7",
+              "why": "Count in fours: 4, 8, 12."
+            },
+            {
+              "label": "8",
+              "why": "That is only 2 cars."
+            }
+          ],
+          "answer": 0,
+          "explain": "4, 8, 12. Three cars have 12 wheels."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many legs on 2 chickens and 1 dog?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐔",
+              "🐔",
+              "🐶"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "The dog has 4 legs."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "10",
+              "why": "Each chicken has just 2 legs."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 and 2 and 4 make 8 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "An octopus has 8 arms. How many arms on 2 octopuses?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐙",
+              "🐙"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "Eight and eight."
+            },
+            {
+              "label": "16"
+            },
+            {
+              "label": "8",
+              "why": "That is just one octopus."
+            }
+          ],
+          "answer": 1,
+          "explain": "8 and 8 make 16 arms."
+        },
+        {
+          "mode": "sort",
+          "ask": "How many legs? Sort the animals.",
+          "bins": [
+            {
+              "label": "2 legs",
+              "emoji": "🐦"
+            },
+            {
+              "label": "4 legs",
+              "emoji": "🐶"
+            },
+            {
+              "label": "6 legs",
+              "emoji": "🐞"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐝",
+              "bin": 2,
+              "name": "bee"
+            },
+            {
+              "emoji": "🦆",
+              "bin": 0,
+              "name": "duck"
+            },
+            {
+              "emoji": "🐘",
+              "bin": 1,
+              "name": "elephant"
+            },
+            {
+              "emoji": "🐜",
+              "bin": 2,
+              "name": "ant"
+            },
+            {
+              "emoji": "🐸",
+              "bin": 1,
+              "name": "frog"
+            },
+            {
+              "emoji": "🦉",
+              "bin": 0,
+              "name": "owl"
+            }
+          ],
+          "explain": "Insects like bees and ants have 6 legs. Birds have 2. Frogs and elephants have 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many fingers on 3 hands?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖐️",
+              "🖐️",
+              "🖐️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "Each hand has 5 fingers."
+            },
+            {
+              "label": "20",
+              "why": "That is four hands."
+            },
+            {
+              "label": "15"
+            }
+          ],
+          "answer": 2,
+          "explain": "5, 10, 15. Fifteen fingers."
+        }
+      ]
+    },
+    {
+      "id": "multiply-stories-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Story puzzles",
+      "intro": {
+        "say": "Big story puzzles! Ask: how many groups, and how many in each?",
+        "icons": [
+          "🐞",
+          "🧠",
+          "🕷️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A spider has 8 legs. Two spiders: 8 and 8. Sixteen legs! Groups times how many in each.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 8,
+                "emoji": "🦵"
+              },
+              {
+                "count": 8,
+                "emoji": "🦵"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "2 × 8 = 16"
+        },
+        {
+          "mode": "show",
+          "say": "A story: 5 bags, 2 apples in each bag. 5 groups of 2 is 2, 4, 6, 8, 10. Ten apples!",
+          "visual": {
+            "kind": "array",
+            "rows": 5,
+            "cols": 2,
+            "emoji": "🍎"
+          },
+          "caption": "5 × 2 = 10"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many legs on 2 spiders?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🕷️",
+              "🕷️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "Each spider has 8 legs."
+            },
+            {
+              "label": "16"
+            },
+            {
+              "label": "12",
+              "why": "Count again: 8 and 8."
+            }
+          ],
+          "answer": 1,
+          "explain": "8 and 8 make 16 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 5 vases with 3 flowers each. How many flowers?",
+          "visual": {
+            "kind": "array",
+            "rows": 5,
+            "cols": 3,
+            "emoji": "🌷"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "Five plus three adds. We need five groups of three."
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "12",
+              "why": "That is only 4 vases."
+            }
+          ],
+          "answer": 1,
+          "explain": "3, 6, 9, 12, 15. Fifteen flowers."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many legs on 2 dogs and 2 birds?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶",
+              "🐶",
+              "🐦",
+              "🐦"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "Do not forget the birds."
+            },
+            {
+              "label": "6",
+              "why": "Each dog has 4 legs."
+            },
+            {
+              "label": "12"
+            }
+          ],
+          "answer": 2,
+          "explain": "Dogs: 4 and 4 is 8. Birds: 2 and 2 is 4. 8 and 4 make 12."
+        },
+        {
+          "mode": "choice",
+          "ask": "6 children each have 2 shoes. How many shoes?",
+          "visual": {
+            "kind": "array",
+            "rows": 6,
+            "cols": 2,
+            "emoji": "👟"
+          },
+          "options": [
+            {
+              "label": "12"
+            },
+            {
+              "label": "8",
+              "why": "Count in twos: six jumps."
+            },
+            {
+              "label": "10",
+              "why": "That is five children. Count six."
+            }
+          ],
+          "answer": 0,
+          "explain": "2, 4, 6, 8, 10, 12. Twelve shoes."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 20 legs. Each dog has 4 legs. How many dogs?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶",
+              "❓"
+            ]
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Four dogs have only 16 legs."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "6",
+              "why": "Six dogs have 24 legs."
+            }
+          ],
+          "answer": 1,
+          "explain": "4, 8, 12, 16, 20. That is 5 jumps, so 5 dogs.",
+          "hint": "Count in fours to 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which story is about equal groups?",
+          "options": [
+            {
+              "label": "3 cars, 4 wheels each"
+            },
+            {
+              "label": "3 red cars, 2 blue",
+              "why": "That is adding two different groups."
+            },
+            {
+              "label": "5 cars, 2 drive away",
+              "why": "That is taking away."
+            }
+          ],
+          "answer": 0,
+          "explain": "Every car has the same 4 wheels, so they are equal groups."
+        },
+        {
+          "mode": "choice",
+          "ask": "A tricycle has 3 wheels. How many wheels on 4 tricycles?",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 3,
+            "emoji": "⚫"
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "Four plus three adds. We need four groups of three."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "16",
+              "why": "That would be 4 wheels each."
+            }
+          ],
+          "answer": 1,
+          "explain": "3, 6, 9, 12. Twelve wheels."
+        }
+      ]
+    }
+  ]
+}

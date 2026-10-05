@@ -1,0 +1,610 @@
+{
+  "topicId": "capacity",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "capacity-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Full, half and empty",
+      "intro": {
+        "say": "Let's learn full, half full and empty, like a glass of milk.",
+        "icons": [
+          "🥛",
+          "🪣",
+          "🛁"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Pretend this bar is a jug of juice. When it is coloured all the way, the jug is full.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 4,
+            "shape": "bar"
+          },
+          "caption": "Full"
+        },
+        {
+          "mode": "show",
+          "say": "When it is coloured up to the middle, the jug is half full.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 2,
+            "shape": "bar"
+          },
+          "caption": "Half full"
+        },
+        {
+          "mode": "show",
+          "say": "When there is nothing in it at all, the jug is empty.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 0,
+            "shape": "bar"
+          },
+          "caption": "Empty"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which jug is full?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 0,
+                "shape": "bar"
+              },
+              "why": "This one has nothing in it. It is empty."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 4,
+                "shape": "bar"
+              }
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 2,
+                "shape": "bar"
+              },
+              "why": "This one is only half full."
+            }
+          ],
+          "answer": 1,
+          "explain": "It is coloured all the way, so it is full."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which jug is empty?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 2,
+                "shape": "bar"
+              },
+              "why": "This one still has some juice."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 4,
+                "shape": "bar"
+              },
+              "why": "This one is full to the top."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 0,
+                "shape": "bar"
+              }
+            }
+          ],
+          "answer": 2,
+          "explain": "There is nothing in it, so it is empty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which jug is half full?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 2,
+                "shape": "bar"
+              }
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 0,
+                "shape": "bar"
+              },
+              "why": "This one is empty."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 4,
+                "shape": "bar"
+              },
+              "why": "This one is full."
+            }
+          ],
+          "answer": 0,
+          "explain": "It is filled up to the middle, so it is half full."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ben drinks all his milk. Now his cup is...",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👦",
+              "🥛"
+            ]
+          },
+          "options": [
+            {
+              "label": "Full",
+              "why": "He drank it all, so nothing is left."
+            },
+            {
+              "label": "Empty"
+            },
+            {
+              "label": "Half full",
+              "why": "He drank all of it, not half."
+            }
+          ],
+          "answer": 1,
+          "explain": "When all the milk is gone, the cup is empty."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it hold a lot or a little?",
+          "bins": [
+            {
+              "label": "A lot",
+              "emoji": "🛁"
+            },
+            {
+              "label": "A little",
+              "emoji": "🥄"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🛁",
+              "bin": 0,
+              "name": "bathtub"
+            },
+            {
+              "emoji": "🪣",
+              "bin": 0,
+              "name": "bucket"
+            },
+            {
+              "emoji": "🥄",
+              "bin": 1,
+              "name": "spoon"
+            },
+            {
+              "emoji": "🥛",
+              "bin": 1,
+              "name": "glass"
+            },
+            {
+              "emoji": "🧃",
+              "bin": 1,
+              "name": "juice box"
+            }
+          ],
+          "explain": "A bathtub and a bucket hold a lot of water. A spoon, a glass and a juice box hold a little."
+        }
+      ]
+    },
+    {
+      "id": "capacity-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Which holds more?",
+      "intro": {
+        "say": "Some things hold more than others. Let's count cups to find out!",
+        "icons": [
+          "🥛",
+          "🫖",
+          "🪣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "How much a thing can hold is called its capacity. This bucket fills up with 6 cups of water.",
+          "visual": {
+            "kind": "text",
+            "text": "🪣 = 🥛🥛🥛🥛🥛🥛"
+          },
+          "caption": "The bucket holds 6 cups"
+        },
+        {
+          "mode": "show",
+          "say": "A tall thin vase can hold less than a short wide bowl. Count the cups to check!",
+          "visual": {
+            "kind": "text",
+            "text": "🏺 = 🥛🥛   🥣 = 🥛🥛🥛"
+          },
+          "caption": "The bowl holds more"
+        },
+        {
+          "mode": "choice",
+          "ask": "The teapot holds 4 cups. The vase holds 2 cups. Which holds more?",
+          "visual": {
+            "kind": "text",
+            "text": "🫖 = 🥛🥛🥛🥛   🏺 = 🥛🥛"
+          },
+          "options": [
+            {
+              "emoji": "🏺",
+              "why": "2 cups is less than 4 cups."
+            },
+            {
+              "emoji": "🫖"
+            }
+          ],
+          "answer": 1,
+          "explain": "4 cups is more than 2 cups, so the teapot holds more."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many cups fill the bowl?",
+          "visual": {
+            "kind": "text",
+            "text": "🥣 = 🥛🥛🥛"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count every cup, one by one."
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "4",
+              "why": "Let's count the cups again."
+            }
+          ],
+          "answer": 1,
+          "explain": "Three cups fill the bowl, so it holds 3 cups."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which jug has more juice in it?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 1,
+                "shape": "bar"
+              },
+              "why": "This one has only a little juice."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 3,
+                "shape": "bar"
+              }
+            }
+          ],
+          "answer": 1,
+          "explain": "This jug is coloured higher, so it has more juice."
+        },
+        {
+          "mode": "choice",
+          "ask": "The bars show how many cups each one holds. Which holds the least?",
+          "visual": {
+            "kind": "bars",
+            "bars": [
+              {
+                "emoji": "🪣",
+                "value": 8
+              },
+              {
+                "emoji": "🫖",
+                "value": 4
+              },
+              {
+                "emoji": "🥣",
+                "value": 2
+              }
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🪣",
+              "why": "The bucket has the longest bar, so it holds the most."
+            },
+            {
+              "emoji": "🫖",
+              "why": "The teapot holds more than the bowl."
+            },
+            {
+              "emoji": "🥣"
+            }
+          ],
+          "answer": 2,
+          "explain": "The bowl has the shortest bar, so it holds the least."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is this jug nearly full or nearly empty?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 3,
+            "shape": "bar"
+          },
+          "options": [
+            {
+              "label": "Nearly empty",
+              "why": "Most of the jug is coloured in."
+            },
+            {
+              "label": "Nearly full"
+            }
+          ],
+          "answer": 1,
+          "explain": "Three of the four parts are filled, so it is nearly full."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order from holds the least to holds the most.",
+          "items": [
+            {
+              "label": "spoon",
+              "emoji": "🥄"
+            },
+            {
+              "label": "glass",
+              "emoji": "🥛"
+            },
+            {
+              "label": "bucket",
+              "emoji": "🪣"
+            },
+            {
+              "label": "bathtub",
+              "emoji": "🛁"
+            }
+          ],
+          "explain": "A spoon holds the least, then a glass, then a bucket, and a bathtub holds the most."
+        }
+      ]
+    },
+    {
+      "id": "capacity-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Capacity puzzles",
+      "intro": {
+        "say": "Let's use adding and thinking to solve puzzles about how much things hold.",
+        "icons": [
+          "🫖",
+          "🥛",
+          "🤔"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A teapot holds 4 cups. Two teapots hold 4 and 4, which makes 8 cups.",
+          "visual": {
+            "kind": "text",
+            "text": "🫖 = 🥛🥛🥛🥛"
+          },
+          "caption": "🫖🫖 = 8 cups"
+        },
+        {
+          "mode": "show",
+          "say": "This jug holds 6 cups when full. Half full is half of 6, which is 3 cups.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 6,
+            "shaded": 3,
+            "shape": "bar"
+          },
+          "caption": "Half of 6 = 3"
+        },
+        {
+          "mode": "choice",
+          "ask": "A bucket holds 10 cups. It has 6 cups in it now. How many more cups will fill it?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 6,
+            "emoji": "💧"
+          },
+          "options": [
+            {
+              "label": "16",
+              "why": "We need the cups still missing, not all of them added."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "6",
+              "why": "6 cups are already in. Count the empty spaces."
+            }
+          ],
+          "answer": 1,
+          "explain": "From 6 up to 10 is 4 more cups.",
+          "hint": "Count the empty boxes."
+        },
+        {
+          "mode": "choice",
+          "ask": "A teapot holds 3 cups. How many cups fill 3 teapots?",
+          "visual": {
+            "kind": "text",
+            "text": "🫖🫖🫖"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "That fills only 2 teapots."
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "12",
+              "why": "That would be 4 teapots."
+            }
+          ],
+          "answer": 1,
+          "explain": "3 and 3 and 3 make 9 cups."
+        },
+        {
+          "mode": "choice",
+          "ask": "This jug holds 8 cups when full. It is half full. How many cups are in it?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 8,
+            "shaded": 4,
+            "shape": "bar"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Half of 8 is more than 2."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "8",
+              "why": "8 would make it full, not half full."
+            }
+          ],
+          "answer": 1,
+          "explain": "Half of 8 is 4, because 4 and 4 make 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "A bucket holds 12 cups. You fill it with a jug that holds 3 cups. How many jugs do you need?",
+          "visual": {
+            "kind": "text",
+            "text": "🪣 = 12   🫖 = 3"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "3 jugs give 9 cups. Not full yet."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "9",
+              "why": "Count jugs of 3: 3, 6, 9, 12."
+            }
+          ],
+          "answer": 1,
+          "explain": "Counting by 3s: 3, 6, 9, 12. That is 4 jugs.",
+          "hint": "Count by threes."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam's bottle holds 5 cups. Tom's holds 7 cups. How many cups do they hold together?",
+          "options": [
+            {
+              "label": "11",
+              "why": "Count on 7 from 5 again."
+            },
+            {
+              "label": "2",
+              "why": "That is the difference. We want both together."
+            },
+            {
+              "label": "12"
+            }
+          ],
+          "answer": 2,
+          "explain": "5 plus 7 is 12 cups."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia pours a full glass of water into a tall thin vase. How much water is there now?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥛",
+              "➡️",
+              "🏺"
+            ]
+          },
+          "options": [
+            {
+              "label": "More water",
+              "why": "The water looks taller, but none was added."
+            },
+            {
+              "label": "Same water"
+            },
+            {
+              "label": "Less water",
+              "why": "Nothing spilled, so none was lost."
+            }
+          ],
+          "answer": 1,
+          "explain": "Pouring changes the shape of the water, not how much there is."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the jugs in order from least juice to most juice.",
+          "items": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 1,
+                "shape": "bar"
+              }
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 2,
+                "shape": "bar"
+              }
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 3,
+                "shape": "bar"
+              }
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 4,
+                "shape": "bar"
+              }
+            }
+          ],
+          "explain": "One part, then two, then three, then all four parts full."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "topicId": "heat",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "heat-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Hot and cold",
+      "intro": {
+        "say": "Heat makes things warm. Some things are hot and some are cold!",
+        "icons": [
+          "🔥",
+          "🧊"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The Sun gives us heat. Fires and ovens make heat too. These are called heat sources.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "🔥",
+              "♨️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Heat sources"
+        },
+        {
+          "mode": "show",
+          "say": "A thermometer shows how hot something is. Up high means hot. Down low means cold.",
+          "visual": {
+            "kind": "thermometer",
+            "level": 9
+          },
+          "caption": "High = hot"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is hot?",
+          "options": [
+            {
+              "emoji": "🧊",
+              "label": "Ice",
+              "why": "Ice is very cold."
+            },
+            {
+              "emoji": "🔥",
+              "label": "Fire"
+            },
+            {
+              "emoji": "❄️",
+              "label": "Snow",
+              "why": "Snow is very cold."
+            }
+          ],
+          "answer": 1,
+          "explain": "Fire is very hot. Never touch it!"
+        },
+        {
+          "mode": "sort",
+          "ask": "Hot or cold?",
+          "bins": [
+            {
+              "label": "Hot",
+              "emoji": "🔥"
+            },
+            {
+              "label": "Cold",
+              "emoji": "🧊"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "☀️",
+              "bin": 0,
+              "name": "Sun"
+            },
+            {
+              "emoji": "☕",
+              "bin": 0,
+              "name": "hot cocoa"
+            },
+            {
+              "emoji": "🍲",
+              "bin": 0,
+              "name": "hot soup"
+            },
+            {
+              "emoji": "🍦",
+              "bin": 1,
+              "name": "ice cream"
+            },
+            {
+              "emoji": "⛄",
+              "bin": 1,
+              "name": "snowman"
+            },
+            {
+              "emoji": "🥶",
+              "bin": 1,
+              "name": "freezing face"
+            }
+          ],
+          "explain": "The Sun, cocoa and soup are hot. Ice cream and snowmen are cold."
+        },
+        {
+          "mode": "choice",
+          "ask": "Look at the thermometer. Is it hot or cold?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 1
+          },
+          "options": [
+            {
+              "emoji": "🔥",
+              "label": "Hot",
+              "why": "The red line is very low. Low means cold."
+            },
+            {
+              "emoji": "🧊",
+              "label": "Cold"
+            }
+          ],
+          "answer": 1,
+          "explain": "The line is low, so it's cold."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one gives us heat?",
+          "options": [
+            {
+              "emoji": "🌙",
+              "label": "Moon",
+              "why": "The Moon doesn't warm us up."
+            },
+            {
+              "emoji": "🧊",
+              "label": "Ice",
+              "why": "Ice makes things colder."
+            },
+            {
+              "emoji": "☀️",
+              "label": "Sun"
+            }
+          ],
+          "answer": 2,
+          "explain": "The Sun warms the whole Earth."
+        },
+        {
+          "mode": "choice",
+          "ask": "It's a cold, snowy day. What should you wear?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "❄️",
+              "⛄"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🧥",
+              "label": "Warm coat"
+            },
+            {
+              "emoji": "🩳",
+              "label": "Shorts",
+              "why": "Shorts are for hot days."
+            }
+          ],
+          "answer": 0,
+          "explain": "A warm coat keeps your body heat in."
+        }
+      ]
+    },
+    {
+      "id": "heat-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Heat moves",
+      "intro": {
+        "say": "Heat moves from hot things to cold things. Let's see how!",
+        "icons": [
+          "☕",
+          "➡️",
+          "🧊"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Hold an ice cube in your warm hand. Heat moves from your hand into the ice, and it melts!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "✋",
+              "➡️",
+              "🧊",
+              "💧"
+            ],
+            "size": "lg"
+          },
+          "caption": "Heat moves hot to cold"
+        },
+        {
+          "mode": "show",
+          "say": "A hot drink left on the table cools down. Its heat moves out into the cooler air.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☕",
+              "➡️",
+              "🌬️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Hot drinks cool down"
+        },
+        {
+          "mode": "show",
+          "say": "A metal spoon in hot soup soon gets hot. Heat moves through metal easily.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥄",
+              "🍲",
+              "🔥"
+            ],
+            "size": "lg"
+          },
+          "caption": "Metal gets hot"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which way does heat move?",
+          "options": [
+            {
+              "emoji": "🧊",
+              "label": "Cold to hot",
+              "why": "Heat always flows from the warmer thing."
+            },
+            {
+              "emoji": "🔥",
+              "label": "Hot to cold"
+            }
+          ],
+          "answer": 1,
+          "explain": "Heat moves from hot things to colder things."
+        },
+        {
+          "mode": "choice",
+          "ask": "You leave hot cocoa on the table. What happens after a while?",
+          "options": [
+            {
+              "emoji": "🔥",
+              "label": "It gets hotter",
+              "why": "Nothing is heating it, so it can't get hotter."
+            },
+            {
+              "emoji": "🧊",
+              "label": "It freezes",
+              "why": "The room isn't cold enough to freeze it."
+            },
+            {
+              "emoji": "☕",
+              "label": "It cools down"
+            }
+          ],
+          "answer": 2,
+          "explain": "Its heat moves into the cooler air, so it cools down."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which spoon gets hot fastest in hot soup?",
+          "options": [
+            {
+              "emoji": "🥄",
+              "label": "Metal spoon"
+            },
+            {
+              "emoji": "🪵",
+              "label": "Wooden spoon",
+              "why": "Wood lets heat through slowly."
+            },
+            {
+              "emoji": "🥤",
+              "label": "Plastic spoon",
+              "why": "Plastic lets heat through slowly."
+            }
+          ],
+          "answer": 0,
+          "explain": "Heat moves through metal quickly."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do we wear oven gloves?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍪",
+              "♨️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "💅",
+              "label": "To look nice",
+              "why": "They do look nice, but there's a safety reason."
+            },
+            {
+              "emoji": "🧤",
+              "label": "To keep heat off our hands"
+            }
+          ],
+          "answer": 1,
+          "explain": "Thick gloves slow the heat down so our hands don't get burned."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it give off heat?",
+          "bins": [
+            {
+              "label": "Gives heat",
+              "emoji": "🔥"
+            },
+            {
+              "label": "No heat",
+              "emoji": "🚫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "☀️",
+              "bin": 0,
+              "name": "Sun"
+            },
+            {
+              "emoji": "🔥",
+              "bin": 0,
+              "name": "campfire"
+            },
+            {
+              "emoji": "🕯️",
+              "bin": 0,
+              "name": "candle flame"
+            },
+            {
+              "emoji": "📚",
+              "bin": 1,
+              "name": "books"
+            },
+            {
+              "emoji": "🧸",
+              "bin": 1,
+              "name": "teddy"
+            },
+            {
+              "emoji": "🍎",
+              "bin": 1,
+              "name": "apple"
+            }
+          ],
+          "explain": "The Sun and flames give off heat. Books, teddies and apples don't."
+        }
+      ]
+    },
+    {
+      "id": "heat-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Keeping warm, keeping cool",
+      "intro": {
+        "say": "Why do coats keep us warm? How does a cool box work? Let's think about heat!",
+        "icons": [
+          "🧥",
+          "🧣",
+          "🧊"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A coat doesn't make heat. It traps your body's own heat inside, so it can't escape into the cold air.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧥",
+              "🧍",
+              "❄️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Coats trap heat"
+        },
+        {
+          "mode": "show",
+          "say": "Wool, cloth and plastic slow heat down. They help keep warm things warm and cold things cold. Metal lets heat through fast.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧣",
+              "🧤",
+              "🆚",
+              "🥄"
+            ],
+            "size": "lg"
+          },
+          "caption": "Wool keeps heat in"
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does the warmth inside your coat come from?",
+          "options": [
+            {
+              "emoji": "🧍",
+              "label": "Your body"
+            },
+            {
+              "emoji": "🧥",
+              "label": "The coat makes it",
+              "why": "Coats don't make heat. They hold heat in."
+            },
+            {
+              "emoji": "🔘",
+              "label": "The buttons",
+              "why": "Buttons don't make heat."
+            }
+          ],
+          "answer": 0,
+          "explain": "Your body makes heat, and the coat traps it."
+        },
+        {
+          "mode": "choice",
+          "ask": "Picnic time! Which keeps ice lollies cold the longest?",
+          "options": [
+            {
+              "emoji": "🛍️",
+              "label": "Thin paper bag",
+              "why": "Heat gets through thin paper quickly."
+            },
+            {
+              "emoji": "🧊",
+              "label": "Thick cool box"
+            }
+          ],
+          "answer": 1,
+          "explain": "The thick cool box keeps heat out, so the lollies stay frozen."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from coldest to hottest.",
+          "items": [
+            {
+              "emoji": "🧊",
+              "label": "Ice"
+            },
+            {
+              "emoji": "🚰",
+              "label": "Cold tap water"
+            },
+            {
+              "emoji": "🛁",
+              "label": "Warm bath"
+            },
+            {
+              "emoji": "☕",
+              "label": "Hot tea"
+            },
+            {
+              "emoji": "🔥",
+              "label": "Fire"
+            }
+          ],
+          "explain": "Ice is coldest and fire is hottest."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does heat pass through quickly, or does it keep heat in?",
+          "bins": [
+            {
+              "label": "Heat goes through",
+              "emoji": "🥄"
+            },
+            {
+              "label": "Keeps heat in",
+              "emoji": "🧣"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍳",
+              "bin": 0,
+              "name": "metal pan"
+            },
+            {
+              "emoji": "🥄",
+              "bin": 0,
+              "name": "metal spoon"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 0,
+              "name": "metal key"
+            },
+            {
+              "emoji": "🧣",
+              "bin": 1,
+              "name": "wool scarf"
+            },
+            {
+              "emoji": "🧤",
+              "bin": 1,
+              "name": "wool gloves"
+            },
+            {
+              "emoji": "🧶",
+              "bin": 1,
+              "name": "ball of wool"
+            }
+          ],
+          "explain": "Metals let heat through fast. Wool keeps heat in."
+        },
+        {
+          "mode": "choice",
+          "ask": "How hot is it?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 10
+          },
+          "options": [
+            {
+              "emoji": "🧊",
+              "label": "Freezing",
+              "why": "Freezing would be right at the bottom."
+            },
+            {
+              "emoji": "🌤️",
+              "label": "Warm",
+              "why": "Warm would be near the middle."
+            },
+            {
+              "emoji": "🔥",
+              "label": "Very hot"
+            }
+          ],
+          "answer": 2,
+          "explain": "The thermometer is filled right to the top, so it's very hot."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do cooking pots often have plastic or wooden handles?",
+          "options": [
+            {
+              "emoji": "🎨",
+              "label": "They look nicer",
+              "why": "There's a safety reason!"
+            },
+            {
+              "emoji": "✋",
+              "label": "They stop heat reaching your hand"
+            },
+            {
+              "emoji": "😋",
+              "label": "They make food tasty",
+              "why": "Handles don't change the taste."
+            }
+          ],
+          "answer": 1,
+          "explain": "Plastic and wood let heat through slowly, so the handle stays cool to hold."
+        }
+      ]
+    }
+  ]
+}

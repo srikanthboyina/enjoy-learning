@@ -1,0 +1,501 @@
+{
+ "topicId": "teeth",
+ "gameId": "explore",
+ "version": 1,
+ "levels": [
+  {
+   "id": "teeth-01",
+   "order": 1,
+   "difficulty": "simple",
+   "name": "Brush, brush, brush",
+   "intro": {
+    "say": "Let's learn how to keep our teeth clean and shiny!",
+    "icons": [
+     "🦷",
+     "🪥",
+     "😁"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Teeth help us bite and chew our food. We need to keep them clean!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "😁",
+       "🦷",
+       "🍎"
+      ]
+     },
+     "caption": "Teeth bite and chew"
+    },
+    {
+     "mode": "show",
+     "say": "Brush your teeth two times a day: in the morning and before bed. Brush for two minutes!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🌅",
+       "🪥",
+       "🌙",
+       "🪥"
+      ]
+     },
+     "caption": "Morning + night"
+    },
+    {
+     "mode": "choice",
+     "ask": "What do we use to clean our teeth?",
+     "options": [
+      {
+       "emoji": "🧹",
+       "label": "Broom",
+       "why": "A broom is for the floor."
+      },
+      {
+       "emoji": "🪥",
+       "label": "Toothbrush"
+      },
+      {
+       "emoji": "🥄",
+       "label": "Spoon",
+       "why": "A spoon is for eating."
+      }
+     ],
+     "answer": 1,
+     "explain": "A toothbrush and toothpaste clean our teeth."
+    },
+    {
+     "mode": "choice",
+     "ask": "How many times a day should you brush?",
+     "options": [
+      {
+       "emoji": "1️⃣",
+       "label": "1",
+       "why": "Once is not enough, brush at night too."
+      },
+      {
+       "emoji": "2️⃣",
+       "label": "2"
+      },
+      {
+       "emoji": "🔟",
+       "label": "10",
+       "why": "That is too many, 2 times is right."
+      }
+     ],
+     "answer": 1,
+     "explain": "Brush 2 times a day, morning and night."
+    },
+    {
+     "mode": "choice",
+     "ask": "When is a great time to brush your teeth?",
+     "options": [
+      {
+       "emoji": "🌙",
+       "label": "Before bed"
+      },
+      {
+       "emoji": "⚽",
+       "label": "During football",
+       "why": "You can't brush while playing!"
+      }
+     ],
+     "answer": 0,
+     "explain": "Brushing before bed cleans away food from the day."
+    },
+    {
+     "mode": "choice",
+     "ask": "What do teeth help us do?",
+     "options": [
+      {
+       "emoji": "👂",
+       "label": "Hear",
+       "why": "We hear with our ears."
+      },
+      {
+       "emoji": "🏃",
+       "label": "Run",
+       "why": "Legs help us run."
+      },
+      {
+       "emoji": "🍎",
+       "label": "Chew food"
+      }
+     ],
+     "answer": 2,
+     "explain": "Teeth bite and chew our food into small pieces."
+    },
+    {
+     "mode": "sort",
+     "ask": "Is it good for teeth, or not good?",
+     "bins": [
+      {
+       "label": "Good",
+       "emoji": "😁"
+      },
+      {
+       "label": "Not good",
+       "emoji": "😬"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "🪥",
+       "bin": 0,
+       "name": "toothbrush"
+      },
+      {
+       "emoji": "🍭",
+       "bin": 1,
+       "name": "lollipop"
+      },
+      {
+       "emoji": "💧",
+       "bin": 0,
+       "name": "water"
+      },
+      {
+       "emoji": "🍬",
+       "bin": 1,
+       "name": "sweets"
+      },
+      {
+       "emoji": "🥕",
+       "bin": 0,
+       "name": "carrot"
+      }
+     ],
+     "explain": "Brushing, water and crunchy carrots help, too many sweets do not."
+    }
+   ]
+  },
+  {
+   "id": "teeth-02",
+   "order": 1,
+   "difficulty": "medium",
+   "name": "Teeth that grow",
+   "intro": {
+    "say": "Did you know you get two sets of teeth? Let's find out!",
+    "icons": [
+     "👶",
+     "🦷",
+     "🧚"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Little children have baby teeth. Around age 6, baby teeth get wobbly and fall out.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "👶",
+       "🦷",
+       "😁"
+      ]
+     },
+     "caption": "Baby teeth fall out"
+    },
+    {
+     "mode": "show",
+     "say": "Then bigger adult teeth grow in their place. Adult teeth must last your whole life, so look after them!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🦷",
+       "➡️",
+       "🧑"
+      ]
+     },
+     "caption": "Adult teeth stay"
+    },
+    {
+     "mode": "choice",
+     "ask": "Why does a wobbly baby tooth fall out?",
+     "options": [
+      {
+       "emoji": "🦷",
+       "label": "A new tooth is coming"
+      },
+      {
+       "emoji": "🍭",
+       "label": "Too many sweets",
+       "why": "Baby teeth fall out even in children who brush well."
+      },
+      {
+       "emoji": "😴",
+       "label": "You slept",
+       "why": "Sleeping does not make teeth fall out."
+      }
+     ],
+     "answer": 0,
+     "explain": "An adult tooth grows underneath and pushes the baby tooth out."
+    },
+    {
+     "mode": "choice",
+     "ask": "How many sets of teeth do people get?",
+     "options": [
+      {
+       "emoji": "1️⃣",
+       "label": "1",
+       "why": "We get more than one set."
+      },
+      {
+       "emoji": "2️⃣",
+       "label": "2"
+      },
+      {
+       "emoji": "5️⃣",
+       "label": "5",
+       "why": "That is too many."
+      }
+     ],
+     "answer": 1,
+     "explain": "We get baby teeth first, then adult teeth."
+    },
+    {
+     "mode": "choice",
+     "ask": "If an adult tooth falls out, does a new one grow?",
+     "options": [
+      {
+       "emoji": "✅",
+       "label": "Yes",
+       "why": "Sadly, adult teeth do not grow back."
+      },
+      {
+       "emoji": "❌",
+       "label": "No"
+      }
+     ],
+     "answer": 1,
+     "explain": "Adult teeth do not grow back, so we must take good care of them."
+    },
+    {
+     "mode": "choice",
+     "ask": "Who helps check that our teeth are healthy?",
+     "options": [
+      {
+       "emoji": "👩‍🍳",
+       "label": "Cook",
+       "why": "A cook makes food."
+      },
+      {
+       "emoji": "👨‍🚒",
+       "label": "Firefighter",
+       "why": "Firefighters put out fires."
+      },
+      {
+       "emoji": "🧑‍⚕️",
+       "label": "Dentist"
+      }
+     ],
+     "answer": 2,
+     "explain": "A dentist checks and cleans our teeth."
+    },
+    {
+     "mode": "order",
+     "ask": "Put these in order, from first to last.",
+     "items": [
+      {
+       "emoji": "👶",
+       "label": "Baby teeth"
+      },
+      {
+       "emoji": "🦷",
+       "label": "Wobbly tooth"
+      },
+      {
+       "emoji": "🕳️",
+       "label": "Gap"
+      },
+      {
+       "emoji": "😁",
+       "label": "Adult tooth"
+      }
+     ],
+     "explain": "Baby teeth wobble, fall out, leave a gap, then an adult tooth grows."
+    }
+   ]
+  },
+  {
+   "id": "teeth-03",
+   "order": 1,
+   "difficulty": "complex",
+   "name": "Sugar bugs and smart smiles",
+   "intro": {
+    "say": "Let's be tooth detectives and learn why sugar can hurt teeth.",
+    "icons": [
+     "🦷",
+     "🦠",
+     "🍬",
+     "🧑‍⚕️"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Tiny germs live in our mouths. When we eat sugar, the germs make acid that can make holes in teeth. These holes are called cavities.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🍬",
+       "🦠",
+       "🦷"
+      ]
+     },
+     "caption": "Sugar + germs = holes"
+    },
+    {
+     "mode": "show",
+     "say": "Brushing sweeps germs away. Drinking water and eating crunchy fruit and veg help too. Visit the dentist for a check-up.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🪥",
+       "💧",
+       "🥕",
+       "🧑‍⚕️"
+      ]
+     },
+     "caption": "Brush · Water · Dentist"
+    },
+    {
+     "mode": "choice",
+     "ask": "What do germs make when they eat sugar?",
+     "options": [
+      {
+       "emoji": "🍬",
+       "label": "More sugar",
+       "why": "Germs turn sugar into acid, not more sugar."
+      },
+      {
+       "emoji": "🧪",
+       "label": "Acid"
+      },
+      {
+       "emoji": "🌈",
+       "label": "Rainbows",
+       "why": "Germs can't make rainbows!"
+      }
+     ],
+     "answer": 1,
+     "explain": "Germs make acid, and acid can make holes in teeth."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which snack is kinder to your teeth?",
+     "options": [
+      {
+       "emoji": "🍬",
+       "label": "Sweets",
+       "why": "Sweets stay on teeth and feed the germs."
+      },
+      {
+       "emoji": "🍩",
+       "label": "Doughnut",
+       "why": "Doughnuts are full of sugar."
+      },
+      {
+       "emoji": "🧀",
+       "label": "Cheese"
+      }
+     ],
+     "answer": 2,
+     "explain": "Cheese has very little sugar, so it is kinder to teeth."
+    },
+    {
+     "mode": "choice",
+     "ask": "Sam brushes for just 5 seconds. What should he do?",
+     "options": [
+      {
+       "emoji": "⏱️",
+       "label": "Brush 2 minutes"
+      },
+      {
+       "emoji": "🙈",
+       "label": "Skip brushing",
+       "why": "Skipping lets germs stay on teeth."
+      },
+      {
+       "emoji": "🍭",
+       "label": "Eat a sweet",
+       "why": "That would feed the germs."
+      }
+     ],
+     "answer": 0,
+     "explain": "Brushing for two minutes cleans every tooth."
+    },
+    {
+     "mode": "choice",
+     "ask": "What is the best drink for your teeth?",
+     "options": [
+      {
+       "emoji": "💧",
+       "label": "Water"
+      },
+      {
+       "emoji": "🥤",
+       "label": "Fizzy drink",
+       "why": "Fizzy drinks have sugar and acid."
+      },
+      {
+       "emoji": "🧃",
+       "label": "Sweet juice",
+       "why": "Sweet juice has lots of sugar."
+      }
+     ],
+     "answer": 0,
+     "explain": "Water has no sugar and rinses your mouth."
+    },
+    {
+     "mode": "choice",
+     "ask": "Why do we visit the dentist even when teeth do not hurt?",
+     "options": [
+      {
+       "emoji": "🎁",
+       "label": "Get a toy",
+       "why": "That is not the reason."
+      },
+      {
+       "emoji": "🔍",
+       "label": "Find problems early"
+      },
+      {
+       "emoji": "🦷",
+       "label": "Grow new teeth",
+       "why": "The dentist can't grow new teeth."
+      }
+     ],
+     "answer": 1,
+     "explain": "The dentist can spot tiny problems before they get big."
+    },
+    {
+     "mode": "order",
+     "ask": "Put the bedtime steps in order.",
+     "items": [
+      {
+       "emoji": "🍽️",
+       "label": "Dinner"
+      },
+      {
+       "emoji": "🪥",
+       "label": "Brush teeth"
+      },
+      {
+       "emoji": "🛏️",
+       "label": "Into bed"
+      },
+      {
+       "emoji": "😴",
+       "label": "Sleep"
+      }
+     ],
+     "explain": "Brush after your last food, then get into bed and sleep.",
+     "hint": "Brush after eating, not before."
+    }
+   ]
+  }
+ ]
+}

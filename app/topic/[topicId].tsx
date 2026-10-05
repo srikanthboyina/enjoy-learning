@@ -40,7 +40,15 @@ export default function TopicScreen() {
         <ScrollView contentContainerStyle={styles.content}>
           <Gradient colors={[c1, c2]} direction="diagonal" style={styles.hero}>
             <View style={styles.heroTop}>
-              <BigButton label="All topics" onPress={() => router.back()} round size={52}>
+              <BigButton
+                label="All topics"
+                onPress={() =>
+                  router.canGoBack()
+                    ? router.back()
+                    : router.replace({ pathname: '/group/[groupId]', params: { groupId: topic.group } })
+                }
+                round
+                size={52}>
                 <Glyph id="🗺️" size={24} accessible={false} />
               </BigButton>
               <BigButton

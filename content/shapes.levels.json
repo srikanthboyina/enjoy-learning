@@ -149,7 +149,7 @@
         },
         {
           "mode": "choice",
-          "ask": "A ball is shaped like which one?",
+          "ask": "A ball looks like which shape?",
           "visual": {
             "kind": "emoji",
             "items": [
@@ -171,7 +171,7 @@
             }
           ],
           "answer": 0,
-          "explain": "A ball is round, just like a circle."
+          "explain": "A ball looks round, just like a circle."
         }
       ]
     },
@@ -356,7 +356,7 @@
         },
         {
           "mode": "show",
-          "say": "A rectangle is like a long square. An oval is like a stretched circle, like an egg.",
+          "say": "A rectangle has two long sides and two short sides. An oval is like a stretched circle, like an egg.",
           "visual": {
             "kind": "shapes",
             "shapes": [
@@ -500,7 +500,7 @@
             }
           ],
           "answer": 1,
-          "explain": "A heart shape is how we draw love."
+          "explain": "A heart has two round bumps on top and a point at the bottom."
         },
         {
           "mode": "choice",

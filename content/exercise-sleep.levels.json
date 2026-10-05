@@ -1,0 +1,519 @@
+{
+ "topicId": "exercise-sleep",
+ "gameId": "explore",
+ "version": 1,
+ "levels": [
+  {
+   "id": "exercise-sleep-01",
+   "order": 1,
+   "difficulty": "simple",
+   "name": "Move and play",
+   "intro": {
+    "say": "Moving and playing make your body happy and strong!",
+    "icons": [
+     "🏃",
+     "⚽",
+     "🤸"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Running, jumping, dancing and climbing are all exercise. Exercise makes your body strong!",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🏃",
+       "🤸",
+       "💃",
+       "🧗"
+      ]
+     },
+     "caption": "Move every day"
+    },
+    {
+     "mode": "show",
+     "say": "After playing, your body needs rest. Sitting quietly and sleeping help you feel good again.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🛋️",
+       "😌",
+       "😴"
+      ]
+     },
+     "caption": "Play, then rest"
+    },
+    {
+     "mode": "choice",
+     "ask": "Which one is exercise?",
+     "options": [
+      {
+       "emoji": "📺",
+       "label": "Watching TV",
+       "why": "Watching TV is sitting still."
+      },
+      {
+       "emoji": "🚴",
+       "label": "Riding a bike"
+      },
+      {
+       "emoji": "😴",
+       "label": "Sleeping",
+       "why": "Sleeping is resting."
+      }
+     ],
+     "answer": 1,
+     "explain": "Riding a bike moves your whole body."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which one is resting?",
+     "options": [
+      {
+       "emoji": "🛌",
+       "label": "Lying in bed"
+      },
+      {
+       "emoji": "🏊",
+       "label": "Swimming",
+       "why": "Swimming is lots of exercise!"
+      },
+      {
+       "emoji": "⚽",
+       "label": "Football",
+       "why": "Football is lots of running."
+      }
+     ],
+     "answer": 0,
+     "explain": "Lying in bed lets your body rest."
+    },
+    {
+     "mode": "choice",
+     "ask": "How does exercise make your body?",
+     "options": [
+      {
+       "emoji": "🍮",
+       "label": "Weak",
+       "why": "Exercise makes you stronger, not weaker."
+      },
+      {
+       "emoji": "💪",
+       "label": "Strong"
+      }
+     ],
+     "answer": 1,
+     "explain": "Moving makes your muscles, heart and bones strong."
+    },
+    {
+     "mode": "choice",
+     "ask": "You played tag a long time and feel tired. What helps?",
+     "options": [
+      {
+       "emoji": "😌",
+       "label": "Have a rest"
+      },
+      {
+       "emoji": "🏃",
+       "label": "Run even more",
+       "why": "Your body needs a break first."
+      },
+      {
+       "emoji": "🍬",
+       "label": "Eat sweets",
+       "why": "Rest and water help more."
+      }
+     ],
+     "answer": 0,
+     "explain": "Resting gives your body time to feel better."
+    },
+    {
+     "mode": "sort",
+     "ask": "Is it moving or resting?",
+     "bins": [
+      {
+       "label": "Moving",
+       "emoji": "🏃"
+      },
+      {
+       "label": "Resting",
+       "emoji": "😴"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "🤸",
+       "bin": 0,
+       "name": "cartwheel"
+      },
+      {
+       "emoji": "🛌",
+       "bin": 1,
+       "name": "sleeping"
+      },
+      {
+       "emoji": "💃",
+       "bin": 0,
+       "name": "dancing"
+      },
+      {
+       "emoji": "📖",
+       "bin": 1,
+       "name": "reading quietly"
+      },
+      {
+       "emoji": "🏊",
+       "bin": 0,
+       "name": "swimming"
+      },
+      {
+       "emoji": "🧘",
+       "bin": 1,
+       "name": "sitting calmly"
+      }
+     ],
+     "explain": "Some things get us moving, others let us rest. We need both!"
+    }
+   ]
+  },
+  {
+   "id": "exercise-sleep-02",
+   "order": 1,
+   "difficulty": "medium",
+   "name": "Sleep tight",
+   "intro": {
+    "say": "Sleep helps your body grow and your brain get ready for a new day.",
+    "icons": [
+     "😴",
+     "🌙",
+     "🛌"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "While you sleep, your body grows and fixes itself. Your brain sorts out what you learned today.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "😴",
+       "🧠",
+       "📏"
+      ]
+     },
+     "caption": "Sleep helps me grow"
+    },
+    {
+     "mode": "show",
+     "say": "Children your age need lots of sleep, about 10 to 12 hours every night! That is much more than grown-ups.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🌙",
+       "🛌",
+       "⏰"
+      ]
+     },
+     "caption": "About 10–12 hours"
+    },
+    {
+     "mode": "choice",
+     "ask": "How many hours of sleep do children your age need?",
+     "options": [
+      {
+       "emoji": "2️⃣",
+       "label": "2 hours",
+       "why": "That is far too little."
+      },
+      {
+       "emoji": "🔟",
+       "label": "About 10 to 12"
+      },
+      {
+       "emoji": "🕛",
+       "label": "24 hours",
+       "why": "Then you would never play!"
+      }
+     ],
+     "answer": 1,
+     "explain": "Children need about 10 to 12 hours of sleep each night."
+    },
+    {
+     "mode": "choice",
+     "ask": "What happens to your body while you sleep?",
+     "options": [
+      {
+       "emoji": "📏",
+       "label": "It grows"
+      },
+      {
+       "emoji": "🍮",
+       "label": "It melts",
+       "why": "Bodies do not melt!"
+      },
+      {
+       "emoji": "🎈",
+       "label": "It floats",
+       "why": "You stay in bed, don't worry."
+      }
+     ],
+     "answer": 0,
+     "explain": "Your body grows and repairs itself while you sleep."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which helps you fall asleep?",
+     "options": [
+      {
+       "emoji": "📱",
+       "label": "Playing on a tablet",
+       "why": "Bright screens can keep you awake."
+      },
+      {
+       "emoji": "📖",
+       "label": "A quiet story"
+      },
+      {
+       "emoji": "🍫",
+       "label": "Lots of chocolate",
+       "why": "Sugar can keep you awake."
+      }
+     ],
+     "answer": 1,
+     "explain": "A calm story helps your body get ready to sleep."
+    },
+    {
+     "mode": "choice",
+     "ask": "Tom stayed up very late. How might he feel tomorrow?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🌙",
+       "🕛"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "🥱",
+       "label": "Tired and grumpy"
+      },
+      {
+       "emoji": "🚀",
+       "label": "Super full of energy",
+       "why": "Without sleep we usually feel tired."
+      }
+     ],
+     "answer": 0,
+     "explain": "Not enough sleep makes us feel tired and grumpy."
+    },
+    {
+     "mode": "order",
+     "ask": "Put the bedtime routine in order.",
+     "items": [
+      {
+       "emoji": "🛁",
+       "label": "Bath"
+      },
+      {
+       "emoji": "👕",
+       "label": "Pyjamas"
+      },
+      {
+       "emoji": "📖",
+       "label": "Story in bed"
+      },
+      {
+       "emoji": "😴",
+       "label": "Sleep"
+      }
+     ],
+     "explain": "Get clean, put on pyjamas, hear a calm story in bed, and then drift off to sleep."
+    }
+   ]
+  },
+  {
+   "id": "exercise-sleep-03",
+   "order": 1,
+   "difficulty": "complex",
+   "name": "Healthy days",
+   "intro": {
+    "say": "Let's plan a healthy day with the right mix of moving, eating, drinking and sleeping.",
+    "icons": [
+     "🏃",
+     "💧",
+     "😴",
+     "🥦"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Children should be active for at least one hour every day. Exercise that makes you a little out of breath is great for your heart.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "⏰",
+       "🏃",
+       "❤️"
+      ]
+     },
+     "caption": "1 hour of play a day"
+    },
+    {
+     "mode": "show",
+     "say": "When you exercise you get hot and sweaty, so drink water. Then rest and sleep well to be ready for tomorrow.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🥵",
+       "💧",
+       "😴"
+      ]
+     },
+     "caption": "Move · Drink · Sleep"
+    },
+    {
+     "mode": "choice",
+     "ask": "How much active play should children have each day?",
+     "options": [
+      {
+       "emoji": "⏱️",
+       "label": "1 minute",
+       "why": "That is not nearly enough."
+      },
+      {
+       "emoji": "⏰",
+       "label": "At least 1 hour"
+      },
+      {
+       "emoji": "🚫",
+       "label": "None",
+       "why": "Every body needs to move!"
+      }
+     ],
+     "answer": 1,
+     "explain": "At least one hour of active play every day keeps you healthy."
+    },
+    {
+     "mode": "choice",
+     "ask": "You ran a race and feel hot. What should you drink?",
+     "options": [
+      {
+       "emoji": "🥤",
+       "label": "Fizzy drink",
+       "why": "Fizzy drinks have lots of sugar."
+      },
+      {
+       "emoji": "☕",
+       "label": "Hot coffee",
+       "why": "Coffee is not for children."
+      },
+      {
+       "emoji": "💧",
+       "label": "Water"
+      }
+     ],
+     "answer": 2,
+     "explain": "Water cools you down and replaces the water you sweated out."
+    },
+    {
+     "mode": "choice",
+     "ask": "Why does your body sweat when you exercise?",
+     "options": [
+      {
+       "emoji": "❄️",
+       "label": "To cool down"
+      },
+      {
+       "emoji": "🌧️",
+       "label": "It is raining",
+       "why": "Sweat comes from your skin, not rain."
+      },
+      {
+       "emoji": "🎨",
+       "label": "To change colour",
+       "why": "Sweat does not change your colour."
+      }
+     ],
+     "answer": 0,
+     "explain": "Sweat helps cool your hot body down."
+    },
+    {
+     "mode": "choice",
+     "ask": "Mia slept 11 hours, Max slept 6 hours. Who had a better amount of sleep?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "👧",
+       "😴",
+       "👦",
+       "🥱"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "👧",
+       "label": "Mia"
+      },
+      {
+       "emoji": "👦",
+       "label": "Max",
+       "why": "6 hours is too little for a child."
+      }
+     ],
+     "answer": 0,
+     "explain": "Mia slept 11 hours, which is right for a child."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which day is the healthiest?",
+     "options": [
+      {
+       "emoji": "📺",
+       "label": "TV all day",
+       "why": "Sitting all day is not good for your body."
+      },
+      {
+       "emoji": "⚽",
+       "label": "Play, eat well, sleep early"
+      },
+      {
+       "emoji": "🍬",
+       "label": "Sweets and stay up late",
+       "why": "Sugar and late nights make us tired."
+      }
+     ],
+     "answer": 1,
+     "explain": "A good day mixes play, healthy food and plenty of sleep."
+    },
+    {
+     "mode": "order",
+     "ask": "Put this healthy day in order.",
+     "items": [
+      {
+       "emoji": "🌅",
+       "label": "Wake up"
+      },
+      {
+       "emoji": "🥣",
+       "label": "Breakfast"
+      },
+      {
+       "emoji": "⚽",
+       "label": "Play outside"
+      },
+      {
+       "emoji": "🍽️",
+       "label": "Dinner"
+      },
+      {
+       "emoji": "🌙",
+       "label": "Bedtime"
+      }
+     ],
+     "explain": "Breakfast gives energy for play, dinner comes in the evening, then a good sleep."
+    }
+   ]
+  }
+ ]
+}

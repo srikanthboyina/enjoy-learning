@@ -1,0 +1,571 @@
+{
+  "topicId": "magnets",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "magnets-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "What do magnets pull?",
+      "intro": {
+        "say": "A magnet can pull some things towards it, like magic! Let's find out what it pulls.",
+        "icons": [
+          "🧲",
+          "📎"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This is a magnet. Bring it near a paper clip and zip! The paper clip jumps onto the magnet.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧲",
+              "⬅️",
+              "📎"
+            ],
+            "size": "lg"
+          },
+          "caption": "Magnet pulls a paper clip"
+        },
+        {
+          "mode": "show",
+          "say": "But a magnet does not pull a wooden pencil or a soft teddy. Magnets only pull some metals, like iron and steel.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧲",
+              "✏️",
+              "🧸"
+            ],
+            "size": "lg"
+          },
+          "caption": "No pull: wood, cloth"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one will the magnet pull?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🍌",
+              "label": "Banana",
+              "why": "A banana is fruit, not metal."
+            },
+            {
+              "emoji": "📎",
+              "label": "Paper clip"
+            },
+            {
+              "emoji": "🧸",
+              "label": "Teddy",
+              "why": "A teddy is soft cloth, not metal."
+            }
+          ],
+          "answer": 1,
+          "explain": "A paper clip is made of steel, and magnets pull steel."
+        },
+        {
+          "mode": "choice",
+          "ask": "Will the magnet pull this wooden pencil?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧲",
+              "✏️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Yes",
+              "why": "A pencil is made of wood, and magnets don't pull wood."
+            },
+            {
+              "emoji": "❌",
+              "label": "No"
+            }
+          ],
+          "answer": 1,
+          "explain": "Magnets do not pull wood, so the pencil stays still."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does the magnet pull it? Sort them!",
+          "bins": [
+            {
+              "label": "Pulls",
+              "emoji": "🧲"
+            },
+            {
+              "label": "No pull",
+              "emoji": "🚫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "📎",
+              "bin": 0,
+              "name": "paper clip"
+            },
+            {
+              "emoji": "🔩",
+              "bin": 0,
+              "name": "steel bolt"
+            },
+            {
+              "emoji": "🧷",
+              "bin": 0,
+              "name": "safety pin"
+            },
+            {
+              "emoji": "🍎",
+              "bin": 1,
+              "name": "apple"
+            },
+            {
+              "emoji": "🧸",
+              "bin": 1,
+              "name": "teddy"
+            },
+            {
+              "emoji": "📄",
+              "bin": 1,
+              "name": "paper"
+            }
+          ],
+          "explain": "Magnets pull steel things like clips, bolts and pins, but not apples, teddies or paper."
+        },
+        {
+          "mode": "choice",
+          "ask": "Oops! Pins spilled on the floor. What can pick them up fast?",
+          "options": [
+            {
+              "emoji": "🧽",
+              "label": "Sponge",
+              "why": "A sponge doesn't pull pins."
+            },
+            {
+              "emoji": "🪶",
+              "label": "Feather",
+              "why": "A feather can't pull pins."
+            },
+            {
+              "emoji": "🧲",
+              "label": "Magnet"
+            }
+          ],
+          "answer": 2,
+          "explain": "The magnet pulls the steel pins right off the floor."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a magnet?",
+          "options": [
+            {
+              "emoji": "🧲",
+              "label": "Magnet"
+            },
+            {
+              "emoji": "🍩",
+              "label": "Donut",
+              "why": "That's a yummy donut, not a magnet."
+            },
+            {
+              "emoji": "🔦",
+              "label": "Torch",
+              "why": "A torch makes light, it's not a magnet."
+            }
+          ],
+          "answer": 0,
+          "explain": "A magnet is often shaped like a horseshoe, red with silver ends."
+        }
+      ]
+    },
+    {
+      "id": "magnets-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "North and south poles",
+      "intro": {
+        "say": "Every magnet has two ends called poles: north and south. Let's see what happens when two magnets meet!",
+        "icons": [
+          "🧲",
+          "🧲"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A magnet has two ends. One is the north pole, N. The other is the south pole, S.",
+          "visual": {
+            "kind": "text",
+            "text": "N 🧲 S"
+          },
+          "caption": "Two poles: N and S"
+        },
+        {
+          "mode": "show",
+          "say": "Put a north pole next to a south pole. Snap! They pull together. Different poles attract.",
+          "visual": {
+            "kind": "text",
+            "text": "N ➡️⬅️ S"
+          },
+          "caption": "N and S pull together"
+        },
+        {
+          "mode": "show",
+          "say": "Put a north pole next to another north pole. They push apart! The same poles push away.",
+          "visual": {
+            "kind": "text",
+            "text": "N ⬅️➡️ N"
+          },
+          "caption": "Same poles push apart"
+        },
+        {
+          "mode": "choice",
+          "ask": "North pole meets south pole. What happens?",
+          "visual": {
+            "kind": "text",
+            "text": "N   S"
+          },
+          "options": [
+            {
+              "emoji": "🤝",
+              "label": "Pull together"
+            },
+            {
+              "emoji": "👐",
+              "label": "Push apart",
+              "why": "North and south are different, so they pull together."
+            }
+          ],
+          "answer": 0,
+          "explain": "Different poles pull together."
+        },
+        {
+          "mode": "choice",
+          "ask": "South pole meets south pole. What happens?",
+          "visual": {
+            "kind": "text",
+            "text": "S   S"
+          },
+          "options": [
+            {
+              "emoji": "🤝",
+              "label": "Pull together",
+              "why": "These two poles are the same, so they push."
+            },
+            {
+              "emoji": "👐",
+              "label": "Push apart"
+            }
+          ],
+          "answer": 1,
+          "explain": "The same poles push each other away."
+        },
+        {
+          "mode": "choice",
+          "ask": "North pole meets north pole. What happens?",
+          "visual": {
+            "kind": "text",
+            "text": "N   N"
+          },
+          "options": [
+            {
+              "emoji": "😐",
+              "label": "Nothing",
+              "why": "Magnets always push or pull each other when close."
+            },
+            {
+              "emoji": "🤝",
+              "label": "Pull together",
+              "why": "These poles are the same, so they push."
+            },
+            {
+              "emoji": "👐",
+              "label": "Push apart"
+            }
+          ],
+          "answer": 2,
+          "explain": "Two north poles are the same, so they push apart."
+        },
+        {
+          "mode": "sort",
+          "ask": "Can a magnet pull it?",
+          "bins": [
+            {
+              "label": "Pulls",
+              "emoji": "🧲"
+            },
+            {
+              "label": "No pull",
+              "emoji": "🚫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔩",
+              "bin": 0,
+              "name": "steel bolt"
+            },
+            {
+              "emoji": "🧷",
+              "bin": 0,
+              "name": "safety pin"
+            },
+            {
+              "emoji": "🥫",
+              "bin": 0,
+              "name": "steel can"
+            },
+            {
+              "emoji": "🪵",
+              "bin": 1,
+              "name": "wood"
+            },
+            {
+              "emoji": "🧦",
+              "bin": 1,
+              "name": "sock"
+            },
+            {
+              "emoji": "🎈",
+              "bin": 1,
+              "name": "balloon"
+            }
+          ],
+          "explain": "Steel things get pulled. Wood, cloth and rubber do not."
+        },
+        {
+          "mode": "choice",
+          "ask": "A fridge door is made of steel. Why does a fridge magnet stay on?",
+          "options": [
+            {
+              "emoji": "🧴",
+              "label": "Glue",
+              "why": "The magnet holds on by itself, without any glue."
+            },
+            {
+              "emoji": "🧲",
+              "label": "It pulls the steel"
+            },
+            {
+              "emoji": "💧",
+              "label": "It is wet",
+              "why": "Water doesn't hold it up."
+            }
+          ],
+          "answer": 1,
+          "explain": "The magnet pulls on the steel door, so it sticks."
+        }
+      ]
+    },
+    {
+      "id": "magnets-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Magnet detectives",
+      "intro": {
+        "say": "Let's think like scientists and solve tricky magnet puzzles!",
+        "icons": [
+          "🧲",
+          "🔍"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Magnets pull iron and steel. They don't pull wood, plastic, glass or paper. They don't even pull every metal!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧲",
+              "🔩",
+              "✅"
+            ],
+            "size": "lg"
+          },
+          "caption": "Iron and steel only"
+        },
+        {
+          "mode": "show",
+          "say": "A magnet's pull is strongest up close. The farther away something is, the weaker the pull.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧲",
+              "📎",
+              "➖",
+              "➖",
+              "➖",
+              "📎"
+            ]
+          },
+          "caption": "Closer = stronger pull"
+        },
+        {
+          "mode": "choice",
+          "ask": "Aluminium foil is a metal. Does a magnet pull it?",
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Yes, all metals",
+              "why": "Magnets pull only some metals, like iron and steel."
+            },
+            {
+              "emoji": "❌",
+              "label": "No, not this metal"
+            }
+          ],
+          "answer": 1,
+          "explain": "Magnets pull iron and steel, but not aluminium."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which paper clip feels the strongest pull?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧲",
+              "📎",
+              "➖",
+              "➖",
+              "➖",
+              "📎"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "📎",
+              "label": "The close one"
+            },
+            {
+              "emoji": "📎",
+              "label": "The far one",
+              "why": "The far clip is too far away to feel a strong pull."
+            }
+          ],
+          "answer": 0,
+          "explain": "The pull is strongest close to the magnet."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two magnets push apart. One end is north. What is the other end?",
+          "visual": {
+            "kind": "text",
+            "text": "N ⬅️➡️ ?"
+          },
+          "options": [
+            {
+              "label": "North"
+            },
+            {
+              "label": "South",
+              "why": "North and south would pull together, not push."
+            }
+          ],
+          "answer": 0,
+          "explain": "Same poles push apart, so it must be north too."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two magnets snap together. One end is south. What is the other end?",
+          "visual": {
+            "kind": "text",
+            "text": "S ➡️⬅️ ?"
+          },
+          "options": [
+            {
+              "label": "South",
+              "why": "Two souths would push apart."
+            },
+            {
+              "label": "North"
+            }
+          ],
+          "answer": 1,
+          "explain": "Different poles pull together, so it must be north."
+        },
+        {
+          "mode": "sort",
+          "ask": "Magnet test! Sort what it pulls and what it doesn't.",
+          "bins": [
+            {
+              "label": "Pulls",
+              "emoji": "🧲"
+            },
+            {
+              "label": "No pull",
+              "emoji": "🚫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔩",
+              "bin": 0,
+              "name": "steel bolt"
+            },
+            {
+              "emoji": "🧷",
+              "bin": 0,
+              "name": "safety pin"
+            },
+            {
+              "emoji": "🥫",
+              "bin": 0,
+              "name": "steel can"
+            },
+            {
+              "emoji": "🧻",
+              "bin": 1,
+              "name": "paper roll"
+            },
+            {
+              "emoji": "🥛",
+              "bin": 1,
+              "name": "glass"
+            },
+            {
+              "emoji": "🧱",
+              "bin": 1,
+              "name": "brick"
+            }
+          ],
+          "explain": "Only the iron and steel things are pulled."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why can a big magnet help sort steel cans from plastic bottles?",
+          "options": [
+            {
+              "emoji": "🥤",
+              "label": "It makes plastic float",
+              "why": "Magnets don't make things float."
+            },
+            {
+              "emoji": "🔥",
+              "label": "It melts the cans",
+              "why": "Magnets don't make heat."
+            },
+            {
+              "emoji": "🧲",
+              "label": "It pulls out the steel cans"
+            }
+          ],
+          "answer": 2,
+          "explain": "The magnet pulls the steel cans and leaves the plastic behind."
+        }
+      ]
+    }
+  ]
+}

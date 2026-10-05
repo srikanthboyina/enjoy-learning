@@ -1,0 +1,563 @@
+{
+  "topicId": "dissolving",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "dissolving-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Where did it go?",
+      "intro": {
+        "say": "When some things go into water, they seem to disappear. This is called dissolving!",
+        "icons": [
+          "🥄",
+          "💧",
+          "🧂"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Put a spoon of sugar in water and stir. The sugar breaks into bits too tiny to see. It has dissolved!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍬",
+              "➡️",
+              "💧",
+              "🥄"
+            ]
+          },
+          "caption": "sugar dissolves"
+        },
+        {
+          "mode": "show",
+          "say": "Put sand in water and stir. The sand is still there and sinks to the bottom. Sand does not dissolve.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏖️",
+              "➡️",
+              "💧"
+            ]
+          },
+          "caption": "sand does not dissolve"
+        },
+        {
+          "mode": "choice",
+          "ask": "You stir salt into water. What happens?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧂",
+              "💧",
+              "🥄"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "✨",
+              "label": "it dissolves"
+            },
+            {
+              "emoji": "📈",
+              "label": "it grows bigger",
+              "why": "Salt does not grow in water."
+            },
+            {
+              "emoji": "🪨",
+              "label": "it turns to stone",
+              "why": "Salt does not turn into stone."
+            }
+          ],
+          "answer": 0,
+          "explain": "Salt breaks into tiny bits and mixes into the water, so it dissolves."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one does NOT dissolve in water?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💧"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍬",
+              "label": "sugar",
+              "why": "Sugar dissolves when you stir it."
+            },
+            {
+              "emoji": "🪨",
+              "label": "stones"
+            },
+            {
+              "emoji": "🧂",
+              "label": "salt",
+              "why": "Salt dissolves in water."
+            }
+          ],
+          "answer": 1,
+          "explain": "Stones stay hard and sit at the bottom; they do not dissolve."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sugar dissolved in your drink. Is the sugar still there?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥤",
+              "🍬"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "💨",
+              "label": "no, it is gone",
+              "why": "Taste it: it is still sweet!"
+            },
+            {
+              "emoji": "😋",
+              "label": "yes, it tastes sweet"
+            }
+          ],
+          "answer": 1,
+          "explain": "The sugar is still there in tiny bits; that is why the drink tastes sweet."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it dissolve in water?",
+          "bins": [
+            {
+              "label": "dissolves",
+              "emoji": "✨"
+            },
+            {
+              "label": "does not",
+              "emoji": "🚫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🧂",
+              "bin": 0,
+              "name": "salt"
+            },
+            {
+              "emoji": "🍬",
+              "bin": 0,
+              "name": "sugar"
+            },
+            {
+              "emoji": "🏖️",
+              "bin": 1,
+              "name": "sand"
+            },
+            {
+              "emoji": "🪨",
+              "bin": 1,
+              "name": "stone"
+            },
+            {
+              "emoji": "🪙",
+              "bin": 1,
+              "name": "coin"
+            }
+          ],
+          "explain": "Salt and sugar dissolve; sand, stones and coins stay the same."
+        }
+      ]
+    },
+    {
+      "id": "dissolving-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Faster, faster!",
+      "intro": {
+        "say": "Some tricks make things dissolve faster. Let us find them!",
+        "icons": [
+          "🥄",
+          "♨️",
+          "⏩"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Stirring helps! When you stir, the water moves around the sugar and carries tiny bits away faster.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍬",
+              "💧",
+              "🥄",
+              "🔄"
+            ]
+          },
+          "caption": "stir"
+        },
+        {
+          "mode": "show",
+          "say": "Warm water helps too. Sugar dissolves faster in warm tea than in cold water.",
+          "visual": {
+            "kind": "thermometer",
+            "level": 7
+          },
+          "caption": "warm water = faster"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which helps sugar dissolve faster?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍬",
+              "💧"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⏳",
+              "label": "waiting without stirring",
+              "why": "It will dissolve, but very slowly."
+            },
+            {
+              "emoji": "🥄",
+              "label": "stirring"
+            },
+            {
+              "emoji": "🧊",
+              "label": "adding ice",
+              "why": "Cold water makes it slower."
+            }
+          ],
+          "answer": 1,
+          "explain": "Stirring moves the water around so the sugar dissolves faster."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which water will dissolve sugar the fastest?",
+          "options": [
+            {
+              "emoji": "🧊",
+              "label": "icy water",
+              "why": "Cold water is the slowest."
+            },
+            {
+              "emoji": "💧",
+              "label": "cool water",
+              "why": "Cool water is slower than warm."
+            },
+            {
+              "emoji": "♨️",
+              "label": "warm water"
+            }
+          ],
+          "answer": 2,
+          "explain": "Warm water dissolves sugar faster than cold water."
+        },
+        {
+          "mode": "choice",
+          "ask": "Here is a glass of very cold water. Will sugar dissolve fast or slow?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 1
+          },
+          "options": [
+            {
+              "emoji": "🐢",
+              "label": "slow"
+            },
+            {
+              "emoji": "🐇",
+              "label": "fast",
+              "why": "Cold water makes dissolving slower."
+            }
+          ],
+          "answer": 0,
+          "explain": "In cold water, sugar dissolves slowly."
+        },
+        {
+          "mode": "choice",
+          "ask": "You put salt in water. How could you make it dissolve quicker?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧂",
+              "💧"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🥶",
+              "label": "put it in the freezer",
+              "why": "Cold makes it slower."
+            },
+            {
+              "emoji": "🥄",
+              "label": "stir it"
+            },
+            {
+              "emoji": "🏖️",
+              "label": "add sand",
+              "why": "Sand does not help."
+            }
+          ],
+          "answer": 1,
+          "explain": "Stirring helps salt dissolve faster."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it dissolve in water?",
+          "bins": [
+            {
+              "label": "dissolves",
+              "emoji": "✨"
+            },
+            {
+              "label": "does not",
+              "emoji": "🚫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🧂",
+              "bin": 0,
+              "name": "salt"
+            },
+            {
+              "emoji": "🍬",
+              "bin": 0,
+              "name": "sugar"
+            },
+            {
+              "emoji": "☕",
+              "bin": 0,
+              "name": "coffee powder"
+            },
+            {
+              "emoji": "🍚",
+              "bin": 1,
+              "name": "rice"
+            },
+            {
+              "emoji": "🧽",
+              "bin": 1,
+              "name": "sponge"
+            },
+            {
+              "emoji": "🔩",
+              "bin": 1,
+              "name": "metal bolt"
+            }
+          ],
+          "explain": "Salt, sugar and coffee powder dissolve; rice, sponges and metal do not."
+        }
+      ]
+    },
+    {
+      "id": "dissolving-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Dissolving detectives",
+      "intro": {
+        "say": "Let us solve dissolving puzzles, and even get the salt back out of the water!",
+        "icons": [
+          "🕵️",
+          "🧂",
+          "☀️",
+          "💧"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Small pieces dissolve faster than big lumps. Sugar grains dissolve quicker than one big sugar lump.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⬜",
+              "🆚",
+              "✨"
+            ]
+          },
+          "caption": "small bits = faster"
+        },
+        {
+          "mode": "show",
+          "say": "Salty water left in the sun slowly dries up. The water goes into the air, but the salt is left behind!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧂",
+              "💧",
+              "☀️",
+              "➡️",
+              "🧂"
+            ]
+          },
+          "caption": "the salt comes back"
+        },
+        {
+          "mode": "choice",
+          "ask": "A big lump or tiny grains of sugar: which dissolves faster?",
+          "options": [
+            {
+              "emoji": "✨",
+              "label": "tiny grains"
+            },
+            {
+              "emoji": "⬜",
+              "label": "a big lump",
+              "why": "A big lump takes longer for water to break up."
+            }
+          ],
+          "answer": 0,
+          "explain": "Tiny grains have lots of surfaces for the water to work on, so they dissolve faster."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which plan dissolves sugar the FASTEST?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍬"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧊",
+              "label": "cold water, no stirring",
+              "why": "That is the slowest plan."
+            },
+            {
+              "emoji": "🥄",
+              "label": "cold water, stirring",
+              "why": "Stirring helps, but warm water would help even more."
+            },
+            {
+              "emoji": "♨️",
+              "label": "warm water, stirring"
+            }
+          ],
+          "answer": 2,
+          "explain": "Warm water and stirring together make sugar dissolve the fastest."
+        },
+        {
+          "mode": "choice",
+          "ask": "Salt water dries up in the sun. What is left in the dish?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧂",
+              "💧",
+              "☀️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "❌",
+              "label": "nothing",
+              "why": "The water goes, but not the salt."
+            },
+            {
+              "emoji": "🧂",
+              "label": "salt"
+            },
+            {
+              "emoji": "🏖️",
+              "label": "sand",
+              "why": "There was no sand in the water."
+            }
+          ],
+          "answer": 1,
+          "explain": "The water dries up into the air, but the salt stays behind."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sand and water are mixed. How can you get the sand out?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏖️",
+              "💧"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🥅",
+              "label": "pour it through a sieve"
+            },
+            {
+              "emoji": "🥄",
+              "label": "stir faster",
+              "why": "Stirring just swirls the sand around."
+            },
+            {
+              "emoji": "🍬",
+              "label": "add sugar",
+              "why": "Sugar would not remove the sand."
+            }
+          ],
+          "answer": 0,
+          "explain": "Sand did not dissolve, so a sieve or filter can catch the grains."
+        },
+        {
+          "mode": "choice",
+          "ask": "You keep adding sugar to a cup of water. What happens in the end?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍬",
+              "🍬",
+              "💧"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "♾️",
+              "label": "it all dissolves forever",
+              "why": "Water can only hold so much sugar."
+            },
+            {
+              "emoji": "⬇️",
+              "label": "sugar stays at the bottom"
+            },
+            {
+              "emoji": "🔄",
+              "label": "the water turns to sugar",
+              "why": "The water is still water."
+            }
+          ],
+          "answer": 1,
+          "explain": "Water can only dissolve so much; after that, extra sugar sits at the bottom."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the sugar water steps in order.",
+          "items": [
+            {
+              "emoji": "💧",
+              "label": "water"
+            },
+            {
+              "emoji": "🍬",
+              "label": "add sugar"
+            },
+            {
+              "emoji": "🥄",
+              "label": "stir"
+            },
+            {
+              "emoji": "✨",
+              "label": "dissolved"
+            }
+          ],
+          "explain": "First water, then sugar, then stir until it dissolves."
+        }
+      ]
+    }
+  ]
+}

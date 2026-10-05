@@ -1,0 +1,549 @@
+{
+  "topicId": "dinosaurs",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "dinosaurs-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Long, long ago",
+      "intro": {
+        "say": "Dinosaurs lived a very long time ago. Let's meet some of them!",
+        "icons": [
+          "🦕",
+          "🦖",
+          "🥚"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Dinosaurs lived long, long ago, before any people. Today we only find their bones in the ground.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦕",
+              "🦖",
+              "🌋",
+              "🌴"
+            ]
+          },
+          "caption": "Dinosaurs lived long ago"
+        },
+        {
+          "mode": "show",
+          "say": "Some dinosaurs had long necks and ate plants. Some, like T. rex, had big sharp teeth and ate meat.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦕",
+              "🌿",
+              "🦖",
+              "🍖"
+            ]
+          },
+          "caption": "Plant eater · Meat eater"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which dinosaur had a long neck and ate plants?",
+          "options": [
+            {
+              "label": "T. rex",
+              "emoji": "🦖",
+              "why": "T. rex ate meat."
+            },
+            {
+              "label": "Long neck",
+              "emoji": "🦕"
+            }
+          ],
+          "answer": 1,
+          "explain": "Long-necked dinosaurs stretched up high to eat leaves from trees."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which dinosaur had big sharp teeth for eating meat?",
+          "options": [
+            {
+              "label": "Long neck",
+              "emoji": "🦕",
+              "why": "Long necks ate plants."
+            },
+            {
+              "label": "T. rex",
+              "emoji": "🦖"
+            }
+          ],
+          "answer": 1,
+          "explain": "T. rex had huge sharp teeth for eating meat."
+        },
+        {
+          "mode": "choice",
+          "ask": "What did baby dinosaurs hatch from?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦕"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "An egg",
+              "emoji": "🥚"
+            },
+            {
+              "label": "A flower",
+              "emoji": "🌸",
+              "why": "Flowers don't have dinosaurs in them!"
+            },
+            {
+              "label": "An apple",
+              "emoji": "🍎",
+              "why": "Apples grow on trees."
+            }
+          ],
+          "answer": 0,
+          "explain": "Baby dinosaurs hatched out of eggs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Can you see a real living dinosaur at the zoo today?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦖",
+              "❓"
+            ]
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "emoji": "✅",
+              "why": "Dinosaurs died out long ago. Zoo dinosaurs are only models!"
+            },
+            {
+              "label": "No",
+              "emoji": "❌"
+            }
+          ],
+          "answer": 1,
+          "explain": "Dinosaurs lived long ago. Now we only find their bones."
+        },
+        {
+          "mode": "choice",
+          "ask": "What did the long-neck dinosaur eat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦕"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Meat",
+              "emoji": "🍖",
+              "why": "Long-neck dinosaurs were plant eaters."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "They ate plants, not fish."
+            },
+            {
+              "label": "Leaves",
+              "emoji": "🌿"
+            }
+          ],
+          "answer": 2,
+          "explain": "Long-necked dinosaurs ate leaves and plants."
+        }
+      ]
+    },
+    {
+      "id": "dinosaurs-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Fossil hunters",
+      "intro": {
+        "say": "How do we know about dinosaurs? From fossils! Let's be fossil hunters.",
+        "icons": [
+          "🦴",
+          "⛏️",
+          "🔍"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A fossil is what is left of a very old plant or animal, turned into stone. Bones, teeth, footprints and shells can become fossils.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦴",
+              "🦷",
+              "👣",
+              "🐚"
+            ]
+          },
+          "caption": "Fossils: very old remains in rock"
+        },
+        {
+          "mode": "show",
+          "say": "Fossil hunters dig very carefully. They use small hammers and brushes to clean the rock away from the bones.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⛏️",
+              "🖌️",
+              "🦴",
+              "🔍"
+            ]
+          },
+          "caption": "Dig and brush gently"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which of these could be a fossil?",
+          "options": [
+            {
+              "label": "Teddy",
+              "emoji": "🧸",
+              "why": "A teddy is a toy from today."
+            },
+            {
+              "label": "Old bone",
+              "emoji": "🦴"
+            },
+            {
+              "label": "Phone",
+              "emoji": "📱",
+              "why": "Phones are new, not millions of years old."
+            }
+          ],
+          "answer": 1,
+          "explain": "Very old bones in rock can be fossils."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where do fossil hunters find fossils?",
+          "options": [
+            {
+              "label": "In rock",
+              "emoji": "🪨"
+            },
+            {
+              "label": "In clouds",
+              "emoji": "☁️",
+              "why": "Fossils are found in the ground."
+            },
+            {
+              "label": "In shops",
+              "emoji": "🛒",
+              "why": "Fossils come from the ground first."
+            }
+          ],
+          "answer": 0,
+          "explain": "Fossils are found buried in rock."
+        },
+        {
+          "mode": "order",
+          "ask": "How does a dinosaur bone become a fossil? Put the steps in order.",
+          "items": [
+            {
+              "label": "Dinosaur dies",
+              "emoji": "🦕"
+            },
+            {
+              "label": "Mud covers it",
+              "emoji": "🏜️"
+            },
+            {
+              "label": "Bones turn to stone",
+              "emoji": "🪨"
+            },
+            {
+              "label": "We dig it up",
+              "emoji": "⛏️"
+            }
+          ],
+          "explain": "Mud covers the bones, they slowly turn to stone, and millions of years later we dig them up.",
+          "hint": "First the dinosaur dies. Last, we find it."
+        },
+        {
+          "mode": "sort",
+          "ask": "What would each dinosaur eat?",
+          "bins": [
+            {
+              "label": "Plant eater",
+              "emoji": "🦕"
+            },
+            {
+              "label": "Meat eater",
+              "emoji": "🦖"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🌿",
+              "bin": 0,
+              "name": "ferns"
+            },
+            {
+              "emoji": "🍖",
+              "bin": 1,
+              "name": "meat"
+            },
+            {
+              "emoji": "🍃",
+              "bin": 0,
+              "name": "leaves"
+            },
+            {
+              "emoji": "🥩",
+              "bin": 1,
+              "name": "raw meat"
+            },
+            {
+              "emoji": "🌲",
+              "bin": 0,
+              "name": "tree"
+            }
+          ],
+          "explain": "Plant eaters munched ferns and leaves. Meat eaters ate other animals."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do fossil hunters use soft brushes?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖌️",
+              "🦴"
+            ]
+          },
+          "options": [
+            {
+              "label": "Not to break bones",
+              "emoji": "🦴"
+            },
+            {
+              "label": "To paint them",
+              "emoji": "🎨",
+              "why": "They clean them, not paint them."
+            },
+            {
+              "label": "To sweep the house",
+              "emoji": "🧹",
+              "why": "They are cleaning fossils, not the house."
+            }
+          ],
+          "answer": 0,
+          "explain": "Old fossils can break, so hunters brush them gently."
+        }
+      ]
+    },
+    {
+      "id": "dinosaurs-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Dinosaur detectives",
+      "intro": {
+        "say": "Fossils are clues. Let's use them like detectives, and find out what happened to the dinosaurs!",
+        "icons": [
+          "🔍",
+          "🦴",
+          "☄️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Dinosaurs died out about 66 million years ago. Scientists think a giant space rock crashed into Earth and changed the weather.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☄️",
+              "🌍",
+              "🦖"
+            ]
+          },
+          "caption": "66 million years ago"
+        },
+        {
+          "mode": "show",
+          "say": "People came millions of years after the dinosaurs, so no person ever saw one. But birds are related to dinosaurs. They are their living cousins!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦖",
+              "➡️",
+              "🐦"
+            ]
+          },
+          "caption": "Birds are dinosaur cousins"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal alive today is related to the dinosaurs?",
+          "options": [
+            {
+              "label": "Dog",
+              "emoji": "🐕",
+              "why": "Dogs are mammals, not dinosaur cousins."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "Fish are a very different group."
+            },
+            {
+              "label": "Chicken",
+              "emoji": "🐓"
+            }
+          ],
+          "answer": 2,
+          "explain": "Birds, like chickens, are related to the dinosaurs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Did cave people ride on dinosaurs?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧑",
+              "🦕",
+              "❓"
+            ]
+          },
+          "options": [
+            {
+              "label": "No",
+              "emoji": "❌"
+            },
+            {
+              "label": "Yes",
+              "emoji": "✅",
+              "why": "That only happens in cartoons! People came millions of years later."
+            }
+          ],
+          "answer": 0,
+          "explain": "Dinosaurs died out millions of years before the first people."
+        },
+        {
+          "mode": "choice",
+          "ask": "A fossil skull has long, sharp, pointy teeth. What did this dinosaur eat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦷",
+              "💀"
+            ]
+          },
+          "options": [
+            {
+              "label": "Plants",
+              "emoji": "🌿",
+              "why": "Plant eaters had flatter teeth for chewing leaves."
+            },
+            {
+              "label": "Meat",
+              "emoji": "🍖"
+            },
+            {
+              "label": "Honey",
+              "emoji": "🍯",
+              "why": "Dinosaurs didn't eat honey!"
+            }
+          ],
+          "answer": 1,
+          "explain": "Sharp pointy teeth are for biting meat."
+        },
+        {
+          "mode": "choice",
+          "ask": "Fossil footprints are huge and very deep in the rock. What do they tell us?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👣",
+              "🪨"
+            ]
+          },
+          "options": [
+            {
+              "label": "It was tiny",
+              "emoji": "🐜",
+              "why": "Tiny animals leave tiny prints."
+            },
+            {
+              "label": "It was very heavy",
+              "emoji": "🐘"
+            },
+            {
+              "label": "It could fly",
+              "emoji": "🐦",
+              "why": "Footprints show walking, not flying."
+            }
+          ],
+          "answer": 1,
+          "explain": "Big, deep footprints mean a big, heavy dinosaur pressed into the mud."
+        },
+        {
+          "mode": "choice",
+          "ask": "How do we know what dinosaurs looked like?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦕",
+              "❓"
+            ]
+          },
+          "options": [
+            {
+              "label": "Old photos",
+              "emoji": "📷",
+              "why": "There were no cameras back then."
+            },
+            {
+              "label": "From fossils",
+              "emoji": "🦴"
+            },
+            {
+              "label": "People saw them",
+              "emoji": "🧑",
+              "why": "No person ever saw a living dinosaur."
+            }
+          ],
+          "answer": 1,
+          "explain": "Scientists study fossil bones to work out what dinosaurs looked like."
+        },
+        {
+          "mode": "order",
+          "ask": "Put these in order, from longest ago to now.",
+          "items": [
+            {
+              "label": "Dinosaurs",
+              "emoji": "🦕"
+            },
+            {
+              "label": "Space rock",
+              "emoji": "☄️"
+            },
+            {
+              "label": "First people",
+              "emoji": "🧑"
+            },
+            {
+              "label": "Today",
+              "emoji": "🏙️"
+            }
+          ],
+          "explain": "Dinosaurs came first, then the space rock, then much later people, and then us today."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "topicId": "position",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "position-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Above, below, beside",
+      "intro": {
+        "say": "Let's learn words that tell us where things are: above, below, beside and inside!",
+        "icons": [
+          "⬆️",
+          "⬇️",
+          "📦"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The bird is above the tree. Above means higher up. The tree is below the bird.",
+          "visual": {
+            "kind": "text",
+            "text": "🐦\n🌳"
+          },
+          "caption": "above · below"
+        },
+        {
+          "mode": "show",
+          "say": "The cat sits beside the dog. Beside means right next to it.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐱",
+              "🐶"
+            ],
+            "size": "lg"
+          },
+          "caption": "beside"
+        },
+        {
+          "mode": "show",
+          "say": "The puppy runs into its kennel. Now the puppy is inside.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶",
+              "➡️",
+              "🏠"
+            ],
+            "size": "lg"
+          },
+          "caption": "inside"
+        },
+        {
+          "mode": "choice",
+          "ask": "Where is the sun? Is it above or below the house?",
+          "visual": {
+            "kind": "text",
+            "text": "🌞\n🏠"
+          },
+          "options": [
+            {
+              "label": "above",
+              "emoji": "⬆️"
+            },
+            {
+              "label": "below",
+              "emoji": "⬇️",
+              "why": "The sun is higher up than the house."
+            }
+          ],
+          "answer": 0,
+          "explain": "The sun is higher up, so it is above the house."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where is the mouse? Is it above or below the tree?",
+          "visual": {
+            "kind": "text",
+            "text": "🦉\n🌳\n🐭"
+          },
+          "options": [
+            {
+              "label": "above",
+              "emoji": "⬆️",
+              "why": "The mouse is lower down, near the ground."
+            },
+            {
+              "label": "below",
+              "emoji": "⬇️"
+            }
+          ],
+          "answer": 1,
+          "explain": "The mouse is lower down, so it is below the tree."
+        },
+        {
+          "mode": "choice",
+          "ask": "The cat sits next to the dog. Which word tells where the cat is?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐱",
+              "🐶"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "beside"
+            },
+            {
+              "label": "above",
+              "why": "The cat is not higher up."
+            },
+            {
+              "label": "inside",
+              "why": "The cat is not in anything."
+            }
+          ],
+          "answer": 0,
+          "explain": "Next to means beside."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is above the cat?",
+          "visual": {
+            "kind": "text",
+            "text": "⭐\n🐱\n🧺"
+          },
+          "options": [
+            {
+              "label": "basket",
+              "emoji": "🧺",
+              "why": "The basket is below the cat."
+            },
+            {
+              "label": "star",
+              "emoji": "⭐"
+            }
+          ],
+          "answer": 1,
+          "explain": "The star is higher up, above the cat."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is below the cat?",
+          "visual": {
+            "kind": "text",
+            "text": "⭐\n🐱\n🧺"
+          },
+          "options": [
+            {
+              "label": "dog",
+              "emoji": "🐶",
+              "why": "There is no dog in this picture."
+            },
+            {
+              "label": "star",
+              "emoji": "⭐",
+              "why": "The star is above the cat."
+            },
+            {
+              "label": "basket",
+              "emoji": "🧺"
+            }
+          ],
+          "answer": 2,
+          "explain": "The basket is lower down, below the cat."
+        }
+      ]
+    },
+    {
+      "id": "position-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "In front, behind, between",
+      "intro": {
+        "say": "Now let's learn in front of, behind and between.",
+        "icons": [
+          "🐻",
+          "🎁",
+          "🐰"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The present is between the bear and the bunny. Between means in the middle of two things.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐻",
+              "🎁",
+              "🐰"
+            ],
+            "size": "lg"
+          },
+          "caption": "between"
+        },
+        {
+          "mode": "show",
+          "say": "The animals walk to the door. The dog is in front. The cat is behind the dog, and the mouse is at the back.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚪",
+              "🐕",
+              "🐈",
+              "🐁"
+            ],
+            "size": "lg"
+          },
+          "caption": "front · · · back"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is between the apple and the grapes?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🍌",
+              "🍇"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🍌"
+            },
+            {
+              "emoji": "🍇",
+              "why": "The grapes are at the other end."
+            },
+            {
+              "emoji": "🍎",
+              "why": "The apple is at one end."
+            }
+          ],
+          "answer": 0,
+          "explain": "The banana is in the middle, between the apple and the grapes."
+        },
+        {
+          "mode": "choice",
+          "ask": "The animals walk to the door. Who is behind the cat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚪",
+              "🐕",
+              "🐈",
+              "🐁"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "dog",
+              "emoji": "🐕",
+              "why": "The dog is in front of the cat, nearer the door."
+            },
+            {
+              "label": "mouse",
+              "emoji": "🐁"
+            }
+          ],
+          "answer": 1,
+          "explain": "The mouse comes after the cat, so it is behind the cat."
+        },
+        {
+          "mode": "choice",
+          "ask": "The animals race to the flag. Who is at the very front?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏁",
+              "🐢",
+              "🐇",
+              "🦊"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐢"
+            },
+            {
+              "emoji": "🐇",
+              "why": "The rabbit is in the middle."
+            },
+            {
+              "emoji": "🦊",
+              "why": "The fox is at the back."
+            }
+          ],
+          "answer": 0,
+          "explain": "The turtle is nearest the flag, so it is in front!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Where is the cloud? Think about the moon and the house.",
+          "visual": {
+            "kind": "text",
+            "text": "🌙\n☁️\n🏠"
+          },
+          "options": [
+            {
+              "label": "above",
+              "why": "It is above the house, but below the moon. Find the word for the middle."
+            },
+            {
+              "label": "between"
+            },
+            {
+              "label": "inside",
+              "why": "The cloud is not in anything."
+            }
+          ],
+          "answer": 1,
+          "explain": "The cloud is in the middle, between the moon and the house."
+        },
+        {
+          "mode": "order",
+          "ask": "Dress the snowman from top to bottom!",
+          "items": [
+            {
+              "label": "hat",
+              "emoji": "🎩"
+            },
+            {
+              "label": "head",
+              "emoji": "🙂"
+            },
+            {
+              "label": "shirt",
+              "emoji": "👕"
+            },
+            {
+              "label": "trousers",
+              "emoji": "👖"
+            },
+            {
+              "label": "shoes",
+              "emoji": "👟"
+            }
+          ],
+          "explain": "The hat is on top, and the shoes are at the very bottom."
+        }
+      ]
+    },
+    {
+      "id": "position-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Position puzzles",
+      "intro": {
+        "say": "Let's solve position puzzles! Listen carefully to every clue.",
+        "icons": [
+          "🧩",
+          "🔍",
+          "⬆️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Three blocks are stacked. Red is on top. Blue is between red and green. Green is at the bottom.",
+          "visual": {
+            "kind": "text",
+            "text": "🟥\n🟦\n🟩"
+          },
+          "caption": "top · middle · bottom"
+        },
+        {
+          "mode": "show",
+          "say": "In a queue, people in front of you go first. People behind you come after you.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚩",
+              "👩",
+              "👨",
+              "🧒",
+              "👴",
+              "👵"
+            ],
+            "size": "md"
+          },
+          "caption": "front ➡️ back"
+        },
+        {
+          "mode": "choice",
+          "ask": "The book is above the cup. The cup is above the shoe. Which is at the bottom?",
+          "options": [
+            {
+              "label": "cup",
+              "emoji": "☕",
+              "why": "The cup is in the middle."
+            },
+            {
+              "label": "shoe",
+              "emoji": "👟"
+            },
+            {
+              "label": "book",
+              "emoji": "📚",
+              "why": "The book is at the very top."
+            }
+          ],
+          "answer": 1,
+          "explain": "The shoe is below the cup, and the cup is below the book.",
+          "hint": "Picture a tower: book, then cup, then shoe."
+        },
+        {
+          "mode": "choice",
+          "ask": "Who is between the dog and the cat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶",
+              "🐰",
+              "🐱",
+              "🐭"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐭",
+              "why": "The mouse is at the end."
+            },
+            {
+              "emoji": "🐰"
+            },
+            {
+              "emoji": "🐶",
+              "why": "The dog is one of the two ends."
+            }
+          ],
+          "answer": 1,
+          "explain": "The bunny sits in the middle, between the dog and the cat."
+        },
+        {
+          "mode": "order",
+          "ask": "The bird is above the kite. The kite is above the tree. The worm is below the tree. Order them from top to bottom.",
+          "items": [
+            {
+              "label": "bird",
+              "emoji": "🐦"
+            },
+            {
+              "label": "kite",
+              "emoji": "🪁"
+            },
+            {
+              "label": "tree",
+              "emoji": "🌳"
+            },
+            {
+              "label": "worm",
+              "emoji": "🪱"
+            }
+          ],
+          "explain": "Bird, kite, tree, then the worm at the bottom."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many carriages are behind the engine?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚂",
+              "🚃",
+              "🚃",
+              "🚃"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "3"
+            },
+            {
+              "label": "4",
+              "why": "Don't count the engine itself."
+            },
+            {
+              "label": "2",
+              "why": "Count every carriage after the engine."
+            }
+          ],
+          "answer": 0,
+          "explain": "Three carriages follow behind the engine."
+        },
+        {
+          "mode": "choice",
+          "ask": "Tom is in a queue. 2 children are in front of him and 3 children are behind him. How many children in the queue?",
+          "options": [
+            {
+              "label": "5",
+              "why": "Don't forget to count Tom too!"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "3",
+              "why": "Count the ones in front, Tom, and the ones behind."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two in front, Tom himself, and three behind make six."
+        },
+        {
+          "mode": "choice",
+          "ask": "Who is between the cat and the mouse?",
+          "visual": {
+            "kind": "text",
+            "text": "⭐\n🐱\n🐶\n🐭"
+          },
+          "options": [
+            {
+              "emoji": "🐶"
+            },
+            {
+              "emoji": "🐭",
+              "why": "The mouse is at the bottom."
+            },
+            {
+              "emoji": "⭐",
+              "why": "The star is at the very top."
+            }
+          ],
+          "answer": 0,
+          "explain": "The dog is in the middle, below the cat and above the mouse."
+        }
+      ]
+    }
+  ]
+}

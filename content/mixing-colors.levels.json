@@ -1,0 +1,649 @@
+{
+  "topicId": "mixing-colors",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "mixing-colors-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Red, yellow, blue",
+      "intro": {
+        "say": "Red, yellow and blue paint can mix to make new colours. Let us mix!",
+        "icons": [
+          "🔴",
+          "🟡",
+          "🔵",
+          "🎨"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Red, yellow and blue are special. We call them primary colours. We mix them to make other colours.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔴",
+              "🟡",
+              "🔵"
+            ]
+          },
+          "caption": "primary colours"
+        },
+        {
+          "mode": "show",
+          "say": "Mix red paint and yellow paint. Swirl, swirl. You get orange!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              }
+            ],
+            "op": "+"
+          },
+          "caption": "🔴 + 🟡 = 🟠"
+        },
+        {
+          "mode": "choice",
+          "ask": "Red and yellow make…",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "emoji": "🔵",
+              "label": "blue",
+              "why": "Blue is not in this mix."
+            },
+            {
+              "emoji": "🟠",
+              "label": "orange"
+            },
+            {
+              "emoji": "🟢",
+              "label": "green",
+              "why": "Green needs blue paint."
+            }
+          ],
+          "answer": 1,
+          "explain": "Red and yellow mix together to make orange, like an orange fruit."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which colour is a primary colour?",
+          "options": [
+            {
+              "emoji": "🟠",
+              "label": "orange",
+              "why": "Orange is made by mixing red and yellow."
+            },
+            {
+              "emoji": "🟢",
+              "label": "green",
+              "why": "Green is made by mixing blue and yellow."
+            },
+            {
+              "emoji": "🔵",
+              "label": "blue"
+            }
+          ],
+          "answer": 2,
+          "explain": "Blue is a primary colour; you cannot make it by mixing."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which fruit is the colour you get from red and yellow?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "emoji": "🍊",
+              "label": "orange"
+            },
+            {
+              "emoji": "🍇",
+              "label": "grapes",
+              "why": "Grapes are purple."
+            },
+            {
+              "emoji": "🍏",
+              "label": "apple",
+              "why": "This apple is green."
+            }
+          ],
+          "answer": 0,
+          "explain": "Red and yellow make orange, the colour of an orange."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which are the three primary colours?",
+          "options": [
+            {
+              "emoji": "🟢",
+              "label": "green, orange, purple",
+              "why": "Those are mixed colours."
+            },
+            {
+              "emoji": "🔴",
+              "label": "red, yellow, blue"
+            },
+            {
+              "emoji": "⚫",
+              "label": "black, white, brown",
+              "why": "Those are not the primary colours."
+            }
+          ],
+          "answer": 1,
+          "explain": "Red, yellow and blue make all the other paint colours."
+        }
+      ]
+    },
+    {
+      "id": "mixing-colors-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Green and purple",
+      "intro": {
+        "say": "Now we will mix blue with yellow, and red with blue. What will we get?",
+        "icons": [
+          "🔵",
+          "🟢",
+          "🟣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Blue and yellow make green, like grass and leaves.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔵"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              }
+            ],
+            "op": "+"
+          },
+          "caption": "🔵 + 🟡 = 🟢"
+        },
+        {
+          "mode": "show",
+          "say": "Red and blue make purple, like grapes.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "+"
+          },
+          "caption": "🔴 + 🔵 = 🟣"
+        },
+        {
+          "mode": "choice",
+          "ask": "Blue and yellow make…",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔵"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "emoji": "🟣",
+              "label": "purple",
+              "why": "Purple needs red and blue."
+            },
+            {
+              "emoji": "🟠",
+              "label": "orange",
+              "why": "Orange needs red and yellow."
+            },
+            {
+              "emoji": "🟢",
+              "label": "green"
+            }
+          ],
+          "answer": 2,
+          "explain": "Blue and yellow mix to make green."
+        },
+        {
+          "mode": "choice",
+          "ask": "Red and blue make…",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "emoji": "🟣",
+              "label": "purple"
+            },
+            {
+              "emoji": "🟢",
+              "label": "green",
+              "why": "Green needs yellow, not red."
+            },
+            {
+              "emoji": "🟡",
+              "label": "yellow",
+              "why": "Yellow is a primary colour; mixing cannot make it."
+            }
+          ],
+          "answer": 0,
+          "explain": "Red and blue mix to make purple."
+        },
+        {
+          "mode": "choice",
+          "ask": "You want to paint green grass. Which two colours do you mix?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌱",
+              "🟢"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🟠",
+              "label": "red and yellow",
+              "why": "That makes orange."
+            },
+            {
+              "emoji": "🟢",
+              "label": "blue and yellow"
+            },
+            {
+              "emoji": "🟣",
+              "label": "red and blue",
+              "why": "That makes purple."
+            }
+          ],
+          "answer": 1,
+          "explain": "Blue and yellow make green."
+        },
+        {
+          "mode": "choice",
+          "ask": "What colour is missing? Red and which colour make orange?",
+          "visual": {
+            "kind": "text",
+            "text": "🔴 + ? = 🟠"
+          },
+          "options": [
+            {
+              "emoji": "🔵",
+              "label": "blue",
+              "why": "Red and blue make purple."
+            },
+            {
+              "emoji": "🟢",
+              "label": "green",
+              "why": "Green is not a primary colour."
+            },
+            {
+              "emoji": "🟡",
+              "label": "yellow"
+            }
+          ],
+          "answer": 2,
+          "explain": "Red and yellow make orange."
+        },
+        {
+          "mode": "sort",
+          "ask": "Primary colour or mixed colour?",
+          "bins": [
+            {
+              "label": "primary",
+              "emoji": "🎨"
+            },
+            {
+              "label": "mixed",
+              "emoji": "🔄"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔴",
+              "bin": 0,
+              "name": "red"
+            },
+            {
+              "emoji": "🟡",
+              "bin": 0,
+              "name": "yellow"
+            },
+            {
+              "emoji": "🔵",
+              "bin": 0,
+              "name": "blue"
+            },
+            {
+              "emoji": "🟠",
+              "bin": 1,
+              "name": "orange"
+            },
+            {
+              "emoji": "🟢",
+              "bin": 1,
+              "name": "green"
+            },
+            {
+              "emoji": "🟣",
+              "bin": 1,
+              "name": "purple"
+            }
+          ],
+          "explain": "Red, yellow and blue are primary; orange, green and purple are mixed from them."
+        }
+      ]
+    },
+    {
+      "id": "mixing-colors-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Colour scientist",
+      "intro": {
+        "say": "Let us make colours lighter, darker and muddy. Time to be a colour scientist!",
+        "icons": [
+          "🎨",
+          "⚪",
+          "🟤",
+          "🧪"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Adding white paint makes a colour lighter. Red and white make pink!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "⚪"
+              }
+            ],
+            "op": "+"
+          },
+          "caption": "🔴 + ⚪ = pink"
+        },
+        {
+          "mode": "show",
+          "say": "If you mix red, yellow and blue all together, you get a muddy brown.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              },
+              {
+                "count": 1,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "+"
+          },
+          "caption": "🔴 + 🟡 + 🔵 = 🟤"
+        },
+        {
+          "mode": "show",
+          "say": "The more white you add, the lighter it gets. Blue with a little white is light blue; with lots of white, very pale blue.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔵",
+              "💧",
+              "⚪"
+            ]
+          },
+          "caption": "more white = lighter"
+        },
+        {
+          "mode": "choice",
+          "ask": "Red and white make…",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "⚪"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "emoji": "🟣",
+              "label": "purple",
+              "why": "Purple needs blue."
+            },
+            {
+              "emoji": "🌸",
+              "label": "pink"
+            },
+            {
+              "emoji": "🟠",
+              "label": "orange",
+              "why": "Orange needs yellow."
+            }
+          ],
+          "answer": 1,
+          "explain": "White makes red lighter, and light red is pink."
+        },
+        {
+          "mode": "choice",
+          "ask": "What do red, yellow and blue all mixed together make?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 1,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              },
+              {
+                "count": 1,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "emoji": "⚪",
+              "label": "white",
+              "why": "Mixing paints never makes white."
+            },
+            {
+              "emoji": "🟢",
+              "label": "green",
+              "why": "Green is only blue and yellow."
+            },
+            {
+              "emoji": "🟤",
+              "label": "brown"
+            }
+          ],
+          "answer": 2,
+          "explain": "Mixing all three primary colours makes a muddy brown."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have only green paint and red paint. Can you make yellow?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🟢",
+              "🔴",
+              "❓"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🟡",
+              "label": "no, yellow is primary"
+            },
+            {
+              "emoji": "🔄",
+              "label": "yes, mix them",
+              "why": "Mixing those makes a muddy brown, not yellow."
+            }
+          ],
+          "answer": 0,
+          "explain": "Yellow is a primary colour, so no mixing can make it."
+        },
+        {
+          "mode": "choice",
+          "ask": "Purple is made from red and which other colour?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🟣"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🟡",
+              "label": "yellow",
+              "why": "Red and yellow make orange."
+            },
+            {
+              "emoji": "🔵",
+              "label": "blue"
+            },
+            {
+              "emoji": "⚪",
+              "label": "white",
+              "why": "Red and white make pink."
+            }
+          ],
+          "answer": 1,
+          "explain": "Red and blue make purple."
+        },
+        {
+          "mode": "order",
+          "ask": "We add more and more white to red. Put them from darkest to lightest.",
+          "items": [
+            {
+              "emoji": "🔴",
+              "label": "red"
+            },
+            {
+              "emoji": "🌸",
+              "label": "pink"
+            },
+            {
+              "emoji": "🤍",
+              "label": "pale pink"
+            }
+          ],
+          "explain": "Each time we add more white, the colour gets lighter."
+        },
+        {
+          "mode": "choice",
+          "ask": "A painter wants a light green. What should she do?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🟢",
+              "🎨"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🔴",
+              "label": "add red to green",
+              "why": "Red would make it muddy and brown."
+            },
+            {
+              "emoji": "⚫",
+              "label": "add black to green",
+              "why": "Black makes it darker, not lighter."
+            },
+            {
+              "emoji": "⚪",
+              "label": "add white to green"
+            }
+          ],
+          "answer": 2,
+          "explain": "White makes any colour lighter, so green plus white is light green."
+        }
+      ]
+    }
+  ]
+}

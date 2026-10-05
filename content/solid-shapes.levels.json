@@ -1,0 +1,611 @@
+{
+  "topicId": "solid-shapes",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "solid-shapes-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Shapes you can hold",
+      "intro": {
+        "say": "Solid shapes are shapes you can hold, like a ball or a box!",
+        "icons": [
+          "⚽",
+          "🎲",
+          "🍦",
+          "🥫"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A cube is like a dice. It has flat square faces, all the same size.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎲",
+              "🧊"
+            ],
+            "size": "lg"
+          },
+          "caption": "cube"
+        },
+        {
+          "mode": "show",
+          "say": "A sphere is round like a ball. It has no flat faces and no corners.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽",
+              "🏀",
+              "🌍"
+            ],
+            "size": "lg"
+          },
+          "caption": "sphere"
+        },
+        {
+          "mode": "show",
+          "say": "A cone has a round bottom and a pointy top, like an ice cream cone. A cylinder is like a can.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍦",
+              "🥫"
+            ],
+            "size": "lg"
+          },
+          "caption": "cone · cylinder"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a sphere?",
+          "options": [
+            {
+              "label": "dice",
+              "emoji": "🎲",
+              "why": "A dice is a cube. It has flat faces."
+            },
+            {
+              "label": "ball",
+              "emoji": "⚽"
+            },
+            {
+              "label": "can",
+              "emoji": "🥫",
+              "why": "A can is a cylinder."
+            }
+          ],
+          "answer": 1,
+          "explain": "A ball is a sphere, round all over."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a cube?",
+          "options": [
+            {
+              "label": "cone",
+              "emoji": "🍦",
+              "why": "That is a cone, with a pointy top."
+            },
+            {
+              "label": "can",
+              "emoji": "🥫",
+              "why": "That is a cylinder, like a tube."
+            },
+            {
+              "label": "dice",
+              "emoji": "🎲"
+            }
+          ],
+          "answer": 2,
+          "explain": "A dice is a cube, with square faces all the same."
+        },
+        {
+          "mode": "choice",
+          "ask": "What solid shape is this can?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥫"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "cylinder"
+            },
+            {
+              "label": "sphere",
+              "why": "A sphere is round all over, like a ball."
+            },
+            {
+              "label": "cone",
+              "why": "A cone has a pointy top."
+            }
+          ],
+          "answer": 0,
+          "explain": "A can is a cylinder, with two round ends and a curved side."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape has a pointy top?",
+          "options": [
+            {
+              "label": "cylinder",
+              "emoji": "🥫",
+              "why": "A cylinder has two flat ends."
+            },
+            {
+              "label": "cone",
+              "emoji": "🍦"
+            },
+            {
+              "label": "sphere",
+              "emoji": "⚽",
+              "why": "A sphere is round all over."
+            }
+          ],
+          "answer": 1,
+          "explain": "A cone comes to a point at the top."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it a sphere or a cube? Sort them!",
+          "bins": [
+            {
+              "label": "Sphere",
+              "emoji": "⚽"
+            },
+            {
+              "label": "Cube",
+              "emoji": "🎲"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏀",
+              "bin": 0,
+              "name": "basketball"
+            },
+            {
+              "emoji": "🧊",
+              "bin": 1,
+              "name": "ice cube"
+            },
+            {
+              "emoji": "🍊",
+              "bin": 0,
+              "name": "orange"
+            },
+            {
+              "emoji": "🎲",
+              "bin": 1,
+              "name": "dice"
+            },
+            {
+              "emoji": "🌍",
+              "bin": 0,
+              "name": "globe"
+            }
+          ],
+          "explain": "Round things are spheres, and box shapes with equal square faces are cubes."
+        }
+      ]
+    },
+    {
+      "id": "solid-shapes-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Roll, slide or stack",
+      "intro": {
+        "say": "Some solid shapes roll and some stack. Let's find out why!",
+        "icons": [
+          "⚽",
+          "📦",
+          "🥫"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A sphere is curved all over, so it rolls any way you push it.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽",
+              "➡️",
+              "💨"
+            ],
+            "size": "lg"
+          },
+          "caption": "rolls"
+        },
+        {
+          "mode": "show",
+          "say": "A cuboid is shaped like a box. Its faces are flat, so boxes stack into a tall tower.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📦",
+              "📦",
+              "📦"
+            ],
+            "size": "lg"
+          },
+          "caption": "cuboid · stacks"
+        },
+        {
+          "mode": "show",
+          "say": "A cylinder has flat ends and a curved side. Stand it up to stack, or lay it down to roll!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥫"
+            ],
+            "size": "lg"
+          },
+          "caption": "stacks and rolls"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape rolls the best?",
+          "options": [
+            {
+              "label": "dice",
+              "emoji": "🎲",
+              "why": "A dice tumbles but does not roll smoothly."
+            },
+            {
+              "label": "ball",
+              "emoji": "⚽"
+            },
+            {
+              "label": "box",
+              "emoji": "📦",
+              "why": "A box has flat faces, so it slides."
+            }
+          ],
+          "answer": 1,
+          "explain": "A ball is a sphere, curved all over, so it rolls easily."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape is best for building a tall tower?",
+          "options": [
+            {
+              "label": "ball",
+              "emoji": "⚽",
+              "why": "Balls roll off each other."
+            },
+            {
+              "label": "cube",
+              "emoji": "🧊"
+            },
+            {
+              "label": "cone",
+              "emoji": "🍦",
+              "why": "A pointy top is hard to stack on."
+            }
+          ],
+          "answer": 1,
+          "explain": "Cubes have flat faces, so they sit safely on top of each other."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it roll or stack? Sort them!",
+          "bins": [
+            {
+              "label": "Rolls",
+              "emoji": "⚽"
+            },
+            {
+              "label": "Stacks",
+              "emoji": "📦"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏀",
+              "bin": 0,
+              "name": "basketball"
+            },
+            {
+              "emoji": "🎲",
+              "bin": 1,
+              "name": "dice"
+            },
+            {
+              "emoji": "🍊",
+              "bin": 0,
+              "name": "orange"
+            },
+            {
+              "emoji": "🧱",
+              "bin": 1,
+              "name": "brick"
+            },
+            {
+              "emoji": "📦",
+              "bin": 1,
+              "name": "box"
+            },
+            {
+              "emoji": "🔮",
+              "bin": 0,
+              "name": "crystal ball"
+            }
+          ],
+          "explain": "Round things roll. Things with flat faces stack."
+        },
+        {
+          "mode": "choice",
+          "ask": "A dice is a cube. How many flat faces does it have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "8",
+              "why": "8 is how many corners it has. Count the faces."
+            },
+            {
+              "label": "4",
+              "why": "Count the top and bottom too."
+            }
+          ],
+          "answer": 0,
+          "explain": "A cube has 6 faces: top, bottom and four sides.",
+          "hint": "Count top, bottom, front, back and two sides."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a cuboid, like a long box?",
+          "options": [
+            {
+              "label": "can",
+              "emoji": "🥫",
+              "why": "A can is a cylinder."
+            },
+            {
+              "label": "box",
+              "emoji": "📦"
+            },
+            {
+              "label": "ball",
+              "emoji": "⚽",
+              "why": "A ball is a sphere."
+            }
+          ],
+          "answer": 1,
+          "explain": "A box is a cuboid, with six flat faces shaped like rectangles."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape can roll AND stack?",
+          "options": [
+            {
+              "label": "can",
+              "emoji": "🥫"
+            },
+            {
+              "label": "dice",
+              "emoji": "🎲",
+              "why": "A dice stacks but won't roll."
+            },
+            {
+              "label": "ball",
+              "emoji": "⚽",
+              "why": "A ball rolls but won't stack."
+            }
+          ],
+          "answer": 0,
+          "explain": "A cylinder stacks on its flat ends and rolls on its curved side."
+        }
+      ]
+    },
+    {
+      "id": "solid-shapes-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Solid shape riddles",
+      "intro": {
+        "say": "Let's count faces, corners and edges, and solve solid shape riddles!",
+        "icons": [
+          "🕵️",
+          "📦",
+          "🍦"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A cuboid has 6 flat faces, 8 corners and 12 edges. An edge is where two faces meet.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📦"
+            ],
+            "size": "lg"
+          },
+          "caption": "6 faces · 8 corners · 12 edges"
+        },
+        {
+          "mode": "show",
+          "say": "A cylinder has 2 flat faces shaped like circles, and one curved side. It has no corners.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥫"
+            ],
+            "size": "lg"
+          },
+          "caption": "2 circle faces · no corners"
+        },
+        {
+          "mode": "choice",
+          "ask": "I have one flat circle face, a curved side and a point. What am I?",
+          "options": [
+            {
+              "label": "cylinder",
+              "emoji": "🥫",
+              "why": "A cylinder has two flat ends and no point."
+            },
+            {
+              "label": "cone",
+              "emoji": "🍦"
+            },
+            {
+              "label": "sphere",
+              "emoji": "⚽",
+              "why": "A sphere has no flat face at all."
+            }
+          ],
+          "answer": 1,
+          "explain": "A cone has one circle face and comes to a point."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many corners does a cube have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "That is just the top. Count the bottom too."
+            },
+            {
+              "label": "6",
+              "why": "6 is the number of faces. Count the pointy corners."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "A cube has 4 corners on top and 4 on the bottom, 8 in all."
+        },
+        {
+          "mode": "choice",
+          "ask": "You dip the flat end of a can in paint and stamp it. What shape do you see?",
+          "options": [
+            {
+              "shape": "circle"
+            },
+            {
+              "shape": "square",
+              "why": "A can's end is round."
+            },
+            {
+              "shape": "triangle",
+              "why": "A can's end has no corners."
+            }
+          ],
+          "answer": 0,
+          "explain": "The flat end of a cylinder is a circle."
+        },
+        {
+          "mode": "choice",
+          "ask": "Now you stamp one face of a dice. What shape do you see?",
+          "options": [
+            {
+              "shape": "circle",
+              "why": "A dice face has straight sides."
+            },
+            {
+              "shape": "triangle",
+              "why": "A dice face has 4 sides."
+            },
+            {
+              "shape": "square"
+            }
+          ],
+          "answer": 2,
+          "explain": "Every face of a cube is a square."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape has the most flat faces?",
+          "options": [
+            {
+              "label": "cone",
+              "emoji": "🍦",
+              "why": "A cone has just 1 flat face."
+            },
+            {
+              "label": "cylinder",
+              "emoji": "🥫",
+              "why": "A cylinder has only 2 flat faces."
+            },
+            {
+              "label": "cube",
+              "emoji": "🎲"
+            }
+          ],
+          "answer": 2,
+          "explain": "A cube has 6 flat faces, more than a cylinder or a cone."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it have corners or no corners?",
+          "bins": [
+            {
+              "label": "Corners",
+              "emoji": "📦"
+            },
+            {
+              "label": "No corners",
+              "emoji": "⚽"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🎲",
+              "bin": 0,
+              "name": "dice"
+            },
+            {
+              "emoji": "🥫",
+              "bin": 1,
+              "name": "can"
+            },
+            {
+              "emoji": "🏀",
+              "bin": 1,
+              "name": "basketball"
+            },
+            {
+              "emoji": "📦",
+              "bin": 0,
+              "name": "box"
+            },
+            {
+              "emoji": "🧱",
+              "bin": 0,
+              "name": "brick"
+            },
+            {
+              "emoji": "🌍",
+              "bin": 1,
+              "name": "globe"
+            }
+          ],
+          "explain": "Cubes and cuboids have corners. Spheres and cylinders have none."
+        }
+      ]
+    }
+  ]
+}

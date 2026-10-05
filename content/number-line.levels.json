@@ -1,0 +1,505 @@
+{
+  "topicId": "number-line",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "number-line-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Meet the number line",
+      "intro": {
+        "say": "A number line is like a path of numbers. Each step goes up by one!",
+        "icons": [
+          "📍",
+          "🐸"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Here is a number line. The numbers get bigger as we walk to the right.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1
+          },
+          "caption": "0 to 10: bigger and bigger"
+        },
+        {
+          "mode": "show",
+          "say": "Start at 0 and hop 3 times. One, two, three! We land on 3.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1,
+            "hops": 3
+          },
+          "caption": "3 hops from 0 lands on 3"
+        },
+        {
+          "mode": "choice",
+          "ask": "Start at 0. Count the hops. Where do we land?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1,
+            "hops": 5
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count each jump again carefully."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "6",
+              "why": "Count each jump again carefully."
+            }
+          ],
+          "answer": 1,
+          "explain": "Five hops from 0 land on 5."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is missing from the line?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "1",
+              "2",
+              "3",
+              "?",
+              "5"
+            ]
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "6 comes after 5. Look between 3 and 5."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 1,
+          "explain": "4 comes after 3 and before 5."
+        },
+        {
+          "mode": "choice",
+          "ask": "Start at 0 and look at the hops. Where do we land?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1,
+            "hops": 2
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "3",
+              "why": "Count the jumps: there are only 2."
+            },
+            {
+              "label": "1",
+              "why": "There are two jumps, not one."
+            }
+          ],
+          "answer": 0,
+          "explain": "Two hops from 0 land on 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is further along the line, so it is bigger?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "4 comes earlier on the line, so it is smaller."
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "answer": 1,
+          "explain": "7 is further to the right, so 7 is bigger than 4."
+        },
+        {
+          "mode": "order",
+          "ask": "Tap the numbers in number line order, smallest first.",
+          "items": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "9"
+            }
+          ],
+          "explain": "From left to right the line goes 2, then 5, then 6, then 9."
+        }
+      ]
+    },
+    {
+      "id": "number-line-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Hop forward and back",
+      "intro": {
+        "say": "We can hop forward to add and hop back to take away!",
+        "icons": [
+          "📍",
+          "⏩",
+          "⏪"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Start at 4. Hop forward 3 times: 5, 6, 7. We land on 7. So 4 plus 3 is 7.",
+          "visual": {
+            "kind": "numberline",
+            "from": 4,
+            "to": 10,
+            "step": 1,
+            "hops": 3
+          },
+          "caption": "4 + 3 = 7"
+        },
+        {
+          "mode": "show",
+          "say": "Hopping back makes numbers smaller. Start at 9 and hop back 2: 8, 7. 9 take away 2 is 7.",
+          "visual": {
+            "kind": "text",
+            "text": "9 → 8 → 7"
+          },
+          "caption": "9 − 2 = 7"
+        },
+        {
+          "mode": "choice",
+          "ask": "Start at 6. Hop forward 2. Where do you land?",
+          "visual": {
+            "kind": "numberline",
+            "from": 6,
+            "to": 12,
+            "step": 1,
+            "hops": 2
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "That is only one hop. Hop twice!"
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "9",
+              "why": "Count the hops again: 7, 8."
+            }
+          ],
+          "answer": 1,
+          "explain": "6, then 7, 8. We land on 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "Start at 10. Hop back 3. Where do you land?",
+          "visual": {
+            "kind": "text",
+            "text": "10 ⏪ 3 hops"
+          },
+          "options": [
+            {
+              "label": "13",
+              "why": "Hopping back makes the number smaller."
+            },
+            {
+              "label": "8",
+              "why": "Count three hops back: 9, 8, 7."
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "answer": 2,
+          "explain": "Back from 10: 9, 8, 7. We land on 7."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many hops from 3 to 8?",
+          "visual": {
+            "kind": "numberline",
+            "from": 3,
+            "to": 8,
+            "step": 1,
+            "hops": 5
+          },
+          "options": [
+            {
+              "label": "5"
+            },
+            {
+              "label": "8",
+              "why": "8 is where we land. Count the jumps."
+            },
+            {
+              "label": "4",
+              "why": "Count the jumps again: there is one more."
+            }
+          ],
+          "answer": 0,
+          "explain": "3 to 8 is five hops: 4, 5, 6, 7, 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "Start at 12. Hop back 4. Where do you land?",
+          "visual": {
+            "kind": "text",
+            "text": "12 ⏪ 4 hops"
+          },
+          "options": [
+            {
+              "label": "16",
+              "why": "Hopping back makes the number smaller."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "9",
+              "why": "Count four hops back: 11, 10, 9, 8."
+            }
+          ],
+          "answer": 1,
+          "explain": "Back from 12: 11, 10, 9, 8. We land on 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number sentence matches the hops?",
+          "visual": {
+            "kind": "numberline",
+            "from": 5,
+            "to": 12,
+            "step": 1,
+            "hops": 4
+          },
+          "options": [
+            {
+              "label": "5 − 4 = 1",
+              "why": "These hops go forward, so we add."
+            },
+            {
+              "label": "4 + 4 = 8",
+              "why": "We start at 5, not 4."
+            },
+            {
+              "label": "5 + 4 = 9"
+            }
+          ],
+          "answer": 2,
+          "explain": "Start at 5, hop forward 4, and land on 9."
+        }
+      ]
+    },
+    {
+      "id": "number-line-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Big jumps",
+      "intro": {
+        "say": "Number lines can count in tens too. Let’s make big jumps and solve puzzles!",
+        "icons": [
+          "📍",
+          "🦘",
+          "🔟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This line counts by tens. Three jumps of ten from 0 land on 30.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 100,
+            "step": 10,
+            "hops": 3
+          },
+          "caption": "10, 20, 30"
+        },
+        {
+          "mode": "show",
+          "say": "Start at 20 and jump two tens: 30, 40. So 20 plus 20 is 40.",
+          "visual": {
+            "kind": "numberline",
+            "from": 20,
+            "to": 60,
+            "step": 10,
+            "hops": 2
+          },
+          "caption": "20 + 20 = 40"
+        },
+        {
+          "mode": "choice",
+          "ask": "Each jump is ten. Where do we land?",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 100,
+            "step": 10,
+            "hops": 6
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "Each jump is worth ten, not one."
+            },
+            {
+              "label": "60"
+            },
+            {
+              "label": "70",
+              "why": "Count the jumps again: there are six."
+            }
+          ],
+          "answer": 1,
+          "explain": "Six jumps of ten make 60."
+        },
+        {
+          "mode": "choice",
+          "ask": "Start at 35. Jump forward 10. Where do you land?",
+          "visual": {
+            "kind": "text",
+            "text": "35 + 10 = ?"
+          },
+          "options": [
+            {
+              "label": "36",
+              "why": "That is a jump of one. We need a jump of ten!"
+            },
+            {
+              "label": "55",
+              "why": "That is two jumps of ten. Just one!"
+            },
+            {
+              "label": "45"
+            }
+          ],
+          "answer": 2,
+          "explain": "Adding ten changes the tens: 35 becomes 45."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is exactly halfway between 10 and 20?",
+          "visual": {
+            "kind": "numberline",
+            "from": 10,
+            "to": 20,
+            "step": 1
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "12 is much closer to 10."
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "18",
+              "why": "18 is much closer to 20."
+            }
+          ],
+          "answer": 1,
+          "explain": "15 is 5 hops from 10 and 5 hops from 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam starts at 14 and hops back 5. Where does he land?",
+          "visual": {
+            "kind": "text",
+            "text": "14 ⏪ 5 hops"
+          },
+          "options": [
+            {
+              "label": "9"
+            },
+            {
+              "label": "19",
+              "why": "Hopping back makes the number smaller."
+            },
+            {
+              "label": "10",
+              "why": "Count again: 13, 12, 11, 10, 9."
+            }
+          ],
+          "answer": 0,
+          "explain": "Back from 14: 13, 12, 11, 10, 9. Sam lands on 9."
+        },
+        {
+          "mode": "choice",
+          "ask": "I started at 7 and landed on 15. How many hops?",
+          "visual": {
+            "kind": "numberline",
+            "from": 7,
+            "to": 15,
+            "step": 1,
+            "hops": 8
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "Count the jumps, not the start."
+            },
+            {
+              "label": "15",
+              "why": "15 is where we landed. Count the jumps."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "From 7 to 15 is 8 hops, because 7 plus 8 is 15."
+        },
+        {
+          "mode": "order",
+          "ask": "Put these numbers in order along the line, smallest first.",
+          "items": [
+            {
+              "label": "14"
+            },
+            {
+              "label": "41"
+            },
+            {
+              "label": "58"
+            },
+            {
+              "label": "85"
+            }
+          ],
+          "explain": "Look at the tens first: 1 ten, 4 tens, 5 tens, then 8 tens."
+        }
+      ]
+    }
+  ]
+}

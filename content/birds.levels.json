@@ -1,0 +1,578 @@
+{
+  "topicId": "birds",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "birds-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "What makes a bird?",
+      "intro": {
+        "say": "Birds are amazing! Let's find out what all birds have.",
+        "icons": [
+          "🐦",
+          "🪶",
+          "🥚"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Every bird has feathers, two wings, two legs and a beak. Feathers keep birds warm and help them fly.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦",
+              "🪶",
+              "🦉",
+              "🦆"
+            ]
+          },
+          "caption": "Feathers · Wings · Beak"
+        },
+        {
+          "mode": "show",
+          "say": "All birds hatch from eggs. Many birds build nests to keep their eggs safe and warm.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥚",
+              "🐣",
+              "🐥"
+            ]
+          },
+          "caption": "Birds hatch from eggs"
+        },
+        {
+          "mode": "choice",
+          "ask": "What covers a bird's body?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦜"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Fur",
+              "emoji": "🐻",
+              "why": "Fur is for mammals like bears."
+            },
+            {
+              "label": "Feathers",
+              "emoji": "🪶"
+            },
+            {
+              "label": "Scales",
+              "emoji": "🐟",
+              "why": "Fish have scales."
+            }
+          ],
+          "answer": 1,
+          "explain": "All birds have feathers."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a bird?",
+          "options": [
+            {
+              "label": "Owl",
+              "emoji": "🦉"
+            },
+            {
+              "label": "Dog",
+              "emoji": "🐶",
+              "why": "A dog has fur."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "A fish has fins."
+            }
+          ],
+          "answer": 0,
+          "explain": "An owl has feathers, wings and a beak. It is a bird!"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many legs does a bird have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐓"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "4",
+              "why": "Cats and dogs have 4 legs. Birds have 2."
+            },
+            {
+              "label": "6",
+              "why": "Insects have 6 legs."
+            }
+          ],
+          "answer": 0,
+          "explain": "Birds stand on 2 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a baby bird hatch from?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐣"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "A nut",
+              "emoji": "🌰",
+              "why": "Squirrels love nuts, but chicks come from eggs."
+            },
+            {
+              "label": "A flower",
+              "emoji": "🌸",
+              "why": "Bees visit flowers."
+            },
+            {
+              "label": "An egg",
+              "emoji": "🥚"
+            }
+          ],
+          "answer": 2,
+          "explain": "Baby birds peck their way out of eggs."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a bird use to pick up food?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦",
+              "🌾"
+            ]
+          },
+          "options": [
+            {
+              "label": "Its beak",
+              "emoji": "👄"
+            },
+            {
+              "label": "Hands",
+              "emoji": "✋",
+              "why": "Birds don't have hands."
+            },
+            {
+              "label": "Ears",
+              "emoji": "👂",
+              "why": "Ears are for hearing."
+            }
+          ],
+          "answer": 0,
+          "explain": "Birds use their beaks to pick up and eat food."
+        }
+      ]
+    },
+    {
+      "id": "birds-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Beaks and nests",
+      "intro": {
+        "say": "A bird's beak is a tool for eating. Different birds have different beaks!",
+        "icons": [
+          "🦅",
+          "🦜",
+          "🦆"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "An eagle has a hooked beak to tear meat. A parrot has a strong beak to crack nuts. A duck has a flat beak to scoop food from water.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦅",
+              "🦜",
+              "🦆"
+            ],
+            "size": "lg"
+          },
+          "caption": "Hook · Nutcracker · Scoop"
+        },
+        {
+          "mode": "show",
+          "say": "Birds build nests from twigs, grass, mud and feathers. They lay eggs and sit on them to keep them warm.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌿",
+              "🪶",
+              "🥚",
+              "🐦"
+            ]
+          },
+          "caption": "Building a nest"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which bird has a strong beak for cracking nuts?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌰"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Duck",
+              "emoji": "🦆",
+              "why": "A duck's flat beak scoops food from water."
+            },
+            {
+              "label": "Parrot",
+              "emoji": "🦜"
+            },
+            {
+              "label": "Swan",
+              "emoji": "🦢",
+              "why": "Swans eat water plants."
+            }
+          ],
+          "answer": 1,
+          "explain": "A parrot's strong curved beak can crack hard nuts."
+        },
+        {
+          "mode": "choice",
+          "ask": "An eagle has a sharp hooked beak. What does it eat?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦅"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Meat",
+              "emoji": "🍖"
+            },
+            {
+              "label": "Nectar",
+              "emoji": "🌸",
+              "why": "Nectar is a sweet drink for long thin beaks."
+            },
+            {
+              "label": "Grass",
+              "emoji": "🌿",
+              "why": "Eagles are hunters."
+            }
+          ],
+          "answer": 0,
+          "explain": "A hooked beak tears meat. Eagles hunt small animals."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which of these could a bird use to build a nest?",
+          "options": [
+            {
+              "label": "Bricks",
+              "emoji": "🧱",
+              "why": "Bricks are much too heavy!"
+            },
+            {
+              "label": "Big rocks",
+              "emoji": "🪨",
+              "why": "Big rocks are too heavy to carry."
+            },
+            {
+              "label": "Twigs and grass",
+              "emoji": "🌿"
+            }
+          ],
+          "answer": 2,
+          "explain": "Birds carry small twigs and grass to weave their nests."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the bird's story in order.",
+          "items": [
+            {
+              "label": "Build a nest",
+              "emoji": "🌿"
+            },
+            {
+              "label": "Lay eggs",
+              "emoji": "🥚"
+            },
+            {
+              "label": "Keep eggs warm",
+              "emoji": "🐦"
+            },
+            {
+              "label": "Chicks hatch",
+              "emoji": "🐣"
+            }
+          ],
+          "explain": "First the nest, then the eggs, then keeping them warm, and then the chicks hatch!"
+        },
+        {
+          "mode": "choice",
+          "ask": "A duck has a flat beak. Where does it find its food?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦆"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Up in trees",
+              "emoji": "🌳",
+              "why": "Ducks look for food in water."
+            },
+            {
+              "label": "In ponds",
+              "emoji": "💧"
+            },
+            {
+              "label": "In the desert",
+              "emoji": "🏜️",
+              "why": "A desert has no water for ducks."
+            }
+          ],
+          "answer": 1,
+          "explain": "A duck scoops up water plants and tiny animals with its flat beak."
+        }
+      ]
+    },
+    {
+      "id": "birds-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Birds that don't fly",
+      "intro": {
+        "say": "Most birds fly, but not all of them! Let's find out what really makes a bird a bird.",
+        "icons": [
+          "🐧",
+          "🦤",
+          "🦉"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A penguin can't fly, but it is a super swimmer. An ostrich can't fly either, but it runs very fast. It is the biggest bird of all!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐧",
+              "🌊",
+              "🏃"
+            ]
+          },
+          "caption": "Not all birds fly"
+        },
+        {
+          "mode": "show",
+          "say": "Some birds fly far away to warm places in winter, where there is more food. This long trip is called migration.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦢",
+              "❄️",
+              "➡️",
+              "🌞"
+            ]
+          },
+          "caption": "Migration"
+        },
+        {
+          "mode": "choice",
+          "ask": "What do ALL birds have?",
+          "options": [
+            {
+              "label": "Feathers",
+              "emoji": "🪶"
+            },
+            {
+              "label": "They all fly",
+              "emoji": "✈️",
+              "why": "Penguins and ostriches can't fly."
+            },
+            {
+              "label": "They all swim",
+              "emoji": "🌊",
+              "why": "Most birds can't swim like penguins."
+            }
+          ],
+          "answer": 0,
+          "explain": "Every bird has feathers. No other animal alive today has them!",
+          "hint": "Think of the penguin."
+        },
+        {
+          "mode": "choice",
+          "ask": "A butterfly has wings and can fly. Is it a bird?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦋"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "emoji": "✅",
+              "why": "Wings are not enough. Birds have feathers."
+            },
+            {
+              "label": "No",
+              "emoji": "❌"
+            }
+          ],
+          "answer": 1,
+          "explain": "A butterfly has no feathers. It is an insect with 6 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which bird swims well but can't fly?",
+          "options": [
+            {
+              "label": "Eagle",
+              "emoji": "🦅",
+              "why": "Eagles soar high in the sky."
+            },
+            {
+              "label": "Owl",
+              "emoji": "🦉",
+              "why": "Owls fly silently at night."
+            },
+            {
+              "label": "Penguin",
+              "emoji": "🐧"
+            }
+          ],
+          "answer": 2,
+          "explain": "Penguins use their wings like flippers to swim."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do some birds fly away when winter comes?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦢",
+              "❄️"
+            ]
+          },
+          "options": [
+            {
+              "label": "For a party",
+              "emoji": "🎉",
+              "why": "It's a long trip for a reason."
+            },
+            {
+              "label": "To find warmth and food",
+              "emoji": "🌞"
+            },
+            {
+              "label": "To sleep",
+              "emoji": "😴",
+              "why": "They need food, not just sleep."
+            }
+          ],
+          "answer": 1,
+          "explain": "In winter food is hard to find, so they fly to warmer places."
+        },
+        {
+          "mode": "choice",
+          "ask": "Owls can see well in the dark. When do most owls hunt?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦉",
+              "🐁"
+            ]
+          },
+          "options": [
+            {
+              "label": "At night",
+              "emoji": "🌙"
+            },
+            {
+              "label": "At midday",
+              "emoji": "☀️",
+              "why": "Most owls sleep in the day."
+            },
+            {
+              "label": "Only in rain",
+              "emoji": "🌧️",
+              "why": "Rain doesn't matter much."
+            }
+          ],
+          "answer": 0,
+          "explain": "Owls hunt at night, when mice come out."
+        },
+        {
+          "mode": "sort",
+          "ask": "Bird or not a bird? Look for feathers!",
+          "bins": [
+            {
+              "label": "Bird",
+              "emoji": "🪶"
+            },
+            {
+              "label": "Not a bird",
+              "emoji": "❌"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐧",
+              "bin": 0,
+              "name": "penguin"
+            },
+            {
+              "emoji": "🦋",
+              "bin": 1,
+              "name": "butterfly"
+            },
+            {
+              "emoji": "🦃",
+              "bin": 0,
+              "name": "turkey"
+            },
+            {
+              "emoji": "🐝",
+              "bin": 1,
+              "name": "bee"
+            },
+            {
+              "emoji": "🦢",
+              "bin": 0,
+              "name": "swan"
+            },
+            {
+              "emoji": "🐿️",
+              "bin": 1,
+              "name": "squirrel"
+            }
+          ],
+          "explain": "Penguins, turkeys and swans have feathers. Butterflies, bees and squirrels don't."
+        }
+      ]
+    }
+  ]
+}

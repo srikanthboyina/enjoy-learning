@@ -1,0 +1,567 @@
+{
+ "topicId": "rocks-soil",
+ "gameId": "explore",
+ "version": 1,
+ "levels": [
+  {
+   "id": "rocks-soil-01",
+   "order": 1,
+   "difficulty": "simple",
+   "name": "Rocks all around",
+   "intro": {
+    "say": "Let's look at rocks, stones and sand under our feet!",
+    "icons": [
+     "🪨",
+     "⛰️",
+     "🏖️"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Rocks are hard. Big rocks make mountains. Small rocks are called pebbles.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "⛰️",
+       "🪨",
+       "⚪"
+      ]
+     },
+     "caption": "Big rock · Small pebble"
+    },
+    {
+     "mode": "show",
+     "say": "Sand is made of tiny, tiny bits of rock. Waves and wind break rocks into little pieces over a very long time.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🪨",
+       "🌊",
+       "🏖️"
+      ]
+     },
+     "caption": "Sand = tiny rock"
+    },
+    {
+     "mode": "choice",
+     "ask": "Is a rock hard or soft?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🪨"
+      ],
+      "size": "lg"
+     },
+     "options": [
+      {
+       "emoji": "☁️",
+       "label": "Soft",
+       "why": "Try squeezing a rock, it won't squish!"
+      },
+      {
+       "emoji": "💪",
+       "label": "Hard"
+      }
+     ],
+     "answer": 1,
+     "explain": "Rocks are hard."
+    },
+    {
+     "mode": "choice",
+     "ask": "What is sand made of?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🏖️"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "🍬",
+       "label": "Sugar",
+       "why": "Sand is not sweet!"
+      },
+      {
+       "emoji": "🪨",
+       "label": "Tiny bits of rock"
+      },
+      {
+       "emoji": "❄️",
+       "label": "Snow",
+       "why": "Snow melts, sand does not."
+      }
+     ],
+     "answer": 1,
+     "explain": "Sand is made of tiny bits of broken rock."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which one is the biggest?",
+     "visual": {
+      "kind": "sizes",
+      "items": [
+       {
+        "emoji": "⛰️",
+        "scale": 2
+       },
+       {
+        "emoji": "🪨",
+        "scale": 1
+       },
+       {
+        "emoji": "⚪",
+        "scale": 0.4
+       }
+      ]
+     },
+     "options": [
+      {
+       "emoji": "⚪",
+       "label": "Pebble",
+       "why": "A pebble is small."
+      },
+      {
+       "emoji": "⛰️",
+       "label": "Mountain"
+      },
+      {
+       "emoji": "🏖️",
+       "label": "Grain of sand",
+       "why": "Sand grains are the smallest."
+      }
+     ],
+     "answer": 1,
+     "explain": "A mountain is a giant pile of rock."
+    },
+    {
+     "mode": "choice",
+     "ask": "Where do you find lots of sand?",
+     "options": [
+      {
+       "emoji": "🏖️",
+       "label": "Beach"
+      },
+      {
+       "emoji": "☁️",
+       "label": "Clouds",
+       "why": "Clouds are made of water."
+      },
+      {
+       "emoji": "🛏️",
+       "label": "Bed",
+       "why": "Hopefully not in your bed!"
+      }
+     ],
+     "answer": 0,
+     "explain": "Beaches have lots of sand."
+    },
+    {
+     "mode": "sort",
+     "ask": "Is it a rock thing or not?",
+     "bins": [
+      {
+       "label": "Rock",
+       "emoji": "🪨"
+      },
+      {
+       "label": "Not rock",
+       "emoji": "🧸"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "⛰️",
+       "bin": 0,
+       "name": "mountain"
+      },
+      {
+       "emoji": "🏖️",
+       "bin": 0,
+       "name": "sand"
+      },
+      {
+       "emoji": "🧸",
+       "bin": 1,
+       "name": "teddy"
+      },
+      {
+       "emoji": "🍎",
+       "bin": 1,
+       "name": "apple"
+      },
+      {
+       "emoji": "⚪",
+       "bin": 0,
+       "name": "pebble"
+      }
+     ],
+     "explain": "Mountains, pebbles and sand are all made of rock."
+    }
+   ]
+  },
+  {
+   "id": "rocks-soil-02",
+   "order": 1,
+   "difficulty": "medium",
+   "name": "Soil is alive",
+   "intro": {
+    "say": "Soil is not just dirt. Let's find out what is in it and why plants need it!",
+    "icons": [
+     "🌱",
+     "🪱",
+     "🟫"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Soil is a mix of tiny bits of rock, old rotting leaves, water and air. Plants grow their roots in soil.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🪨",
+       "🍂",
+       "💧",
+       "🌱"
+      ]
+     },
+     "caption": "Soil = rock + old leaves"
+    },
+    {
+     "mode": "show",
+     "say": "Worms live in soil. They dig tunnels that let air and water in, and they help make soil rich for plants.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🪱",
+       "🟫",
+       "🌱"
+      ]
+     },
+     "caption": "Worms help soil"
+    },
+    {
+     "mode": "choice",
+     "ask": "What do plants grow their roots in?",
+     "options": [
+      {
+       "emoji": "🪨",
+       "label": "Hard rock",
+       "why": "Roots can't easily grow in solid rock."
+      },
+      {
+       "emoji": "🌱",
+       "label": "Soil"
+      },
+      {
+       "emoji": "🧊",
+       "label": "Ice",
+       "why": "Ice is too cold."
+      }
+     ],
+     "answer": 1,
+     "explain": "Plants grow their roots in soil, where they find water."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which animal helps make soil better?",
+     "options": [
+      {
+       "emoji": "🪱",
+       "label": "Worm"
+      },
+      {
+       "emoji": "🦈",
+       "label": "Shark",
+       "why": "Sharks live in the sea."
+      },
+      {
+       "emoji": "🐧",
+       "label": "Penguin",
+       "why": "Penguins live on ice."
+      }
+     ],
+     "answer": 0,
+     "explain": "Worms dig tunnels so air and water can get into the soil."
+    },
+    {
+     "mode": "choice",
+     "ask": "What is soil made of?",
+     "options": [
+      {
+       "emoji": "🍬",
+       "label": "Sweets",
+       "why": "No sweets in soil!"
+      },
+      {
+       "emoji": "🧸",
+       "label": "Toys",
+       "why": "Toys are not part of soil."
+      },
+      {
+       "emoji": "🍂",
+       "label": "Rock bits and old leaves"
+      }
+     ],
+     "answer": 2,
+     "explain": "Soil is tiny rock bits mixed with old plants, water and air."
+    },
+    {
+     "mode": "choice",
+     "ask": "Old leaves fall on the ground and rot. What do they become?",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🍂",
+       "➡️",
+       "🟫"
+      ]
+     },
+     "options": [
+      {
+       "emoji": "🟫",
+       "label": "Part of soil"
+      },
+      {
+       "emoji": "🌈",
+       "label": "Rainbows",
+       "why": "Leaves do not turn into rainbows."
+      },
+      {
+       "emoji": "🪨",
+       "label": "Big rocks",
+       "why": "Leaves are too soft to become rocks."
+      }
+     ],
+     "answer": 0,
+     "explain": "Rotting leaves become part of the soil and feed plants."
+    },
+    {
+     "mode": "sort",
+     "ask": "Would you find it in soil?",
+     "bins": [
+      {
+       "label": "In soil",
+       "emoji": "🟫"
+      },
+      {
+       "label": "Not in soil",
+       "emoji": "🚫"
+      }
+     ],
+     "items": [
+      {
+       "emoji": "🪱",
+       "bin": 0,
+       "name": "worm"
+      },
+      {
+       "emoji": "🍂",
+       "bin": 0,
+       "name": "old leaves"
+      },
+      {
+       "emoji": "🐠",
+       "bin": 1,
+       "name": "goldfish"
+      },
+      {
+       "emoji": "🐜",
+       "bin": 0,
+       "name": "ant"
+      },
+      {
+       "emoji": "✈️",
+       "bin": 1,
+       "name": "aeroplane"
+      },
+      {
+       "emoji": "🪨",
+       "bin": 0,
+       "name": "tiny stones"
+      }
+     ],
+     "explain": "Worms, ants, old leaves and tiny stones are found in soil."
+    }
+   ]
+  },
+  {
+   "id": "rocks-soil-03",
+   "order": 1,
+   "difficulty": "complex",
+   "name": "Rock detectives",
+   "intro": {
+    "say": "Let's test rocks and soils like real geologists!",
+    "icons": [
+     "🔍",
+     "🪨",
+     "🌋",
+     "💎"
+    ]
+   },
+   "rounds": [
+    {
+     "mode": "show",
+     "say": "Scientists who study rocks are called geologists. Some rocks come from hot melted rock from volcanoes. Some form from layers of sand and mud.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🧑‍🔬",
+       "🌋",
+       "🪨"
+      ]
+     },
+     "caption": "Geologists study rocks"
+    },
+    {
+     "mode": "show",
+     "say": "Rocks break into smaller bits very slowly, by water, wind, ice and plant roots. Boulder, then pebble, then sand, then tiny bits in soil.",
+     "visual": {
+      "kind": "emoji",
+      "items": [
+       "🪨",
+       "⚪",
+       "🏖️",
+       "🟫"
+      ]
+     },
+     "caption": "Big → small, very slowly"
+    },
+    {
+     "mode": "choice",
+     "ask": "What is a scientist who studies rocks called?",
+     "options": [
+      {
+       "emoji": "🧑‍🍳",
+       "label": "Chef",
+       "why": "A chef cooks food."
+      },
+      {
+       "emoji": "🧑‍🔬",
+       "label": "Geologist"
+      },
+      {
+       "emoji": "🧑‍🚀",
+       "label": "Astronaut",
+       "why": "Astronauts go to space."
+      }
+     ],
+     "answer": 1,
+     "explain": "Geologists study rocks and the ground."
+    },
+    {
+     "mode": "choice",
+     "ask": "Where does melted rock come from?",
+     "options": [
+      {
+       "emoji": "🌋",
+       "label": "A volcano"
+      },
+      {
+       "emoji": "🌈",
+       "label": "A rainbow",
+       "why": "Rainbows are made of light."
+      },
+      {
+       "emoji": "☁️",
+       "label": "A cloud",
+       "why": "Clouds hold water."
+      }
+     ],
+     "answer": 0,
+     "explain": "Hot melted rock comes out of volcanoes and cools to become new rock."
+    },
+    {
+     "mode": "choice",
+     "ask": "Which soil would hold water best for plants?",
+     "options": [
+      {
+       "emoji": "🏖️",
+       "label": "Dry sand",
+       "why": "Water runs straight through sand."
+      },
+      {
+       "emoji": "🪨",
+       "label": "Gravel",
+       "why": "Water drains through gravel quickly."
+      },
+      {
+       "emoji": "🟫",
+       "label": "Rich soil"
+      }
+     ],
+     "answer": 2,
+     "explain": "Rich soil with rotted leaves soaks up water like a sponge."
+    },
+    {
+     "mode": "choice",
+     "ask": "Why do pebbles on a beach feel smooth?",
+     "options": [
+      {
+       "emoji": "🌊",
+       "label": "Waves rub them"
+      },
+      {
+       "emoji": "🧽",
+       "label": "People wash them",
+       "why": "Nobody washes all those pebbles!"
+      },
+      {
+       "emoji": "🎨",
+       "label": "They are painted",
+       "why": "Pebbles are not painted."
+      }
+     ],
+     "answer": 0,
+     "explain": "Waves roll pebbles against each other for years, rubbing them smooth."
+    },
+    {
+     "mode": "choice",
+     "ask": "A plant root grows into a crack in a rock. What can happen?",
+     "options": [
+      {
+       "emoji": "🪨",
+       "label": "The rock cracks more"
+      },
+      {
+       "emoji": "🌸",
+       "label": "The rock flowers",
+       "why": "Rocks can't grow flowers."
+      },
+      {
+       "emoji": "🎈",
+       "label": "The rock floats away",
+       "why": "Rocks are too heavy to float away."
+      }
+     ],
+     "answer": 0,
+     "explain": "Growing roots push and slowly break rocks apart."
+    },
+    {
+     "mode": "order",
+     "ask": "Put these from biggest to smallest.",
+     "items": [
+      {
+       "emoji": "⛰️",
+       "label": "Mountain"
+      },
+      {
+       "emoji": "🪨",
+       "label": "Boulder"
+      },
+      {
+       "emoji": "⚪",
+       "label": "Pebble"
+      },
+      {
+       "emoji": "🏖️",
+       "label": "Sand"
+      }
+     ],
+     "explain": "Rocks slowly break down from big to tiny."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+[
+  {
+    "id": "numbers",
+    "subject": "math",
+    "title": "Numbers",
+    "emoji": "🔢",
+    "blurb": "Count, read and compare numbers up to 100.",
+    "colors": [
+      "#FFB74D",
+      "#FF7043"
+    ]
+  },
+  {
+    "id": "add-subtract",
+    "subject": "math",
+    "title": "Add & Take Away",
+    "emoji": "➕",
+    "blurb": "Put numbers together and take them apart.",
+    "colors": [
+      "#FF8A80",
+      "#E53935"
+    ]
+  },
+  {
+    "id": "multiply-share",
+    "subject": "math",
+    "title": "Multiply & Share",
+    "emoji": "✖️",
+    "blurb": "Equal groups, arrays and sharing fairly.",
+    "colors": [
+      "#B39DDB",
+      "#7E57C2"
+    ]
+  },
+  {
+    "id": "fractions-group",
+    "subject": "math",
+    "title": "Fractions",
+    "emoji": "🍕",
+    "blurb": "Halves, thirds and quarters of pizzas and more.",
+    "colors": [
+      "#FFD54F",
+      "#FB8C00"
+    ]
+  },
+  {
+    "id": "shapes-space",
+    "subject": "math",
+    "title": "Shapes & Space",
+    "emoji": "🔺",
+    "blurb": "Flat shapes, solid shapes, symmetry and directions.",
+    "colors": [
+      "#81D4FA",
+      "#1E88E5"
+    ]
+  },
+  {
+    "id": "measuring",
+    "subject": "math",
+    "title": "Measuring",
+    "emoji": "📏",
+    "blurb": "Long and short, heavy and light, full and empty.",
+    "colors": [
+      "#A5D6A7",
+      "#43A047"
+    ]
+  },
+  {
+    "id": "time-money",
+    "subject": "math",
+    "title": "Time & Money",
+    "emoji": "⏰",
+    "blurb": "Clocks, days, months, coins and shopping.",
+    "colors": [
+      "#F48FB1",
+      "#D81B60"
+    ]
+  },
+  {
+    "id": "patterns-puzzles",
+    "subject": "math",
+    "title": "Patterns & Puzzles",
+    "emoji": "🧩",
+    "blurb": "Patterns, charts, sorting and brain teasers.",
+    "colors": [
+      "#80DEEA",
+      "#00ACC1"
+    ]
+  },
+  {
+    "id": "living-world",
+    "subject": "science",
+    "title": "Plants & Animals",
+    "emoji": "🌿",
+    "blurb": "Living things, life cycles and where animals live.",
+    "colors": [
+      "#AED581",
+      "#558B2F"
+    ]
+  },
+  {
+    "id": "my-body",
+    "subject": "science",
+    "title": "My Body",
+    "emoji": "🧍",
+    "blurb": "Senses, bones, teeth and staying healthy.",
+    "colors": [
+      "#FFAB91",
+      "#F4511E"
+    ]
+  },
+  {
+    "id": "earth-sky",
+    "subject": "science",
+    "title": "Earth & Sky",
+    "emoji": "🌍",
+    "blurb": "Weather, rocks, water and space.",
+    "colors": [
+      "#90CAF9",
+      "#3949AB"
+    ]
+  },
+  {
+    "id": "matter-materials",
+    "subject": "science",
+    "title": "Materials & Matter",
+    "emoji": "🧪",
+    "blurb": "What things are made of and how they change.",
+    "colors": [
+      "#CE93D8",
+      "#8E24AA"
+    ]
+  },
+  {
+    "id": "forces-energy",
+    "subject": "science",
+    "title": "Forces & Energy",
+    "emoji": "⚡",
+    "blurb": "Pushes, pulls, light, sound and electricity.",
+    "colors": [
+      "#FFE082",
+      "#F9A825"
+    ]
+  }
+]

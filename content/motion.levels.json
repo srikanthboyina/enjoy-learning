@@ -1,0 +1,553 @@
+{
+  "topicId": "motion",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "motion-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Fast and slow",
+      "intro": {
+        "say": "Some things move fast and some things move slowly. Let's race!",
+        "icons": [
+          "🐆",
+          "🐢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A cheetah runs super fast! A snail moves very, very slowly.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐆",
+              "💨",
+              "🐌"
+            ],
+            "size": "lg"
+          },
+          "caption": "Fast and slow"
+        },
+        {
+          "mode": "show",
+          "say": "A rocket zooms fast up into the sky. A turtle plods along slowly.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚀",
+              "🐢"
+            ],
+            "size": "lg"
+          },
+          "caption": "Zoom or plod"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is faster?",
+          "options": [
+            {
+              "emoji": "🐢",
+              "label": "Turtle",
+              "why": "A turtle is slow and steady."
+            },
+            {
+              "emoji": "🐎",
+              "label": "Horse"
+            }
+          ],
+          "answer": 1,
+          "explain": "A horse can gallop very fast."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is slower?",
+          "options": [
+            {
+              "emoji": "🐌",
+              "label": "Snail"
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car",
+              "why": "A car zooms along fast."
+            }
+          ],
+          "answer": 0,
+          "explain": "A snail creeps very slowly."
+        },
+        {
+          "mode": "sort",
+          "ask": "Fast or slow? Sort them!",
+          "bins": [
+            {
+              "label": "Fast",
+              "emoji": "💨"
+            },
+            {
+              "label": "Slow",
+              "emoji": "🐢"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐆",
+              "bin": 0,
+              "name": "cheetah"
+            },
+            {
+              "emoji": "✈️",
+              "bin": 0,
+              "name": "aeroplane"
+            },
+            {
+              "emoji": "🏎️",
+              "bin": 0,
+              "name": "race car"
+            },
+            {
+              "emoji": "🐌",
+              "bin": 1,
+              "name": "snail"
+            },
+            {
+              "emoji": "🐛",
+              "bin": 1,
+              "name": "caterpillar"
+            },
+            {
+              "emoji": "🦥",
+              "bin": 1,
+              "name": "sloth"
+            }
+          ],
+          "explain": "Cheetahs, planes and race cars are fast. Snails, caterpillars and sloths are slow."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which way of moving is faster?",
+          "options": [
+            {
+              "emoji": "🚶",
+              "label": "Walking",
+              "why": "Walking is slower than running."
+            },
+            {
+              "emoji": "🏃",
+              "label": "Running"
+            }
+          ],
+          "answer": 1,
+          "explain": "Running moves your legs faster, so you go faster."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from slowest to fastest.",
+          "items": [
+            {
+              "emoji": "🐌",
+              "label": "Snail"
+            },
+            {
+              "emoji": "🚶",
+              "label": "Walking"
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car"
+            }
+          ],
+          "explain": "A snail is slowest, then a person walking, then a car."
+        }
+      ]
+    },
+    {
+      "id": "motion-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Ramps and rolling",
+      "intro": {
+        "say": "Let's roll toy cars down ramps and see what makes them go faster!",
+        "icons": [
+          "🚗",
+          "↘️",
+          "💨"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A toy car rolls faster down a steep ramp than down a gentle one.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚗",
+              "↘️",
+              "💨"
+            ],
+            "size": "lg"
+          },
+          "caption": "Steeper = faster"
+        },
+        {
+          "mode": "show",
+          "say": "Round things roll. Flat-sided things slide or stay still. A ball rolls away, but a block doesn't.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽",
+              "🆚",
+              "📦"
+            ],
+            "size": "lg"
+          },
+          "caption": "Round things roll"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which ramp makes the toy car go faster?",
+          "options": [
+            {
+              "emoji": "📐",
+              "label": "Gentle ramp",
+              "why": "A gentle ramp makes a slow roll."
+            },
+            {
+              "emoji": "⛰️",
+              "label": "Steep ramp"
+            }
+          ],
+          "answer": 1,
+          "explain": "The steeper the ramp, the faster the car rolls."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one will roll down a ramp?",
+          "options": [
+            {
+              "emoji": "🏀",
+              "label": "Ball"
+            },
+            {
+              "emoji": "📦",
+              "label": "Box",
+              "why": "A box has flat sides, so it can't roll."
+            },
+            {
+              "emoji": "📚",
+              "label": "Book",
+              "why": "A book has flat sides, so it can't roll."
+            }
+          ],
+          "answer": 0,
+          "explain": "A ball is round, so it rolls."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it roll?",
+          "bins": [
+            {
+              "label": "Rolls",
+              "emoji": "🔄"
+            },
+            {
+              "label": "Doesn't roll",
+              "emoji": "✋"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏀",
+              "bin": 0,
+              "name": "ball"
+            },
+            {
+              "emoji": "🍊",
+              "bin": 0,
+              "name": "orange"
+            },
+            {
+              "emoji": "🥫",
+              "bin": 0,
+              "name": "can on its side"
+            },
+            {
+              "emoji": "📦",
+              "bin": 1,
+              "name": "box"
+            },
+            {
+              "emoji": "📚",
+              "bin": 1,
+              "name": "book"
+            },
+            {
+              "emoji": "🧽",
+              "bin": 1,
+              "name": "sponge"
+            }
+          ],
+          "explain": "Round things roll. Things with flat sides don't."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two toy cars roll down ramps. One ramp is high, one is low. Which car goes farther?",
+          "options": [
+            {
+              "emoji": "⬇️",
+              "label": "Car on the low ramp",
+              "why": "A low ramp gives a slower start."
+            },
+            {
+              "emoji": "⬆️",
+              "label": "Car on the high ramp"
+            }
+          ],
+          "answer": 1,
+          "explain": "From higher up, the car rolls faster, so it travels farther."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from slowest to fastest.",
+          "items": [
+            {
+              "emoji": "🐢",
+              "label": "Turtle"
+            },
+            {
+              "emoji": "🚲",
+              "label": "Bike"
+            },
+            {
+              "emoji": "🚆",
+              "label": "Train"
+            },
+            {
+              "emoji": "✈️",
+              "label": "Jet plane"
+            }
+          ],
+          "explain": "A turtle is slowest and a jet plane is fastest."
+        }
+      ]
+    },
+    {
+      "id": "motion-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Friction and speed",
+      "intro": {
+        "say": "Why do moving things slow down? Let's discover friction, the rubbing force!",
+        "icons": [
+          "⛸️",
+          "🧊",
+          "👟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Friction is a force that happens when things rub together. It slows moving things down.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧱",
+              "➡️",
+              "〰️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Friction slows things"
+        },
+        {
+          "mode": "show",
+          "say": "Smooth ice has little friction, so things slide far. Rough grass and carpet have lots of friction, so things stop sooner.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⛸️",
+              "🧊",
+              "🆚",
+              "🌿"
+            ],
+            "size": "lg"
+          },
+          "caption": "Smooth = slides far"
+        },
+        {
+          "mode": "choice",
+          "ask": "Where will a ball roll the farthest?",
+          "options": [
+            {
+              "emoji": "🌿",
+              "label": "Long grass",
+              "why": "Grass rubs the ball and slows it down."
+            },
+            {
+              "emoji": "🏖️",
+              "label": "Sand",
+              "why": "Sand rubs the ball and slows it down."
+            },
+            {
+              "emoji": "✨",
+              "label": "Smooth floor"
+            }
+          ],
+          "answer": 2,
+          "explain": "A smooth floor has the least friction, so the ball keeps rolling."
+        },
+        {
+          "mode": "sort",
+          "ask": "Smooth or rough?",
+          "bins": [
+            {
+              "label": "Smooth",
+              "emoji": "✨"
+            },
+            {
+              "label": "Rough",
+              "emoji": "🧽"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🧊",
+              "bin": 0,
+              "name": "ice"
+            },
+            {
+              "emoji": "🪟",
+              "bin": 0,
+              "name": "window glass"
+            },
+            {
+              "emoji": "🎳",
+              "bin": 0,
+              "name": "bowling lane"
+            },
+            {
+              "emoji": "🏖️",
+              "bin": 1,
+              "name": "sand"
+            },
+            {
+              "emoji": "🧱",
+              "bin": 1,
+              "name": "brick"
+            },
+            {
+              "emoji": "🌿",
+              "bin": 1,
+              "name": "grass"
+            }
+          ],
+          "explain": "Ice, glass and bowling lanes are smooth. Sand, bricks and grass are rough."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do trainers have bumpy soles?",
+          "options": [
+            {
+              "emoji": "🔊",
+              "label": "To make noise",
+              "why": "The bumps are there for grip."
+            },
+            {
+              "emoji": "👟",
+              "label": "To grip so we don't slip"
+            },
+            {
+              "emoji": "🏋️",
+              "label": "To be heavier",
+              "why": "The bumps are there for grip."
+            }
+          ],
+          "answer": 1,
+          "explain": "Bumps make more friction, so our feet grip the ground."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from slowest to fastest.",
+          "items": [
+            {
+              "emoji": "🐌",
+              "label": "Snail"
+            },
+            {
+              "emoji": "🐢",
+              "label": "Tortoise"
+            },
+            {
+              "emoji": "🏃",
+              "label": "Running child"
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car"
+            },
+            {
+              "emoji": "✈️",
+              "label": "Jet plane"
+            }
+          ],
+          "explain": "A snail is slowest and a jet plane is fastest of all."
+        },
+        {
+          "mode": "choice",
+          "ask": "A hockey puck slides a long way on ice. Why?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏒",
+              "🧊"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🔥",
+              "label": "Ice is hot",
+              "why": "Ice is cold! Think about how smooth it is."
+            },
+            {
+              "emoji": "🧲",
+              "label": "The puck is magnetic",
+              "why": "Magnets aren't moving the puck."
+            },
+            {
+              "emoji": "🧊",
+              "label": "Ice is smooth"
+            }
+          ],
+          "answer": 2,
+          "explain": "Smooth ice has very little friction, so the puck keeps sliding."
+        },
+        {
+          "mode": "choice",
+          "ask": "Bike brakes rub on the wheel. What does that rubbing do?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⏩",
+              "label": "Speeds it up",
+              "why": "Rubbing makes friction, and friction slows things."
+            },
+            {
+              "emoji": "🐢",
+              "label": "Slows it down"
+            }
+          ],
+          "answer": 1,
+          "explain": "The brakes make friction, which slows the bike and stops it."
+        }
+      ]
+    }
+  ]
+}

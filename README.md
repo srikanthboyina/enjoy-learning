@@ -16,5 +16,5 @@ Phone and computer must be on the same Wi-Fi. If they can't see each other, use
 
 ## Add levels
 
-Edit `content/<topicId>.levels.json` (20 topics, each with Simple / Medium / Complex levels), then run `npm run validate:content`. Most topics use the data-driven explore engine, so a new topic is just JSON; see CLAUDE.md.
+Edit `content/<topicId>.levels.json` (100 topics in 13 groups, each with Simple / Medium / Complex levels), then run `npm run validate:content`. Most topics use the data-driven explore engine, so a new topic is just JSON; see CLAUDE.md.
 See `CLAUDE.md` for conventions and `docs/PROPOSAL.md` for the design.

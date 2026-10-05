@@ -1,0 +1,668 @@
+{
+  "topicId": "habitats",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "habitats-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Hot, wet and icy",
+      "intro": {
+        "say": "A habitat is the kind of place where an animal lives and finds food. Let us visit some!",
+        "icons": [
+          "🏜️",
+          "🌴",
+          "🌊",
+          "❄️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A desert is very hot and dry, with lots of sand. Camels and lizards live there.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏜️",
+              "🐪",
+              "🦎",
+              "🌵"
+            ]
+          },
+          "caption": "desert"
+        },
+        {
+          "mode": "show",
+          "say": "The ocean is a huge salty sea. Fish, whales and octopuses live in the water.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌊",
+              "🐠",
+              "🐋",
+              "🐙"
+            ]
+          },
+          "caption": "ocean"
+        },
+        {
+          "mode": "show",
+          "say": "The Arctic is icy and freezing cold. Polar bears and seals live on the ice and snow.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "❄️",
+              "🐻‍❄️",
+              "🦭"
+            ]
+          },
+          "caption": "Arctic"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal lives in the ocean?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌊"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🐪",
+              "label": "camel",
+              "why": "A camel lives in the hot, dry desert."
+            },
+            {
+              "emoji": "🐠",
+              "label": "fish"
+            },
+            {
+              "emoji": "🐻‍❄️",
+              "label": "polar bear",
+              "why": "A polar bear lives on the icy Arctic snow."
+            }
+          ],
+          "answer": 1,
+          "explain": "Fish swim and breathe in the water, so the ocean is their habitat."
+        },
+        {
+          "mode": "choice",
+          "ask": "A polar bear lives where it is…",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐻‍❄️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🏜️",
+              "label": "hot and sandy",
+              "why": "A polar bear would get far too hot in the desert."
+            },
+            {
+              "emoji": "🌊",
+              "label": "in the sea only",
+              "why": "Polar bears swim, but they live on the ice too."
+            },
+            {
+              "emoji": "❄️",
+              "label": "icy and cold"
+            }
+          ],
+          "answer": 2,
+          "explain": "Polar bears have thick fur to stay warm on the Arctic ice."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which place is a hot, dry desert?",
+          "options": [
+            {
+              "emoji": "🏜️",
+              "label": "desert"
+            },
+            {
+              "emoji": "🌊",
+              "label": "ocean",
+              "why": "The ocean is full of water, not dry at all."
+            },
+            {
+              "emoji": "🧊",
+              "label": "ice",
+              "why": "Ice is freezing cold, not hot."
+            }
+          ],
+          "answer": 0,
+          "explain": "A desert has lots of sand, sunshine and very little rain."
+        },
+        {
+          "mode": "sort",
+          "ask": "Help each animal get home. Desert or ocean?",
+          "bins": [
+            {
+              "label": "desert",
+              "emoji": "🏜️"
+            },
+            {
+              "label": "ocean",
+              "emoji": "🌊"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐪",
+              "bin": 0,
+              "name": "camel"
+            },
+            {
+              "emoji": "🦂",
+              "bin": 0,
+              "name": "scorpion"
+            },
+            {
+              "emoji": "🦎",
+              "bin": 0,
+              "name": "lizard"
+            },
+            {
+              "emoji": "🐋",
+              "bin": 1,
+              "name": "whale"
+            },
+            {
+              "emoji": "🐙",
+              "bin": 1,
+              "name": "octopus"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 1,
+              "name": "shark"
+            }
+          ],
+          "explain": "Camels, scorpions and lizards like hot sand. Whales, octopuses and sharks need the sea."
+        }
+      ]
+    },
+    {
+      "id": "habitats-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Five habitats",
+      "intro": {
+        "say": "Let us meet the rainforest and the grassland too, and help animals find the right home.",
+        "icons": [
+          "🌳",
+          "🦜",
+          "🦁",
+          "🌾"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A rainforest is hot and very rainy, with tall trees close together. Monkeys, parrots and frogs live there.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌳",
+              "🐒",
+              "🦜",
+              "🐸"
+            ]
+          },
+          "caption": "rainforest"
+        },
+        {
+          "mode": "show",
+          "say": "A grassland is a wide open land covered in grass. Lions, zebras and giraffes live there.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌾",
+              "🦁",
+              "🦓",
+              "🦒"
+            ]
+          },
+          "caption": "grassland"
+        },
+        {
+          "mode": "choice",
+          "ask": "Monkeys swing from tree to tree. Which habitat suits them best?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐒"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🏜️",
+              "label": "desert",
+              "why": "The desert has very few trees to climb."
+            },
+            {
+              "emoji": "❄️",
+              "label": "Arctic",
+              "why": "The Arctic is icy with no tall trees."
+            },
+            {
+              "emoji": "🌳",
+              "label": "rainforest"
+            }
+          ],
+          "answer": 2,
+          "explain": "The rainforest is full of tall trees, perfect for climbing monkeys."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where do zebras run and eat grass?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦓",
+              "🌾"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌾",
+              "label": "grassland"
+            },
+            {
+              "emoji": "🌊",
+              "label": "ocean",
+              "why": "Zebras cannot live in the water."
+            },
+            {
+              "emoji": "🌳",
+              "label": "rainforest",
+              "why": "The trees are too thick for zebras to run."
+            }
+          ],
+          "answer": 0,
+          "explain": "Grasslands give zebras plenty of grass to eat and space to run."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal lives in the rainforest?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌳",
+              "🌧️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🐪",
+              "label": "camel",
+              "why": "Camels live in the dry desert."
+            },
+            {
+              "emoji": "🦭",
+              "label": "seal",
+              "why": "Seals live in cold seas and on the ice."
+            },
+            {
+              "emoji": "🦜",
+              "label": "parrot"
+            },
+            {
+              "emoji": "🐋",
+              "label": "whale",
+              "why": "Whales live in the ocean."
+            }
+          ],
+          "answer": 2,
+          "explain": "Parrots live high in rainforest trees and eat the fruit there."
+        },
+        {
+          "mode": "sort",
+          "ask": "Rainforest or grassland? Sort the animals.",
+          "bins": [
+            {
+              "label": "rainforest",
+              "emoji": "🌳"
+            },
+            {
+              "label": "grassland",
+              "emoji": "🌾"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐒",
+              "bin": 0,
+              "name": "monkey"
+            },
+            {
+              "emoji": "🦜",
+              "bin": 0,
+              "name": "parrot"
+            },
+            {
+              "emoji": "🦥",
+              "bin": 0,
+              "name": "sloth"
+            },
+            {
+              "emoji": "🦁",
+              "bin": 1,
+              "name": "lion"
+            },
+            {
+              "emoji": "🦓",
+              "bin": 1,
+              "name": "zebra"
+            },
+            {
+              "emoji": "🦒",
+              "bin": 1,
+              "name": "giraffe"
+            }
+          ],
+          "explain": "Tree climbers live in the rainforest; grazers and runners live on the grassland."
+        },
+        {
+          "mode": "sort",
+          "ask": "Three homes! Where does each animal live?",
+          "bins": [
+            {
+              "label": "desert",
+              "emoji": "🏜️"
+            },
+            {
+              "label": "ocean",
+              "emoji": "🌊"
+            },
+            {
+              "label": "Arctic",
+              "emoji": "❄️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐪",
+              "bin": 0,
+              "name": "camel"
+            },
+            {
+              "emoji": "🦂",
+              "bin": 0,
+              "name": "scorpion"
+            },
+            {
+              "emoji": "🐠",
+              "bin": 1,
+              "name": "fish"
+            },
+            {
+              "emoji": "🐬",
+              "bin": 1,
+              "name": "dolphin"
+            },
+            {
+              "emoji": "🐻‍❄️",
+              "bin": 2,
+              "name": "polar bear"
+            },
+            {
+              "emoji": "🦭",
+              "bin": 2,
+              "name": "seal"
+            }
+          ],
+          "explain": "Each animal lives where it can find food and stay safe."
+        }
+      ]
+    },
+    {
+      "id": "habitats-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Made for their home",
+      "intro": {
+        "say": "Animal bodies are just right for their habitat. Let us find out why!",
+        "icons": [
+          "🐪",
+          "🐻‍❄️",
+          "🐟",
+          "🤔"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A camel stores fat in its hump and can go many days without drinking. Wide feet stop it sinking in sand.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐪",
+              "🏜️",
+              "☀️"
+            ]
+          },
+          "caption": "camel: desert"
+        },
+        {
+          "mode": "show",
+          "say": "A polar bear has thick fur and a layer of fat to keep warm. Fish have gills to breathe underwater.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐻‍❄️",
+              "❄️",
+              "🐟",
+              "🌊"
+            ]
+          },
+          "caption": "fur for cold, gills for water"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why can a polar bear live in the freezing Arctic?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐻‍❄️",
+              "❄️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "☕",
+              "label": "It drinks hot water",
+              "why": "There is no hot water on the ice!"
+            },
+            {
+              "emoji": "🧥",
+              "label": "Thick fur and fat"
+            },
+            {
+              "emoji": "😴",
+              "label": "It sleeps all day",
+              "why": "Sleeping does not keep it warm by itself."
+            }
+          ],
+          "answer": 1,
+          "explain": "Thick fur and a layer of fat keep the polar bear warm in the cold."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which body part helps a fish live in the ocean?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟",
+              "🌊"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧥",
+              "label": "fur",
+              "why": "Fur would get soggy; fish do not need it."
+            },
+            {
+              "emoji": "🐪",
+              "label": "a hump",
+              "why": "A hump helps camels in the desert."
+            },
+            {
+              "emoji": "🐡",
+              "label": "gills"
+            }
+          ],
+          "answer": 2,
+          "explain": "Gills let a fish take oxygen from the water so it can breathe."
+        },
+        {
+          "mode": "choice",
+          "ask": "A cactus stores water inside it. Which habitat is it made for?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌵"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌳",
+              "label": "rainforest",
+              "why": "The rainforest is so rainy that plants do not need to store water."
+            },
+            {
+              "emoji": "❄️",
+              "label": "Arctic",
+              "why": "A cactus would freeze in the Arctic."
+            },
+            {
+              "emoji": "🌊",
+              "label": "ocean",
+              "why": "A cactus cannot grow in salty seawater."
+            },
+            {
+              "emoji": "🏜️",
+              "label": "desert"
+            }
+          ],
+          "answer": 3,
+          "explain": "Deserts get very little rain, so storing water helps the cactus survive."
+        },
+        {
+          "mode": "choice",
+          "ask": "A frog needs wet places and lots of insects to eat. Where would it be happiest?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐸"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌳",
+              "label": "rainforest"
+            },
+            {
+              "emoji": "🏜️",
+              "label": "desert",
+              "why": "The desert is too dry for a frog’s wet skin."
+            },
+            {
+              "emoji": "❄️",
+              "label": "Arctic",
+              "why": "It is far too cold for a frog there."
+            }
+          ],
+          "answer": 0,
+          "explain": "The rainforest is warm, wet and full of insects, just right for frogs."
+        },
+        {
+          "mode": "choice",
+          "ask": "If a camel was taken to the Arctic, what would happen?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐪",
+              "➡️",
+              "❄️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "😀",
+              "label": "It would love it",
+              "why": "Its body is made for heat, not ice."
+            },
+            {
+              "emoji": "🥶",
+              "label": "It would be too cold"
+            },
+            {
+              "emoji": "🐟",
+              "label": "It would grow fins",
+              "why": "Animals cannot grow new body parts like that."
+            }
+          ],
+          "answer": 1,
+          "explain": "A desert camel's body is made for heat, so the icy Arctic would be far too cold."
+        },
+        {
+          "mode": "sort",
+          "ask": "Where do they live? Think about their bodies!",
+          "bins": [
+            {
+              "label": "desert",
+              "emoji": "🏜️"
+            },
+            {
+              "label": "ocean",
+              "emoji": "🌊"
+            },
+            {
+              "label": "Arctic",
+              "emoji": "❄️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🦂",
+              "bin": 0,
+              "name": "scorpion"
+            },
+            {
+              "emoji": "🐍",
+              "bin": 0,
+              "name": "rattlesnake"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 1,
+              "name": "shark"
+            },
+            {
+              "emoji": "🐙",
+              "bin": 1,
+              "name": "octopus"
+            },
+            {
+              "emoji": "🐻‍❄️",
+              "bin": 2,
+              "name": "polar bear"
+            },
+            {
+              "emoji": "🦭",
+              "bin": 2,
+              "name": "seal"
+            }
+          ],
+          "explain": "Desert animals handle heat, sea animals swim and breathe in water, Arctic animals stay warm."
+        }
+      ]
+    }
+  ]
+}

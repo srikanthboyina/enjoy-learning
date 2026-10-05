@@ -1,0 +1,597 @@
+{
+  "topicId": "coins",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "coins-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Counting coins",
+      "intro": {
+        "say": "Each coin shows a number. Let's count how much money we have!",
+        "icons": [
+          "🪙",
+          "🔢",
+          "🐷"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Each coin shows its number. Three 1 coins make 1, 2, 3. That is 3 altogether.",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              1,
+              1,
+              1
+            ]
+          },
+          "caption": "1 + 1 + 1 = 3"
+        },
+        {
+          "mode": "show",
+          "say": "A 5 coin is worth the same as five 1 coins!",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              5,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "caption": "5 = 1 + 1 + 1 + 1 + 1"
+        },
+        {
+          "mode": "choice",
+          "ask": "How much money is here?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              1,
+              1
+            ]
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "There are two coins. Count both."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "3",
+              "why": "Count the coins again."
+            }
+          ],
+          "answer": 1,
+          "explain": "One and one make 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "How much money is here?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Count every coin."
+            },
+            {
+              "label": "5",
+              "why": "Count the coins again, one by one."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "Four 1 coins make 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which coin is worth more?",
+          "options": [
+            {
+              "label": "2",
+              "emoji": "🪙",
+              "why": "2 is less than 5."
+            },
+            {
+              "label": "5",
+              "emoji": "🪙"
+            }
+          ],
+          "answer": 1,
+          "explain": "5 is more than 2, so the 5 coin is worth more."
+        },
+        {
+          "mode": "choice",
+          "ask": "A 2 coin and a 1 coin. How much is that?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              2,
+              1
+            ]
+          },
+          "options": [
+            {
+              "label": "3"
+            },
+            {
+              "label": "2",
+              "why": "Add the 1 coin too."
+            },
+            {
+              "label": "4",
+              "why": "Count on 1 from 2."
+            }
+          ],
+          "answer": 0,
+          "explain": "2 and 1 more make 3."
+        },
+        {
+          "mode": "choice",
+          "ask": "How much money is here?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              5,
+              1
+            ]
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Add the 1 coin too."
+            },
+            {
+              "label": "7",
+              "why": "Count on 1 from 5."
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "5 and 1 more make 6.",
+          "hint": "Start at 5 and count on."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the coins in order, from smallest to biggest.",
+          "items": [
+            {
+              "label": "1",
+              "emoji": "🪙"
+            },
+            {
+              "label": "2",
+              "emoji": "🪙"
+            },
+            {
+              "label": "5",
+              "emoji": "🪙"
+            },
+            {
+              "label": "10",
+              "emoji": "🪙"
+            }
+          ],
+          "explain": "1, 2, 5, then 10."
+        }
+      ]
+    },
+    {
+      "id": "coins-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Adding coins",
+      "intro": {
+        "say": "Start with the biggest coin and count on to find the total.",
+        "icons": [
+          "🪙",
+          "➕",
+          "🪙"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Start with the biggest coin and count on. 10, then 15, then 16!",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              10,
+              5,
+              1
+            ]
+          },
+          "caption": "10 + 5 + 1 = 16"
+        },
+        {
+          "mode": "show",
+          "say": "For three 2 coins, count by twos: 2, 4, 6.",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              2,
+              2,
+              2
+            ]
+          },
+          "caption": "2 + 2 + 2 = 6"
+        },
+        {
+          "mode": "choice",
+          "ask": "How much money is here?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              10,
+              1,
+              1
+            ]
+          },
+          "options": [
+            {
+              "label": "11",
+              "why": "Count both 1 coins."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "13",
+              "why": "There are only two 1 coins."
+            }
+          ],
+          "answer": 1,
+          "explain": "10, then 11, then 12."
+        },
+        {
+          "mode": "choice",
+          "ask": "Count by fives. How much money?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              5,
+              5,
+              5
+            ]
+          },
+          "options": [
+            {
+              "label": "15"
+            },
+            {
+              "label": "10",
+              "why": "There are three 5 coins."
+            },
+            {
+              "label": "20",
+              "why": "Count by fives again: 5, 10, 15."
+            }
+          ],
+          "answer": 0,
+          "explain": "5, 10, 15."
+        },
+        {
+          "mode": "choice",
+          "ask": "How much money is here?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              10,
+              10,
+              5
+            ]
+          },
+          "options": [
+            {
+              "label": "30",
+              "why": "The last coin is a 5, not a 10."
+            },
+            {
+              "label": "20",
+              "why": "Add the 5 coin too."
+            },
+            {
+              "label": "25"
+            }
+          ],
+          "answer": 2,
+          "explain": "10, 20, then 25."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is more money: a 10 coin, or three 2 coins?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              10,
+              2,
+              2,
+              2
+            ]
+          },
+          "options": [
+            {
+              "label": "2 + 2 + 2",
+              "why": "Three 2 coins make only 6."
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "answer": 1,
+          "explain": "Three 2 coins make 6, and 10 is more than 6."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which coins make 7?",
+          "visual": {
+            "kind": "text",
+            "text": "7 = ?"
+          },
+          "options": [
+            {
+              "label": "5 + 1",
+              "why": "5 and 1 make 6."
+            },
+            {
+              "label": "5 + 2"
+            },
+            {
+              "label": "2 + 2",
+              "why": "2 and 2 make 4."
+            }
+          ],
+          "answer": 1,
+          "explain": "5 and 2 make 7."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order from least money to most money.",
+          "items": [
+            {
+              "label": "1 + 1"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "5 + 5"
+            },
+            {
+              "label": "10 + 5"
+            }
+          ],
+          "explain": "2, then 5, then 10, then 15."
+        }
+      ]
+    },
+    {
+      "id": "coins-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Coin puzzles",
+      "intro": {
+        "say": "Let's count bigger coins and find different ways to make the same amount.",
+        "icons": [
+          "🪙",
+          "🤔",
+          "💰"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Count the big coins first: 20, 40, 50, 55.",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              20,
+              20,
+              10,
+              5
+            ]
+          },
+          "caption": "20 + 20 + 10 + 5 = 55"
+        },
+        {
+          "mode": "show",
+          "say": "Different coins can make the same amount. One 10 coin is the same as two 5 coins.",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              10,
+              5,
+              5
+            ]
+          },
+          "caption": "10 = 5 + 5"
+        },
+        {
+          "mode": "choice",
+          "ask": "How much money is here?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              50,
+              20,
+              10,
+              2
+            ]
+          },
+          "options": [
+            {
+              "label": "72",
+              "why": "Count again: 50, 70, 80, then 82."
+            },
+            {
+              "label": "82"
+            },
+            {
+              "label": "80",
+              "why": "Add the 2 coin too."
+            }
+          ],
+          "answer": 1,
+          "explain": "50, 70, 80, 82."
+        },
+        {
+          "mode": "choice",
+          "ask": "How much money is here?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              20,
+              20,
+              20,
+              5,
+              1
+            ]
+          },
+          "options": [
+            {
+              "label": "66"
+            },
+            {
+              "label": "61",
+              "why": "Add the 5 coin as well as the 1."
+            },
+            {
+              "label": "56",
+              "why": "There are three 20 coins."
+            }
+          ],
+          "answer": 0,
+          "explain": "20, 40, 60, 65, 66."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ann has a 20 coin and a 5 coin. Ben has three 10 coins. Who has more money?",
+          "options": [
+            {
+              "label": "Ann",
+              "emoji": "👧",
+              "why": "Ann has 25. Ben has 30."
+            },
+            {
+              "label": "Ben",
+              "emoji": "👦"
+            },
+            {
+              "label": "Same",
+              "why": "25 and 30 are not the same."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ann has 25 and Ben has 30, so Ben has more."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is the fewest coins you need to make 15?",
+          "visual": {
+            "kind": "text",
+            "text": "15 = ?"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "You can do it with fewer."
+            },
+            {
+              "label": "15",
+              "why": "That is fifteen 1 coins. Use bigger coins!"
+            },
+            {
+              "label": "2"
+            }
+          ],
+          "answer": 2,
+          "explain": "A 10 coin and a 5 coin make 15. That is just 2 coins."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have three 10 coins. You give one to your friend. How much is left?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              10,
+              10,
+              10
+            ]
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "You gave away only one coin."
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "40",
+              "why": "Giving away makes less, not more."
+            }
+          ],
+          "answer": 1,
+          "explain": "30 take away 10 leaves 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which coins make 25?",
+          "options": [
+            {
+              "label": "20 + 10",
+              "why": "20 and 10 make 30."
+            },
+            {
+              "label": "5 + 5 + 10",
+              "why": "Those make 20."
+            },
+            {
+              "label": "10 + 10 + 5"
+            }
+          ],
+          "answer": 2,
+          "explain": "10, 20, then 25."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order from least money to most money.",
+          "items": [
+            {
+              "label": "5 + 5"
+            },
+            {
+              "label": "20 + 5"
+            },
+            {
+              "label": "10 + 10 + 10"
+            },
+            {
+              "label": "50"
+            }
+          ],
+          "explain": "10, then 25, then 30, then 50."
+        }
+      ]
+    }
+  ]
+}

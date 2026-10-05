@@ -1,0 +1,677 @@
+{
+  "topicId": "odd-one-out",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "odd-one-out-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Spot the different one",
+      "intro": {
+        "say": "The odd one out is the one that does not belong. Let us look closely!",
+        "icons": [
+          "🍎",
+          "🍎",
+          "🍌",
+          "👀"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Three apples and one banana. The banana is different. It is the odd one out!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🍎",
+              "🍎",
+              "🍌"
+            ],
+            "size": "lg"
+          },
+          "caption": "Odd one out: 🍌"
+        },
+        {
+          "mode": "show",
+          "say": "Sometimes the colour is different. Three blue circles and one red circle.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔵",
+              "🔵",
+              "🔴",
+              "🔵"
+            ],
+            "size": "lg"
+          },
+          "caption": "Odd one out: 🔴"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the odd one out?",
+          "options": [
+            {
+              "emoji": "🐶",
+              "label": "Dog",
+              "why": "A dog is an animal, like the others."
+            },
+            {
+              "emoji": "🐱",
+              "label": "Cat",
+              "why": "A cat is an animal, like the others."
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car"
+            },
+            {
+              "emoji": "🐰",
+              "label": "Rabbit",
+              "why": "A rabbit is an animal, like the others."
+            }
+          ],
+          "answer": 2,
+          "explain": "The car is not an animal. The others are all animals."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is not red?",
+          "options": [
+            {
+              "emoji": "🍓",
+              "label": "Strawberry",
+              "why": "A strawberry is red."
+            },
+            {
+              "emoji": "🥦",
+              "label": "Broccoli"
+            },
+            {
+              "emoji": "🍎",
+              "label": "Apple",
+              "why": "This apple is red."
+            },
+            {
+              "emoji": "🍒",
+              "label": "Cherries",
+              "why": "Cherries are red."
+            }
+          ],
+          "answer": 1,
+          "explain": "Broccoli is green. The others are red."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape is the odd one out?",
+          "options": [
+            {
+              "shape": "circle",
+              "color": "#E74C3C",
+              "why": "That is a circle, like most of them."
+            },
+            {
+              "shape": "circle",
+              "color": "#3498DB",
+              "why": "That is a circle, like most of them."
+            },
+            {
+              "shape": "square",
+              "color": "#F1C40F"
+            },
+            {
+              "shape": "circle",
+              "color": "#2ECC71",
+              "why": "That is a circle, like most of them."
+            }
+          ],
+          "answer": 2,
+          "explain": "The square has corners. The others are circles."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the odd one out?",
+          "options": [
+            {
+              "emoji": "⚽",
+              "label": "Ball"
+            },
+            {
+              "emoji": "🍌",
+              "label": "Banana",
+              "why": "A banana is a fruit, like most of them."
+            },
+            {
+              "emoji": "🍎",
+              "label": "Apple",
+              "why": "An apple is a fruit, like most of them."
+            },
+            {
+              "emoji": "🍇",
+              "label": "Grapes",
+              "why": "Grapes are fruit, like most of them."
+            }
+          ],
+          "answer": 0,
+          "explain": "You cannot eat a ball! The others are all fruit."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one does not belong with the clothes?",
+          "options": [
+            {
+              "emoji": "👕",
+              "label": "T-shirt",
+              "why": "You wear a T-shirt."
+            },
+            {
+              "emoji": "👖",
+              "label": "Trousers",
+              "why": "You wear trousers."
+            },
+            {
+              "emoji": "🧦",
+              "label": "Socks",
+              "why": "You wear socks."
+            },
+            {
+              "emoji": "🥕",
+              "label": "Carrot"
+            }
+          ],
+          "answer": 3,
+          "explain": "A carrot is food. You wear the others."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which group has a different number?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "⭐"
+              },
+              {
+                "count": 2,
+                "emoji": "🌙"
+              },
+              {
+                "count": 3,
+                "emoji": "❤️"
+              }
+            ],
+            "op": "and"
+          },
+          "options": [
+            {
+              "emoji": "⭐",
+              "label": "Stars",
+              "why": "There are 3 stars."
+            },
+            {
+              "emoji": "🌙",
+              "label": "Moons"
+            },
+            {
+              "emoji": "❤️",
+              "label": "Hearts",
+              "why": "There are 3 hearts."
+            }
+          ],
+          "answer": 1,
+          "explain": "There are only 2 moons. The other groups have 3."
+        }
+      ]
+    },
+    {
+      "id": "odd-one-out-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Hidden differences",
+      "intro": {
+        "say": "All four might be animals, but one can still be different. Let us look for clever clues!",
+        "icons": [
+          "🐟",
+          "🐄",
+          "🤔"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "These are all animals. But three live in water, and the cow lives on land. The cow is the odd one out.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟",
+              "🐬",
+              "🐙",
+              "🐄"
+            ],
+            "size": "lg"
+          },
+          "caption": "Water, water, water, land"
+        },
+        {
+          "mode": "show",
+          "say": "These are all shapes. Three have 4 sides, but the triangle has 3 sides. So the triangle is the odd one out.",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "square",
+                "color": "#3498DB"
+              },
+              {
+                "shape": "rectangle",
+                "color": "#2ECC71"
+              },
+              {
+                "shape": "triangle",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "diamond",
+                "color": "#F1C40F"
+              }
+            ]
+          },
+          "caption": "4, 4, 3, 4 sides"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal is the odd one out?",
+          "options": [
+            {
+              "emoji": "🐦",
+              "label": "Bird",
+              "why": "A bird can fly."
+            },
+            {
+              "emoji": "🐌",
+              "label": "Snail"
+            },
+            {
+              "emoji": "🦋",
+              "label": "Butterfly",
+              "why": "A butterfly can fly."
+            },
+            {
+              "emoji": "🐝",
+              "label": "Bee",
+              "why": "A bee can fly."
+            }
+          ],
+          "answer": 1,
+          "explain": "A snail cannot fly. The others all have wings."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the odd one out?",
+          "options": [
+            {
+              "emoji": "🖍️",
+              "label": "Crayon",
+              "why": "You can draw with a crayon."
+            },
+            {
+              "emoji": "🥄",
+              "label": "Spoon"
+            },
+            {
+              "emoji": "✏️",
+              "label": "Pencil",
+              "why": "You can draw with a pencil."
+            },
+            {
+              "emoji": "🖊️",
+              "label": "Pen",
+              "why": "You can write with a pen."
+            }
+          ],
+          "answer": 1,
+          "explain": "You eat with a spoon. You draw or write with the others."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the odd one out?",
+          "options": [
+            {
+              "emoji": "⚽",
+              "label": "Football"
+            },
+            {
+              "emoji": "🎸",
+              "label": "Guitar",
+              "why": "A guitar makes music."
+            },
+            {
+              "emoji": "🥁",
+              "label": "Drum",
+              "why": "A drum makes music."
+            },
+            {
+              "emoji": "🎺",
+              "label": "Trumpet",
+              "why": "A trumpet makes music."
+            }
+          ],
+          "answer": 0,
+          "explain": "A football is for playing games. The others are musical instruments."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape is the odd one out?",
+          "options": [
+            {
+              "shape": "hexagon",
+              "color": "#2ECC71",
+              "why": "A hexagon has straight sides."
+            },
+            {
+              "shape": "square",
+              "color": "#2ECC71",
+              "why": "A square has straight sides."
+            },
+            {
+              "shape": "triangle",
+              "color": "#2ECC71",
+              "why": "A triangle has straight sides."
+            },
+            {
+              "shape": "circle",
+              "color": "#2ECC71"
+            }
+          ],
+          "answer": 3,
+          "explain": "A circle is curved all the way round. The others have straight sides."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which group has a different number?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🍎"
+              },
+              {
+                "count": 4,
+                "emoji": "🍌"
+              },
+              {
+                "count": 5,
+                "emoji": "🍇"
+              }
+            ],
+            "op": "and"
+          },
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "Apples",
+              "why": "Count the apples: there are 4."
+            },
+            {
+              "emoji": "🍌",
+              "label": "Bananas",
+              "why": "Count the bananas: there are 4."
+            },
+            {
+              "emoji": "🍇",
+              "label": "Grapes"
+            }
+          ],
+          "answer": 2,
+          "explain": "There are 5 grapes. The other groups have 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is the odd one out?",
+          "options": [
+            {
+              "label": "10",
+              "why": "10 is a counting-by-ten number."
+            },
+            {
+              "label": "20",
+              "why": "20 is a counting-by-ten number."
+            },
+            {
+              "label": "25"
+            },
+            {
+              "label": "30",
+              "why": "30 is a counting-by-ten number."
+            }
+          ],
+          "answer": 2,
+          "explain": "When we count in tens we say 10, 20, 30. 25 is not one of them."
+        }
+      ]
+    },
+    {
+      "id": "odd-one-out-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Detective puzzles",
+      "intro": {
+        "say": "Now the difference is hidden. Think about legs, families and numbers to find the odd one out.",
+        "icons": [
+          "🕵️",
+          "🦇",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A bat flies like a bird, but it has fur and feeds its babies milk. A bat is a mammal, not a bird!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦉",
+              "🦅",
+              "🦇",
+              "🦜"
+            ],
+            "size": "lg"
+          },
+          "caption": "The bat is a mammal"
+        },
+        {
+          "mode": "show",
+          "say": "Number puzzles too! 2, 4, 6 are counting by twos. 9 is not. So 9 is the odd one out.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "2",
+              "4",
+              "6",
+              "9"
+            ]
+          },
+          "caption": "2, 4, 6 ... 9?"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the odd one out?",
+          "options": [
+            {
+              "emoji": "🐕",
+              "label": "Dog",
+              "why": "A dog has 4 legs and fur."
+            },
+            {
+              "emoji": "🐄",
+              "label": "Cow",
+              "why": "A cow has 4 legs and fur."
+            },
+            {
+              "emoji": "🐔",
+              "label": "Hen"
+            },
+            {
+              "emoji": "🐈",
+              "label": "Cat",
+              "why": "A cat has 4 legs and fur."
+            }
+          ],
+          "answer": 2,
+          "explain": "A hen is a bird with 2 legs and feathers. The others are mammals with 4 legs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the odd one out?",
+          "options": [
+            {
+              "emoji": "🐧",
+              "label": "Penguin",
+              "why": "A penguin is a bird, even though it cannot fly."
+            },
+            {
+              "emoji": "🦅",
+              "label": "Eagle",
+              "why": "An eagle is a bird."
+            },
+            {
+              "emoji": "🦜",
+              "label": "Parrot",
+              "why": "A parrot is a bird."
+            },
+            {
+              "emoji": "🦇",
+              "label": "Bat"
+            }
+          ],
+          "answer": 3,
+          "explain": "A bat has fur, not feathers. It is a mammal. The others are birds."
+        },
+        {
+          "mode": "sort",
+          "ask": "Some animals can trick us! Sort them: birds, and not birds.",
+          "bins": [
+            {
+              "label": "Birds",
+              "emoji": "🪶"
+            },
+            {
+              "label": "Not birds",
+              "emoji": "🚫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐧",
+              "bin": 0,
+              "name": "the penguin"
+            },
+            {
+              "emoji": "🦇",
+              "bin": 1,
+              "name": "the bat"
+            },
+            {
+              "emoji": "🦉",
+              "bin": 0,
+              "name": "the owl"
+            },
+            {
+              "emoji": "🦋",
+              "bin": 1,
+              "name": "the butterfly"
+            },
+            {
+              "emoji": "🐓",
+              "bin": 0,
+              "name": "the rooster"
+            },
+            {
+              "emoji": "🐝",
+              "bin": 1,
+              "name": "the bee"
+            }
+          ],
+          "explain": "Birds have feathers. Bats, butterflies and bees can fly, but they are not birds."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is the odd one out?",
+          "options": [
+            {
+              "emoji": "🐍",
+              "label": "Snake",
+              "why": "A snake has dry, scaly skin."
+            },
+            {
+              "emoji": "🐸",
+              "label": "Frog"
+            },
+            {
+              "emoji": "🐊",
+              "label": "Crocodile",
+              "why": "A crocodile has dry, scaly skin."
+            },
+            {
+              "emoji": "🐢",
+              "label": "Turtle",
+              "why": "A turtle has dry, scaly skin."
+            }
+          ],
+          "answer": 1,
+          "explain": "A frog has smooth, wet skin. The others are reptiles with dry, scaly skin."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sum is the odd one out?",
+          "options": [
+            {
+              "label": "3 + 3",
+              "why": "3 plus 3 makes 6."
+            },
+            {
+              "label": "4 + 2",
+              "why": "4 plus 2 makes 6."
+            },
+            {
+              "label": "5 + 1",
+              "why": "5 plus 1 makes 6."
+            },
+            {
+              "label": "3 + 4"
+            }
+          ],
+          "answer": 3,
+          "explain": "3 plus 4 makes 7. All the others make 6.",
+          "hint": "Work out each answer. Which one is different?"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is the odd one out?",
+          "options": [
+            {
+              "label": "15",
+              "why": "15 is a counting-by-fives number."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "20",
+              "why": "20 is a counting-by-fives number."
+            },
+            {
+              "label": "5",
+              "why": "5 is a counting-by-fives number."
+            }
+          ],
+          "answer": 1,
+          "explain": "Counting in fives goes 5, 10, 15, 20. 12 is not one of them."
+        }
+      ]
+    }
+  ]
+}

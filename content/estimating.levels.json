@@ -1,0 +1,658 @@
+{
+  "topicId": "estimating",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "estimating-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "A few or a lot?",
+      "intro": {
+        "say": "Sometimes we just guess how many. A good guess is close to the real number!",
+        "icons": [
+          "🤔",
+          "👀",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Look quickly. Is this a few or a lot? Just three! That is a few.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🍎",
+              "🍎"
+            ],
+            "size": "lg"
+          },
+          "caption": "a few"
+        },
+        {
+          "mode": "show",
+          "say": "Now look at all these stars! Too many to count fast. That is a lot.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐",
+              "⭐"
+            ],
+            "size": "sm"
+          },
+          "caption": "a lot"
+        },
+        {
+          "mode": "choice",
+          "ask": "Quick look! A few, or a lot?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟",
+              "🐟"
+            ],
+            "size": "sm"
+          },
+          "options": [
+            {
+              "label": "a few",
+              "why": "There are many more fish than that."
+            },
+            {
+              "label": "a lot"
+            }
+          ],
+          "answer": 1,
+          "explain": "There are lots of fish, nearly twenty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Quick look! A few, or a lot?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐞",
+              "🐞"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "a few"
+            },
+            {
+              "label": "a lot",
+              "why": "Only a couple of ladybugs."
+            }
+          ],
+          "answer": 0,
+          "explain": "Just two ladybugs. That is a few."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which group has more? Do not count, just look!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍪"
+              },
+              {
+                "count": 11,
+                "emoji": "🍪"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "first group",
+              "why": "The first group is small."
+            },
+            {
+              "label": "second group"
+            }
+          ],
+          "answer": 1,
+          "explain": "The second group is much bigger."
+        },
+        {
+          "mode": "choice",
+          "ask": "About how many balloons? Make a good guess.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎈",
+              "🎈",
+              "🎈",
+              "🎈",
+              "🎈"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "about 5"
+            },
+            {
+              "label": "about 50",
+              "why": "That is far too many."
+            }
+          ],
+          "answer": 0,
+          "explain": "There are five, so about five is a great guess."
+        },
+        {
+          "mode": "sort",
+          "ask": "A few, or a lot?",
+          "bins": [
+            {
+              "label": "A few",
+              "emoji": "🤏"
+            },
+            {
+              "label": "A lot",
+              "emoji": "🌊"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🌟",
+              "bin": 1,
+              "name": "stars in the sky"
+            },
+            {
+              "emoji": "🖐️",
+              "bin": 0,
+              "name": "fingers on one hand"
+            },
+            {
+              "emoji": "🏖️",
+              "bin": 1,
+              "name": "sand on a beach"
+            },
+            {
+              "emoji": "👀",
+              "bin": 0,
+              "name": "eyes on your face"
+            },
+            {
+              "emoji": "🍃",
+              "bin": 1,
+              "name": "leaves on a big tree"
+            }
+          ],
+          "explain": "Stars, sand and leaves are a lot. Fingers and eyes are a few."
+        }
+      ]
+    },
+    {
+      "id": "estimating-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Guess, then check",
+      "intro": {
+        "say": "Make a smart guess first, then count to check. Close guesses are great!",
+        "icons": [
+          "🤔",
+          "✅",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Guess first! These look like about ten. Now count: twelve. Ten was a close guess!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓",
+              "🍓"
+            ],
+            "size": "md"
+          },
+          "caption": "guess 10, count 12"
+        },
+        {
+          "mode": "show",
+          "say": "A ten frame helps us guess. A full frame is ten. This looks like about ten.",
+          "visual": {
+            "kind": "tenframe",
+            "count": 9
+          },
+          "caption": "about 10"
+        },
+        {
+          "mode": "choice",
+          "ask": "Quick look! About how many?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐝",
+              "🐝",
+              "🐝",
+              "🐝",
+              "🐝",
+              "🐝",
+              "🐝",
+              "🐝",
+              "🐝",
+              "🐝"
+            ],
+            "size": "md"
+          },
+          "options": [
+            {
+              "label": "about 2",
+              "why": "There are more than that."
+            },
+            {
+              "label": "about 10"
+            },
+            {
+              "label": "about 50",
+              "why": "That is far too many."
+            }
+          ],
+          "answer": 1,
+          "explain": "There are ten bees, so about ten is right."
+        },
+        {
+          "mode": "choice",
+          "ask": "About how many? Make a smart guess.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽",
+              "⚽"
+            ],
+            "size": "sm"
+          },
+          "options": [
+            {
+              "label": "about 5",
+              "why": "There are many more than five."
+            },
+            {
+              "label": "about 100",
+              "why": "That is far too many."
+            },
+            {
+              "label": "about 20"
+            }
+          ],
+          "answer": 2,
+          "explain": "There are nineteen balls, very close to twenty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Guess: about 10 or about 20 dots?",
+          "visual": {
+            "kind": "tenframe",
+            "count": 11
+          },
+          "options": [
+            {
+              "label": "about 10"
+            },
+            {
+              "label": "about 20",
+              "why": "The second frame is nearly empty."
+            }
+          ],
+          "answer": 0,
+          "explain": "Eleven is close to ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which guess is closest to 8?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌸",
+              "🌸",
+              "🌸",
+              "🌸",
+              "🌸",
+              "🌸",
+              "🌸",
+              "🌸"
+            ],
+            "size": "md"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Three is quite far from eight."
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "20",
+              "why": "Twenty is far too many."
+            }
+          ],
+          "answer": 1,
+          "explain": "Nine is just one away from eight."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which ten frame is closest to 20?",
+          "options": [
+            {
+              "label": "a nearly full frame of 9",
+              "why": "That is close to ten."
+            },
+            {
+              "label": "two nearly full frames: 18"
+            },
+            {
+              "label": "one empty frame",
+              "why": "That is zero."
+            }
+          ],
+          "answer": 1,
+          "explain": "Eighteen is very close to twenty."
+        },
+        {
+          "mode": "sort",
+          "ask": "About 5 or about 15?",
+          "bins": [
+            {
+              "label": "About 5",
+              "emoji": "🖐️"
+            },
+            {
+              "label": "About 15",
+              "emoji": "🔟"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "4",
+              "bin": 0,
+              "name": "four"
+            },
+            {
+              "emoji": "16",
+              "bin": 1,
+              "name": "sixteen"
+            },
+            {
+              "emoji": "14",
+              "bin": 1,
+              "name": "fourteen"
+            },
+            {
+              "emoji": "6",
+              "bin": 0,
+              "name": "six"
+            },
+            {
+              "emoji": "5",
+              "bin": 0,
+              "name": "five"
+            }
+          ],
+          "explain": "Four, five and six are about five. Fourteen and sixteen are about fifteen."
+        }
+      ]
+    },
+    {
+      "id": "estimating-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Smart estimates",
+      "intro": {
+        "say": "Smart guessers use a helper group. If you know what ten looks like, you can guess bigger amounts!",
+        "icons": [
+          "🧠",
+          "📦",
+          "🔟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Here are ten marbles. Learn what ten looks like, and you can spot about ten anywhere!",
+          "visual": {
+            "kind": "tenframe",
+            "count": 10,
+            "emoji": "🔵"
+          },
+          "caption": "this is 10"
+        },
+        {
+          "mode": "show",
+          "say": "Three full rods of ten look like this. Seeing tens helps us guess about thirty.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 0
+          },
+          "caption": "about 30"
+        },
+        {
+          "mode": "choice",
+          "ask": "One box holds 10 cookies. About how many cookies are in 5 full boxes?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📦",
+              "📦",
+              "📦",
+              "📦",
+              "📦"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "about 5",
+              "why": "Each box holds ten, not one."
+            },
+            {
+              "label": "about 50"
+            },
+            {
+              "label": "about 500",
+              "why": "That is far too many."
+            }
+          ],
+          "answer": 1,
+          "explain": "Five boxes of ten is about fifty."
+        },
+        {
+          "mode": "choice",
+          "ask": "About how many fish? Look for groups of ten.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 10,
+                "emoji": "🐟"
+              },
+              {
+                "count": 10,
+                "emoji": "🐟"
+              },
+              {
+                "count": 9,
+                "emoji": "🐟"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "about 10",
+              "why": "There are more groups than one."
+            },
+            {
+              "label": "about 30"
+            },
+            {
+              "label": "about 90",
+              "why": "There are only three groups."
+            }
+          ],
+          "answer": 1,
+          "explain": "Three groups of about ten is about thirty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the best guess for the number of children in a class?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧒",
+              "👧",
+              "👦",
+              "🧒",
+              "👧",
+              "👦"
+            ],
+            "size": "md"
+          },
+          "options": [
+            {
+              "label": "about 3",
+              "why": "A class has more children than that."
+            },
+            {
+              "label": "about 1000",
+              "why": "That is a huge school, not a class."
+            },
+            {
+              "label": "about 25"
+            }
+          ],
+          "answer": 2,
+          "explain": "Most classes have about twenty to thirty children."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many blocks? Guess to the nearest ten.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 4,
+            "ones": 8
+          },
+          "options": [
+            {
+              "label": "about 40",
+              "why": "Eight ones is nearly another ten."
+            },
+            {
+              "label": "about 50"
+            },
+            {
+              "label": "about 80",
+              "why": "There are only four rods."
+            }
+          ],
+          "answer": 1,
+          "explain": "Forty-eight is closer to fifty than to forty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ben guessed 20 and Ava guessed 40. There were 37 beads. Who was closer?",
+          "options": [
+            {
+              "label": "Ben",
+              "why": "Twenty is seventeen away from 37."
+            },
+            {
+              "label": "Ava"
+            }
+          ],
+          "answer": 1,
+          "explain": "Forty is just three away from thirty-seven."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from fewest to most.",
+          "items": [
+            {
+              "emoji": "🖐️",
+              "label": "fingers on a hand"
+            },
+            {
+              "emoji": "🍎",
+              "label": "apples in a bag"
+            },
+            {
+              "emoji": "🍃",
+              "label": "leaves on a tree"
+            },
+            {
+              "emoji": "🏖️",
+              "label": "sand on a beach"
+            }
+          ],
+          "explain": "A hand has five, a bag maybe ten, a tree thousands of leaves, and a beach more sand grains than anyone can count."
+        }
+      ]
+    }
+  ]
+}

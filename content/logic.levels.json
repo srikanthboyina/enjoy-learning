@@ -1,0 +1,577 @@
+{
+  "topicId": "logic",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "logic-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Clue hunt",
+      "intro": {
+        "say": "Clues help us find answers. Listen carefully and use every clue!",
+        "icons": [
+          "🧠",
+          "🔍",
+          "💡"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Riddle time! I am an animal. I live on a farm. I say moo. What am I? A cow! The clues told us.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐄"
+            ],
+            "size": "lg"
+          },
+          "caption": "Farm + moo = cow"
+        },
+        {
+          "mode": "show",
+          "say": "Tom is taller than Ann. That also means Ann is shorter than Tom!",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🧍",
+                "scale": 1.6
+              },
+              {
+                "emoji": "🧍‍♀️",
+                "scale": 1.0
+              }
+            ]
+          },
+          "caption": "Tom is taller. Ann is shorter."
+        },
+        {
+          "mode": "choice",
+          "ask": "I am a number between 3 and 5. What am I?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "3",
+              "?",
+              "5"
+            ]
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "3 is at the edge, not between."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5",
+              "why": "5 is at the edge, not between."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 comes after 3 and before 5, so it is between them."
+        },
+        {
+          "mode": "choice",
+          "ask": "I am yellow. I am a fruit. Monkeys love me. What am I?",
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "Apple",
+              "why": "An apple is red or green."
+            },
+            {
+              "emoji": "🍇",
+              "label": "Grapes",
+              "why": "These grapes are purple."
+            },
+            {
+              "emoji": "🍌",
+              "label": "Banana"
+            }
+          ],
+          "answer": 2,
+          "explain": "A banana is yellow, it is a fruit, and monkeys love it."
+        },
+        {
+          "mode": "choice",
+          "ask": "I have 4 legs and I bark. What am I?",
+          "options": [
+            {
+              "emoji": "🐱",
+              "label": "Cat",
+              "why": "A cat meows."
+            },
+            {
+              "emoji": "🐶",
+              "label": "Dog"
+            },
+            {
+              "emoji": "🐔",
+              "label": "Hen",
+              "why": "A hen has 2 legs and clucks."
+            }
+          ],
+          "answer": 1,
+          "explain": "A dog has 4 legs and says woof!"
+        },
+        {
+          "mode": "choice",
+          "ask": "The ball is NOT in the big box. Where is it?",
+          "options": [
+            {
+              "emoji": "📦",
+              "label": "Big box",
+              "why": "The clue says it is not in the big box."
+            },
+            {
+              "emoji": "🎁",
+              "label": "Small box"
+            }
+          ],
+          "answer": 1,
+          "explain": "There are only two boxes. If it is not in the big one, it is in the small one."
+        },
+        {
+          "mode": "choice",
+          "ask": "I come after 6 and before 8. What number am I?",
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "9",
+              "why": "9 comes after 8."
+            },
+            {
+              "label": "5",
+              "why": "5 comes before 6."
+            }
+          ],
+          "answer": 0,
+          "explain": "Six, seven, eight. Seven is in the middle."
+        },
+        {
+          "mode": "choice",
+          "ask": "Max is taller than Sam. Who is shorter?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🧍",
+                "scale": 1.6
+              },
+              {
+                "emoji": "🧍",
+                "scale": 1.1
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Max",
+              "why": "Max is the taller one."
+            },
+            {
+              "label": "Sam"
+            }
+          ],
+          "answer": 1,
+          "explain": "If Max is taller, then Sam must be shorter."
+        }
+      ]
+    },
+    {
+      "id": "logic-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "If this, then that",
+      "intro": {
+        "say": "Let us use if-then clues and chains of clues to solve puzzles.",
+        "icons": [
+          "🧠",
+          "🔗",
+          "☂️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "If it rains, Kim takes her umbrella. It is raining today. So Kim takes her umbrella!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌧️",
+              "👧",
+              "☂️"
+            ],
+            "size": "lg"
+          },
+          "caption": "If rain, then umbrella"
+        },
+        {
+          "mode": "show",
+          "say": "Clues can make a chain. A is taller than B. B is taller than C. So A is the tallest of all!",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🦒",
+                "scale": 2.0
+              },
+              {
+                "emoji": "🐴",
+                "scale": 1.3
+              },
+              {
+                "emoji": "🐕",
+                "scale": 0.8
+              }
+            ]
+          },
+          "caption": "Tall, taller, tallest"
+        },
+        {
+          "mode": "choice",
+          "ask": "If it is sunny, Leo wears his hat. Today is sunny. What does Leo wear?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🧤",
+              "label": "Gloves",
+              "why": "Gloves are for cold days."
+            },
+            {
+              "emoji": "🧢",
+              "label": "Hat"
+            },
+            {
+              "emoji": "🧣",
+              "label": "Scarf",
+              "why": "The clue was about a hat."
+            }
+          ],
+          "answer": 1,
+          "explain": "The clue says sunny means hat, and it is sunny."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ann is taller than Ben. Ben is taller than Cal. Who is the tallest?",
+          "options": [
+            {
+              "label": "Ben",
+              "why": "Ann is taller than Ben."
+            },
+            {
+              "label": "Cal",
+              "why": "Cal is shorter than Ben."
+            },
+            {
+              "label": "Ann"
+            }
+          ],
+          "answer": 2,
+          "explain": "Ann is taller than Ben, and Ben is taller than Cal, so Ann is the tallest."
+        },
+        {
+          "mode": "choice",
+          "ask": "Same clues: Ann is taller than Ben, Ben is taller than Cal. Who is the shortest?",
+          "options": [
+            {
+              "label": "Cal"
+            },
+            {
+              "label": "Ann",
+              "why": "Ann is the tallest."
+            },
+            {
+              "label": "Ben",
+              "why": "Cal is shorter than Ben."
+            }
+          ],
+          "answer": 0,
+          "explain": "Cal is shorter than Ben, and Ben is shorter than Ann. So Cal is the shortest."
+        },
+        {
+          "mode": "choice",
+          "ask": "I am more than 10 and less than 13. I am an odd number. What am I?",
+          "options": [
+            {
+              "label": "12",
+              "why": "12 is even."
+            },
+            {
+              "label": "11"
+            },
+            {
+              "label": "13",
+              "why": "13 is not less than 13."
+            }
+          ],
+          "answer": 1,
+          "explain": "11 and 12 are between 10 and 13. Only 11 is odd."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia has the dog. Jo does not have the cat. Each friend has one pet. What does Jo have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐶",
+              "🐱",
+              "🐟"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🐶",
+              "label": "Dog",
+              "why": "Mia has the dog."
+            },
+            {
+              "emoji": "🐱",
+              "label": "Cat",
+              "why": "The clue says Jo does not have the cat."
+            },
+            {
+              "emoji": "🐟",
+              "label": "Fish"
+            }
+          ],
+          "answer": 2,
+          "explain": "The dog is Mia's, and Jo does not have the cat, so Jo has the fish."
+        },
+        {
+          "mode": "order",
+          "ask": "The tree is taller than the house. The house is taller than the dog. Put them from shortest to tallest.",
+          "items": [
+            {
+              "emoji": "🐕",
+              "label": "Dog"
+            },
+            {
+              "emoji": "🏠",
+              "label": "House"
+            },
+            {
+              "emoji": "🌳",
+              "label": "Tree"
+            }
+          ],
+          "explain": "The dog is shortest, then the house, and the tree is the tallest."
+        }
+      ]
+    },
+    {
+      "id": "logic-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Brain busters",
+      "intro": {
+        "say": "Real thinkers cross out what cannot be true. What is left is the answer!",
+        "icons": [
+          "🧠",
+          "❌",
+          "✅"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The ball is in one of three boxes. It is not in the red box. It is not in the green box. So it must be in the blue box!",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "square",
+                "color": "#E74C3C"
+              },
+              {
+                "shape": "square",
+                "color": "#3498DB"
+              },
+              {
+                "shape": "square",
+                "color": "#2ECC71"
+              }
+            ]
+          },
+          "caption": "Not red, not green, so blue"
+        },
+        {
+          "mode": "show",
+          "say": "Use clues one at a time. Cross out each thing that cannot be right, until only one answer is left.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "❌",
+              "❌",
+              "✅"
+            ],
+            "size": "lg"
+          },
+          "caption": "Cross out, then check"
+        },
+        {
+          "mode": "choice",
+          "ask": "I have more legs than a bird but fewer than a spider. I am an insect. What am I?",
+          "options": [
+            {
+              "emoji": "🐌",
+              "label": "Snail",
+              "why": "A snail does not have legs. It slides along on one foot."
+            },
+            {
+              "emoji": "🐙",
+              "label": "Octopus",
+              "why": "An octopus has 8 arms, the same as a spider has legs."
+            },
+            {
+              "emoji": "🐜",
+              "label": "Ant"
+            }
+          ],
+          "answer": 2,
+          "explain": "An ant has 6 legs: more than a bird's 2 and fewer than a spider's 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sara, Tim and Ola ran a race. Tim was not first and not last. Ola finished after Sara. Who won?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏃",
+              "🏃‍♀️",
+              "🏁"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Tim",
+              "why": "The clue says Tim was not first."
+            },
+            {
+              "label": "Ola",
+              "why": "Ola finished after Sara, so Ola was not first."
+            },
+            {
+              "label": "Sara"
+            }
+          ],
+          "answer": 2,
+          "explain": "Tim was in the middle. Ola came after Sara, so Sara was first.",
+          "hint": "Tim is not first or last. Where must he be?"
+        },
+        {
+          "mode": "choice",
+          "ask": "I am a 2-digit number. My tens digit is 3. My ones digit is 2 more than my tens digit. What am I?",
+          "options": [
+            {
+              "label": "32",
+              "why": "The ones digit should be 3 plus 2."
+            },
+            {
+              "label": "35"
+            },
+            {
+              "label": "53",
+              "why": "The tens digit is 3, so I start with 3."
+            }
+          ],
+          "answer": 1,
+          "explain": "Tens digit 3, ones digit 3 plus 2 makes 5. So the number is 35."
+        },
+        {
+          "mode": "choice",
+          "ask": "Every square has 4 sides. This shape has 3 sides. Can it be a square?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle",
+                "color": "#9B59B6"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "why": "A square always needs 4 sides."
+            },
+            {
+              "label": "No"
+            },
+            {
+              "label": "Maybe",
+              "why": "We can be sure: squares always have 4 sides."
+            }
+          ],
+          "answer": 1,
+          "explain": "A square always has 4 sides, so a 3 sided shape cannot be a square."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ben has more cookies than Ali. Ali has 4. Cara has 2. How many could Ben have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍪",
+              "🍪",
+              "🍪",
+              "🍪"
+            ]
+          },
+          "options": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "3",
+              "why": "3 is less than Ali's 4."
+            },
+            {
+              "label": "4",
+              "why": "Ben needs more than Ali, not the same."
+            }
+          ],
+          "answer": 0,
+          "explain": "Ben has more than Ali's 4, so 6 is the only answer that fits."
+        },
+        {
+          "mode": "order",
+          "ask": "Liam woke up first. He ate breakfast before he brushed his teeth. He went to school last. Put his morning in order.",
+          "items": [
+            {
+              "emoji": "⏰",
+              "label": "Wake up"
+            },
+            {
+              "emoji": "🥣",
+              "label": "Breakfast"
+            },
+            {
+              "emoji": "🪥",
+              "label": "Brush teeth"
+            },
+            {
+              "emoji": "🏫",
+              "label": "School"
+            }
+          ],
+          "explain": "Wake up, breakfast, brush teeth, then school."
+        }
+      ]
+    }
+  ]
+}

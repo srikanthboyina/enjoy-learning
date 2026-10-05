@@ -1,0 +1,580 @@
+{
+  "topicId": "sea-life",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "sea-life-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Who lives in the sea?",
+      "intro": {
+        "say": "The sea is full of amazing animals. Let's dive in and meet them!",
+        "icons": [
+          "🌊",
+          "🐠",
+          "🐙"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Fish swim with fins and breathe under water with gills. Lots of fish have bright colours.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟",
+              "🐠",
+              "🐡"
+            ]
+          },
+          "caption": "Fish swim with fins"
+        },
+        {
+          "mode": "show",
+          "say": "An octopus has 8 long arms. A crab has a hard shell and two claws. A starfish has 5 arms.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐙",
+              "🦀",
+              "⭐"
+            ]
+          },
+          "caption": "Octopus · Crab · Starfish"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal lives in the sea?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌊"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Cow",
+              "emoji": "🐄",
+              "why": "Cows live on farms."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐠"
+            },
+            {
+              "label": "Squirrel",
+              "emoji": "🐿️",
+              "why": "Squirrels live in trees."
+            }
+          ],
+          "answer": 1,
+          "explain": "Fish live in the sea and breathe with gills."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sea animal has 8 arms?",
+          "options": [
+            {
+              "label": "Octopus",
+              "emoji": "🐙"
+            },
+            {
+              "label": "Crab",
+              "emoji": "🦀",
+              "why": "A crab has claws and legs, not 8 arms."
+            },
+            {
+              "label": "Fish",
+              "emoji": "🐟",
+              "why": "A fish has fins, not arms."
+            }
+          ],
+          "answer": 0,
+          "explain": "Octopus means eight feet. It has 8 bendy arms!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sea animal has a hard shell and two claws?",
+          "options": [
+            {
+              "label": "Dolphin",
+              "emoji": "🐬",
+              "why": "A dolphin has smooth skin."
+            },
+            {
+              "label": "Octopus",
+              "emoji": "🐙",
+              "why": "An octopus is soft and squishy."
+            },
+            {
+              "label": "Crab",
+              "emoji": "🦀"
+            }
+          ],
+          "answer": 2,
+          "explain": "A crab has a hard shell and two pinching claws."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many arms does this starfish have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Count each point of the star."
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "8",
+              "why": "8 arms is an octopus."
+            }
+          ],
+          "answer": 1,
+          "explain": "Most starfish have 5 arms, just like a star."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a fish use to swim?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Legs",
+              "why": "Fish have no legs."
+            },
+            {
+              "label": "Wings",
+              "why": "Wings are for birds."
+            },
+            {
+              "label": "Fins"
+            }
+          ],
+          "answer": 2,
+          "explain": "Fish wiggle their fins and tail to swim."
+        }
+      ]
+    },
+    {
+      "id": "sea-life-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Whales, sharks and reefs",
+      "intro": {
+        "say": "Not everything in the sea is a fish! Let's meet whales, sharks and coral reefs.",
+        "icons": [
+          "🐳",
+          "🦈",
+          "🐠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Whales and dolphins live in the sea, but they breathe air. They swim up to the top and breathe through a blowhole.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐳",
+              "🐬",
+              "💨"
+            ]
+          },
+          "caption": "Whales breathe air"
+        },
+        {
+          "mode": "show",
+          "say": "A coral reef looks like rocks, but coral is made of tiny animals. Reefs are busy homes for colourful fish.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐠",
+              "🐡",
+              "🐚",
+              "🦐"
+            ]
+          },
+          "caption": "Coral reef: a sea city"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why does a dolphin swim up to the top of the water?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐬",
+              "🌊"
+            ]
+          },
+          "options": [
+            {
+              "label": "To breathe air",
+              "emoji": "💨"
+            },
+            {
+              "label": "To get a suntan",
+              "emoji": "☀️",
+              "why": "Dolphins don't sunbathe!"
+            },
+            {
+              "label": "To find grass",
+              "emoji": "🍽️",
+              "why": "There's no grass at the top of the sea."
+            }
+          ],
+          "answer": 0,
+          "explain": "Dolphins breathe air, so they come up to breathe through their blowhole."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the biggest animal that has ever lived?",
+          "options": [
+            {
+              "label": "Shark",
+              "emoji": "🦈",
+              "why": "Sharks are big, but not the biggest."
+            },
+            {
+              "label": "Blue whale",
+              "emoji": "🐋"
+            },
+            {
+              "label": "Octopus",
+              "emoji": "🐙",
+              "why": "An octopus is much smaller."
+            }
+          ],
+          "answer": 1,
+          "explain": "The blue whale is bigger than any dinosaur!"
+        },
+        {
+          "mode": "sort",
+          "ask": "Breathes air or uses gills?",
+          "bins": [
+            {
+              "label": "Breathes air",
+              "emoji": "💨"
+            },
+            {
+              "label": "Gills",
+              "emoji": "🐟"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐳",
+              "bin": 0,
+              "name": "whale"
+            },
+            {
+              "emoji": "🐠",
+              "bin": 1,
+              "name": "clownfish"
+            },
+            {
+              "emoji": "🐬",
+              "bin": 0,
+              "name": "dolphin"
+            },
+            {
+              "emoji": "🦈",
+              "bin": 1,
+              "name": "shark"
+            },
+            {
+              "emoji": "🐢",
+              "bin": 0,
+              "name": "sea turtle"
+            },
+            {
+              "emoji": "🐡",
+              "bin": 1,
+              "name": "pufferfish"
+            }
+          ],
+          "explain": "Whales, dolphins and turtles come up for air. Fish and sharks use gills.",
+          "hint": "Whales and dolphins have a blowhole."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is a shark a fish?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦈"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "No",
+              "emoji": "❌",
+              "why": "A shark has gills and fins, so it really is a fish."
+            },
+            {
+              "label": "Yes",
+              "emoji": "✅"
+            }
+          ],
+          "answer": 1,
+          "explain": "A shark is a big fish. It breathes with gills."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is a coral reef for many fish?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐠",
+              "🐡"
+            ]
+          },
+          "options": [
+            {
+              "label": "A home",
+              "emoji": "🏠"
+            },
+            {
+              "label": "A road",
+              "emoji": "🚗",
+              "why": "Fish don't drive!"
+            },
+            {
+              "label": "An ice rink",
+              "emoji": "❄️",
+              "why": "Coral reefs are in warm water."
+            }
+          ],
+          "answer": 0,
+          "explain": "Coral reefs give fish places to hide, live and find food."
+        }
+      ]
+    },
+    {
+      "id": "sea-life-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Deep sea secrets",
+      "intro": {
+        "say": "Let's dive deep, deep down where it is dark and cold, and learn sea animal tricks.",
+        "icons": [
+          "🌊",
+          "🐙",
+          "🔦"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Sunlight can't reach the very deep sea, so it is dark and cold. Some deep sea animals make their own light to glow!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌊",
+              "⬇️",
+              "🌑",
+              "✨"
+            ]
+          },
+          "caption": "The deep sea is dark"
+        },
+        {
+          "mode": "show",
+          "say": "An octopus squirts dark ink to hide and escape. A starfish can grow back a lost arm. A pufferfish puffs up into a spiky ball!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐙",
+              "⭐",
+              "🐡"
+            ]
+          },
+          "caption": "Clever sea tricks"
+        },
+        {
+          "mode": "choice",
+          "ask": "Why is the deep sea so dark?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌞",
+              "🌊",
+              "⬇️"
+            ]
+          },
+          "options": [
+            {
+              "label": "It is always night",
+              "emoji": "🌑",
+              "why": "Day and night happen, but light can't reach that deep."
+            },
+            {
+              "label": "Sunlight can't reach it",
+              "emoji": "☀️"
+            },
+            {
+              "label": "Octopus ink",
+              "emoji": "🐙",
+              "why": "Octopus ink is only a small cloud."
+            }
+          ],
+          "answer": 1,
+          "explain": "Sunlight fades as it goes down, so the deep sea gets no light at all."
+        },
+        {
+          "mode": "choice",
+          "ask": "2 octopuses are hiding. How many arms altogether?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐙"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "Each octopus has 8 arms."
+            },
+            {
+              "label": "16"
+            },
+            {
+              "label": "12",
+              "why": "Try 8 and 8 more."
+            }
+          ],
+          "answer": 1,
+          "explain": "8 arms and 8 more arms make 16 arms."
+        },
+        {
+          "mode": "choice",
+          "ask": "3 starfish on a rock. How many arms altogether?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "⭐"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "15"
+            },
+            {
+              "label": "8",
+              "why": "Each starfish has 5 arms, so count in fives."
+            },
+            {
+              "label": "10",
+              "why": "10 is only 2 starfish."
+            }
+          ],
+          "answer": 0,
+          "explain": "5, 10, 15. Three starfish have 15 arms.",
+          "hint": "Count in fives."
+        },
+        {
+          "mode": "choice",
+          "ask": "An octopus sees a shark coming. What does it do?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐙",
+              "🦈"
+            ]
+          },
+          "options": [
+            {
+              "label": "Bites the shark",
+              "emoji": "🦷",
+              "why": "An octopus is much too small to fight a shark."
+            },
+            {
+              "label": "Sings a song",
+              "emoji": "🎵",
+              "why": "That won't scare a shark!"
+            },
+            {
+              "label": "Squirts ink",
+              "emoji": "💨"
+            }
+          ],
+          "answer": 2,
+          "explain": "The octopus squirts ink to make a dark cloud, then swims away."
+        },
+        {
+          "mode": "order",
+          "ask": "Put these sea animals in order from smallest to biggest.",
+          "items": [
+            {
+              "label": "Shrimp",
+              "emoji": "🦐"
+            },
+            {
+              "label": "Clownfish",
+              "emoji": "🐠"
+            },
+            {
+              "label": "Dolphin",
+              "emoji": "🐬"
+            },
+            {
+              "label": "Blue whale",
+              "emoji": "🐋"
+            }
+          ],
+          "explain": "A shrimp is tiny, and a blue whale is the biggest animal ever."
+        },
+        {
+          "mode": "choice",
+          "ask": "A starfish loses an arm. What happens next?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "It grows a new arm",
+              "emoji": "⭐"
+            },
+            {
+              "label": "It can't move",
+              "emoji": "😢",
+              "why": "Starfish have lots of other arms to move with."
+            },
+            {
+              "label": "It turns into a fish",
+              "emoji": "🐟",
+              "why": "Starfish stay starfish!"
+            }
+          ],
+          "answer": 0,
+          "explain": "A starfish can slowly grow back a lost arm."
+        }
+      ]
+    }
+  ]
+}

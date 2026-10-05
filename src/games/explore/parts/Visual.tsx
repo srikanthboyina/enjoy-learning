@@ -8,6 +8,8 @@ import { Text } from '../../../kit/Text';
 import { colors, families, radii, spacing } from '../../../theme';
 import type { Visual as VisualData } from '../schema';
 import { Clock } from './Clock';
+import { FractionShape } from './Fraction';
+import { ArrayGrid, Balance, Bars, Coins, PlaceValue, Ruler, Tally, TenFrame, Thermometer, Week } from './MoreVisuals';
 import { ShapeView } from './ShapeView';
 
 const EMOJI_SIZE = { sm: 34, md: 46, lg: 64 } as const;
@@ -147,6 +149,32 @@ export function Visual({ visual, compact = false }: { visual: VisualData; compac
       );
     case 'numberline':
       return <NumberLine {...visual} />;
+    case 'tenframe':
+      return <TenFrame count={visual.count} emoji={visual.emoji} />;
+    case 'placevalue':
+      return <PlaceValue tens={visual.tens} ones={visual.ones} />;
+    case 'coins':
+      return <Coins coins={visual.coins} />;
+    case 'bars':
+      return <Bars bars={visual.bars} />;
+    case 'tally':
+      return <Tally count={visual.count} />;
+    case 'array':
+      return <ArrayGrid rows={visual.rows} cols={visual.cols} emoji={visual.emoji} />;
+    case 'ruler':
+      return <Ruler length={visual.length} emoji={visual.emoji} color={visual.color} />;
+    case 'thermometer':
+      return <Thermometer level={visual.level} />;
+    case 'balance':
+      return <Balance left={visual.left} right={visual.right} heavier={visual.heavier} />;
+    case 'fraction':
+      return (
+        <Animated.View entering={ZoomIn.springify()}>
+          <FractionShape parts={visual.parts} shaded={visual.shaded} shape={visual.shape} size={compact ? 100 : 130} />
+        </Animated.View>
+      );
+    case 'week':
+      return <Week highlight={visual.highlight} />;
   }
 }
 

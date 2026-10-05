@@ -1,0 +1,503 @@
+{
+  "topicId": "directions",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "directions-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Left and right",
+      "intro": {
+        "say": "Let's learn left and right! Your left hand can make a letter L.",
+        "icons": [
+          "⬅️",
+          "➡️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Left is this way, and right is that way. Point both ways with your hands!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⬅️",
+              "🙂",
+              "➡️"
+            ],
+            "size": "lg"
+          },
+          "caption": "left ⬅️  ➡️ right"
+        },
+        {
+          "mode": "show",
+          "say": "Hold up both hands with palms away from you. Your left thumb and finger make an L, for left!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🤚"
+            ],
+            "size": "lg"
+          },
+          "caption": "L is for left"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which arrow points left?",
+          "options": [
+            {
+              "emoji": "➡️",
+              "why": "That one points right."
+            },
+            {
+              "emoji": "⬅️"
+            },
+            {
+              "emoji": "⬆️",
+              "why": "That one points up."
+            }
+          ],
+          "answer": 1,
+          "explain": "This arrow points to the left side."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which arrow points right?",
+          "options": [
+            {
+              "emoji": "⬇️",
+              "why": "That one points down."
+            },
+            {
+              "emoji": "⬅️",
+              "why": "That one points left."
+            },
+            {
+              "emoji": "➡️"
+            }
+          ],
+          "answer": 2,
+          "explain": "This arrow points to the right side."
+        },
+        {
+          "mode": "choice",
+          "ask": "The worm wants the pear. Which way should it go?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🐛",
+              "🍐"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "left",
+              "emoji": "⬅️",
+              "why": "The apple is on the left. The pear is the other way."
+            },
+            {
+              "label": "right",
+              "emoji": "➡️"
+            }
+          ],
+          "answer": 1,
+          "explain": "The pear is on the right of the worm, so it goes right."
+        },
+        {
+          "mode": "choice",
+          "ask": "The dog wants its bone. Which way should it go?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦴",
+              "🐶"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "left",
+              "emoji": "⬅️"
+            },
+            {
+              "label": "right",
+              "emoji": "➡️",
+              "why": "Look again: the bone is on the other side."
+            }
+          ],
+          "answer": 0,
+          "explain": "The bone is on the left of the dog, so it goes left."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which fruit is at the left end of the row?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍓",
+              "🍌",
+              "🍇"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🍇",
+              "why": "The grapes are at the right end."
+            },
+            {
+              "emoji": "🍓"
+            },
+            {
+              "emoji": "🍌",
+              "why": "The banana is in the middle."
+            }
+          ],
+          "answer": 1,
+          "explain": "The strawberry is first on the left."
+        }
+      ]
+    },
+    {
+      "id": "directions-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Quarter, half and whole turns",
+      "intro": {
+        "say": "Let's learn to turn! A quarter turn, a half turn and a whole turn.",
+        "icons": [
+          "🔄",
+          "⬆️",
+          "➡️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Face up. Make a quarter turn to the right, like a clock hand, and now you face right.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⬆️",
+              "➡️"
+            ],
+            "size": "lg"
+          },
+          "caption": "quarter turn right"
+        },
+        {
+          "mode": "show",
+          "say": "A half turn spins you round to face the other way. A whole turn takes you all the way back to the start.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⬆️",
+              "⬇️",
+              "⬆️"
+            ],
+            "size": "lg"
+          },
+          "caption": "half turn · whole turn"
+        },
+        {
+          "mode": "choice",
+          "ask": "You face up. Make a quarter turn right. Which way do you face now?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⬆️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬇️",
+              "why": "That would be a half turn."
+            },
+            {
+              "emoji": "➡️"
+            },
+            {
+              "emoji": "⬅️",
+              "why": "That would be a quarter turn left."
+            }
+          ],
+          "answer": 1,
+          "explain": "A quarter turn right from up makes you face right."
+        },
+        {
+          "mode": "choice",
+          "ask": "You face right. Make a half turn. Which way now?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "➡️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬅️"
+            },
+            {
+              "emoji": "⬆️",
+              "why": "That is only a quarter turn."
+            },
+            {
+              "emoji": "➡️",
+              "why": "That is a whole turn."
+            }
+          ],
+          "answer": 0,
+          "explain": "A half turn makes you face the opposite way, so now you face left."
+        },
+        {
+          "mode": "choice",
+          "ask": "You face up. Make a whole turn. Which way now?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⬆️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬇️",
+              "why": "That is only a half turn."
+            },
+            {
+              "emoji": "➡️",
+              "why": "That is only a quarter turn."
+            },
+            {
+              "emoji": "⬆️"
+            }
+          ],
+          "answer": 2,
+          "explain": "A whole turn goes all the way round, back to facing up."
+        },
+        {
+          "mode": "choice",
+          "ask": "You face up. Make a quarter turn LEFT. Which way now?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⬆️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "➡️",
+              "why": "That is a quarter turn right."
+            },
+            {
+              "emoji": "⬅️"
+            },
+            {
+              "emoji": "⬇️",
+              "why": "That is a half turn."
+            }
+          ],
+          "answer": 1,
+          "explain": "A quarter turn left from up makes you face left."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many quarter turns make one whole turn?",
+          "options": [
+            {
+              "label": "2",
+              "why": "Two quarter turns make a half turn."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "3",
+              "why": "Three quarter turns are not quite all the way round."
+            }
+          ],
+          "answer": 1,
+          "explain": "Four quarter turns take you all the way round."
+        }
+      ]
+    },
+    {
+      "id": "directions-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Follow the path",
+      "intro": {
+        "say": "Let's follow directions to find the treasure! Listen for steps and turns.",
+        "icons": [
+          "🗺️",
+          "🧭",
+          "💎"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Directions tell us how many steps and which way. The turtle takes 4 steps right to reach the strawberry.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐢",
+              "⬜",
+              "⬜",
+              "⬜",
+              "🍓"
+            ]
+          },
+          "caption": "4 steps right ➡️"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many steps right does the bunny need to reach the carrot?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐰",
+              "⬜",
+              "⬜",
+              "🥕"
+            ]
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count every step, landing on the carrot."
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "4",
+              "why": "Count each square, then the carrot."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two empty squares and then the carrot make 3 steps.",
+          "hint": "Count each hop, landing on the carrot."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which directions take the mouse to the mushroom?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍄",
+              "⬜",
+              "⬜",
+              "⬜",
+              "⬜",
+              "🐭"
+            ]
+          },
+          "options": [
+            {
+              "label": "4 steps left",
+              "why": "Count again, landing on the mushroom."
+            },
+            {
+              "label": "5 steps right",
+              "why": "The mushroom is on the left of the mouse."
+            },
+            {
+              "label": "5 steps left"
+            }
+          ],
+          "answer": 2,
+          "explain": "The mushroom is on the left, 5 hops away."
+        },
+        {
+          "mode": "order",
+          "ask": "Start facing up. Make quarter turns to the right, one at a time. Put the arrows in order.",
+          "items": [
+            {
+              "emoji": "⬆️"
+            },
+            {
+              "emoji": "➡️"
+            },
+            {
+              "emoji": "⬇️"
+            },
+            {
+              "emoji": "⬅️"
+            }
+          ],
+          "explain": "Each quarter turn right goes up, right, down, then left, like a clock."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam faces the door. He makes a quarter turn right, and another quarter turn right. What does he face now?",
+          "options": [
+            {
+              "label": "the door",
+              "emoji": "🚪",
+              "why": "Two quarter turns make a half turn."
+            },
+            {
+              "label": "the other way",
+              "emoji": "🔙"
+            }
+          ],
+          "answer": 1,
+          "explain": "Two quarter turns make a half turn, so he faces the opposite way."
+        },
+        {
+          "mode": "choice",
+          "ask": "You face right. Make three quarter turns to the left. Which way now?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "➡️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬆️",
+              "why": "That is after just one turn."
+            },
+            {
+              "emoji": "⬇️"
+            },
+            {
+              "emoji": "⬅️",
+              "why": "That is after two turns."
+            }
+          ],
+          "answer": 1,
+          "explain": "Right, then up, then left, then down.",
+          "hint": "Turn one quarter at a time."
+        },
+        {
+          "mode": "choice",
+          "ask": "You make two quarter turns right, then two quarter turns left. Which way do you face?",
+          "options": [
+            {
+              "label": "same way"
+            },
+            {
+              "label": "other way",
+              "why": "The left turns undo the right turns."
+            },
+            {
+              "label": "sideways",
+              "why": "Two turns each way cancel out."
+            }
+          ],
+          "answer": 0,
+          "explain": "The two left turns undo the two right turns, so you are back where you started."
+        }
+      ]
+    }
+  ]
+}

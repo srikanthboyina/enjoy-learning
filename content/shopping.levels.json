@@ -1,0 +1,551 @@
+{
+  "topicId": "shopping",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "shopping-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "At the shop",
+      "intro": {
+        "say": "At the shop, every thing has a price. Let's go shopping!",
+        "icons": [
+          "🛒",
+          "🍎",
+          "🪙"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Every thing in the shop has a price. This apple costs 3 coins.",
+          "visual": {
+            "kind": "text",
+            "text": "🍎 3"
+          },
+          "caption": "Price: 3"
+        },
+        {
+          "mode": "show",
+          "say": "You have 5 coins. 5 is more than 3, so you can buy the apple!",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "caption": "5 is more than 3 ✓"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one costs more?",
+          "visual": {
+            "kind": "text",
+            "text": "🍌 2    🍪 4"
+          },
+          "options": [
+            {
+              "emoji": "🍌",
+              "why": "The banana costs 2. That is less than 4."
+            },
+            {
+              "emoji": "🍪"
+            }
+          ],
+          "answer": 1,
+          "explain": "The cookie costs 4, and 4 is more than 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one costs the least?",
+          "visual": {
+            "kind": "text",
+            "text": "🧁 4    🍩 2    🍰 6"
+          },
+          "options": [
+            {
+              "emoji": "🧁",
+              "why": "The cupcake costs 4."
+            },
+            {
+              "emoji": "🍩"
+            },
+            {
+              "emoji": "🍰",
+              "why": "The cake costs 6. That is the most."
+            }
+          ],
+          "answer": 1,
+          "explain": "The doughnut costs 2, the smallest price."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have these 4 coins. The teddy costs 6. Can you buy it?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "emoji": "👍",
+              "why": "4 is less than 6. You need more coins."
+            },
+            {
+              "label": "No",
+              "emoji": "✋"
+            }
+          ],
+          "answer": 1,
+          "explain": "You have 4 coins and need 6, so not yet."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have 5 coins. Which one can you buy?",
+          "visual": {
+            "kind": "text",
+            "text": "🎈 7    🍭 2    🚲 9"
+          },
+          "options": [
+            {
+              "emoji": "🎈",
+              "why": "The balloon costs 7. That is more than 5."
+            },
+            {
+              "emoji": "🍭"
+            },
+            {
+              "emoji": "🚲",
+              "why": "The bike costs 9. That is more than 5."
+            }
+          ],
+          "answer": 1,
+          "explain": "The lollipop costs 2, and 5 is enough."
+        },
+        {
+          "mode": "choice",
+          "ask": "A sweet costs 1. A cookie costs 2. How much for both?",
+          "visual": {
+            "kind": "text",
+            "text": "🍬 1    🍪 2"
+          },
+          "options": [
+            {
+              "label": "3"
+            },
+            {
+              "label": "2",
+              "why": "Add the sweet too."
+            },
+            {
+              "label": "4",
+              "why": "1 and 2 make less than 4."
+            }
+          ],
+          "answer": 0,
+          "explain": "1 and 2 make 3."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order, from cheapest to most expensive.",
+          "items": [
+            {
+              "label": "1",
+              "emoji": "🍬"
+            },
+            {
+              "label": "3",
+              "emoji": "🍎"
+            },
+            {
+              "label": "5",
+              "emoji": "🧃"
+            },
+            {
+              "label": "8",
+              "emoji": "🧸"
+            }
+          ],
+          "explain": "1, 3, 5, then 8."
+        }
+      ]
+    },
+    {
+      "id": "shopping-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Paying for things",
+      "intro": {
+        "say": "To buy two things, add their prices. Then pay with the right coins.",
+        "icons": [
+          "🛒",
+          "➕",
+          "🪙"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "To buy two things, add the prices. An apple for 3 and a banana for 2 cost 5 in all.",
+          "visual": {
+            "kind": "text",
+            "text": "🍎 3 + 🍌 2 = 5"
+          },
+          "caption": "3 + 2 = 5"
+        },
+        {
+          "mode": "show",
+          "say": "Pay with coins that add up to the price. A 5 coin and a 2 coin pay for a toy that costs 7.",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              5,
+              2
+            ]
+          },
+          "caption": "5 + 2 = 7"
+        },
+        {
+          "mode": "choice",
+          "ask": "How much for the juice and the sandwich?",
+          "visual": {
+            "kind": "text",
+            "text": "🧃 4    🥪 5"
+          },
+          "options": [
+            {
+              "label": "9"
+            },
+            {
+              "label": "8",
+              "why": "Count on 5 from 4 again."
+            },
+            {
+              "label": "10",
+              "why": "4 and 5 make a little less than 10."
+            }
+          ],
+          "answer": 0,
+          "explain": "4 plus 5 is 9."
+        },
+        {
+          "mode": "choice",
+          "ask": "The ball costs 8. Which coins pay exactly 8?",
+          "visual": {
+            "kind": "text",
+            "text": "⚽ 8"
+          },
+          "options": [
+            {
+              "label": "5 + 5",
+              "why": "5 and 5 make 10. That is too much."
+            },
+            {
+              "label": "2 + 2",
+              "why": "2 and 2 make only 4."
+            },
+            {
+              "label": "5 + 2 + 1"
+            }
+          ],
+          "answer": 2,
+          "explain": "5, then 7, then 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have these coins. The kite costs 12. Can you buy it?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              10,
+              1
+            ]
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "emoji": "👍",
+              "why": "You have 11. That is 1 short."
+            },
+            {
+              "label": "No",
+              "emoji": "✋"
+            }
+          ],
+          "answer": 1,
+          "explain": "You have 11, and the kite costs 12, so you need 1 more."
+        },
+        {
+          "mode": "choice",
+          "ask": "A pencil costs 3. How much for 3 pencils?",
+          "visual": {
+            "kind": "text",
+            "text": "✏️ 3"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "That is only 2 pencils."
+            },
+            {
+              "label": "12",
+              "why": "That would be 4 pencils."
+            },
+            {
+              "label": "9"
+            }
+          ],
+          "answer": 2,
+          "explain": "3, 6, 9. Three pencils cost 9."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have 10. Which two can you buy together?",
+          "visual": {
+            "kind": "text",
+            "text": "🍦 4    🍕 7    🍩 5"
+          },
+          "options": [
+            {
+              "label": "🍦 + 🍕",
+              "why": "4 and 7 make 11. That is too much."
+            },
+            {
+              "label": "🍦 + 🍩"
+            },
+            {
+              "label": "🍕 + 🍩",
+              "why": "7 and 5 make 12. That is too much."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ice cream 4 and doughnut 5 make 9, and 9 fits in 10."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the baskets in order, from cheapest to most expensive.",
+          "items": [
+            {
+              "label": "2 + 1"
+            },
+            {
+              "label": "3 + 3"
+            },
+            {
+              "label": "5 + 4"
+            },
+            {
+              "label": "6 + 6"
+            }
+          ],
+          "explain": "3, then 6, then 9, then 12."
+        }
+      ]
+    },
+    {
+      "id": "shopping-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Change and budgets",
+      "intro": {
+        "say": "When you pay too much, the shop gives you change. Let's work it out!",
+        "icons": [
+          "🛒",
+          "🪙",
+          "🤔"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Change is the money you get back. You pay 10 for a toy that costs 7. You get 3 back.",
+          "visual": {
+            "kind": "text",
+            "text": "Pay 10, cost 7"
+          },
+          "caption": "10 − 7 = 3 change"
+        },
+        {
+          "mode": "show",
+          "say": "Count up to find change. From 7, count 8, 9, 10. That is 3 back.",
+          "visual": {
+            "kind": "text",
+            "text": "7 → 8, 9, 10"
+          },
+          "caption": "3 back"
+        },
+        {
+          "mode": "choice",
+          "ask": "You pay 10 for a cupcake that costs 6. How much change?",
+          "visual": {
+            "kind": "text",
+            "text": "🧁 6"
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "6 is the price. Find what comes back."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "16",
+              "why": "Change is less than what you paid."
+            }
+          ],
+          "answer": 1,
+          "explain": "Count up from 6 to 10. That is 4.",
+          "hint": "Count up from 6 to 10."
+        },
+        {
+          "mode": "choice",
+          "ask": "You pay 20 for a book that costs 15. How much change?",
+          "visual": {
+            "kind": "text",
+            "text": "📕 15"
+          },
+          "options": [
+            {
+              "label": "15",
+              "why": "15 is the price."
+            },
+            {
+              "label": "35",
+              "why": "Change is less than what you paid."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "From 15 up to 20 is 5."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have 20. You buy a toy car for 12 and a ball for 6. How much is left?",
+          "visual": {
+            "kind": "text",
+            "text": "🚗 12    ⚽ 6"
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "8",
+              "why": "Take away the ball too."
+            },
+            {
+              "label": "14",
+              "why": "Take away the toy car too."
+            }
+          ],
+          "answer": 0,
+          "explain": "12 and 6 make 18. 20 take away 18 leaves 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "You have 15. Can you buy a kite for 9 and a yo-yo for 7?",
+          "visual": {
+            "kind": "text",
+            "text": "🪁 9    🪀 7"
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "emoji": "👍",
+              "why": "9 and 7 make 16. That is 1 more than 15."
+            },
+            {
+              "label": "No",
+              "emoji": "✋"
+            }
+          ],
+          "answer": 1,
+          "explain": "9 and 7 make 16, which is 1 more than you have.",
+          "hint": "Add the prices first."
+        },
+        {
+          "mode": "choice",
+          "ask": "Juice costs 3. How many juices can you buy with 12?",
+          "visual": {
+            "kind": "text",
+            "text": "🧃 3"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "3 juices cost 9. You have more."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "9",
+              "why": "Count by threes: 3, 6, 9, 12."
+            }
+          ],
+          "answer": 1,
+          "explain": "3, 6, 9, 12. That is 4 juices."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia has these coins. She buys a book for 25. How much is left?",
+          "visual": {
+            "kind": "coins",
+            "coins": [
+              20,
+              10,
+              5
+            ]
+          },
+          "options": [
+            {
+              "label": "15",
+              "why": "Count her coins again: 20, 30, 35."
+            },
+            {
+              "label": "5",
+              "why": "She has 35, not 30."
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "answer": 2,
+          "explain": "She has 35. 35 take away 25 leaves 10."
+        },
+        {
+          "mode": "order",
+          "ask": "Add each pair of prices. Put them from cheapest to most expensive.",
+          "items": [
+            {
+              "label": "3 + 4"
+            },
+            {
+              "label": "5 + 5"
+            },
+            {
+              "label": "6 + 6"
+            },
+            {
+              "label": "10 + 9"
+            }
+          ],
+          "explain": "7, then 10, then 12, then 19."
+        }
+      ]
+    }
+  ]
+}

@@ -420,7 +420,7 @@
         },
         {
           "mode": "choice",
-          "ask": "Which one is lighter?",
+          "ask": "Which one is the lightest?",
           "options": [
             {
               "emoji": "🐘",
@@ -548,12 +548,12 @@
         },
         {
           "mode": "choice",
-          "ask": "A big pillow and a small rock. Which is heavier?",
+          "ask": "A big leaf and a small rock. Which is heavier?",
           "visual": {
             "kind": "sizes",
             "items": [
               {
-                "emoji": "🛏️",
+                "emoji": "🍁",
                 "scale": 2
               },
               {
@@ -564,8 +564,8 @@
           },
           "options": [
             {
-              "label": "pillow",
-              "why": "A pillow is big but soft and fluffy, so it is light."
+              "label": "leaf",
+              "why": "A leaf is big but thin and flat, so it is light."
             },
             {
               "label": "rock"

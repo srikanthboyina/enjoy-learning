@@ -1,0 +1,591 @@
+{
+  "topicId": "temperature",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "temperature-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Hot and cold",
+      "intro": {
+        "say": "A thermometer tells us how hot or cold it is.",
+        "icons": [
+          "🌡️",
+          "🔥",
+          "❄️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "When the red line on the thermometer is high, it is hot.",
+          "visual": {
+            "kind": "thermometer",
+            "level": 9
+          },
+          "caption": "High = hot ☀️"
+        },
+        {
+          "mode": "show",
+          "say": "When the red line is low, it is cold.",
+          "visual": {
+            "kind": "thermometer",
+            "level": 1
+          },
+          "caption": "Low = cold ❄️"
+        },
+        {
+          "mode": "choice",
+          "ask": "Look at the thermometer. Is it hot or cold?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 9
+          },
+          "options": [
+            {
+              "label": "Cold",
+              "emoji": "❄️",
+              "why": "The red line is up high. That means hot."
+            },
+            {
+              "label": "Hot",
+              "emoji": "🔥"
+            }
+          ],
+          "answer": 1,
+          "explain": "The red line is high, so it is hot."
+        },
+        {
+          "mode": "choice",
+          "ask": "Look at the thermometer. Is it hot or cold?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 1
+          },
+          "options": [
+            {
+              "label": "Cold",
+              "emoji": "❄️"
+            },
+            {
+              "label": "Hot",
+              "emoji": "🔥",
+              "why": "The red line is down low. That means cold."
+            }
+          ],
+          "answer": 0,
+          "explain": "The red line is low, so it is cold."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is cold?",
+          "options": [
+            {
+              "emoji": "🔥",
+              "why": "Fire is very hot."
+            },
+            {
+              "emoji": "🧊"
+            },
+            {
+              "emoji": "☕",
+              "why": "Hot cocoa is warm and steamy."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ice is very cold."
+        },
+        {
+          "mode": "choice",
+          "ask": "It is very cold and snowy. What should you wear?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 0
+          },
+          "options": [
+            {
+              "label": "shorts",
+              "emoji": "🩳",
+              "why": "Shorts are for hot days."
+            },
+            {
+              "label": "coat",
+              "emoji": "🧥"
+            },
+            {
+              "label": "sunglasses",
+              "emoji": "🕶️",
+              "why": "Sunglasses do not keep you warm."
+            }
+          ],
+          "answer": 1,
+          "explain": "A warm coat keeps you cosy when it is cold."
+        },
+        {
+          "mode": "choice",
+          "ask": "It is a hot sunny day. What will you take?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 9
+          },
+          "options": [
+            {
+              "label": "cap",
+              "emoji": "🧢"
+            },
+            {
+              "label": "scarf",
+              "emoji": "🧣",
+              "why": "A scarf is for cold days."
+            },
+            {
+              "label": "gloves",
+              "emoji": "🧤",
+              "why": "Gloves keep hands warm on cold days."
+            }
+          ],
+          "answer": 0,
+          "explain": "A cap shades your head from the hot sun."
+        },
+        {
+          "mode": "sort",
+          "ask": "Is it hot or cold?",
+          "bins": [
+            {
+              "label": "Hot",
+              "emoji": "🔥"
+            },
+            {
+              "label": "Cold",
+              "emoji": "❄️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "☀️",
+              "bin": 0,
+              "name": "sun"
+            },
+            {
+              "emoji": "🧊",
+              "bin": 1,
+              "name": "ice"
+            },
+            {
+              "emoji": "⛄",
+              "bin": 1,
+              "name": "snowman"
+            },
+            {
+              "emoji": "☕",
+              "bin": 0,
+              "name": "hot drink"
+            },
+            {
+              "emoji": "🍦",
+              "bin": 1,
+              "name": "ice cream"
+            },
+            {
+              "emoji": "🔥",
+              "bin": 0,
+              "name": "fire"
+            }
+          ],
+          "explain": "The sun, fire and a hot drink are hot. Ice, a snowman and ice cream are cold."
+        }
+      ]
+    },
+    {
+      "id": "temperature-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Hot, warm and cold",
+      "intro": {
+        "say": "Between hot and cold there is warm. Let's read the thermometer carefully.",
+        "icons": [
+          "🌡️",
+          "☀️",
+          "🧥"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "When the red line is in the middle, it is warm. Not too hot and not too cold.",
+          "visual": {
+            "kind": "thermometer",
+            "level": 5
+          },
+          "caption": "Middle = warm 🙂"
+        },
+        {
+          "mode": "show",
+          "say": "Higher means hotter. Lower means colder. If the line goes up, it is getting hotter.",
+          "visual": {
+            "kind": "thermometer",
+            "level": 7
+          },
+          "caption": "Up = hotter, down = colder"
+        },
+        {
+          "mode": "choice",
+          "ask": "The line is in the middle. What is it like?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 5
+          },
+          "options": [
+            {
+              "label": "Very hot",
+              "why": "Very hot would be near the top."
+            },
+            {
+              "label": "Warm"
+            },
+            {
+              "label": "Freezing",
+              "why": "Freezing would be right at the bottom."
+            }
+          ],
+          "answer": 1,
+          "explain": "The middle of the thermometer means warm."
+        },
+        {
+          "mode": "choice",
+          "ask": "Yesterday the line was at 3. Today it is at 7. Is today hotter or colder?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 7
+          },
+          "options": [
+            {
+              "label": "Colder",
+              "why": "7 is higher than 3, and higher means hotter."
+            },
+            {
+              "label": "Hotter"
+            }
+          ],
+          "answer": 1,
+          "explain": "The line went up from 3 to 7, so today is hotter."
+        },
+        {
+          "mode": "choice",
+          "ask": "Water turns into ice when it is very...",
+          "visual": {
+            "kind": "thermometer",
+            "level": 0
+          },
+          "options": [
+            {
+              "label": "Hot",
+              "emoji": "🔥",
+              "why": "Heat melts ice. Cold makes ice."
+            },
+            {
+              "label": "Cold",
+              "emoji": "❄️"
+            }
+          ],
+          "answer": 1,
+          "explain": "When water gets very cold, it freezes into ice."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which place is the coldest?",
+          "options": [
+            {
+              "label": "desert",
+              "emoji": "🏜️",
+              "why": "Deserts are often very hot in the day."
+            },
+            {
+              "label": "snowy mountain",
+              "emoji": "🏔️"
+            },
+            {
+              "label": "beach",
+              "emoji": "🏖️",
+              "why": "A sunny beach is warm."
+            }
+          ],
+          "answer": 1,
+          "explain": "Snowy mountain tops are very cold."
+        },
+        {
+          "mode": "sort",
+          "ask": "What do you wear? Sort for a hot day or a cold day.",
+          "bins": [
+            {
+              "label": "Hot day",
+              "emoji": "☀️"
+            },
+            {
+              "label": "Cold day",
+              "emoji": "❄️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🩳",
+              "bin": 0,
+              "name": "shorts"
+            },
+            {
+              "emoji": "🧤",
+              "bin": 1,
+              "name": "gloves"
+            },
+            {
+              "emoji": "🧣",
+              "bin": 1,
+              "name": "scarf"
+            },
+            {
+              "emoji": "🕶️",
+              "bin": 0,
+              "name": "sunglasses"
+            },
+            {
+              "emoji": "👒",
+              "bin": 0,
+              "name": "sun hat"
+            },
+            {
+              "emoji": "🧥",
+              "bin": 1,
+              "name": "coat"
+            }
+          ],
+          "explain": "Shorts, sunglasses and a sun hat are for hot days. Gloves, a scarf and a coat are for cold days."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order from coldest to hottest.",
+          "items": [
+            {
+              "label": "ice",
+              "emoji": "🧊"
+            },
+            {
+              "label": "warm bath",
+              "emoji": "🛁"
+            },
+            {
+              "label": "hot tea",
+              "emoji": "☕"
+            },
+            {
+              "label": "fire",
+              "emoji": "🔥"
+            }
+          ],
+          "explain": "Ice is coldest, a bath is warm, tea is hotter, and fire is hottest."
+        }
+      ]
+    },
+    {
+      "id": "temperature-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Degrees and changes",
+      "intro": {
+        "say": "Thermometers use numbers called degrees. Let's compare and find how much it changes.",
+        "icons": [
+          "🌡️",
+          "🔢",
+          "☀️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Temperature is measured in degrees. Water freezes into ice at 0 degrees. A bigger number means hotter.",
+          "visual": {
+            "kind": "text",
+            "text": "0° 🧊   20° 🙂   35° 🔥"
+          },
+          "caption": "Bigger number = hotter"
+        },
+        {
+          "mode": "show",
+          "say": "To find a change, count on. From 10 degrees up to 15 degrees, it got 5 degrees warmer.",
+          "visual": {
+            "kind": "text",
+            "text": "10° ➜ 15°"
+          },
+          "caption": "5 degrees warmer"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the hottest day?",
+          "options": [
+            {
+              "label": "12°",
+              "why": "12 is less than 30."
+            },
+            {
+              "label": "30°"
+            },
+            {
+              "label": "5°",
+              "why": "5 degrees is a cold day."
+            }
+          ],
+          "answer": 1,
+          "explain": "30 is the biggest number, so it is the hottest."
+        },
+        {
+          "mode": "choice",
+          "ask": "At which temperature does water freeze into ice?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💧",
+              "➡️",
+              "🧊"
+            ]
+          },
+          "options": [
+            {
+              "label": "25°",
+              "why": "25 degrees is warm. Ice would melt."
+            },
+            {
+              "label": "15°",
+              "why": "15 degrees is too warm for ice."
+            },
+            {
+              "label": "0°"
+            }
+          ],
+          "answer": 2,
+          "explain": "Water freezes at 0 degrees."
+        },
+        {
+          "mode": "choice",
+          "ask": "In the morning it was 8 degrees. At lunch it was 14 degrees. How much warmer did it get?",
+          "visual": {
+            "kind": "text",
+            "text": "8° ➜ 14°"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count on from 8 to 14 again."
+            },
+            {
+              "label": "22",
+              "why": "We want the change, not both added."
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "From 8 up to 14 is 6, so it got 6 degrees warmer.",
+          "hint": "Count up from 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "It was 20 degrees. Then it got 5 degrees colder. What is it now?",
+          "visual": {
+            "kind": "text",
+            "text": "20° ➜ ?"
+          },
+          "options": [
+            {
+              "label": "25",
+              "why": "Colder means the number goes down."
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "5",
+              "why": "Take away 5 from 20."
+            }
+          ],
+          "answer": 1,
+          "explain": "20 take away 5 is 15 degrees."
+        },
+        {
+          "mode": "choice",
+          "ask": "It is 30 degrees and sunny. What is the best idea?",
+          "visual": {
+            "kind": "thermometer",
+            "level": 9
+          },
+          "options": [
+            {
+              "label": "Make a snowman",
+              "emoji": "⛄",
+              "why": "It is far too warm for snow at 30 degrees."
+            },
+            {
+              "label": "Hat and water",
+              "emoji": "🧢"
+            },
+            {
+              "label": "Wear gloves",
+              "emoji": "🧤",
+              "why": "Gloves would make your hands too hot."
+            }
+          ],
+          "answer": 1,
+          "explain": "On a hot day, a hat and drinking water keep you safe."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why does an ice cream melt on a hot day?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍦",
+              "☀️"
+            ]
+          },
+          "options": [
+            {
+              "label": "Heat melts it"
+            },
+            {
+              "label": "Cold melts it",
+              "why": "Cold keeps ice cream frozen."
+            },
+            {
+              "label": "It is tired",
+              "why": "Ice cream does not get tired. Think about heat."
+            }
+          ],
+          "answer": 0,
+          "explain": "Heat makes frozen things melt."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the temperatures in order from coldest to hottest.",
+          "items": [
+            {
+              "label": "3°"
+            },
+            {
+              "label": "11°"
+            },
+            {
+              "label": "19°"
+            },
+            {
+              "label": "27°"
+            },
+            {
+              "label": "35°"
+            }
+          ],
+          "explain": "Smaller numbers are colder. 3, 11, 19, 27, then 35."
+        }
+      ]
+    }
+  ]
+}

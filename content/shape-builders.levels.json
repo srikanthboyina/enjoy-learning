@@ -1,0 +1,519 @@
+{
+  "topicId": "shape-builders",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "shape-builders-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Shape pictures",
+      "intro": {
+        "say": "Shapes can join together to make pictures, like a house!",
+        "icons": [
+          "🏠",
+          "🔺",
+          "🟥"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Put a triangle on top of a square and you have a house! The triangle is the roof.",
+          "visual": {
+            "kind": "text",
+            "text": "🔺\n🟥"
+          },
+          "caption": "🔺 + 🟥 = 🏠"
+        },
+        {
+          "mode": "show",
+          "say": "Stack circles on top of each other and you can make a snowman!",
+          "visual": {
+            "kind": "text",
+            "text": "⚪\n⚪\n⚪"
+          },
+          "caption": "⚪ + ⚪ + ⚪ = ⛄"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape makes the roof of the house?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏠"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "shape": "triangle"
+            },
+            {
+              "shape": "star",
+              "why": "A star has too many points for a roof."
+            },
+            {
+              "shape": "circle",
+              "why": "A circle is round, but a roof is pointy."
+            }
+          ],
+          "answer": 0,
+          "explain": "A triangle has a pointy top, just like a roof."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shapes make a house?",
+          "options": [
+            {
+              "emoji": "⚪⚪",
+              "why": "Two circles make a snowman."
+            },
+            {
+              "emoji": "🔺🟥"
+            },
+            {
+              "emoji": "⭐⭐",
+              "why": "Stars don't make walls and a roof."
+            }
+          ],
+          "answer": 1,
+          "explain": "A triangle roof on a square makes a house."
+        },
+        {
+          "mode": "choice",
+          "ask": "What shape do we stack to make a snowman?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⛄"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "shape": "circle"
+            },
+            {
+              "shape": "triangle",
+              "why": "Triangles are pointy, but snowballs are round."
+            },
+            {
+              "shape": "square",
+              "why": "A snowman is round, not square."
+            }
+          ],
+          "answer": 0,
+          "explain": "Snowballs are round, so a snowman is made of circles."
+        },
+        {
+          "mode": "choice",
+          "ask": "A circle on top of a long thin rectangle. What did we build?",
+          "visual": {
+            "kind": "text",
+            "text": "⚪\n▮"
+          },
+          "options": [
+            {
+              "label": "lollipop",
+              "emoji": "🍭"
+            },
+            {
+              "label": "house",
+              "emoji": "🏠",
+              "why": "A house needs a triangle roof."
+            },
+            {
+              "label": "star",
+              "emoji": "⭐",
+              "why": "A star has five points."
+            }
+          ],
+          "answer": 0,
+          "explain": "A round circle on a thin stick makes a lollipop!"
+        },
+        {
+          "mode": "choice",
+          "ask": "An ice cream is a circle on top of which shape?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍦"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "shape": "triangle"
+            },
+            {
+              "shape": "heart",
+              "why": "The cone is pointy, not a heart."
+            },
+            {
+              "shape": "square",
+              "why": "The cone gets thin and pointy."
+            }
+          ],
+          "answer": 0,
+          "explain": "The cone is a triangle, with the scoop of ice cream on top."
+        }
+      ]
+    },
+    {
+      "id": "shape-builders-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Make new shapes",
+      "intro": {
+        "say": "Two shapes can join together to make a brand new shape!",
+        "icons": [
+          "🔺",
+          "🔺",
+          "🟥"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Cut a square from corner to corner and you get two triangles. Put them back together and you have a square again!",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "triangle"
+              },
+              {
+                "shape": "triangle"
+              }
+            ]
+          },
+          "caption": "2 triangles make a square"
+        },
+        {
+          "mode": "show",
+          "say": "Put two squares side by side and they make a long rectangle.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🟦",
+              "🟦"
+            ],
+            "size": "lg"
+          },
+          "caption": "2 squares make a rectangle"
+        },
+        {
+          "mode": "choice",
+          "ask": "A square was cut corner to corner into two triangles. Put them back together. What shape is it?",
+          "options": [
+            {
+              "shape": "circle",
+              "why": "Triangles have straight sides, so they can't make a circle."
+            },
+            {
+              "shape": "square"
+            },
+            {
+              "shape": "star",
+              "why": "Two triangles can't make all those points."
+            }
+          ],
+          "answer": 1,
+          "explain": "The two triangles fit back together to make the square."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two squares side by side make which shape?",
+          "options": [
+            {
+              "shape": "triangle",
+              "why": "Squares make straight, long shapes, not pointy ones."
+            },
+            {
+              "shape": "circle",
+              "why": "Squares have straight sides, so they can't make a circle."
+            },
+            {
+              "shape": "rectangle"
+            }
+          ],
+          "answer": 2,
+          "explain": "Two squares in a row make a long rectangle."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many small squares make this big square?",
+          "visual": {
+            "kind": "text",
+            "text": "🟦🟦\n🟦🟦"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count the top row and the bottom row."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "6",
+              "why": "Count each small square just once."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two on top and two on the bottom make 4 small squares."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shapes would make this tree?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🔺🟫"
+            },
+            {
+              "emoji": "⚪⚪",
+              "why": "A tree like this is pointy on top."
+            },
+            {
+              "emoji": "⭐🟦",
+              "why": "Look for a pointy top and a trunk."
+            }
+          ],
+          "answer": 0,
+          "explain": "A triangle on top of a small brown square makes a tree."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does the picture use a circle?",
+          "bins": [
+            {
+              "label": "Has circles",
+              "emoji": "⚪"
+            },
+            {
+              "label": "No circles",
+              "emoji": "🔺"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🚲",
+              "bin": 0,
+              "name": "bike"
+            },
+            {
+              "emoji": "🏠",
+              "bin": 1,
+              "name": "house"
+            },
+            {
+              "emoji": "⛄",
+              "bin": 0,
+              "name": "snowman"
+            },
+            {
+              "emoji": "📐",
+              "bin": 1,
+              "name": "triangle ruler"
+            },
+            {
+              "emoji": "🚗",
+              "bin": 0,
+              "name": "car"
+            },
+            {
+              "emoji": "🌲",
+              "bin": 1,
+              "name": "tree"
+            }
+          ],
+          "explain": "Wheels and snowmen use circles. Houses, trees and the triangle ruler don't."
+        }
+      ]
+    },
+    {
+      "id": "shape-builders-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Shape puzzles",
+      "intro": {
+        "say": "Let's solve shape puzzles! Count the pieces and work out what they build.",
+        "icons": [
+          "🧩",
+          "🔷",
+          "🤖"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Six triangles fit together around a middle point to make a hexagon!",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "hexagon"
+              }
+            ]
+          },
+          "caption": "6 triangles make a hexagon"
+        },
+        {
+          "mode": "show",
+          "say": "A robot is built from shapes: a square head, a rectangle body, and rectangle arms and legs.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🤖"
+            ],
+            "size": "lg"
+          },
+          "caption": "shapes make pictures"
+        },
+        {
+          "mode": "choice",
+          "ask": "Two triangles make one square. How many triangles make two squares?",
+          "options": [
+            {
+              "label": "2",
+              "why": "That only makes one square."
+            },
+            {
+              "label": "3",
+              "why": "Each square needs 2 triangles."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "Each square needs 2 triangles, and 2 and 2 make 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many small squares are in this rectangle?",
+          "visual": {
+            "kind": "text",
+            "text": "🟦🟦🟦\n🟦🟦🟦"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Count the top row and the bottom row."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "7",
+              "why": "Count each square only once."
+            }
+          ],
+          "answer": 1,
+          "explain": "There are 2 rows of 3 squares, which makes 6.",
+          "hint": "Count the top row, then keep counting."
+        },
+        {
+          "mode": "choice",
+          "ask": "Each house uses 1 triangle and 1 square. How many shapes make 3 houses?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏠",
+              "🏠",
+              "🏠"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Each house needs 2 shapes."
+            },
+            {
+              "label": "5",
+              "why": "Count 2 shapes for each house."
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "Each house uses 2 shapes, so 3 houses use 2, 4, 6 shapes."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape can you NOT make from two squares?",
+          "options": [
+            {
+              "shape": "rectangle",
+              "why": "Two squares side by side do make a rectangle."
+            },
+            {
+              "shape": "circle"
+            }
+          ],
+          "answer": 1,
+          "explain": "Squares have straight sides, so they can never make a round circle."
+        },
+        {
+          "mode": "choice",
+          "ask": "The robot has 1 square head, 1 rectangle body and 4 rectangles for arms and legs. How many shapes in all?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🤖"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Count the head, the body and all 4 limbs."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "7",
+              "why": "Count again: 1 and 1 and 4."
+            }
+          ],
+          "answer": 1,
+          "explain": "One head, one body and four limbs make 6 shapes."
+        },
+        {
+          "mode": "choice",
+          "ask": "A big square is made of 4 small squares. You take 1 away. How many small squares are left?",
+          "visual": {
+            "kind": "text",
+            "text": "🟦🟦\n🟦🟦"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Only one square was taken away."
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "4",
+              "why": "One square was taken away."
+            }
+          ],
+          "answer": 1,
+          "explain": "Four squares take away one leaves 3."
+        }
+      ]
+    }
+  ]
+}

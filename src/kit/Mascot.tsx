@@ -1,4 +1,4 @@
-// Ollie the Owl: the friendly guide who explains every step out loud.
+// Ellie the Elephant: the friendly guide who explains every step out loud.
 import { StyleSheet, View } from 'react-native';
 import Animated, { FadeIn } from 'react-native-reanimated';
 
@@ -20,7 +20,10 @@ export function Mascot({ prompt, onSpeak, mood = 'talk', accent = colors.sky }: 
   return (
     <View style={styles.row}>
       <Bob distance={4} period={2200} wobble>
-        <Glyph id={mood === 'happy' ? '🥳' : '🦉'} size={52} label="Ollie the owl" />
+        <View>
+          <Glyph id="🐘" size={52} label="Ellie the elephant" />
+          {mood === 'happy' && <Text style={styles.party}>🎉</Text>}
+        </View>
       </Bob>
       <Animated.View key={prompt.say} entering={FadeIn.duration(250)} style={[styles.bubble, { borderColor: accent }]}>
         <View style={[styles.tail, { borderRightColor: accent }]} />
@@ -43,6 +46,7 @@ export function Mascot({ prompt, onSpeak, mood = 'talk', accent = colors.sky }: 
 }
 
 const styles = StyleSheet.create({
+  party: { position: 'absolute', top: -10, right: -12, fontSize: 26 },
   row: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, paddingHorizontal: spacing.md },
   bubble: {
     flex: 1,

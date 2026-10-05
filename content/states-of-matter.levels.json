@@ -1,0 +1,609 @@
+{
+  "topicId": "states-of-matter",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "states-of-matter-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Solid or liquid?",
+      "intro": {
+        "say": "Things can be solid or liquid. Solids keep their shape. Liquids pour!",
+        "icons": [
+          "🪨",
+          "🧃",
+          "🥛"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A solid keeps its own shape. A rock, a book and an apple stay the same shape when you pick them up.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪨",
+              "📕",
+              "🍎"
+            ]
+          },
+          "caption": "solid"
+        },
+        {
+          "mode": "show",
+          "say": "A liquid can pour and drip. Juice, milk and honey flow into the shape of the cup.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧃",
+              "🥛",
+              "🍯"
+            ]
+          },
+          "caption": "liquid"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one can you pour?",
+          "options": [
+            {
+              "emoji": "🪨",
+              "label": "rock",
+              "why": "A rock keeps its shape; it cannot pour."
+            },
+            {
+              "emoji": "🥛",
+              "label": "milk"
+            },
+            {
+              "emoji": "📕",
+              "label": "book",
+              "why": "A book is a solid."
+            }
+          ],
+          "answer": 1,
+          "explain": "Milk is a liquid, so it pours and drips."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is a rock a solid or a liquid?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪨"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧱",
+              "label": "solid"
+            },
+            {
+              "emoji": "💧",
+              "label": "liquid",
+              "why": "A rock does not flow or pour."
+            }
+          ],
+          "answer": 0,
+          "explain": "A rock keeps its own shape, so it is a solid."
+        },
+        {
+          "mode": "choice",
+          "ask": "Juice in a glass takes the shape of…",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧃",
+              "🥛"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⭐",
+              "label": "a star",
+              "why": "Juice does not make its own shape."
+            },
+            {
+              "emoji": "🟥",
+              "label": "a square",
+              "why": "Juice has no shape of its own."
+            },
+            {
+              "emoji": "🥛",
+              "label": "the glass"
+            }
+          ],
+          "answer": 2,
+          "explain": "Liquids flow to fill the shape of whatever they are in."
+        },
+        {
+          "mode": "sort",
+          "ask": "Solid or liquid?",
+          "bins": [
+            {
+              "label": "solid",
+              "emoji": "🪨"
+            },
+            {
+              "label": "liquid",
+              "emoji": "💧"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "bin": 0,
+              "name": "apple"
+            },
+            {
+              "emoji": "🧸",
+              "bin": 0,
+              "name": "teddy"
+            },
+            {
+              "emoji": "✏️",
+              "bin": 0,
+              "name": "pencil"
+            },
+            {
+              "emoji": "🧃",
+              "bin": 1,
+              "name": "juice"
+            },
+            {
+              "emoji": "🥛",
+              "bin": 1,
+              "name": "milk"
+            },
+            {
+              "emoji": "🍯",
+              "bin": 1,
+              "name": "honey"
+            }
+          ],
+          "explain": "Solids keep their shape; liquids pour and take the shape of their container."
+        }
+      ]
+    },
+    {
+      "id": "states-of-matter-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Gases are everywhere",
+      "intro": {
+        "say": "There is a third kind of stuff: gas! Air is a gas. Let us find it.",
+        "icons": [
+          "🎈",
+          "💨",
+          "🌬️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A gas spreads out to fill all the space it can. Air is a gas. We cannot see it, but we can feel it when the wind blows.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💨",
+              "🌬️"
+            ]
+          },
+          "caption": "gas"
+        },
+        {
+          "mode": "show",
+          "say": "When you blow up a balloon, you fill it with air. The gas spreads out and the balloon gets bigger!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "😗",
+              "🎈"
+            ]
+          },
+          "caption": "air in a balloon"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is inside a blown-up balloon?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎈"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "water",
+              "why": "We blow air, not water, into a balloon."
+            },
+            {
+              "emoji": "💨",
+              "label": "air"
+            },
+            {
+              "emoji": "🏖️",
+              "label": "sand",
+              "why": "Sand is a solid; a balloon is filled with gas."
+            }
+          ],
+          "answer": 1,
+          "explain": "Blowing into a balloon fills it with air, which is a gas."
+        },
+        {
+          "mode": "choice",
+          "ask": "Air is a…",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌬️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🪨",
+              "label": "solid",
+              "why": "You cannot hold air in your hand like a block."
+            },
+            {
+              "emoji": "💧",
+              "label": "liquid",
+              "why": "Air does not pour into a puddle."
+            },
+            {
+              "emoji": "💨",
+              "label": "gas"
+            }
+          ],
+          "answer": 2,
+          "explain": "Air is a gas: invisible and spread out all around us."
+        },
+        {
+          "mode": "choice",
+          "ask": "A nice smell spreads all through the house. What is spreading?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍪",
+              "🏠"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "💨",
+              "label": "a gas"
+            },
+            {
+              "emoji": "🧱",
+              "label": "a solid",
+              "why": "Solids stay in one place."
+            },
+            {
+              "emoji": "💧",
+              "label": "a liquid",
+              "why": "A liquid would make a puddle."
+            }
+          ],
+          "answer": 0,
+          "explain": "Smells travel through the air as a gas that spreads out."
+        },
+        {
+          "mode": "sort",
+          "ask": "Solid, liquid or gas?",
+          "bins": [
+            {
+              "label": "solid",
+              "emoji": "🪨"
+            },
+            {
+              "label": "liquid",
+              "emoji": "💧"
+            },
+            {
+              "label": "gas",
+              "emoji": "💨"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🧱",
+              "bin": 0,
+              "name": "brick"
+            },
+            {
+              "emoji": "🪑",
+              "bin": 0,
+              "name": "chair"
+            },
+            {
+              "emoji": "🧃",
+              "bin": 1,
+              "name": "juice"
+            },
+            {
+              "emoji": "☕",
+              "bin": 1,
+              "name": "tea"
+            },
+            {
+              "emoji": "🎈",
+              "bin": 2,
+              "name": "air in a balloon"
+            },
+            {
+              "emoji": "🌬️",
+              "bin": 2,
+              "name": "wind"
+            }
+          ],
+          "explain": "Solids keep their shape, liquids pour, gases spread out to fill space."
+        },
+        {
+          "mode": "choice",
+          "ask": "Bubbles in a fizzy drink are full of…",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥤"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧃",
+              "label": "juice",
+              "why": "The juice is around the bubbles."
+            },
+            {
+              "emoji": "💨",
+              "label": "gas"
+            },
+            {
+              "emoji": "🍬",
+              "label": "sugar",
+              "why": "Sugar mixes into the drink; bubbles are gas."
+            }
+          ],
+          "answer": 1,
+          "explain": "Fizzy drinks have gas inside, which makes the bubbles."
+        }
+      ]
+    },
+    {
+      "id": "states-of-matter-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Matter puzzles",
+      "intro": {
+        "say": "Some things are tricky! Let us think hard about solids, liquids and gases.",
+        "icons": [
+          "🤔",
+          "🏖️",
+          "🍯",
+          "🎈"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Sand pours, but each grain is a tiny solid that keeps its shape. So sand is a solid!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏖️",
+              "🔍"
+            ]
+          },
+          "caption": "sand: tiny solids"
+        },
+        {
+          "mode": "show",
+          "say": "Honey flows very slowly, but it still pours and takes the shape of the jar. Honey is a liquid.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍯",
+              "🥄"
+            ]
+          },
+          "caption": "honey: slow liquid"
+        },
+        {
+          "mode": "show",
+          "say": "If you squeeze a solid, it keeps its size. A gas can be squashed into a small space, like air pumped into a tyre.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚲",
+              "💨"
+            ]
+          },
+          "caption": "gases squash"
+        },
+        {
+          "mode": "choice",
+          "ask": "Sand can be poured. Is sand a liquid?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🏖️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "yes, it pours",
+              "why": "Look closely: each grain keeps its shape."
+            },
+            {
+              "emoji": "🔍",
+              "label": "no, it is tiny solids"
+            }
+          ],
+          "answer": 1,
+          "explain": "Each sand grain is a hard solid; lots of tiny solids can pour."
+        },
+        {
+          "mode": "choice",
+          "ask": "Honey is thick and slow. What is it?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍯"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "a liquid"
+            },
+            {
+              "emoji": "🪨",
+              "label": "a solid",
+              "why": "Honey flows and fills the jar shape."
+            },
+            {
+              "emoji": "💨",
+              "label": "a gas",
+              "why": "Honey does not spread through the air."
+            }
+          ],
+          "answer": 0,
+          "explain": "Honey flows and takes the shape of its container, so it is a liquid."
+        },
+        {
+          "mode": "choice",
+          "ask": "You pour juice from a tall glass into a flat bowl. What changes?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥛",
+              "➡️",
+              "🥣"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧱",
+              "label": "it turns solid",
+              "why": "Pouring does not turn juice solid."
+            },
+            {
+              "emoji": "➖",
+              "label": "there is less juice",
+              "why": "You still have the same amount."
+            },
+            {
+              "emoji": "🔄",
+              "label": "only its shape"
+            }
+          ],
+          "answer": 2,
+          "explain": "A liquid takes the shape of its container but keeps the same amount."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which can be squashed into a small space?",
+          "options": [
+            {
+              "emoji": "🪨",
+              "label": "rock",
+              "why": "A rock cannot be squashed smaller."
+            },
+            {
+              "emoji": "💨",
+              "label": "air"
+            },
+            {
+              "emoji": "💧",
+              "label": "water",
+              "why": "Water is very hard to squash."
+            }
+          ],
+          "answer": 1,
+          "explain": "Gas spreads out but can be squeezed, like air pumped into a bike tyre."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why does a balloon get bigger as you blow?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎈"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌱",
+              "label": "the rubber grows",
+              "why": "Rubber does not grow like a plant."
+            },
+            {
+              "emoji": "💧",
+              "label": "water fills it",
+              "why": "You blow air, not water."
+            },
+            {
+              "emoji": "💨",
+              "label": "air spreads out inside"
+            }
+          ],
+          "answer": 2,
+          "explain": "The air you blow in spreads out and pushes the balloon wider."
+        },
+        {
+          "mode": "sort",
+          "ask": "Tricky ones! Solid, liquid or gas?",
+          "bins": [
+            {
+              "label": "solid",
+              "emoji": "🪨"
+            },
+            {
+              "label": "liquid",
+              "emoji": "💧"
+            },
+            {
+              "label": "gas",
+              "emoji": "💨"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏖️",
+              "bin": 0,
+              "name": "sand"
+            },
+            {
+              "emoji": "🧂",
+              "bin": 0,
+              "name": "salt"
+            },
+            {
+              "emoji": "🍯",
+              "bin": 1,
+              "name": "honey"
+            },
+            {
+              "emoji": "🧴",
+              "bin": 1,
+              "name": "shampoo"
+            },
+            {
+              "emoji": "🎈",
+              "bin": 2,
+              "name": "balloon air"
+            },
+            {
+              "emoji": "🌬️",
+              "bin": 2,
+              "name": "wind"
+            }
+          ],
+          "explain": "Grains are tiny solids, gooey things that pour are liquids, and air is a gas."
+        }
+      ]
+    }
+  ]
+}

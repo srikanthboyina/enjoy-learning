@@ -1,0 +1,500 @@
+{
+  "topicId": "numbers-to-100",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "numbers-to-100-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Counting in tens",
+      "intro": {
+        "say": "Big numbers are easy when we count in tens. Ten, twenty, thirty!",
+        "icons": [
+          "🔟",
+          "🧱",
+          "💯"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Each tall rod is ten blocks. One rod is ten, two rods are twenty, three rods are thirty.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 0
+          },
+          "caption": "10, 20, 30"
+        },
+        {
+          "mode": "show",
+          "say": "Keep going! Ten rods make one hundred. Ten, twenty, thirty, all the way to a hundred.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 100,
+            "step": 10
+          },
+          "caption": "10, 20, 30 ... 100"
+        },
+        {
+          "mode": "choice",
+          "ask": "Count the rods in tens. How many blocks?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 2,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Each rod is ten, not one."
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "30",
+              "why": "Count the rods again: there are two."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two tens make twenty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Count in tens: ten, twenty, thirty. What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "10",
+              "20",
+              "30",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "31",
+              "why": "We jump by ten, not by one."
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "50",
+              "why": "That jumped too far."
+            }
+          ],
+          "answer": 1,
+          "explain": "After thirty comes forty."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many blocks? Count the rods: ten, twenty...",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 5,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "50"
+            },
+            {
+              "label": "5",
+              "why": "Each rod is a ten."
+            },
+            {
+              "label": "40",
+              "why": "Count the rods once more."
+            }
+          ],
+          "answer": 0,
+          "explain": "Five tens make fifty."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the tens in order.",
+          "items": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "30"
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "50"
+            }
+          ],
+          "explain": "Each one is ten more than the one before."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many tens make one hundred?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 9,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "Nine rods make ninety. One more!"
+            },
+            {
+              "label": "100",
+              "why": "One hundred is the total, not the tens."
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "answer": 2,
+          "explain": "Ten tens make one hundred."
+        }
+      ]
+    },
+    {
+      "id": "numbers-to-100-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Tens and ones to 100",
+      "intro": {
+        "say": "Count the tens first, then the ones. That is how we read big numbers!",
+        "icons": [
+          "🧱",
+          "🔟",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Three rods are thirty. Four little cubes are four more. Thirty and four make thirty-four.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 4
+          },
+          "caption": "30 + 4 = 34"
+        },
+        {
+          "mode": "show",
+          "say": "Start at the tens, then count on the ones: sixty, sixty-one, sixty-two.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 6,
+            "ones": 2
+          },
+          "caption": "60 + 2 = 62"
+        },
+        {
+          "mode": "choice",
+          "ask": "Count the tens, then the ones. What number is this?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 4,
+            "ones": 5
+          },
+          "options": [
+            {
+              "label": "54",
+              "why": "The tens come first: there are four rods."
+            },
+            {
+              "label": "45"
+            },
+            {
+              "label": "9",
+              "why": "Rods are tens, not ones."
+            }
+          ],
+          "answer": 1,
+          "explain": "Four tens and five ones make forty-five."
+        },
+        {
+          "mode": "choice",
+          "ask": "What number is this?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 7,
+            "ones": 1
+          },
+          "options": [
+            {
+              "label": "71"
+            },
+            {
+              "label": "17",
+              "why": "There are seven rods, so seventy something."
+            },
+            {
+              "label": "70",
+              "why": "Do not forget the little cube."
+            }
+          ],
+          "answer": 0,
+          "explain": "Seventy and one make seventy-one."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is fifty-eight?",
+          "options": [
+            {
+              "label": "85",
+              "why": "That is eighty-five, the digits swapped."
+            },
+            {
+              "label": "508",
+              "why": "That is far too big."
+            },
+            {
+              "label": "58"
+            }
+          ],
+          "answer": 2,
+          "explain": "Fifty-eight is five tens and eight ones."
+        },
+        {
+          "mode": "choice",
+          "ask": "Count on: 37, 38, 39. What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "37",
+              "38",
+              "39",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "310",
+              "why": "After nine ones we make a new ten."
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "30",
+              "why": "We go up, not back."
+            }
+          ],
+          "answer": 1,
+          "explain": "After thirty-nine comes forty, a new ten."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the numbers in order, smallest first.",
+          "items": [
+            {
+              "label": "23"
+            },
+            {
+              "label": "41"
+            },
+            {
+              "label": "56"
+            },
+            {
+              "label": "89"
+            }
+          ],
+          "explain": "Look at the tens: two, four, five, eight."
+        }
+      ]
+    },
+    {
+      "id": "numbers-to-100-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Hundred chart explorer",
+      "intro": {
+        "say": "Let us explore numbers up to a hundred, jump by tens, and solve puzzles!",
+        "icons": [
+          "💯",
+          "🦘",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Jumping by ten from 23: thirty-three, forty-three, fifty-three. The ones stay the same, the tens grow!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "23",
+              "33",
+              "43",
+              "53"
+            ]
+          },
+          "caption": "23, 33, 43, 53"
+        },
+        {
+          "mode": "show",
+          "say": "After ninety-nine comes one hundred. Ninety-nine and one more fill ten whole tens.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 9,
+            "ones": 9
+          },
+          "caption": "99 + 1 = 100"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is ten more than 46?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 4,
+            "ones": 6
+          },
+          "options": [
+            {
+              "label": "47",
+              "why": "That is one more. Add a whole rod."
+            },
+            {
+              "label": "56"
+            },
+            {
+              "label": "36",
+              "why": "That is ten less."
+            }
+          ],
+          "answer": 1,
+          "explain": "Add one rod: four tens become five tens. Fifty-six."
+        },
+        {
+          "mode": "choice",
+          "ask": "Find the missing number: 62, 72, ?, 92.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "62",
+              "72",
+              "?",
+              "92"
+            ]
+          },
+          "options": [
+            {
+              "label": "73",
+              "why": "Each jump is ten, not one."
+            },
+            {
+              "label": "82"
+            },
+            {
+              "label": "80",
+              "why": "The ones stay at two."
+            }
+          ],
+          "answer": 1,
+          "explain": "Jumping by ten: sixty-two, seventy-two, eighty-two, ninety-two."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam has 6 bags of 10 sweets and 3 loose sweets. How many sweets?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 6,
+            "ones": 3
+          },
+          "options": [
+            {
+              "label": "63"
+            },
+            {
+              "label": "36",
+              "why": "Six bags of ten is sixty."
+            },
+            {
+              "label": "9",
+              "why": "Each bag holds ten."
+            }
+          ],
+          "answer": 0,
+          "explain": "Six tens and three ones make sixty-three."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is the biggest?",
+          "options": [
+            {
+              "label": "79",
+              "why": "Seven tens is less than nine tens."
+            },
+            {
+              "label": "97"
+            },
+            {
+              "label": "88",
+              "why": "Eight tens is less than nine tens."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ninety-seven has the most tens: nine."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is one less than 80?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "78",
+              "?",
+              "80"
+            ]
+          },
+          "options": [
+            {
+              "label": "70",
+              "why": "That is ten less."
+            },
+            {
+              "label": "81",
+              "why": "That is one more."
+            },
+            {
+              "label": "79"
+            }
+          ],
+          "answer": 2,
+          "explain": "Count back one from eighty: seventy-nine."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from smallest to biggest.",
+          "items": [
+            {
+              "label": "19"
+            },
+            {
+              "label": "45"
+            },
+            {
+              "label": "54"
+            },
+            {
+              "label": "91"
+            },
+            {
+              "label": "100"
+            }
+          ],
+          "explain": "Fewer tens means smaller. A hundred is the biggest."
+        }
+      ]
+    }
+  ]
+}

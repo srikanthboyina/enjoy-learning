@@ -127,12 +127,12 @@
               "name": "lettuce"
             },
             {
-              "emoji": "🥒",
+              "emoji": "🧅",
               "bin": 1,
-              "name": "cucumber"
+              "name": "onion"
             }
           ],
-          "explain": "Bananas, grapes and strawberries are fruits. Carrots, lettuce and cucumbers are vegetables."
+          "explain": "Bananas, grapes and strawberries are fruits. Carrots, lettuce and onions are vegetables."
         },
         {
           "mode": "choice",
@@ -390,9 +390,9 @@
               "name": "carrot"
             },
             {
-              "emoji": "🌽",
+              "emoji": "🥬",
               "bin": 1,
-              "name": "corn"
+              "name": "lettuce"
             },
             {
               "emoji": "🍝",
@@ -405,7 +405,7 @@
               "name": "rice"
             }
           ],
-          "explain": "Pears and watermelon are fruits, carrots and corn are vegetables, and pasta and rice are grains."
+          "explain": "Pears and watermelon are fruits, carrots and lettuce are vegetables, and pasta and rice are grains."
         },
         {
           "mode": "sort",

@@ -1,0 +1,572 @@
+{
+  "topicId": "halves-quarters",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "halves-quarters-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Halves",
+      "intro": {
+        "say": "A half is one of 2 equal parts. Equal means the very same size!",
+        "icons": [
+          "🌓",
+          "✂️",
+          "🍕"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This circle is cut into 2 equal parts. Each part is one half. One half is coloured.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 2,
+            "shaded": 1
+          },
+          "caption": "1 half = 1/2"
+        },
+        {
+          "mode": "show",
+          "say": "Halves must be the same size. If one piece is big and one is small, they are not halves.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 2,
+            "shaded": 2,
+            "shape": "bar"
+          },
+          "caption": "2 halves make a whole"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape is cut into halves?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 2,
+                "shaded": 1
+              }
+            },
+            {
+              "fraction": {
+                "parts": 3,
+                "shaded": 1
+              },
+              "why": "That shape has 3 parts."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 1
+              },
+              "why": "That shape has 4 parts."
+            }
+          ],
+          "answer": 0,
+          "explain": "It has 2 equal parts, so each part is a half."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many halves make a whole?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 2,
+            "shaded": 1
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "One half is only part of it."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "4",
+              "why": "Four parts are quarters."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 halves make one whole."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sam cuts a cake into a big piece and a tiny piece. Are they halves?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎂",
+              "✂️"
+            ]
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "why": "The pieces must be the same size."
+            },
+            {
+              "label": "No"
+            }
+          ],
+          "answer": 1,
+          "explain": "Halves are equal, and these pieces are different sizes."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which picture shows one half coloured?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 1
+              },
+              "why": "That is 1 of 4 parts."
+            },
+            {
+              "fraction": {
+                "parts": 2,
+                "shaded": 2
+              },
+              "why": "Both parts are coloured. That is the whole."
+            },
+            {
+              "fraction": {
+                "parts": 2,
+                "shaded": 1
+              }
+            }
+          ],
+          "answer": 2,
+          "explain": "One of 2 equal parts is coloured. That is one half."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is this bar cut into halves?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 2,
+            "shaded": 1,
+            "shape": "bar"
+          },
+          "options": [
+            {
+              "label": "Yes"
+            },
+            {
+              "label": "No",
+              "why": "Look: 2 parts, both the same size."
+            }
+          ],
+          "answer": 0,
+          "explain": "It has 2 equal parts, so they are halves."
+        }
+      ]
+    },
+    {
+      "id": "halves-quarters-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Quarters",
+      "intro": {
+        "say": "A quarter is one of 4 equal parts. Cut a half in half, and you get quarters!",
+        "icons": [
+          "🌓",
+          "🍰",
+          "4️⃣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This circle has 4 equal parts. Each part is one quarter. One quarter is coloured.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 1
+          },
+          "caption": "1 quarter = 1/4"
+        },
+        {
+          "mode": "show",
+          "say": "Two quarters cover the same as one half. Look: 2 of the 4 parts are coloured. That is half the circle!",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 2
+          },
+          "caption": "2/4 = 1/2"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape shows one quarter coloured?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 2,
+                "shaded": 1
+              },
+              "why": "That is 1 of 2 parts, a half."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 1
+              }
+            },
+            {
+              "fraction": {
+                "parts": 3,
+                "shaded": 1
+              },
+              "why": "That shape has 3 parts."
+            }
+          ],
+          "answer": 1,
+          "explain": "One of 4 equal parts is coloured. That is one quarter."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many quarters make a whole?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 4
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Two quarters make a half."
+            },
+            {
+              "label": "3",
+              "why": "Count all the parts."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "4 quarters make one whole."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many parts are coloured?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 3
+          },
+          "options": [
+            {
+              "label": "3"
+            },
+            {
+              "label": "1",
+              "why": "Count every coloured part."
+            },
+            {
+              "label": "4",
+              "why": "One part is not coloured."
+            }
+          ],
+          "answer": 0,
+          "explain": "3 of the 4 quarters are coloured. That is three quarters."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two quarters are the same as...",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 2,
+            "shape": "bar"
+          },
+          "options": [
+            {
+              "label": "one whole",
+              "why": "A whole is 4 quarters."
+            },
+            {
+              "label": "one half"
+            },
+            {
+              "label": "one quarter",
+              "why": "We have 2 quarters."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 quarters cover the same as one half."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which bar is cut into quarters?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 2,
+                "shaded": 0,
+                "shape": "bar"
+              },
+              "why": "That bar has 2 parts, halves."
+            },
+            {
+              "fraction": {
+                "parts": 3,
+                "shaded": 0,
+                "shape": "bar"
+              },
+              "why": "That bar has 3 parts."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 0,
+                "shape": "bar"
+              }
+            }
+          ],
+          "answer": 2,
+          "explain": "It has 4 equal parts, so each part is a quarter."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia cuts a pizza into 4 pieces. One is much bigger. Are they quarters?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍕",
+              "🤔"
+            ]
+          },
+          "options": [
+            {
+              "label": "No"
+            },
+            {
+              "label": "Yes",
+              "why": "Quarters must all be the same size."
+            }
+          ],
+          "answer": 0,
+          "explain": "Quarters are 4 equal parts, so they must all be the same size."
+        }
+      ]
+    },
+    {
+      "id": "halves-quarters-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Halves and quarters puzzles",
+      "intro": {
+        "say": "Let us compare halves and quarters and think about what is left!",
+        "icons": [
+          "🌓",
+          "🧠",
+          "🍰"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A half is bigger than a quarter. When we cut the same cake into more pieces, each piece gets smaller.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 2,
+            "shaded": 1
+          },
+          "caption": "1/2 is bigger than 1/4"
+        },
+        {
+          "mode": "show",
+          "say": "Three quarters coloured means one quarter is not coloured. Together they make the whole.",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 3,
+            "shape": "bar"
+          },
+          "caption": "3/4 + 1/4 = 1 whole"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which piece is bigger?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 1
+              },
+              "why": "A quarter is smaller. The cake is cut into more pieces."
+            },
+            {
+              "fraction": {
+                "parts": 2,
+                "shaded": 1
+              }
+            }
+          ],
+          "answer": 1,
+          "explain": "A half is bigger than a quarter of the same cake."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shows three quarters?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 1
+              },
+              "why": "Only 1 part is coloured."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 2
+              },
+              "why": "That is 2 parts, a half."
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 3
+              }
+            },
+            {
+              "fraction": {
+                "parts": 3,
+                "shaded": 3
+              },
+              "why": "That has 3 parts, not 4."
+            }
+          ],
+          "answer": 2,
+          "explain": "3 of 4 equal parts are coloured."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from smallest to biggest.",
+          "items": [
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 1
+              }
+            },
+            {
+              "fraction": {
+                "parts": 2,
+                "shaded": 1
+              }
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 3
+              }
+            },
+            {
+              "fraction": {
+                "parts": 4,
+                "shaded": 4
+              }
+            }
+          ],
+          "explain": "One quarter, one half, three quarters, then the whole.",
+          "hint": "Look at how much is coloured."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ben ate one quarter of a pizza. How much is left?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 1
+          },
+          "options": [
+            {
+              "label": "one half",
+              "why": "Only one quarter was eaten."
+            },
+            {
+              "label": "three quarters"
+            },
+            {
+              "label": "one quarter",
+              "why": "Count the parts left."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 quarters take away 1 quarter leaves 3 quarters."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which bar is NOT cut into halves?",
+          "options": [
+            {
+              "fraction": {
+                "parts": 2,
+                "shaded": 1,
+                "shape": "bar"
+              },
+              "why": "This one has 2 equal parts."
+            },
+            {
+              "fraction": {
+                "parts": 3,
+                "shaded": 1,
+                "shape": "bar"
+              }
+            }
+          ],
+          "answer": 1,
+          "explain": "That bar has 3 parts, and halves need exactly 2 equal parts."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many quarters are in one half?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 2
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "One quarter is smaller than a half."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "4",
+              "why": "Four quarters make the whole."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two quarters fill the same space as one half."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why is a quarter smaller than a half?",
+          "options": [
+            {
+              "label": "More pieces, smaller"
+            },
+            {
+              "label": "Quarters are round",
+              "why": "Shape does not change the size."
+            },
+            {
+              "label": "4 is less than 2",
+              "why": "Four is more than two."
+            }
+          ],
+          "answer": 0,
+          "explain": "Cutting the same whole into 4 pieces makes each piece smaller than cutting it into 2."
+        }
+      ]
+    }
+  ]
+}

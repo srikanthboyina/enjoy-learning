@@ -2,12 +2,13 @@ import type { ComponentType } from 'react';
 import type { z } from 'zod';
 
 import type { GlyphId } from '../assets-map';
-import type { DIFFICULTIES, GAME_IDS, PromptSchema, StarRuleSchema, TopicSchema } from './contentSchema';
+import type { DIFFICULTIES, GAME_IDS, GroupSchema, PromptSchema, StarRuleSchema, TopicSchema } from './contentSchema';
 
 export type GameId = (typeof GAME_IDS)[number];
 export type Prompt = z.infer<typeof PromptSchema>;
 export type StarRule = z.infer<typeof StarRuleSchema>;
 export type Topic = z.infer<typeof TopicSchema>;
+export type Group = z.infer<typeof GroupSchema>;
 export type Stars = 0 | 1 | 2 | 3;
 export type Difficulty = (typeof DIFFICULTIES)[number];
 export type { GlyphId };

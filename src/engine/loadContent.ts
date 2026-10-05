@@ -1,9 +1,10 @@
 // Loads and validates content/*.json once at startup. Every `<topic>.levels.json`
 // in content/ is picked up automatically (Metro's require.context), so adding a
 // level file needs no code change.
+import groupsJson from '../../content/groups.json';
 import topicsJson from '../../content/topics.json';
-import { parseLevelFile, parseTopics, type ParseIssue } from './parseContent';
-import type { Difficulty, Level, Topic } from './types';
+import { parseGroups, parseLevelFile, parseTopics, type ParseIssue } from './parseContent';
+import type { Difficulty, Group, Level, Topic } from './types';
 
 declare const require: {
   context(dir: string, deep: boolean, filter: RegExp): { keys(): string[]; (key: string): unknown };
@@ -14,6 +15,7 @@ const levelFiles = require.context('../../content', false, /\.levels\.json$/);
 function load() {
   const issues: ParseIssue[] = [];
   const topics = parseTopics(topicsJson, issues);
+  const groups = parseGroups(groupsJson, topics, issues);
   const levelsByTopic: Record<string, Level[]> = {};
   for (const key of levelFiles.keys()) {
     const file = key.replace(/^\.\//, '');
@@ -26,13 +28,25 @@ function load() {
         issues.map((i) => `  ${i.where}: ${i.message}`).join('\n'),
     );
   }
-  return { topics, levelsByTopic };
+  return { topics, groups, levelsByTopic };
 }
 
 const content = load();
 
 export function getTopics(): Topic[] {
   return content.topics;
+}
+
+export function getGroups(): Group[] {
+  return content.groups;
+}
+
+export function getGroup(groupId: string): Group | undefined {
+  return content.groups.find((g) => g.id === groupId);
+}
+
+export function getTopicsIn(groupId: string): Topic[] {
+  return content.topics.filter((t) => t.group === groupId);
 }
 
 export function getTopic(topicId: string): Topic | undefined {

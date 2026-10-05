@@ -1,0 +1,531 @@
+{
+  "topicId": "symmetry",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "symmetry-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Matching halves",
+      "intro": {
+        "say": "Something is symmetrical when both halves match, like a butterfly's wings!",
+        "icons": [
+          "🦋",
+          "🪞"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Fold a butterfly down the middle. The left wing and the right wing match exactly!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦋"
+            ],
+            "size": "lg"
+          },
+          "caption": "both sides match"
+        },
+        {
+          "mode": "show",
+          "say": "A heart is symmetrical too. Draw a line down the middle, and the two halves are the same.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "❤️"
+            ],
+            "size": "lg"
+          },
+          "caption": "fold down the middle"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one has matching halves?",
+          "options": [
+            {
+              "label": "snail",
+              "emoji": "🐌",
+              "why": "The snail's shell is only on one side."
+            },
+            {
+              "label": "butterfly",
+              "emoji": "🦋"
+            },
+            {
+              "label": "key",
+              "emoji": "🔑",
+              "why": "A key's teeth are only on one side."
+            }
+          ],
+          "answer": 1,
+          "explain": "A butterfly's two wings match, so it is symmetrical."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which face is symmetrical?",
+          "options": [
+            {
+              "emoji": "😉",
+              "why": "One eye is winking, so the sides don't match."
+            },
+            {
+              "emoji": "🤨",
+              "why": "One eyebrow is up, so the sides don't match."
+            },
+            {
+              "emoji": "😀"
+            }
+          ],
+          "answer": 2,
+          "explain": "The smiley face has the same eye on each side, so both halves match."
+        },
+        {
+          "mode": "choice",
+          "ask": "Fold this heart in half. Will the two halves match?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "❤️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Yes",
+              "emoji": "✅"
+            },
+            {
+              "label": "No",
+              "emoji": "❌",
+              "why": "Look again: both sides of a heart are the same."
+            }
+          ],
+          "answer": 0,
+          "explain": "Both halves of a heart are the same shape, so they match."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which picture is NOT symmetrical?",
+          "options": [
+            {
+              "label": "star",
+              "emoji": "⭐",
+              "why": "A star matches when you fold it down the middle."
+            },
+            {
+              "label": "key",
+              "emoji": "🔑"
+            },
+            {
+              "label": "heart",
+              "emoji": "❤️",
+              "why": "A heart's halves match."
+            }
+          ],
+          "answer": 1,
+          "explain": "A key has teeth on just one side, so its halves don't match."
+        },
+        {
+          "mode": "sort",
+          "ask": "Do both halves match? Sort them!",
+          "bins": [
+            {
+              "label": "Match",
+              "emoji": "🦋"
+            },
+            {
+              "label": "Don't match",
+              "emoji": "🐌"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "❤️",
+              "bin": 0,
+              "name": "heart"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 1,
+              "name": "key"
+            },
+            {
+              "emoji": "⭐",
+              "bin": 0,
+              "name": "star"
+            },
+            {
+              "emoji": "🐌",
+              "bin": 1,
+              "name": "snail"
+            },
+            {
+              "emoji": "👢",
+              "bin": 1,
+              "name": "boot"
+            },
+            {
+              "emoji": "🌸",
+              "bin": 0,
+              "name": "flower"
+            }
+          ],
+          "explain": "A heart, star and flower match on both sides. A key, snail and boot don't."
+        }
+      ]
+    },
+    {
+      "id": "symmetry-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Line of symmetry",
+      "intro": {
+        "say": "A line of symmetry is a fold line where both halves match. Even letters can have one!",
+        "icons": [
+          "🔤",
+          "🦋",
+          "📏"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The letter A has a line of symmetry straight down the middle. The left side matches the right side.",
+          "visual": {
+            "kind": "text",
+            "text": "A"
+          },
+          "caption": "A · fold down the middle"
+        },
+        {
+          "mode": "show",
+          "say": "The letter B has a line going across the middle. The top half matches the bottom half!",
+          "visual": {
+            "kind": "text",
+            "text": "B"
+          },
+          "caption": "B · fold across"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which letter matches on both sides when you fold it down the middle?",
+          "options": [
+            {
+              "label": "T"
+            },
+            {
+              "label": "R",
+              "why": "R's leg sticks out on one side."
+            },
+            {
+              "label": "F",
+              "why": "F's arms only point one way."
+            }
+          ],
+          "answer": 0,
+          "explain": "T has the same arm on each side of the middle line."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which letter is NOT symmetrical?",
+          "options": [
+            {
+              "label": "M",
+              "why": "M matches down the middle."
+            },
+            {
+              "label": "H",
+              "why": "H matches down the middle."
+            },
+            {
+              "label": "L"
+            }
+          ],
+          "answer": 2,
+          "explain": "L has its foot on only one side, so the halves don't match."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort the letters. Are they symmetrical?",
+          "bins": [
+            {
+              "label": "Symmetrical",
+              "emoji": "🦋"
+            },
+            {
+              "label": "Not symmetrical",
+              "emoji": "🐌"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "A",
+              "bin": 0,
+              "name": "letter A"
+            },
+            {
+              "emoji": "F",
+              "bin": 1,
+              "name": "letter F"
+            },
+            {
+              "emoji": "O",
+              "bin": 0,
+              "name": "letter O"
+            },
+            {
+              "emoji": "J",
+              "bin": 1,
+              "name": "letter J"
+            },
+            {
+              "emoji": "H",
+              "bin": 0,
+              "name": "letter H"
+            },
+            {
+              "emoji": "R",
+              "bin": 1,
+              "name": "letter R"
+            }
+          ],
+          "explain": "A, O and H have matching halves. F, J and R don't."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which bead pattern is symmetrical?",
+          "options": [
+            {
+              "emoji": "🔴🔵🔴"
+            },
+            {
+              "emoji": "🔵🔴🔴",
+              "why": "The two ends are different colours."
+            },
+            {
+              "emoji": "🔴🔵🔵",
+              "why": "The two ends are different colours."
+            }
+          ],
+          "answer": 0,
+          "explain": "Red, blue, red is the same from both ends, so it matches in the middle."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number matches on both sides when folded down the middle?",
+          "options": [
+            {
+              "label": "7",
+              "why": "The top of a 7 points one way."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "2",
+              "why": "A 2 curves one way and not the other."
+            }
+          ],
+          "answer": 1,
+          "explain": "An 8 has two matching halves, left and right."
+        }
+      ]
+    },
+    {
+      "id": "symmetry-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Mirror makers",
+      "intro": {
+        "say": "Let's be mirror makers! We'll finish patterns so both halves match.",
+        "icons": [
+          "🪞",
+          "🟥",
+          "🟦"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "In a mirror pattern, the right side copies the left side backwards, like a reflection.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🟥",
+              "🟦",
+              "🟨",
+              "|",
+              "🟨",
+              "🟦",
+              "🟥"
+            ]
+          },
+          "caption": "🟥🟦🟨 | 🟨🟦🟥"
+        },
+        {
+          "mode": "show",
+          "say": "Words can be symmetrical too! M, O and M each match on both sides, so MOM looks the same in a mirror.",
+          "visual": {
+            "kind": "text",
+            "text": "MOM"
+          },
+          "caption": "MOM"
+        },
+        {
+          "mode": "choice",
+          "ask": "Finish the mirror. What goes in the gap?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🍎",
+              "🍌",
+              "|",
+              "🍌",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍎"
+            },
+            {
+              "emoji": "🍌",
+              "why": "The banana is already next to the mirror line."
+            },
+            {
+              "emoji": "🍇",
+              "why": "There are no grapes on the left side."
+            }
+          ],
+          "answer": 0,
+          "explain": "The apple is on the far left, so it must be on the far right too."
+        },
+        {
+          "mode": "choice",
+          "ask": "Finish the mirror. What goes in the gap?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🔵",
+              "🟢",
+              "🔴",
+              "|",
+              "🔴",
+              "?",
+              "🔵"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🔴",
+              "why": "Red is next to the mirror line already."
+            },
+            {
+              "emoji": "🔵",
+              "why": "Blue is at the very end."
+            },
+            {
+              "emoji": "🟢"
+            }
+          ],
+          "answer": 2,
+          "explain": "Green is second from the left, so it is second from the right too.",
+          "hint": "Count out from the mirror line."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many lines of symmetry does a square have?",
+          "visual": {
+            "kind": "shapes",
+            "shapes": [
+              {
+                "shape": "square"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "Try folding it more than one way."
+            },
+            {
+              "label": "2",
+              "why": "Don't forget the corner to corner folds."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "Fold it up and down, side to side, and along both corner to corner lines: 4 ways!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which shape has the MOST lines of symmetry?",
+          "options": [
+            {
+              "shape": "triangle",
+              "why": "A triangle has 3 at most."
+            },
+            {
+              "shape": "square",
+              "why": "A square has 4. One shape has even more."
+            },
+            {
+              "shape": "circle"
+            }
+          ],
+          "answer": 2,
+          "explain": "A circle matches when you fold it through the middle any way at all!"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which word looks the same in a mirror?",
+          "options": [
+            {
+              "label": "SUN",
+              "why": "S and N are not symmetrical."
+            },
+            {
+              "label": "WOW"
+            },
+            {
+              "label": "DOG",
+              "why": "D and G are not symmetrical down the middle."
+            }
+          ],
+          "answer": 1,
+          "explain": "W, O and W each match on both sides, and the word reads the same both ways."
+        },
+        {
+          "mode": "choice",
+          "ask": "A butterfly has 3 spots on its left wing. Its wings are symmetrical. How many spots in all?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦋"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "The right wing has spots too."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "5",
+              "why": "Both wings match, so each has 3."
+            }
+          ],
+          "answer": 1,
+          "explain": "The right wing matches with 3 spots, and 3 and 3 make 6."
+        }
+      ]
+    }
+  ]
+}

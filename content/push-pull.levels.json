@@ -1,0 +1,579 @@
+{
+  "topicId": "push-pull",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "push-pull-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Push or pull?",
+      "intro": {
+        "say": "A push moves something away from you. A pull moves it towards you. Let's try!",
+        "icons": [
+          "👐",
+          "🛒"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "When you push a shopping cart, it rolls away from you. That's a push!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🛒",
+              "➡️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Push = away from you"
+        },
+        {
+          "mode": "show",
+          "say": "When you pull a sled by its rope, it comes towards you. That's a pull!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🛷",
+              "⬅️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Pull = towards you"
+        },
+        {
+          "mode": "choice",
+          "ask": "Kicking a ball. Is it a push or a pull?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦶",
+              "⚽"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👐",
+              "label": "Push"
+            },
+            {
+              "emoji": "🪢",
+              "label": "Pull",
+              "why": "Your foot sends the ball away, so it's a push."
+            }
+          ],
+          "answer": 0,
+          "explain": "Your foot pushes the ball away from you."
+        },
+        {
+          "mode": "choice",
+          "ask": "Pulling a carrot out of the ground. Push or pull?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥕"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👐",
+              "label": "Push",
+              "why": "The carrot comes towards you, so it's a pull."
+            },
+            {
+              "emoji": "🪢",
+              "label": "Pull"
+            }
+          ],
+          "answer": 1,
+          "explain": "You bring the carrot towards you, so it's a pull."
+        },
+        {
+          "mode": "sort",
+          "ask": "Push or pull? Sort them!",
+          "bins": [
+            {
+              "label": "Push",
+              "emoji": "👐"
+            },
+            {
+              "label": "Pull",
+              "emoji": "🪢"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "⚽",
+              "bin": 0,
+              "name": "kicking a ball"
+            },
+            {
+              "emoji": "🛒",
+              "bin": 0,
+              "name": "pushing a cart"
+            },
+            {
+              "emoji": "🔘",
+              "bin": 0,
+              "name": "pressing a button"
+            },
+            {
+              "emoji": "🥕",
+              "bin": 1,
+              "name": "pulling a carrot"
+            },
+            {
+              "emoji": "🧦",
+              "bin": 1,
+              "name": "pulling up socks"
+            },
+            {
+              "emoji": "🎣",
+              "bin": 1,
+              "name": "reeling in a fish"
+            }
+          ],
+          "explain": "Pushes send things away. Pulls bring things closer."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a pull?",
+          "options": [
+            {
+              "emoji": "🛒",
+              "label": "Push a cart",
+              "why": "The cart moves away from you, so that's a push."
+            },
+            {
+              "emoji": "🎣",
+              "label": "Reel in a fish"
+            },
+            {
+              "emoji": "⚽",
+              "label": "Kick a ball",
+              "why": "Kicking sends the ball away, so that's a push."
+            }
+          ],
+          "answer": 1,
+          "explain": "Reeling brings the fish towards you, so it's a pull."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a push?",
+          "options": [
+            {
+              "emoji": "🧦",
+              "label": "Pull up socks",
+              "why": "Socks come up towards you, so that's a pull."
+            },
+            {
+              "emoji": "🥕",
+              "label": "Pick a carrot",
+              "why": "The carrot comes towards you, so that's a pull."
+            },
+            {
+              "emoji": "🎹",
+              "label": "Press piano keys"
+            }
+          ],
+          "answer": 2,
+          "explain": "Your fingers push the keys down."
+        }
+      ]
+    },
+    {
+      "id": "push-pull-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Forces move things",
+      "intro": {
+        "say": "Pushes and pulls are called forces. Forces make things start, stop and turn!",
+        "icons": [
+          "⚽",
+          "🦶",
+          "🧤"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A ball sits still. Kick it, and it starts to move. A push made it start!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦶",
+              "⚽",
+              "💨"
+            ],
+            "size": "lg"
+          },
+          "caption": "Forces start things"
+        },
+        {
+          "mode": "show",
+          "say": "A goalkeeper catches the flying ball, and it stops. A force can stop things too.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚽",
+              "🧤",
+              "✋"
+            ],
+            "size": "lg"
+          },
+          "caption": "Forces stop things"
+        },
+        {
+          "mode": "show",
+          "say": "Hit a moving ball with a bat, and it flies off another way. Forces can turn things.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚾",
+              "↩️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Forces turn things"
+        },
+        {
+          "mode": "choice",
+          "ask": "A goalkeeper catches the ball. What does the force do?",
+          "options": [
+            {
+              "emoji": "▶️",
+              "label": "Starts it",
+              "why": "The ball was already moving. The catch stops it."
+            },
+            {
+              "emoji": "⏹️",
+              "label": "Stops it"
+            },
+            {
+              "emoji": "↩️",
+              "label": "Turns it",
+              "why": "The ball doesn't go another way. It stops."
+            }
+          ],
+          "answer": 1,
+          "explain": "Catching is a force that stops the ball."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which makes a toy car go faster?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚗"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🤏",
+              "label": "Gentle push",
+              "why": "A small push gives a small, slow start."
+            },
+            {
+              "emoji": "💪",
+              "label": "Hard push"
+            }
+          ],
+          "answer": 1,
+          "explain": "A harder push gives more force, so the car goes faster."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which needs the biggest push to move?",
+          "options": [
+            {
+              "emoji": "🎈",
+              "label": "Balloon",
+              "why": "A balloon is very light. It needs only a tiny push."
+            },
+            {
+              "emoji": "📦",
+              "label": "Box",
+              "why": "Something here is even heavier."
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car"
+            }
+          ],
+          "answer": 2,
+          "explain": "Heavier things need a bigger push to move."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does the force start it or stop it?",
+          "bins": [
+            {
+              "label": "Start",
+              "emoji": "▶️"
+            },
+            {
+              "label": "Stop",
+              "emoji": "⏹️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🦶",
+              "bin": 0,
+              "name": "kicking a still ball"
+            },
+            {
+              "emoji": "🎳",
+              "bin": 0,
+              "name": "rolling a bowling ball"
+            },
+            {
+              "emoji": "🛷",
+              "bin": 0,
+              "name": "pulling a sled to go"
+            },
+            {
+              "emoji": "🧤",
+              "bin": 1,
+              "name": "catching a ball"
+            },
+            {
+              "emoji": "🥅",
+              "bin": 1,
+              "name": "a net stopping a ball"
+            },
+            {
+              "emoji": "🛑",
+              "bin": 1,
+              "name": "braking at a stop sign"
+            }
+          ],
+          "explain": "Some forces get things moving, and some forces stop them."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is a force?",
+          "options": [
+            {
+              "emoji": "🎨",
+              "label": "A colour",
+              "why": "A force isn't a colour. It's a push or a pull."
+            },
+            {
+              "emoji": "👐",
+              "label": "A push or a pull"
+            },
+            {
+              "emoji": "🔔",
+              "label": "A sound",
+              "why": "A force isn't a sound. It's a push or a pull."
+            }
+          ],
+          "answer": 1,
+          "explain": "Every push and every pull is a force."
+        }
+      ]
+    },
+    {
+      "id": "push-pull-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Force puzzles",
+      "intro": {
+        "say": "Let's solve tricky puzzles about pushing, pulling, and which way things go.",
+        "icons": [
+          "🪢",
+          "🧒",
+          "🍎"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "In tug of war, both teams pull. The team that pulls harder wins, and the rope moves their way.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧒",
+              "🧒",
+              "🪢",
+              "🧒"
+            ]
+          },
+          "caption": "The stronger pull wins"
+        },
+        {
+          "mode": "show",
+          "say": "Gravity is a pull too! It pulls everything down towards the ground. That's why a dropped apple falls.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "⬇️",
+              "🌍"
+            ],
+            "size": "lg"
+          },
+          "caption": "Gravity pulls down"
+        },
+        {
+          "mode": "choice",
+          "ask": "Tug of war! Three kids pull left and one kid pulls right. They are all just as strong. Which way does the rope go?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧒",
+              "🧒",
+              "🧒",
+              "🪢",
+              "🧒"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⬅️",
+              "label": "Left"
+            },
+            {
+              "emoji": "➡️",
+              "label": "Right",
+              "why": "Only one kid pulls that way. The other side pulls harder."
+            },
+            {
+              "emoji": "⏸️",
+              "label": "Nowhere",
+              "why": "The pulls are not equal, so the rope moves."
+            }
+          ],
+          "answer": 0,
+          "explain": "Three kids pull harder than one, so the rope moves left."
+        },
+        {
+          "mode": "choice",
+          "ask": "You throw a ball up high. What pulls it back down?",
+          "options": [
+            {
+              "emoji": "🌬️",
+              "label": "Wind",
+              "why": "Wind blows sideways. Something pulls everything down."
+            },
+            {
+              "emoji": "🌍",
+              "label": "Gravity"
+            },
+            {
+              "emoji": "☀️",
+              "label": "The Sun",
+              "why": "The Sun doesn't pull the ball down to the ground."
+            }
+          ],
+          "answer": 1,
+          "explain": "Gravity always pulls things down towards the ground."
+        },
+        {
+          "mode": "choice",
+          "ask": "Two kids push a box from opposite sides, just as hard. What happens?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧒",
+              "➡️",
+              "📦",
+              "⬅️",
+              "🧒"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⬅️",
+              "label": "Moves left",
+              "why": "The pushes are equal, so neither side wins."
+            },
+            {
+              "emoji": "📦",
+              "label": "Stays still"
+            },
+            {
+              "emoji": "➡️",
+              "label": "Moves right",
+              "why": "The pushes are equal, so neither side wins."
+            }
+          ],
+          "answer": 1,
+          "explain": "Equal pushes balance each other, so the box doesn't move."
+        },
+        {
+          "mode": "choice",
+          "ask": "A heavy box won't move. What could help?",
+          "options": [
+            {
+              "emoji": "🤏",
+              "label": "Push gently",
+              "why": "A gentler push is even weaker."
+            },
+            {
+              "emoji": "🤫",
+              "label": "Whisper to it",
+              "why": "Words can't move a box!"
+            },
+            {
+              "emoji": "👫",
+              "label": "Push with a friend"
+            }
+          ],
+          "answer": 2,
+          "explain": "Two people make a bigger force together."
+        },
+        {
+          "mode": "order",
+          "ask": "Order these from the smallest push needed to the biggest push needed.",
+          "items": [
+            {
+              "emoji": "🪶",
+              "label": "Feather"
+            },
+            {
+              "emoji": "⚽",
+              "label": "Ball"
+            },
+            {
+              "emoji": "🪑",
+              "label": "Chair"
+            },
+            {
+              "emoji": "🚗",
+              "label": "Car"
+            }
+          ],
+          "explain": "The heavier something is, the bigger the push it needs."
+        },
+        {
+          "mode": "choice",
+          "ask": "What force moves a sailboat across the lake?",
+          "options": [
+            {
+              "emoji": "⛵",
+              "label": "Wind pushing the sail"
+            },
+            {
+              "emoji": "🐟",
+              "label": "Fish pulling it",
+              "why": "Fish don't pull boats! Look at the big sail."
+            },
+            {
+              "emoji": "🌍",
+              "label": "Gravity lifting it",
+              "why": "Gravity pulls down, not across."
+            }
+          ],
+          "answer": 0,
+          "explain": "The wind pushes on the sail and the boat moves along."
+        }
+      ]
+    }
+  ]
+}

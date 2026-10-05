@@ -1,0 +1,578 @@
+{
+  "topicId": "simple-machines",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "simple-machines-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Ramps and wheels",
+      "intro": {
+        "say": "Simple machines help us move heavy things more easily. Let's meet the ramp and the wheel!",
+        "icons": [
+          "📦",
+          "↗️",
+          "🛒"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Lifting a heavy box straight up is hard. Pushing it up a ramp, a sloping path, is much easier.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📦",
+              "↗️"
+            ],
+            "size": "lg"
+          },
+          "caption": "A ramp"
+        },
+        {
+          "mode": "show",
+          "say": "Wheels roll! It's much easier to move things on wheels than to drag them along the ground.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🛒",
+              "🚲",
+              "🛹"
+            ],
+            "size": "lg"
+          },
+          "caption": "Wheels roll"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is easier for a heavy suitcase?",
+          "options": [
+            {
+              "emoji": "💪",
+              "label": "Carry it",
+              "why": "Carrying means lifting all the weight."
+            },
+            {
+              "emoji": "🧳",
+              "label": "Roll it on wheels"
+            }
+          ],
+          "answer": 1,
+          "explain": "Wheels roll, so you don't have to lift the weight."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one has wheels?",
+          "options": [
+            {
+              "emoji": "🧺",
+              "label": "Basket",
+              "why": "A basket has no wheels."
+            },
+            {
+              "emoji": "🍎",
+              "label": "Apple",
+              "why": "An apple has no wheels."
+            },
+            {
+              "emoji": "🛹",
+              "label": "Skateboard"
+            }
+          ],
+          "answer": 2,
+          "explain": "A skateboard rolls on four wheels."
+        },
+        {
+          "mode": "choice",
+          "ask": "Grandpa's wheelchair needs to get into the house. What helps?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👴",
+              "🏠"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "↗️",
+              "label": "Ramp"
+            },
+            {
+              "emoji": "🪜",
+              "label": "Ladder",
+              "why": "Wheels can't roll up a ladder."
+            }
+          ],
+          "answer": 0,
+          "explain": "A ramp lets the wheels roll smoothly up."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it move on wheels?",
+          "bins": [
+            {
+              "label": "Wheels",
+              "emoji": "⚙️"
+            },
+            {
+              "label": "No wheels",
+              "emoji": "⛔"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🚗",
+              "bin": 0,
+              "name": "car"
+            },
+            {
+              "emoji": "🛒",
+              "bin": 0,
+              "name": "cart"
+            },
+            {
+              "emoji": "🚂",
+              "bin": 0,
+              "name": "train"
+            },
+            {
+              "emoji": "🛹",
+              "bin": 0,
+              "name": "skateboard"
+            },
+            {
+              "emoji": "🛶",
+              "bin": 1,
+              "name": "canoe"
+            },
+            {
+              "emoji": "🛷",
+              "bin": 1,
+              "name": "sled"
+            },
+            {
+              "emoji": "🪁",
+              "bin": 1,
+              "name": "kite"
+            }
+          ],
+          "explain": "Cars, carts, trains and skateboards roll on wheels. Canoes, sleds and kites don't."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do we use a ramp?",
+          "options": [
+            {
+              "emoji": "🏋️",
+              "label": "To make things heavier",
+              "why": "A ramp can't change weight."
+            },
+            {
+              "emoji": "↗️",
+              "label": "To make moving up easier"
+            }
+          ],
+          "answer": 1,
+          "explain": "A ramp helps you move things up without lifting straight up."
+        }
+      ]
+    },
+    {
+      "id": "simple-machines-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Levers and pulleys",
+      "intro": {
+        "say": "A see-saw is a lever. A pulley uses a rope and a wheel. Both help us lift!",
+        "icons": [
+          "⚖️",
+          "🪢",
+          "🪣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A see-saw is a lever. When the bigger kid goes down on one side, the other side goes up!",
+          "visual": {
+            "kind": "balance",
+            "left": "🧒",
+            "right": "🧑",
+            "heavier": "right"
+          },
+          "caption": "Down here, up there"
+        },
+        {
+          "mode": "show",
+          "say": "A pulley is a wheel with a rope over it. Pull the rope down, and the load goes up! Wells and flagpoles use pulleys.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪢",
+              "⬇️",
+              "🪣",
+              "⬆️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Pull down, lift up"
+        },
+        {
+          "mode": "choice",
+          "ask": "On a see-saw, one side goes down. What does the other side do?",
+          "options": [
+            {
+              "emoji": "⬆️",
+              "label": "Goes up"
+            },
+            {
+              "emoji": "⬇️",
+              "label": "Goes down",
+              "why": "A lever tips: one end down, the other up."
+            },
+            {
+              "emoji": "🔄",
+              "label": "Spins",
+              "why": "A see-saw tips, it doesn't spin."
+            }
+          ],
+          "answer": 0,
+          "explain": "A lever tips, so when one end goes down, the other goes up."
+        },
+        {
+          "mode": "choice",
+          "ask": "You pull down on a pulley rope. What happens to the bucket?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪢",
+              "🪣"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬇️",
+              "label": "It goes down",
+              "why": "A pulley turns your pull down into a lift up."
+            },
+            {
+              "emoji": "⬆️",
+              "label": "It goes up"
+            }
+          ],
+          "answer": 1,
+          "explain": "The rope goes over the wheel, so pulling down lifts the bucket up."
+        },
+        {
+          "mode": "choice",
+          "ask": "You open a paint tin by pushing down on a spoon handle. The spoon is a...",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥄",
+              "🥫"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⚙️",
+              "label": "Wheel",
+              "why": "The spoon doesn't roll."
+            },
+            {
+              "emoji": "↗️",
+              "label": "Ramp",
+              "why": "The spoon isn't a slope to roll up."
+            },
+            {
+              "emoji": "⚖️",
+              "label": "Lever"
+            }
+          ],
+          "answer": 2,
+          "explain": "Push one end down, and the other end lifts the lid. That's a lever!"
+        },
+        {
+          "mode": "sort",
+          "ask": "Lever or wheel?",
+          "bins": [
+            {
+              "label": "Lever",
+              "emoji": "⚖️"
+            },
+            {
+              "label": "Wheel",
+              "emoji": "⚙️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "✂️",
+              "bin": 0,
+              "name": "scissors"
+            },
+            {
+              "emoji": "🔨",
+              "bin": 0,
+              "name": "hammer pulling a nail"
+            },
+            {
+              "emoji": "🥄",
+              "bin": 0,
+              "name": "spoon lifting a lid"
+            },
+            {
+              "emoji": "🚗",
+              "bin": 1,
+              "name": "car"
+            },
+            {
+              "emoji": "🛒",
+              "bin": 1,
+              "name": "cart"
+            },
+            {
+              "emoji": "🛹",
+              "bin": 1,
+              "name": "skateboard"
+            }
+          ],
+          "explain": "Scissors, hammers and spoons can tip as levers. Cars, carts and skateboards roll on wheels."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which machine raises a flag to the top of a pole?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚩"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⚖️",
+              "label": "See-saw",
+              "why": "A see-saw can't reach the top of a pole."
+            },
+            {
+              "emoji": "🪢",
+              "label": "Pulley"
+            },
+            {
+              "emoji": "↗️",
+              "label": "Ramp",
+              "why": "A ramp can't go straight up a pole."
+            }
+          ],
+          "answer": 1,
+          "explain": "Pull the rope down, and the pulley lifts the flag up."
+        }
+      ]
+    },
+    {
+      "id": "simple-machines-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Pick the machine",
+      "intro": {
+        "say": "Let's be engineers! Choose the best simple machine for each job.",
+        "icons": [
+          "🏗️",
+          "⚙️",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A ramp lets you push a load up a slope instead of lifting it. A longer, gentler ramp needs a smaller push.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "📦",
+              "↗️",
+              "💪"
+            ],
+            "size": "lg"
+          },
+          "caption": "Longer ramp = easier push"
+        },
+        {
+          "mode": "show",
+          "say": "A wheel turns on a rod called an axle. A pulley is a wheel with a rope. A lever tips on a middle point.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⚙️",
+              "🪢",
+              "⚖️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Wheel, pulley, lever"
+        },
+        {
+          "mode": "choice",
+          "ask": "A builder must lift bricks up to a roof. Which machine helps most?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧱",
+              "🏠"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⚖️",
+              "label": "See-saw",
+              "why": "A see-saw can't lift things that high."
+            },
+            {
+              "emoji": "🛹",
+              "label": "Skateboard",
+              "why": "A skateboard rolls along, not up."
+            },
+            {
+              "emoji": "🪢",
+              "label": "Pulley"
+            }
+          ],
+          "answer": 2,
+          "explain": "A pulley with a rope can lift heavy loads high up."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which ramp makes pushing a heavy box easier?",
+          "options": [
+            {
+              "emoji": "📐",
+              "label": "Long, gentle ramp"
+            },
+            {
+              "emoji": "⛰️",
+              "label": "Short, steep ramp",
+              "why": "A steep ramp needs a much bigger push."
+            }
+          ],
+          "answer": 0,
+          "explain": "A gentle slope needs a smaller push, even though it's longer."
+        },
+        {
+          "mode": "sort",
+          "ask": "Which simple machine is it?",
+          "bins": [
+            {
+              "label": "Pulley",
+              "emoji": "🪢"
+            },
+            {
+              "label": "Lever",
+              "emoji": "⚖️"
+            },
+            {
+              "label": "Wheel and axle",
+              "emoji": "⚙️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🚩",
+              "bin": 0,
+              "name": "flagpole rope"
+            },
+            {
+              "emoji": "🏗️",
+              "bin": 0,
+              "name": "crane"
+            },
+            {
+              "emoji": "✂️",
+              "bin": 1,
+              "name": "scissors"
+            },
+            {
+              "emoji": "🔨",
+              "bin": 1,
+              "name": "hammer pulling a nail"
+            },
+            {
+              "emoji": "🚗",
+              "bin": 2,
+              "name": "car"
+            },
+            {
+              "emoji": "🎡",
+              "bin": 2,
+              "name": "big wheel ride"
+            }
+          ],
+          "explain": "Flagpoles and cranes use pulleys, scissors and hammers are levers, and cars and big wheels turn on axles."
+        },
+        {
+          "mode": "choice",
+          "ask": "A heavy grown-up and a small child want to balance a see-saw. Where should the grown-up sit?",
+          "options": [
+            {
+              "emoji": "↔️",
+              "label": "At the very end",
+              "why": "That makes the grown-up's side drop even more."
+            },
+            {
+              "emoji": "🎯",
+              "label": "Closer to the middle"
+            }
+          ],
+          "answer": 1,
+          "explain": "Sitting closer to the middle gives the heavy side less turning power, so it balances."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why is a wheelbarrow easier than carrying the load?",
+          "options": [
+            {
+              "emoji": "⚙️",
+              "label": "The wheel takes the weight"
+            },
+            {
+              "emoji": "🪶",
+              "label": "The load gets lighter",
+              "why": "The load weighs the same. The wheel helps carry it."
+            },
+            {
+              "emoji": "✨",
+              "label": "It's magic",
+              "why": "It's not magic, it's a simple machine!"
+            }
+          ],
+          "answer": 0,
+          "explain": "The wheel rolls and holds much of the weight, so you push less."
+        },
+        {
+          "mode": "order",
+          "ask": "Order these ramps from easiest push to hardest push.",
+          "items": [
+            {
+              "emoji": "📐",
+              "label": "Long and gentle"
+            },
+            {
+              "emoji": "📏",
+              "label": "Medium"
+            },
+            {
+              "emoji": "⛰️",
+              "label": "Short and steep"
+            }
+          ],
+          "explain": "The steeper the ramp, the harder you have to push."
+        }
+      ]
+    }
+  ]
+}

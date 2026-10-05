@@ -1,0 +1,534 @@
+{
+  "topicId": "tally-charts",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "tally-charts-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Little lines",
+      "intro": {
+        "say": "Tally marks are a quick way to count. One line for each thing!",
+        "icons": [
+          "✏️",
+          "🐞",
+          "🔢"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Each line stands for one thing. One, two, three lines means three ladybirds.",
+          "visual": {
+            "kind": "tally",
+            "count": 3
+          },
+          "caption": "3 ladybirds 🐞🐞🐞"
+        },
+        {
+          "mode": "show",
+          "say": "Four lines, then for the fifth one we draw a line across them all. That makes a bundle of 5!",
+          "visual": {
+            "kind": "tally",
+            "count": 5
+          },
+          "caption": "A bundle of 5"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 2
+          },
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "3",
+              "why": "Count the lines one by one."
+            },
+            {
+              "label": "4",
+              "why": "Count the lines one by one."
+            }
+          ],
+          "answer": 0,
+          "explain": "There are 2 lines, so it shows 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 4
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "Touch each line as you count."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5",
+              "why": "There is not a line across yet, so it is not 5."
+            }
+          ],
+          "answer": 1,
+          "explain": "There are 4 lines standing up, so it shows 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 5
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Remember the line across counts too!"
+            },
+            {
+              "label": "6",
+              "why": "There is just one bundle here."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "Four lines and one across make a bundle of 5."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 6
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Count the bundle, then the extra line."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "7",
+              "why": "There is only one extra line."
+            }
+          ],
+          "answer": 1,
+          "explain": "A bundle of 5 and 1 more line makes 6.",
+          "hint": "A bundle is 5. Count on from 5."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 3 ducks. Which tally shows 3?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦆",
+              "🦆",
+              "🦆"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "| |",
+              "why": "That is only 2 lines."
+            },
+            {
+              "label": "| | | |",
+              "why": "That is 4 lines, one too many."
+            },
+            {
+              "label": "| | |"
+            }
+          ],
+          "answer": 2,
+          "explain": "One line for each duck: three lines."
+        },
+        {
+          "mode": "choice",
+          "ask": "When we get to five, what do we draw?",
+          "visual": {
+            "kind": "tally",
+            "count": 4
+          },
+          "options": [
+            {
+              "label": "A circle",
+              "why": "We keep it quick with lines."
+            },
+            {
+              "label": "A dot",
+              "why": "We use lines for tallies."
+            },
+            {
+              "label": "A line across"
+            }
+          ],
+          "answer": 2,
+          "explain": "The fifth line goes across the other four, to make a bundle."
+        }
+      ]
+    },
+    {
+      "id": "tally-charts-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Count in fives",
+      "intro": {
+        "say": "Bundles of five make big tallies quick to count. Let us count in fives!",
+        "icons": [
+          "✏️",
+          "5️⃣",
+          "🔟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Two bundles! Count in fives: five, ten. This tally shows 10.",
+          "visual": {
+            "kind": "tally",
+            "count": 10
+          },
+          "caption": "5, 10"
+        },
+        {
+          "mode": "show",
+          "say": "Count the bundles first: five, ten. Then count on the single lines: eleven, twelve.",
+          "visual": {
+            "kind": "tally",
+            "count": 12
+          },
+          "caption": "5, 10, 11, 12"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 8
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "Count on from 5: 6, 7, 8."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "9",
+              "why": "Count the extra lines carefully."
+            }
+          ],
+          "answer": 1,
+          "explain": "A bundle of 5 and 3 more lines makes 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 15
+          },
+          "options": [
+            {
+              "label": "14",
+              "why": "Count in fives: 5, 10, 15."
+            },
+            {
+              "label": "3",
+              "why": "Each bundle means 5, not 1."
+            },
+            {
+              "label": "15"
+            }
+          ],
+          "answer": 2,
+          "explain": "Three bundles of five: 5, 10, 15."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 13
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "Count the single lines after 10."
+            },
+            {
+              "label": "13"
+            },
+            {
+              "label": "15",
+              "why": "There are only 2 full bundles."
+            }
+          ],
+          "answer": 1,
+          "explain": "Two bundles make 10, and 3 more lines make 13."
+        },
+        {
+          "mode": "choice",
+          "ask": "Lily saw 9 birds. One more bird lands. How many birds now?",
+          "visual": {
+            "kind": "tally",
+            "count": 9
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "One more came, so add one."
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "11",
+              "why": "Only one more bird came."
+            }
+          ],
+          "answer": 1,
+          "explain": "Nine and one more makes 10, two full bundles."
+        },
+        {
+          "mode": "choice",
+          "ask": "Seven children like ice cream. How many full bundles of five will the tally have?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍦",
+              "🍦",
+              "🍦",
+              "🍦",
+              "🍦",
+              "🍦",
+              "🍦"
+            ]
+          },
+          "options": [
+            {
+              "label": "1"
+            },
+            {
+              "label": "2",
+              "why": "Two bundles would be 10."
+            },
+            {
+              "label": "7",
+              "why": "A bundle holds 5, not 1."
+            }
+          ],
+          "answer": 0,
+          "explain": "Seven is one bundle of 5 and 2 more lines."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is the most?",
+          "visual": {
+            "kind": "tally",
+            "count": 11
+          },
+          "options": [
+            {
+              "label": "Tally of 6",
+              "why": "6 is less than 11."
+            },
+            {
+              "label": "Tally of 11"
+            },
+            {
+              "label": "Tally of 9",
+              "why": "9 is less than 11."
+            }
+          ],
+          "answer": 1,
+          "explain": "Eleven is the biggest: two bundles and one more."
+        }
+      ]
+    },
+    {
+      "id": "tally-charts-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Tally charts",
+      "intro": {
+        "say": "A tally chart helps us count votes and compare. Let us count and compare!",
+        "icons": [
+          "📋",
+          "✏️",
+          "🗳️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Children voted for their best fruit. Apples got a bundle of five and 2 more: that is 7 votes.",
+          "visual": {
+            "kind": "tally",
+            "count": 7
+          },
+          "caption": "🍎 votes: 7"
+        },
+        {
+          "mode": "show",
+          "say": "Bananas got 4 votes. To compare, take away: 7 take away 4 is 3. Apples got 3 more votes.",
+          "visual": {
+            "kind": "tally",
+            "count": 4
+          },
+          "caption": "🍌 votes: 4    7 - 4 = 3"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 17
+          },
+          "options": [
+            {
+              "label": "15",
+              "why": "Count on the single lines after 15."
+            },
+            {
+              "label": "17"
+            },
+            {
+              "label": "22",
+              "why": "Count in fives: 5, 10, 15, then 2 more."
+            }
+          ],
+          "answer": 1,
+          "explain": "Three bundles make 15, and 2 more makes 17."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many does this tally show?",
+          "visual": {
+            "kind": "tally",
+            "count": 20
+          },
+          "options": [
+            {
+              "label": "20"
+            },
+            {
+              "label": "4",
+              "why": "Each bundle means 5, not 1."
+            },
+            {
+              "label": "25",
+              "why": "Count the bundles: there are 4."
+            }
+          ],
+          "answer": 0,
+          "explain": "Four bundles of five: 5, 10, 15, 20."
+        },
+        {
+          "mode": "choice",
+          "ask": "This tally shows the votes for dogs. Cats got 6 votes. How many more votes did dogs get?",
+          "visual": {
+            "kind": "tally",
+            "count": 11
+          },
+          "options": [
+            {
+              "label": "6",
+              "why": "That is the cat votes. Find the difference."
+            },
+            {
+              "label": "17",
+              "why": "We want the difference, not the total."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "Dogs got 11. Eleven take away 6 is 5.",
+          "hint": "First count the dog votes. Then take away 6."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many bundles of five do we need to show 20?",
+          "options": [
+            {
+              "label": "2",
+              "why": "Two bundles is only 10."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5",
+              "why": "Five bundles would be 25."
+            }
+          ],
+          "answer": 1,
+          "explain": "5, 10, 15, 20: that is 4 bundles."
+        },
+        {
+          "mode": "choice",
+          "ask": "This tally shows 14. How many more lines to finish the next bundle?",
+          "visual": {
+            "kind": "tally",
+            "count": 14
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "14 and 2 more is 16."
+            },
+            {
+              "label": "1"
+            },
+            {
+              "label": "5",
+              "why": "The bundle is nearly done."
+            }
+          ],
+          "answer": 1,
+          "explain": "14 and 1 more makes 15, a full bundle."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the steps of making a tally chart in order.",
+          "items": [
+            {
+              "emoji": "❓",
+              "label": "Ask a question"
+            },
+            {
+              "emoji": "✏️",
+              "label": "Draw a line per answer"
+            },
+            {
+              "emoji": "🔢",
+              "label": "Count the bundles"
+            },
+            {
+              "emoji": "🏆",
+              "label": "Find the most"
+            }
+          ],
+          "explain": "First ask, then draw tallies, then count, and then compare to find the most."
+        }
+      ]
+    }
+  ]
+}

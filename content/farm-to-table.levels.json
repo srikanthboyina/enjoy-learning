@@ -1,0 +1,592 @@
+{
+  "topicId": "farm-to-table",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "farm-to-table-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Where food comes from",
+      "intro": {
+        "say": "Our food comes from plants and animals on farms. Let's find out where!",
+        "icons": [
+          "🚜",
+          "🐄",
+          "🍎"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Cows give us milk. Hens lay eggs. Bees make honey. Farmers look after them.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐄",
+              "🥛",
+              "🐔",
+              "🥚",
+              "🍯"
+            ]
+          },
+          "caption": "Milk · Eggs · Honey"
+        },
+        {
+          "mode": "show",
+          "say": "Apples grow on trees. Carrots and potatoes grow under the ground. Farmers plant them and pick them.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌳",
+              "🍎",
+              "🥕",
+              "🥔"
+            ]
+          },
+          "caption": "Fruit and vegetables grow"
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does milk come from?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥛"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Cow",
+              "emoji": "🐄"
+            },
+            {
+              "label": "Hen",
+              "emoji": "🐔",
+              "why": "Hens give us eggs."
+            },
+            {
+              "label": "Bee",
+              "emoji": "🐝",
+              "why": "Bees make honey."
+            }
+          ],
+          "answer": 0,
+          "explain": "Farmers milk cows to give us milk."
+        },
+        {
+          "mode": "choice",
+          "ask": "Who lays eggs for our breakfast?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍳"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Pig",
+              "emoji": "🐷",
+              "why": "Pigs don't lay eggs."
+            },
+            {
+              "label": "Hen",
+              "emoji": "🐔"
+            },
+            {
+              "label": "Cow",
+              "emoji": "🐄",
+              "why": "Cows give milk."
+            }
+          ],
+          "answer": 1,
+          "explain": "Hens lay the eggs we eat."
+        },
+        {
+          "mode": "choice",
+          "ask": "Who makes honey?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍯"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Sheep",
+              "emoji": "🐑",
+              "why": "Sheep give us wool."
+            },
+            {
+              "label": "Cow",
+              "emoji": "🐄",
+              "why": "Cows give milk."
+            },
+            {
+              "label": "Bee",
+              "emoji": "🐝"
+            }
+          ],
+          "answer": 2,
+          "explain": "Bees make honey from the nectar in flowers."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where do apples grow?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "On trees",
+              "emoji": "🌳"
+            },
+            {
+              "label": "Under the ground",
+              "emoji": "🟫",
+              "why": "Carrots grow there, but apples hang on trees."
+            },
+            {
+              "label": "From cows",
+              "emoji": "🐄",
+              "why": "Cows give us milk."
+            }
+          ],
+          "answer": 0,
+          "explain": "Apples grow on apple trees."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which food grows under the ground?",
+          "options": [
+            {
+              "label": "Banana",
+              "emoji": "🍌",
+              "why": "Bananas grow on plants up high."
+            },
+            {
+              "label": "Carrot",
+              "emoji": "🥕"
+            },
+            {
+              "label": "Cherry",
+              "emoji": "🍒",
+              "why": "Cherries grow on trees."
+            }
+          ],
+          "answer": 1,
+          "explain": "A carrot grows down in the soil. We pull it up!"
+        }
+      ]
+    },
+    {
+      "id": "farm-to-table-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "From farm to food",
+      "intro": {
+        "say": "Lots of food is made from things grown on farms. Let's see how!",
+        "icons": [
+          "🌾",
+          "🍞",
+          "🧀"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Wheat grows in fields. It is ground into flour. Flour is baked into bread!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌾",
+              "➡️",
+              "🥣",
+              "➡️",
+              "🍞"
+            ]
+          },
+          "caption": "wheat → flour → bread"
+        },
+        {
+          "mode": "show",
+          "say": "Milk can be made into cheese, butter and yoghurt. They all start from a cow!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐄",
+              "🥛",
+              "🧀",
+              "🧈"
+            ]
+          },
+          "caption": "Milk makes cheese and butter"
+        },
+        {
+          "mode": "order",
+          "ask": "How is bread made? Put the steps in order.",
+          "items": [
+            {
+              "label": "Wheat",
+              "emoji": "🌾"
+            },
+            {
+              "label": "Flour",
+              "emoji": "🥣"
+            },
+            {
+              "label": "Bread",
+              "emoji": "🍞"
+            }
+          ],
+          "explain": "Wheat is ground into flour, and flour is baked into bread."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is cheese made from?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🧀"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Apples",
+              "emoji": "🍎",
+              "why": "Apples make juice, not cheese."
+            },
+            {
+              "label": "Wheat",
+              "emoji": "🌾",
+              "why": "Wheat makes flour."
+            },
+            {
+              "label": "Milk",
+              "emoji": "🥛"
+            }
+          ],
+          "answer": 2,
+          "explain": "Cheese is made from milk."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it come from a plant or an animal?",
+          "bins": [
+            {
+              "label": "Plant",
+              "emoji": "🌱"
+            },
+            {
+              "label": "Animal",
+              "emoji": "🐄"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "bin": 0,
+              "name": "apple"
+            },
+            {
+              "emoji": "🥛",
+              "bin": 1,
+              "name": "milk"
+            },
+            {
+              "emoji": "🥕",
+              "bin": 0,
+              "name": "carrot"
+            },
+            {
+              "emoji": "🥚",
+              "bin": 1,
+              "name": "egg"
+            },
+            {
+              "emoji": "🍞",
+              "bin": 0,
+              "name": "bread"
+            },
+            {
+              "emoji": "🧀",
+              "bin": 1,
+              "name": "cheese"
+            }
+          ],
+          "explain": "Apples, carrots and bread come from plants. Milk, eggs and cheese come from animals.",
+          "hint": "Bread is made from wheat, a plant."
+        },
+        {
+          "mode": "choice",
+          "ask": "Popcorn is made from which plant?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍿"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Corn",
+              "emoji": "🌽"
+            },
+            {
+              "label": "Potato",
+              "emoji": "🥔",
+              "why": "Potatoes make chips."
+            },
+            {
+              "label": "Grapes",
+              "emoji": "🍇",
+              "why": "Grapes don't pop!"
+            }
+          ],
+          "answer": 0,
+          "explain": "Popcorn is made by heating dried corn kernels until they pop."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which of these is made from wheat flour?",
+          "options": [
+            {
+              "label": "Butter",
+              "emoji": "🧈",
+              "why": "Butter is made from milk."
+            },
+            {
+              "label": "Honey",
+              "emoji": "🍯",
+              "why": "Bees make honey."
+            },
+            {
+              "label": "Pasta",
+              "emoji": "🍝"
+            }
+          ],
+          "answer": 2,
+          "explain": "Pasta is made from wheat flour and water."
+        }
+      ]
+    },
+    {
+      "id": "farm-to-table-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "The food journey",
+      "intro": {
+        "say": "Food takes a long journey from the farm to your plate. Let's follow it!",
+        "icons": [
+          "🚜",
+          "🚚",
+          "🏪",
+          "🍽️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Farmers grow and pick the food. Trucks carry it to factories and shops. Then we buy it and cook it at home!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🚜",
+              "➡️",
+              "🚚",
+              "➡️",
+              "🏪",
+              "➡️",
+              "🍽️"
+            ]
+          },
+          "caption": "farm → truck → shop → plate"
+        },
+        {
+          "mode": "show",
+          "say": "Some foods are changed on the way. Potatoes become chips. Tomatoes become ketchup. Strawberries become jam.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥔",
+              "🍟",
+              "🍅",
+              "🍓"
+            ]
+          },
+          "caption": "Foods can be changed"
+        },
+        {
+          "mode": "order",
+          "ask": "Follow the milk from the farm to your cereal.",
+          "items": [
+            {
+              "label": "Cow is milked",
+              "emoji": "🐄"
+            },
+            {
+              "label": "Truck",
+              "emoji": "🚚"
+            },
+            {
+              "label": "Shop",
+              "emoji": "🏪"
+            },
+            {
+              "label": "Breakfast",
+              "emoji": "🥣"
+            }
+          ],
+          "explain": "The cow is milked, a truck takes the milk to the shop, and then it goes on your cereal."
+        },
+        {
+          "mode": "choice",
+          "ask": "Chips and fries are made from which vegetable?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍟"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Carrot",
+              "emoji": "🥕",
+              "why": "Carrots are orange sticks, but fries come from potatoes."
+            },
+            {
+              "label": "Potato",
+              "emoji": "🥔"
+            },
+            {
+              "label": "Corn",
+              "emoji": "🌽",
+              "why": "Corn makes popcorn."
+            }
+          ],
+          "answer": 1,
+          "explain": "Fries are potatoes cut into sticks and cooked."
+        },
+        {
+          "mode": "choice",
+          "ask": "A pizza has a bread base, cheese and tomato sauce. Which farm gives us the cheese?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍕"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "Dairy farm",
+              "emoji": "🐄"
+            },
+            {
+              "label": "Wheat farm",
+              "emoji": "🌾",
+              "why": "Wheat makes the base, not the cheese."
+            },
+            {
+              "label": "Tomato farm",
+              "emoji": "🍅",
+              "why": "Tomatoes make the sauce."
+            }
+          ],
+          "answer": 0,
+          "explain": "Cheese comes from milk, and milk comes from a dairy farm with cows."
+        },
+        {
+          "mode": "choice",
+          "ask": "Strawberry jam is made from what?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍓",
+              "🍬"
+            ]
+          },
+          "options": [
+            {
+              "label": "Milk",
+              "emoji": "🥛",
+              "why": "Milk makes cheese and butter."
+            },
+            {
+              "label": "Wheat",
+              "emoji": "🌾",
+              "why": "Wheat makes flour."
+            },
+            {
+              "label": "Fruit",
+              "emoji": "🍓"
+            }
+          ],
+          "answer": 2,
+          "explain": "Jam is fruit cooked with sugar."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the apple juice story in order.",
+          "items": [
+            {
+              "label": "Plant seeds",
+              "emoji": "🌱"
+            },
+            {
+              "label": "Tree grows",
+              "emoji": "🌳"
+            },
+            {
+              "label": "Pick apples",
+              "emoji": "🍎"
+            },
+            {
+              "label": "Make juice",
+              "emoji": "🧃"
+            }
+          ],
+          "explain": "Seeds grow into a tree, apples are picked, and they are squeezed into juice."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why are trucks important for our food?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚚"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "They grow food",
+              "emoji": "🌱",
+              "why": "Farmers grow the food."
+            },
+            {
+              "label": "They take food to shops",
+              "emoji": "🏪"
+            },
+            {
+              "label": "They cook food",
+              "emoji": "🍳",
+              "why": "We cook food at home."
+            }
+          ],
+          "answer": 1,
+          "explain": "Trucks carry food from farms to shops, so we can buy it."
+        }
+      ]
+    }
+  ]
+}

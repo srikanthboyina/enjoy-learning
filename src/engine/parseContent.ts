@@ -2,8 +2,8 @@
 import type { z } from 'zod';
 
 import { ROUND_SCHEMAS } from '../games/schemas';
-import { DIFFICULTIES, LevelFileSchema, TopicsFileSchema, levelSchema } from './contentSchema';
-import type { GameId, Level, Topic } from './types';
+import { DIFFICULTIES, GroupsFileSchema, LevelFileSchema, TopicsFileSchema, levelSchema } from './contentSchema';
+import type { GameId, Group, Level, Topic } from './types';
 
 export interface ParseIssue {
   where: string;
@@ -24,6 +24,19 @@ export function parseTopics(raw: unknown, issues: ParseIssue[]): Topic[] {
   for (const t of result.data) {
     if (ids.has(t.id)) issues.push({ where: 'topics.json', message: `duplicate topic id "${t.id}"` });
     ids.add(t.id);
+  }
+  return result.data;
+}
+
+export function parseGroups(raw: unknown, topics: Topic[], issues: ParseIssue[]): Group[] {
+  const result = GroupsFileSchema.safeParse(raw);
+  if (!result.success) {
+    issues.push({ where: 'groups.json', message: formatZod(result.error) });
+    return [];
+  }
+  const ids = new Set(result.data.map((g) => g.id));
+  for (const t of topics) {
+    if (!ids.has(t.group)) issues.push({ where: 'topics.json', message: `${t.id}: group "${t.group}" is not in groups.json` });
   }
   return result.data;
 }

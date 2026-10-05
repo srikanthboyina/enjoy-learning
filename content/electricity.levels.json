@@ -1,0 +1,594 @@
+{
+  "topicId": "electricity",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "electricity-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Things that use electricity",
+      "intro": {
+        "say": "Electricity is energy that makes lots of things work, like lights and TVs!",
+        "icons": [
+          "⚡",
+          "💡",
+          "📺"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A lamp, a TV and a fridge all need electricity. They get it through a plug in the wall.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💡",
+              "📺",
+              "🔌"
+            ],
+            "size": "lg"
+          },
+          "caption": "Plug in"
+        },
+        {
+          "mode": "show",
+          "say": "Some things get electricity from batteries, like a torch or a toy robot.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔦",
+              "🔋",
+              "🤖"
+            ],
+            "size": "lg"
+          },
+          "caption": "Batteries"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one needs electricity?",
+          "options": [
+            {
+              "emoji": "⚽",
+              "label": "Ball",
+              "why": "A ball works without electricity."
+            },
+            {
+              "emoji": "📺",
+              "label": "TV"
+            },
+            {
+              "emoji": "🧸",
+              "label": "Teddy",
+              "why": "A teddy works without electricity."
+            }
+          ],
+          "answer": 1,
+          "explain": "A TV needs electricity to show pictures."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it use electricity?",
+          "bins": [
+            {
+              "label": "Uses electricity",
+              "emoji": "⚡"
+            },
+            {
+              "label": "No electricity",
+              "emoji": "🚫"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "📺",
+              "bin": 0,
+              "name": "TV"
+            },
+            {
+              "emoji": "💡",
+              "bin": 0,
+              "name": "lamp"
+            },
+            {
+              "emoji": "📱",
+              "bin": 0,
+              "name": "phone"
+            },
+            {
+              "emoji": "📚",
+              "bin": 1,
+              "name": "book"
+            },
+            {
+              "emoji": "🪁",
+              "bin": 1,
+              "name": "kite"
+            },
+            {
+              "emoji": "🧩",
+              "bin": 1,
+              "name": "puzzle"
+            }
+          ],
+          "explain": "TVs, lamps and phones use electricity. Books, kites and puzzles don't."
+        },
+        {
+          "mode": "choice",
+          "ask": "Is it safe to poke things into a wall socket?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔌",
+              "⚠️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Yes",
+              "why": "Sockets can give a dangerous shock."
+            },
+            {
+              "emoji": "🚫",
+              "label": "No, never!"
+            }
+          ],
+          "answer": 1,
+          "explain": "Never poke anything into a socket. Electricity can hurt you."
+        },
+        {
+          "mode": "choice",
+          "ask": "What gives a torch its electricity?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔦"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🔋",
+              "label": "Battery"
+            },
+            {
+              "emoji": "🍌",
+              "label": "Banana",
+              "why": "A banana is food, not a power source."
+            },
+            {
+              "emoji": "💧",
+              "label": "Water",
+              "why": "Water must stay far from electricity!"
+            }
+          ],
+          "answer": 0,
+          "explain": "Batteries store electricity for torches and toys."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one does NOT need electricity?",
+          "options": [
+            {
+              "emoji": "💡",
+              "label": "Lamp",
+              "why": "A lamp needs electricity to shine."
+            },
+            {
+              "emoji": "📱",
+              "label": "Phone",
+              "why": "A phone needs a charged battery."
+            },
+            {
+              "emoji": "📖",
+              "label": "Book"
+            }
+          ],
+          "answer": 2,
+          "explain": "You can read a book without any electricity."
+        }
+      ]
+    },
+    {
+      "id": "electricity-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Staying safe",
+      "intro": {
+        "say": "Electricity is helpful, but it can be dangerous. Let's learn how to stay safe!",
+        "icons": [
+          "⚡",
+          "⚠️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Never touch plug sockets or put fingers or toys in them. Always ask a grown-up to help with plugs.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔌",
+              "🚫",
+              "✋"
+            ],
+            "size": "lg"
+          },
+          "caption": "Don't touch sockets"
+        },
+        {
+          "mode": "show",
+          "say": "Water and electricity are a dangerous mix. Keep drinks and wet hands away from plugs and machines.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "💧",
+              "🚫",
+              "🔌"
+            ],
+            "size": "lg"
+          },
+          "caption": "Keep water away"
+        },
+        {
+          "mode": "show",
+          "say": "Stay far away from power lines. Never fly a kite or climb a tree near them.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪁",
+              "🚫",
+              "⚡"
+            ],
+            "size": "lg"
+          },
+          "caption": "Keep away from power lines"
+        },
+        {
+          "mode": "choice",
+          "ask": "Your hands are wet. What should you do before touching a plug?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🙌",
+              "💧"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🔌",
+              "label": "Touch it now",
+              "why": "Wet hands and electricity are dangerous."
+            },
+            {
+              "emoji": "🧻",
+              "label": "Dry my hands first"
+            }
+          ],
+          "answer": 1,
+          "explain": "Dry hands are much safer, and a grown-up should help with plugs."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where is a safe place to fly a kite?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🪁"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🏞️",
+              "label": "Open park"
+            },
+            {
+              "emoji": "⚡",
+              "label": "Near power lines",
+              "why": "Power lines are very dangerous. Fly far away from them."
+            }
+          ],
+          "answer": 0,
+          "explain": "An open park away from power lines is safe."
+        },
+        {
+          "mode": "sort",
+          "ask": "Safe or not safe?",
+          "bins": [
+            {
+              "label": "Safe",
+              "emoji": "✅"
+            },
+            {
+              "label": "Not safe",
+              "emoji": "⚠️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🙋",
+              "bin": 0,
+              "name": "asking a grown-up to plug in"
+            },
+            {
+              "emoji": "🔦",
+              "bin": 0,
+              "name": "using a torch"
+            },
+            {
+              "emoji": "📺",
+              "bin": 0,
+              "name": "watching TV"
+            },
+            {
+              "emoji": "🔌",
+              "bin": 1,
+              "name": "poking a socket"
+            },
+            {
+              "emoji": "💧",
+              "bin": 1,
+              "name": "water near plugs"
+            },
+            {
+              "emoji": "⚡",
+              "bin": 1,
+              "name": "playing near power lines"
+            }
+          ],
+          "explain": "Sockets, water near plugs and power lines can give a shock, so we keep away from them."
+        },
+        {
+          "mode": "choice",
+          "ask": "A cable looks broken. What should you do?",
+          "options": [
+            {
+              "emoji": "✋",
+              "label": "Touch it",
+              "why": "A broken cable could give you a shock."
+            },
+            {
+              "emoji": "🙋",
+              "label": "Tell a grown-up"
+            },
+            {
+              "emoji": "🪢",
+              "label": "Pull it",
+              "why": "A broken cable could give you a shock."
+            }
+          ],
+          "answer": 1,
+          "explain": "A broken cable can give a shock, so keep away and tell a grown-up."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why must we keep water away from electricity?",
+          "options": [
+            {
+              "emoji": "💡",
+              "label": "Lights get brighter",
+              "why": "Water doesn't make lights brighter."
+            },
+            {
+              "emoji": "🥤",
+              "label": "Plugs get thirsty",
+              "why": "Plugs don't drink!"
+            },
+            {
+              "emoji": "⚠️",
+              "label": "It can hurt you"
+            }
+          ],
+          "answer": 2,
+          "explain": "Water lets electricity travel to you and give you a shock."
+        }
+      ]
+    },
+    {
+      "id": "electricity-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Circuits",
+      "intro": {
+        "say": "Electricity flows around a path called a circuit. Let's find out how a bulb lights up!",
+        "icons": [
+          "🔋",
+          "➰",
+          "💡"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A circuit is a loop. Electricity flows from the battery, through a wire, to the bulb, and back to the battery.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔋",
+              "➰",
+              "💡",
+              "✨"
+            ],
+            "size": "lg"
+          },
+          "caption": "Complete loop = light!"
+        },
+        {
+          "mode": "show",
+          "say": "If there's a gap in the loop, electricity can't flow and the bulb goes dark. A switch opens a gap to turn things off.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔋",
+              "✂️",
+              "💡"
+            ],
+            "size": "lg"
+          },
+          "caption": "Gap = no light"
+        },
+        {
+          "mode": "choice",
+          "ask": "The wire has a gap in it. Will the bulb light?",
+          "visual": {
+            "kind": "text",
+            "text": "🔋 ── ✂️ ── 💡"
+          },
+          "options": [
+            {
+              "emoji": "❌",
+              "label": "No"
+            },
+            {
+              "emoji": "✅",
+              "label": "Yes",
+              "why": "Electricity can't jump across the gap."
+            }
+          ],
+          "answer": 0,
+          "explain": "The loop is broken, so electricity can't reach the bulb."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a light switch do?",
+          "options": [
+            {
+              "emoji": "🎨",
+              "label": "Changes colour",
+              "why": "A switch doesn't change colours."
+            },
+            {
+              "emoji": "🔘",
+              "label": "Opens or closes the loop"
+            },
+            {
+              "emoji": "🔋",
+              "label": "Makes the battery bigger",
+              "why": "A switch doesn't change the battery."
+            }
+          ],
+          "answer": 1,
+          "explain": "A switch closes the loop to turn on and opens it to turn off."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the steps in order to light up a torch.",
+          "items": [
+            {
+              "emoji": "🔋",
+              "label": "Put in battery"
+            },
+            {
+              "emoji": "🔘",
+              "label": "Press switch"
+            },
+            {
+              "emoji": "💡",
+              "label": "Light shines"
+            }
+          ],
+          "explain": "First the battery, then the switch closes the loop, then the light shines."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does electricity flow through it?",
+          "bins": [
+            {
+              "label": "Lets it through",
+              "emoji": "⚡"
+            },
+            {
+              "label": "Blocks it",
+              "emoji": "🛑"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔩",
+              "bin": 0,
+              "name": "metal bolt"
+            },
+            {
+              "emoji": "📎",
+              "bin": 0,
+              "name": "metal paper clip"
+            },
+            {
+              "emoji": "🔑",
+              "bin": 0,
+              "name": "metal key"
+            },
+            {
+              "emoji": "🪵",
+              "bin": 1,
+              "name": "wood"
+            },
+            {
+              "emoji": "🎈",
+              "bin": 1,
+              "name": "rubber balloon"
+            },
+            {
+              "emoji": "🖍️",
+              "bin": 1,
+              "name": "crayon"
+            }
+          ],
+          "explain": "Metals let electricity flow. Wood, rubber and wax block it."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why are wires covered in plastic?",
+          "options": [
+            {
+              "emoji": "🎨",
+              "label": "To look pretty",
+              "why": "Colours help, but there's a safety reason."
+            },
+            {
+              "emoji": "🌊",
+              "label": "To make them float",
+              "why": "Wires don't need to float."
+            },
+            {
+              "emoji": "🦺",
+              "label": "To keep us safe"
+            }
+          ],
+          "answer": 2,
+          "explain": "Plastic blocks electricity, so it stays inside the wire and away from us."
+        },
+        {
+          "mode": "choice",
+          "ask": "The torch's battery is used up. Will it shine?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔦",
+              "🔋"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🔆",
+              "label": "Yes, brightly",
+              "why": "A used-up battery has no electricity left to give."
+            },
+            {
+              "emoji": "❌",
+              "label": "No"
+            }
+          ],
+          "answer": 1,
+          "explain": "With no electricity from the battery, the bulb can't light."
+        }
+      ]
+    }
+  ]
+}

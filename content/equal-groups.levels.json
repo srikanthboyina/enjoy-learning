@@ -1,0 +1,797 @@
+{
+  "topicId": "equal-groups",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "equal-groups-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Same in each",
+      "intro": {
+        "say": "Equal groups have the same number in every group. Let us look!",
+        "icons": [
+          "🧺",
+          "🍎",
+          "🍎"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Two baskets with 3 apples in each. Both groups have 3. They are equal groups!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍎"
+              },
+              {
+                "count": 3,
+                "emoji": "🍎"
+              }
+            ],
+            "showNumbers": true
+          },
+          "caption": "3 and 3: equal"
+        },
+        {
+          "mode": "show",
+          "say": "Look here: 3 cookies and 2 cookies. Not the same. These groups are not equal.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍪"
+              },
+              {
+                "count": 2,
+                "emoji": "🍪"
+              }
+            ],
+            "showNumbers": true
+          },
+          "caption": "3 and 2: not equal"
+        },
+        {
+          "mode": "choice",
+          "ask": "Are these groups equal?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐟"
+              },
+              {
+                "count": 2,
+                "emoji": "🐟"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Equal"
+            },
+            {
+              "label": "Not equal",
+              "why": "Count each group. Both have 2."
+            }
+          ],
+          "answer": 0,
+          "explain": "Both groups have 2 fish, so they are equal."
+        },
+        {
+          "mode": "choice",
+          "ask": "Are these groups equal?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🌸"
+              },
+              {
+                "count": 3,
+                "emoji": "🌸"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Equal",
+              "why": "Count again. One group has 4, one has 3."
+            },
+            {
+              "label": "Not equal"
+            }
+          ],
+          "answer": 1,
+          "explain": "One group has 4 and one has 3. Not the same, so not equal."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many ducks are in each group?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🦆"
+              },
+              {
+                "count": 3,
+                "emoji": "🦆"
+              },
+              {
+                "count": 3,
+                "emoji": "🦆"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count one group carefully."
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "9",
+              "why": "That is all of them. How many in one group?"
+            }
+          ],
+          "answer": 1,
+          "explain": "Every group has 3 ducks."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many groups are there?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍓"
+              },
+              {
+                "count": 2,
+                "emoji": "🍓"
+              },
+              {
+                "count": 2,
+                "emoji": "🍓"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count the groups, not the berries."
+            },
+            {
+              "label": "6",
+              "why": "That is all the berries."
+            },
+            {
+              "label": "3"
+            }
+          ],
+          "answer": 2,
+          "explain": "There are 3 groups, with 2 berries in each."
+        },
+        {
+          "mode": "choice",
+          "ask": "Are these groups equal?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "⭐"
+              },
+              {
+                "count": 5,
+                "emoji": "⭐"
+              },
+              {
+                "count": 5,
+                "emoji": "⭐"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "Not equal",
+              "why": "Count each group. They all have 5."
+            },
+            {
+              "label": "Equal"
+            }
+          ],
+          "answer": 1,
+          "explain": "Every group has 5 stars, so they are equal."
+        }
+      ]
+    },
+    {
+      "id": "equal-groups-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Groups of",
+      "intro": {
+        "say": "We can say 3 groups of 2. Count all of them by adding the groups.",
+        "icons": [
+          "🧺",
+          "➕",
+          "🧺"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "3 groups of 2 bananas. Count: 2, 4, 6. That is 2 plus 2 plus 2. Six bananas!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍌"
+              },
+              {
+                "count": 2,
+                "emoji": "🍌"
+              },
+              {
+                "count": 2,
+                "emoji": "🍌"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 groups of 2 = 6"
+        },
+        {
+          "mode": "show",
+          "say": "2 groups of 5 balloons. 5 plus 5 is 10. Ten balloons!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🎈"
+              },
+              {
+                "count": 5,
+                "emoji": "🎈"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "2 groups of 5 = 10"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many cupcakes in all?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🧁"
+              },
+              {
+                "count": 4,
+                "emoji": "🧁"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "That is one group. Count both."
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "6",
+              "why": "Count again: 4 and 4."
+            }
+          ],
+          "answer": 1,
+          "explain": "2 groups of 4 make 8."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sum matches 3 groups of 3?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍩"
+              },
+              {
+                "count": 3,
+                "emoji": "🍩"
+              },
+              {
+                "count": 3,
+                "emoji": "🍩"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "3 + 3",
+              "why": "That is only 2 groups."
+            },
+            {
+              "label": "3 + 3 + 3"
+            },
+            {
+              "label": "3 + 4",
+              "why": "Each group has 3, so they are all the same."
+            }
+          ],
+          "answer": 1,
+          "explain": "Three groups, each with 3, is 3 plus 3 plus 3."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many pears in all?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍐"
+              },
+              {
+                "count": 3,
+                "emoji": "🍐"
+              },
+              {
+                "count": 3,
+                "emoji": "🍐"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "9"
+            },
+            {
+              "label": "6",
+              "why": "There are 3 groups, not 2."
+            },
+            {
+              "label": "12",
+              "why": "Count: 3, 6, 9."
+            }
+          ],
+          "answer": 0,
+          "explain": "3 groups of 3: three, six, nine. Nine pears."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which words match this picture?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🐞"
+              },
+              {
+                "count": 4,
+                "emoji": "🐞"
+              },
+              {
+                "count": 4,
+                "emoji": "🐞"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "4 groups of 3",
+              "why": "Count the groups first. There are 3."
+            },
+            {
+              "label": "3 groups of 4"
+            },
+            {
+              "label": "3 groups of 3",
+              "why": "Count how many in each group."
+            }
+          ],
+          "answer": 1,
+          "explain": "There are 3 groups and 4 in each, so it is 3 groups of 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many socks? Count in twos.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🧦"
+              },
+              {
+                "count": 2,
+                "emoji": "🧦"
+              },
+              {
+                "count": 2,
+                "emoji": "🧦"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "5",
+              "why": "Count in twos: 2, 4, 6."
+            },
+            {
+              "label": "8",
+              "why": "There are only 3 groups."
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "2, 4, 6. Three pairs make six socks."
+        },
+        {
+          "mode": "choice",
+          "ask": "These groups are not equal. Which group needs one more to make them equal?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🍋"
+              },
+              {
+                "count": 2,
+                "emoji": "🍋"
+              },
+              {
+                "count": 3,
+                "emoji": "🍋"
+              }
+            ],
+            "showNumbers": true
+          },
+          "options": [
+            {
+              "label": "The first",
+              "why": "The first already has 3."
+            },
+            {
+              "label": "The middle"
+            },
+            {
+              "label": "The last",
+              "why": "The last already has 3."
+            }
+          ],
+          "answer": 1,
+          "explain": "The middle group has only 2. One more makes 3, like the others."
+        }
+      ]
+    },
+    {
+      "id": "equal-groups-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Equal group puzzles",
+      "intro": {
+        "say": "Let us solve puzzles with equal groups. Count fast by counting in jumps!",
+        "icons": [
+          "🧺",
+          "🧠",
+          "✨"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "3 nests with 4 eggs in each. Count in fours: 4, 8, 12. Twelve eggs!",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🥚"
+              },
+              {
+                "count": 4,
+                "emoji": "🥚"
+              },
+              {
+                "count": 4,
+                "emoji": "🥚"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 groups of 4 = 12"
+        },
+        {
+          "mode": "show",
+          "say": "Groups must be equal! 5, 4 and 6 are not equal. Move one from 6 to 4, and now each group has 5.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🍇"
+              },
+              {
+                "count": 5,
+                "emoji": "🍇"
+              },
+              {
+                "count": 5,
+                "emoji": "🍇"
+              }
+            ],
+            "showNumbers": true
+          },
+          "caption": "5, 5, 5: equal"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many marbles in all?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🔵"
+              },
+              {
+                "count": 5,
+                "emoji": "🔵"
+              },
+              {
+                "count": 5,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "There are 3 groups, not 2."
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "20",
+              "why": "Count in fives: 5, 10, 15."
+            }
+          ],
+          "answer": 1,
+          "explain": "Three groups of 5: five, ten, fifteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "3 boxes have 6 crayons each. How many crayons?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 6,
+                "emoji": "🖍️"
+              },
+              {
+                "count": 6,
+                "emoji": "🖍️"
+              },
+              {
+                "count": 6,
+                "emoji": "🖍️"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "18"
+            },
+            {
+              "label": "9",
+              "why": "Each box has 6, not 3."
+            },
+            {
+              "label": "12",
+              "why": "That is only 2 boxes."
+            }
+          ],
+          "answer": 0,
+          "explain": "6, 12, 18. Three groups of 6 make eighteen."
+        },
+        {
+          "mode": "choice",
+          "ask": "12 cookies in 3 equal groups. How many in each group?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🍪"
+              },
+              {
+                "count": 4,
+                "emoji": "🍪"
+              },
+              {
+                "count": 4,
+                "emoji": "🍪"
+              }
+            ]
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "That is the number of groups."
+            },
+            {
+              "label": "6",
+              "why": "Six and six is only 2 groups."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "4 plus 4 plus 4 is 12, so each group has 4.",
+          "hint": "Count one group."
+        },
+        {
+          "mode": "choice",
+          "ask": "How can we make these groups equal?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🍒"
+              },
+              {
+                "count": 6,
+                "emoji": "🍒"
+              },
+              {
+                "count": 4,
+                "emoji": "🍒"
+              }
+            ],
+            "showNumbers": true
+          },
+          "options": [
+            {
+              "label": "Move 2 from 6 to 2"
+            },
+            {
+              "label": "Add 1 to each",
+              "why": "They would still be different."
+            },
+            {
+              "label": "Take 2 from 4",
+              "why": "Then 4 would be 2 and 6 still 6."
+            }
+          ],
+          "answer": 0,
+          "explain": "Moving 2 from the 6 to the 2 makes every group 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is more: 2 groups of 5, or 3 groups of 3?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🍬"
+              },
+              {
+                "count": 5,
+                "emoji": "🍬"
+              }
+            ],
+            "op": "and"
+          },
+          "options": [
+            {
+              "label": "2 groups of 5"
+            },
+            {
+              "label": "3 groups of 3",
+              "why": "Three groups of 3 is 9. Two groups of 5 is 10."
+            },
+            {
+              "label": "Same",
+              "why": "Ten and nine are not the same."
+            }
+          ],
+          "answer": 0,
+          "explain": "2 groups of 5 is 10, and 3 groups of 3 is 9. Ten is more."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from fewest to most.",
+          "items": [
+            {
+              "label": "2 groups of 2"
+            },
+            {
+              "label": "3 groups of 2"
+            },
+            {
+              "label": "2 groups of 4"
+            },
+            {
+              "label": "3 groups of 4"
+            }
+          ],
+          "explain": "Four, six, eight, twelve. Each one is bigger.",
+          "hint": "Work out how many in all for each."
+        },
+        {
+          "mode": "choice",
+          "ask": "Tom says 4 plus 4 plus 3 is 3 equal groups. Why is he not right?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🍎"
+              },
+              {
+                "count": 4,
+                "emoji": "🍎"
+              },
+              {
+                "count": 3,
+                "emoji": "🍎"
+              }
+            ],
+            "showNumbers": true
+          },
+          "options": [
+            {
+              "label": "One group has 3"
+            },
+            {
+              "label": "There are 4 groups",
+              "why": "Count the groups: there are 3."
+            },
+            {
+              "label": "Apples are red",
+              "why": "Colour does not matter, the counts do."
+            }
+          ],
+          "answer": 0,
+          "explain": "Equal groups all have the same number, and one group has only 3."
+        }
+      ]
+    }
+  ]
+}

@@ -9,7 +9,8 @@
     "colors": [
       "#FFB74D",
       "#FF7043"
-    ]
+    ],
+    "group": "numbers"
   },
   {
     "id": "compare",
@@ -21,6 +22,163 @@
     "colors": [
       "#B39DDB",
       "#7E57C2"
+    ],
+    "group": "numbers"
+  },
+  {
+    "id": "odd-even",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Odd & Even",
+    "emoji": "🧦",
+    "blurb": "Make pairs to find out if a number is odd or even.",
+    "colors": [
+      "#80CBC4",
+      "#00897B"
+    ],
+    "group": "numbers"
+  },
+  {
+    "id": "skip-counting",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Skip Counting",
+    "emoji": "🐸",
+    "blurb": "Hop like a frog and count by twos, fives and tens.",
+    "colors": [
+      "#AED581",
+      "#43A047"
+    ],
+    "group": "numbers"
+  },
+  {
+    "id": "numbers-to-20",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Numbers to 20",
+    "emoji": "🔟",
+    "blurb": "Read, write and count numbers from eleven to twenty.",
+    "colors": [
+      "#FFB86B",
+      "#FF7EB3"
+    ]
+  },
+  {
+    "id": "numbers-to-100",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Numbers to 100",
+    "emoji": "💯",
+    "blurb": "Count in tens and ones all the way to one hundred.",
+    "colors": [
+      "#FA709A",
+      "#FEC140"
+    ]
+  },
+  {
+    "id": "place-value",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Tens & Ones",
+    "emoji": "🧱",
+    "blurb": "Big numbers are made of tens and ones. Build them with blocks!",
+    "colors": [
+      "#5EE7DF",
+      "#4FACFE"
+    ]
+  },
+  {
+    "id": "before-after",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Before & After",
+    "emoji": "↔️",
+    "blurb": "Which number comes just before, just after, or in between?",
+    "colors": [
+      "#FDCB6E",
+      "#E17055"
+    ]
+  },
+  {
+    "id": "ordinal",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "First, Second, Third",
+    "emoji": "🥇",
+    "blurb": "Who is first in the line? Learn first, second, third and more.",
+    "colors": [
+      "#55EFC4",
+      "#00B894"
+    ]
+  },
+  {
+    "id": "ten-frames",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Ten Frames",
+    "emoji": "🔲",
+    "blurb": "Fill the boxes to see numbers quickly, without counting one by one.",
+    "colors": [
+      "#FFB86B",
+      "#FF7EB3"
+    ]
+  },
+  {
+    "id": "number-bonds",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Number Bonds",
+    "emoji": "🔗",
+    "blurb": "Two parts make a whole. Find all the ways to make five and ten.",
+    "colors": [
+      "#FA709A",
+      "#FEC140"
+    ]
+  },
+  {
+    "id": "estimating",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Good Guesses",
+    "emoji": "🤔",
+    "blurb": "Make a smart guess about how many, then check.",
+    "colors": [
+      "#5EE7DF",
+      "#4FACFE"
+    ]
+  },
+  {
+    "id": "rounding",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Round It",
+    "emoji": "🎯",
+    "blurb": "Is a number closer to this ten or that ten? Round to the nearest ten.",
+    "colors": [
+      "#FDCB6E",
+      "#E17055"
+    ]
+  },
+  {
+    "id": "number-line",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "numbers",
+    "title": "Number Line",
+    "emoji": "📍",
+    "blurb": "Find numbers on a line and hop forwards and backwards.",
+    "colors": [
+      "#55EFC4",
+      "#00B894"
     ]
   },
   {
@@ -33,7 +191,8 @@
     "colors": [
       "#FF8A80",
       "#E53935"
-    ]
+    ],
+    "group": "add-subtract"
   },
   {
     "id": "subtraction",
@@ -45,78 +204,163 @@
     "colors": [
       "#4FC3F7",
       "#1E88E5"
+    ],
+    "group": "add-subtract"
+  },
+  {
+    "id": "doubles",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "add-subtract",
+    "title": "Doubles",
+    "emoji": "👯",
+    "blurb": "Double means the same again. Two plus two, five plus five!",
+    "colors": [
+      "#81ECEC",
+      "#0984E3"
     ]
   },
   {
-    "id": "shapes",
+    "id": "make-ten",
     "gameId": "explore",
     "subject": "math",
-    "title": "Shapes",
-    "emoji": "🔺",
-    "blurb": "Find circles, squares, triangles and more, and count their sides and corners.",
+    "group": "add-subtract",
+    "title": "Make Ten",
+    "emoji": "🔟",
+    "blurb": "Which two numbers make ten? A super trick for adding.",
     "colors": [
-      "#FFCA28",
-      "#FB8C00"
+      "#43E97B",
+      "#38D9A9"
     ]
   },
   {
-    "id": "patterns",
+    "id": "add-three",
     "gameId": "explore",
     "subject": "math",
-    "title": "Patterns",
-    "emoji": "🎨",
-    "blurb": "Spot what repeats and guess what comes next.",
+    "group": "add-subtract",
+    "title": "Adding Three Numbers",
+    "emoji": "🎲",
+    "blurb": "Add three groups together. Find the easy pair first.",
     "colors": [
-      "#F48FB1",
-      "#D81B60"
+      "#F6D365",
+      "#FDA085"
     ]
   },
   {
-    "id": "odd-even",
+    "id": "fact-families",
     "gameId": "explore",
     "subject": "math",
-    "title": "Odd & Even",
-    "emoji": "🧦",
-    "blurb": "Make pairs to find out if a number is odd or even.",
+    "group": "add-subtract",
+    "title": "Fact Families",
+    "emoji": "👨‍👩‍👧",
+    "blurb": "Three numbers that work together to add and take away.",
     "colors": [
-      "#80CBC4",
-      "#00897B"
+      "#84FAB0",
+      "#3CBA92"
     ]
   },
   {
-    "id": "skip-counting",
+    "id": "missing-numbers",
     "gameId": "explore",
     "subject": "math",
-    "title": "Skip Counting",
-    "emoji": "🐸",
-    "blurb": "Hop like a frog and count by twos, fives and tens.",
+    "group": "add-subtract",
+    "title": "Missing Numbers",
+    "emoji": "🕵️",
+    "blurb": "A number is hiding. Can you find what makes the sum right?",
     "colors": [
-      "#AED581",
-      "#43A047"
+      "#FF7675",
+      "#D63031"
     ]
   },
   {
-    "id": "time",
+    "id": "word-problems",
     "gameId": "explore",
     "subject": "math",
-    "title": "Telling Time",
-    "emoji": "🕒",
-    "blurb": "Read the clock: o’clock, half past and quarter past.",
+    "group": "add-subtract",
+    "title": "Story Sums",
+    "emoji": "📖",
+    "blurb": "Little stories with numbers. Should we add or take away?",
     "colors": [
-      "#9FA8DA",
-      "#3F51B5"
+      "#81ECEC",
+      "#0984E3"
     ]
   },
   {
-    "id": "measure",
+    "id": "adding-tens",
     "gameId": "explore",
     "subject": "math",
-    "title": "Big & Small",
-    "emoji": "📏",
-    "blurb": "Compare things: big and small, long and short, heavy and light.",
+    "group": "add-subtract",
+    "title": "Adding Tens",
+    "emoji": "🚀",
+    "blurb": "Add and take away tens quickly: twenty plus thirty is fifty!",
     "colors": [
-      "#FFAB91",
-      "#F4511E"
+      "#43E97B",
+      "#38D9A9"
+    ]
+  },
+  {
+    "id": "equal-groups",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "multiply-share",
+    "title": "Equal Groups",
+    "emoji": "🧺",
+    "blurb": "Groups with the same number in each. Count them fast!",
+    "colors": [
+      "#84FAB0",
+      "#3CBA92"
+    ]
+  },
+  {
+    "id": "arrays",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "multiply-share",
+    "title": "Arrays",
+    "emoji": "🍫",
+    "blurb": "Things in neat rows and columns. Rows times columns!",
+    "colors": [
+      "#FF7675",
+      "#D63031"
+    ]
+  },
+  {
+    "id": "times-tables",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "multiply-share",
+    "title": "Times Tables",
+    "emoji": "✖️",
+    "blurb": "Learn the two, five and ten times tables.",
+    "colors": [
+      "#81ECEC",
+      "#0984E3"
+    ]
+  },
+  {
+    "id": "sharing",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "multiply-share",
+    "title": "Sharing Fairly",
+    "emoji": "🤝",
+    "blurb": "Share things equally so everyone gets the same.",
+    "colors": [
+      "#43E97B",
+      "#38D9A9"
+    ]
+  },
+  {
+    "id": "multiply-stories",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "multiply-share",
+    "title": "Multiply Stories",
+    "emoji": "🐞",
+    "blurb": "Stories about equal groups. How many legs on three ladybugs?",
+    "colors": [
+      "#F6D365",
+      "#FDA085"
     ]
   },
   {
@@ -129,18 +373,371 @@
     "colors": [
       "#FF8A65",
       "#D84315"
+    ],
+    "group": "fractions-group"
+  },
+  {
+    "id": "halves-quarters",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "fractions-group",
+    "title": "Halves & Quarters",
+    "emoji": "🌓",
+    "blurb": "Cut shapes into two or four equal parts.",
+    "colors": [
+      "#FAB1A0",
+      "#E84393"
     ]
   },
   {
-    "id": "matter",
-    "gameId": "matter",
-    "subject": "science",
-    "title": "Ice, Water, Steam",
-    "emoji": "🧊",
-    "blurb": "Heat things up and cool them down to see water change.",
+    "id": "fraction-of-set",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "fractions-group",
+    "title": "Part of a Group",
+    "emoji": "🍓",
+    "blurb": "Half of the berries, a quarter of the cookies. Fractions of groups!",
     "colors": [
-      "#4FC3F7",
-      "#0277BD"
+      "#4FACFE",
+      "#00C6FB"
+    ]
+  },
+  {
+    "id": "compare-fractions",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "fractions-group",
+    "title": "Bigger Piece",
+    "emoji": "🍰",
+    "blurb": "Which piece is bigger, a half or a quarter?",
+    "colors": [
+      "#A18CD1",
+      "#7F7FD5"
+    ]
+  },
+  {
+    "id": "shapes",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Shapes",
+    "emoji": "🔺",
+    "blurb": "Find circles, squares, triangles and more, and count their sides and corners.",
+    "colors": [
+      "#FFCA28",
+      "#FB8C00"
+    ],
+    "group": "shapes-space"
+  },
+  {
+    "id": "solid-shapes",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "shapes-space",
+    "title": "Solid Shapes",
+    "emoji": "🧊",
+    "blurb": "Cubes, spheres, cones and cylinders all around us.",
+    "colors": [
+      "#43E97B",
+      "#38D9A9"
+    ]
+  },
+  {
+    "id": "symmetry",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "shapes-space",
+    "title": "Mirror Halves",
+    "emoji": "🦋",
+    "blurb": "Shapes that match on both sides, like a butterfly.",
+    "colors": [
+      "#F6D365",
+      "#FDA085"
+    ]
+  },
+  {
+    "id": "position",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "shapes-space",
+    "title": "Where Is It?",
+    "emoji": "📦",
+    "blurb": "Above, below, beside, inside, in front and behind.",
+    "colors": [
+      "#84FAB0",
+      "#3CBA92"
+    ]
+  },
+  {
+    "id": "directions",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "shapes-space",
+    "title": "Left, Right & Turns",
+    "emoji": "🧭",
+    "blurb": "Turn left, turn right and follow the path.",
+    "colors": [
+      "#FF7675",
+      "#D63031"
+    ]
+  },
+  {
+    "id": "lines-curves",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "shapes-space",
+    "title": "Lines & Curves",
+    "emoji": "〰️",
+    "blurb": "Straight lines, curvy lines, and the shapes they make.",
+    "colors": [
+      "#81ECEC",
+      "#0984E3"
+    ]
+  },
+  {
+    "id": "shape-builders",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "shapes-space",
+    "title": "Shape Builders",
+    "emoji": "🏠",
+    "blurb": "Put shapes together to build new shapes and pictures.",
+    "colors": [
+      "#43E97B",
+      "#38D9A9"
+    ]
+  },
+  {
+    "id": "measure",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Big & Small",
+    "emoji": "📏",
+    "blurb": "Compare things: big and small, long and short, heavy and light.",
+    "colors": [
+      "#FFAB91",
+      "#F4511E"
+    ],
+    "group": "measuring"
+  },
+  {
+    "id": "length",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "measuring",
+    "title": "How Long?",
+    "emoji": "📏",
+    "blurb": "Measure with a ruler and compare lengths.",
+    "colors": [
+      "#FDCB6E",
+      "#E17055"
+    ]
+  },
+  {
+    "id": "weight",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "measuring",
+    "title": "Heavy or Light?",
+    "emoji": "⚖️",
+    "blurb": "Use a balance to find which is heavier.",
+    "colors": [
+      "#55EFC4",
+      "#00B894"
+    ]
+  },
+  {
+    "id": "capacity",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "measuring",
+    "title": "Full or Empty?",
+    "emoji": "🥛",
+    "blurb": "How much can it hold? Full, half full and empty.",
+    "colors": [
+      "#FFB86B",
+      "#FF7EB3"
+    ]
+  },
+  {
+    "id": "temperature",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "measuring",
+    "title": "Hot or Cold?",
+    "emoji": "🌡️",
+    "blurb": "Read a thermometer and find hot, warm and cold.",
+    "colors": [
+      "#FA709A",
+      "#FEC140"
+    ]
+  },
+  {
+    "id": "time",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Telling Time",
+    "emoji": "🕒",
+    "blurb": "Read the clock: o’clock, half past and quarter past.",
+    "colors": [
+      "#9FA8DA",
+      "#3F51B5"
+    ],
+    "group": "time-money"
+  },
+  {
+    "id": "days-week",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "time-money",
+    "title": "Days of the Week",
+    "emoji": "📅",
+    "blurb": "Seven days in a week. What comes after Monday?",
+    "colors": [
+      "#81ECEC",
+      "#0984E3"
+    ]
+  },
+  {
+    "id": "months",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "time-money",
+    "title": "Months of the Year",
+    "emoji": "🗓️",
+    "blurb": "Twelve months, the seasons, and your birthday month.",
+    "colors": [
+      "#43E97B",
+      "#38D9A9"
+    ]
+  },
+  {
+    "id": "time-words",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "time-money",
+    "title": "Before, After & Soon",
+    "emoji": "⌛",
+    "blurb": "Morning, afternoon, night, yesterday, today and tomorrow.",
+    "colors": [
+      "#F6D365",
+      "#FDA085"
+    ]
+  },
+  {
+    "id": "coins",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "time-money",
+    "title": "Coins",
+    "emoji": "🪙",
+    "blurb": "Count coins and find out how much money there is.",
+    "colors": [
+      "#84FAB0",
+      "#3CBA92"
+    ]
+  },
+  {
+    "id": "shopping",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "time-money",
+    "title": "Little Shop",
+    "emoji": "🛒",
+    "blurb": "Buy things at the shop. Do you have enough coins?",
+    "colors": [
+      "#FF7675",
+      "#D63031"
+    ]
+  },
+  {
+    "id": "patterns",
+    "gameId": "explore",
+    "subject": "math",
+    "title": "Patterns",
+    "emoji": "🎨",
+    "blurb": "Spot what repeats and guess what comes next.",
+    "colors": [
+      "#F48FB1",
+      "#D81B60"
+    ],
+    "group": "patterns-puzzles"
+  },
+  {
+    "id": "sorting-rules",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "patterns-puzzles",
+    "title": "Sorting Rules",
+    "emoji": "🗂️",
+    "blurb": "Sort things by colour, size or shape. What is the rule?",
+    "colors": [
+      "#F6D365",
+      "#FDA085"
+    ]
+  },
+  {
+    "id": "odd-one-out",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "patterns-puzzles",
+    "title": "Odd One Out",
+    "emoji": "🙃",
+    "blurb": "Spot the one that does not belong.",
+    "colors": [
+      "#84FAB0",
+      "#3CBA92"
+    ]
+  },
+  {
+    "id": "tally-charts",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "patterns-puzzles",
+    "title": "Tally Marks",
+    "emoji": "✏️",
+    "blurb": "Count with tally marks, bundled in fives.",
+    "colors": [
+      "#FF7675",
+      "#D63031"
+    ]
+  },
+  {
+    "id": "bar-graphs",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "patterns-puzzles",
+    "title": "Picture Graphs",
+    "emoji": "📊",
+    "blurb": "Read bar graphs to find the most and the least.",
+    "colors": [
+      "#81ECEC",
+      "#0984E3"
+    ]
+  },
+  {
+    "id": "chance",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "patterns-puzzles",
+    "title": "Will It Happen?",
+    "emoji": "🎲",
+    "blurb": "Certain, likely, unlikely or impossible?",
+    "colors": [
+      "#43E97B",
+      "#38D9A9"
+    ]
+  },
+  {
+    "id": "logic",
+    "gameId": "explore",
+    "subject": "math",
+    "group": "patterns-puzzles",
+    "title": "Brain Teasers",
+    "emoji": "🧠",
+    "blurb": "Little puzzles for clever thinkers.",
+    "colors": [
+      "#F6D365",
+      "#FDA085"
     ]
   },
   {
@@ -153,7 +750,8 @@
     "colors": [
       "#9CCC65",
       "#558B2F"
-    ]
+    ],
+    "group": "living-world"
   },
   {
     "id": "living",
@@ -165,7 +763,8 @@
     "colors": [
       "#FFB74D",
       "#EF6C00"
-    ]
+    ],
+    "group": "living-world"
   },
   {
     "id": "animal-homes",
@@ -177,18 +776,124 @@
     "colors": [
       "#BCAAA4",
       "#795548"
+    ],
+    "group": "living-world"
+  },
+  {
+    "id": "animal-babies",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "living-world",
+    "title": "Animal Babies",
+    "emoji": "🐣",
+    "blurb": "Match baby animals with their mums and dads.",
+    "colors": [
+      "#55EFC4",
+      "#00B894"
     ]
   },
   {
-    "id": "sink-float",
+    "id": "life-cycles",
     "gameId": "explore",
     "subject": "science",
-    "title": "Sink or Float",
-    "emoji": "🛟",
-    "blurb": "Will it sink or float? Test things in the water!",
+    "group": "living-world",
+    "title": "Life Cycles",
+    "emoji": "🐸",
+    "blurb": "Egg to tadpole to frog: how living things grow and change.",
     "colors": [
-      "#4DD0E1",
-      "#00838F"
+      "#FFB86B",
+      "#FF7EB3"
+    ]
+  },
+  {
+    "id": "animal-groups",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "living-world",
+    "title": "Animal Groups",
+    "emoji": "🐾",
+    "blurb": "Mammals, birds, fish, reptiles and insects.",
+    "colors": [
+      "#FA709A",
+      "#FEC140"
+    ]
+  },
+  {
+    "id": "minibeasts",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "living-world",
+    "title": "Minibeasts",
+    "emoji": "🐞",
+    "blurb": "Bugs, spiders and worms: tiny creatures up close.",
+    "colors": [
+      "#5EE7DF",
+      "#4FACFE"
+    ]
+  },
+  {
+    "id": "food-chains",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "living-world",
+    "title": "Who Eats What?",
+    "emoji": "🦊",
+    "blurb": "Plants, plant eaters and meat eaters in a food chain.",
+    "colors": [
+      "#FDCB6E",
+      "#E17055"
+    ]
+  },
+  {
+    "id": "sea-life",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "living-world",
+    "title": "Under the Sea",
+    "emoji": "🐠",
+    "blurb": "Fish, whales, octopuses and coral reefs.",
+    "colors": [
+      "#55EFC4",
+      "#00B894"
+    ]
+  },
+  {
+    "id": "dinosaurs",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "living-world",
+    "title": "Dinosaurs & Fossils",
+    "emoji": "🦕",
+    "blurb": "Giant animals from long ago, and the fossils they left.",
+    "colors": [
+      "#FFB86B",
+      "#FF7EB3"
+    ]
+  },
+  {
+    "id": "birds",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "living-world",
+    "title": "Amazing Birds",
+    "emoji": "🦜",
+    "blurb": "Feathers, beaks, nests and flying.",
+    "colors": [
+      "#FA709A",
+      "#FEC140"
+    ]
+  },
+  {
+    "id": "farm-to-table",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "living-world",
+    "title": "Farm to Table",
+    "emoji": "🚜",
+    "blurb": "Where does our food come from?",
+    "colors": [
+      "#5EE7DF",
+      "#4FACFE"
     ]
   },
   {
@@ -201,6 +906,98 @@
     "colors": [
       "#F06292",
       "#AD1457"
+    ],
+    "group": "my-body"
+  },
+  {
+    "id": "healthy-food",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Healthy Food",
+    "emoji": "🥦",
+    "blurb": "Which foods help us grow strong and healthy?",
+    "colors": [
+      "#E57373",
+      "#C62828"
+    ],
+    "group": "my-body"
+  },
+  {
+    "id": "body-parts",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "my-body",
+    "title": "Body Parts",
+    "emoji": "🖐️",
+    "blurb": "Head, shoulders, knees and toes. Name the parts of your body.",
+    "colors": [
+      "#FDCB6E",
+      "#E17055"
+    ]
+  },
+  {
+    "id": "bones-muscles",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "my-body",
+    "title": "Bones & Muscles",
+    "emoji": "💪",
+    "blurb": "Your skeleton holds you up and your muscles help you move.",
+    "colors": [
+      "#55EFC4",
+      "#00B894"
+    ]
+  },
+  {
+    "id": "teeth",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "my-body",
+    "title": "Happy Teeth",
+    "emoji": "🦷",
+    "blurb": "How to care for your teeth and keep them strong.",
+    "colors": [
+      "#FFB86B",
+      "#FF7EB3"
+    ]
+  },
+  {
+    "id": "staying-clean",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "my-body",
+    "title": "Germ Busters",
+    "emoji": "🧼",
+    "blurb": "Wash away germs and stay healthy.",
+    "colors": [
+      "#FA709A",
+      "#FEC140"
+    ]
+  },
+  {
+    "id": "exercise-sleep",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "my-body",
+    "title": "Move & Rest",
+    "emoji": "🏃",
+    "blurb": "Exercise, play and sleep help your body grow.",
+    "colors": [
+      "#5EE7DF",
+      "#4FACFE"
+    ]
+  },
+  {
+    "id": "heart-lungs",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "my-body",
+    "title": "Heart & Breathing",
+    "emoji": "❤️",
+    "blurb": "Your heart pumps blood and your lungs breathe air.",
+    "colors": [
+      "#FDCB6E",
+      "#E17055"
     ]
   },
   {
@@ -213,7 +1010,8 @@
     "colors": [
       "#90CAF9",
       "#1E88E5"
-    ]
+    ],
+    "group": "earth-sky"
   },
   {
     "id": "space",
@@ -225,18 +1023,280 @@
     "colors": [
       "#7986CB",
       "#283593"
+    ],
+    "group": "earth-sky"
+  },
+  {
+    "id": "water-cycle",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "earth-sky",
+    "title": "Water Cycle",
+    "emoji": "🌧️",
+    "blurb": "Water goes up as vapour and comes down as rain.",
+    "colors": [
+      "#43E97B",
+      "#38D9A9"
     ]
   },
   {
-    "id": "healthy-food",
+    "id": "rocks-soil",
     "gameId": "explore",
     "subject": "science",
-    "title": "Healthy Food",
-    "emoji": "🥦",
-    "blurb": "Which foods help us grow strong and healthy?",
+    "group": "earth-sky",
+    "title": "Rocks & Soil",
+    "emoji": "🪨",
+    "blurb": "Rocks, pebbles, sand and soil under our feet.",
     "colors": [
-      "#E57373",
-      "#C62828"
+      "#F6D365",
+      "#FDA085"
+    ]
+  },
+  {
+    "id": "land-water",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "earth-sky",
+    "title": "Land & Water",
+    "emoji": "🏞️",
+    "blurb": "Mountains, rivers, lakes, islands and oceans.",
+    "colors": [
+      "#84FAB0",
+      "#3CBA92"
+    ]
+  },
+  {
+    "id": "habitats",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "earth-sky",
+    "title": "Habitats",
+    "emoji": "🏜️",
+    "blurb": "Deserts, rainforests, oceans and the icy Arctic.",
+    "colors": [
+      "#FF7675",
+      "#D63031"
+    ]
+  },
+  {
+    "id": "volcanoes",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "earth-sky",
+    "title": "Volcanoes",
+    "emoji": "🌋",
+    "blurb": "Hot melted rock from deep inside the Earth.",
+    "colors": [
+      "#81ECEC",
+      "#0984E3"
+    ]
+  },
+  {
+    "id": "caring-earth",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "earth-sky",
+    "title": "Caring for Earth",
+    "emoji": "♻️",
+    "blurb": "Reduce, reuse, recycle and keep our planet clean.",
+    "colors": [
+      "#43E97B",
+      "#38D9A9"
+    ]
+  },
+  {
+    "id": "moon-stars",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "earth-sky",
+    "title": "Moon & Stars",
+    "emoji": "🌙",
+    "blurb": "The Moon changes shape and stars twinkle far away.",
+    "colors": [
+      "#F6D365",
+      "#FDA085"
+    ]
+  },
+  {
+    "id": "matter",
+    "gameId": "matter",
+    "subject": "science",
+    "title": "Ice, Water, Steam",
+    "emoji": "🧊",
+    "blurb": "Heat things up and cool them down to see water change.",
+    "colors": [
+      "#4FC3F7",
+      "#0277BD"
+    ],
+    "group": "matter-materials"
+  },
+  {
+    "id": "sink-float",
+    "gameId": "explore",
+    "subject": "science",
+    "title": "Sink or Float",
+    "emoji": "🛟",
+    "blurb": "Will it sink or float? Test things in the water!",
+    "colors": [
+      "#4DD0E1",
+      "#00838F"
+    ],
+    "group": "matter-materials"
+  },
+  {
+    "id": "materials",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "matter-materials",
+    "title": "What Is It Made Of?",
+    "emoji": "🪵",
+    "blurb": "Wood, metal, plastic, glass and fabric.",
+    "colors": [
+      "#FF7675",
+      "#D63031"
+    ]
+  },
+  {
+    "id": "states-of-matter",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "matter-materials",
+    "title": "Solid, Liquid, Gas",
+    "emoji": "🧃",
+    "blurb": "Solids keep their shape, liquids pour, gases spread out.",
+    "colors": [
+      "#81ECEC",
+      "#0984E3"
+    ]
+  },
+  {
+    "id": "mixing-colors",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "matter-materials",
+    "title": "Mixing Colours",
+    "emoji": "🎨",
+    "blurb": "Mix red, yellow and blue to make new colours.",
+    "colors": [
+      "#43E97B",
+      "#38D9A9"
+    ]
+  },
+  {
+    "id": "dissolving",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "matter-materials",
+    "title": "Mix & Dissolve",
+    "emoji": "🥄",
+    "blurb": "Some things disappear in water and some do not.",
+    "colors": [
+      "#F6D365",
+      "#FDA085"
+    ]
+  },
+  {
+    "id": "magnets",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "matter-materials",
+    "title": "Magnets",
+    "emoji": "🧲",
+    "blurb": "Magnets pull some metals and push and pull each other.",
+    "colors": [
+      "#84FAB0",
+      "#3CBA92"
+    ]
+  },
+  {
+    "id": "push-pull",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "forces-energy",
+    "title": "Push & Pull",
+    "emoji": "🛒",
+    "blurb": "Forces make things move, stop and change direction.",
+    "colors": [
+      "#FA709A",
+      "#FEC140"
+    ]
+  },
+  {
+    "id": "sound",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "forces-energy",
+    "title": "Sounds",
+    "emoji": "🔔",
+    "blurb": "Loud and quiet, high and low. Sounds are made by vibrations.",
+    "colors": [
+      "#5EE7DF",
+      "#4FACFE"
+    ]
+  },
+  {
+    "id": "light-shadows",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "forces-energy",
+    "title": "Light & Shadows",
+    "emoji": "🔦",
+    "blurb": "Light comes from the Sun and lamps. Shadows form when light is blocked.",
+    "colors": [
+      "#FDCB6E",
+      "#E17055"
+    ]
+  },
+  {
+    "id": "electricity",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "forces-energy",
+    "title": "Electricity",
+    "emoji": "💡",
+    "blurb": "Things that use electricity, and how to stay safe.",
+    "colors": [
+      "#55EFC4",
+      "#00B894"
+    ]
+  },
+  {
+    "id": "simple-machines",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "forces-energy",
+    "title": "Simple Machines",
+    "emoji": "⚙️",
+    "blurb": "Ramps, levers, wheels and pulleys make work easier.",
+    "colors": [
+      "#FFB86B",
+      "#FF7EB3"
+    ]
+  },
+  {
+    "id": "heat",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "forces-energy",
+    "title": "Heat",
+    "emoji": "🔥",
+    "blurb": "Heat makes things warm. Where does heat come from?",
+    "colors": [
+      "#FA709A",
+      "#FEC140"
+    ]
+  },
+  {
+    "id": "motion",
+    "gameId": "explore",
+    "subject": "science",
+    "group": "forces-energy",
+    "title": "Fast & Slow",
+    "emoji": "🏎️",
+    "blurb": "Things move fast or slow. Ramps, rolling and speed.",
+    "colors": [
+      "#5EE7DF",
+      "#4FACFE"
     ]
   }
 ]

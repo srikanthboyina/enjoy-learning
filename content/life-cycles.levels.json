@@ -1,0 +1,592 @@
+{
+  "topicId": "life-cycles",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "life-cycles-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Growing and changing",
+      "intro": {
+        "say": "All living things start small, grow and change. This is called a life cycle!",
+        "icons": [
+          "🌱",
+          "🌻",
+          "👶"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A seed grows into a sprout, then a plant, then a big sunflower. The flower makes new seeds!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌰",
+              "🌱",
+              "🌿",
+              "🌻"
+            ]
+          },
+          "caption": "seed → sprout → plant → flower"
+        },
+        {
+          "mode": "show",
+          "say": "People grow too! A baby becomes a child, then a grown-up, and one day an older person.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👶",
+              "🧒",
+              "🧑",
+              "🧓"
+            ]
+          },
+          "caption": "baby → child → grown-up → older"
+        },
+        {
+          "mode": "order",
+          "ask": "Put the person growing up in order, youngest first.",
+          "items": [
+            {
+              "emoji": "👶",
+              "label": "Baby"
+            },
+            {
+              "emoji": "🧒",
+              "label": "Child"
+            },
+            {
+              "emoji": "🧑",
+              "label": "Grown-up"
+            },
+            {
+              "emoji": "🧓",
+              "label": "Older"
+            }
+          ],
+          "explain": "We start as babies, grow into children, then grown-ups, then older people."
+        },
+        {
+          "mode": "choice",
+          "ask": "A sprout grows into a plant. What comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌰",
+              "🌱",
+              "🌿",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌰",
+              "label": "Seed",
+              "why": "The seed came at the start."
+            },
+            {
+              "emoji": "🌻",
+              "label": "Flower"
+            },
+            {
+              "emoji": "🍂",
+              "label": "Dry leaf",
+              "why": "A healthy plant keeps growing first."
+            }
+          ],
+          "answer": 1,
+          "explain": "The plant grows a flower."
+        },
+        {
+          "mode": "choice",
+          "ask": "Who is the youngest?",
+          "options": [
+            {
+              "emoji": "👴",
+              "label": "Grandad",
+              "why": "Grandad has grown for a long time."
+            },
+            {
+              "emoji": "🧒",
+              "label": "Child",
+              "why": "Someone here is even younger."
+            },
+            {
+              "emoji": "👶",
+              "label": "Baby"
+            }
+          ],
+          "answer": 2,
+          "explain": "A baby is at the very start of growing up."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a flower make, to start new plants?",
+          "options": [
+            {
+              "emoji": "🪨",
+              "label": "Rocks",
+              "why": "Rocks are not alive."
+            },
+            {
+              "emoji": "🌰",
+              "label": "Seeds"
+            },
+            {
+              "emoji": "🍃",
+              "label": "Leaves",
+              "why": "Leaves help a plant make food."
+            }
+          ],
+          "answer": 1,
+          "explain": "A flower makes seeds, and each seed can grow a new plant."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one does NOT have a life cycle?",
+          "options": [
+            {
+              "emoji": "🌻",
+              "label": "Sunflower",
+              "why": "A sunflower grows from a seed."
+            },
+            {
+              "emoji": "🪨",
+              "label": "Rock"
+            },
+            {
+              "emoji": "🐸",
+              "label": "Frog",
+              "why": "A frog grows from an egg."
+            }
+          ],
+          "answer": 1,
+          "explain": "A rock is not alive. It does not grow or have babies."
+        },
+        {
+          "mode": "choice",
+          "ask": "A baby grows into a child. What does a child grow into?",
+          "options": [
+            {
+              "emoji": "🧑",
+              "label": "Grown-up"
+            },
+            {
+              "emoji": "👶",
+              "label": "Baby",
+              "why": "Babies are younger than children."
+            },
+            {
+              "emoji": "🐶",
+              "label": "Puppy",
+              "why": "People grow into people."
+            }
+          ],
+          "answer": 0,
+          "explain": "Children grow up into grown-ups."
+        }
+      ]
+    },
+    {
+      "id": "life-cycles-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "The frog's big change",
+      "intro": {
+        "say": "A frog changes so much as it grows! Let us follow every stage, step by step.",
+        "icons": [
+          "🐸",
+          "🥚",
+          "💧"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Frog eggs are called frogspawn. A tiny tadpole hatches. It swims with its tail and breathes under water with gills.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥚",
+              "💧"
+            ]
+          },
+          "caption": "Frogspawn, then tadpole"
+        },
+        {
+          "mode": "show",
+          "say": "The tadpole grows back legs, then front legs. Its tail shrinks and it becomes a froglet. Then it is a frog that hops and breathes air!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦵",
+              "🐸",
+              "🌿"
+            ]
+          },
+          "caption": "Legs grow, tail shrinks"
+        },
+        {
+          "mode": "order",
+          "ask": "Put the frog's life cycle in order.",
+          "items": [
+            {
+              "emoji": "🥚",
+              "label": "Frogspawn"
+            },
+            {
+              "label": "Tadpole"
+            },
+            {
+              "label": "Tadpole with legs"
+            },
+            {
+              "label": "Froglet"
+            },
+            {
+              "emoji": "🐸",
+              "label": "Frog"
+            }
+          ],
+          "explain": "Frogspawn, tadpole, tadpole with legs, froglet, and then a frog.",
+          "hint": "It starts with eggs in the water."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes after the tadpole with legs?",
+          "options": [
+            {
+              "label": "Frogspawn",
+              "why": "Frogspawn comes at the very start."
+            },
+            {
+              "label": "Froglet"
+            },
+            {
+              "label": "Tadpole",
+              "why": "The tadpole came before the legs grew."
+            }
+          ],
+          "answer": 1,
+          "explain": "Next it becomes a froglet, a little frog with a short tail."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does a tadpole live?",
+          "options": [
+            {
+              "emoji": "💧",
+              "label": "In water"
+            },
+            {
+              "emoji": "🌳",
+              "label": "In a tree",
+              "why": "Tadpoles swim in water. They cannot climb trees."
+            },
+            {
+              "emoji": "🏜️",
+              "label": "In sand",
+              "why": "A tadpole needs water to breathe."
+            }
+          ],
+          "answer": 0,
+          "explain": "Tadpoles live in ponds. They breathe under water with gills."
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a tadpole lose as it grows into a frog?",
+          "options": [
+            {
+              "label": "Its eyes",
+              "why": "A frog still has eyes."
+            },
+            {
+              "label": "Its tail"
+            },
+            {
+              "label": "Its mouth",
+              "why": "A frog needs its mouth to eat."
+            }
+          ],
+          "answer": 1,
+          "explain": "The tail gets shorter and shorter until it is gone."
+        },
+        {
+          "mode": "choice",
+          "ask": "A hen sits on her eggs. Why?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐔",
+              "🥚",
+              "🥚"
+            ]
+          },
+          "options": [
+            {
+              "label": "To keep them cold",
+              "why": "Eggs need warmth to grow."
+            },
+            {
+              "label": "To make them wet",
+              "why": "Eggs need warmth, not water."
+            },
+            {
+              "label": "To keep them warm"
+            }
+          ],
+          "answer": 2,
+          "explain": "The chick grows inside the egg, and it needs to be kept warm."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is a caterpillar's main job?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐛"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🍃",
+              "label": "Eat and grow"
+            },
+            {
+              "emoji": "🦋",
+              "label": "Fly",
+              "why": "It cannot fly yet. That comes later."
+            },
+            {
+              "emoji": "🥚",
+              "label": "Lay eggs",
+              "why": "The grown-up butterfly lays eggs."
+            }
+          ],
+          "answer": 0,
+          "explain": "A caterpillar eats lots of leaves and grows bigger and bigger."
+        }
+      ]
+    },
+    {
+      "id": "life-cycles-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Round and round",
+      "intro": {
+        "say": "Life cycles go round and round. Grown-ups make new babies, and it starts again!",
+        "icons": [
+          "🔄",
+          "🍎",
+          "🦋"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "An apple seed grows into a tree. The tree grows blossom. The blossom becomes apples with seeds inside. And round it goes again!",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌰",
+              "🌱",
+              "🌳",
+              "🌸",
+              "🍎",
+              "🌰"
+            ]
+          },
+          "caption": "seed → tree → blossom → apple → seed"
+        },
+        {
+          "mode": "show",
+          "say": "Some animals change shape completely, like butterflies, ladybirds and frogs. Others just grow bigger, like puppies, turtles and people.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐛",
+              "🦋",
+              "🐶",
+              "🐕"
+            ]
+          },
+          "caption": "Big change, or just growing"
+        },
+        {
+          "mode": "choice",
+          "ask": "After the blossom on an apple tree, what comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "🌱",
+              "🌳",
+              "🌸",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🍂",
+              "label": "A dry leaf",
+              "why": "Leaves fall in autumn. They are not part of making seeds."
+            },
+            {
+              "emoji": "🍎",
+              "label": "An apple"
+            },
+            {
+              "emoji": "🪨",
+              "label": "A rock",
+              "why": "Rocks do not grow on trees."
+            }
+          ],
+          "answer": 1,
+          "explain": "The blossom turns into apples, and the apples hold new seeds."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the apple tree's life cycle in order.",
+          "items": [
+            {
+              "emoji": "🌰",
+              "label": "Seed"
+            },
+            {
+              "emoji": "🌱",
+              "label": "Sprout"
+            },
+            {
+              "emoji": "🌳",
+              "label": "Tree"
+            },
+            {
+              "emoji": "🌸",
+              "label": "Blossom"
+            },
+            {
+              "emoji": "🍎",
+              "label": "Apple"
+            }
+          ],
+          "explain": "Seed, sprout, tree, blossom, and then apples with new seeds."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which animal changes the most as it grows up?",
+          "options": [
+            {
+              "emoji": "🐘",
+              "label": "Elephant",
+              "why": "A baby elephant looks like a small elephant."
+            },
+            {
+              "emoji": "🐶",
+              "label": "Dog",
+              "why": "A puppy looks like a small dog."
+            },
+            {
+              "emoji": "🦋",
+              "label": "Butterfly"
+            }
+          ],
+          "answer": 2,
+          "explain": "A butterfly starts as a caterpillar, then a chrysalis. It changes completely!"
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it change shape completely, or just grow bigger?",
+          "bins": [
+            {
+              "label": "Big change",
+              "emoji": "🦋"
+            },
+            {
+              "label": "Just grows",
+              "emoji": "📏"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐸",
+              "bin": 0,
+              "name": "the frog"
+            },
+            {
+              "emoji": "🐕",
+              "bin": 1,
+              "name": "the dog"
+            },
+            {
+              "emoji": "🐞",
+              "bin": 0,
+              "name": "the ladybird"
+            },
+            {
+              "emoji": "🐘",
+              "bin": 1,
+              "name": "the elephant"
+            },
+            {
+              "emoji": "🐝",
+              "bin": 0,
+              "name": "the bee"
+            },
+            {
+              "emoji": "🐢",
+              "bin": 1,
+              "name": "the turtle"
+            },
+            {
+              "emoji": "🐎",
+              "bin": 1,
+              "name": "the horse"
+            }
+          ],
+          "explain": "Frogs, ladybirds and bees change shape completely. Dogs, elephants, turtles and horses just grow bigger.",
+          "hint": "Does the baby look like the grown-up?"
+        },
+        {
+          "mode": "choice",
+          "ask": "What does a grown-up butterfly do that starts the cycle again?",
+          "options": [
+            {
+              "label": "Makes a chrysalis",
+              "why": "The caterpillar makes the chrysalis."
+            },
+            {
+              "label": "Lays eggs"
+            },
+            {
+              "label": "Eats leaves",
+              "why": "The caterpillar eats leaves."
+            }
+          ],
+          "answer": 1,
+          "explain": "A butterfly lays eggs, and new caterpillars hatch. The cycle starts again!"
+        },
+        {
+          "mode": "choice",
+          "ask": "A tadpole breathes with gills. What does a grown-up frog breathe with?",
+          "options": [
+            {
+              "label": "Gills",
+              "why": "The frog loses its gills as it grows."
+            },
+            {
+              "label": "Lungs"
+            },
+            {
+              "label": "Leaves",
+              "why": "Leaves belong to plants."
+            }
+          ],
+          "answer": 1,
+          "explain": "A grown-up frog breathes air with lungs, and a little through its skin too."
+        }
+      ]
+    }
+  ]
+}

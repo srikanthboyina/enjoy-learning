@@ -1,0 +1,585 @@
+{
+  "topicId": "sound",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "sound-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Loud and quiet",
+      "intro": {
+        "say": "Sounds are all around us! Some are loud and some are quiet.",
+        "icons": [
+          "👂",
+          "🔔"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "We hear sounds with our ears. Listen! A bell goes ding, and a dog goes woof.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👂",
+              "🔔",
+              "🐶"
+            ],
+            "size": "lg"
+          },
+          "caption": "Ears hear sounds"
+        },
+        {
+          "mode": "show",
+          "say": "Some sounds are loud, like a big drum. Some are quiet, like a whisper.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥁",
+              "🔊",
+              "🤫",
+              "🔈"
+            ],
+            "size": "lg"
+          },
+          "caption": "Loud and quiet"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which part of your body do you hear with?",
+          "options": [
+            {
+              "emoji": "👃",
+              "label": "Nose",
+              "why": "Your nose smells. Try again!"
+            },
+            {
+              "emoji": "👂",
+              "label": "Ears"
+            },
+            {
+              "emoji": "👀",
+              "label": "Eyes",
+              "why": "Your eyes see. Try again!"
+            }
+          ],
+          "answer": 1,
+          "explain": "We hear sounds with our ears."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sound is louder?",
+          "options": [
+            {
+              "emoji": "🦁",
+              "label": "Lion roar"
+            },
+            {
+              "emoji": "🐭",
+              "label": "Mouse squeak",
+              "why": "A mouse squeak is tiny and quiet."
+            }
+          ],
+          "answer": 0,
+          "explain": "A lion's roar is very loud!"
+        },
+        {
+          "mode": "sort",
+          "ask": "Loud or quiet? Sort the sounds!",
+          "bins": [
+            {
+              "label": "Loud",
+              "emoji": "🔊"
+            },
+            {
+              "label": "Quiet",
+              "emoji": "🔈"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🥁",
+              "bin": 0,
+              "name": "big drum"
+            },
+            {
+              "emoji": "🚒",
+              "bin": 0,
+              "name": "fire engine siren"
+            },
+            {
+              "emoji": "🦁",
+              "bin": 0,
+              "name": "lion roar"
+            },
+            {
+              "emoji": "🐭",
+              "bin": 1,
+              "name": "mouse squeak"
+            },
+            {
+              "emoji": "🤫",
+              "bin": 1,
+              "name": "whisper"
+            },
+            {
+              "emoji": "🍃",
+              "bin": 1,
+              "name": "leaves rustling"
+            }
+          ],
+          "explain": "Drums, sirens and roars are loud. Whispers and rustling leaves are quiet."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one rings with a sound?",
+          "options": [
+            {
+              "emoji": "🌈",
+              "label": "Rainbow",
+              "why": "A rainbow is silent. Try another!"
+            },
+            {
+              "emoji": "🧦",
+              "label": "Sock",
+              "why": "A sock is soft and quiet."
+            },
+            {
+              "emoji": "🔔",
+              "label": "Bell"
+            }
+          ],
+          "answer": 2,
+          "explain": "A bell rings, ding dong!"
+        },
+        {
+          "mode": "choice",
+          "ask": "The baby is asleep. How should you talk?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "👶",
+              "💤"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🤫",
+              "label": "Whisper"
+            },
+            {
+              "emoji": "📢",
+              "label": "Shout",
+              "why": "Shouting is loud and might wake the baby."
+            }
+          ],
+          "answer": 0,
+          "explain": "A whisper is quiet, so the baby can keep sleeping."
+        }
+      ]
+    },
+    {
+      "id": "sound-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Sounds are vibrations",
+      "intro": {
+        "say": "Every sound is made by something shaking very fast. That shaking is called a vibration.",
+        "icons": [
+          "🎸",
+          "〰️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Pluck a guitar string. It wiggles back and forth very fast. That vibration makes the sound!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎸",
+              "〰️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Vibrations make sound"
+        },
+        {
+          "mode": "show",
+          "say": "Put your hand on your throat and hum. Feel the buzz? Your voice box is vibrating!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🗣️",
+              "✋",
+              "〰️"
+            ],
+            "size": "lg"
+          },
+          "caption": "Your voice vibrates"
+        },
+        {
+          "mode": "show",
+          "say": "Sounds can be high, like a bird tweeting, or low, like a cow mooing. High or low is called pitch.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐦",
+              "⬆️",
+              "🐄",
+              "⬇️"
+            ],
+            "size": "lg"
+          },
+          "caption": "High and low pitch"
+        },
+        {
+          "mode": "choice",
+          "ask": "What makes a sound?",
+          "options": [
+            {
+              "emoji": "✨",
+              "label": "Something glowing",
+              "why": "Glowing makes light, not sound."
+            },
+            {
+              "emoji": "🧊",
+              "label": "Something cold",
+              "why": "Being cold does not make a sound."
+            },
+            {
+              "emoji": "〰️",
+              "label": "Something vibrating"
+            }
+          ],
+          "answer": 2,
+          "explain": "All sounds come from vibrations."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sound is high?",
+          "options": [
+            {
+              "emoji": "🐦",
+              "label": "Bird tweet"
+            },
+            {
+              "emoji": "🐄",
+              "label": "Cow moo",
+              "why": "A moo is a low, deep sound."
+            }
+          ],
+          "answer": 0,
+          "explain": "A bird's tweet is a high sound."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which sound is low?",
+          "options": [
+            {
+              "emoji": "🐣",
+              "label": "Chick cheep",
+              "why": "A tiny cheep is a high sound."
+            },
+            {
+              "emoji": "🥁",
+              "label": "Big drum boom"
+            }
+          ],
+          "answer": 1,
+          "explain": "A big drum makes a deep, low boom."
+        },
+        {
+          "mode": "sort",
+          "ask": "High or low? Sort the sounds!",
+          "bins": [
+            {
+              "label": "High",
+              "emoji": "⬆️"
+            },
+            {
+              "label": "Low",
+              "emoji": "⬇️"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐦",
+              "bin": 0,
+              "name": "bird tweet"
+            },
+            {
+              "emoji": "🐭",
+              "bin": 0,
+              "name": "mouse squeak"
+            },
+            {
+              "emoji": "🐣",
+              "bin": 0,
+              "name": "chick cheep"
+            },
+            {
+              "emoji": "🐄",
+              "bin": 1,
+              "name": "cow moo"
+            },
+            {
+              "emoji": "🐻",
+              "bin": 1,
+              "name": "bear growl"
+            },
+            {
+              "emoji": "🚢",
+              "bin": 1,
+              "name": "ship horn"
+            }
+          ],
+          "explain": "Tweets and squeaks are high. Moos, growls and ship horns are low."
+        },
+        {
+          "mode": "choice",
+          "ask": "Where is the ice cream van's music loudest?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚚",
+              "🎵"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🏞️",
+              "label": "Far away",
+              "why": "Sounds get quieter as they travel far."
+            },
+            {
+              "emoji": "🍦",
+              "label": "Up close"
+            }
+          ],
+          "answer": 1,
+          "explain": "Sounds are loudest close by and get quieter far away."
+        }
+      ]
+    },
+    {
+      "id": "sound-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Sound science",
+      "intro": {
+        "say": "Let's be sound scientists! We'll explore pitch, loudness, and how sound travels.",
+        "icons": [
+          "🔔",
+          "👂",
+          "🔬"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Sound travels through the air into your ears. The farther away you are, the quieter it gets.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔔",
+              "〰️",
+              "〰️",
+              "〰️",
+              "👂"
+            ]
+          },
+          "caption": "Far away = quieter"
+        },
+        {
+          "mode": "show",
+          "say": "A small bell rings high. A big bell bongs low. Small things vibrate fast and sound higher.",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🔔",
+                "scale": 0.6
+              },
+              {
+                "emoji": "🔔",
+                "scale": 1.8
+              }
+            ]
+          },
+          "caption": "Small = high, big = low"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which bell makes the higher sound?",
+          "visual": {
+            "kind": "sizes",
+            "items": [
+              {
+                "emoji": "🔔",
+                "scale": 0.5
+              },
+              {
+                "emoji": "🔔",
+                "scale": 1.8
+              }
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🔔",
+              "label": "Small bell"
+            },
+            {
+              "emoji": "🔔",
+              "label": "Big bell",
+              "why": "Big bells vibrate slowly and sound low."
+            }
+          ],
+          "answer": 0,
+          "explain": "Small things vibrate faster, so they sound higher."
+        },
+        {
+          "mode": "choice",
+          "ask": "You hit a drum much harder. What happens to the sound?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🥁",
+              "💥"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🔈",
+              "label": "Quieter",
+              "why": "A harder hit makes bigger vibrations."
+            },
+            {
+              "emoji": "🔊",
+              "label": "Louder"
+            },
+            {
+              "emoji": "🔇",
+              "label": "It stops",
+              "why": "The drum still vibrates, even more!"
+            }
+          ],
+          "answer": 1,
+          "explain": "A harder hit makes bigger vibrations, and bigger vibrations are louder."
+        },
+        {
+          "mode": "order",
+          "ask": "Order these sounds from quietest to loudest.",
+          "items": [
+            {
+              "emoji": "🤫",
+              "label": "Whisper"
+            },
+            {
+              "emoji": "🗣️",
+              "label": "Talking"
+            },
+            {
+              "emoji": "📢",
+              "label": "Shouting"
+            },
+            {
+              "emoji": "✈️",
+              "label": "Jet plane"
+            }
+          ],
+          "explain": "A whisper is quietest and a jet plane is loudest."
+        },
+        {
+          "mode": "choice",
+          "ask": "A dog barks. Who hears it loudest?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐕",
+              "🔊"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "🏠",
+              "label": "Child at home far away",
+              "why": "Far away, the bark has gone quiet."
+            },
+            {
+              "emoji": "🧒",
+              "label": "Child next to the dog"
+            },
+            {
+              "emoji": "🏞️",
+              "label": "Child across the park",
+              "why": "The sound gets quieter across the park."
+            }
+          ],
+          "answer": 1,
+          "explain": "The closer you are, the louder the sound."
+        },
+        {
+          "mode": "choice",
+          "ask": "Can you hear sounds in space, where there is no air?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🚀",
+              "🌌"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Yes",
+              "why": "Sound needs something to travel through, like air."
+            },
+            {
+              "emoji": "❌",
+              "label": "No"
+            }
+          ],
+          "answer": 1,
+          "explain": "Sound needs air or something else to travel through, and space has no air."
+        },
+        {
+          "mode": "choice",
+          "ask": "A guitar string stops vibrating. What happens to the sound?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎸"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "⬆️",
+              "label": "It gets higher",
+              "why": "With no vibration, there's no sound at all."
+            },
+            {
+              "emoji": "🔊",
+              "label": "It gets louder",
+              "why": "With no vibration, there's no sound at all."
+            },
+            {
+              "emoji": "🔇",
+              "label": "It stops"
+            }
+          ],
+          "answer": 2,
+          "explain": "No vibration means no sound."
+        }
+      ]
+    }
+  ]
+}

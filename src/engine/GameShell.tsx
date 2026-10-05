@@ -1,4 +1,4 @@
-// Shared frame around every mini-game: Ollie's spoken prompt, hints, gentle feedback,
+// Shared frame around every mini-game: Ellie's spoken prompt, hints, gentle feedback,
 // round sequencing, stars, saving progress and the end-of-level celebration.
 import { useRouter } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -222,7 +222,7 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
             <Animated.View entering={ZoomIn.springify()}>
               <Gradient colors={[tint(c1, 0.3), tint(c2, 0.55)]} style={styles.card}>
                 <Bob distance={8} wobble>
-                  <Glyph id="🦉" size={72} label="Ollie the owl" />
+                  <Glyph id="🐘" size={72} label="Ellie the elephant" />
                 </Bob>
                 <Text style={styles.cardTitle}>Hooray!</Text>
                 <View style={styles.bigStars} accessibilityLabel={`${result.stars} of 3 stars`}>
@@ -244,7 +244,7 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
                   </BigButton>
                   <BigButton
                     label="All topics"
-                    onPress={() => router.dismissTo('/')}
+                    onPress={() => router.dismissTo({ pathname: '/group/[groupId]', params: { groupId: topic.group } })}
                     round
                     gradient={gradients.success}
                     size={sizes.bigTouch}>

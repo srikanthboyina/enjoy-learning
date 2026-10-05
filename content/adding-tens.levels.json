@@ -1,0 +1,542 @@
+{
+  "topicId": "adding-tens",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "adding-tens-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Counting tens",
+      "intro": {
+        "say": "A ten rod is ten little cubes stuck together. Let us count in tens!",
+        "icons": [
+          "🚀",
+          "🔟"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This tall rod has ten cubes. One ten is ten.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 1,
+            "ones": 0
+          },
+          "caption": "1 ten = 10"
+        },
+        {
+          "mode": "show",
+          "say": "Three rods: ten, twenty, thirty! Three tens make thirty.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 0
+          },
+          "caption": "3 tens = 30"
+        },
+        {
+          "mode": "choice",
+          "ask": "How many is this? Count the tens: ten, twenty...",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 2,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "20"
+            },
+            {
+              "label": "2",
+              "why": "Each rod is ten, not one."
+            },
+            {
+              "label": "30",
+              "why": "Count the rods again, one by one."
+            }
+          ],
+          "answer": 0,
+          "explain": "Two tens make twenty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Count the rods in tens. How many?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 4,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "14",
+              "why": "Each rod is a whole ten."
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "50",
+              "why": "Count the rods again: there are four."
+            }
+          ],
+          "answer": 1,
+          "explain": "Ten, twenty, thirty, forty. Four tens make forty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ten plus ten. How many?",
+          "visual": {
+            "kind": "text",
+            "text": "10 + 10 = ?"
+          },
+          "options": [
+            {
+              "label": "11",
+              "why": "We add a whole ten, not one."
+            },
+            {
+              "label": "30",
+              "why": "That is three tens. We only have two."
+            },
+            {
+              "label": "20"
+            }
+          ],
+          "answer": 2,
+          "explain": "Ten and ten more make twenty.",
+          "hint": "Count in tens: ten, twenty."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the tens in counting order, smallest first.",
+          "items": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "30"
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "50"
+            }
+          ],
+          "explain": "Ten, twenty, thirty, forty, fifty. Each one is one more ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "Here is fifty. Add one more ten. What do we get?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 5,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "51",
+              "why": "Adding a ten adds a whole rod."
+            },
+            {
+              "label": "60"
+            },
+            {
+              "label": "70",
+              "why": "That is two more tens."
+            }
+          ],
+          "answer": 1,
+          "explain": "Five tens and one more ten make six tens, sixty."
+        }
+      ]
+    },
+    {
+      "id": "adding-tens-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Add and take tens",
+      "intro": {
+        "say": "Adding tens is like adding small numbers. Two tens plus three tens is five tens!",
+        "icons": [
+          "🚀",
+          "➕",
+          "➖"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Twenty is 2 tens. Thirty is 3 tens. 2 tens and 3 tens make 5 tens. So twenty plus thirty is fifty!",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 5,
+            "ones": 0
+          },
+          "caption": "20 + 30 = 50"
+        },
+        {
+          "mode": "show",
+          "say": "Taking away works too. Fifty is 5 tens. Take away 2 tens, and 3 tens are left. Fifty take away twenty is thirty.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 0
+          },
+          "caption": "50 − 20 = 30"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is twenty plus thirty?",
+          "visual": {
+            "kind": "text",
+            "text": "20 + 30 = ?"
+          },
+          "options": [
+            {
+              "label": "50"
+            },
+            {
+              "label": "23",
+              "why": "We add the tens together."
+            },
+            {
+              "label": "40",
+              "why": "Count again: two tens and three tens."
+            }
+          ],
+          "answer": 0,
+          "explain": "Two tens and three tens make five tens. That is fifty."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is forty plus forty?",
+          "visual": {
+            "kind": "text",
+            "text": "40 + 40 = ?"
+          },
+          "options": [
+            {
+              "label": "44",
+              "why": "Four tens and four tens. Add the tens."
+            },
+            {
+              "label": "70",
+              "why": "Check again: four and four make eight."
+            },
+            {
+              "label": "80"
+            }
+          ],
+          "answer": 2,
+          "explain": "Four plus four is eight, so four tens and four tens make eighty.",
+          "hint": "Think of four plus four."
+        },
+        {
+          "mode": "choice",
+          "ask": "Seventy take away thirty. What is left?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 7,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "30",
+              "why": "That is what we took away."
+            },
+            {
+              "label": "40"
+            },
+            {
+              "label": "50",
+              "why": "Take away three tens from seven tens."
+            }
+          ],
+          "answer": 1,
+          "explain": "Seven tens take away three tens leaves four tens, forty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Sixty plus ten. What do we get?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 6,
+            "ones": 0
+          },
+          "options": [
+            {
+              "label": "70"
+            },
+            {
+              "label": "61",
+              "why": "We add a whole ten, so the tens grow."
+            },
+            {
+              "label": "16",
+              "why": "Six tens is sixty, not six."
+            }
+          ],
+          "answer": 0,
+          "explain": "Six tens and one more ten make seven tens, seventy."
+        },
+        {
+          "mode": "order",
+          "ask": "Order these from smallest to biggest.",
+          "items": [
+            {
+              "label": "10 + 10"
+            },
+            {
+              "label": "20 + 20"
+            },
+            {
+              "label": "30 + 30"
+            },
+            {
+              "label": "40 + 40"
+            }
+          ],
+          "explain": "Twenty, forty, sixty, eighty. They get bigger each time.",
+          "hint": "Work out each answer first."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ninety take away fifty. How many are left?",
+          "visual": {
+            "kind": "text",
+            "text": "90 − 50 = ?"
+          },
+          "options": [
+            {
+              "label": "30",
+              "why": "Nine take away five is four."
+            },
+            {
+              "label": "50",
+              "why": "That is what we took away."
+            },
+            {
+              "label": "40"
+            }
+          ],
+          "answer": 2,
+          "explain": "Nine tens take away five tens leaves four tens, forty."
+        }
+      ]
+    },
+    {
+      "id": "adding-tens-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Tens with ones",
+      "intro": {
+        "say": "Now our numbers have ones too! When we add tens, only the tens change.",
+        "icons": [
+          "🚀",
+          "🔟",
+          "🧮"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This is 34: 3 tens and 4 ones. Add one more ten and we get 4 tens and 4 ones. That is 44!",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 4,
+            "ones": 4
+          },
+          "caption": "34 + 10 = 44"
+        },
+        {
+          "mode": "show",
+          "say": "Add twenty to 56. The tens go up by 2, from 5 to 7. The 6 ones stay. 56 plus 20 is 76.",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 7,
+            "ones": 6
+          },
+          "caption": "56 + 20 = 76"
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 34 plus 10?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 3,
+            "ones": 4
+          },
+          "options": [
+            {
+              "label": "35",
+              "why": "Adding ten adds a rod, not a cube."
+            },
+            {
+              "label": "44"
+            },
+            {
+              "label": "54",
+              "why": "Only one ten is added."
+            }
+          ],
+          "answer": 1,
+          "explain": "The tens go from 3 to 4, and the 4 ones stay. Forty four."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 52 plus 30?",
+          "visual": {
+            "kind": "text",
+            "text": "52 + 30 = ?"
+          },
+          "options": [
+            {
+              "label": "82"
+            },
+            {
+              "label": "55",
+              "why": "We add three tens, not three ones."
+            },
+            {
+              "label": "72",
+              "why": "Five tens plus three tens is eight tens."
+            }
+          ],
+          "answer": 0,
+          "explain": "Five tens and three tens make eight tens. The 2 ones stay, so it is eighty two."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is 85 take away 30?",
+          "visual": {
+            "kind": "placevalue",
+            "tens": 8,
+            "ones": 5
+          },
+          "options": [
+            {
+              "label": "82",
+              "why": "Take away three tens, not three ones."
+            },
+            {
+              "label": "65",
+              "why": "Eight take away three is five."
+            },
+            {
+              "label": "55"
+            }
+          ],
+          "answer": 2,
+          "explain": "Eight tens take away three tens leaves five tens. Keep the 5 ones: fifty five."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia has 40 stickers. She gets 30 more. How many now?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐",
+              "📒",
+              "⭐"
+            ]
+          },
+          "options": [
+            {
+              "label": "70"
+            },
+            {
+              "label": "43",
+              "why": "Thirty is three tens, not three."
+            },
+            {
+              "label": "10",
+              "why": "She gets more, so we add."
+            }
+          ],
+          "answer": 0,
+          "explain": "Four tens and three tens make seven tens, seventy stickers."
+        },
+        {
+          "mode": "choice",
+          "ask": "Thirty plus what makes eighty?",
+          "visual": {
+            "kind": "text",
+            "text": "30 + ? = 80"
+          },
+          "options": [
+            {
+              "label": "40",
+              "why": "Thirty plus forty is seventy."
+            },
+            {
+              "label": "50"
+            },
+            {
+              "label": "60",
+              "why": "Thirty plus sixty is ninety."
+            }
+          ],
+          "answer": 1,
+          "explain": "Three tens and five tens make eight tens, so the missing number is fifty.",
+          "hint": "How many tens from three to eight?"
+        },
+        {
+          "mode": "choice",
+          "ask": "When we add 10 to 47, why do the 7 ones stay the same?",
+          "visual": {
+            "kind": "text",
+            "text": "47 + 10 = 57"
+          },
+          "options": [
+            {
+              "label": "We add a ten"
+            },
+            {
+              "label": "Ones are lucky",
+              "why": "We only added a ten rod, no ones."
+            },
+            {
+              "label": "We take away",
+              "why": "Adding ten makes it bigger."
+            }
+          ],
+          "answer": 0,
+          "explain": "We only add a ten rod, so the tens change and the ones stay the same."
+        },
+        {
+          "mode": "choice",
+          "ask": "A shop had 96 apples. It sold 40. How many are left?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🍎",
+              "🏪",
+              "🍎"
+            ]
+          },
+          "options": [
+            {
+              "label": "56"
+            },
+            {
+              "label": "92",
+              "why": "Forty is four tens."
+            },
+            {
+              "label": "36",
+              "why": "Nine tens take away four tens is five tens."
+            }
+          ],
+          "answer": 0,
+          "explain": "Nine tens take away four tens leaves five tens, and the 6 ones stay. Fifty six apples."
+        }
+      ]
+    }
+  ]
+}

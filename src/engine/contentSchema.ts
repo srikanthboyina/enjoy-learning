@@ -55,6 +55,8 @@ export const TopicSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   gameId: GameIdSchema,
   subject: z.enum(['math', 'science']),
+  /** id of a group in content/groups.json */
+  group: z.string().regex(/^[a-z0-9-]+$/),
   title: z.string().min(1),
   /** big picture on the home screen */
   emoji: z.string().min(1),
@@ -66,3 +68,14 @@ export const TopicSchema = z.object({
 });
 
 export const TopicsFileSchema = z.array(TopicSchema).min(1);
+
+/** A shelf of related topics on the home screen, e.g. "Shapes & Space". */
+export const GroupSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  subject: z.enum(['math', 'science']),
+  title: z.string().min(1),
+  emoji: z.string().min(1),
+  blurb: z.string().min(1),
+  colors: z.tuple([z.string().regex(/^#[0-9a-fA-F]{6}$/), z.string().regex(/^#[0-9a-fA-F]{6}$/)]),
+});
+export const GroupsFileSchema = z.array(GroupSchema).min(1);

@@ -1,0 +1,562 @@
+{
+  "topicId": "before-after",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "before-after-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Just after",
+      "intro": {
+        "say": "The number just after is one more. The number just before is one less.",
+        "icons": [
+          "⬅️",
+          "🔢",
+          "➡️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "On the number line, after means one step to the right. Just after 3 comes 4.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1,
+            "hops": 4
+          },
+          "caption": "after 3 → 4"
+        },
+        {
+          "mode": "show",
+          "say": "Before means one step to the left. Just before 6 comes 5.",
+          "visual": {
+            "kind": "numberline",
+            "from": 0,
+            "to": 10,
+            "step": 1,
+            "hops": 5
+          },
+          "caption": "5 ← before 6"
+        },
+        {
+          "mode": "choice",
+          "ask": "What number comes just after 2?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "1",
+              "2",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "That comes before two."
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "4",
+              "why": "That is two steps on."
+            }
+          ],
+          "answer": 1,
+          "explain": "One more than two is three."
+        },
+        {
+          "mode": "choice",
+          "ask": "What number comes just before 5?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "?",
+              "5",
+              "6"
+            ]
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "6",
+              "why": "Six comes after five."
+            },
+            {
+              "label": "3",
+              "why": "That is two steps back."
+            }
+          ],
+          "answer": 0,
+          "explain": "One less than five is four."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes just after 7?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "6",
+              "7",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "9",
+              "why": "We skipped eight."
+            },
+            {
+              "label": "6",
+              "why": "That comes before seven."
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "answer": 2,
+          "explain": "After seven comes eight."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes just before 10?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "8",
+              "?",
+              "10"
+            ]
+          },
+          "options": [
+            {
+              "label": "11",
+              "why": "Eleven comes after ten."
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "7",
+              "why": "That is too far back."
+            }
+          ],
+          "answer": 1,
+          "explain": "Nine comes just before ten."
+        },
+        {
+          "mode": "order",
+          "ask": "Put the numbers in order.",
+          "items": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "explain": "Each number is just after the one before."
+        }
+      ]
+    },
+    {
+      "id": "before-after-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "In between",
+      "intro": {
+        "say": "A number in between sits between two others, like a sandwich filling!",
+        "icons": [
+          "🥪",
+          "🔢",
+          "↔️"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Between 12 and 14 sits 13. It is one more than 12, and one less than 14.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "12",
+              "?",
+              "14"
+            ]
+          },
+          "caption": "12, 13, 14"
+        },
+        {
+          "mode": "show",
+          "say": "To find the number before, count back one. Before 20 is 19.",
+          "visual": {
+            "kind": "numberline",
+            "from": 10,
+            "to": 20,
+            "step": 1,
+            "hops": 9
+          },
+          "caption": "19, 20"
+        },
+        {
+          "mode": "choice",
+          "ask": "What number is between 15 and 17?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "15",
+              "?",
+              "17"
+            ]
+          },
+          "options": [
+            {
+              "label": "16"
+            },
+            {
+              "label": "18",
+              "why": "Eighteen is after seventeen."
+            },
+            {
+              "label": "14",
+              "why": "Fourteen is before fifteen."
+            }
+          ],
+          "answer": 0,
+          "explain": "Sixteen sits between fifteen and seventeen."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes just after 19?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "18",
+              "19",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "We go up, not back."
+            },
+            {
+              "label": "21",
+              "why": "That is two steps on."
+            },
+            {
+              "label": "20"
+            }
+          ],
+          "answer": 2,
+          "explain": "After nineteen comes twenty."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes just before 13?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "?",
+              "13",
+              "14"
+            ]
+          },
+          "options": [
+            {
+              "label": "14",
+              "why": "Fourteen comes after."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "31",
+              "why": "That swaps the digits."
+            }
+          ],
+          "answer": 1,
+          "explain": "One less than thirteen is twelve."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is between 8 and 10?",
+          "options": [
+            {
+              "label": "7",
+              "why": "Seven is before eight."
+            },
+            {
+              "label": "11",
+              "why": "Eleven is after ten."
+            },
+            {
+              "label": "9"
+            }
+          ],
+          "answer": 2,
+          "explain": "Nine sits between eight and ten."
+        },
+        {
+          "mode": "choice",
+          "ask": "Find the missing number.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "14",
+              "15",
+              "?",
+              "17"
+            ]
+          },
+          "options": [
+            {
+              "label": "16"
+            },
+            {
+              "label": "18",
+              "why": "Eighteen comes after seventeen."
+            },
+            {
+              "label": "13",
+              "why": "Thirteen is before fourteen."
+            }
+          ],
+          "answer": 0,
+          "explain": "Fourteen, fifteen, sixteen, seventeen."
+        },
+        {
+          "mode": "order",
+          "ask": "Put these in order, smallest first.",
+          "items": [
+            {
+              "label": "16"
+            },
+            {
+              "label": "17"
+            },
+            {
+              "label": "18"
+            },
+            {
+              "label": "19"
+            },
+            {
+              "label": "20"
+            }
+          ],
+          "explain": "Each one is just one more."
+        }
+      ]
+    },
+    {
+      "id": "before-after-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Big number neighbours",
+      "intro": {
+        "say": "Every number has neighbours: one before and one after. Let us find them for big numbers!",
+        "icons": [
+          "🏘️",
+          "🔢",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Forty-five has two neighbours: forty-four before it and forty-six after it.",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "44",
+              "45",
+              "46"
+            ]
+          },
+          "caption": "44, 45, 46"
+        },
+        {
+          "mode": "show",
+          "say": "Watch out at the tens! After 39 comes 40. Before 60 comes 59.",
+          "visual": {
+            "kind": "numberline",
+            "from": 35,
+            "to": 45,
+            "step": 1,
+            "hops": 5
+          },
+          "caption": "39 → 40"
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes just after 49?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "48",
+              "49",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "410",
+              "why": "After nine ones we make a new ten."
+            },
+            {
+              "label": "50"
+            },
+            {
+              "label": "40",
+              "why": "That goes back."
+            }
+          ],
+          "answer": 1,
+          "explain": "After forty-nine comes fifty."
+        },
+        {
+          "mode": "choice",
+          "ask": "What comes just before 70?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "?",
+              "70",
+              "71"
+            ]
+          },
+          "options": [
+            {
+              "label": "69"
+            },
+            {
+              "label": "60",
+              "why": "That is ten less."
+            },
+            {
+              "label": "71",
+              "why": "Seventy-one comes after."
+            }
+          ],
+          "answer": 0,
+          "explain": "One less than seventy is sixty-nine."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which number is between 87 and 89?",
+          "options": [
+            {
+              "label": "86",
+              "why": "That comes before eighty-seven."
+            },
+            {
+              "label": "90",
+              "why": "That comes after eighty-nine."
+            },
+            {
+              "label": "88"
+            }
+          ],
+          "answer": 2,
+          "explain": "Eighty-eight sits in between."
+        },
+        {
+          "mode": "choice",
+          "ask": "I am one less than 100. Who am I?",
+          "options": [
+            {
+              "label": "99"
+            },
+            {
+              "label": "101",
+              "why": "That is one more."
+            },
+            {
+              "label": "90",
+              "why": "That is ten less."
+            }
+          ],
+          "answer": 0,
+          "explain": "One less than a hundred is ninety-nine."
+        },
+        {
+          "mode": "choice",
+          "ask": "Leo is on page 29. What page comes next?",
+          "visual": {
+            "kind": "sequence",
+            "items": [
+              "29",
+              "?"
+            ]
+          },
+          "options": [
+            {
+              "label": "30"
+            },
+            {
+              "label": "20",
+              "why": "Pages go up as you read."
+            },
+            {
+              "label": "39",
+              "why": "That is ten pages ahead."
+            }
+          ],
+          "answer": 0,
+          "explain": "After twenty-nine comes thirty."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which pair are the neighbours of 61?",
+          "options": [
+            {
+              "label": "59 and 62",
+              "why": "Neighbours are just one away."
+            },
+            {
+              "label": "60 and 62"
+            },
+            {
+              "label": "51 and 71",
+              "why": "Those are ten away."
+            }
+          ],
+          "answer": 1,
+          "explain": "Sixty comes before and sixty-two comes after."
+        },
+        {
+          "mode": "order",
+          "ask": "Order from smallest to biggest.",
+          "items": [
+            {
+              "label": "58"
+            },
+            {
+              "label": "59"
+            },
+            {
+              "label": "60"
+            },
+            {
+              "label": "61"
+            }
+          ],
+          "explain": "Fifty-nine then sixty: a new ten starts."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "topicId": "chance",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "chance-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Certain or impossible?",
+      "intro": {
+        "say": "Some things will surely happen, and some can never happen. Let us decide!",
+        "icons": [
+          "✅",
+          "❌",
+          "🎲"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Certain means it will surely happen. The sun will rise tomorrow morning. That is certain!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌅"
+            ],
+            "size": "lg"
+          },
+          "caption": "Certain ✅"
+        },
+        {
+          "mode": "show",
+          "say": "Impossible means it can never happen. A cat will never lay an egg. That is impossible!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐱",
+              "🥚"
+            ],
+            "size": "lg"
+          },
+          "caption": "Impossible ❌"
+        },
+        {
+          "mode": "choice",
+          "ask": "A fish will climb up a tree. Certain or impossible?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐟",
+              "🌳"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Certain",
+              "why": "Fish do not have legs to climb with."
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible"
+            }
+          ],
+          "answer": 1,
+          "explain": "Fish live in water and cannot climb trees."
+        },
+        {
+          "mode": "choice",
+          "ask": "After Monday comes Tuesday. Certain or impossible?",
+          "visual": {
+            "kind": "week",
+            "highlight": 1
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Certain"
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "Tuesday always comes after Monday."
+            }
+          ],
+          "answer": 0,
+          "explain": "Every week, Tuesday comes right after Monday."
+        },
+        {
+          "mode": "choice",
+          "ask": "This bag has only red balls. You pick one. Will it be red?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔴",
+              "🔴",
+              "🔴",
+              "🔴",
+              "🔴"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "There is nothing else in the bag."
+            },
+            {
+              "emoji": "✅",
+              "label": "Certain"
+            }
+          ],
+          "answer": 1,
+          "explain": "Every ball is red, so you will surely pick red."
+        },
+        {
+          "mode": "choice",
+          "ask": "Same bag of red balls. Will you pick a blue ball?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🔴",
+              "🔴",
+              "🔴",
+              "🔴",
+              "🔴"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "❌",
+              "label": "Impossible"
+            },
+            {
+              "emoji": "✅",
+              "label": "Certain",
+              "why": "The bag only has red balls."
+            }
+          ],
+          "answer": 0,
+          "explain": "There are not any blue balls, so it is impossible."
+        },
+        {
+          "mode": "choice",
+          "ask": "You drop a ball. Will it fall down?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🙌",
+              "⚽",
+              "⬇️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Certain"
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "Things always fall down when we let go."
+            }
+          ],
+          "answer": 0,
+          "explain": "When you let go, things always fall down."
+        },
+        {
+          "mode": "choice",
+          "ask": "A dog will grow wings and fly. Certain or impossible?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🐕",
+              "☁️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Certain",
+              "why": "Dogs can never grow wings."
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible"
+            }
+          ],
+          "answer": 1,
+          "explain": "Dogs do not have wings, so it is impossible."
+        }
+      ]
+    },
+    {
+      "id": "chance-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Likely or unlikely?",
+      "intro": {
+        "say": "Some things might happen. Likely means it probably will. Unlikely means it probably will not.",
+        "icons": [
+          "👍",
+          "🤏",
+          "🎒"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Five red balls and one blue ball. If you pick without looking, red is likely. Blue is unlikely.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🔴"
+              },
+              {
+                "count": 1,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "and",
+            "showNumbers": true
+          },
+          "caption": "Red: likely   Blue: unlikely"
+        },
+        {
+          "mode": "show",
+          "say": "When there are the same number of each colour, they have the same chance.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🟢"
+              },
+              {
+                "count": 3,
+                "emoji": "🟡"
+              }
+            ],
+            "op": "and",
+            "showNumbers": true
+          },
+          "caption": "Same chance"
+        },
+        {
+          "mode": "choice",
+          "ask": "You pick one without looking. Which colour will you probably get?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 7,
+                "emoji": "🔵"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              }
+            ],
+            "op": "and"
+          },
+          "options": [
+            {
+              "emoji": "🔵",
+              "label": "Blue"
+            },
+            {
+              "emoji": "🟡",
+              "label": "Yellow",
+              "why": "There is only one yellow."
+            }
+          ],
+          "answer": 0,
+          "explain": "There are many more blue balls, so blue is likely."
+        },
+        {
+          "mode": "choice",
+          "ask": "Same bag. Will you pick yellow?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 7,
+                "emoji": "🔵"
+              },
+              {
+                "count": 1,
+                "emoji": "🟡"
+              }
+            ],
+            "op": "and"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Certain",
+              "why": "There are lots of blue balls too."
+            },
+            {
+              "emoji": "🤏",
+              "label": "Unlikely"
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "There is one yellow, so it could happen."
+            }
+          ],
+          "answer": 1,
+          "explain": "There is only one yellow, so it could happen, but it is unlikely."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which colour has the better chance?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🟢"
+              },
+              {
+                "count": 4,
+                "emoji": "🔴"
+              }
+            ],
+            "op": "and",
+            "showNumbers": true
+          },
+          "options": [
+            {
+              "emoji": "🟢",
+              "label": "Green",
+              "why": "Count them: 4 of each."
+            },
+            {
+              "emoji": "🔴",
+              "label": "Red",
+              "why": "Count them: 4 of each."
+            },
+            {
+              "emoji": "⚖️",
+              "label": "Same chance"
+            }
+          ],
+          "answer": 2,
+          "explain": "There are 4 green and 4 red, so they have the same chance."
+        },
+        {
+          "mode": "choice",
+          "ask": "You roll a dice. Will you roll a 6?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "👍",
+              "label": "Likely",
+              "why": "There are 6 numbers, and only one is a 6."
+            },
+            {
+              "emoji": "🤏",
+              "label": "Unlikely"
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "A dice does have a 6."
+            }
+          ],
+          "answer": 1,
+          "explain": "A dice has 6 numbers. Only one of them is 6, so it is unlikely."
+        },
+        {
+          "mode": "choice",
+          "ask": "The sky is full of dark grey clouds. Will it rain?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌧️",
+              "☁️",
+              "☁️"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "Rain can come from dark clouds."
+            },
+            {
+              "emoji": "🤏",
+              "label": "Unlikely",
+              "why": "Dark clouds often bring rain."
+            },
+            {
+              "emoji": "👍",
+              "label": "Likely"
+            }
+          ],
+          "answer": 2,
+          "explain": "Dark clouds often bring rain, so rain is likely."
+        },
+        {
+          "mode": "choice",
+          "ask": "This spinner has 3 shaded parts and 1 white part. Where will it probably land?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 4,
+            "shaded": 3,
+            "shape": "circle"
+          },
+          "options": [
+            {
+              "label": "Shaded"
+            },
+            {
+              "label": "White",
+              "why": "There is only 1 white part."
+            }
+          ],
+          "answer": 0,
+          "explain": "There are more shaded parts, so shaded is likely."
+        }
+      ]
+    },
+    {
+      "id": "chance-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Chance detectives",
+      "intro": {
+        "say": "Let us use numbers to decide how likely something is. Count, compare and think!",
+        "icons": [
+          "🎲",
+          "🎡",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "A dice has 6 numbers, 1 to 6. Each number has the same chance. So rolling a 2 is unlikely, but rolling a number from 1 to 6 is certain.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎲"
+            ],
+            "size": "lg"
+          },
+          "caption": "1, 2, 3, 4, 5, 6"
+        },
+        {
+          "mode": "show",
+          "say": "More of something means more chance. 2 red, 5 blue, 1 green. Blue is most likely, green is least likely.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🔴"
+              },
+              {
+                "count": 5,
+                "emoji": "🔵"
+              },
+              {
+                "count": 1,
+                "emoji": "🟢"
+              }
+            ],
+            "op": "and",
+            "showNumbers": true
+          },
+          "caption": "Most: 🔵   Least: 🟢"
+        },
+        {
+          "mode": "choice",
+          "ask": "Roll a dice. Will you get a number less than 7?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Certain"
+            },
+            {
+              "emoji": "👍",
+              "label": "Likely",
+              "why": "Think: is there any number on a dice that is 7 or more?"
+            },
+            {
+              "emoji": "🤏",
+              "label": "Unlikely",
+              "why": "Every number on a dice is less than 7."
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "Every number on a dice is less than 7."
+            }
+          ],
+          "answer": 0,
+          "explain": "Every number on a dice, 1 to 6, is less than 7, so it is certain."
+        },
+        {
+          "mode": "choice",
+          "ask": "Roll a dice. Will you get a 7?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🎲"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Certain",
+              "why": "A dice only goes up to 6."
+            },
+            {
+              "emoji": "👍",
+              "label": "Likely",
+              "why": "A dice only goes up to 6."
+            },
+            {
+              "emoji": "🤏",
+              "label": "Unlikely",
+              "why": "A dice does not have a 7 at all."
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible"
+            }
+          ],
+          "answer": 3,
+          "explain": "A dice only has 1 to 6, so a 7 is impossible."
+        },
+        {
+          "mode": "choice",
+          "ask": "Roll a dice. Will you get a number bigger than 1?",
+          "options": [
+            {
+              "emoji": "✅",
+              "label": "Certain",
+              "why": "You could still roll a 1."
+            },
+            {
+              "emoji": "👍",
+              "label": "Likely"
+            },
+            {
+              "emoji": "🤏",
+              "label": "Unlikely",
+              "why": "Five of the six numbers are bigger than 1."
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "2, 3, 4, 5 and 6 are bigger than 1."
+            }
+          ],
+          "answer": 1,
+          "explain": "Five of the six numbers are bigger than 1, but you could roll a 1, so it is likely."
+        },
+        {
+          "mode": "choice",
+          "ask": "How many blue balls must we add so red and blue have the same chance?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 5,
+                "emoji": "🔴"
+              },
+              {
+                "count": 3,
+                "emoji": "🔵"
+              }
+            ],
+            "op": "and",
+            "showNumbers": true
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "Then there would be 4 blue, not 5."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "5",
+              "why": "Then there would be 8 blue. Too many!"
+            }
+          ],
+          "answer": 1,
+          "explain": "Three blue and two more make five, the same as red.",
+          "hint": "Make the numbers the same."
+        },
+        {
+          "mode": "choice",
+          "ask": "This spinner has 8 parts, and 2 are shaded. Is landing on shaded likely or unlikely?",
+          "visual": {
+            "kind": "fraction",
+            "parts": 8,
+            "shaded": 2,
+            "shape": "circle"
+          },
+          "options": [
+            {
+              "emoji": "👍",
+              "label": "Likely",
+              "why": "Most of the parts are white."
+            },
+            {
+              "emoji": "🤏",
+              "label": "Unlikely"
+            },
+            {
+              "emoji": "❌",
+              "label": "Impossible",
+              "why": "There are some shaded parts, so it can happen."
+            }
+          ],
+          "answer": 1,
+          "explain": "Only 2 of the 8 parts are shaded, so it is unlikely."
+        },
+        {
+          "mode": "order",
+          "ask": "Put these in order, from impossible to certain.",
+          "items": [
+            {
+              "emoji": "🐄",
+              "label": "Cow flies"
+            },
+            {
+              "emoji": "🎲",
+              "label": "Roll a 6"
+            },
+            {
+              "emoji": "🎯",
+              "label": "Roll 1 to 5"
+            },
+            {
+              "emoji": "🌅",
+              "label": "Sun rises"
+            }
+          ],
+          "explain": "A cow flying is impossible, a 6 is unlikely, 1 to 5 is likely, and the sun rising is certain.",
+          "hint": "Start with the thing that can never happen."
+        }
+      ]
+    }
+  ]
+}

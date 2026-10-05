@@ -29,6 +29,19 @@ const BIN_TINTS = [
   { bg: '#F3F0FF', edge: '#7950F2' },
 ];
 
+/** Sort cards may hold words or sums ("5+3", "in all") instead of an emoji. */
+const isWords = (s: string) => /^[\x20-\x7E]+$/.test(s);
+
+function Chip({ value, size }: { value: string; size: number }) {
+  return isWords(value) ? (
+    <Text style={[styles.chipWords, { fontSize: size * 0.55 }]} numberOfLines={1}>
+      {value}
+    </Text>
+  ) : (
+    <Glyph id={value} size={size} accessible={false} />
+  );
+}
+
 function shuffled<T>(items: T[]): T[] {
   const a = [...items];
   for (let i = a.length - 1; i > 0; i--) {
@@ -56,13 +69,13 @@ export function ExploreGame(props: GameProps<ExploreRound>) {
   }
 }
 
-/* ---------- show: a picture Ollie explains, then ▶️ ---------- */
+/* ---------- show: a picture Ellie explains, then ▶️ ---------- */
 
 function Show({ round, onRoundComplete }: GameProps<Of<'show'>>) {
   return (
     <View style={styles.col}>
       <View style={styles.stage}>
-        {round.visual ? <Visual visual={round.visual} /> : <Bob distance={8} wobble><Glyph id="🦉" size={96} /></Bob>}
+        {round.visual ? <Visual visual={round.visual} /> : <Bob distance={8} wobble><Glyph id="🐘" size={96} /></Bob>}
       </View>
       {round.caption && (
         <Animated.View entering={FadeInDown.delay(500)} style={styles.caption}>
@@ -122,6 +135,7 @@ function Choice({ round, onAttempt, onRoundComplete, hintActive }: GameProps<Of<
               <Pressable
                 accessibilityRole="button"
                 accessibilityLabel={optionName(o)}
+                testID={`option-${i}`}
                 onPress={() => choose(i)}
                 style={({ pressed }) => [
                   styles.card,
@@ -186,8 +200,8 @@ function Sort({ round, onAttempt, onRoundComplete, hintActive }: GameProps<Of<'s
               onDragStart={() => setSelected(i)}
               onDrop={(zone) => (zone ? put(i, Number(zone.slice(4))) : false)}>
               <Bob distance={4} delay={i * 130}>
-                <View style={[styles.chip, selected === i && styles.chipOn]}>
-                  <Glyph id={round.items[i].emoji} size={44} accessible={false} />
+                <View style={[styles.chip, isWords(round.items[i].emoji) && styles.chipWide, selected === i && styles.chipOn]}>
+                  <Chip value={round.items[i].emoji} size={44} />
                 </View>
               </Bob>
             </Draggable>
@@ -220,7 +234,7 @@ function Sort({ round, onAttempt, onRoundComplete, hintActive }: GameProps<Of<'s
                   <View style={styles.binItems}>
                     {inside.map((i) => (
                       <Animated.View key={i} entering={ZoomIn.springify()}>
-                        <Glyph id={round.items[i].emoji} size={30} accessible={false} />
+                        <Chip value={round.items[i].emoji} size={30} />
                       </Animated.View>
                     ))}
                   </View>
@@ -474,6 +488,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  chipWide: { width: undefined, minWidth: sizes.touch + 8, paddingHorizontal: spacing.sm },
+  chipWords: { fontWeight: '700', color: colors.ink },
   chipOn: { borderColor: '#FCC419', backgroundColor: '#FFF9DB', transform: [{ scale: 1.1 }] },
   bins: { flexDirection: 'row', gap: spacing.sm, alignSelf: 'stretch' },
   binWrap: { flex: 1 },

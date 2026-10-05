@@ -1,0 +1,479 @@
+{
+  "topicId": "length",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "length-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Long and short",
+      "intro": {
+        "say": "Let's find out how long things are! A ruler helps us measure.",
+        "icons": [
+          "📏",
+          "🐍",
+          "🐛"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "This crayon is 3 units long. Start at zero, then count the marks to the end.",
+          "visual": {
+            "kind": "ruler",
+            "length": 3,
+            "emoji": "🖍️"
+          },
+          "caption": "3 units"
+        },
+        {
+          "mode": "show",
+          "say": "This snake is 8 units long. 8 is more than 3, so the snake is longer than the crayon!",
+          "visual": {
+            "kind": "ruler",
+            "length": 8,
+            "emoji": "🐍"
+          },
+          "caption": "8 units · longer"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is longer, a pencil or a train?",
+          "options": [
+            {
+              "label": "train",
+              "emoji": "🚂"
+            },
+            {
+              "label": "pencil",
+              "emoji": "✏️",
+              "why": "A pencil fits in your hand. A train is much longer."
+            }
+          ],
+          "answer": 0,
+          "explain": "A train is much, much longer than a pencil."
+        },
+        {
+          "mode": "choice",
+          "ask": "How long is this worm?",
+          "visual": {
+            "kind": "ruler",
+            "length": 2,
+            "emoji": "🪱"
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "Count every mark to the end of the worm."
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "3",
+              "why": "The worm stops before 3."
+            }
+          ],
+          "answer": 1,
+          "explain": "The worm starts at zero and ends at 2, so it is 2 units long."
+        },
+        {
+          "mode": "choice",
+          "ask": "How long is this pencil?",
+          "visual": {
+            "kind": "ruler",
+            "length": 5,
+            "emoji": "✏️"
+          },
+          "options": [
+            {
+              "label": "4",
+              "why": "Count all the way to the end."
+            },
+            {
+              "label": "6",
+              "why": "The pencil stops at 5."
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "answer": 2,
+          "explain": "The pencil ends at 5, so it is 5 units long."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which is shorter, a bus or a mouse?",
+          "options": [
+            {
+              "label": "bus",
+              "emoji": "🚌",
+              "why": "A bus is very long."
+            },
+            {
+              "label": "mouse",
+              "emoji": "🐭"
+            }
+          ],
+          "answer": 1,
+          "explain": "A mouse is tiny, so it is shorter than a bus."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order, from shortest to longest.",
+          "items": [
+            {
+              "label": "ant",
+              "emoji": "🐜"
+            },
+            {
+              "label": "mouse",
+              "emoji": "🐁"
+            },
+            {
+              "label": "dog",
+              "emoji": "🐕"
+            },
+            {
+              "label": "bus",
+              "emoji": "🚌"
+            }
+          ],
+          "explain": "An ant is the shortest and a bus is the longest."
+        }
+      ]
+    },
+    {
+      "id": "length-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Measuring in units",
+      "intro": {
+        "say": "We measure length in units. Count the units from the start to the end!",
+        "icons": [
+          "📏",
+          "📎",
+          "👣"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Always start measuring at zero. This bread ends at 6, so it is 6 units long.",
+          "visual": {
+            "kind": "ruler",
+            "length": 6,
+            "emoji": "🥖"
+          },
+          "caption": "start at 0 · 6 units"
+        },
+        {
+          "mode": "show",
+          "say": "You can measure with paper clips too! Line them up with no gaps. This book is 4 paper clips long.",
+          "visual": {
+            "kind": "text",
+            "text": "📕 = 📎📎📎📎"
+          },
+          "caption": "4 paper clips"
+        },
+        {
+          "mode": "choice",
+          "ask": "How long is the pen?",
+          "visual": {
+            "kind": "ruler",
+            "length": 7,
+            "emoji": "🖊️"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "The pen stops at 7."
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "6",
+              "why": "Count again, right to the end."
+            }
+          ],
+          "answer": 1,
+          "explain": "The pen ends at 7, so it is 7 units long."
+        },
+        {
+          "mode": "choice",
+          "ask": "How long is the carrot?",
+          "visual": {
+            "kind": "ruler",
+            "length": 9,
+            "emoji": "🥕"
+          },
+          "options": [
+            {
+              "label": "8",
+              "why": "Count all the way to the tip."
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "10",
+              "why": "The carrot stops at 9."
+            }
+          ],
+          "answer": 1,
+          "explain": "The carrot ends at 9, so it is 9 units long."
+        },
+        {
+          "mode": "choice",
+          "ask": "The crayon is 4 units long. The pencil is 7 units long. Which is longer?",
+          "options": [
+            {
+              "label": "pencil",
+              "emoji": "✏️"
+            },
+            {
+              "label": "crayon",
+              "emoji": "🖍️",
+              "why": "4 units is less than 7 units."
+            }
+          ],
+          "answer": 0,
+          "explain": "7 is more than 4, so the pencil is longer."
+        },
+        {
+          "mode": "choice",
+          "ask": "The ribbon is 7 units long. The string is 3 units long. How much longer is the ribbon?",
+          "options": [
+            {
+              "label": "3",
+              "why": "That is the string's length."
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "10",
+              "why": "We want the difference, so take away."
+            }
+          ],
+          "answer": 1,
+          "explain": "7 take away 3 is 4, so the ribbon is 4 units longer.",
+          "hint": "Take the short one away from the long one."
+        },
+        {
+          "mode": "choice",
+          "ask": "Dad measured the rug with his feet. How many feet long is the rug?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🦶",
+              "🦶",
+              "🦶",
+              "🦶",
+              "🦶"
+            ],
+            "size": "lg"
+          },
+          "options": [
+            {
+              "label": "5"
+            },
+            {
+              "label": "6",
+              "why": "Count each foot just once."
+            },
+            {
+              "label": "4",
+              "why": "Count every foot."
+            }
+          ],
+          "answer": 0,
+          "explain": "Dad used his foot 5 times, so the rug is 5 feet long."
+        },
+        {
+          "mode": "order",
+          "ask": "Put them in order, from shortest to longest.",
+          "items": [
+            {
+              "label": "2 units",
+              "emoji": "🪱"
+            },
+            {
+              "label": "4 units",
+              "emoji": "🖍️"
+            },
+            {
+              "label": "7 units",
+              "emoji": "🥖"
+            },
+            {
+              "label": "9 units",
+              "emoji": "🥕"
+            }
+          ],
+          "explain": "2, then 4, then 7, then 9 units: shortest to longest."
+        }
+      ]
+    },
+    {
+      "id": "length-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Length puzzles",
+      "intro": {
+        "say": "Let's solve tricky length puzzles with adding, taking away and careful measuring!",
+        "icons": [
+          "📏",
+          "🧩",
+          "🎀"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Put a 5 unit ribbon and a 3 unit ribbon end to end. 5 and 3 more make 8 units long!",
+          "visual": {
+            "kind": "ruler",
+            "length": 8,
+            "emoji": "🎀"
+          },
+          "caption": "5 + 3 = 8 units"
+        },
+        {
+          "mode": "show",
+          "say": "Hands and feet come in different sizes. A ruler's units are the same for everyone, so rulers are fair!",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🖐️",
+              "🦶",
+              "📏"
+            ],
+            "size": "lg"
+          },
+          "caption": "rulers are fair"
+        },
+        {
+          "mode": "choice",
+          "ask": "Two sticks are 6 units and 5 units long. Put them end to end. How long is that?",
+          "options": [
+            {
+              "label": "10",
+              "why": "Count on 5 from 6 again."
+            },
+            {
+              "label": "11"
+            },
+            {
+              "label": "12",
+              "why": "6 and 5 is one less than 12."
+            }
+          ],
+          "answer": 1,
+          "explain": "6 and 5 more make 11 units."
+        },
+        {
+          "mode": "choice",
+          "ask": "A rope is 12 units long. You cut off 5 units. How long is it now?",
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "8",
+              "why": "Count back 5 from 12 again."
+            },
+            {
+              "label": "6",
+              "why": "Count back carefully: 12 take away 5."
+            }
+          ],
+          "answer": 0,
+          "explain": "12 take away 5 leaves 7 units."
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia measured a table and got 6 hand spans. Dad got 4 hand spans. Why are they different?",
+          "options": [
+            {
+              "label": "table changed",
+              "why": "The table stayed the same. The hands are different sizes."
+            },
+            {
+              "label": "bigger hands",
+              "emoji": "🖐️"
+            }
+          ],
+          "answer": 1,
+          "explain": "Dad's hands are bigger, so he needs fewer of them to cover the table."
+        },
+        {
+          "mode": "choice",
+          "ask": "A pencil starts at 2 and ends at 9 on a ruler. How long is it?",
+          "options": [
+            {
+              "label": "9",
+              "why": "It didn't start at zero, so take away the start."
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "11",
+              "why": "Take away the start, don't add it."
+            }
+          ],
+          "answer": 1,
+          "explain": "9 take away 2 is 7, so the pencil is 7 units long.",
+          "hint": "It does not start at zero."
+        },
+        {
+          "mode": "choice",
+          "ask": "The snake is 8 units long. Each worm is 2 units long. How many worms make the snake's length?",
+          "visual": {
+            "kind": "ruler",
+            "length": 8,
+            "emoji": "🐍"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "6",
+              "why": "That is how much longer the snake is."
+            },
+            {
+              "label": "10",
+              "why": "Count in twos up to 8."
+            }
+          ],
+          "answer": 0,
+          "explain": "Counting in twos, 2, 4, 6, 8, makes 4 worms."
+        },
+        {
+          "mode": "order",
+          "ask": "Red is longer than blue. Green is shorter than blue. Put them from shortest to longest.",
+          "items": [
+            {
+              "label": "green",
+              "emoji": "🟩"
+            },
+            {
+              "label": "blue",
+              "emoji": "🟦"
+            },
+            {
+              "label": "red",
+              "emoji": "🟥"
+            }
+          ],
+          "explain": "Green is shortest, then blue, and red is the longest.",
+          "hint": "Blue is in the middle."
+        }
+      ]
+    }
+  ]
+}

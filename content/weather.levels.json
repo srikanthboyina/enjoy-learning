@@ -66,7 +66,7 @@
             {
               "emoji": "❄️",
               "label": "snowy",
-              "why": "Snow is white and cold. This is water."
+              "why": "Snowflakes are white and fluffy. These are raindrops."
             }
           ],
           "answer": 1,
@@ -410,7 +410,7 @@
       "rounds": [
         {
           "mode": "show",
-          "say": "The Sun warms water in seas and puddles. It rises up as tiny drops we can't see, and makes clouds.",
+          "say": "The Sun warms water in seas and puddles. It rises up as water vapour, too tiny to see, and makes clouds.",
           "visual": {
             "kind": "emoji",
             "items": [
@@ -445,7 +445,7 @@
               "☀️",
               "➕",
               "🌧️",
-              "🟰",
+              "➡️",
               "🌈"
             ]
           },

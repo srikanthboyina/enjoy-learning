@@ -1,0 +1,586 @@
+{
+  "topicId": "word-problems",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "word-problems-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Add or take away?",
+      "intro": {
+        "say": "Story sums are little stories with numbers. Listen, then add or take away!",
+        "icons": [
+          "📖",
+          "➕",
+          "➖"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "3 frogs sit on a log. 2 more frogs jump on. More are coming, so we add. 3 plus 2 is 5 frogs.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🐸"
+              },
+              {
+                "count": 2,
+                "emoji": "🐸"
+              }
+            ],
+            "op": "+",
+            "showNumbers": true
+          },
+          "caption": "3 + 2 = 5"
+        },
+        {
+          "mode": "show",
+          "say": "5 balloons. 2 float away. Going away means take away. 5 take away 2 leaves 3 balloons.",
+          "visual": {
+            "kind": "take",
+            "count": 5,
+            "remove": 2,
+            "emoji": "🎈"
+          },
+          "caption": "5 − 2 = 3"
+        },
+        {
+          "mode": "choice",
+          "ask": "4 birds sit in a tree. 1 more bird lands. How many birds now?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🐦"
+              },
+              {
+                "count": 1,
+                "emoji": "🐦"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "3",
+              "why": "A bird landed, so there are more. We add!"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "6",
+              "why": "Count the birds one by one."
+            }
+          ],
+          "answer": 1,
+          "explain": "4 plus 1 is 5 birds."
+        },
+        {
+          "mode": "choice",
+          "ask": "6 cupcakes on a plate. You eat 2. How many are left?",
+          "visual": {
+            "kind": "take",
+            "count": 6,
+            "remove": 2,
+            "emoji": "🧁"
+          },
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "8",
+              "why": "Eating cupcakes means fewer. We take away."
+            },
+            {
+              "label": "3",
+              "why": "Count the cupcakes still on the plate."
+            }
+          ],
+          "answer": 0,
+          "explain": "6 take away 2 is 4."
+        },
+        {
+          "mode": "choice",
+          "ask": "Ben has 3 cars. He gets 2 more for his birthday. Should we add or take away?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 3,
+                "emoji": "🚗"
+              },
+              {
+                "count": 2,
+                "emoji": "🚗"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "Add",
+              "emoji": "➕"
+            },
+            {
+              "label": "Take away",
+              "emoji": "➖",
+              "why": "He gets more cars, so we add."
+            }
+          ],
+          "answer": 0,
+          "explain": "Getting more means we add: 3 plus 2 is 5."
+        },
+        {
+          "mode": "choice",
+          "ask": "5 ducks swim in a pond. 3 swim away. Should we add or take away?",
+          "visual": {
+            "kind": "take",
+            "count": 5,
+            "remove": 3,
+            "emoji": "🦆"
+          },
+          "options": [
+            {
+              "label": "Add",
+              "emoji": "➕",
+              "why": "Swimming away means fewer ducks."
+            },
+            {
+              "label": "Take away",
+              "emoji": "➖"
+            }
+          ],
+          "answer": 1,
+          "explain": "Going away means take away: 5 take away 3 is 2."
+        },
+        {
+          "mode": "choice",
+          "ask": "2 cats and 2 dogs play together. How many pets?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 2,
+                "emoji": "🐱"
+              },
+              {
+                "count": 2,
+                "emoji": "🐶"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "Count the cats and the dogs."
+            },
+            {
+              "label": "5",
+              "why": "Count again, one pet at a time."
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "answer": 2,
+          "explain": "2 plus 2 is 4 pets."
+        }
+      ]
+    },
+    {
+      "id": "word-problems-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Clue words",
+      "intro": {
+        "say": "Let’s solve bigger stories. Listen for clue words like more, left, and in all.",
+        "icons": [
+          "📖",
+          "🔑"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "Words like more and in all mean add. Words like left and away mean take away.",
+          "visual": {
+            "kind": "text",
+            "text": "➕ more, in all    ➖ left, away"
+          },
+          "caption": "Clue words"
+        },
+        {
+          "mode": "show",
+          "say": "10 apples on a tree. 4 fall down. How many are left on the tree? 10 take away 4 is 6.",
+          "visual": {
+            "kind": "take",
+            "count": 10,
+            "remove": 4,
+            "emoji": "🍎"
+          },
+          "caption": "10 − 4 = 6"
+        },
+        {
+          "mode": "choice",
+          "ask": "Mia has 7 stickers. Her friend gives her 5 more. How many stickers in all?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 7,
+                "emoji": "⭐"
+              },
+              {
+                "count": 5,
+                "emoji": "⭐"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "2",
+              "why": "She got more stickers, so we add."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "11",
+              "why": "Count on from 7: 8, 9, 10, 11, 12."
+            }
+          ],
+          "answer": 1,
+          "explain": "7 plus 5 is 12 stickers."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 9 cookies. The children eat 3. How many are left?",
+          "visual": {
+            "kind": "take",
+            "count": 9,
+            "remove": 3,
+            "emoji": "🍪"
+          },
+          "options": [
+            {
+              "label": "12",
+              "why": "Eating cookies means fewer. Take away."
+            },
+            {
+              "label": "5",
+              "why": "Count back 3 from 9: 8, 7, 6."
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "answer": 2,
+          "explain": "9 take away 3 is 6."
+        },
+        {
+          "mode": "choice",
+          "ask": "8 fish swim. 2 more fish join them. Which sum matches?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 8,
+                "emoji": "🐠"
+              },
+              {
+                "count": 2,
+                "emoji": "🐠"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "8 + 2"
+            },
+            {
+              "label": "8 − 2",
+              "why": "More fish join, so we add."
+            },
+            {
+              "label": "2 + 2",
+              "why": "Start with the 8 fish."
+            }
+          ],
+          "answer": 0,
+          "explain": "Join means add: 8 plus 2 is 10."
+        },
+        {
+          "mode": "sort",
+          "ask": "Sort the clue words: add or take away?",
+          "bins": [
+            {
+              "label": "Add",
+              "emoji": "➕"
+            },
+            {
+              "label": "Take away",
+              "emoji": "➖"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "more",
+              "bin": 0,
+              "name": "more"
+            },
+            {
+              "emoji": "left",
+              "bin": 1,
+              "name": "left"
+            },
+            {
+              "emoji": "in all",
+              "bin": 0,
+              "name": "in all"
+            },
+            {
+              "emoji": "away",
+              "bin": 1,
+              "name": "away"
+            },
+            {
+              "emoji": "join",
+              "bin": 0,
+              "name": "join"
+            },
+            {
+              "emoji": "ate",
+              "bin": 1,
+              "name": "ate"
+            }
+          ],
+          "explain": "More, in all and join mean add. Left, away and ate mean take away."
+        },
+        {
+          "mode": "choice",
+          "ask": "A bus has 11 people. 4 get off. How many are on the bus now?",
+          "visual": {
+            "kind": "take",
+            "count": 11,
+            "remove": 4,
+            "emoji": "🧑"
+          },
+          "options": [
+            {
+              "label": "15",
+              "why": "People got off, so there are fewer."
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "8",
+              "why": "Count back 4 from 11: 10, 9, 8, 7."
+            }
+          ],
+          "answer": 1,
+          "explain": "11 take away 4 is 7."
+        }
+      ]
+    },
+    {
+      "id": "word-problems-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Two-step stories",
+      "intro": {
+        "say": "Some stories have two steps. Solve the first part, then use that answer for the next!",
+        "icons": [
+          "📖",
+          "2️⃣",
+          "🧠"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "5 bees in a hive. 3 more fly in. Then 2 fly out. First, 5 plus 3 is 8. Then 8 take away 2 is 6.",
+          "visual": {
+            "kind": "text",
+            "text": "5 + 3 = 8   8 − 2 = 6"
+          },
+          "caption": "Two steps"
+        },
+        {
+          "mode": "show",
+          "say": "Tom has 12 marbles. Ana has 5. How many more does Tom have? We take away to compare: 12 take away 5 is 7.",
+          "visual": {
+            "kind": "text",
+            "text": "12 − 5 = 7"
+          },
+          "caption": "How many more? Take away"
+        },
+        {
+          "mode": "choice",
+          "ask": "Jo has 6 apples. She picks 4 more, then gives 3 away. How many does she have now?",
+          "visual": {
+            "kind": "text",
+            "text": "6 + 4 − 3 = ?"
+          },
+          "options": [
+            {
+              "label": "10",
+              "why": "That is after step one. Now give 3 away!"
+            },
+            {
+              "label": "7"
+            },
+            {
+              "label": "13",
+              "why": "She gave 3 away, so take them away."
+            }
+          ],
+          "answer": 1,
+          "explain": "6 plus 4 is 10, and 10 take away 3 is 7."
+        },
+        {
+          "mode": "choice",
+          "ask": "A class has 8 boys and 9 girls. How many children?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 8,
+                "emoji": "👦"
+              },
+              {
+                "count": 9,
+                "emoji": "👧"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "1",
+              "why": "We want all the children, so we add."
+            },
+            {
+              "label": "16",
+              "why": "8 plus 8 is 16, but there are 9 girls."
+            },
+            {
+              "label": "17"
+            }
+          ],
+          "answer": 2,
+          "explain": "8 plus 9 is 17 children."
+        },
+        {
+          "mode": "choice",
+          "ask": "Raj read 15 pages. Kim read 9. How many more pages did Raj read?",
+          "visual": {
+            "kind": "text",
+            "text": "15 − 9 = ?"
+          },
+          "options": [
+            {
+              "label": "24",
+              "why": "How many more means compare, so we take away."
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "7",
+              "why": "9 plus 7 is 16. Try one less."
+            }
+          ],
+          "answer": 1,
+          "explain": "15 take away 9 is 6. Raj read 6 more pages."
+        },
+        {
+          "mode": "choice",
+          "ask": "14 birds sat on a wire. Some flew away. Now 8 are left. How many flew away?",
+          "visual": {
+            "kind": "text",
+            "text": "14 − ? = 8"
+          },
+          "options": [
+            {
+              "label": "6"
+            },
+            {
+              "label": "22",
+              "why": "Birds flew away, so the answer is smaller."
+            },
+            {
+              "label": "5",
+              "why": "8 plus 5 is 13, not 14."
+            }
+          ],
+          "answer": 0,
+          "explain": "8 plus 6 is 14, so 6 birds flew away."
+        },
+        {
+          "mode": "choice",
+          "ask": "There are 3 plates with 4 cookies on each. How many cookies?",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              {
+                "count": 4,
+                "emoji": "🍪"
+              },
+              {
+                "count": 4,
+                "emoji": "🍪"
+              },
+              {
+                "count": 4,
+                "emoji": "🍪"
+              }
+            ],
+            "op": "+"
+          },
+          "options": [
+            {
+              "label": "7",
+              "why": "There are three plates. Add all three groups."
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "8",
+              "why": "That is only two plates. Add the third!"
+            }
+          ],
+          "answer": 1,
+          "explain": "4 plus 4 plus 4 is 12 cookies."
+        },
+        {
+          "mode": "order",
+          "ask": "10 kids play. 3 go home. Then 2 more come. Put the steps in order.",
+          "items": [
+            {
+              "label": "10 kids"
+            },
+            {
+              "label": "10 − 3 = 7"
+            },
+            {
+              "label": "7 + 2 = 9"
+            }
+          ],
+          "explain": "Start with 10, take away 3 to get 7, then add 2 to get 9."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+  "topicId": "moon-stars",
+  "gameId": "explore",
+  "version": 1,
+  "levels": [
+    {
+      "id": "moon-stars-01",
+      "order": 1,
+      "difficulty": "simple",
+      "name": "Night sky",
+      "intro": {
+        "say": "At night we can see the Moon and lots of twinkly stars. Let us look up!",
+        "icons": [
+          "🌙",
+          "⭐",
+          "🌌"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The Moon is a big ball of rock. It goes round and round our Earth.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌍",
+              "🌕"
+            ]
+          },
+          "caption": "the Moon"
+        },
+        {
+          "mode": "show",
+          "say": "Stars look like tiny twinkly dots, but they are really giant balls of hot, glowing gas, very, very far away.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐",
+              "✨",
+              "⭐"
+            ]
+          },
+          "caption": "stars"
+        },
+        {
+          "mode": "choice",
+          "ask": "What goes round and round the Earth?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌍"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌕",
+              "label": "the Moon"
+            },
+            {
+              "emoji": "☁️",
+              "label": "a cloud",
+              "why": "Clouds float in our sky; they do not go round Earth."
+            },
+            {
+              "emoji": "🐦",
+              "label": "a bird",
+              "why": "Birds fly near the ground, not round the Earth."
+            }
+          ],
+          "answer": 0,
+          "explain": "The Moon travels all the way round the Earth."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is the Moon made of?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌕"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🧀",
+              "label": "cheese",
+              "why": "That is a fun story, but the Moon is not cheese!"
+            },
+            {
+              "emoji": "🪨",
+              "label": "rock"
+            },
+            {
+              "emoji": "🔥",
+              "label": "fire",
+              "why": "The Sun and stars glow hot; the Moon is cold rock."
+            }
+          ],
+          "answer": 1,
+          "explain": "The Moon is a big ball of rock and dust."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do stars look so small?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🐜",
+              "label": "they are tiny",
+              "why": "Stars are really huge!"
+            },
+            {
+              "emoji": "🧸",
+              "label": "they are toys",
+              "why": "Stars are real, giant and glowing, not toys."
+            },
+            {
+              "emoji": "🔭",
+              "label": "they are very far away"
+            }
+          ],
+          "answer": 2,
+          "explain": "Stars are giant, but they are so far away that they look like dots."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which can you see in the night sky?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌃"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🌈",
+              "label": "a rainbow",
+              "why": "Rainbows need sunshine and rain in the day."
+            },
+            {
+              "emoji": "⭐",
+              "label": "stars"
+            }
+          ],
+          "answer": 1,
+          "explain": "On a clear night the sky is full of stars."
+        }
+      ]
+    },
+    {
+      "id": "moon-stars-02",
+      "order": 1,
+      "difficulty": "medium",
+      "name": "Moon shapes",
+      "intro": {
+        "say": "The Moon seems to change shape. Let us find out why!",
+        "icons": [
+          "🌑",
+          "🌓",
+          "🌕"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The Moon has no light of its own. The Sun shines on it, and we see the sunny part.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "➡️",
+              "🌕"
+            ]
+          },
+          "caption": "sunlight on the Moon"
+        },
+        {
+          "mode": "show",
+          "say": "As the Moon goes round Earth, we see more or less of its sunny side. So it looks like a new shape each night. These are its phases.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌑",
+              "🌒",
+              "🌓",
+              "🌔",
+              "🌕"
+            ]
+          },
+          "caption": "phases"
+        },
+        {
+          "mode": "show",
+          "say": "When we see all of the sunny side, it is a full Moon. When we see none of it, it is a new Moon.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌕",
+              "🌑"
+            ]
+          },
+          "caption": "full Moon · new Moon"
+        },
+        {
+          "mode": "choice",
+          "ask": "Where does moonlight really come from?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌕"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "☀️",
+              "label": "the Sun"
+            },
+            {
+              "emoji": "💡",
+              "label": "a lamp on the Moon",
+              "why": "There are no lamps on the Moon."
+            },
+            {
+              "emoji": "🌙",
+              "label": "the Moon makes it",
+              "why": "The Moon has no light of its own."
+            }
+          ],
+          "answer": 0,
+          "explain": "Moonlight is sunlight bouncing off the Moon."
+        },
+        {
+          "mode": "choice",
+          "ask": "Which one is a full Moon?",
+          "options": [
+            {
+              "emoji": "🌒",
+              "label": "crescent",
+              "why": "That is only a thin slice."
+            },
+            {
+              "emoji": "🌓",
+              "label": "half",
+              "why": "That is a half Moon."
+            },
+            {
+              "emoji": "🌕",
+              "label": "full"
+            }
+          ],
+          "answer": 2,
+          "explain": "A full Moon is a whole bright circle."
+        },
+        {
+          "mode": "choice",
+          "ask": "Does the Moon really change shape?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌒",
+              "🌕"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🤏",
+              "label": "yes, it shrinks",
+              "why": "The Moon stays the same size and shape."
+            },
+            {
+              "emoji": "👀",
+              "label": "no, we see different parts lit"
+            }
+          ],
+          "answer": 1,
+          "explain": "The Moon is always round; we just see different amounts of its sunny side."
+        },
+        {
+          "mode": "order",
+          "ask": "The Moon is growing! Put the shapes in order, starting with the new Moon.",
+          "items": [
+            {
+              "emoji": "🌑",
+              "label": "new"
+            },
+            {
+              "emoji": "🌒",
+              "label": "crescent"
+            },
+            {
+              "emoji": "🌓",
+              "label": "half"
+            },
+            {
+              "emoji": "🌕",
+              "label": "full"
+            }
+          ],
+          "explain": "From new Moon, the bright part gets bigger each night until it is full."
+        },
+        {
+          "mode": "choice",
+          "ask": "About how long does the Moon take to go all the way round Earth?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌍",
+              "🌕"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "☀️",
+              "label": "one day",
+              "why": "One day is how long Earth takes to spin."
+            },
+            {
+              "emoji": "📅",
+              "label": "about a month"
+            },
+            {
+              "emoji": "🎂",
+              "label": "one year",
+              "why": "A year is Earth going round the Sun."
+            }
+          ],
+          "answer": 1,
+          "explain": "The Moon takes about a month to go round Earth, so its shapes repeat every month."
+        }
+      ]
+    },
+    {
+      "id": "moon-stars-03",
+      "order": 1,
+      "difficulty": "complex",
+      "name": "Stars and star pictures",
+      "intro": {
+        "say": "The Sun is a star too! Let us learn about stars and the pictures they make.",
+        "icons": [
+          "☀️",
+          "⭐",
+          "🔭",
+          "🌌"
+        ]
+      },
+      "rounds": [
+        {
+          "mode": "show",
+          "say": "The Sun is a star, the closest one to Earth. Other stars are suns too, but they are so far away they look tiny.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "🌍",
+              "✨",
+              "⭐"
+            ]
+          },
+          "caption": "the Sun is our closest star"
+        },
+        {
+          "mode": "show",
+          "say": "Long ago, people joined stars with pretend lines to make pictures, like a bear or a hunter. These star pictures are called constellations.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐",
+              "⭐",
+              "⭐",
+              "🐻"
+            ]
+          },
+          "caption": "constellations"
+        },
+        {
+          "mode": "show",
+          "say": "Stars are in the sky in the daytime too. The Sun is so bright that we cannot see them.",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "⭐",
+              "🙈"
+            ]
+          },
+          "caption": "stars by day"
+        },
+        {
+          "mode": "choice",
+          "ask": "Which star is closest to Earth?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌍"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⭐",
+              "label": "the North Star",
+              "why": "It is very far away."
+            },
+            {
+              "emoji": "☀️",
+              "label": "the Sun"
+            },
+            {
+              "emoji": "🌕",
+              "label": "the Moon",
+              "why": "The Moon is not a star; it is rock."
+            }
+          ],
+          "answer": 1,
+          "explain": "The Sun is a star, and it is the nearest star to us."
+        },
+        {
+          "mode": "choice",
+          "ask": "Why do we not see stars in the daytime?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "🏙️"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "😴",
+              "label": "they go to sleep",
+              "why": "Stars shine all the time."
+            },
+            {
+              "emoji": "⬇️",
+              "label": "they fall down",
+              "why": "Stars do not fall out of the sky."
+            },
+            {
+              "emoji": "☀️",
+              "label": "the Sun is too bright"
+            }
+          ],
+          "answer": 2,
+          "explain": "The bright Sun hides the fainter stars, but they are still there."
+        },
+        {
+          "mode": "choice",
+          "ask": "What is a constellation?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "⭐",
+              "⭐",
+              "⭐"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "✨",
+              "label": "a star picture"
+            },
+            {
+              "emoji": "🌙",
+              "label": "a kind of moon",
+              "why": "A constellation is made of stars, not moons."
+            },
+            {
+              "emoji": "🚀",
+              "label": "a space rocket",
+              "why": "Rockets are machines people build."
+            }
+          ],
+          "answer": 0,
+          "explain": "A constellation is a group of stars that people imagine as a picture."
+        },
+        {
+          "mode": "choice",
+          "ask": "The Sun looks much bigger than other stars. Why?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "☀️",
+              "⭐"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "🤷",
+              "label": "it is the only big star",
+              "why": "Many stars are as big as the Sun or bigger."
+            },
+            {
+              "emoji": "📏",
+              "label": "it is much closer to us"
+            },
+            {
+              "emoji": "🪐",
+              "label": "it is a planet",
+              "why": "The Sun is a star, not a planet."
+            }
+          ],
+          "answer": 1,
+          "explain": "Things look bigger when they are close; the Sun is the closest star."
+        },
+        {
+          "mode": "choice",
+          "ask": "The Moon looks brighter than the stars. Is it a star?",
+          "visual": {
+            "kind": "emoji",
+            "items": [
+              "🌕",
+              "⭐"
+            ]
+          },
+          "options": [
+            {
+              "emoji": "⭐",
+              "label": "yes, the brightest star",
+              "why": "It looks bright, but it makes no light."
+            },
+            {
+              "emoji": "🪞",
+              "label": "no, it reflects sunlight"
+            }
+          ],
+          "answer": 1,
+          "explain": "The Moon is close and reflects sunlight, but it makes no light, so it is not a star."
+        },
+        {
+          "mode": "sort",
+          "ask": "Does it make its own light?",
+          "bins": [
+            {
+              "label": "makes light",
+              "emoji": "💡"
+            },
+            {
+              "label": "no own light",
+              "emoji": "🌑"
+            }
+          ],
+          "items": [
+            {
+              "emoji": "☀️",
+              "bin": 0,
+              "name": "the Sun"
+            },
+            {
+              "emoji": "⭐",
+              "bin": 0,
+              "name": "a star"
+            },
+            {
+              "emoji": "🔥",
+              "bin": 0,
+              "name": "a fire"
+            },
+            {
+              "emoji": "🌕",
+              "bin": 1,
+              "name": "the Moon"
+            },
+            {
+              "emoji": "🌍",
+              "bin": 1,
+              "name": "Earth"
+            },
+            {
+              "emoji": "🪐",
+              "bin": 1,
+              "name": "a planet"
+            }
+          ],
+          "explain": "The Sun, stars and fire glow with their own light; the Moon and planets only reflect sunlight."
+        }
+      ]
+    }
+  ]
+}
