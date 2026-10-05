@@ -112,7 +112,12 @@ export function useHasHydrated(): boolean {
   useEffect(() => {
     const unsub = useProgress.persist.onFinishHydration(() => setHydrated(true));
     setHydrated(useProgress.persist.hasHydrated());
-    return unsub;
+    // If storage is blocked (private browsing, sandboxed web views), play without saved progress.
+    const fallback = setTimeout(() => setHydrated(true), 1500);
+    return () => {
+      unsub();
+      clearTimeout(fallback);
+    };
   }, []);
   return hydrated;
 }
