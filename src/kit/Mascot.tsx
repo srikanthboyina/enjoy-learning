@@ -5,7 +5,9 @@ import Animated, { FadeIn } from 'react-native-reanimated';
 import type { Prompt } from '../engine/types';
 import { colors, radii, spacing } from '../theme';
 import { BigButton } from './BigButton';
+import { tr } from '../i18n';
 import { Bob } from './Bob';
+import { ElephantBuddy } from './ElephantBuddy';
 import { Glyph } from './Glyph';
 import { Text } from './Text';
 
@@ -14,15 +16,16 @@ interface Props {
   onSpeak: () => void;
   mood?: 'talk' | 'happy';
   accent?: string;
+  /** bump to make Ellie jump and celebrate */
+  celebrate?: number;
 }
 
-export function Mascot({ prompt, onSpeak, mood = 'talk', accent = colors.sky }: Props) {
+export function Mascot({ prompt, onSpeak, mood = 'talk', accent = colors.sky, celebrate = 0 }: Props) {
   return (
     <View style={styles.row}>
       <Bob distance={4} period={2200} wobble>
-        <View>
-          <Glyph id="🐘" size={52} label="Ellie the elephant" />
-          {mood === 'happy' && <Text style={styles.party}>🎉</Text>}
+        <View accessibilityLabel="Ellie the elephant" style={mood === 'happy' && styles.lift}>
+          <ElephantBuddy size={58} celebrate={celebrate} />
         </View>
       </Bob>
       <Animated.View key={prompt.say} entering={FadeIn.duration(250)} style={[styles.bubble, { borderColor: accent }]}>
@@ -34,7 +37,7 @@ export function Mascot({ prompt, onSpeak, mood = 'talk', accent = colors.sky }: 
             ))}
           </View>
           <Text style={styles.say} numberOfLines={4}>
-            {prompt.say}
+            {tr(prompt.say)}
           </Text>
         </View>
         <BigButton label="Say it again" onPress={onSpeak} round size={48} gradient={['#60A5FA', '#3B82F6']} sound={null}>
@@ -46,7 +49,7 @@ export function Mascot({ prompt, onSpeak, mood = 'talk', accent = colors.sky }: 
 }
 
 const styles = StyleSheet.create({
-  party: { position: 'absolute', top: -10, right: -12, fontSize: 26 },
+  lift: { zIndex: 5 },
   row: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, paddingHorizontal: spacing.md },
   bubble: {
     flex: 1,

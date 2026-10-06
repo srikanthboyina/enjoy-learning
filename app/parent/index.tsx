@@ -11,6 +11,7 @@ import { Glyph } from '../../src/kit/Glyph';
 import { StarRow } from '../../src/kit/StarRow';
 import { badgeIds, useProgress } from '../../src/services/progressStore';
 import { useParentGate } from '../../src/services/parentGate';
+import { SPEECH_RATES } from '../../src/services/speech';
 import { colors, radii, spacing } from '../../src/theme';
 import { Text } from '../../src/kit/Text';
 
@@ -119,16 +120,12 @@ export default function ParentDashboard() {
           <View style={styles.settingRow}>
             <Text style={styles.settingLabel}>Voice speed</Text>
             <View style={styles.segment}>
-              {[
-                { label: 'Slow', value: 0.75 },
-                { label: 'Normal', value: 0.9 },
-                { label: 'Fast', value: 1.05 },
-              ].map((o) => (
+              {SPEECH_RATES.map((o) => (
                 <Pressable
                   key={o.label}
                   accessibilityRole="button"
                   onPress={() => setSetting('speechRate', o.value)}
-                  style={[styles.segmentItem, settings.speechRate === o.value && styles.segmentOn]}
+                  style={[styles.segmentItem, Math.abs(settings.speechRate - o.value) < 0.01 && styles.segmentOn]}
                 >
                   <Text style={styles.segmentText}>{o.label}</Text>
                 </Pressable>
@@ -222,6 +219,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     minHeight: 44,
+    flexWrap: 'wrap',
+    gap: spacing.sm,
   },
   settingLabel: { fontSize: 16, color: colors.ink },
   segment: {
@@ -231,7 +230,7 @@ const styles = StyleSheet.create({
     borderColor: colors.line,
     overflow: 'hidden',
   },
-  segmentItem: { paddingHorizontal: spacing.md, paddingVertical: spacing.sm },
+  segmentItem: { paddingHorizontal: spacing.sm, paddingVertical: spacing.sm },
   segmentOn: { backgroundColor: colors.mapSky },
   segmentText: { fontSize: 14, color: colors.ink },
   privacy: { fontSize: 14, color: colors.inkSoft, lineHeight: 20 },

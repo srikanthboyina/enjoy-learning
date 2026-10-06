@@ -7,6 +7,7 @@ import type { Option } from '../schema';
 import { Clock } from './Clock';
 import { FractionShape } from './Fraction';
 import { ShapeView } from './ShapeView';
+import { tr } from '../../../i18n';
 
 /** The picture/words on an answer card. */
 export function OptionView({ option, small = false }: { option: Option; small?: boolean }) {
@@ -24,7 +25,7 @@ export function OptionView({ option, small = false }: { option: Option; small?: 
         <Text
           style={[numeric ? styles.number : styles.label, small && { fontSize: numeric ? 26 : 15 }]}
           numberOfLines={2}>
-          {label}
+          {tr(label)}
         </Text>
       )}
     </View>

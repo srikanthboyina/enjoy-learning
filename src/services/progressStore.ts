@@ -20,6 +20,12 @@ export interface Settings {
   sounds: boolean;
   /** 0.5–1.2; kids usually prefer slightly slow speech */
   speechRate: number;
+  /** 'en' | 'te' | 'ta' | 'hi' — language Ellie speaks and the text shown */
+  language: string;
+  /** chosen text-to-speech voice per language (device voice identifier) */
+  voices: Record<string, string>;
+  /** Ellie's colour (see kit/Elephant.tsx) */
+  elephantColor: string;
 }
 
 interface ProgressState {
@@ -34,7 +40,14 @@ interface ProgressState {
   resetProgress: () => void;
 }
 
-const DEFAULT_SETTINGS: Settings = { voice: true, sounds: true, speechRate: 0.9 };
+const DEFAULT_SETTINGS: Settings = {
+  voice: true,
+  sounds: true,
+  speechRate: 0.75,
+  language: 'en',
+  voices: {},
+  elephantColor: 'blue',
+};
 
 export const badgeIds = {
   complete: (topicId: string) => `${topicId}-complete`,
@@ -85,7 +98,7 @@ export const useProgress = create<ProgressState>()(
     }),
     {
       name: 'edu-learn-games/progress',
-      version: 1,
+      version: 2,
       storage: createJSONStorage(() => AsyncStorage),
       partialize: ({ schemaVersion, levels, badges, settings }) => ({
         schemaVersion,
@@ -94,7 +107,12 @@ export const useProgress = create<ProgressState>()(
         settings,
       }),
       // Add a case per schema bump. Never discard a child's stars.
-      migrate: (persisted) => persisted as ProgressState,
+      migrate: (persisted, version) => {
+        const p = persisted as ProgressState;
+        // v2: the old default voice (0.9) was too fast for young children.
+        if (version < 2 && p?.settings?.speechRate === 0.9) p.settings.speechRate = 0.75;
+        return p;
+      },
       merge: (persisted, current) => {
         const p = (persisted ?? {}) as Partial<ProgressState>;
         return {

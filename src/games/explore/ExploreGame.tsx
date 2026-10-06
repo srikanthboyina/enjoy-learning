@@ -5,6 +5,7 @@ import Animated, { FadeIn, FadeInDown, ZoomIn } from 'react-native-reanimated';
 import type { GameProps } from '../../engine/types';
 import { BigButton } from '../../kit/BigButton';
 import { Bob } from '../../kit/Bob';
+import { ElephantBuddy } from '../../kit/ElephantBuddy';
 import { DragDropProvider, Draggable, DropZone } from '../../kit/DragDrop';
 import { Glyph } from '../../kit/Glyph';
 import { Text } from '../../kit/Text';
@@ -13,6 +14,7 @@ import { colors, gradients, radii, sizes, spacing } from '../../theme';
 import { OptionView, optionName } from './parts/OptionView';
 import { Visual } from './parts/Visual';
 import type { ExploreRound } from './schema';
+import { tr } from '../../i18n';
 
 type Of<M extends ExploreRound['mode']> = Extract<ExploreRound, { mode: M }>;
 
@@ -35,7 +37,7 @@ const isWords = (s: string) => /^[\x20-\x7E]+$/.test(s);
 function Chip({ value, size }: { value: string; size: number }) {
   return isWords(value) ? (
     <Text style={[styles.chipWords, { fontSize: size * 0.55 }]} numberOfLines={1}>
-      {value}
+      {tr(value)}
     </Text>
   ) : (
     <Glyph id={value} size={size} accessible={false} />
@@ -75,11 +77,11 @@ function Show({ round, onRoundComplete }: GameProps<Of<'show'>>) {
   return (
     <View style={styles.col}>
       <View style={styles.stage}>
-        {round.visual ? <Visual visual={round.visual} /> : <Bob distance={8} wobble><Glyph id="🐘" size={96} /></Bob>}
+        {round.visual ? <Visual visual={round.visual} /> : <Bob distance={8} wobble><ElephantBuddy size={110} /></Bob>}
       </View>
       {round.caption && (
         <Animated.View entering={FadeInDown.delay(500)} style={styles.caption}>
-          <Text style={styles.captionText}>{round.caption}</Text>
+          <Text style={styles.captionText}>{tr(round.caption)}</Text>
         </Animated.View>
       )}
       <Animated.View entering={FadeIn.delay(1000)}>
@@ -228,7 +230,7 @@ function Sort({ round, onAttempt, onRoundComplete, hintActive }: GameProps<Of<'s
                   <View style={styles.binHead}>
                     <Glyph id={b.emoji} size={34} accessible={false} />
                     <Text style={[styles.binLabel, { color: tint.edge }]} numberOfLines={2}>
-                      {b.label}
+                      {tr(b.label)}
                     </Text>
                   </View>
                   <View style={styles.binItems}>

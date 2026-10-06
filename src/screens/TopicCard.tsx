@@ -8,6 +8,7 @@ import { Gradient } from '../kit/Gradient';
 import { Text } from '../kit/Text';
 import { colors, radii, spacing } from '../theme';
 import { shade } from '../theme/color';
+import { tr } from '../i18n';
 
 interface Props {
   topic: Topic;
@@ -24,7 +25,7 @@ export function TopicCard({ topic, index, width, stars, playable, onPress }: Pro
     <Animated.View entering={FadeInDown.delay(60 * index).springify()} style={{ width }}>
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={topic.title}
+        accessibilityLabel={tr(topic.title)}
         onPress={onPress}
         style={({ pressed }) => [styles.press, pressed && styles.pressed]}>
         <Gradient
@@ -37,7 +38,7 @@ export function TopicCard({ topic, index, width, stars, playable, onPress }: Pro
             <Glyph id={topic.emoji} size={52} accessible={false} />
           </Bob>
           <Text style={styles.title} numberOfLines={2}>
-            {topic.title}
+            {tr(topic.title)}
           </Text>
           {playable ? (
             <View style={styles.footer}>
@@ -51,7 +52,7 @@ export function TopicCard({ topic, index, width, stars, playable, onPress }: Pro
               </View>
             </View>
           ) : (
-            <Text style={styles.soon}>🔒 Soon</Text>
+            <Text style={styles.soon}>🔒 {tr('Soon')}</Text>
           )}
         </Gradient>
       </Pressable>

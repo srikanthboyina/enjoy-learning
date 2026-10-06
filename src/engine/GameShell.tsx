@@ -7,13 +7,14 @@ import Animated, { FadeIn, ZoomIn, useAnimatedStyle, withTiming } from 'react-na
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { BigButton } from '../kit/BigButton';
-import { Bob } from '../kit/Bob';
 import { Confetti } from '../kit/Confetti';
+import { ElephantBuddy } from '../kit/ElephantBuddy';
 import { FeedbackBadge, useWiggle, type FeedbackKind } from '../kit/Feedback';
 import { Glyph } from '../kit/Glyph';
 import { Gradient } from '../kit/Gradient';
 import { Mascot } from '../kit/Mascot';
 import { Text } from '../kit/Text';
+import { tr } from '../i18n';
 import { useProgress } from '../services/progressStore';
 import { playSound } from '../services/sound';
 import { speak, speakQueued, stopSpeaking } from '../services/speech';
@@ -50,6 +51,7 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
   const [feedback, setFeedback] = useState<{ kind: FeedbackKind; nonce: number }>({ kind: null, nonce: 0 });
   const [burst, setBurst] = useState(0);
   const [happy, setHappy] = useState(false);
+  const [cheer, setCheer] = useState(0);
   const [result, setResult] = useState<Result | null>(null);
 
   // Counters live in refs so rapid taps never read stale values.
@@ -105,8 +107,8 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
       playSound('retry');
       wiggle();
       setFeedback((f) => ({ kind: 'retry', nonce: f.nonce + 1 }));
-      const extra = opts?.hint?.say ? ` ${opts.hint.say}` : '';
-      speak(phrases.tryAgain() + extra);
+      const extra = opts?.hint?.say ?? '';
+      speak([phrases.tryAgain(), extra]);
       if (roundMistakes.current >= AUTO_HINT_AFTER) setHintActive(true);
     },
     [wiggle],
@@ -123,9 +125,10 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
         playSound('success');
         setFeedback((f) => ({ kind: 'success', nonce: f.nonce + 1 }));
         setBurst((b) => b + 1);
+        setCheer((c) => c + 1);
         setHappy(true);
         const explain = opts?.explain ?? '';
-        speak(`${phrases.roundPraise()} ${explain}`.trim());
+        speak([phrases.roundPraise(), explain]);
         // leave time to hear the explanation (~70ms per character)
         pause = Math.max(motion.roundPause, Math.min(6000, 900 + explain.length * 70));
       }
@@ -145,7 +148,7 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
         const newBadges = recordLevel(topic.id, level.id, stars, mistakes.current);
         playSound('celebrate');
         setBurst((b) => b + 1);
-        speak(phrases.levelPraise() + (newBadges.length ? ` ${phrases.newBadge}` : ''));
+        speak(newBadges.length ? [phrases.levelPraise(), phrases.newBadge] : phrases.levelPraise());
         setResult({ stars, newBadges });
       }, pause);
     },
@@ -182,11 +185,11 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
             <View style={styles.chips}>
               <View style={[styles.chip, { backgroundColor: diff.colors[1] }]}>
                 <Text style={styles.chipText}>
-                  {diff.emoji} {diff.label}
+                  {diff.emoji} {tr(diff.label)}
                 </Text>
               </View>
               <Text style={styles.levelName} numberOfLines={1}>
-                {level.name}
+                {tr(level.name)}
               </Text>
             </View>
             <View style={styles.track} accessibilityLabel={`Step ${roundIndex + 1} of ${level.rounds.length}`}>
@@ -200,7 +203,7 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
           </BigButton>
         </View>
 
-        <Mascot prompt={prompt} onSpeak={() => speak(prompt)} mood={happy ? 'happy' : 'talk'} accent={shade(c1, 0.05)} />
+        <Mascot prompt={prompt} onSpeak={() => speak(prompt)} mood={happy ? 'happy' : 'talk'} accent={shade(c1, 0.05)} celebrate={cheer} />
 
         <Animated.View style={[styles.stage, wiggleStyle]}>
           <Game
@@ -221,10 +224,10 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
           <Animated.View entering={FadeIn} style={styles.overlay}>
             <Animated.View entering={ZoomIn.springify()}>
               <Gradient colors={[tint(c1, 0.3), tint(c2, 0.55)]} style={styles.card}>
-                <Bob distance={8} wobble>
-                  <Glyph id="🐘" size={72} label="Ellie the elephant" />
-                </Bob>
-                <Text style={styles.cardTitle}>Hooray!</Text>
+                <View accessibilityLabel="Ellie the elephant">
+                  <ElephantBuddy size={92} dance celebrate={1} />
+                </View>
+                <Text style={styles.cardTitle}>{tr('Hooray!')}</Text>
                 <View style={styles.bigStars} accessibilityLabel={`${result.stars} of 3 stars`}>
                   {[1, 2, 3].map((i) => (
                     <Animated.View key={i} entering={ZoomIn.delay(250 + i * 250).springify()}>
@@ -235,7 +238,7 @@ export function GameShell<TRound>({ topic, level, definition, nextLevelId }: Pro
                 {result.newBadges.length > 0 && (
                   <Animated.View entering={ZoomIn.delay(1200).springify()} style={styles.badgeRow}>
                     <Glyph id="🏅" size={44} accessible={false} />
-                    <Text style={styles.badgeText}>New badge!</Text>
+                    <Text style={styles.badgeText}>{tr('New badge!')}</Text>
                   </Animated.View>
                 )}
                 <View style={styles.actions}>

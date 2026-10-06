@@ -18,6 +18,7 @@ import { useProgress } from '../../src/services/progressStore';
 import { speak } from '../../src/services/speech';
 import { radii, spacing } from '../../src/theme';
 import { tint } from '../../src/theme/color';
+import { tr } from '../../src/i18n';
 
 export default function GroupScreen() {
   const { groupId } = useLocalSearchParams<{ groupId: string }>();
@@ -32,7 +33,7 @@ export default function GroupScreen() {
   const cardWidth = (contentWidth - gap * (columns - 1)) / columns;
 
   useEffect(() => {
-    if (group) speak(`${group.title}. ${group.blurb} Pick a topic.`);
+    if (group) speak([group.title, group.blurb, 'Pick a topic.']);
   }, [group]);
 
   if (!group) return <Redirect href="/" />;
@@ -57,15 +58,15 @@ export default function GroupScreen() {
                 size={52}>
                 <Glyph id="🏠" size={24} accessible={false} />
               </BigButton>
-              <BigButton label="Hear about this" onPress={() => speak(`${group.title}. ${group.blurb}`)} round size={52} sound={null}>
+              <BigButton label="Hear about this" onPress={() => speak([group.title, group.blurb])} round size={52} sound={null}>
                 <Glyph id="🔊" size={24} accessible={false} />
               </BigButton>
             </View>
             <Bob distance={8} wobble>
               <Glyph id={group.emoji} size={80} accessible={false} />
             </Bob>
-            <Text style={styles.title}>{group.title}</Text>
-            <Text style={styles.blurb}>{group.blurb}</Text>
+            <Text style={styles.title}>{tr(group.title)}</Text>
+            <Text style={styles.blurb}>{tr(group.blurb)}</Text>
           </Gradient>
           <View style={[styles.grid, { gap }]}>
             {topics.map((topic, i) => (

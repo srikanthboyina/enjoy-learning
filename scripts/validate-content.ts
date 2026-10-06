@@ -1,11 +1,12 @@
 /// <reference types="node" />
 // Validates every content/*.json file against the game schemas.
 // Usage: npm run validate:content
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 import { parseGroups, parseLevelFile, parseTopics, type ParseIssue } from '../src/engine/parseContent';
 import { ROUND_SCHEMAS } from '../src/games/schemas';
+import { stringsByFile } from './i18n-strings';
 
 const dir = join(__dirname, '..', 'content');
 const issues: ParseIssue[] = [];
@@ -38,6 +39,20 @@ for (const t of topics) {
   }
   if (!gamesWithLevels.has(t.id) || !ROUND_SCHEMAS[t.gameId]) {
     console.log(`… ${t.id}: no levels yet (shows as "coming soon")`);
+  }
+}
+
+// Translations (content/i18n/<lang>/*.json) are optional: missing ones fall back to English.
+const i18nDir = join(dir, 'i18n');
+if (existsSync(i18nDir)) {
+  const wanted = Object.values(stringsByFile(dir)).flat();
+  for (const lang of readdirSync(i18nDir)) {
+    const dict: Record<string, string> = {};
+    for (const f of readdirSync(join(i18nDir, lang)).filter((f) => f.endsWith('.json'))) {
+      Object.assign(dict, JSON.parse(readFileSync(join(i18nDir, lang, f), 'utf8')));
+    }
+    const have = wanted.filter((w) => dict[w] !== undefined).length;
+    console.log(`🌐 ${lang}: ${have}/${wanted.length} content strings translated`);
   }
 }
 

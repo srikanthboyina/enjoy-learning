@@ -35,12 +35,14 @@ npm run check             # both of the above; run before calling work done
 | `src/games/schemas.ts` | gameId → round schema (pure TS, used by app and validator). |
 | `src/games/registry.ts` | gameId → `GameDefinition` (the only registration point). |
 | `src/engine/` | Game-agnostic runtime: `GameShell`, scoring, content loading, types. |
-| `src/kit/` | Reusable kid-friendly UI: `BigButton`, `Glyph`, `Text` (Fredoka font), `Gradient`, `Mascot` (Ellie the elephant), `Bob`, `Confetti`, drag-and-drop, feedback. |
+| `src/kit/` | Reusable kid-friendly UI: `BigButton`, `Glyph`, `Text` (Fredoka font), `Gradient`, `Mascot` / `Elephant` / `ElephantBuddy` (Ellie the elephant, colourable, jumps on right answers), `Bob`, `Confetti`, drag-and-drop, feedback. |
 | `src/services/` | `speech`, `sound`, `progressStore`, `parentGate`. |
+| `src/i18n/` | `tr()` translation, language list, `APP_STRINGS` (English text that lives in code). |
+| `content/i18n/<lang>/` | Translations: `<id>.json` maps each English string to Telugu (`te`), Tamil (`ta`) or Hindi (`hi`). |
 | `src/theme/` | Colours, spacing, sizes, motion. Use tokens, not literals. |
 | `src/assets-map.ts` | `GlyphId` → picture (emoji in v1) + spoken name. |
 
-Import boundaries: a game may import from `engine/`, `kit/`, `services/`, `theme/`,
+Import boundaries: a game may import from `engine/`, `kit/`, `services/`, `i18n/`, `theme/`,
 `assets-map` — **never from another game**, never from `app/`. Files imported by
 `scripts/` (`schema.ts`, `schemas.ts`, `assets-map.ts`, `engine/types.ts`,
 `engine/contentSchema.ts`) must stay free of React Native imports.
@@ -107,6 +109,22 @@ round state can live in `useState`.
 4. `npm run check`.
 
 For a topic that fits the explore engine, only step 3 is needed.
+
+## Languages (English, Telugu, Tamil, Hindi)
+
+All code and content stay in **English**. Text is translated at the edges: wrap what you
+show in `tr(english)` and pass English to `speak()` (it translates and picks the device
+voice). Composite lines go to `speak([...parts])` so each part is translated.
+
+- Content translations: `content/i18n/<lang>/<contentId>.json` (`topics`, `groups`, and one
+  per topic). Regenerate the English lists with `npx tsx scripts/i18n-extract.ts <dir>`.
+- Code strings live in `src/i18n/appStrings.ts`, translated in `content/i18n/<lang>/_app.json`.
+  `{placeholders}` make templates ("Put {n} {items} in the basket."); each filled value is
+  translated on its own.
+- Missing translations fall back to English; `npm run validate:content` prints coverage.
+- If a device has no voice for the language, Ellie speaks English and the screen stays
+  translated. Telugu/Tamil voices are best on Android (Google text-to-speech).
+- Kids pick language, voice speed, voice and Ellie's colour on `app/settings.tsx`.
 
 ## Child-focused UX rules
 

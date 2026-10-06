@@ -49,7 +49,7 @@ function Change({ round, onAttempt, onRoundComplete, speak, hintActive }: GamePr
     } else if (closer) {
       // a correct first step on a two-step change (ice → water → steam)
       playSound('pop');
-      speak(`${changeWords(state, next, tool)} Keep going!`);
+      speak([changeWords(state, next, tool), 'Keep going!']);
     } else {
       onAttempt(false, {
         hint: { say: `${changeWords(state, next, tool)} ${needWords(next, round.goal)}`, icons: [TOOL_GLYPH[tool], round.goal] },

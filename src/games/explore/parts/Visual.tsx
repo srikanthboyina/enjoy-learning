@@ -11,6 +11,7 @@ import { Clock } from './Clock';
 import { FractionShape } from './Fraction';
 import { ArrayGrid, Balance, Bars, Coins, PlaceValue, Ruler, Tally, TenFrame, Thermometer, Week } from './MoreVisuals';
 import { ShapeView } from './ShapeView';
+import { tr } from '../../../i18n';
 
 const EMOJI_SIZE = { sm: 34, md: 46, lg: 64 } as const;
 
@@ -44,7 +45,7 @@ export function Visual({ visual, compact = false }: { visual: VisualData; compac
     case 'text':
       return (
         <Animated.View entering={ZoomIn.springify()} style={styles.textBox}>
-          <Text style={[styles.bigText, compact && { fontSize: 34 }]}>{visual.text}</Text>
+          <Text style={[styles.bigText, compact && { fontSize: 34 }]}>{tr(visual.text)}</Text>
         </Animated.View>
       );
     case 'groups':

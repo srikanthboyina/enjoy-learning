@@ -8,6 +8,7 @@ import { Gradient } from '../kit/Gradient';
 import { Text } from '../kit/Text';
 import { colors, radii, spacing } from '../theme';
 import { shade } from '../theme/color';
+import { tr } from '../i18n';
 
 interface Props {
   group: Group;
@@ -25,7 +26,7 @@ export function GroupCard({ group, topics, index, width, stars, onPress }: Props
     <Animated.View entering={FadeInDown.delay(50 * index).springify()} style={{ width }}>
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={group.title}
+        accessibilityLabel={tr(group.title)}
         onPress={onPress}
         style={({ pressed }) => [styles.press, pressed && styles.pressed]}>
         <Gradient colors={[c1, c2]} direction="diagonal" style={[styles.card, { borderBottomColor: shade(c2, 0.25) }]}>
@@ -36,11 +37,11 @@ export function GroupCard({ group, topics, index, width, stars, onPress }: Props
               <Glyph id={group.emoji} size={50} accessible={false} />
             </Bob>
             <View style={styles.countPill}>
-              <Text style={styles.countText}>{topics.length} topics</Text>
+              <Text style={styles.countText}>{tr(`${topics.length} topics`)}</Text>
             </View>
           </View>
           <Text style={styles.title} numberOfLines={2}>
-            {group.title}
+            {tr(group.title)}
           </Text>
           <View style={styles.peek}>
             {topics.slice(0, 5).map((t) => (

@@ -20,6 +20,7 @@ import { useProgress } from '../../src/services/progressStore';
 import { speak } from '../../src/services/speech';
 import { colors, radii, spacing } from '../../src/theme';
 import { tint } from '../../src/theme/color';
+import { tr } from '../../src/i18n';
 
 export default function TopicScreen() {
   const { topicId } = useLocalSearchParams<{ topicId: string }>();
@@ -28,7 +29,7 @@ export default function TopicScreen() {
   const topic = getTopic(topicId);
 
   useEffect(() => {
-    if (topic) speak(`${topic.title}. ${topic.blurb} Choose simple, medium or complex.`);
+    if (topic) speak([topic.title, topic.blurb, 'Choose simple, medium or complex.']);
   }, [topic]);
 
   if (!topic || !isPlayable(topic)) return <Redirect href="/" />;
@@ -53,7 +54,7 @@ export default function TopicScreen() {
               </BigButton>
               <BigButton
                 label="Hear about this topic"
-                onPress={() => speak(`${topic.title}. ${topic.blurb}`)}
+                onPress={() => speak([topic.title, topic.blurb])}
                 round
                 size={52}
                 sound={null}>
@@ -63,8 +64,8 @@ export default function TopicScreen() {
             <Bob distance={8} wobble>
               <Glyph id={topic.emoji} size={84} accessible={false} />
             </Bob>
-            <Text style={styles.title}>{topic.title}</Text>
-            <Text style={styles.blurb}>{topic.blurb}</Text>
+            <Text style={styles.title}>{tr(topic.title)}</Text>
+            <Text style={styles.blurb}>{tr(topic.blurb)}</Text>
           </Gradient>
 
           {DIFFICULTIES.map((d, di) => {
@@ -78,8 +79,8 @@ export default function TopicScreen() {
                   <Gradient colors={info.colors} direction="diagonal" style={styles.sectionHeader}>
                     <Text style={styles.sectionEmoji}>{info.emoji}</Text>
                     <View style={{ flex: 1 }}>
-                      <Text style={styles.sectionTitle}>{info.label}</Text>
-                      <Text style={styles.sectionSub}>{info.tag}</Text>
+                      <Text style={styles.sectionTitle}>{tr(info.label)}</Text>
+                      <Text style={styles.sectionSub}>{tr(info.tag)}</Text>
                     </View>
                     <View style={styles.sectionStars}>
                       <Text style={styles.sectionStarsText}>
@@ -108,7 +109,7 @@ export default function TopicScreen() {
                         </BigButton>
                         <StarRow stars={stars} size={20} />
                         <Text style={styles.levelName} numberOfLines={2}>
-                          {level.name}
+                          {tr(level.name)}
                         </Text>
                       </View>
                     );

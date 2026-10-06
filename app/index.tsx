@@ -1,13 +1,15 @@
 // Home: a bright sky with Ellie the Elephant, then Math Land and Science Land, each a shelf of topic groups.
 import { useRouter } from 'expo-router';
+import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { getGroups, getTopics, getTopicsIn } from '../src/engine/loadContent';
 import { topicStars } from '../src/engine/topics';
 import type { Group, Topic } from '../src/engine/types';
+import { tr, useLanguage } from '../src/i18n';
 import { Bob } from '../src/kit/Bob';
-import { Glyph } from '../src/kit/Glyph';
+import { ElephantBuddy } from '../src/kit/ElephantBuddy';
 import { Gradient } from '../src/kit/Gradient';
 import { Text } from '../src/kit/Text';
 import { Sky } from '../src/screens/Sky';
@@ -28,7 +30,12 @@ const GREETING = "Hi, I'm Ellie the elephant! Pick a world and let's learn toget
 
 export default function Home() {
   const router = useRouter();
+  const lang = useLanguage();
+  const title = tr(TITLE);
+  // Letters can be coloured one by one in English; Indian scripts join letters, so colour words.
+  const titlePieces = lang === 'en' ? title.split('') : title.split(/(\s+)/);
   const levels = useProgress((s) => s.levels);
+  const [cheer, setCheer] = useState(0);
   const topics = getTopics();
   const groups = getGroups();
   const { width } = useWindowDimensions();
@@ -57,25 +64,39 @@ export default function Home() {
       <SafeAreaView style={styles.screen}>
         <ScrollView contentContainerStyle={[styles.content, { width: contentWidth + spacing.md * 2 }]}>
           <View style={styles.topBar}>
-            <View style={styles.titleRow} accessibilityRole="header" accessibilityLabel={TITLE}>
-              {TITLE.split('').map((ch, i) => (
+            <View style={styles.titleRow} accessibilityRole="header" accessibilityLabel={title}>
+              {titlePieces.map((ch, i) => (
                 <Text key={i} style={[styles.titleChar, { color: TITLE_COLORS[i % TITLE_COLORS.length] }]}>
                   {ch}
                 </Text>
               ))}
             </View>
-            <Pressable accessibilityRole="button" onPress={() => router.push('/parent')} style={styles.parentButton}>
-              <Text style={styles.parentLabel}>👪 Grown-ups</Text>
-            </Pressable>
+            <View style={styles.topButtons}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={tr('Voice & Colours')}
+                onPress={() => router.push('/settings')}
+                style={styles.settingsButton}>
+                <Text style={styles.settingsIcon}>🗣️🎨</Text>
+              </Pressable>
+              <Pressable accessibilityRole="button" onPress={() => router.push('/parent')} style={styles.parentButton}>
+                <Text style={styles.parentLabel}>👪 {tr('Grown-ups')}</Text>
+              </Pressable>
+            </View>
           </View>
 
-          <Pressable accessibilityRole="button" accessibilityLabel={GREETING} onPress={() => speak(GREETING)} style={styles.greeting}>
+          <Pressable accessibilityRole="button" accessibilityLabel={tr(GREETING)}
+            onPress={() => {
+              speak(GREETING);
+              setCheer((c) => c + 1);
+            }}
+            style={styles.greeting}>
             <Bob distance={6} wobble>
-              <Glyph id="🐘" size={64} accessible={false} />
+              <ElephantBuddy size={72} celebrate={cheer} />
             </Bob>
             <View style={styles.greetingBubble}>
-              <Text style={styles.greetingText}>{GREETING}</Text>
-              <Text style={styles.greetingHint}>🔊 Tap me to hear it</Text>
+              <Text style={styles.greetingText}>{tr(GREETING)}</Text>
+              <Text style={styles.greetingHint}>🔊 {tr('Tap me to hear it')}</Text>
             </View>
           </Pressable>
 
@@ -87,9 +108,9 @@ export default function Home() {
               <View key={land.subject} style={styles.land}>
                 <Gradient colors={land.colors} direction="diagonal" style={styles.landHeader}>
                   <Text style={styles.landTitle}>
-                    {land.emoji} {land.title}
+                    {land.emoji} {tr(land.title)}
                   </Text>
-                  <Text style={styles.landCount}>{count} topics</Text>
+                  <Text style={styles.landCount}>{tr(`${count} topics`)}</Text>
                 </Gradient>
                 <View style={[styles.grid, { gap }]}>
                   {list.map((group, i) => (
@@ -125,6 +146,19 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 0, height: 3 },
     textShadowRadius: 0,
   },
+  topButtons: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  settingsButton: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: radii.round,
+    minWidth: 64,
+    minHeight: 64,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: spacing.sm,
+    borderWidth: 3,
+    borderColor: '#FCC419',
+  },
+  settingsIcon: { fontSize: 24 },
   parentButton: {
     backgroundColor: 'rgba(255,255,255,0.85)',
     borderRadius: radii.round,

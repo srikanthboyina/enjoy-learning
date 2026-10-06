@@ -34,8 +34,8 @@ export interface GameProps<TRound> {
    * `explain` is spoken after the praise: say *why* the answer is right.
    */
   onRoundComplete: (opts?: { explain?: string }) => void;
-  /** Speak (and show) a prompt, respecting the parent's voice setting. */
-  speak: (prompt: Prompt | string) => void;
+  /** Speak in the child's language; pass parts (string[]) for composite lines so each is translated. */
+  speak: (prompt: Prompt | string | string[]) => void;
   /** True after the child asked for help or made 2 mistakes this round. */
   hintActive: boolean;
 }

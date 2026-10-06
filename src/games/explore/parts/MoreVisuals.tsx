@@ -6,6 +6,7 @@ import Svg, { Circle, Line, Path, Rect, Text as SvgText } from 'react-native-svg
 import { Glyph } from '../../../kit/Glyph';
 import { Text } from '../../../kit/Text';
 import { colors, families, radii, spacing } from '../../../theme';
+import { tr } from '../../../i18n';
 
 const pop = (i: number) => ZoomIn.delay(Math.min(i, 14) * 60).springify();
 
@@ -51,7 +52,7 @@ export function PlaceValue({ tens, ones }: { tens: number; ones: number }) {
           ))}
           {tens === 0 && <Text style={styles.zero}>0</Text>}
         </View>
-        <Text style={styles.pvLabel}>tens</Text>
+        <Text style={styles.pvLabel}>{tr('tens')}</Text>
       </View>
       <View style={styles.pvGroup}>
         <View style={styles.onesWrap}>
@@ -60,7 +61,7 @@ export function PlaceValue({ tens, ones }: { tens: number; ones: number }) {
           ))}
           {ones === 0 && <Text style={styles.zero}>0</Text>}
         </View>
-        <Text style={styles.pvLabel}>ones</Text>
+        <Text style={styles.pvLabel}>{tr('ones')}</Text>
       </View>
     </View>
   );
@@ -137,7 +138,7 @@ export function Bars({ bars }: { bars: { emoji: string; value: number; label?: s
             </Animated.View>
           </View>
           <Glyph id={b.emoji} size={30} accessible={false} />
-          {b.label && <Text style={styles.barLabel}>{b.label}</Text>}
+          {b.label && <Text style={styles.barLabel}>{tr(b.label)}</Text>}
         </View>
       ))}
     </View>
@@ -278,7 +279,7 @@ export function Week({ highlight }: { highlight?: number }) {
             highlight !== undefined && highlight !== i && styles.dayDim,
             highlight === i && styles.dayOn,
           ]}>
-          <Text style={styles.dayText}>{d}</Text>
+          <Text style={styles.dayText}>{tr(d)}</Text>
         </Animated.View>
       ))}
     </View>
